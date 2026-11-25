@@ -30,6 +30,13 @@ export default {
 
     if (pathname !== "/mcp") return withCors(new Response("Not found. The MCP endpoint is /mcp", { status: 404 }));
 
+    // Someone opened the URL in a browser: show them the setup guide instead of a protocol error.
+    // MCP clients ask for JSON or an event stream, never an HTML page.
+    const accept = request.headers.get("accept") ?? "";
+    if (request.method === "GET" && accept.includes("text/html") && !accept.includes("text/event-stream")) {
+      return Response.redirect("https://fmicon.dev/mcp", 302);
+    }
+
     const server = createServer({ jsonSchemaValidator: new CfWorkerJsonSchemaValidator() });
     const transport = new WebStandardStreamableHTTPServerTransport({
       sessionIdGenerator: undefined, // stateless
