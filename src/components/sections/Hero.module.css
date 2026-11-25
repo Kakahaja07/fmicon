@@ -101,21 +101,9 @@
   .pencil { animation: none; stroke-dashoffset: 0; }
 }
 
-.search {
-  margin-top: 28px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-/* Desktop: the buttons and the app window below carry the hero; search stays on phones */
-@media (min-width: 901px) {
-  .search { display: none; }
-  .search + .actions { margin-top: 28px; }
-}
 
 .actions {
-  margin-top: 20px;
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -180,7 +168,6 @@
   .announce { font-size: 12px; height: 28px; }
   .title { margin-top: 14px; font-size: 32px; line-height: 1.12; }
   .sub { margin-top: 10px; font-size: 14px; }
-  .search { margin-top: 20px; }
   .actions { margin-top: 18px; }
   .actions > :last-child { display: none; }
   .meta { display: none; }
