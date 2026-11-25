@@ -283,7 +283,7 @@ The **[contributing guide](CONTRIBUTING.md)** has every command, a map of where 
 
 ## Licence
 
-The code is free under the [MIT licence](LICENSE). The icon shapes come from the "7000 FREE UI ICONS" Figma file by Cristian Muñoz and are shared with credit. The glass and duotone styles were made for this project from those shapes.
+The code is free under the [MIT licence](LICENSE). The glass and duotone styles were made for this project.
 
 <br>
 
