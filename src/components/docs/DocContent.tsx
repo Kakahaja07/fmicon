@@ -136,19 +136,22 @@ function StylesGrid() {
   );
 }
 
-function Section({ section, page, first }: { section: DocSection; page: DocPage; first: boolean }) {
+function Section({ section, page, first, actions }: { section: DocSection; page: DocPage; first: boolean; actions?: ReactNode }) {
   const { copied, copy } = useCopy();
   const Heading = first ? "h1" : "h2";
   return (
     <section id={section.id} className={s.section}>
+      <div className={first ? s.titleRow : undefined}>
       <Heading className={first ? s.h1 : s.h2}>
         {first && (
           <span className={s.h1Logo}>
-            <FrameworkLogo framework={page.logo} size={28} />
+            <FrameworkLogo framework={page.logo} size={24} />
           </span>
         )}
         {section.title}
       </Heading>
+      {first && actions}
+      </div>
       {section.text?.map((t) => (
         <p key={t} className={first ? s.lead : undefined}>
           <Inline text={t} />
@@ -180,11 +183,11 @@ function Section({ section, page, first }: { section: DocSection; page: DocPage;
 }
 
 /** One framework page, section by section. */
-export function DocContent({ page, footer }: { page: DocPage; footer?: ReactNode }) {
+export function DocContent({ page, footer, actions }: { page: DocPage; footer?: ReactNode; actions?: ReactNode }) {
   return (
     <article className={s.article}>
       {page.sections.map((section, i) => (
-        <Section key={section.id} section={section} page={page} first={i === 0} />
+        <Section key={section.id} section={section} page={page} first={i === 0} actions={actions} />
       ))}
       {footer}
     </article>

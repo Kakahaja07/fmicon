@@ -1,9 +1,9 @@
 import type { ReactNode } from "react";
-import { Link, useNavigate } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import { docPages, docsNav, type DocId } from "~/content/docs";
 import { BookIcon, CodeIcon, LayerIcon, LampChargeIcon, TextalignLeftIcon } from "~/components/icons/Icons";
-import { FrameworkLogo } from "~/components/ui/FrameworkLogo";
 import { useActiveSection } from "~/hooks/useActiveSection";
+import { FrameworkPicker } from "./FrameworkPicker";
 import s from "./DocsLayout.module.css";
 
 type DocsLayoutProps = {
@@ -22,7 +22,6 @@ const groupIcons = [LayerIcon, LampChargeIcon, CodeIcon];
  * current framework page (React when you're on the introduction).
  */
 export function DocsLayout({ current, toc, children }: DocsLayoutProps) {
-  const navigate = useNavigate();
   const active = useActiveSection(toc.map((t) => t.id));
   const framework = current ?? "react";
   const currentPage = docPages.find((p) => p.id === current);
@@ -31,54 +30,48 @@ export function DocsLayout({ current, toc, children }: DocsLayoutProps) {
     <div className={s.layout}>
       <aside className={s.side} aria-label="Docs">
         <nav className={s.nav}>
-          <p className={s.group}>
-            <BookIcon size={14} />
-            Getting started
-          </p>
-          <Link to="/docs" className={s.link} activeOptions={{ exact: true }} activeProps={{ "data-active": "" }}>
-            Introduction
-          </Link>
+          <div className={s.block}>
+            <p className={s.group}>
+              <span className={s.groupIcon}><BookIcon size={14} /></span>
+              Getting started
+            </p>
+            <div className={s.items}>
+              <Link to="/docs" className={s.link} activeOptions={{ exact: true }} activeProps={{ "data-active": "" }}>
+                Introduction
+              </Link>
+            </div>
+          </div>
 
-          <p className={s.group}>
-            <CodeIcon size={14} />
-            Framework
-          </p>
-          <label className={s.picker}>
-            <span className={s.pickerLogo}>{currentPage ? <FrameworkLogo framework={currentPage.logo} size={14} /> : null}</span>
-            <select
-              aria-label="Framework"
-              value={current ?? ""}
-              onChange={(e) => navigate({ to: "/docs/$framework", params: { framework: e.target.value } })}
-            >
-              <option value="" disabled>
-                Select
-              </option>
-              {docPages.map((p) => (
-                <option key={p.id} value={p.id}>
-                  {p.label}
-                </option>
-              ))}
-            </select>
-          </label>
-          {currentPage && (
-            <Link to="/docs/$framework" params={{ framework: currentPage.id }} hash="" className={s.link} data-active="">
-              {currentPage.label}
-            </Link>
-          )}
+          <div className={s.block}>
+            <p className={s.group}>
+              <span className={s.groupIcon}><CodeIcon size={14} /></span>
+              Framework
+            </p>
+            <div className={s.items}>
+              <FrameworkPicker current={current} />
+              {currentPage && (
+                <Link to="/docs/$framework" params={{ framework: currentPage.id }} hash="" className={s.link} data-active="">
+                  {currentPage.label}
+                </Link>
+              )}
+            </div>
+          </div>
 
           {docsNav.map((group, i) => {
             const Icon = groupIcons[i] ?? TextalignLeftIcon;
             return (
-              <div key={group.title}>
+              <div key={group.title} className={s.block} data-optional="">
                 <p className={s.group}>
-                  <Icon size={14} />
+                  <span className={s.groupIcon}><Icon size={14} /></span>
                   {group.title}
                 </p>
-                {group.links.map((link) => (
-                  <Link key={link.id} to="/docs/$framework" params={{ framework }} hash={link.id} className={s.link}>
-                    {link.label}
-                  </Link>
-                ))}
+                <div className={s.items}>
+                  {group.links.map((link) => (
+                    <Link key={link.id} to="/docs/$framework" params={{ framework }} hash={link.id} className={s.link}>
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             );
           })}
@@ -91,7 +84,7 @@ export function DocsLayout({ current, toc, children }: DocsLayoutProps) {
 
       <aside className={s.toc} aria-label="On this page">
         <p className={s.group}>
-          <TextalignLeftIcon size={14} />
+          <span className={s.groupIcon}><TextalignLeftIcon size={14} /></span>
           On this page
         </p>
         <ol>

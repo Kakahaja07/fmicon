@@ -2,6 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { brand } from "~/content/site";
 import { docPages } from "~/content/docs";
 import { ArrowLeftIcon, ArrowRightIcon } from "~/components/icons/Icons";
+import { DocActions } from "~/components/docs/DocActions";
 import { DocContent } from "~/components/docs/DocContent";
 import { DocsLayout } from "~/components/docs/DocsLayout";
 import { pageHead } from "~/lib/iconSeo";
@@ -19,6 +20,7 @@ export const Route = createFileRoute("/_site/docs/$framework")({
       title: `${page.label} icons: install and use ${brand.name}`,
       description: page.description.replace(/`/g, ""),
       path: `/docs/${page.id}`,
+      image: "docs",
     });
   },
   component: FrameworkDocs,
@@ -37,6 +39,13 @@ function FrameworkDocs() {
       <DocContent
         key={page.id}
         page={page}
+        actions={
+          <DocActions
+            page={page}
+            prev={prev ? { to: `/docs/${prev.id}`, label: prev.label } : { to: "/docs", label: "Introduction" }}
+            next={next ? { to: `/docs/${next.id}`, label: next.label } : undefined}
+          />
+        }
         footer={
           <nav className={s.pager} aria-label="More docs">
             {prev ? (

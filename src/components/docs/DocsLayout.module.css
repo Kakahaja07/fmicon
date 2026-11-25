@@ -25,83 +25,58 @@
 
 .nav {
   display: grid;
+  gap: 20px;
 }
 
 .group {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 22px 0 6px;
+  gap: 10px;
+  margin-bottom: 6px;
   font-size: 12px;
   font-weight: var(--weight-medium);
   letter-spacing: 0.02em;
   color: var(--text-3);
 }
 
-.nav > .group:first-child {
-  margin-top: 0;
+/* Group icon on a soft, low-contrast tile */
+.groupIcon {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text-2);
 }
 
-.group svg {
-  color: var(--text-3);
+/* Sub-items hang off a guide line under the group icon */
+.items {
+  display: grid;
+  margin-left: 10.5px;
+  padding-left: 0;
+  border-left: 1px solid var(--hairline);
 }
 
 .link {
   display: block;
-  padding: 6px 0 6px 22px;
+  margin-left: -1px;
+  padding: 6px 0 6px 18px;
+  border-left: 1px solid transparent;
   font-size: var(--text-sm);
   color: var(--text-2);
-  transition: color 150ms ease;
+  transition: color 150ms ease, border-color 150ms ease;
 }
 
 .link:hover {
   color: var(--text);
+  border-left-color: var(--hairline-strong);
 }
 
 .link[data-active] {
   color: var(--accent);
-}
-
-/* Framework picker */
-.picker {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 2px 0 4px 14px;
-}
-
-.pickerLogo {
-  position: absolute;
-  left: 10px;
-  display: grid;
-  pointer-events: none;
-}
-
-.picker select {
-  width: 100%;
-  height: 34px;
-  padding: 0 28px 0 32px;
-  border: 0;
-  border-radius: 10px;
-  background: var(--fill-subtle)
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e8e93' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 9l4-4 4 4M16 15l-4 4-4-4'/%3E%3C/svg%3E")
-    no-repeat right 10px center;
-  box-shadow: inset 0 0 0 1px var(--hairline);
-  color: var(--text);
-  font: inherit;
-  font-size: var(--text-sm);
-  appearance: none;
-  cursor: pointer;
-  transition: box-shadow 150ms ease;
-}
-
-.picker select:hover {
-  box-shadow: inset 0 0 0 1px var(--hairline-strong);
-}
-
-.picker select:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 1px;
+  border-left-color: var(--accent);
 }
 
 .main {
@@ -153,9 +128,7 @@
     position: static;
     max-height: none;
   }
-  .nav > div,
-  .nav > .link:not([data-active]),
-  .nav > .group:not(:nth-of-type(2)) {
+  .block[data-optional] {
     display: none;
   }
 }

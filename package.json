@@ -10,7 +10,8 @@
     "icons": "node scripts/sync-icons.mjs",
     "free-icons": "node scripts/build-free-icons.mjs",
     "articles": "node scripts/build-icon-articles.mjs",
-    "packages": "node scripts/build-packages.mjs"
+    "packages": "node scripts/build-packages.mjs",
+    "social": "node scripts/build-social.mjs"
   },
   "dependencies": {
     "@fontsource/gochi-hand": "^5.3.0",

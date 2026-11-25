@@ -22,3 +22,19 @@
 .md.emoji { font-size: 20px; }
 .lg.emoji { font-size: 30px; }
 .sm.emoji { font-size: 13px; box-shadow: 0 0 0 2px var(--bg); }
+
+/* Photo: cropped to the circle (a little zoom hides square corners in the source image) */
+.photo {
+  overflow: hidden;
+  background: var(--fill-translucent);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.12);
+}
+
+.sm.photo { box-shadow: 0 0 0 2px var(--bg); }

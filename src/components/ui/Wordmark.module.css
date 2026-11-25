@@ -1,0 +1,24 @@
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45em;
+  white-space: nowrap;
+}
+
+.name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.22em;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.name b {
+  font-weight: 720;
+  color: var(--text);
+}
+
+.name span {
+  font-weight: 460;
+  color: var(--text-2);
+}

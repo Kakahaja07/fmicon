@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState, type CSSProperties } from "re
 import { Link, useRouterState } from "@tanstack/react-router";
 import { brand, nav } from "~/content/site";
 import { AppIcon } from "~/components/ui/AppIcon";
+import { Wordmark } from "~/components/ui/Wordmark";
 import { Button } from "~/components/ui/Button";
 import { GithubLogo } from "~/components/ui/FrameworkLogo";
 import { useActiveSection } from "~/hooks/useActiveSection";
@@ -51,8 +52,7 @@ export function SiteHeader() {
     <header className={s.header} data-variant={bar ? "bar" : undefined} data-scrolled={scrolled || undefined}>
       <nav className={s.nav} aria-label="Primary" data-scrolled={scrolled || undefined}>
         <a className={s.logo} href="/" aria-label={`${brand.name} home`}>
-          <AppIcon size={bar ? 28 : 32} />
-          {bar && <span className={s.brandName}>{brand.name}</span>}
+          {bar ? <Wordmark size={28} /> : <AppIcon size={32} />}
         </a>
 
         <div className={s.links} onMouseLeave={() => setHovered(null)}>

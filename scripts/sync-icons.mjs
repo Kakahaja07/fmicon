@@ -32,7 +32,7 @@ const icons = [...new Set([
   // Icon page article
   "info-circle", "message-question", "task-square", "layer", "textalign-left", "lamp-charge",
   // Docs
-  "school-learning--book", "arrow-left",
+  "school-learning--book", "arrow-left", "arrow--arrow-down", "arrow--export-3", "content--document-text",
 ])];
 
 for (const f of readdirSync(OUT)) rmSync(join(OUT, f));

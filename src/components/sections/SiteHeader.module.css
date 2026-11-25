@@ -124,6 +124,9 @@
 }
 
 .header[data-variant="bar"] .nav {
+  /* logo · links (centred) · GitHub */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   width: min(1240px, 100% - 48px);
   height: 60px;
   padding: 0;
@@ -135,19 +138,12 @@
 }
 
 .header[data-variant="bar"] .logo {
+  justify-self: start;
   width: auto;
   height: 36px;
   gap: 8px;
   display: flex;
   margin-right: 20px;
-}
-
-.brandName {
-  white-space: nowrap;
-  font-size: var(--text-md);
-  font-weight: var(--weight-strong);
-  letter-spacing: -0.01em;
-  color: var(--text);
 }
 
 .header[data-variant="bar"] .link {
@@ -156,7 +152,6 @@
 }
 
 .header[data-variant="bar"] .pill {
-  top: 2px;
   height: 32px;
 }
 
@@ -165,7 +160,7 @@
 }
 
 .header[data-variant="bar"] .cta {
-  margin-left: auto;
+  justify-self: end;
   height: 34px;
 }
 
@@ -178,5 +173,5 @@
   .cta { padding: 0 14px; }
   .header[data-variant="bar"] .nav { width: calc(100% - 24px); }
   .header[data-variant="bar"] .logo { margin-right: 6px; }
-  .header[data-variant="bar"] .brandName { display: none; }
+  .header[data-variant="bar"] .logo > span > span:last-child { display: none; }
 }

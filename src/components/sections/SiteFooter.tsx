@@ -1,12 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { brand, footer, openSource, story } from "~/content/site";
-import { AppIcon } from "~/components/ui/AppIcon";
 import { Avatar } from "~/components/ui/Avatar";
-import { Button } from "~/components/ui/Button";
 import { CommandLine } from "~/components/ui/CommandLine";
 import { Container } from "~/components/ui/Container";
 import { GithubLogo } from "~/components/ui/FrameworkLogo";
+import { Wordmark } from "~/components/ui/Wordmark";
 import s from "./SiteFooter.module.css";
 
 /**
@@ -35,14 +34,15 @@ export function SiteFooter() {
         <div className={s.top}>
           <div className={s.brand}>
             <Link to="/" className={s.logo} aria-label={`${brand.name} home`}>
-              <AppIcon size={30} />
-              {brand.name}
+              <Wordmark size={30} />
             </Link>
             <p className={s.tag}>{footer.tagline}</p>
-            <CommandLine command={footer.install} onCopy={copyInstall} copied={copied} className={s.install} />
-            <Button href={openSource.repo} target="_blank" rel="noreferrer" variant="ghost" icon={GithubLogo} className={s.star}>
-              {openSource.star.label}
-            </Button>
+            <div className={s.installRow}>
+              <CommandLine command={footer.install} onCopy={copyInstall} copied={copied} className={s.install} />
+              <a href={openSource.repo} target="_blank" rel="noreferrer" className={s.star} aria-label={openSource.star.label} title={openSource.star.label}>
+                <GithubLogo size={18} />
+              </a>
+            </div>
           </div>
 
           <div className={s.columns}>
@@ -70,7 +70,7 @@ export function SiteFooter() {
         <div className={s.base}>
           <p className={s.by}>
             {story.makers.map((m) => (
-              <Avatar key={m.name} initial={m.initial} emoji={m.emoji} colors={m.colors} size="sm" />
+              <Avatar key={m.name} initial={m.initial} emoji={m.emoji} image={m.image} colors={m.colors} size="md" />
             ))}
             {footer.madeBy}
           </p>

@@ -13,6 +13,7 @@ export const Route = createFileRoute("/_site/docs/")({
       title: `Docs: get started with ${brand.name}`,
       description: "Install FM Icons for React, Vue, Svelte, React Native or vanilla JS, or use the raw SVGs from the CDN. Props, styles, accessibility and more.",
       path: "/docs",
+      image: "docs",
     }),
   component: DocsIntro,
 });

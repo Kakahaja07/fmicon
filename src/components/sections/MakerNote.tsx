@@ -8,11 +8,11 @@ import s from "./MakerNote.module.css";
 export function MakerNote() {
   const [maker] = story.makers;
   return (
-    <section className={s.section} aria-labelledby="story-title">
+    <section id="story" className={s.section} aria-labelledby="story-title">
       <Container>
         <Reveal className={s.card}>
           <div className={s.who}>
-            <Avatar initial={maker.initial} emoji={maker.emoji} colors={maker.colors} size="lg" />
+            <Avatar initial={maker.initial} emoji={maker.emoji} image={maker.image} colors={maker.colors} size="lg" />
             <div>
               <b className={s.sign}>{maker.name}</b>
               <small className={s.role}>{maker.role}</small>

@@ -36,11 +36,13 @@ const site = brand.siteUrl.replace(/\/$/, "");
 const categoryLabel = new Map<string, string>(freeIconsMeta.categories.map((c) => [c.slug, c.label]));
 export const labelForCategory = (slug: string) => categoryLabel.get(slug) ?? humanName(slug);
 
-type HeadParts = { title: string; description: string; path: string; jsonLd?: object[] };
+/** `image`: a share card from public/og (built by `npm run social`), e.g. "docs". */
+type HeadParts = { title: string; description: string; path: string; jsonLd?: object[]; image?: "home" | "docs" | "styles" };
 
 /** Title, description, canonical, Open Graph and structured data for one page. */
-export function pageHead({ title, description, path, jsonLd = [] }: HeadParts) {
+export function pageHead({ title, description, path, jsonLd = [], image = "home" }: HeadParts) {
   const url = site + path;
+  const card = `${site}/og/${image}.png`;
   return {
     meta: [
       { title },
@@ -50,6 +52,8 @@ export function pageHead({ title, description, path, jsonLd = [] }: HeadParts) {
       { property: "og:url", content: url },
       { name: "twitter:title", content: title },
       { name: "twitter:description", content: description },
+      { property: "og:image", content: card },
+      { name: "twitter:image", content: card },
     ],
     links: [{ rel: "canonical", href: url }],
     scripts: jsonLd.map((data) => ({ type: "application/ld+json", children: JSON.stringify(data) })),
@@ -78,6 +82,7 @@ export function styleHead(style: IconStyle) {
     description: `${freeIconsMeta.total} free, open-source ${label.toLowerCase()} icons for apps and websites. Download SVG or PNG, or copy React, Vue, Svelte and Flutter code. MIT licensed, part of FM Icons.`,
     // Linear is the library's default view, so /icons is its canonical home.
     path: stylePath(style),
+    image: "styles",
     jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }, { name: `${label} icons`, path: stylePath(style) }])],
   });
 }

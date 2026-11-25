@@ -198,7 +198,7 @@ export const story = {
     "So I gathered one set, gave every icon eight styles, and made it searchable in a single place.",
     "Then I gave it away. FM Icons is free and open source, so you can use it in anything you build, and help make it better.",
   ],
-  makers: [{ name: "Prashant Sharma", role: "Maker", initial: "P", emoji: "🧑‍💻", colors: ["#ffd29a", "#ff8f6b"] as const }],
+  makers: [{ name: "Prashant Sharma", role: "Maker", initial: "P", emoji: "🧑‍💻", image: "/prashant.png", colors: ["#ffd29a", "#ff8f6b"] as const }],
   ps: "P.S. Missing an icon? Open an issue on GitHub and tell me which one.",
 };
 
@@ -355,7 +355,16 @@ export const footer = {
         { label: "Request an icon", href: `${REPO}/issues`, external: true },
         { label: "Contribute", href: `${REPO}/pulls`, external: true },
         { label: "MIT licence", href: `${REPO}/blob/main/LICENSE`, external: true },
+      ],
+    },
+    {
+      title: "About",
+      links: [
+        { label: "Our story", href: "/#story" },
+        { label: "Features", href: "/#features" },
         { label: "FAQ", href: "/#faq" },
+        { label: "Changelog", href: `${REPO}/commits/main`, external: true },
+        { label: "Contact", href: `${REPO}/issues/new`, external: true },
       ],
     },
   ] satisfies Array<{ title: string; links: Array<{ label: string; href: string; external?: boolean }> }>,

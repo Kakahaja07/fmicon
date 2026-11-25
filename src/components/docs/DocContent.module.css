@@ -13,11 +13,19 @@
   scroll-margin-top: 84px;
 }
 
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .h1 {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 34px;
+  gap: 10px;
+  font-size: 28px;
   font-weight: var(--weight-strong);
   line-height: 1.15;
   letter-spacing: -0.025em;

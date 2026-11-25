@@ -22,7 +22,11 @@ export const Route = createRootRoute({
       { property: "og:title", content: title },
       { property: "og:description", content: brand.description },
       { property: "og:url", content: brand.siteUrl },
+      { property: "og:image", content: `${brand.siteUrl}/og/home.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${brand.siteUrl}/og/home.png` },
     ],
     links: [
       { rel: "preload", href: goeistFont, as: "font", type: "font/woff2", crossOrigin: "anonymous" },

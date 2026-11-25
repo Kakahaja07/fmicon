@@ -1,0 +1,120 @@
+.picker {
+  position: relative;
+  width: calc(100% - 12px);
+  margin: 4px 0 4px 12px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 38px;
+  padding: 0 10px 0 12px;
+  border: 0;
+  border-radius: 11px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+  transition: box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.button:hover,
+.button[aria-expanded="true"] {
+  background: var(--fill-translucent);
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.label {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.placeholderIcon {
+  color: var(--text-3);
+}
+
+.chevron {
+  color: var(--text-3);
+  transition: transform 200ms var(--ease-out);
+}
+
+.button[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+/* Menu */
+.menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  display: grid;
+  gap: 1px;
+  padding: 5px;
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline), var(--shadow-pop);
+  transform-origin: top center;
+  animation: menu-in 160ms var(--ease-out);
+}
+
+@keyframes menu-in {
+  from { opacity: 0; transform: scale(0.97) translateY(-4px); }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 36px;
+  padding: 0 10px 0 6px;
+  border-radius: 9px;
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  outline: none;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--text) 6%, transparent);
+}
+
+.item:hover,
+.item:focus-visible {
+  background: var(--fill-translucent);
+  color: var(--text);
+}
+
+.item[data-current] {
+  color: var(--text);
+  font-weight: var(--weight-medium);
+}
+
+.check {
+  margin-left: auto;
+  color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu { animation: none; }
+}
