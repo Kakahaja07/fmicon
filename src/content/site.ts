@@ -11,7 +11,12 @@ import type { IconStyle } from "~/lib/svg";
 import { freeIconsMeta } from "./freeIcons.meta";
 
 // Counts come from the generated icon data, so copy stays right when the set changes.
-const TOTAL = freeIconsMeta.total;
+/**
+ * How the landing page states the size of the set. Rounded on purpose ("800+"), so the marketing copy
+ * stays true as icons are added. Bump it when a release passes the next milestone
+ * (v1.1: 891 icons → "800+"). The icon tool and SEO pages use the exact freeIconsMeta.total.
+ */
+export const ICON_COUNT = "800+";
 const STYLES = freeIconsMeta.styles.length;
 const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"][n] ?? String(n);
 
@@ -20,8 +25,9 @@ export const brand = {
   // Shown as a badge next to the name in the icon browser
   version: "1.1",
   siteUrl: "https://fmicon.dev",
-  description:
-    `${TOTAL} free, open-source icons in ${STYLES} styles. Copy them as SVG, or install them for React, Vue, Svelte and React Native.`,
+  /** Homepage title: "FMicon" with a capital FM, the rest lower case */
+  title: "FMicon - Open-Source Icon Library for Designers & Developers",
+  description: `FMicon - Free open-source SVG icons. ${ICON_COUNT} handcrafted icons in ${STYLES} styles for React, Vue, Svelte, React Native, Flutter, Figma & more.`,
 };
 
 /* ------------------------------ Open source ------------------------------ */
@@ -46,9 +52,9 @@ export const openSource = {
   star: { label: "Star on GitHub", href: REPO },
   // Home section and the panel under the icon browser
   title: "Free for everyone, forever",
-  text: `Every one of the ${TOTAL} icons, in all ${STYLES} styles, is free for personal and commercial work. No sign-up, no paywall: install a package or copy the SVG.`,
+  text: `Every one of the ${ICON_COUNT} icons, in all ${STYLES} styles, is free for personal and commercial work. No sign-up, no paywall: install a package or copy the SVG.`,
   perks: [
-    { icon: I.Element4Icon, color: "blue", text: `${TOTAL} icons × ${STYLES} styles` },
+    { icon: I.Element4Icon, color: "blue", text: `${ICON_COUNT} icons × ${STYLES} styles` },
     { icon: I.CodeIcon, color: "green", text: "Packages for React, Vue, Svelte and React Native" },
     { icon: I.GlobalIcon, color: "purple", text: "Link any SVG or PNG from cdn.fmicon.dev" },
     { icon: I.ShieldTickIcon, color: "orange", text: "MIT licence, use it anywhere" },
@@ -77,7 +83,7 @@ import { Home } from "fmicon-vue";
 
 el.innerHTML = toSvg(home, { size: 24, variant: "bold" });` },
   ] as const,
-  browse: { label: `Browse all ${TOTAL} icons`, href: "/icons" },
+  browse: { label: `Browse all ${ICON_COUNT} icons`, href: "/icons" },
 };
 
 /** `id` is a section on the home page; `page` is its own route. `optional` links hide on phones. */
@@ -99,10 +105,10 @@ export const iconTool = {
   seo: {
     title: "Icon browser",
     description:
-      `Search, preview, recolour and copy ${TOTAL} free, open-source icons in ${STYLES} styles, including Glass and Duotone. Paste as SVG or code, or download the file.`,
+      `Search, preview, recolour and copy ${ICON_COUNT} free, open-source icons in ${STYLES} styles, including Glass and Duotone. Paste as SVG or code, or download the file.`,
   },
   toolbar: { title: "fmicon", cta: "Star on GitHub", home: "Back to fmicon home" },
-  windowLink: `Browse all ${TOTAL} icons`,
+  windowLink: `Browse all ${ICON_COUNT} icons`,
 };
 
 /* ---------------------------------- Hero --------------------------------- */
@@ -115,9 +121,9 @@ export const hero = {
   titleDisplay: "Every icon You Need, One Search Away",
   // Underlined in pencil inside the sub line
   subHighlight: "Figma, React, Vue or Flutter",
-  sub: `${TOTAL} free, open-source icons in ${STYLES} styles. Find one in a keystroke, recolour it, and drop it into Figma, React, Vue or Flutter.`,
+  sub: `${ICON_COUNT} free, open-source icons in ${STYLES} styles. Find one in a keystroke, recolour it, and drop it into Figma, React, Vue or Flutter.`,
   search: {
-    placeholder: `Search ${TOTAL} icons, e.g. wallet, arrow, chat`,
+    placeholder: `Search ${ICON_COUNT} icons, e.g. wallet, arrow, chat`,
     popularLabel: "Popular:",
     popular: ["home", "wallet", "arrow", "message", "setting", "calendar"],
   },
@@ -129,7 +135,7 @@ export const hero = {
 
 // Real numbers from the icon set, shown right under the hero.
 export const stats = [
-  { value: `${TOTAL}`, label: "icons, drawn on one grid" },
+  { value: ICON_COUNT, label: "icons, drawn on one grid" },
   { value: `${STYLES}`, label: "styles of every icon" },
   { value: "8", label: "ways to use them, from React to Flutter" },
   { value: "MIT", label: "licence, free forever" },
@@ -141,18 +147,18 @@ export const library = {
   sidebar: {
     libraryLabel: "My library",
     library: [
-      { name: "All icons", count: (TOTAL * STYLES).toLocaleString("en-GB"), color: "blue" },
+      { name: "All icons", count: "7,000+", color: "blue" },
       { name: "Favourites", count: "64", color: "pink" },
       { name: "Recently used", count: "20", color: "orange" },
     ],
     setsLabel: "Icon sets",
     sets: [
-      { name: "Linear", count: String(TOTAL), color: "indigo", active: true },
-      { name: "Bold", count: String(TOTAL), color: "blue" },
-      { name: "Twotone", count: String(TOTAL), color: "teal" },
-      { name: "Bulk", count: String(TOTAL), color: "green" },
-      { name: "Glass", count: String(TOTAL), color: "red" },
-      { name: "Duotone", count: String(TOTAL), color: "yellow" },
+      { name: "Linear", count: ICON_COUNT, color: "indigo", active: true },
+      { name: "Bold", count: ICON_COUNT, color: "blue" },
+      { name: "Twotone", count: ICON_COUNT, color: "teal" },
+      { name: "Bulk", count: ICON_COUNT, color: "green" },
+      { name: "Glass", count: ICON_COUNT, color: "red" },
+      { name: "Duotone", count: ICON_COUNT, color: "yellow" },
     ],
   } satisfies Record<string, unknown>,
   activeSet: "Linear",
@@ -266,7 +272,7 @@ export const features = {
     { icon: I.CodeTwotoneIcon, color: "green", title: "Packages for your stack", description: "React, Vue, Svelte and React Native, tree-shakeable and typed.", badge: "New" },
     { icon: I.CloudChangeTwotoneIcon, color: "teal", title: "CDN ready", description: "Link any icon straight from cdn.fmicon.dev, no install needed." },
   ] satisfies Array<{ icon: IconComponent; color: PaletteColor; title: string; description: string; badge?: string }>,
-  more: { label: `Browse all ${TOTAL} icons`, href: "/icons" },
+  more: { label: `Browse all ${ICON_COUNT} icons`, href: "/icons" },
 };
 
 /* -------------------------------- Sampler -------------------------------- */
@@ -299,7 +305,7 @@ export const faq = {
   items: [
     {
       q: "Is fmicon really free?",
-      a: `Yes. All ${TOTAL} icons in all ${STYLES} styles are free for personal and commercial work, including client projects and apps you sell. There is no paid tier and no sign-up.`,
+      a: `Yes. All ${ICON_COUNT} icons in all ${STYLES} styles are free for personal and commercial work, including client projects and apps you sell. There is no paid tier and no sign-up.`,
     },
     {
       q: "What licence is it under?",
@@ -331,7 +337,7 @@ export const faq = {
 /* --------------------------------- Footer -------------------------------- */
 
 export const footer = {
-  tagline: `${TOTAL} free, open-source icons in ${STYLES} styles, from clean linear to 3D glass. Copy them as SVG, PNG or code, and use them anywhere. Made for designers and developers who ship.`,
+  tagline: `${ICON_COUNT} free, open-source icons in ${STYLES} styles, from clean linear to 3D glass. Copy them as SVG, PNG or code, and use them anywhere. Made for designers and developers who ship.`,
   install: "npm i fmicon-react",
   columns: [
     {

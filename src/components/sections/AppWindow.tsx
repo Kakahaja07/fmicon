@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
-import { iconTool, library } from "~/content/site";
+import { ICON_COUNT, iconTool, library } from "~/content/site";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { ArrowRightIcon, CopyIcon, SearchNormalIcon, TickCircleIcon } from "~/components/icons/Icons";
 import { ColorSwatches, type Swatch } from "~/components/ui/ColorSwatches";
@@ -103,7 +103,7 @@ export function AppWindow() {
           >
             <SvgIcon body={freeIconsMeta.samples[st]} size={14} />
             {styleLabels[st]}
-            <span>{freeIconsMeta.total}</span>
+            <span>{ICON_COUNT}</span>
           </button>
         ))}
       </aside>
