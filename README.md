@@ -63,7 +63,7 @@ import { Home, Heart } from "@fmicons/react";
 **3. Link it from the web (no install).** Put this tag in your page and change the style and the name:
 
 ```html
-<img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/linear/home.svg" width="24" alt="Home" />
+<img src="https://cdn.fmicon.dev/svg/linear/home.svg" width="24" alt="Home" />
 ```
 
 ## Packages
@@ -134,14 +134,16 @@ import { Home, Heart } from "@fmicons/react";
 
 </div>
 
-<details>
-<summary><b>Code for Vue, Svelte, React Native and plain JavaScript</b></summary>
+### Code for every framework
 
-<br>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Vue**
+<img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" width="16" alt=""> **Vue**
 
 ```vue
+<!-- npm i @fmicons/vue -->
 <script setup>
 import { Home } from "@fmicons/vue";
 </script>
@@ -151,9 +153,13 @@ import { Home } from "@fmicons/vue";
 </template>
 ```
 
-**Svelte**
+</td>
+<td width="50%" valign="top">
+
+<img src="https://cdn.simpleicons.org/svelte/FF3E00" width="16" alt=""> **Svelte**
 
 ```svelte
+<!-- npm i @fmicons/svelte -->
 <script>
   import { Icon } from "@fmicons/svelte";
   import { home } from "@fmicons/core";
@@ -162,23 +168,36 @@ import { Home } from "@fmicons/vue";
 <Icon icon={home} size={24} variant="bold" />
 ```
 
-**React Native**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<img src="https://cdn.simpleicons.org/react/61DAFB" width="16" alt=""> **React Native**
 
 ```jsx
+// npm i @fmicons/react-native react-native-svg
 import { Home } from "@fmicons/react-native";
 
 <Home size={24} variant="bold" color="#1265ec" />
 ```
 
-**Plain JavaScript**
+</td>
+<td width="50%" valign="top">
+
+<img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="16" alt=""> **Plain JavaScript**
 
 ```js
+// npm i @fmicons/core
 import { home, toSvg } from "@fmicons/core";
 
-document.querySelector("#icon").innerHTML = toSvg(home, { size: 24, variant: "bold" });
+const svg = toSvg(home, { variant: "bold" });
+document.querySelector("#icon").innerHTML = svg;
 ```
 
-</details>
+</td>
+</tr>
+</table>
 
 ## The 8 styles
 
@@ -223,8 +242,43 @@ Yes. [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) and tell 
 **I found a mistake. What do I do?**
 [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) with the icon's name and style. Pull requests are welcome too.
 
-**How can I help?**
-Read the [contributing guide](CONTRIBUTING.md). It shows how to report a problem, ask for an icon, or fix the website and packages.
+## Contributing
+
+FM Icons is open source, and anyone can help make it better. You don't need to write code to help.
+
+<table>
+<tr>
+<td width="33%" align="center" valign="top">
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/danger.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/danger.svg" width="40" alt=""></picture><br>
+<b>Report a problem</b><br>
+<sub>An icon looks wrong or a package breaks.</sub><br><br>
+<a href="https://github.com/Kakahaja07/fmicons/issues/new">Open an issue →</a>
+</td>
+<td width="33%" align="center" valign="top">
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/lamp-on.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/lamp-on.svg" width="40" alt=""></picture><br>
+<b>Ask for an icon</b><br>
+<sub>Tell us which icon you need and where you'd use it.</sub><br><br>
+<a href="https://github.com/Kakahaja07/fmicons/issues/new">Request an icon →</a>
+</td>
+<td width="33%" align="center" valign="top">
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/code.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/code.svg" width="40" alt=""></picture><br>
+<b>Send a fix</b><br>
+<sub>Improve the website, docs or packages.</sub><br><br>
+<a href="CONTRIBUTING.md">Read the guide →</a>
+</td>
+</tr>
+</table>
+
+Run the website on your computer:
+
+```sh
+git clone https://github.com/Kakahaja07/fmicons.git
+cd fmicons
+npm install
+npm run dev   # open http://localhost:3000
+```
+
+The **[contributing guide](CONTRIBUTING.md)** has every command, a map of where things are, and the steps for sending a pull request.
 
 ## Licence
 
@@ -238,35 +292,3 @@ The code is free under the [MIT licence](LICENSE). The icon shapes come from the
   <sub>Made by <b>Prashant Sharma</b>, who loves icons.<br>If FM Icons helps you, please give it a ⭐ so more people can find it.</sub>
 </div>
 
----
-
-<details>
-<summary><b>For contributors: working on the website and packages</b></summary>
-
-<br>
-
-The website at [fmicon.dev](https://fmicon.dev) lives in this repository too. It uses TanStack Start, React and CSS Modules, and every page is built as a plain HTML file.
-
-```sh
-npm install
-npm run dev          # start the site at http://localhost:3000
-npm run build        # build the site into dist/client
-npm run packages     # rebuild the npm packages in packages/
-npm run readme       # rebuild the README images (and the website copy of the showcase)
-npm run articles     # rebuild the icon page articles from scripts/data/
-npm run social       # rebuild the share images in public/og/
-npm run cdn:build    # make SVG and PNG files for cdn.fmicon.dev in dist-cdn/
-npm run cdn:upload   # upload dist-cdn/ to Cloudflare R2 (needs R2 keys, see the script)
-```
-
-| To change… | Edit |
-|---|---|
-| Colours, fonts, corners, shadows | `src/styles/tokens.css` |
-| Any text, link or FAQ | `src/content/site.ts` |
-| Docs pages | `src/content/docs.ts` |
-| Icon page and library articles | `scripts/data/`, `src/content/iconArticle.ts`, `src/content/libraryArticle.ts` |
-| The npm packages | `scripts/build-packages.mjs` and `packages/<name>/runtime/`, then `npm run packages` |
-
-`npm run icons` and `npm run free-icons` read the original artwork from a local folder (see the top of each script), so most contributors only need `dev`, `build` and `packages`.
-
-</details>
