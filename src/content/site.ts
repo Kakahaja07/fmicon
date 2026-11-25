@@ -325,34 +325,40 @@ export const closingCta = {
 /* --------------------------------- Footer -------------------------------- */
 
 export const footer = {
-  tagline: "Free, open-source icons in eight styles. Made for designers and developers who ship.",
+  tagline: `${TOTAL} free, open-source icons in ${STYLES} styles. Made for designers and developers who ship.`,
+  install: "npm i @fmicons/react",
   columns: [
     {
       title: "Icons",
       links: [
-        { label: "Browse icons", href: "/icons" },
+        { label: "Browse all icons", href: "/icons" },
+        { label: "Linear icons", href: "/icons" },
+        { label: "Bold icons", href: "/icons/bold" },
         { label: "Glass icons", href: "/icons/glass" },
         { label: "Duotone icons", href: "/icons/duotone" },
-        { label: "Features", href: "/#features" },
+      ],
+    },
+    {
+      title: "Docs",
+      links: [
+        { label: "Introduction", href: "/docs" },
+        { label: "React", href: "/docs/react" },
+        { label: "Vue", href: "/docs/vue" },
+        { label: "Svelte", href: "/docs/svelte" },
+        { label: "Raw SVGs and CDN", href: "/docs/svg" },
       ],
     },
     {
       title: "Open source",
       links: [
-        { label: "GitHub", href: REPO },
-        { label: "Report an issue", href: `${REPO}/issues` },
-        { label: "Docs", href: "/docs" },
-        { label: "Packages", href: "/#open-source" },
+        { label: "GitHub", href: REPO, external: true },
+        { label: "Request an icon", href: `${REPO}/issues`, external: true },
+        { label: "Contribute", href: `${REPO}/pulls`, external: true },
+        { label: "MIT licence", href: `${REPO}/blob/main/LICENSE`, external: true },
         { label: "FAQ", href: "/#faq" },
       ],
     },
-    {
-      title: "Legal",
-      links: [
-        { label: "MIT licence", href: `${REPO}/blob/main/LICENSE` },
-      ],
-    },
-  ],
+  ] satisfies Array<{ title: string; links: Array<{ label: string; href: string; external?: boolean }> }>,
   madeBy: "Made by Prashant Sharma, who loves icons.",
-  copyright: `© ${new Date().getFullYear()} FM Icons`,
+  copyright: `© ${new Date().getFullYear()} FM Icons · MIT licence`,
 };

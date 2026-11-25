@@ -143,6 +143,7 @@
 }
 
 .brandName {
+  white-space: nowrap;
   font-size: var(--text-md);
   font-weight: var(--weight-strong);
   letter-spacing: -0.01em;
@@ -175,4 +176,7 @@
   .logo { margin-right: 0; }
   .divider { display: none; }
   .cta { padding: 0 14px; }
+  .header[data-variant="bar"] .nav { width: calc(100% - 24px); }
+  .header[data-variant="bar"] .logo { margin-right: 6px; }
+  .header[data-variant="bar"] .brandName { display: none; }
 }

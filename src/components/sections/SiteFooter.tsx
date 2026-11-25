@@ -1,42 +1,87 @@
-import { footer, story } from "~/content/site";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "@tanstack/react-router";
+import { brand, footer, openSource, story } from "~/content/site";
+import { AppIcon } from "~/components/ui/AppIcon";
 import { Avatar } from "~/components/ui/Avatar";
-import { BrandLogo } from "~/components/ui/BrandLogo";
+import { Button } from "~/components/ui/Button";
+import { CommandLine } from "~/components/ui/CommandLine";
 import { Container } from "~/components/ui/Container";
+import { GithubLogo } from "~/components/ui/FrameworkLogo";
 import s from "./SiteFooter.module.css";
 
+/**
+ * Brand, install command and GitHub on the left; Icons, Docs and Open source links on the right;
+ * maker and licence in a slim bottom row.
+ */
 export function SiteFooter() {
-  return (
-    <Container as="footer" className={s.footer}>
-      <div className={s.grid}>
-        <div>
-          <BrandLogo />
-          <p className={s.tag}>{footer.tagline}</p>
-        </div>
-        {footer.columns.map((col) => (
-          <nav key={col.title} className={s.col} aria-label={col.title}>
-            <h3>{col.title}</h3>
-            <ul>
-              {col.links.map((link) => (
-                <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        ))}
-      </div>
+  const [copied, setCopied] = useState(false);
+  const timer = useRef(0);
+  useEffect(() => () => window.clearTimeout(timer.current), []);
 
-      <div className={s.base}>
-        <p className={s.by}>
-          <span className={s.avatars}>
+  const copyInstall = async () => {
+    try {
+      await navigator.clipboard.writeText(footer.install);
+      setCopied(true);
+      window.clearTimeout(timer.current);
+      timer.current = window.setTimeout(() => setCopied(false), 1600);
+    } catch {
+      /* clipboard blocked: the command is still selectable */
+    }
+  };
+
+  return (
+    <footer className={s.footer}>
+      <Container>
+        <div className={s.top}>
+          <div className={s.brand}>
+            <Link to="/" className={s.logo} aria-label={`${brand.name} home`}>
+              <AppIcon size={30} />
+              {brand.name}
+            </Link>
+            <p className={s.tag}>{footer.tagline}</p>
+            <CommandLine command={footer.install} onCopy={copyInstall} copied={copied} className={s.install} />
+            <Button href={openSource.repo} target="_blank" rel="noreferrer" variant="ghost" icon={GithubLogo} className={s.star}>
+              {openSource.star.label}
+            </Button>
+          </div>
+
+          <div className={s.columns}>
+            {footer.columns.map((col) => (
+              <nav key={col.title} className={s.col} aria-label={col.title}>
+                <h3>{col.title}</h3>
+                <ul>
+                  {col.links.map((link) => (
+                    <li key={link.label}>
+                      {"external" in link && link.external ? (
+                        <a href={link.href} target="_blank" rel="noreferrer">
+                          {link.label}
+                        </a>
+                      ) : (
+                        <a href={link.href}>{link.label}</a>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            ))}
+          </div>
+        </div>
+
+        <div className={s.base}>
+          <p className={s.by}>
             {story.makers.map((m) => (
               <Avatar key={m.name} initial={m.initial} emoji={m.emoji} colors={m.colors} size="sm" />
             ))}
-          </span>
-          {footer.madeBy}
-        </p>
-        <p>{footer.copyright}</p>
-      </div>
-    </Container>
+            {footer.madeBy}
+          </p>
+          <p className={s.copy}>
+            {footer.copyright}
+            <a href={openSource.repo} target="_blank" rel="noreferrer" className={s.gh} aria-label="FM Icons on GitHub">
+              <GithubLogo size={16} />
+            </a>
+          </p>
+        </div>
+      </Container>
+    </footer>
   );
 }
