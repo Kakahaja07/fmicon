@@ -52,7 +52,7 @@ export function SiteHeader() {
     <header className={s.header} data-variant={bar ? "bar" : undefined} data-scrolled={scrolled || undefined}>
       <nav className={s.nav} aria-label="Primary" data-scrolled={scrolled || undefined}>
         <a className={s.logo} href="/" aria-label={`${brand.name} home`}>
-          {bar ? <Wordmark size={28} /> : <AppIcon size={32} />}
+          {bar ? <Wordmark size={28} /> : <AppIcon size={28} />}
         </a>
 
         <div className={s.links} onMouseLeave={() => setHovered(null)}>
