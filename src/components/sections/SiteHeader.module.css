@@ -108,6 +108,66 @@
   padding: 0 14px 0 16px;
 }
 
+/* ---- Docs: full-width bar, content lined up with the docs columns ---- */
+.header[data-variant="bar"] {
+  padding: 0;
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.6);
+  backdrop-filter: blur(20px) saturate(1.6);
+  border-bottom: 1px solid transparent;
+  pointer-events: auto;
+  transition: border-color 200ms ease;
+}
+
+.header[data-variant="bar"][data-scrolled] {
+  border-bottom-color: var(--hairline);
+}
+
+.header[data-variant="bar"] .nav {
+  width: min(1240px, 100% - 48px);
+  height: 60px;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+}
+
+.header[data-variant="bar"] .logo {
+  width: auto;
+  height: 36px;
+  gap: 8px;
+  display: flex;
+  margin-right: 20px;
+}
+
+.brandName {
+  font-size: var(--text-md);
+  font-weight: var(--weight-strong);
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.header[data-variant="bar"] .link {
+  height: 32px;
+  padding: 0 12px;
+}
+
+.header[data-variant="bar"] .pill {
+  top: 2px;
+  height: 32px;
+}
+
+.header[data-variant="bar"] .divider {
+  display: none;
+}
+
+.header[data-variant="bar"] .cta {
+  margin-left: auto;
+  height: 34px;
+}
+
 @media (max-width: 640px) {
   .header { padding-inline: 10px; }
   .optional { display: none; }

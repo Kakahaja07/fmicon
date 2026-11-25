@@ -1,6 +1,6 @@
 .article {
   display: grid;
-  gap: 48px;
+  gap: 36px;
   max-width: 760px;
   font-size: 15px;
   line-height: 1.7;
@@ -10,7 +10,7 @@
 .section {
   display: grid;
   gap: 14px;
-  scroll-margin-top: 96px;
+  scroll-margin-top: 84px;
 }
 
 .h1 {

@@ -20,6 +20,8 @@ export function SiteHeader() {
   const pageLink = nav.links.find((l) => l.page && pathname.startsWith(l.href));
   const active = pageLink ? pageLink.id : pathname === "/" ? section : "";
   const scrolled = useScrolled();
+  // Docs get a full-width bar (lined up with the docs columns) instead of the floating pill
+  const bar = pathname.startsWith("/docs");
   const [hovered, setHovered] = useState<string | null>(null);
   const [pill, setPill] = useState<Pill | null>(null);
   const [ready, setReady] = useState(false);
@@ -46,10 +48,11 @@ export function SiteHeader() {
   }, [pill, ready]);
 
   return (
-    <header className={s.header}>
+    <header className={s.header} data-variant={bar ? "bar" : undefined} data-scrolled={scrolled || undefined}>
       <nav className={s.nav} aria-label="Primary" data-scrolled={scrolled || undefined}>
         <a className={s.logo} href="/" aria-label={`${brand.name} home`}>
-          <AppIcon size={32} />
+          <AppIcon size={bar ? 28 : 32} />
+          {bar && <span className={s.brandName}>{brand.name}</span>}
         </a>
 
         <div className={s.links} onMouseLeave={() => setHovered(null)}>
