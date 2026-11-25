@@ -1,8 +1,6 @@
 .article {
   display: grid;
   gap: 44px;
-  max-width: 820px;
-  margin: 0 auto;
   padding-top: 40px;
   border-top: 1px solid var(--hairline);
   font-size: 15px;

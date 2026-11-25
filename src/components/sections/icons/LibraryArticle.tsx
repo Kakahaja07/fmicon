@@ -9,6 +9,7 @@ import { styleLabels, type IconStyle } from "~/lib/svg";
 import { useIconStyle } from "~/hooks/useIconStyle";
 import keywordPlan from "../../../../scripts/data/icon-keywords.json";
 import s from "./LibraryArticle.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 // The phrase people search for each curated icon, e.g. "hourglass icon" for "timer"
 const plan = keywordPlan as unknown as Record<string, [string, string[], string]>;
@@ -34,7 +35,7 @@ export function LibraryArticle({ style }: { style: IconStyle }) {
   return (
     <article className={s.article}>
       <section className={s.section}>
-        <h2 className={s.lead}>{head.title}</h2>
+        <h2 className={s.lead}>{titleCase(head.title)}</h2>
         {head.intro.map((p) => (
           <p key={p}>{p}</p>
         ))}
@@ -46,7 +47,7 @@ export function LibraryArticle({ style }: { style: IconStyle }) {
       </section>
 
       <section className={s.section}>
-        <h2>{copy.styles.title}</h2>
+        <h2>{titleCase(copy.styles.title)}</h2>
         <p>{copy.styles.text}</p>
         <div className={s.styles}>
           {(freeIconsMeta.styles as readonly IconStyle[]).map((st) => (
@@ -62,7 +63,7 @@ export function LibraryArticle({ style }: { style: IconStyle }) {
       </section>
 
       <section className={s.section}>
-        <h2>{copy.popular.title}</h2>
+        <h2>{titleCase(copy.popular.title)}</h2>
         <p>{copy.popular.text}</p>
         <ul className={s.popular}>
           {popular.map((p) => (
@@ -77,7 +78,7 @@ export function LibraryArticle({ style }: { style: IconStyle }) {
       </section>
 
       <section className={s.section}>
-        <h2>{copy.faqTitle}</h2>
+        <h2>{titleCase(copy.faqTitle)}</h2>
         <div>
           {faq.map((f, i) => (
             <AccordionItem key={f.q} question={f.q} defaultOpen={i === 0}>

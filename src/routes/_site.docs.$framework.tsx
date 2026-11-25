@@ -17,7 +17,9 @@ export const Route = createFileRoute("/_site/docs/$framework")({
     const page = docPages.find((p) => p.id === params.framework);
     if (!page) return {};
     return pageHead({
-      title: `${page.label} icons: install and use ${brand.name}`,
+      title: page.install
+        ? `${page.label} Icons: Free Icon Package & Setup Guide | ${brand.name}`
+        : `${page.label} Icons: Free Icons & Setup Guide | ${brand.name}`,
       description: page.description.replace(/`/g, ""),
       path: `/docs/${page.id}`,
       image: "docs",

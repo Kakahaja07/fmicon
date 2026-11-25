@@ -2,6 +2,7 @@ import { brand } from "~/content/site";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { iconArticle } from "~/content/iconArticle";
 import { libraryArticle, styleKeywords } from "~/content/libraryArticle";
+import { titleCase } from "./titleCase";
 import type { IconArticle } from "./iconArticle";
 import { humanName, strokeWeights, styleLabels, type IconStyle, type StrokeWeight } from "./svg";
 
@@ -32,6 +33,9 @@ export function validateToolSearch(raw: Record<string, unknown>): ToolSearch {
 }
 
 /* --------------------------------- Meta ---------------------------------- */
+
+// The current year in titles signals fresh content in search results; the site rebuilds often.
+const YEAR = new Date().getFullYear();
 
 const site = brand.siteUrl.replace(/\/$/, "");
 const categoryLabel = new Map<string, string>(freeIconsMeta.categories.map((c) => [c.slug, c.label]));
@@ -77,7 +81,7 @@ export function libraryHead() {
   const total = freeIconsMeta.total;
   const styles = freeIconsMeta.styles.length;
   return pageHead({
-    title: `Free SVG Icons: ${total} open-source icons in ${styles} styles | ${brand.name}`,
+    title: `${total} Free SVG Icons in ${styles} Styles (${YEAR}) | ${brand.name}`,
     description: `Free icons for websites and apps: ${total} open-source SVG icons in ${styles} styles, including glass and duotone. Recolour, resize and copy as SVG, PNG, React, Vue or Svelte. MIT licence, no sign-up.`,
     path: "/icons",
     jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }]), faqLd(libraryArticle.faq())],
@@ -87,9 +91,8 @@ export function libraryHead() {
 export function styleHead(style: IconStyle) {
   const label = styleLabels[style];
   const { keyword, also } = styleKeywords[style];
-  const Keyword = keyword.charAt(0).toUpperCase() + keyword.slice(1);
   return pageHead({
-    title: `Free ${Keyword}: ${freeIconsMeta.total} ${label} SVG Icons | ${brand.name}`,
+    title: `${titleCase(`Free ${keyword}`)}: ${freeIconsMeta.total} SVG & PNG Icons | ${brand.name}`,
     description: `${freeIconsMeta.total} free ${keyword} (${also}) for apps and websites. Download SVG or PNG, or copy React, Vue and Svelte code. Open source, MIT licensed.`,
     path: stylePath(style),
     image: "styles",
@@ -116,7 +119,12 @@ export function iconHead(style: IconStyle, icon: { slug: string; name: string; c
   const name = humanName(icon.name);
   const path = iconPath(style, icon.slug);
   const primary = article?.primary ?? `${name.toLowerCase()} icon`;
-  const title = `${iconTitle(name, article?.primary)} · Free ${label} SVG & PNG | ${brand.name}`;
+  // e.g. "Refresh Icon: Free SVG, PNG & React | FM Icons"; other styles name theirs: "Refresh Icon (Glass): …"
+  // One bracket only: "Hourglass Icon (Timer, Glass)", "Refresh Icon (Glass)"
+  const base = titleCase(iconTitle(name, article?.primary));
+  const heading = style === "linear" ? base : base.endsWith(")") ? `${base.slice(0, -1)}, ${label})` : `${base} (${label})`;
+  const full = `${heading}: Free SVG, PNG & React | ${brand.name}`;
+  const title = full.length <= 62 ? full : `${heading}: Free SVG, PNG & React`;
   const lead = article ? article.intro.split(/(?<=\.)\s/)[0] + " " : "";
   const description = clip(`Free ${primary} in the ${label.toLowerCase()} style. ${lead}Download SVG, PNG or WebP, or copy React, Vue and Flutter code.`);
   const faq = article

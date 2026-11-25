@@ -3,6 +3,7 @@ import { Accordion, AccordionItem } from "~/components/ui/Accordion";
 import { Container } from "~/components/ui/Container";
 import { Reveal } from "~/components/ui/Reveal";
 import s from "./Faq.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 export function Faq() {
   return (
@@ -10,7 +11,7 @@ export function Faq() {
       <Container className={s.inner}>
         <Reveal>
           <h2 id="faq-title" className={s.title}>
-            {faq.title}
+            {titleCase(faq.title)}
           </h2>
           <Accordion>
             {faq.items.map((item) => (

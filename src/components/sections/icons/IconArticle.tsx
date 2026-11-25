@@ -23,6 +23,7 @@ import type { IconArticle as Article } from "~/lib/iconArticle";
 import { iconPath, labelForCategory, stylePath } from "~/lib/iconSeo";
 import { componentName, humanName, strokeStyles, styleLabels, type FreeIcon, type IconStyle } from "~/lib/svg";
 import s from "./IconArticle.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 type IconArticleProps = {
   icon: FreeIcon;
@@ -75,7 +76,7 @@ export function IconArticle({ icon, style, article, pairs, onNavigate }: IconArt
         <span className={s.h2Icon}>
           <Icon size={18} />
         </span>
-        {text}
+        {titleCase(text)}
       </h2>
     );
   };

@@ -8,6 +8,7 @@ import { SvgIcon } from "~/components/ui/SvgIcon";
 import { Tabs } from "~/components/ui/Tabs";
 import { styleLabels, type IconStyle } from "~/lib/svg";
 import s from "./DocContent.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 /** `code` spans written with backticks in the docs copy. */
 export function Inline({ text }: { text: string }) {
@@ -148,7 +149,7 @@ function Section({ section, page, first, actions }: { section: DocSection; page:
             <FrameworkLogo framework={page.logo} size={24} />
           </span>
         )}
-        {section.title}
+        {titleCase(section.title)}
       </Heading>
       {first && actions}
       </div>

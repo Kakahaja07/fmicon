@@ -8,6 +8,7 @@ import { HeroSearch } from "./HeroSearch";
 import { IconField } from "./IconField";
 import { StatsBand } from "./StatsBand";
 import s from "./Hero.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 /**
  * Icon-platform hero: a quiet wall of real icons behind, a search bar as the main action,
@@ -26,7 +27,7 @@ export function Hero() {
         </a>
 
         <h1 id="hero-title" className={s.title}>
-          {hero.title}
+          {titleCase(hero.title)}
         </h1>
         <p className={s.sub}>{hero.sub}</p>
 

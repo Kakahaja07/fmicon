@@ -9,6 +9,7 @@ import { Reveal } from "~/components/ui/Reveal";
 import { Tabs } from "~/components/ui/Tabs";
 import { paletteVar } from "~/lib/palette";
 import s from "./OpenSourcePanel.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 type OpenSourcePanelProps = {
   /** h2 on its own, h3 under a section heading */
@@ -52,7 +53,7 @@ export function OpenSourcePanel({ titleAs: Title = "h2", titleId }: OpenSourcePa
             {openSource.badge}
           </span>
           <Title id={titleId} className={s.title}>
-            {openSource.title}
+            {titleCase(openSource.title)}
           </Title>
           <p className={s.text}>{openSource.text}</p>
           <ul className={s.perks}>

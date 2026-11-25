@@ -4,7 +4,7 @@ import { brand } from "~/content/site";
 import globalCss from "~/styles/global.css?url";
 import alloFont from "allo-font/fonts/webfonts/AlloVariableFriendly.woff2?url";
 
-const title = `${brand.name}: free, open-source icons in 8 styles`;
+const title = `${brand.name}: 891 Free Icons in 8 Styles (SVG, PNG & React)`;
 
 /** Marks <html> with "js" so scroll reveals only hide content when JS runs. */
 const jsFlagScript = `document.documentElement.classList.add("js")`;

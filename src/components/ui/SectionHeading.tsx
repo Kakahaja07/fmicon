@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { cx } from "~/lib/cx";
 import s from "./SectionHeading.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 type SectionHeadingProps = {
   title: ReactNode;
@@ -15,7 +16,7 @@ export function SectionHeading({ title, children, as: Tag = "h2", id, narrow, cl
   return (
     <header className={cx(s.head, className)}>
       <Tag id={id} className={s.title}>
-        {title}
+        {typeof title === "string" ? titleCase(title) : title}
       </Tag>
       {children && <p className={cx(s.lead, narrow && s.narrow)}>{children}</p>}
     </header>

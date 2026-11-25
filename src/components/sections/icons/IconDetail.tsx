@@ -46,6 +46,7 @@ import {
 } from "~/lib/svg";
 import { IconArticle } from "./IconArticle";
 import s from "./IconDetail.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 const backdrops: Swatch[] = [
   { value: "checker", label: "Checkerboard", paint: "repeating-conic-gradient(#8a8a8e 0 25%, #d4d4d8 0 50%) 50% / 8px 8px" },
@@ -206,7 +207,7 @@ export function IconDetail(props: IconDetailProps) {
 
           <div className={s.nameRow}>
             <div>
-              <h1 className={s.title}>{title} icon</h1>
+              <h1 className={s.title}>{titleCase(`${title} icon`)}</h1>
               <p className={s.meta}>
                 {category} · {styleLabels[style]}
               </p>
@@ -371,7 +372,7 @@ export function IconDetail(props: IconDetailProps) {
       {related.length > 0 && (
         <section className={s.more} aria-labelledby="related-title">
           <h2 id="related-title" className={s.sectionTitle}>
-            More in {category}
+            {titleCase(`More in ${category}`)}
           </h2>
           <div className={s.related}>
             {related.map((r) => (

@@ -3,6 +3,7 @@ import { Avatar } from "~/components/ui/Avatar";
 import { Container } from "~/components/ui/Container";
 import { Reveal } from "~/components/ui/Reveal";
 import s from "./MakerNote.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 /** A short, personal note from the maker, as its own calm section near the end. */
 export function MakerNote() {
@@ -20,7 +21,7 @@ export function MakerNote() {
           </div>
           <div className={s.words}>
             <h2 id="story-title" className={s.title}>
-              {story.title}
+              {titleCase(story.title)}
             </h2>
             {story.paragraphs.map((p) => (
               <p key={p} className={s.p}>

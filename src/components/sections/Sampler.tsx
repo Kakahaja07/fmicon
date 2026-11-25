@@ -9,6 +9,7 @@ import { loadPreview } from "~/hooks/useIconStyle";
 import { iconPath } from "~/lib/iconSeo";
 import { humanName, styleLabels, type FreeIcon, type IconStyle } from "~/lib/svg";
 import s from "./Sampler.module.css";
+import { titleCase } from "~/lib/titleCase";
 
 type Hover = { name: string; style: IconStyle } | null;
 
@@ -38,7 +39,7 @@ export function Sampler() {
         <div className={s.head}>
           <div>
             <h2 id="sampler-title" className={s.title}>
-              {sampler.title}
+              {titleCase(sampler.title)}
             </h2>
             <p className={s.sub}>{sampler.sub}</p>
           </div>

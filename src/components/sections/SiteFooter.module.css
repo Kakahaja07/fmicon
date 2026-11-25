@@ -73,9 +73,10 @@
 }
 
 /* ---- Link columns ---- */
+/* Columns spread across the space, the last one flush with the right edge (like the copyright below) */
 .columns {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  justify-content: space-between;
   gap: 28px;
 }
 
@@ -125,26 +126,11 @@
   gap: 10px;
 }
 
-.gh {
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  color: var(--text-2);
-  transition: background-color 150ms ease, color 150ms ease;
-}
-
-.gh:hover {
-  background: var(--fill-translucent);
-  color: var(--text);
-}
-
 @media (max-width: 900px) {
   .top { grid-template-columns: minmax(0, 1fr); gap: 40px; }
 }
 
 @media (max-width: 560px) {
-  .columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .base { flex-direction: column; align-items: flex-start; }
 }

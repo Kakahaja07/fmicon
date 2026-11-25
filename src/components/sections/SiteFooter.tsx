@@ -76,9 +76,6 @@ export function SiteFooter() {
           </p>
           <p className={s.copy}>
             {footer.copyright}
-            <a href={openSource.repo} target="_blank" rel="noreferrer" className={s.gh} aria-label="FM Icons on GitHub">
-              <GithubLogo size={16} />
-            </a>
           </p>
         </div>
       </Container>
