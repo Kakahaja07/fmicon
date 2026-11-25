@@ -34,6 +34,13 @@ const byStyle = Object.fromEntries(["linear", "outline", "bold", "bulk", "twoton
 const total = linear.size;
 
 const font = (file) => pathToFileURL(resolve("src/assets/fonts", file)).href;
+const allo = pathToFileURL(resolve("node_modules/allo-font/fonts/webfonts/AlloVariableFriendly.woff2")).href;
+const glassBodies = byStyle.glass;
+const duoBodies = byStyle.duotone;
+// Film grain over the whole card (SVG noise), so the dark surfaces don't look flat
+const GRAIN = "data:image/svg+xml;utf8," + encodeURIComponent(
+  "<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(#n)'/></svg>",
+);
 const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="26" height="27" ');
 
 // Colours from the site palette, one per tile
@@ -52,11 +59,12 @@ function page({ lines, prompt, tiles, highlight = 5 }) {
     .join("");
   const heading = lines.map((l, i) => `<span class="${i === lines.length - 1 ? "on" : ""}">${l}</span>`).join("");
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-@font-face { font-family: Goeist; src: url("${font("Goeist-Variable.woff2")}") format("woff2"); font-weight: 100 900; }
+@font-face { font-family: Allo; src: url("${allo}") format("woff2"); font-weight: 100 900; }
 @font-face { font-family: GoeistMono; src: url("${font("GoeistMono-Variable.woff2")}") format("woff2"); font-weight: 100 900; }
 * { box-sizing: border-box; margin: 0; }
 html, body { width: ${W}px; height: ${H}px; background: #070708; overflow: hidden; }
-body { padding: 18px; font-family: Goeist, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+body { padding: 18px; font-family: Allo, system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.grain { position: absolute; inset: 0; z-index: 5; pointer-events: none; background: url("${GRAIN}"); opacity: .09; mix-blend-mode: overlay; border-radius: 30px; }
 .card { position: relative; isolation: isolate; overflow: hidden; height: 100%; border-radius: 30px; border: 1px solid #2a2a2e;
   background:
     radial-gradient(42% 60% at 76% 46%, rgba(18,101,236,.38), transparent 70%),
@@ -74,7 +82,7 @@ body { padding: 18px; font-family: Goeist, system-ui, sans-serif; -webkit-font-s
   grid-template-columns: repeat(10, 30px); gap: 34px; padding: 22px; color: #fff; opacity: .05;
   -webkit-mask-image: linear-gradient(90deg, #000 20%, transparent 95%); }
 .wall svg [stroke-width] { stroke-width: 1.5; }
-h1 { display: grid; font-size: 78px; line-height: 1.02; letter-spacing: -0.045em; font-weight: 640; color: #6c6c72; }
+h1 { display: grid; font-size: 76px; line-height: 1.02; letter-spacing: -0.04em; font-weight: 700; color: #6c6c72; }
 h1 .on { color: #fafafa; }
 .chip { position: absolute; left: 40px; bottom: 36px; display: flex; align-items: center; gap: 10px; padding: 9px 16px 9px 12px;
   border-radius: 12px; background: #000; border: 1px solid #222; font-size: 22px; font-weight: 560; color: #f2f2f2; letter-spacing: -0.01em; }
@@ -94,25 +102,30 @@ h1 .on { color: #fafafa; }
 <h1>${heading}</h1>
 <div class="panel"><div class="prompt"><span>${prompt}</span><i></i></div><div class="grid">${cells}</div></div>
 <div class="chip">${mark}fmicon.dev</div>
+<div class="grain"></div>
 </div></body></html>`;
 }
 
 const icon = (slug, i) => ({ html: svg(linear.get(slug), COLORS[i % COLORS.length]) });
+const glass = (slug) => ({ html: `<svg viewBox="0 0 24 24" width="62" height="62" fill="none">${glassBodies.get(slug)}</svg>` });
+const duo = (slug, i) => ({ html: svg(duoBodies.get(slug), COLORS[i % COLORS.length]) });
+// Alternate glass and duotone so every card shows both looks
+const mix = (slugs) => slugs.map((slug, i) => (i % 2 === 0 ? glass(slug) : duo(slug, i)));
 
 const cards = {
   home: {
-    lines: [`${total} icons,`, "8 styles,", "free forever"],
+    lines: ["Every icon", "you need,", "free forever"],
     prompt: `&gt; <b>npm i</b> fmicon-react`,
-    tiles: ["home", "calendar", "chart", "notification", "drop", "flash", "heart", "moon", "book", "people", "cup", "setting"].map(icon),
+    tiles: mix(["wallet", "home", "heart", "chart", "camera", "notification", "folder", "message", "star", "calendar", "lock", "setting-2"]),
   },
   docs: {
     lines: ["Drop icons", "into any", "framework"],
     prompt: `<b>import</b> { Home } <b>from</b> "fmicon-react"`,
-    tiles: ["code", "command", "monitor", "mobile", "cloud", "folder", "document", "link", "send", "search-normal", "lock", "global"].map(icon),
+    tiles: mix(["code", "command", "monitor", "mobile", "cloud", "folder", "document", "link", "send", "search-normal", "lock", "global"]),
     highlight: 0,
   },
   styles: {
-    lines: ["One icon,", "eight", "styles"],
+    lines: ["One icon,", "every", "style"],
     prompt: `&lt;Heart <b>variant</b>="glass" /&gt;`,
     // The same heart in every style; glass keeps its own colours
     tiles: Object.entries(byStyle).map(([style, map], i) => ({
@@ -129,24 +142,24 @@ Object.assign(cards, {
   "blog-svg-vs-png": {
     lines: ["SVG vs PNG", "for icons:", "which wins?"],
     prompt: `&lt;img src="<b>home.svg</b>" /&gt;`,
-    tiles: ["image", "gallery", "document", "home", "monitor", "mobile", "colorfilter", "brush", "folder", "cloud", "export", "magicpen"].map(icon),
+    tiles: mix(["image", "gallery", "document", "home", "monitor", "mobile", "colorfilter", "brush", "folder", "cloud", "export", "magicpen"]),
   },
   "blog-react-icons": {
     lines: ["React icons,", "the easy", "way"],
     prompt: `<b>import</b> { Lock } <b>from</b> "fmicon-react"`,
-    tiles: ["code", "command", "layer", "lock", "monitor", "mobile", "setting-2", "search-normal", "user", "notification", "heart", "star"].map(icon),
+    tiles: mix(["code", "command", "layer", "lock", "monitor", "mobile", "setting-2", "search-normal", "user", "notification", "heart", "star"]),
     highlight: 3,
   },
   "blog-free-svg-icons": {
     lines: ["Free SVG", "icons for", "your website"],
     prompt: `cdn.fmicon.dev/<b>svg</b>/linear/home.svg`,
-    tiles: ["home", "star", "heart", "global", "shop", "calendar", "message", "location", "camera", "wallet", "gift", "people"].map(icon),
+    tiles: mix(["home", "star", "heart", "global", "shop", "calendar", "message", "location", "camera", "wallet", "gift", "people"]),
     highlight: 0,
   },
   "blog-accessible-icons": {
     lines: ["Icons that", "everyone", "can use"],
     prompt: `&lt;button <b>aria-label</b>="Close"&gt;`,
-    tiles: ["eye", "user", "tick-circle", "close-circle", "info-circle", "warning-2", "notification", "keyboard", "microphone", "volume-high", "eye-slash", "shield-tick"].map(icon),
+    tiles: mix(["eye", "user", "tick-circle", "close-circle", "info-circle", "warning-2", "notification", "keyboard", "microphone", "volume-high", "eye-slash", "shield-tick"]),
     highlight: 3,
   },
 });
