@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import { MCP_URL, mcpClients, mcpPage, type McpClient } from "~/content/mcp";
 import { ArrowRightIcon, CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
 import { AppTile } from "~/components/ui/AppTile";
+import { CopyCode } from "~/components/ui/CodeBlock";
+
+const LANG_LABEL: Record<string, string> = { bash: "Terminal", json: "JSON", text: "Server URL" };
 import { cx } from "~/lib/cx";
 import s from "./Mcp.module.css";
 
@@ -34,7 +37,6 @@ function useCopy() {
 export function McpClients() {
   const [active, setActive] = useState(mcpClients[0].id);
   const client = mcpClients.find((c) => c.id === active) ?? mcpClients[0];
-  const { copied, copy } = useCopy();
   const manual = useCopy();
 
   return (
@@ -79,15 +81,7 @@ export function McpClients() {
             <li key={step}>{step}</li>
           ))}
         </ol>
-        <div className={s.code}>
-          <pre>
-            <code>{client.code.text}</code>
-          </pre>
-          <button type="button" className={s.copy} onClick={() => copy(client.code.text)} aria-label="Copy">
-            {copied ? <TickCircleIcon size={16} /> : <CopyIcon size={16} />}
-            {copied ? "Copied" : "Copy"}
-          </button>
-        </div>
+        <CopyCode filename={LANG_LABEL[client.code.lang] ?? "Code"} code={client.code.text} />
       </div>
 
       <p className={s.manual}>

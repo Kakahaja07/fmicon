@@ -167,7 +167,7 @@ export function IconArticle({ icon, style, article, pairs, onNavigate }: IconArt
             {pairs.map((p) => (
               <a key={p.id} href={iconPath(style, p.slug)} className={s.pair} onClick={(e) => open(e, p.id)}>
                 <span className={s.pairIcon}>
-                  <SvgIcon body={p.body} size={24} />
+                  <SvgIcon body={p.body} size={20} />
                 </span>
                 <span className={s.pairName}>{humanName(p.name)} icon</span>
                 <ArrowRightIcon size={16} />

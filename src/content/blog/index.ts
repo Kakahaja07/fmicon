@@ -43,6 +43,35 @@ const slugify = (s: string) =>
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-|-$/g, "");
 
+/** A label for a code sample, from what it looks like. */
+function codeLabel(code: string) {
+  const c = code.trim();
+  if (/^(npm|npx|pnpm|yarn|bun|claude|codex|code) /.test(c)) return "Terminal";
+  if (/^<script setup>/.test(c)) return "Vue";
+  if (/^\{[\s\S]*"mcpServers"/.test(c)) return "JSON";
+  if (/^[.#]?[a-z-]+(:[a-z-]+)?\s*\{[\s\S]*:/.test(c) && !c.includes("<")) return "CSS";
+  if (/^(import|export|\/\/)/m.test(c) || /<[A-Z]/.test(c)) return "React";
+  if (/^</.test(c)) return "HTML";
+  return "Code";
+}
+
+export type BlogPart = { type: "html"; html: string } | { type: "code"; code: string; label: string };
+
+/** Article HTML cut into prose and code samples, so code renders as a copyable block. */
+function splitParts(html: string): BlogPart[] {
+  const parts: BlogPart[] = [];
+  let last = 0;
+  for (const m of html.matchAll(/<pre><code>([\s\S]*?)<\/code><\/pre>/g)) {
+    const i = m.index ?? 0;
+    if (i > last) parts.push({ type: "html", html: html.slice(last, i) });
+    const code = decode(m[1]);
+    parts.push({ type: "code", code, label: codeLabel(code) });
+    last = i + m[0].length;
+  }
+  if (last < html.length) parts.push({ type: "html", html: html.slice(last) });
+  return parts;
+}
+
 function parse(meta: PostMeta) {
   const src = meta.source;
   const metaTitle = plain(src.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? "");
@@ -69,6 +98,7 @@ function parse(meta: PostMeta) {
     metaTitle,
     description,
     html,
+    parts: splitParts(html),
     toc,
     faqLd: ld ? (JSON.parse(ld) as object) : undefined,
     minutes: Math.max(1, Math.round(words / 220)),

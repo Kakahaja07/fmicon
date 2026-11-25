@@ -6,7 +6,7 @@
   gap: 0;
   max-height: calc(100vh - var(--tool-bar));
   min-height: calc(100vh - var(--tool-bar));
-  padding: 8px 16px 40px;
+  padding: 8px 16px 40px 0;
   overflow-y: auto;
   border-right: 1px solid var(--hairline);
   /* Still scrolls, without a visible bar; the soft fade at the bottom says there is more */

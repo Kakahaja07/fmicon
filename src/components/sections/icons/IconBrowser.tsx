@@ -1,4 +1,4 @@
-import { useMemo, type CSSProperties, type ReactNode } from "react";
+import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from "react";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { useIconStyle } from "~/hooks/useIconStyle";
 import type { ToolTheme } from "~/hooks/useToolTheme";
@@ -7,6 +7,7 @@ import { strokeStyles, strokeWidthOf, type FreeIcon, type IconStyle, type Stroke
 import { IconGrid } from "./IconGrid";
 import { IconDetail } from "./IconDetail";
 import { IconSidebar } from "./IconSidebar";
+import { SearchRow, type IconSort } from "./SearchRow";
 import s from "./IconBrowser.module.css";
 
 export type BrowserSearch = {
@@ -39,6 +40,44 @@ export const DEFAULT_WEIGHT: StrokeWeight = "thin";
 
 const categoryLabel = new Map<string, string>(freeIconsMeta.categories.map((c) => [c.slug, c.label]));
 
+const SIDEBAR_KEY = "fmicon-sidebar";
+const SORT_KEY = "fmicon-sort";
+
+/** Filters open or closed, and the sort order: remembered on this device. Phones start with filters closed. */
+function useToolPrefs() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sort, setSort] = useState<IconSort>("default");
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(SIDEBAR_KEY);
+      setSidebarOpen(saved ? saved === "open" : !window.matchMedia("(max-width: 900px)").matches);
+      if (localStorage.getItem(SORT_KEY) === "az") setSort("az");
+    } catch {
+      /* storage blocked: defaults */
+    }
+  }, []);
+  const save = (key: string, value: string) => {
+    try {
+      localStorage.setItem(key, value);
+    } catch {
+      /* storage blocked */
+    }
+  };
+  return {
+    sidebarOpen,
+    toggleSidebar: () =>
+      setSidebarOpen((open) => {
+        save(SIDEBAR_KEY, open ? "closed" : "open");
+        return !open;
+      }),
+    sort,
+    setSort: (next: IconSort) => {
+      setSort(next);
+      save(SORT_KEY, next);
+    },
+  };
+}
+
 /** Full-width workspace: filters · grid (+ offer). An icon opens as its own page in the centre column. All state lives in the URL. */
 export function IconBrowser({ search, onChange, theme, detail, article, intro, after, footer }: IconBrowserProps) {
   const style = search.style ?? "linear";
@@ -47,6 +86,7 @@ export function IconBrowser({ search, onChange, theme, detail, article, intro, a
   const weight = search.weight ?? DEFAULT_WEIGHT;
   const query = search.q ?? "";
   const data = useIconStyle(style, theme);
+  const prefs = useToolPrefs();
 
   // Weight only applies to line styles; filled styles keep their shapes.
   const stroke = strokeStyles.has(style) ? strokeWidthOf(weight) : undefined;
@@ -55,13 +95,14 @@ export function IconBrowser({ search, onChange, theme, detail, article, intro, a
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase().replace(/\s+/g, "-");
-    return icons.filter((icon) => {
+    const list = icons.filter((icon) => {
       if (search.cat && icon.category !== search.cat) return false;
       if (!q) return true;
       const label = categoryLabel.get(icon.category)?.toLowerCase() ?? "";
       return icon.name.includes(q) || label.includes(q.replace(/-/g, " "));
     });
-  }, [icons, query, search.cat]);
+    return prefs.sort === "az" ? [...list].sort((a, b) => a.name.localeCompare(b.name)) : list;
+  }, [icons, query, search.cat, prefs.sort]);
 
   // The icon page: from the loaded list once it's there, from the page loader before that (and when prerendering).
   const selected =
@@ -73,9 +114,10 @@ export function IconBrowser({ search, onChange, theme, detail, article, intro, a
       style={stroke ? ({ "--stroke": stroke } as CSSProperties) : undefined}
       data-stroke={stroke ? "" : undefined}
       data-detail={selected ? "" : undefined}
+      data-sidebar={!selected && prefs.sidebarOpen ? "" : undefined}
     >
-      {/* Filters only on the grid; an icon page uses the full width */}
-      {!selected && (
+      {/* Filters only on the grid, and only when shown; an icon page uses the full width */}
+      {!selected && prefs.sidebarOpen && (
       <IconSidebar
         style={style}
         theme={theme}
@@ -106,6 +148,14 @@ export function IconBrowser({ search, onChange, theme, detail, article, intro, a
         ) : (
           <>
             {intro}
+            <SearchRow
+              query={query}
+              onQuery={(q) => onChange({ q: q || undefined })}
+              sidebarOpen={prefs.sidebarOpen}
+              onToggleSidebar={prefs.toggleSidebar}
+              sort={prefs.sort}
+              onSort={prefs.setSort}
+            />
             <IconGrid
           status={data.status}
           style={style}

@@ -919,3 +919,28 @@ export const Element3Icon = ({ size = 24, color = "currentColor", ...props }: Ic
     <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
   </svg>
 );
+
+// Added for the icon tool search row (use-icons.mjs)
+export const SidebarLeftIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M21.97 15V9C21.97 4 19.97 2 14.97 2H8.96997C3.96997 2 1.96997 4 1.96997 9V15C1.96997 20 3.96997 22 8.96997 22H14.97C19.97 22 21.97 20 21.97 15Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path d="M7.96997 2V22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path d="M14.97 9.44L12.41 12L14.97 14.56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+  </svg>
+);
+
+export const SidebarRightIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M21.97 15V9C21.97 4 19.97 2 14.97 2H8.96997C3.96997 2 1.96997 4 1.96997 9V15C1.96997 20 3.96997 22 8.96997 22H14.97C19.97 22 21.97 20 21.97 15Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path d="M14.97 2V22" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path d="M7.96997 9.44L10.53 12L7.96997 14.56" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+  </svg>
+);
+
+export const SortIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M3 7H21" strokeWidth="1.5" strokeLinecap="round" stroke="currentColor"/>
+    <path d="M6 12H18" strokeWidth="1.5" strokeLinecap="round" stroke="currentColor"/>
+    <path d="M10 17H14" strokeWidth="1.5" strokeLinecap="round" stroke="currentColor"/>
+  </svg>
+);

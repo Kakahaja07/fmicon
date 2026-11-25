@@ -248,12 +248,26 @@
   color: var(--text-2);
 }
 
-.prose > * + * {
+/* Prose arrives in segments (split around code samples); the wrappers stay out of the layout */
+.seg {
+  display: contents;
+}
+
+.seg > * + *,
+.seg + .seg > :first-child {
+  margin-top: 16px;
+}
+
+.codeBlock {
+  margin-top: 16px;
+}
+
+.codeBlock + .seg > :first-child {
   margin-top: 16px;
 }
 
 /* The answer-first block at the top: question and short answer as one callout */
-.prose > h3:first-child {
+.prose > .seg:first-child > h3:first-child {
   margin: 0;
   padding: 18px 20px 0;
   border-radius: 14px 14px 0 0;
@@ -261,7 +275,7 @@
   box-shadow: inset 1px 0 0 var(--hairline), inset -1px 0 0 var(--hairline), inset 0 1px 0 var(--hairline);
 }
 
-.prose > h3:first-child + p {
+.prose > .seg:first-child > h3:first-child + p {
   margin-top: 0;
   padding: 8px 20px 18px;
   border-radius: 0 0 14px 14px;
@@ -270,7 +284,7 @@
   color: var(--text);
 }
 
-.prose > h3:first-child + p + p {
+.prose > .seg:first-child > h3:first-child + p + p {
   margin-top: 28px;
 }
 

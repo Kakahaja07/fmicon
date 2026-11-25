@@ -22,7 +22,7 @@ export function SiteHeader() {
   const active = pageLink ? pageLink.id : pathname === "/" ? section : "";
   const scrolled = useScrolled();
   // Docs get a full-width bar (lined up with the docs columns) instead of the floating pill
-  const bar = pathname.startsWith("/docs");
+  const bar = pathname.startsWith("/docs") || pathname.startsWith("/icons");
   const [hovered, setHovered] = useState<string | null>(null);
   const [pill, setPill] = useState<Pill | null>(null);
   const [ready, setReady] = useState(false);

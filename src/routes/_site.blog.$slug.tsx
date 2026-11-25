@@ -3,6 +3,7 @@ import { brand } from "~/content/site";
 import { blogAuthor, blogPosts, findPost } from "~/content/blog";
 import { BlogCard, BlogCover, Byline, blogImage } from "~/components/blog/BlogCard";
 import { Container } from "~/components/ui/Container";
+import { CopyCode } from "~/components/ui/CodeBlock";
 import { pageHead } from "~/lib/iconSeo";
 import s from "~/components/blog/Blog.module.css";
 
@@ -77,7 +78,15 @@ function BlogArticle() {
             </div>
 
             {/* Our own article file, written and checked in this repo */}
-            <div className={s.prose} dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className={s.prose}>
+              {post.parts.map((part, i) =>
+                part.type === "code" ? (
+                  <CopyCode key={i} className={s.codeBlock} filename={part.label} code={part.code} />
+                ) : (
+                  <div key={i} className={s.seg} dangerouslySetInnerHTML={{ __html: part.html }} />
+                ),
+              )}
+            </div>
           </article>
 
           <nav className={s.toc} aria-label="On this page">

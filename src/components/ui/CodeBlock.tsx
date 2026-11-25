@@ -1,10 +1,10 @@
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
 import { cx } from "~/lib/cx";
 import s from "./CodeBlock.module.css";
 
 type CodeBlockProps = {
-  /** Shown in the header, e.g. "HomeIcon.tsx" */
+  /** Shown in the header, e.g. "HomeIcon.tsx" or "HTML (CDN)" */
   filename: string;
   /** What is displayed (may be shortened for reading) */
   code: string;
@@ -12,12 +12,14 @@ type CodeBlockProps = {
   copied?: boolean;
   /** Optional control in the header, e.g. a React / SVG switch */
   extra?: ReactNode;
+  /** Line numbers in the gutter (off by default) */
+  lineNumbers?: boolean;
   className?: string;
 };
 
-// Minimal JSX/SVG highlighter: comments, strings, keywords, tag names, attribute names, braces.
+// Minimal JSX/HTML/JS highlighter: comments, strings, keywords, tag names, attribute names, braces.
 const TOKEN =
-  /(\/\/[^\n]*)|("[^"\n]*")|\b(export|const|return|import|from)\b|(<\/?)([A-Za-z][\w.]*)|([A-Za-z_:][\w:-]*)(?==)|(=>|[{}()])/g;
+  /(\/\/[^\n]*|#[^\n]*(?=$))|("[^"\n]*"|'[^'\n]*'|`[^`\n]*`)|\b(export|const|let|return|import|from|function|default|await|async|npm|npx|install)\b|(<\/?)([A-Za-z][\w.-]*)|([A-Za-z_:@][\w:-]*)(?==)|(=>|[{}()])/g;
 
 function highlight(line: string) {
   const out: ReactNode[] = [];
@@ -41,8 +43,11 @@ function highlight(line: string) {
   return out;
 }
 
-/** Read-only code view: file header with copy, line numbers, wrapped lines, light syntax colours. */
-export function CodeBlock({ filename, code, onCopy, copied, extra, className }: CodeBlockProps) {
+/**
+ * Read-only code view used everywhere on the site: a soft card with a label and a copy button
+ * in the top-right corner, and the code on a darker inset panel with light syntax colours.
+ */
+export function CodeBlock({ filename, code, onCopy, copied, extra, lineNumbers = false, className }: CodeBlockProps) {
   const lines = code.replace(/\n$/, "").split("\n");
 
   return (
@@ -51,13 +56,19 @@ export function CodeBlock({ filename, code, onCopy, copied, extra, className }: 
         <span className={s.file}>{filename}</span>
         <span className={s.headerEnd}>
           {extra}
-          <button type="button" className={s.copy} onClick={onCopy} data-copied={copied || undefined}>
-            {copied ? <TickCircleIcon size={14} /> : <CopyIcon size={14} />}
-            {copied ? "Copied" : "Copy"}
+          <button
+            type="button"
+            className={s.copy}
+            onClick={onCopy}
+            data-copied={copied || undefined}
+            aria-label={copied ? "Copied" : `Copy ${filename}`}
+            title={copied ? "Copied" : "Copy"}
+          >
+            {copied ? <TickCircleIcon size={16} /> : <CopyIcon size={16} />}
           </button>
         </span>
       </div>
-      <pre className={s.body}>
+      <pre className={s.body} data-numbers={lineNumbers || undefined}>
         <code>
           {lines.map((line, i) => (
             <span key={i} className={s.line}>
@@ -69,4 +80,22 @@ export function CodeBlock({ filename, code, onCopy, copied, extra, className }: 
       </pre>
     </div>
   );
+}
+
+/** A CodeBlock that copies its own code and shows a tick for a moment. */
+export function CopyCode({ filename, code, className }: { filename: string; code: string; className?: string }) {
+  const [copied, setCopied] = useState(false);
+  const timer = useRef(0);
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      window.clearTimeout(timer.current);
+      timer.current = window.setTimeout(() => setCopied(false), 1600);
+    } catch {
+      /* clipboard blocked: the code is still selectable */
+    }
+  };
+  return <CodeBlock filename={filename} code={code} onCopy={copy} copied={copied} className={className} />;
 }

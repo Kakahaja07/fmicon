@@ -84,8 +84,10 @@
 }
 
 /* On this page */
+/* Same as the left nav: the guide line hangs from the centre of the group icon above it */
 .toc ol {
   display: grid;
+  margin-left: 10.5px;
   list-style: none;
   border-left: 1px solid var(--hairline);
 }
@@ -93,7 +95,7 @@
 .toc a {
   display: block;
   margin-left: -1px;
-  padding: 5px 0 5px 14px;
+  padding: 5px 0 5px 18px;
   border-left: 1px solid transparent;
   font-size: var(--text-sm);
   color: var(--text-3);

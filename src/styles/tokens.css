@@ -123,7 +123,7 @@
 
   /* ---- Layout ---- */
   --wrap: 1024px;
-  --tool-bar: 52px; /* height of the icon tool's top bar; sticky columns sit right under it */
+  --tool-bar: 61px; /* height of the site header bar on /icons; sticky rows and columns sit right under it */
   --gutter: 16px;
 
   /* ---- Motion ---- */

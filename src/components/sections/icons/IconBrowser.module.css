@@ -1,10 +1,16 @@
-/* Edge to edge: filters · (grid + open-source panel), split by a hairline. Same left column as the tool bar above.
-   The side columns are sticky, so they stay in view all the way down. */
+/* Same width as the docs and the header bar above: filters · grid. The filters column is sticky.
+   With filters hidden, the grid takes the whole width. */
 .workspace {
+  width: min(1240px, 100% - 48px);
+  margin-inline: auto;
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
   min-height: calc(100vh - var(--tool-bar));
+}
+
+.workspace[data-sidebar] {
+  grid-template-columns: 240px minmax(0, 1fr);
 }
 
 .center {
@@ -17,8 +23,7 @@
 }
 
 .workspace[data-detail] .center {
-  width: min(1240px, 100%);
-  margin-inline: auto;
+  width: 100%;
 }
 
 /* Stroke weight preview: overrides the drawn 1.5 on every line icon in the workspace. */
@@ -33,5 +38,6 @@
 }
 
 @media (max-width: 900px) {
-  .workspace { grid-template-columns: minmax(0, 1fr); }
+  .workspace,
+  .workspace[data-sidebar] { width: 100%; grid-template-columns: minmax(0, 1fr); }
 }

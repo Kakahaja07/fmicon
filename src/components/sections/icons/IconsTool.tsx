@@ -5,7 +5,7 @@ import { idToSlug, slugToId, type ToolSearch } from "~/lib/iconSeo";
 import type { IconArticle } from "~/lib/iconArticle";
 import type { FreeIcon, IconStyle } from "~/lib/svg";
 import { IconBrowser, type BrowserSearch } from "./IconBrowser";
-import { ToolBar } from "./ToolBar";
+import { SiteHeader } from "~/components/sections/SiteHeader";
 import { LibraryArticle } from "./LibraryArticle";
 
 type IconsToolProps = {
@@ -57,7 +57,7 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
 
   return (
     <>
-      <ToolBar query={search.q ?? ""} onQuery={(q) => onChange({ q: q || undefined })} contained={!!slug} />
+      <SiteHeader />
       <main id="top">
         <IconBrowser
           search={browserSearch}
