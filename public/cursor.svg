@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+  <!-- FM Icons pointer: a soft, tilted arrow with a white rim. Tip at (5, 4). -->
+  <defs>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="1.1" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <path filter="url(#s)" d="M5.2 4.6c-.4-.9.5-1.8 1.4-1.4l16.2 6.6c1 .4.9 1.9-.1 2.2l-6.3 1.9c-.5.1-.8.5-1 1l-1.9 6.3c-.3 1-1.8 1.1-2.2.1L5.2 4.6Z" fill="#111214" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/>
+</svg>

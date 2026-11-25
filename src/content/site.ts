@@ -31,7 +31,7 @@ const REPO = "https://github.com/Kakahaja07/fmicons";
  * serving /svg/<style>/<slug>.svg and /png/<style>/<slug>.png.
  * Until that bucket is live, SVGs come from jsDelivr (straight from the GitHub repo) and PNG links stay hidden.
  */
-const CDN_LIVE = false;
+const CDN_LIVE = true;
 const CDN = "https://cdn.fmicon.dev";
 
 export const openSource = {

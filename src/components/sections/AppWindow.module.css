@@ -76,7 +76,7 @@
   font: inherit;
   font-weight: var(--weight-medium);
   text-align: left;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease;
 }
 
@@ -141,7 +141,7 @@
   border-radius: 10px;
   background: transparent;
   color: var(--text);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color var(--dur-fast) ease, transform var(--dur-fast) var(--ease-out), color var(--dur-fast) ease;
 }
 
@@ -169,7 +169,7 @@
   padding: 0;
   color: var(--accent);
   font-weight: var(--weight-medium);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .foot {
@@ -256,7 +256,7 @@
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--text);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   overflow: hidden;
   white-space: nowrap;
   transition: transform var(--dur-fast) var(--ease-out);

@@ -23,7 +23,7 @@
   font-size: var(--text-lg);
   font-weight: var(--weight-medium);
   line-height: 22px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .mark {

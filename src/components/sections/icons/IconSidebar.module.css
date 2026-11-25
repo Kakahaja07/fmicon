@@ -107,7 +107,7 @@
   font-size: 14px;
   text-align: left;
   color: var(--text-2);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease, color 150ms ease;
 }
 

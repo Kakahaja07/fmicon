@@ -23,7 +23,7 @@
   color: var(--text);
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease;
 }
 
@@ -68,7 +68,7 @@
   border-radius: 10px;
   background: transparent;
   color: var(--text-2);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease, color 150ms ease, transform var(--dur-fast) var(--ease-out);
 }
 

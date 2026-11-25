@@ -23,7 +23,7 @@
   font-size: 14px;
   text-align: left;
   white-space: nowrap;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 200ms ease, color 200ms ease, box-shadow 200ms ease, transform var(--dur-fast) var(--ease-out);
 }
 

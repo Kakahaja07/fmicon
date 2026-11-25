@@ -11,7 +11,7 @@
   padding: 10px 0;
   font-size: 14px;
   line-height: 20px;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .check + .check,
@@ -25,7 +25,7 @@
   height: 16px;
   margin: 2px 0 0;
   accent-color: var(--accent);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .hint {

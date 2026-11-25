@@ -51,7 +51,7 @@
   border-radius: 50%;
   background: var(--btn-primary);
   color: var(--text-on-brand);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: transform var(--dur-fast) var(--ease-out), filter 150ms ease;
 }
 

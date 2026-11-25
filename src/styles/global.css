@@ -151,3 +151,34 @@ img {
     transform: none;
   }
 }
+
+/* Custom pointer (public/cursor.svg): a soft, tilted arrow; blue over anything clickable.
+   The fallbacks keep the normal cursors where SVG cursors aren't supported. */
+:root {
+  --cursor: url("/cursor.svg") 5 4, auto;
+  --cursor-pointer: url("/cursor-pointer.svg") 5 4, pointer;
+}
+
+html {
+  cursor: var(--cursor);
+}
+
+a[href],
+button:not(:disabled),
+summary,
+select,
+label[for],
+[role="button"],
+[role="tab"],
+[role="radio"],
+[role="menuitem"],
+[role="option"] {
+  cursor: var(--cursor-pointer);
+}
+
+/* Typing keeps the I-beam */
+input:not([type="checkbox"], [type="radio"], [type="range"], [type="color"]),
+textarea,
+[contenteditable="true"] {
+  cursor: text;
+}

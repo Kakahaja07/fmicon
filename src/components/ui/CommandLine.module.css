@@ -13,7 +13,7 @@
   font-family: var(--font-mono);
   font-size: 13px;
   text-align: left;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: box-shadow 150ms ease, color 150ms ease, transform var(--dur-fast) var(--ease-out);
 }
 

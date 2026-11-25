@@ -14,7 +14,7 @@
   box-shadow: var(--btn-shadow);
   font-weight: var(--weight-medium);
   white-space: nowrap;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   user-select: none;
   -webkit-tap-highlight-color: transparent;
   transition: transform var(--dur-fast) var(--ease-out), filter var(--dur-fast) ease, box-shadow var(--dur-fast) ease;

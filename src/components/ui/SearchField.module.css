@@ -35,7 +35,7 @@
 }
 
 .input::-webkit-search-cancel-button {
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
 }
 
 .hint {

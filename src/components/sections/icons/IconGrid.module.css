@@ -34,7 +34,7 @@
   /* Every icon sits on a faint card; the outline only shows on hover */
   background: var(--cell-bg);
   color: var(--text);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease, box-shadow 150ms ease, transform var(--dur-fast) var(--ease-out);
 }
 

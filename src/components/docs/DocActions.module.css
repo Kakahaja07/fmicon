@@ -27,7 +27,7 @@
   font: inherit;
   font-size: 13px;
   font-weight: var(--weight-medium);
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 150ms ease;
 }
 
@@ -91,7 +91,7 @@
   font-size: var(--text-xs);
   line-height: 1.4;
   text-align: left;
-  cursor: pointer;
+  cursor: var(--cursor-pointer);
   transition: background-color 120ms ease;
 }
 
