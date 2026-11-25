@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SiteRouteImport } from './routes/_site'
 import { Route as SiteIndexRouteImport } from './routes/_site.index'
+import { Route as SiteMcpRouteImport } from './routes/_site.mcp'
 import { Route as SitePackagesRouteImport } from './routes/_site.packages'
 import { Route as IconsIndexRouteImport } from './routes/icons.index'
 import { Route as SiteBlogIndexRouteImport } from './routes/_site.blog.index'
@@ -27,6 +28,11 @@ const SiteRoute = SiteRouteImport.update({
 const SiteIndexRoute = SiteIndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteMcpRoute = SiteMcpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => SiteRoute,
 } as any)
 const SitePackagesRoute = SitePackagesRouteImport.update({
@@ -72,6 +78,7 @@ const IconsStyleSlugRoute = IconsStyleSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof SiteIndexRoute
+  '/mcp': typeof SiteMcpRoute
   '/packages': typeof SitePackagesRoute
   '/icons/': typeof IconsIndexRoute
   '/blog/$slug': typeof SiteBlogSlugRoute
@@ -82,6 +89,7 @@ export interface FileRoutesByFullPath {
   '/icons/$style/': typeof IconsStyleIndexRoute
 }
 export interface FileRoutesByTo {
+  '/mcp': typeof SiteMcpRoute
   '/packages': typeof SitePackagesRoute
   '/': typeof SiteIndexRoute
   '/icons': typeof IconsIndexRoute
@@ -95,6 +103,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_site': typeof SiteRouteWithChildren
+  '/_site/mcp': typeof SiteMcpRoute
   '/_site/packages': typeof SitePackagesRoute
   '/_site/': typeof SiteIndexRoute
   '/icons/': typeof IconsIndexRoute
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/mcp'
     | '/packages'
     | '/icons/'
     | '/blog/$slug'
@@ -119,6 +129,7 @@ export interface FileRouteTypes {
     | '/icons/$style/'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/mcp'
     | '/packages'
     | '/'
     | '/icons'
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/_site'
+    | '/_site/mcp'
     | '/_site/packages'
     | '/_site/'
     | '/icons/'
@@ -163,6 +175,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof SiteIndexRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/mcp': {
+      id: '/_site/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof SiteMcpRouteImport
       parentRoute: typeof SiteRoute
     }
     '/_site/packages': {
@@ -225,6 +244,7 @@ declare module '@tanstack/react-router' {
 }
 
 interface SiteRouteChildren {
+  SiteMcpRoute: typeof SiteMcpRoute
   SitePackagesRoute: typeof SitePackagesRoute
   SiteIndexRoute: typeof SiteIndexRoute
   SiteBlogSlugRoute: typeof SiteBlogSlugRoute
@@ -234,6 +254,7 @@ interface SiteRouteChildren {
 }
 
 const SiteRouteChildren: SiteRouteChildren = {
+  SiteMcpRoute: SiteMcpRoute,
   SitePackagesRoute: SitePackagesRoute,
   SiteIndexRoute: SiteIndexRoute,
   SiteBlogSlugRoute: SiteBlogSlugRoute,

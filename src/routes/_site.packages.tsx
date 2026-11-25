@@ -3,6 +3,7 @@ import { brand } from "~/content/site";
 import { npmUrl, packagesPage, sourceUrl, VERSION, type PackageCard } from "~/content/packages";
 import { Container } from "~/components/ui/Container";
 import { FrameworkLogo, GithubLogo, NpmLogo } from "~/components/ui/FrameworkLogo";
+import { AiLogo, aiTools } from "~/components/ui/AiLogo";
 import { pageHead } from "~/lib/iconSeo";
 import { titleCase } from "~/lib/titleCase";
 import s from "~/components/sections/Packages.module.css";
@@ -21,7 +22,7 @@ export const Route = createFileRoute("/_site/packages")({
           name: `${brand.name} packages`,
           itemListElement: packagesPage.sections
             .flatMap((sec) => sec.items)
-            .map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, url: `${brand.siteUrl}/docs/${item.doc}` })),
+            .map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, url: item.guide ? brand.siteUrl + item.guide : `${brand.siteUrl}/docs/${item.doc}` })),
         },
       ],
     }),
@@ -58,7 +59,7 @@ function Card({ item }: { item: PackageCard }) {
   return (
     <article className={s.card}>
       <div className={s.top}>
-        <FrameworkLogo framework={item.logo} size={28} />
+        {item.logo === "mcp" ? <AiLogo tool={aiTools[0]} size={28} /> : <FrameworkLogo framework={item.logo} size={28} />}
         <span className={s.badge}>{item.badge ?? `v${VERSION}`}</span>
       </div>
       <h3 className={s.name}>{item.name}</h3>
@@ -66,9 +67,15 @@ function Card({ item }: { item: PackageCard }) {
       {item.install && <code className={s.install}>{item.install}</code>}
       <div className={s.actions}>
         {/* The guide is the one place that explains how to use it */}
-        <Link to="/docs/$framework" params={{ framework: item.doc }} className={s.guide}>
-          Guide
-        </Link>
+        {item.guide ? (
+          <Link to={item.guide} className={s.guide}>
+            Guide
+          </Link>
+        ) : (
+          <Link to="/docs/$framework" params={{ framework: item.doc }} className={s.guide}>
+            Guide
+          </Link>
+        )}
         {item.source && (
           <a className={s.action} href={sourceUrl(item.source)} target="_blank" rel="noreferrer">
             <GithubLogo size={13} />

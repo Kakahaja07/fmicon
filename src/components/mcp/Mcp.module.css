@@ -1,0 +1,697 @@
+/* ---------------- /mcp ---------------- */
+
+.page {
+  padding: 104px 0 96px;
+}
+
+.intro {
+  display: grid;
+  gap: 10px;
+  max-width: 720px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--brand);
+}
+
+.h1 {
+  font-size: clamp(30px, 4.4vw, 46px);
+  font-weight: var(--weight-strong);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--text);
+  text-wrap: balance;
+}
+
+.sub {
+  font-size: var(--text-md);
+  line-height: 1.6;
+  color: var(--text-2);
+  text-wrap: pretty;
+}
+
+.h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-strong);
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+
+.h3 {
+  margin-top: 12px;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text);
+}
+
+.section {
+  display: grid;
+  gap: 18px;
+  margin-top: 72px;
+}
+
+/* ---- Client tiles ---- */
+.clients {
+  display: grid;
+  gap: 12px;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.tile {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+  padding: 16px 14px 14px;
+  border: 0;
+  border-right: 1px solid var(--hairline);
+  background: none;
+  text-align: left;
+  color: var(--text-2);
+  cursor: var(--cursor-pointer);
+  transition: background-color 150ms ease;
+}
+
+.tile:last-child {
+  border-right: 0;
+}
+
+.tileLogo {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text);
+}
+
+.tileName {
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text);
+}
+
+.tileAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  transition: color 150ms ease;
+}
+
+.tileAction svg {
+  transition: transform 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tile:hover {
+    background: var(--fill);
+  }
+  .tile:hover .tileAction {
+    color: var(--text);
+  }
+  .tile:hover .tileAction svg {
+    transform: translateX(2px);
+  }
+}
+
+.tileOn {
+  background: var(--fill);
+  box-shadow: inset 0 -2px 0 var(--brand);
+}
+
+.tileOn .tileAction {
+  color: var(--brand);
+}
+
+/* ---- Setup panel ---- */
+.setup {
+  display: grid;
+  gap: 12px;
+  padding: 20px;
+  border-radius: var(--radius-card);
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  animation: setup-in 220ms var(--ease-out);
+}
+
+@keyframes setup-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+.setupHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.setupLogo {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--fill);
+  color: var(--text);
+}
+
+.setupTitle {
+  flex: 1;
+  font-size: var(--text-md);
+  font-weight: var(--weight-strong);
+  color: var(--text);
+}
+
+.installBtn {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 8px;
+  background: var(--btn-primary);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-on-brand);
+  transition: filter 150ms ease, transform var(--dur-fast) var(--ease-out);
+}
+
+.installBtn:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .installBtn:hover {
+    filter: brightness(1.08);
+  }
+}
+
+.steps {
+  display: grid;
+  gap: 4px;
+  padding-left: 20px;
+  list-style: decimal;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.steps li::marker {
+  color: var(--text-3);
+}
+
+.code {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--code-bg);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+/* No ligatures: "-- npx" must read exactly as typed */
+.code pre,
+.manualCmd code,
+.callHead code,
+.callDone code,
+.snippet {
+  font-variant-ligatures: none;
+}
+
+.code pre {
+  overflow-x: auto;
+  padding: 14px 96px 14px 16px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--code-text);
+}
+
+.copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--fill);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-medium);
+  color: var(--text);
+  cursor: var(--cursor-pointer);
+  transition: background-color 150ms ease, transform var(--dur-fast) var(--ease-out);
+}
+
+.copy:active {
+  transform: scale(0.96);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .copy:hover {
+    background: var(--fill-translucent);
+  }
+}
+
+.manual {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}
+
+.manualCmd {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text-2);
+  cursor: var(--cursor-pointer);
+}
+
+.manualCmd code {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+}
+
+/* ---- Demo: prompts beside the chat ---- */
+.demo {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: 48px;
+  margin-top: 80px;
+}
+
+.demoText {
+  display: grid;
+  gap: 10px;
+}
+
+.prompts {
+  display: grid;
+  gap: 8px;
+}
+
+.prompts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.prompts li svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--text-3);
+}
+
+/* Chat window */
+.chat {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #121214;
+  box-shadow: inset 0 0 0 1px var(--hairline-strong), var(--shadow-window);
+}
+
+.chatBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--hairline);
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--fill);
+}
+
+.chatTitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: var(--weight-medium);
+  color: var(--text-2);
+}
+
+.chatServer {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}
+
+.chatServer i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.thread {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.me {
+  justify-self: end;
+  max-width: 78%;
+  padding: 9px 14px;
+  border-radius: 14px 14px 4px 14px;
+  background: var(--brand);
+  color: #fff;
+}
+
+.call {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.callHead,
+.callDone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
+
+.callDone {
+  padding: 0 4px;
+}
+
+.callDone svg {
+  color: var(--green);
+}
+
+.callHead code,
+.callDone code {
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.callTool {
+  flex: none;
+  font-weight: var(--weight-medium);
+  color: var(--text);
+}
+
+.found {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.found span {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding: 10px 4px 8px;
+  border-radius: 10px;
+  color: var(--text-2);
+}
+
+.found small {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-3);
+}
+
+.found .pick {
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand) 55%, transparent);
+  color: var(--text);
+}
+
+.found .pick small {
+  color: var(--brand);
+}
+
+.ai {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: 10px;
+}
+
+.aiMark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  background: var(--fill);
+}
+
+.aiBody {
+  display: grid;
+  gap: 8px;
+  color: var(--text);
+}
+
+.aiBody p code {
+  padding: 1px 5px;
+  border-radius: 5px;
+  background: var(--fill-translucent);
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+}
+
+.snippet {
+  overflow-x: auto;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--code-bg);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--code-text);
+}
+
+.k {
+  color: var(--code-keyword);
+}
+.c {
+  color: var(--code-tag);
+}
+.a {
+  color: var(--code-attr);
+}
+.str {
+  color: var(--code-string);
+}
+
+.result {
+  display: grid;
+  gap: 8px;
+  margin-left: 34px;
+}
+
+.resultLabel {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+}
+
+.miniNav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: var(--text-xs);
+  color: var(--text-2);
+}
+
+.miniNav span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.miniNav .gear {
+  margin-left: auto;
+  width: 32px;
+  justify-content: center;
+  padding: 0;
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand) 60%, transparent), 0 0 0 4px color-mix(in srgb, var(--brand) 14%, transparent);
+  color: var(--text);
+}
+
+/* ---- Tools ---- */
+.toolGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.toolCard {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 14px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--text-2);
+}
+
+.toolName {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: var(--weight-medium);
+  color: var(--text);
+}
+
+/* ---- FAQ ---- */
+.faq {
+  display: grid;
+  max-width: 760px;
+}
+
+.qa {
+  border-bottom: 1px solid var(--hairline);
+}
+
+.qa summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+  color: var(--text);
+  list-style: none;
+  cursor: var(--cursor-pointer);
+}
+
+.qa summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa summary svg {
+  flex: none;
+  color: var(--text-3);
+  transition: transform 200ms var(--ease-out);
+}
+
+.qa[open] summary svg {
+  transform: rotate(45deg);
+}
+
+.qa p {
+  padding-bottom: 16px;
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--text-2);
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 1000px) {
+  .tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .tile:nth-child(4n) {
+    border-right: 0;
+  }
+  .tile:nth-child(-n + 4) {
+    border-bottom: 1px solid var(--hairline);
+  }
+  .toolGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 860px) {
+  .demo {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .tiles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .tile {
+    border-right: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .tile:nth-child(2n) {
+    border-right: 0;
+  }
+  .toolGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .result {
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .setup {
+    animation: none;
+  }
+}

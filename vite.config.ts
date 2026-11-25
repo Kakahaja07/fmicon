@@ -16,7 +16,7 @@ export default defineConfig({
   plugins: [
     tanstackStart({
       // Prerender every page to static HTML at build time: fast first paint, good SEO, any static host.
-      pages: [{ path: "/" }, { path: "/docs" }, { path: "/packages" }, ...docPaths.map((path) => ({ path })), ...blogPaths.map((path) => ({ path })), ...iconPages.map((path) => ({ path }))],
+      pages: [{ path: "/" }, { path: "/docs" }, { path: "/packages" }, { path: "/mcp" }, ...docPaths.map((path) => ({ path })), ...blogPaths.map((path) => ({ path })), ...iconPages.map((path) => ({ path }))],
       prerender: {
         enabled: true,
         crawlLinks: true,

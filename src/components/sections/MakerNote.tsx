@@ -12,22 +12,16 @@ export function MakerNote() {
     <section id="story" className={s.section} aria-labelledby="story-title">
       <Container>
         <Reveal className={s.card}>
-          <div className={s.who}>
-            <Avatar initial={maker.initial} emoji={maker.emoji} image={maker.image} colors={maker.colors} size="lg" />
-            <div>
-              <b className={s.sign}>{maker.name}</b>
-              <small className={s.role}>{maker.role}</small>
-            </div>
-          </div>
-          <div className={s.words}>
-            <h2 id="story-title" className={s.title}>
-              {titleCase(story.title)}
-            </h2>
-            {story.paragraphs.map((p) => (
-              <p key={p} className={s.p}>
-                {p}
-              </p>
-            ))}
+          {/* The note itself on the left; the maker signs it in the bottom-right corner */}
+          <h2 id="story-title" className={s.title}>
+            {titleCase(story.title)}
+          </h2>
+          {story.paragraphs.map((p) => (
+            <p key={p} className={s.p}>
+              {p}
+            </p>
+          ))}
+          <div className={s.foot}>
             {/* Hand-written P.S.: a green pencil note that links to a new GitHub issue */}
             <a className={s.ps} href={`${openSource.repo}/issues/new`} target="_blank" rel="noreferrer">
               <span className={s.psText}>
@@ -41,6 +35,13 @@ export function MakerNote() {
                 <path d="M17.4 2.6C19.6 4.2 21.2 5.4 22.6 6.6 20.8 7.8 19.2 9.4 17.6 11.4" />
               </svg>
             </a>
+            <div className={s.who}>
+              <div className={s.whoText}>
+                <b className={s.sign}>{maker.name}</b>
+                <small className={s.role}>{maker.role}</small>
+              </div>
+              <Avatar initial={maker.initial} emoji={maker.emoji} image={maker.image} colors={maker.colors} size="lg" />
+            </div>
           </div>
         </Reveal>
       </Container>

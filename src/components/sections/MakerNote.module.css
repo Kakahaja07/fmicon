@@ -2,25 +2,44 @@
   padding-top: 56px;
 }
 
-/* Who on the left, the note on the right */
+/* A letter: the note on the left, signed in the bottom-right corner */
 .card {
   /* Same width as the open-source panel above it */
   width: min(1000px, 100%);
   margin-inline: auto;
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
-  gap: 40px;
-  padding: 32px 36px;
+  padding: 32px 36px 28px;
   border-radius: var(--radius-card);
   background: var(--fill-subtle);
   box-shadow: inset 0 0 0 1px var(--hairline);
 }
 
+.title,
+.p {
+  max-width: 680px;
+}
+
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 32px;
+  margin-top: 8px;
+}
+
+/* Signature: name and role, then the photo, tucked into the corner */
 .who {
-  display: grid;
-  align-content: start;
-  justify-items: start;
+  display: flex;
+  align-items: center;
   gap: 14px;
+  margin-left: auto;
+}
+
+.whoText {
+  display: grid;
+  justify-items: end;
+  text-align: right;
 }
 
 .sign {

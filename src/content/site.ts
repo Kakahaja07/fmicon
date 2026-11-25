@@ -50,7 +50,7 @@ export const openSource = {
   perks: [
     { icon: I.Element4Icon, color: "blue", text: `${TOTAL} icons × ${STYLES} styles` },
     { icon: I.CodeIcon, color: "green", text: "Packages for React, Vue, Svelte and React Native" },
-    { icon: I.GlobalIcon, color: "purple", text: "Link any SVG from the jsDelivr CDN" },
+    { icon: I.GlobalIcon, color: "purple", text: "Link any SVG or PNG from cdn.fmicon.dev" },
     { icon: I.ShieldTickIcon, color: "orange", text: "MIT licence, use it anywhere" },
   ] satisfies Array<{ icon: IconComponent; color: PaletteColor; text: string }>,
   install: [
@@ -205,7 +205,7 @@ export const library = {
 
 
 export const story = {
-  title: "Why I made fmicon.dev for free",
+  title: "Why I made fmicon.dev for free?",
   // PLACEHOLDER story: rewrite these paragraphs in your own words
   paragraphs: [
     "I was an icon hoarder. Thousands of SVGs across a dozen sets, and finding the right one took longer every week.",
@@ -263,7 +263,7 @@ export const features = {
     { icon: I.HeartTwotoneIcon, color: "pink", title: "Free forever", description: "MIT licence. No sign-up, no account, no paywall." },
     { icon: I.MouseTwotoneIcon, color: "orange", title: "Copy or download", description: "SVG, PNG or WebP at any size from 16 to 512 px." },
     { icon: I.CodeTwotoneIcon, color: "green", title: "Packages for your stack", description: "React, Vue, Svelte and React Native, tree-shakeable and typed.", badge: "New" },
-    { icon: I.CloudChangeTwotoneIcon, color: "teal", title: "CDN ready", description: "Link any icon straight from jsDelivr, no install needed." },
+    { icon: I.CloudChangeTwotoneIcon, color: "teal", title: "CDN ready", description: "Link any icon straight from cdn.fmicon.dev, no install needed." },
   ] satisfies Array<{ icon: IconComponent; color: PaletteColor; title: string; description: string; badge?: string }>,
   more: { label: `Browse all ${TOTAL} icons`, href: "/icons" },
 };
@@ -349,7 +349,7 @@ export const footer = {
         { label: "Introduction", href: "/docs" },
         { label: "React", href: "/docs/react" },
         { label: "Vue", href: "/docs/vue" },
-        { label: "Svelte", href: "/docs/svelte" },
+        { label: "MCP server", href: "/mcp" },
         { label: "Raw SVGs and CDN", href: "/docs/svg" },
       ],
     },

@@ -1,0 +1,44 @@
+{
+  "name": "fmicon-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for fmicon: let Claude, Cursor, VS Code and other AI assistants search 891 free icons and paste ready code.",
+  "type": "module",
+  "bin": {
+    "fmicon-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "fmicon": "^1.1.0",
+    "zod": "^4.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "icons",
+    "svg-icons",
+    "fmicon",
+    "claude",
+    "cursor",
+    "ai"
+  ],
+  "license": "MIT",
+  "author": "Prashant Sharma",
+  "homepage": "https://fmicon.dev/mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kakahaja07/fmicon.git",
+    "directory": "packages/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/Kakahaja07/fmicon/issues"
+  }
+}

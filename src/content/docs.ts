@@ -322,7 +322,7 @@ export const docPages: DocPage[] = [
     "js",
     ["fmicon"],
     `The framework-free package. Every icon is plain data with a \`toSvg\` helper, so it works in any bundler, in Node, or straight from a CDN.`,
-    ["Render any icon to an SVG string", "Pick size, style, colour and stroke weight", "Import only the icons you use", "Load files straight from the jsDelivr CDN, no install"],
+    ["Render any icon to an SVG string", "Pick size, style, colour and stroke weight", "Import only the icons you use", "Load files straight from cdn.fmicon.dev, no install"],
   ),
   packagePage(
     "react",

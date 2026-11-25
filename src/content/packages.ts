@@ -9,7 +9,10 @@ export const VERSION = "1.1.0";
 
 export type PackageCard = {
   name: string;
-  logo: Framework;
+  /** A framework logo, or "mcp" for the AI assistant logo */
+  logo: Framework | "mcp";
+  /** Guide link when it is not a docs page, e.g. /mcp */
+  guide?: string;
   description: string;
   /** Docs page id: /docs/<doc> */
   doc: string;
@@ -84,6 +87,22 @@ export const packagesPage = {
           install: "npm i fmicon-svg",
           source: "svg",
           npm: true,
+        },
+      ],
+    },
+    {
+      title: "Developer Tools",
+      items: [
+        {
+          name: "fmicon-mcp",
+          logo: "mcp",
+          description: "MCP server for AI assistants. Claude, Cursor, VS Code and Codex search the icons and write the code for you.",
+          doc: "vanilla",
+          guide: "/mcp",
+          install: "npx -y fmicon-mcp",
+          source: "mcp",
+          npm: true,
+          badge: "v1.0.0",
         },
       ],
     },
