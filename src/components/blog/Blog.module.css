@@ -291,12 +291,12 @@
 .prose h2 {
   margin-top: 48px;
   scroll-margin-top: 96px;
-  font-size: var(--text-xl);
-  font-weight: var(--weight-strong);
-  line-height: 1.25;
-  letter-spacing: -0.015em;
   color: var(--text);
   text-wrap: balance;
+  font-size: var(--heading-size);
+  line-height: var(--heading-lh);
+  letter-spacing: var(--heading-ls);
+  font-weight: var(--heading-weight);
 }
 
 .prose h3 {
@@ -412,10 +412,11 @@
 }
 
 .moreTitle {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-strong);
-  letter-spacing: -0.015em;
   color: var(--text);
+  font-size: var(--heading-size);
+  line-height: var(--heading-lh);
+  letter-spacing: var(--heading-ls);
+  font-weight: var(--heading-weight);
 }
 
 @media (max-width: 1040px) {

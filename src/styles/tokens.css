@@ -123,6 +123,11 @@
 
   /* ---- Layout ---- */
   --wrap: 1024px;
+  /* Section headings (page titles in tools, h2 in articles and docs) */
+  --heading-size: 20px;
+  --heading-lh: 28px;
+  --heading-ls: -0.5px;
+  --heading-weight: 700;
   --tool-bar: 61px; /* height of the site header bar on /icons; sticky rows and columns sit right under it */
   --gutter: 16px;
 

@@ -3,9 +3,10 @@
 }
 
 .h1 {
-  font-size: var(--text-xl);
-  font-weight: var(--weight-strong);
-  letter-spacing: -0.01em;
+  font-size: var(--heading-size);
+  line-height: var(--heading-lh);
+  letter-spacing: var(--heading-ls);
+  font-weight: var(--heading-weight);
 }
 
 .text {

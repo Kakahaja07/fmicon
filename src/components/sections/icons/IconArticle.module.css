@@ -29,11 +29,11 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 2px;
-  font-size: var(--text-lg);
-  font-weight: var(--weight-strong);
-  letter-spacing: -0.01em;
-  line-height: 1.3;
   color: var(--text);
+  font-size: var(--heading-size);
+  line-height: var(--heading-lh);
+  letter-spacing: var(--heading-ls);
+  font-weight: var(--heading-weight);
 }
 
 .h2Icon {

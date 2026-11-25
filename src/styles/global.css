@@ -38,6 +38,7 @@ body {
   font-family: var(--font);
   font-size: var(--text-md);
   line-height: 1.5;
+  letter-spacing: 0.06px; /* Allo reads a touch tight at body sizes */
   -webkit-font-smoothing: antialiased;
   overflow-x: clip;
   transition: background-color var(--dur) ease, color var(--dur) ease;
@@ -71,6 +72,7 @@ ul, ol {
 
 button, input, select, textarea {
   font: inherit;
+  letter-spacing: inherit;
   color: inherit;
 }
 
