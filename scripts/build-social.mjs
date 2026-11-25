@@ -42,6 +42,9 @@ const GRAIN = "data:image/svg+xml;utf8," + encodeURIComponent(
   "<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(#n)'/></svg>",
 );
 const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="26" height="27" ');
+// The app icon, large, top-left, with the three yellow pencil strokes from the header logo's hover
+const bigMark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="72" height="75" ');
+const strokes = `<svg class="strokes" viewBox="0 0 14 14" width="34" height="34" fill="none" stroke="#ffd60a" stroke-width="1.6" stroke-linecap="round"><path d="M2.6 8.6Q3.1 5.4 3.4 1.8"/><path d="M5.4 10.2Q8.2 7.8 11.2 4.6"/><path d="M6.6 13Q9.8 12.6 12.8 11.6"/></svg>`;
 
 // Colours from the site palette, one per tile
 const COLORS = ["#4d8dff", "#34c759", "#a78bfa", "#ffcc00", "#5ac8fa", "#ff9f0a", "#ff453a", "#7c7cff", "#30d1c4", "#a3e635", "#f5a524", "#a1a1aa"];
@@ -78,6 +81,8 @@ body { padding: 18px; font-family: Allo, system-ui, sans-serif; -webkit-font-smo
               linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px) 0 0 / 44px 44px;
   -webkit-mask-image: radial-gradient(80% 85% at 60% 50%, #000 30%, transparent 85%); }
 /* Faint icons along the left, behind the headline */
+.logo { position: absolute; left: 64px; top: 52px; filter: drop-shadow(0 14px 28px rgba(0,0,0,.55)); }
+.logo .strokes { position: absolute; right: -26px; top: -20px; }
 .wall { position: absolute; z-index: -1; inset: -10px auto -10px -10px; width: 640px; display: grid;
   grid-template-columns: repeat(10, 30px); gap: 34px; padding: 22px; color: #fff; opacity: .05;
   -webkit-mask-image: linear-gradient(90deg, #000 20%, transparent 95%); }
@@ -99,6 +104,7 @@ h1 .on { color: #fafafa; }
 .cell span { font-size: 15px; color: #8e8e93; letter-spacing: -0.01em; }
 </style></head><body><div class="card">
 <div class="wall" aria-hidden="true">${wall}</div>
+<div class="logo">${bigMark}${strokes}</div>
 <h1>${heading}</h1>
 <div class="panel"><div class="prompt"><span>${prompt}</span><i></i></div><div class="grid">${cells}</div></div>
 <div class="chip">${mark}fmicon.dev</div>
