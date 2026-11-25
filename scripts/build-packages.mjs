@@ -108,7 +108,7 @@ function packageJson(pkg, fields) {
     keywords: ["icons", "svg", "fmicon", "icon-library", "svg-icons", "ui-icons", ...(fields.keywords ?? [])],
     license: "MIT",
     homepage: SITE,
-    repository: { type: "git", url: `${REPO}.git`, directory: `packages/${pkg}` },
+    repository: { type: "git", url: `git+${REPO}.git`, directory: `packages/${pkg}` },
     bugs: { url: `${REPO}/issues` },
     type: "module",
     sideEffects: false,
