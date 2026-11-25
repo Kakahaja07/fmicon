@@ -3,7 +3,7 @@
 <a href="https://fmicon.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/assets/wordmark-dark.png">
-    <img src=".github/assets/wordmark-light.png" alt="FM Icons" width="320">
+    <img src=".github/assets/wordmark-light.png" alt="FM Icons" width="200">
   </picture>
 </a>
 

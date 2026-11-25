@@ -1,4 +1,4 @@
-// Logo banner for the GitHub README: the dotted F and "FM Icons" in Allo, on a transparent ground,
+// Logo banner for the GitHub README: the dotted F on an app-icon tile and "FM Icons" in Allo, on a transparent ground,
 // one for GitHub's dark theme and one for light. Renders with headless Edge or Chrome.
 //   npm run readme
 // Output: .github/assets/wordmark-{dark,light}.png and showcase-{dark,light}.png
@@ -10,8 +10,8 @@ import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const OUT = ".github/assets";
-const W = 900;
-const H = 240;
+const W = 470;
+const H = 120;
 
 const browser = [
   process.env.CHROME_PATH,
@@ -27,16 +27,18 @@ if (!browser) {
 }
 
 const font = pathToFileURL(resolve("node_modules/allo-font/fonts/webfonts/AlloVariableFriendly.woff2")).href;
-const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="92" height="97" ');
+const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="58" height="61" ');
 
-const page = (ink, soft) => `<!doctype html><html><head><meta charset="utf-8"><style>
+const page = (ink, soft, tile, edge) => `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face { font-family: Allo; src: url("${font}") format("woff2"); font-weight: 100 900; }
 html, body { margin: 0; width: ${W}px; height: ${H}px; background: transparent; overflow: hidden; }
-body { display: flex; align-items: center; justify-content: center; gap: 22px; font-family: Allo, sans-serif; }
-.name { display: flex; align-items: baseline; gap: 18px; font-size: 84px; letter-spacing: -0.04em; line-height: 1; }
+body { display: flex; align-items: center; justify-content: center; gap: 24px; font-family: Allo, sans-serif; }
+.tile { width: 96px; height: 96px; border-radius: 24px; display: grid; place-items: center; background: ${tile}; box-shadow: inset 0 0 0 1.5px ${edge}; }
+.tile svg { margin-left: 4px; }
+.name { display: flex; align-items: baseline; gap: 14px; font-size: 68px; letter-spacing: -0.04em; line-height: 1; }
 b { font-weight: 760; color: ${ink}; }
 span { font-weight: 440; color: ${soft}; }
-</style></head><body>${mark}<div class="name"><b>FM</b><span>Icons</span></div></body></html>`;
+</style></head><body><div class="tile">${mark}</div><div class="name"><b>FM</b><span>Icons</span></div></body></html>`;
 
 // Showcase: the same ten icons in four styles, one row each, labelled on the left
 const load = (style) => new Map(JSON.parse(readFileSync(`src/content/free-icons/${style}.json`, "utf8")).icons.map((i) => [i.slug, i.body]));
@@ -73,8 +75,8 @@ svg [stroke-width] { stroke-width: 1.6; }
 };
 
 const shots = [
-  ["wordmark-dark", page("#f5f5f7", "#a1a1aa"), W, H],
-  ["wordmark-light", page("#111214", "#5c5c66"), W, H],
+  ["wordmark-dark", page("#f5f5f7", "#a1a1aa", "linear-gradient(160deg, #26262b, #161619)", "rgba(255,255,255,0.09)"), W, H, 3],
+  ["wordmark-light", page("#111214", "#5c5c66", "linear-gradient(160deg, #ffffff, #f1f1f4)", "rgba(0,0,0,0.08)"), W, H, 3],
   ["showcase-dark", showcase("dark"), SW, SH],
   ["showcase-light", showcase("light"), SW, SH],
 ];
@@ -82,11 +84,11 @@ const shots = [
 mkdirSync(OUT, { recursive: true });
 const work = mkdtempSync(join(tmpdir(), "fmicons-readme-"));
 try {
-  for (const [name, htmlText, width, height] of shots) {
+  for (const [name, htmlText, width, height, scale = 2] of shots) {
     const html = join(work, `${name}.html`);
     writeFileSync(html, htmlText);
     execFileSync(browser, [
-      "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=2",
+      "--headless=new", "--disable-gpu", "--hide-scrollbars", `--force-device-scale-factor=${scale}`,
       "--default-background-color=00000000", "--virtual-time-budget=2000",
       `--window-size=${width},${height}`, `--screenshot=${resolve(OUT, `${name}.png`)}`, pathToFileURL(html).href,
     ], { stdio: "ignore" });
