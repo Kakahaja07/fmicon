@@ -17,7 +17,7 @@ const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "
 
 export const brand = {
   name: "FM Icons",
-  siteUrl: "https://fmicons.app",
+  siteUrl: "https://fmicon.dev",
   description:
     `${TOTAL} free, open-source icons in ${STYLES} styles. Copy them as SVG, or install them for React, Vue, Svelte and React Native.`,
 };

@@ -62,6 +62,6 @@ The list of variant names.
 
 ## Links
 
-- Browse all 891 icons: https://fmicons.app/icons
+- Browse all 891 icons: https://fmicon.dev/icons
 - Source and issues: https://github.com/Kakahaja07/fmicons
 - Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicons/blob/main/LICENSE).

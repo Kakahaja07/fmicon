@@ -8,7 +8,7 @@ const iconPages: string[] = JSON.parse(readFileSync("src/content/free-icons/page
 
 // Production address, used for the sitemap. Keep in step with brand.siteUrl in src/content/site.ts.
 const docPaths = ["vanilla", "react", "react-native", "vue", "svelte", "angular", "flutter", "svg"].map((id) => `/docs/${id}`);
-const SITE_URL = "https://fmicons.app";
+const SITE_URL = "https://fmicon.dev";
 
 export default defineConfig({
   resolve: { tsconfigPaths: true },

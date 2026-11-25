@@ -2,7 +2,7 @@
 
 891 free, open-source icons in 8 styles: linear, outline, bold, bulk, twotone, broken, glass and duotone. Every icon is drawn on a 24 by 24 grid and recolours with `currentColor`, so it picks up your text colour.
 
-Browse, search and copy them at [fmicons.app](https://fmicons.app).
+Browse, search and copy them at [fmicon.dev](https://fmicon.dev).
 
 ## Packages
 
@@ -100,7 +100,7 @@ The code is MIT licensed. The base icon shapes come from the "7000 FREE UI ICONS
 
 ## Working on the website
 
-The site at fmicons.app lives in this repository too: TanStack Start + React + CSS Modules. Every page is prerendered to static HTML at build time.
+The site at fmicon.dev lives in this repository too: TanStack Start + React + CSS Modules. Every page is prerendered to static HTML at build time.
 
 Pages: `/` (landing) and `/icons` (icon browser: search, recolour, copy as SVG or React).
 

@@ -17,7 +17,7 @@ const SOURCE = join(ROOT, "src/content/free-icons");
 const PACKAGES = join(ROOT, "packages");
 const VERSION = "0.1.0";
 const REPO = "https://github.com/Kakahaja07/fmicons";
-const SITE = "https://fmicons.app";
+const SITE = "https://fmicon.dev";
 const CDN = "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons";
 
 // Variant order is the public order (types, docs, data objects).
