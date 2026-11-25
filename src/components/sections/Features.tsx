@@ -7,11 +7,11 @@ import { FeatureTile, FeatureTileGrid } from "~/components/ui/FeatureTile";
 import { Reveal } from "~/components/ui/Reveal";
 import { SectionHeading } from "~/components/ui/SectionHeading";
 import { ChatArt, ToolDots } from "~/components/art/ChatArt";
-import { DesktopArt } from "~/components/art/DesktopArt";
 import { FormatsArt } from "~/components/art/FormatsArt";
 import { RecolorArt } from "~/components/art/RecolorArt";
 import { SearchArt } from "~/components/art/SearchArt";
 import { StylesArt } from "~/components/art/StylesArt";
+import { TerminalArt } from "~/components/art/TerminalArt";
 import s from "./Features.module.css";
 
 export function Features() {
@@ -50,13 +50,13 @@ export function Features() {
               <BentoCard title={cards.recolor.title} description={cards.recolor.description} art={<RecolorArt />} tone="dark" align="bottom" />
             </Reveal>
             <Reveal delay={80}>
-              <BentoCard title={cards.search.title} description={cards.search.description} art={<SearchArt query={cards.search.query} tags={cards.search.tags} />} tone="dark" align="bottom" />
+              <BentoCard title={cards.search.title} description={cards.search.description} art={<SearchArt query={cards.search.query} />} align="bottom" />
             </Reveal>
             <Reveal>
-              <BentoCard title={cards.export.title} description={cards.export.description} art={<FormatsArt formats={cards.export.formats} />} align="bottom" />
+              <BentoCard title={cards.export.title} description={cards.export.description} art={<FormatsArt />} align="bottom" />
             </Reveal>
             <Reveal delay={80}>
-              <BentoCard title={cards.native.title} description={cards.native.description} art={<DesktopArt />} />
+              <BentoCard title={cards.native.title} description={cards.native.description} art={<TerminalArt />} tone="dark" align="bottom" />
             </Reveal>
           </BentoGrid>
         </div>

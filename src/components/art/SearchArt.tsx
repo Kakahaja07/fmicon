@@ -1,28 +1,34 @@
 import * as I from "~/components/icons/Icons";
 import s from "./SearchArt.module.css";
 
-const results = [I.WalletIcon, I.CardIcon, I.MoneyIcon, I.WalletAddIcon, I.BagIcon];
+const results = [
+  { icon: I.WalletIcon, name: "Wallet" },
+  { icon: I.CardIcon, name: "Card" },
+  { icon: I.MoneyIcon, name: "Money" },
+  { icon: I.WalletAddIcon, name: "Wallet add" },
+];
 
-/** Typing "money" finds wallets, cards and coins: search by meaning, not just file names. */
-export function SearchArt({ query, tags }: { query: string; tags: string[] }) {
+/** Typing "money" finds wallets, cards and cash: the search field and its results, cut by the tile's foot. */
+export function SearchArt({ query }: { query: string }) {
   return (
     <div className={s.art}>
-      <div className={s.field}>
-        <I.SearchNormalIcon size={18} />
-        <span className={s.typed}>{query}</span>
-        <span className={s.caret} />
-      </div>
-      <div className={s.results}>
-        {results.map((Icon, i) => (
-          <span key={i} data-first={i === 0 || undefined}>
-            <Icon size={22} />
-          </span>
-        ))}
-      </div>
-      <div className={s.tags}>
-        {tags.map((t) => (
-          <span key={t}>{t}</span>
-        ))}
+      <div className={s.panel}>
+        <div className={s.field}>
+          <I.SearchNormalIcon size={18} />
+          <span className={s.typed}>{query}</span>
+          <span className={s.caret} />
+        </div>
+        <ul className={s.results}>
+          {results.map(({ icon: Icon, name }, i) => (
+            <li key={name} data-selected={i === 0 || undefined}>
+              <span className={s.glyph}>
+                <Icon size={20} />
+              </span>
+              {name}
+              {i === 0 && <kbd>↵</kbd>}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

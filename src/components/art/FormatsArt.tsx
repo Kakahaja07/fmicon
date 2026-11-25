@@ -1,22 +1,28 @@
 import { HeartBoldIcon } from "~/components/icons/Icons";
 import s from "./FormatsArt.module.css";
 
-/** One icon in the middle, every format it can leave as around it. */
-export function FormatsArt({ formats }: { formats: string[] }) {
-  const half = Math.ceil(formats.length / 2);
+const files = [
+  { ext: "PNG", name: "heart.png", size: "2.4 KB" },
+  { ext: "JSX", name: "Heart.jsx", size: "0.9 KB" },
+  { ext: "SVG", name: "heart.svg", size: "0.6 KB" },
+];
+
+/** One icon leaving as three files: a loose fan of file cards, the front one named. */
+export function FormatsArt() {
   return (
     <div className={s.art}>
-      <div className={s.row}>
-        {formats.slice(0, half).map((f) => (
-          <span key={f}>{f}</span>
-        ))}
-      </div>
-      <span className={s.tile}>
-        <HeartBoldIcon size={40} />
-      </span>
-      <div className={s.row}>
-        {formats.slice(half).map((f) => (
-          <span key={f}>{f}</span>
+      <div className={s.fan}>
+        {files.map((f, i) => (
+          <figure key={f.ext} className={s.file} data-i={i}>
+            <span className={s.badge}>{f.ext}</span>
+            <span className={s.preview}>
+              <HeartBoldIcon size={44} />
+            </span>
+            <figcaption>
+              <b>{f.name}</b>
+              <span>{f.size}</span>
+            </figcaption>
+          </figure>
         ))}
       </div>
     </div>

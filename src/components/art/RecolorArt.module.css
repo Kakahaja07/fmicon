@@ -1,49 +1,93 @@
+/* Picker on top, the set below it running off both sides and fading into the copy */
 .art {
   position: absolute;
   inset: 0;
   display: grid;
   align-content: start;
   justify-items: center;
-  gap: 22px;
-  padding-top: 40px;
-  background: radial-gradient(90% 70% at 50% 0%, color-mix(in srgb, var(--ink) 18%, transparent), transparent 70%), #0e0f11;
-  transition: background 600ms ease;
+  gap: 24px;
+  padding-top: 36px;
+  background: radial-gradient(80% 60% at 50% 0%, color-mix(in srgb, var(--ink) 16%, transparent), transparent 70%);
+  transition: background 500ms ease;
 }
 
-.palette {
+.picker {
   display: flex;
-  gap: 8px;
-  padding: 6px;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 5px 5px 6px;
+  border-radius: var(--radius-pill);
+  background: #1a1b1e;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.swatches {
+  display: flex;
+  gap: 6px;
+  padding-right: 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.swatches i {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow 200ms ease, transform 200ms var(--ease-out);
+}
+
+.swatches i:hover {
+  transform: scale(1.1);
+}
+
+.swatches i[data-on] {
+  box-shadow: 0 0 0 2px #1a1b1e, 0 0 0 3.5px #fff;
+}
+
+.hex {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 28px;
+  padding: 0 10px 0 8px;
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.06);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-variant-numeric: tabular-nums;
 }
 
-.palette i {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  transition: box-shadow 300ms ease, transform 300ms var(--ease-out);
+.hex b {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: background 300ms ease;
 }
 
-.palette i[data-on] {
-  transform: scale(1.15);
-  box-shadow: 0 0 0 2px #0e0f11, 0 0 0 4px #fff;
-}
-
+/* 6 × 3 tiles, wider than the card: cut by both sides, faded at the foot */
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 56px);
+  grid-template-columns: repeat(6, 64px);
   gap: 10px;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent), linear-gradient(#000 55%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent), linear-gradient(#000 55%, transparent);
+  mask-composite: intersect;
 }
 
 .grid span {
   display: grid;
   place-items: center;
-  height: 56px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.04);
+  height: 64px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--ink) 10%, #141518);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
   color: var(--ink);
-  transition: color 450ms ease;
+  transition: color 350ms ease, background-color 350ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid span,
+  .art { transition: none; }
 }

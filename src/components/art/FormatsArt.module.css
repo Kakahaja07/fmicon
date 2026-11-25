@@ -1,36 +1,97 @@
+/* A fan of three file cards above the copy; it opens a little more on hover */
 .art {
   position: absolute;
   inset: 0 0 auto;
-  height: 300px;
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  gap: 18px;
-  background: radial-gradient(60% 70% at 50% 45%, color-mix(in srgb, var(--pink) 14%, transparent), transparent 75%);
-}
-
-.tile {
+  height: 320px;
   display: grid;
   place-items: center;
-  width: 88px;
-  height: 88px;
-  border-radius: 24px;
-  background: linear-gradient(160deg, #ff6b8b, #ff2d55);
-  color: #fff;
-  box-shadow: 0 16px 36px rgba(255, 45, 85, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  background: radial-gradient(55% 60% at 50% 55%, color-mix(in srgb, var(--pink) 16%, transparent), transparent 75%);
 }
 
-.row {
-  display: flex;
-  gap: 8px;
+.fan {
+  position: relative;
+  width: 160px;
+  height: 196px;
+  margin-top: 24px;
 }
 
-.row span {
-  padding: 6px 12px;
-  border-radius: var(--radius-pill);
-  background: var(--surface);
-  box-shadow: var(--shadow-control);
+.file {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 12px;
+  border-radius: 18px;
+  background: #222326;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08), 0 18px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 450ms var(--ease-out);
+}
+
+.file[data-i="0"] { transform: translateX(-74px) rotate(-10deg); }
+.file[data-i="1"] { transform: translateX(74px) rotate(10deg); }
+.file[data-i="2"] { background: #2a2b2f; }
+
+@media (hover: hover) and (pointer: fine) {
+  :global(article):hover .file[data-i="0"] { transform: translateX(-92px) rotate(-14deg); }
+  :global(article):hover .file[data-i="1"] { transform: translateX(92px) rotate(14deg); }
+  :global(article):hover .file[data-i="2"] { transform: translateY(-6px); }
+}
+
+.badge {
+  justify-self: start;
+  padding: 3px 8px;
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.08);
   font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.file[data-i="2"] .badge {
+  background: color-mix(in srgb, var(--pink) 22%, transparent);
+  color: #ff8fa8;
+}
+
+.preview {
+  display: grid;
+  place-items: center;
+  color: #ff5277;
+}
+
+/* Back cards show only their format, on the side that stays visible */
+.file:not([data-i="2"]) .preview {
+  visibility: hidden;
+}
+
+.file[data-i="1"] .badge {
+  justify-self: end;
+}
+
+/* Only the front card is named */
+figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
   font-size: 12px;
-  color: var(--text-2);
+  visibility: hidden;
+}
+
+.file[data-i="2"] figcaption {
+  visibility: visible;
+}
+
+figcaption b {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: #fff;
+}
+
+figcaption span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .file { transition: none; }
 }
