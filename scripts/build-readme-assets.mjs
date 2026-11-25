@@ -10,8 +10,8 @@ import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const OUT = ".github/assets";
-const W = 760;
-const H = 170;
+const W = 900;
+const H = 240;
 
 const browser = [
   process.env.CHROME_PATH,
@@ -27,13 +27,13 @@ if (!browser) {
 }
 
 const font = pathToFileURL(resolve("node_modules/allo-font/fonts/webfonts/AlloVariableFriendly.woff2")).href;
-const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="118" height="124" ');
+const mark = readFileSync("public/favicon.svg", "utf8").replace("<svg ", '<svg width="92" height="97" ');
 
 const page = (ink, soft) => `<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face { font-family: Allo; src: url("${font}") format("woff2"); font-weight: 100 900; }
 html, body { margin: 0; width: ${W}px; height: ${H}px; background: transparent; overflow: hidden; }
-body { display: flex; align-items: center; justify-content: center; gap: 26px; font-family: Allo, sans-serif; }
-.name { display: flex; align-items: baseline; gap: 22px; font-size: 104px; letter-spacing: -0.04em; line-height: 1; }
+body { display: flex; align-items: center; justify-content: center; gap: 22px; font-family: Allo, sans-serif; }
+.name { display: flex; align-items: baseline; gap: 18px; font-size: 84px; letter-spacing: -0.04em; line-height: 1; }
 b { font-weight: 760; color: ${ink}; }
 span { font-weight: 440; color: ${soft}; }
 </style></head><body>${mark}<div class="name"><b>FM</b><span>Icons</span></div></body></html>`;
