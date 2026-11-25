@@ -70,6 +70,31 @@
   animation: rise 700ms var(--ease-out) 120ms both;
 }
 
+/* Pencil line under the call-to-action buttons */
+.pencil {
+  position: absolute;
+  left: -10px;
+  bottom: -14px;
+  width: calc(100% + 20px);
+  height: 12px;
+  overflow: visible;
+  fill: none;
+  stroke: #ff9f0a;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: pencil 900ms var(--ease-out) 700ms forwards;
+}
+
+@keyframes pencil {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pencil { animation: none; stroke-dashoffset: 0; }
+}
+
 .search {
   margin-top: 28px;
   width: 100%;
@@ -78,6 +103,7 @@
 }
 
 .actions {
+  position: relative;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -86,6 +112,8 @@
 }
 
 .meta {
+  /* room for the pencil line above */
+  padding-top: 6px;
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +168,7 @@
 /* Phones: one action, fewer chips, no small print; the header already links to GitHub */
 @media (max-width: 640px) {
   .hero { padding-top: 92px; }
-  .announce { font-size: 12px; }
+  .announce { font-size: 12px; height: 28px; }
   .title { margin-top: 14px; font-size: 32px; line-height: 1.12; }
   .sub { margin-top: 10px; font-size: 14px; }
   .search { margin-top: 20px; }

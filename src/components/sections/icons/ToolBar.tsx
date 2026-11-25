@@ -1,8 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Link } from "@tanstack/react-router";
-import { iconTool, openSource } from "~/content/site";
+import { brand, iconTool, openSource } from "~/content/site";
 import { GithubLogo } from "~/components/ui/FrameworkLogo";
-import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { MoonBoldIcon, MoonIcon, SunBoldIcon, SunIcon } from "~/components/icons/Icons";
 import { Wordmark } from "~/components/ui/Wordmark";
 import { Button } from "~/components/ui/Button";
@@ -49,7 +48,7 @@ export function ToolBar({ query, onQuery, theme, onTheme, contained }: ToolBarPr
         <Link to="/" className={s.home} aria-label={iconTool.toolbar.home} title={iconTool.toolbar.home}>
           <Wordmark size={26} />
         </Link>
-        <span className={s.count}>{freeIconsMeta.total}</span>
+        <span className={s.count}>v{brand.version}</span>
       </div>
 
       <div className={s.search}>

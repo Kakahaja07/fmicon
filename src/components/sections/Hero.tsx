@@ -8,7 +8,6 @@ import { HeroSearch } from "./HeroSearch";
 import { IconField } from "./IconField";
 import { StatsBand } from "./StatsBand";
 import s from "./Hero.module.css";
-import { titleCase } from "~/lib/titleCase";
 
 /**
  * Icon-platform hero: a quiet wall of real icons behind, a search bar as the main action,
@@ -27,7 +26,7 @@ export function Hero() {
         </a>
 
         <h1 id="hero-title" className={s.title}>
-          {titleCase(hero.title)}
+          {hero.titleDisplay}
         </h1>
         <p className={s.sub}>{hero.sub}</p>
 
@@ -36,6 +35,10 @@ export function Hero() {
         </div>
 
         <div className={s.actions}>
+          {/* Hand-drawn pencil line under the two actions, drawn in once */}
+          <svg className={s.pencil} viewBox="0 0 380 14" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M3 8.5C38 5.2 70 10.6 112 7.4S186 3.8 228 7.6 300 11.2 340 7.2 368 5.6 377 7.8" />
+          </svg>
           <Button href={hero.primary.href} size="lg" iconRight={ArrowRightIcon}>
             {hero.primary.label}
           </Button>

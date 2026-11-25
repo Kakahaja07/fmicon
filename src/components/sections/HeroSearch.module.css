@@ -89,4 +89,8 @@
 @media (max-width: 640px) {
   .popular { flex-wrap: nowrap; overflow: hidden; }
   .chip:nth-of-type(n + 5) { display: none; }
+  /* A compact search bar */
+  .form { height: 46px; padding: 0 4px 0 14px; gap: 8px; }
+  .input { font-size: 15px; }
+  .go { width: 38px; height: 38px; }
 }

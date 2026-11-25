@@ -59,8 +59,13 @@
   z-index: 3;
 }
 
-@media (max-width: 640px) {
+/* Below ~900px two tiles side by side get too narrow for their art and copy: stack them */
+@media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; gap: 12px; }
-  .card { height: 400px; padding: 22px; }
+  .card { height: 440px; }
+}
+
+@media (max-width: 640px) {
+  .card { height: 420px; padding: 22px; }
   .title { font-size: 21px; }
 }

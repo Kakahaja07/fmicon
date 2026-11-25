@@ -176,6 +176,8 @@
 
 @media (max-width: 640px) {
   .header { padding-inline: 10px; }
+  /* Phones: the floating bar spans the screen, items spread out */
+  .header:not([data-variant="bar"]) .nav { width: 100%; justify-content: space-between; }
   .optional { display: none; }
   .link { padding: 0 10px; }
   .logo { margin-right: 0; }
