@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
 import { brand } from "~/content/site";
 import globalCss from "~/styles/global.css?url";
-import goeistFont from "~/assets/fonts/Goeist-Variable.woff2?url";
+import alloFont from "allo-font/fonts/webfonts/AlloVariableFriendly.woff2?url";
 
 const title = `${brand.name}: free, open-source icons in 8 styles`;
 
@@ -29,7 +29,7 @@ export const Route = createRootRoute({
       { name: "twitter:image", content: `${brand.siteUrl}/og/home.png` },
     ],
     links: [
-      { rel: "preload", href: goeistFont, as: "font", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "preload", href: alloFont, as: "font", type: "font/woff2", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: globalCss },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
     ],

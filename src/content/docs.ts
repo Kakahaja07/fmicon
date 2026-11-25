@@ -391,7 +391,24 @@ export const docPages: DocPage[] = [
     description: "Every icon as a plain SVG file, for design tools, static sites, emails and anything without a build step.",
     sections: [
       { id: "overview", title: "Raw SVGs", text: [`All ${TOTAL} icons in all ${STYLES} styles are plain SVG files. Download them from any icon page, install them from npm, or link them from the CDN.`] },
-      { id: "cdn", title: "CDN", text: ["jsDelivr serves every file straight from the GitHub repo. The URL is the style, then the icon's slug."], code: [{ title: "HTML", code: `<img src="${openSource.cdn}/linear/home.svg" width="24" height="24" alt="Home" />\n<img src="${openSource.cdn}/bold/heart.svg" width="24" height="24" alt="Favourite" />` }], tip: "An <img> can't take the page's text colour. To recolour, paste the SVG inline or use a package." },
+      {
+        id: "cdn",
+        title: "CDN",
+        text: [
+          openSource.cdnLive
+            ? "Every icon is served from cdn.fmicon.dev as SVG and as a 256px PNG. The URL is the format, the style, then the icon's slug."
+            : "jsDelivr serves every file straight from the GitHub repo. The URL is the style, then the icon's slug.",
+        ],
+        code: [
+          {
+            title: "HTML",
+            code:
+              `<img src="${openSource.cdn}/linear/home.svg" width="24" height="24" alt="Home" />\n<img src="${openSource.cdn}/bold/heart.svg" width="24" height="24" alt="Favourite" />` +
+              (openSource.cdnPng ? `\n\n<!-- PNG, 256 × 256 -->\n<img src="${openSource.cdnPng}/glass/status-up.png" width="64" height="64" alt="Status up" />` : ""),
+          },
+        ],
+        tip: "An <img> can't take the page's text colour. To recolour, paste the SVG inline or use a package.",
+      },
       { id: "installation", title: "Installation", text: ["The same files as an npm package, plus an `icons.json` index of names and categories."], block: "install" },
       { id: "files", title: "File layout", code: [{ title: "@fmicons/svg", code: "icons/\n  linear/home.svg\n  bold/home.svg\n  ...\n  glass/home.svg\n  glass-light/home.svg   // glass for light backgrounds\nicons.json              // slug, name, category for every icon" }] },
       { id: "styles", title: "Styles", text: [`${STYLES} styles, one folder each.`], block: "styles" },

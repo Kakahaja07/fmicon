@@ -84,3 +84,9 @@
 @media (hover: hover) and (pointer: fine) {
   .chip:hover { background: var(--accent-soft); color: var(--accent); }
 }
+
+/* Phones: one row of the most useful chips */
+@media (max-width: 640px) {
+  .popular { flex-wrap: nowrap; overflow: hidden; }
+  .chip:nth-of-type(n + 5) { display: none; }
+}

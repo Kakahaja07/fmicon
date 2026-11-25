@@ -6,7 +6,7 @@ import type { IconArticle } from "~/lib/iconArticle";
 import type { FreeIcon, IconStyle } from "~/lib/svg";
 import { IconBrowser, type BrowserSearch } from "./IconBrowser";
 import { ToolBar } from "./ToolBar";
-import { OpenSourcePanel } from "../OpenSourcePanel";
+import { LibraryArticle } from "./LibraryArticle";
 
 type IconsToolProps = {
   style: IconStyle;
@@ -66,11 +66,8 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
           intro={intro}
           detail={detail}
           article={article}
-          after={
-            <section id="open-source" aria-labelledby="open-source-title">
-              <OpenSourcePanel titleId="open-source-title" />
-            </section>
-          }
+          // Grid pages get the written guide under the icons; icon pages have their own article
+          after={slug ? undefined : <LibraryArticle style={style} />}
         />
       </main>
     </>

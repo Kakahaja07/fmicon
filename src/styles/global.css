@@ -1,22 +1,9 @@
 @import "@fontsource/gochi-hand";
 @import "@fontsource/homemade-apple";
+@import "allo-font/allo-friendly.css";
 @import "./tokens.css";
 
-/* Goeist: the site font (variable, so one file covers every weight). */
-@font-face {
-  font-family: "Goeist";
-  src: url("../assets/fonts/Goeist-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Goeist";
-  src: url("../assets/fonts/Goeist-Italic-Variable.woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
+/* Goeist Mono: code and install commands */
 @font-face {
   font-family: "Goeist Mono";
   src: url("../assets/fonts/GoeistMono-Variable.woff2") format("woff2");

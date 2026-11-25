@@ -8,7 +8,7 @@
   justify-content: center;
   gap: 6px;
   border: 0;
-  border-radius: var(--radius-pill);
+  border-radius: 10px;
   background: var(--btn-bg);
   color: var(--btn-fg);
   box-shadow: var(--btn-shadow);
@@ -20,8 +20,8 @@
   transition: transform var(--dur-fast) var(--ease-out), filter var(--dur-fast) ease, box-shadow var(--dur-fast) ease;
 }
 
-.md { height: 32px; padding: 0 14px; font-size: var(--text-sm); }
-.lg { height: 48px; padding: 0 22px; font-size: var(--text-md); }
+.md { height: 32px; padding: 0 14px; font-size: var(--text-sm); border-radius: 9px; }
+.lg { height: 48px; padding: 0 22px; font-size: var(--text-md); border-radius: 12px; }
 .block { width: 100%; }
 
 .primary { --btn-bg: var(--btn-primary); }
@@ -42,7 +42,7 @@
   height: calc(100% - 8px);
   margin-left: 6px;
   padding: 0 12px;
-  border-radius: var(--radius-pill);
+  border-radius: 7px;
   background: color-mix(in srgb, currentColor 14%, transparent);
   font-weight: var(--weight-strong);
   font-variant-numeric: tabular-nums;

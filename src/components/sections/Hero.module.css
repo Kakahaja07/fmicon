@@ -134,9 +134,15 @@
   .stage { padding: 28px 20px 0; }
 }
 
+/* Phones: one action, fewer chips, no small print; the header already links to GitHub */
 @media (max-width: 640px) {
-  .hero { padding-top: 116px; }
-  .title { font-size: 36px; }
-  .sub { font-size: var(--text-md); }
+  .hero { padding-top: 92px; }
+  .announce { font-size: 12px; }
+  .title { margin-top: 14px; font-size: 32px; line-height: 1.12; }
+  .sub { margin-top: 10px; font-size: 14px; }
+  .search { margin-top: 20px; }
+  .actions { margin-top: 18px; }
+  .actions > :last-child { display: none; }
+  .meta { display: none; }
   .stage { margin-top: 48px; padding: 16px 12px 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
 }

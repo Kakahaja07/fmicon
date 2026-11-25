@@ -24,8 +24,12 @@ export function pkgData(slug: string) {
   return RESERVED.has(name) ? `${name}Icon` : name;
 }
 
-/** Public URL of one SVG file, served by jsDelivr straight from the GitHub repo. */
+/** Public URL of one SVG file: cdn.fmicon.dev once live, jsDelivr until then. */
 export const cdnUrl = (style: IconStyle | "glass-light", slug: string) => `${openSource.cdn}/${style}/${slug}.svg`;
+
+/** 256px PNG on cdn.fmicon.dev; undefined until that CDN is live. */
+export const cdnPngUrl = (style: IconStyle | "glass-light", slug: string) =>
+  openSource.cdnPng ? `${openSource.cdnPng}/${style}/${slug}.png` : undefined;
 
 export const packageFor = {
   js: "@fmicons/core",

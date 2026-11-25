@@ -23,7 +23,7 @@
 .lg.emoji { font-size: 30px; }
 .sm.emoji { font-size: 13px; box-shadow: 0 0 0 2px var(--bg); }
 
-/* Photo: public/prashant.png is pre-cropped to its circle, so it just fills the disc */
+/* Photo: a square image (public/prashant.jpg), clipped to the disc */
 .photo {
   overflow: hidden;
   background: var(--fill-translucent);

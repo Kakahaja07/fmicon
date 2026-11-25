@@ -26,10 +26,19 @@ export const brand = {
 
 const REPO = "https://github.com/Kakahaja07/fmicons";
 
+/**
+ * Icon CDN. Our own: cdn.fmicon.dev (Cloudflare R2, filled by `npm run cdn:build && npm run cdn:upload`),
+ * serving /svg/<style>/<slug>.svg and /png/<style>/<slug>.png.
+ * Until that bucket is live, SVGs come from jsDelivr (straight from the GitHub repo) and PNG links stay hidden.
+ */
+const CDN_LIVE = false;
+const CDN = "https://cdn.fmicon.dev";
+
 export const openSource = {
   repo: REPO,
-  // jsDelivr serves files straight from the GitHub repo, no npm publish needed
-  cdn: "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons",
+  cdnLive: CDN_LIVE,
+  cdn: CDN_LIVE ? `${CDN}/svg` : "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons",
+  cdnPng: CDN_LIVE ? `${CDN}/png` : undefined,
   licence: "MIT",
   badge: "Open source · MIT",
   star: { label: "Star on GitHub", href: REPO },
@@ -198,7 +207,7 @@ export const story = {
     "So I gathered one set, gave every icon eight styles, and made it searchable in a single place.",
     "Then I gave it away. FM Icons is free and open source, so you can use it in anything you build, and help make it better.",
   ],
-  makers: [{ name: "Prashant Sharma", role: "Maker", initial: "P", emoji: "🧑‍💻", image: "/prashant.png", colors: ["#ffd29a", "#ff8f6b"] as const }],
+  makers: [{ name: "Prashant Sharma", role: "Maker", initial: "P", emoji: "🧑‍💻", image: "/prashant.jpg", colors: ["#ffd29a", "#ff8f6b"] as const }],
   ps: "P.S. Missing an icon? Open an issue on GitHub and tell me which one.",
 };
 

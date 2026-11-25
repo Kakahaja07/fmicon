@@ -1,6 +1,7 @@
 import { brand } from "~/content/site";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { iconArticle } from "~/content/iconArticle";
+import { libraryArticle, styleKeywords } from "~/content/libraryArticle";
 import type { IconArticle } from "./iconArticle";
 import { humanName, strokeWeights, styleLabels, type IconStyle, type StrokeWeight } from "./svg";
 
@@ -66,24 +67,36 @@ const breadcrumbs = (items: Array<{ name: string; path: string }>) => ({
   itemListElement: items.map((item, i) => ({ "@type": "ListItem", position: i + 1, name: item.name, item: site + item.path })),
 });
 
+const faqLd = (items: Array<{ q: string; a: string }>) => ({
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: items.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+});
+
 export function libraryHead() {
+  const total = freeIconsMeta.total;
+  const styles = freeIconsMeta.styles.length;
   return pageHead({
-    title: `${freeIconsMeta.total} free, open-source icons in ${freeIconsMeta.styles.length} styles · SVG, React, Vue | ${brand.name}`,
-    description: `Browse ${freeIconsMeta.total} free, open-source UI icons in ${freeIconsMeta.styles.length} styles, including glass and duotone. Recolour, resize and copy as SVG, PNG, React, Vue, Svelte or Flutter. No sign-up.`,
+    title: `Free SVG Icons: ${total} open-source icons in ${styles} styles | ${brand.name}`,
+    description: `Free icons for websites and apps: ${total} open-source SVG icons in ${styles} styles, including glass and duotone. Recolour, resize and copy as SVG, PNG, React, Vue or Svelte. MIT licence, no sign-up.`,
     path: "/icons",
-    jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }])],
+    jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }]), faqLd(libraryArticle.faq())],
   });
 }
 
 export function styleHead(style: IconStyle) {
   const label = styleLabels[style];
+  const { keyword, also } = styleKeywords[style];
+  const Keyword = keyword.charAt(0).toUpperCase() + keyword.slice(1);
   return pageHead({
-    title: `Free ${label} icons · ${freeIconsMeta.total} ${label.toLowerCase()} SVG icons | ${brand.name}`,
-    description: `${freeIconsMeta.total} free, open-source ${label.toLowerCase()} icons for apps and websites. Download SVG or PNG, or copy React, Vue, Svelte and Flutter code. MIT licensed, part of FM Icons.`,
-    // Linear is the library's default view, so /icons is its canonical home.
+    title: `Free ${Keyword}: ${freeIconsMeta.total} ${label} SVG Icons | ${brand.name}`,
+    description: `${freeIconsMeta.total} free ${keyword} (${also}) for apps and websites. Download SVG or PNG, or copy React, Vue and Svelte code. Open source, MIT licensed.`,
     path: stylePath(style),
     image: "styles",
-    jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }, { name: `${label} icons`, path: stylePath(style) }])],
+    jsonLd: [
+      breadcrumbs([{ name: "Free icons", path: "/icons" }, { name: `${label} icons`, path: stylePath(style) }]),
+      faqLd(libraryArticle.faq({ id: style, label })),
+    ],
   });
 }
 

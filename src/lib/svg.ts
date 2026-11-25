@@ -1,4 +1,4 @@
-import { cdnUrl, packageFor, pkgComponent, pkgData } from "./packages";
+import { cdnPngUrl, cdnUrl, packageFor, pkgComponent, pkgData } from "./packages";
 
 /** One icon from the free sample (public/free-icons/<style>.json). */
 export type FreeIcon = {
@@ -152,13 +152,14 @@ export function codeFor(fw: Framework, icon: FreeIcon, style: IconStyle, size: n
       return `import { ${pkgData(icon.slug)}, toSvg } from "${packageFor.js}";
 
 document.querySelector("#icon").innerHTML = toSvg(${pkgData(icon.slug)}, ${coreOptions(style, size, color, stroke)});`;
-    case "cdn":
-      return `<img
-  src="${cdnUrl(style, icon.slug)}"
-  width="${size}"
-  height="${size}"
-  alt="${humanName(icon.name)}"
-/>`;
+    case "cdn": {
+      const img = (src: string, comment: string) =>
+        `<!-- ${comment} -->\n<img\n  src="${src}"\n  width="${size}"\n  height="${size}"\n  alt="${humanName(icon.name)}"\n/>`;
+      const png = cdnPngUrl(style, icon.slug);
+      return png
+        ? `${img(cdnUrl(style, icon.slug), "SVG: sharp at any size")}\n\n${img(png, "PNG: 256 × 256")}`
+        : img(cdnUrl(style, icon.slug), "SVG from the CDN");
+    }
     case "react":
       return `import { ${Pkg} } from "${packageFor.react}";
 
