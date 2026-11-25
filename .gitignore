@@ -7,3 +7,7 @@ dist
 packages/*/dist
 .claude/
 dist-cdn
+
+# Cloudflare Worker build output
+packages/mcp/dist-worker/
+.wrangler/

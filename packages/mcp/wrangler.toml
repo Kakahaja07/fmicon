@@ -1,0 +1,11 @@
+# Hosted fmicon MCP server.  Deploy: npx wrangler deploy   (from packages/mcp)
+name = "fmicon-mcp"
+main = "worker.js"
+compatibility_date = "2025-11-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Served at https://mcp.fmicon.dev (the fmicon.dev zone is on this Cloudflare account)
+routes = [{ pattern = "mcp.fmicon.dev", custom_domain = true }]
+
+[observability]
+enabled = true

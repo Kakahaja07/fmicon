@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { mcpClients, mcpPage, type McpClient } from "~/content/mcp";
+import { MCP_URL, mcpClients, mcpPage, type McpClient } from "~/content/mcp";
 import { ArrowRightIcon, CodeIcon, CommandIcon, CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
 import { AiLogo, aiTools } from "~/components/ui/AiLogo";
 import { cx } from "~/lib/cx";
@@ -95,8 +95,8 @@ export function McpClients() {
 
       <p className={s.manual}>
         {mcpPage.manual}
-        <button type="button" className={s.manualCmd} onClick={() => manual.copy("npx -y fmicon-mcp")}>
-          <code>npx -y fmicon-mcp</code>
+        <button type="button" className={s.manualCmd} onClick={() => manual.copy(MCP_URL)}>
+          <code>{MCP_URL}</code>
           {manual.copied ? <TickCircleIcon size={14} /> : <CopyIcon size={14} />}
         </button>
       </p>

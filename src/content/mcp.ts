@@ -1,13 +1,13 @@
 /**
- * /mcp: the fmicon MCP server (packages/mcp, published as fmicon-mcp).
- * One config for every client: npx runs the server locally over stdio.
+ * /mcp: the hosted fmicon MCP server (packages/mcp/worker.js on Cloudflare Workers).
+ * Every app connects to one URL; nothing to install. The same tools also run locally (packages/mcp/index.js).
  */
 
-const command = "npx";
-const args = ["-y", "fmicon-mcp"];
-const json = JSON.stringify({ mcpServers: { fmicon: { command, args } } }, null, 2);
+export const MCP_URL = "https://mcp.fmicon.dev/mcp";
 
-const cursorConfig = btoa(JSON.stringify({ command, args }));
+const json = (key: string) => JSON.stringify({ mcpServers: { fmicon: { [key]: MCP_URL } } }, null, 2);
+const cursorConfig = btoa(JSON.stringify({ url: MCP_URL }));
+const vscodeConfig = JSON.stringify({ name: "fmicon", type: "http", url: MCP_URL });
 
 export type McpClient = {
   id: string;
@@ -26,14 +26,14 @@ export const mcpClients: McpClient[] = [
     label: "Claude Code",
     logo: "claude",
     steps: ["Run this in your terminal.", "Start Claude Code and ask for an icon."],
-    code: { lang: "bash", text: "claude mcp add fmicon -- npx -y fmicon-mcp" },
+    code: { lang: "bash", text: `claude mcp add --transport http fmicon ${MCP_URL}` },
   },
   {
-    id: "claude-desktop",
-    label: "Claude Desktop",
+    id: "claude",
+    label: "Claude app",
     logo: "claude",
-    steps: ["Open Settings → Developer → Edit Config.", "Paste this into claude_desktop_config.json and restart Claude."],
-    code: { lang: "json", text: json },
+    steps: ["Open Settings → Connectors → Add custom connector.", "Name it fmicon, paste this URL and click Add."],
+    code: { lang: "text", text: MCP_URL },
   },
   {
     id: "cursor",
@@ -41,47 +41,47 @@ export const mcpClients: McpClient[] = [
     logo: "cursor",
     install: { label: "Add to Cursor", href: `cursor://anysphere.cursor-deeplink/mcp/install?name=fmicon&config=${cursorConfig}` },
     steps: ["Click Add to Cursor, or paste this into .cursor/mcp.json.", "Open the chat in Agent mode and ask for an icon."],
-    code: { lang: "json", text: json },
+    code: { lang: "json", text: json("url") },
   },
   {
     id: "vscode",
     label: "VS Code",
     logo: "githubcopilot",
-    install: {
-      label: "Add to VS Code",
-      href: `vscode:mcp/install?${encodeURIComponent(JSON.stringify({ name: "fmicon", command, args }))}`,
-    },
+    install: { label: "Add to VS Code", href: `vscode:mcp/install?${encodeURIComponent(vscodeConfig)}` },
     steps: ["Click Add to VS Code, or run this command.", "Open Copilot Chat in Agent mode and ask for an icon."],
-    code: { lang: "bash", text: `code --add-mcp '{"name":"fmicon","command":"npx","args":["-y","fmicon-mcp"]}'` },
+    code: { lang: "bash", text: `code --add-mcp '${vscodeConfig}'` },
   },
   {
     id: "windsurf",
     label: "Windsurf",
     logo: "windsurf",
     steps: ["Open Settings → Cascade → MCP servers → View raw config.", "Paste this into mcp_config.json and refresh."],
-    code: { lang: "json", text: json },
+    code: { lang: "json", text: json("serverUrl") },
   },
   {
     id: "codex",
     label: "Codex",
     logo: "codex",
     steps: ["Run this in your terminal.", "Start Codex and ask for an icon."],
-    code: { lang: "bash", text: "codex mcp add fmicon -- npx -y fmicon-mcp" },
+    code: { lang: "bash", text: `codex mcp add fmicon --url ${MCP_URL}` },
   },
   {
     id: "other",
     label: "Any MCP app",
     logo: "other",
-    steps: ["Add a stdio server with this command to your app's MCP settings.", "On Windows, if npx won't start, use command \"cmd\" with args [\"/c\", \"npx\", \"-y\", \"fmicon-mcp\"]."],
-    code: { lang: "json", text: json },
+    steps: [
+      "Add a remote (HTTP) MCP server with this URL in your app's settings.",
+      "If your app only runs local servers, use the command: npx -y mcp-remote followed by this URL.",
+    ],
+    code: { lang: "text", text: MCP_URL },
   },
 ];
 
 export const mcpPage = {
   eyebrow: "MCP server",
   title: "Connect Claude, Cursor and VS Code to fmicon",
-  sub: "fmicon MCP lets your AI assistant search 891 free icons and write the code for you, in React, Vue, Svelte or plain SVG. It runs on your computer. No account, no API key.",
-  manual: "Using another app? Add a stdio server with this command:",
+  sub: "fmicon MCP lets your AI assistant search 891 free icons and write the code for you, in React, Vue, Svelte or plain SVG. Paste one URL into your app. Nothing to install, no account, no API key.",
+  manual: "Using another app? Add a remote MCP server with this URL:",
   demo: {
     title: "Ask for an icon in plain words",
     sub: "Your assistant searches fmicon, picks the right icon and adds it to your code.",
@@ -115,15 +115,15 @@ export const mcpPage = {
     },
     {
       q: "Does it send my code anywhere?",
-      a: "No. The server runs on your computer through npx and only answers questions about icons. All the icon data ships inside the package, so it doesn't call any server.",
+      a: "No. Your assistant only sends the icon request, like \"gear\" or \"lock in React\", to mcp.fmicon.dev. Your code and files stay on your computer, nothing is stored, and there are no accounts or tracking.",
     },
     {
       q: "Which apps work with it?",
-      a: "Any app that supports local (stdio) MCP servers, including Claude Code, Claude Desktop, Cursor, VS Code with Copilot, Windsurf, Codex, Zed and Cline.",
+      a: "Any app that supports remote MCP servers, including Claude Code, the Claude app, Cursor, VS Code with Copilot, Windsurf, Codex, Zed and Cline. Apps that only run local servers can connect through mcp-remote.",
     },
     {
-      q: "What do I need installed?",
-      a: "Node.js 18 or newer, which gives you npx. The first run downloads the package; after that it starts in about a second.",
+      q: "Do I need to install anything?",
+      a: "No. The server is hosted on Cloudflare at mcp.fmicon.dev, so you only paste the URL into your app. It runs close to you, so answers come back fast from anywhere.",
     },
   ],
 };

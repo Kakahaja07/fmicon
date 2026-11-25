@@ -40,5 +40,9 @@
   },
   "bugs": {
     "url": "https://github.com/Kakahaja07/fmicon/issues"
+  },
+  "devDependencies": {
+    "@cfworker/json-schema": "^4.1.6",
+    "wrangler": "^4.168.0"
   }
 }

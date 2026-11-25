@@ -1,9 +1,11 @@
+import { useEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { brand } from "~/content/site";
 import { npmUrl, packagesPage, sourceUrl, VERSION, type PackageCard } from "~/content/packages";
 import { Container } from "~/components/ui/Container";
 import { FrameworkLogo, GithubLogo, NpmLogo } from "~/components/ui/FrameworkLogo";
 import { AiLogo, aiTools } from "~/components/ui/AiLogo";
+import { CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
 import { pageHead } from "~/lib/iconSeo";
 import { titleCase } from "~/lib/titleCase";
 import s from "~/components/sections/Packages.module.css";
@@ -64,7 +66,7 @@ function Card({ item }: { item: PackageCard }) {
       </div>
       <h3 className={s.name}>{item.name}</h3>
       <p className={s.desc}>{item.description}</p>
-      {item.install && <code className={s.install}>{item.install}</code>}
+      {item.install && <CopyLine text={item.install} />}
       <div className={s.actions}>
         {/* The guide is the one place that explains how to use it */}
         {item.guide ? (
@@ -95,5 +97,30 @@ function Card({ item }: { item: PackageCard }) {
         )}
       </div>
     </article>
+  );
+}
+
+/** The install command, full width, copied with one click. */
+function CopyLine({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+  const timer = useRef(0);
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      window.clearTimeout(timer.current);
+      timer.current = window.setTimeout(() => setCopied(false), 1600);
+    } catch {
+      /* clipboard blocked: the command is still selectable */
+    }
+  };
+  return (
+    <button type="button" className={s.install} onClick={copy} aria-label={`Copy: ${text}`}>
+      <code>{text}</code>
+      <span className={s.copyIcon} data-copied={copied || undefined}>
+        {copied ? <TickCircleIcon size={15} /> : <CopyIcon size={15} />}
+      </span>
+    </button>
   );
 }
