@@ -49,6 +49,46 @@
 
 .logo:active > span { transform: scale(0.94); }
 
+/* Three yellow pencil strokes beside the logo, drawn in one after another on hover */
+.logo { position: relative; }
+
+.strokes {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 12px;
+  height: 18px;
+  margin-top: -9px;
+  overflow: visible;
+  pointer-events: none;
+  fill: none;
+  stroke: #ffd60a;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  opacity: 0;
+  transition: opacity 150ms ease;
+}
+
+.strokes path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover .strokes { opacity: 1; }
+  .logo:hover .strokes path { animation: stroke-in 260ms var(--ease-out) forwards; }
+  .logo:hover .strokes path:nth-child(2) { animation-delay: 70ms; }
+  .logo:hover .strokes path:nth-child(3) { animation-delay: 140ms; }
+}
+
+@keyframes stroke-in {
+  to { stroke-dashoffset: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo:hover .strokes path { animation: none; stroke-dashoffset: 0; }
+}
+
 /* ---- Links + sliding pill ---- */
 .links {
   position: relative;

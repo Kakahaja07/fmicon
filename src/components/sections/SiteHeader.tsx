@@ -53,6 +53,12 @@ export function SiteHeader() {
       <nav className={s.nav} aria-label="Primary" data-scrolled={scrolled || undefined}>
         <a className={s.logo} href="/" aria-label={`${brand.name} home`}>
           {bar ? <Wordmark size={28} /> : <AppIcon size={28} />}
+          {/* Three pencil strokes, drawn in on hover */}
+          <svg className={s.strokes} viewBox="0 0 12 18" aria-hidden="true">
+            <path pathLength={1} d="M1.5 3.5C4 1.6 6.6 5 10.5 2.6" />
+            <path pathLength={1} d="M1 9.2C3.6 7.4 6.4 10.8 10.8 8.4" />
+            <path pathLength={1} d="M1.5 15C4 13.2 6.8 16.4 10.5 14.2" />
+          </svg>
         </a>
 
         <div className={s.links} onMouseLeave={() => setHovered(null)}>

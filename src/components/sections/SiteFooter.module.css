@@ -134,3 +134,12 @@
   .columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .base { flex-direction: column; align-items: flex-start; }
 }
+
+/* Docs: same width as the full-width header bar */
+.wide {
+  width: min(1240px, 100% - 48px);
+}
+
+@media (max-width: 640px) {
+  .wide { width: calc(100% - 24px); }
+}

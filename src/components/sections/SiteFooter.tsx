@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "@tanstack/react-router";
+import { Link, useRouterState } from "@tanstack/react-router";
 import { brand, footer, openSource, story } from "~/content/site";
 import { Avatar } from "~/components/ui/Avatar";
 import { CommandLine } from "~/components/ui/CommandLine";
@@ -13,6 +13,8 @@ import s from "./SiteFooter.module.css";
  * maker and licence in a slim bottom row.
  */
 export function SiteFooter() {
+  // Docs use the full-width header bar, so the footer lines up with it there.
+  const wide = useRouterState({ select: (state) => state.location.pathname.startsWith("/docs") });
   const [copied, setCopied] = useState(false);
   const timer = useRef(0);
   useEffect(() => () => window.clearTimeout(timer.current), []);
@@ -30,7 +32,7 @@ export function SiteFooter() {
 
   return (
     <footer className={s.footer}>
-      <Container>
+      <Container className={wide ? s.wide : undefined}>
         <div className={s.top}>
           <div className={s.brand}>
             <Link to="/" className={s.logo} aria-label={`${brand.name} home`}>
