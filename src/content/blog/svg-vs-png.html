@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SVG vs PNG for Icons: Which Format Should You Use?</title>
+<meta name="description" content="SVG vs PNG for icons, tested on real files: size, sharpness, colour and support. See when each format wins and how to use both on your website or app.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is SVG or PNG better for icons?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SVG is the better format for most website and app icons. An SVG icon is a tiny text file, often under 1 KB, that stays sharp at any size and changes colour with CSS. PNG is a fixed grid of pixels, so it suits places that cannot read SVG, such as many email apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Google index SVG images?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Google indexes SVG images. Google's image SEO documentation lists SVG among the supported formats, next to JPEG, PNG, WebP, GIF, BMP and AVIF. For best results, add a descriptive file name and alt text, and place the image near related text on a page Google can crawl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it safe to use SVG files on a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, SVG files are safe when they come from a trusted source. SVG is code, so a file can hold scripts. Browsers do not run scripts in an SVG loaded with an img tag. If users can upload SVG files to your site, clean them with a sanitizer such as DOMPurify first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you convert an SVG icon to PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can convert an SVG icon to PNG with a design tool such as Figma or Inkscape, or with a command-line renderer like resvg. Export at two or three times the display size for sharp screens. fmicon already hosts a 256 px PNG of every icon on its CDN."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is WebP better than PNG for icons?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WebP can be smaller than PNG for pixel images. According to Google's WebP documentation, lossless WebP files are about 26% smaller than PNGs. For interface icons, SVG still beats both, because one vector file stays sharp at every size and can change colour with CSS."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a logo be SVG or PNG?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A logo should be SVG on your website and PNG for places that need pixels. SVG keeps the logo crisp on every screen and at any size. Keep a PNG copy at around 512 px for email signatures, social profiles and documents that do not accept SVG."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<article>
+
+<h1>SVG vs PNG for Icons: Which Format Should You Use?</h1>
+
+<h3>Is SVG or PNG better for icons?</h3>
+<p>SVG is the better format for most website and app icons. An SVG icon is a tiny text file, often under 1 KB, that stays sharp at any size and changes colour with CSS. PNG is a fixed grid of pixels, so it suits places that cannot read SVG, such as many email apps.</p>
+
+<p>Last month I exported the same home icon twice. One copy was an SVG, the other a PNG. On my laptop's sharp screen, the PNG looked a little soft around the roof. The SVG looked like it was printed. That tiny test is the whole SVG vs PNG story in one picture.</p>
+
+<p>Let me explain why that happens, what the file sizes really look like, and when PNG is still the right call. I ran every number below on the 891 icons in <a href="/icons">the fmicon library</a>, so you can see real data, not guesses.</p>
+
+<h2>What is the difference between SVG and PNG?</h2>
+<p>SVG is a vector format, and PNG is a raster format. An SVG file stores shapes as maths, like "draw a line from here to there". A PNG file stores a fixed grid of coloured pixels.</p>
+<p>SVG stands for Scalable Vector Graphics. The World Wide Web Consortium (W3C) published it as an official web standard in 2001. Because the file describes shapes instead of pixels, the browser can redraw it at 16 px or 600 px with the same clean edges.</p>
+<p>PNG stands for Portable Network Graphics. The W3C made it a standard in 1996. PNG is lossless, which means it keeps every pixel exactly. It also supports transparency. That is why it became the default for icons and logos before SVG was widely supported.</p>
+<p>Here's the thing. A pixel grid has a fixed size. If you stretch a 24 px PNG to 48 px, the browser has to guess the missing pixels. That guess is what makes edges look blurry.</p>
+
+<h2>Which is smaller, SVG or PNG?</h2>
+<p>For simple icons, SVG is usually smaller, especially once you need sharp copies for high-resolution screens. In my tests, a typical line icon was under 1 KB as SVG, while one 256 px PNG of the same icon was about 6.5 KB.</p>
+<p>I measured these files straight from the fmicon build:</p>
+<table>
+<thead>
+<tr><th>File</th><th>Size</th></tr>
+</thead>
+<tbody>
+<tr><td>Home icon, SVG (linear style)</td><td>541 bytes (0.53 KB)</td></tr>
+<tr><td>Home icon, SVG after gzip compression</td><td>300 bytes (0.29 KB)</td></tr>
+<tr><td>Home icon, PNG at 24 px</td><td>459 bytes (0.45 KB)</td></tr>
+<tr><td>Home icon, PNG at 48 px (2x screens)</td><td>910 bytes (0.89 KB)</td></tr>
+<tr><td>Home icon, PNG at 72 px (3x screens)</td><td>1,400 bytes (1.37 KB)</td></tr>
+<tr><td>Average linear icon, SVG (891 icons)</td><td>878 bytes (0.86 KB)</td></tr>
+<tr><td>Average linear icon, PNG at 256 px</td><td>6,510 bytes (6.36 KB)</td></tr>
+</tbody>
+</table>
+<p>This is where it gets interesting. At exactly 24 px, the PNG is slightly smaller than the raw SVG. But nobody ships just one PNG anymore. You need a 2x and often a 3x copy for phones, and those add up fast. One SVG covers every size.</p>
+<p>Servers also compress SVG with gzip or Brotli, because SVG is plain text. The home icon shrank from 541 to 300 bytes. PNG is already compressed, so it barely shrinks further.</p>
+
+<h3>What about detailed icons?</h3>
+<p>Detailed artwork closes the gap but does not flip it. The glass icons in fmicon use gradients and soft layers. They average 2.9 KB as SVG and 11 KB as a 256 px PNG. Very complex illustrations with thousands of points can be bigger as SVG, but icons rarely get there.</p>
+
+<h2>Why do SVG icons stay sharp on retina screens?</h2>
+<p>SVG icons stay sharp because the browser draws them fresh for every screen. A PNG has a fixed number of pixels, so on a 2x or 3x display it either gets stretched and blurry or you must ship larger copies.</p>
+<p>Apple introduced its Retina display with the iPhone 4 in 2010, at twice the pixel density of earlier models. Today most phones run at 2x or 3x. Developers call this the device pixel ratio. A 24 px icon on a 3x phone actually covers 72 real pixels.</p>
+<p>With PNG, that means making <code>icon.png</code>, <code>icon@2x.png</code> and <code>icon@3x.png</code>, then wiring them up with <code>srcset</code>. With SVG, you ship one file and you are done. Honestly, this alone is why I switched every product icon I work on to SVG.</p>
+
+<h2>Can you change the colour of an SVG icon?</h2>
+<p>Yes, you can change the colour of an SVG icon with one line of CSS. If the icon uses <code>currentColor</code>, it takes the text colour of whatever it sits in. A PNG needs a separate file for every colour.</p>
+<p>MDN Web Docs describes <code>currentColor</code> as a keyword that uses the element's current <code>color</code> value. Every fmicon line icon is drawn this way. So a button with <code>color: #1265ec</code> gets a blue icon, and its hover state can change the icon too, with no extra files.</p>
+<pre><code>&lt;button style="color: #1265ec"&gt;
+  &lt;svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"&gt;
+    &lt;path d="..." stroke="currentColor" stroke-width="1.5" /&gt;
+  &lt;/svg&gt;
+  Home
+&lt;/button&gt;</code></pre>
+<p>One catch. The colour trick only works when the SVG is inline in the page or rendered by a component, such as <a href="/docs/react">fmicon-react</a>. An SVG loaded through an <code>&lt;img&gt;</code> tag keeps its own colours. For full control, paste the SVG code or use a package. The <a href="/docs/svg">raw SVG and CDN guide</a> shows both ways.</p>
+
+<h2>When should you use PNG icons instead?</h2>
+<p>Use PNG icons where SVG is not supported or not allowed. The big three are email newsletters, social share images, and older apps or tools that only accept pixel images.</p>
+<ul>
+<li><strong>Email.</strong> According to Can I Email, which tracks HTML support across email clients, Gmail does not display SVG images. PNG is the safe choice for icons in newsletters.</li>
+<li><strong>Social share cards.</strong> The Open Graph image that Facebook, LinkedIn and X show when someone shares your link should be PNG or JPG.</li>
+<li><strong>Slides and documents.</strong> Some presentation and document tools still handle PNG better than SVG. When in doubt, a PNG just works.</li>
+<li><strong>App store and marketing assets.</strong> Stores and ad platforms ask for pixel images at exact sizes.</li>
+</ul>
+<p>Here's the good news. You do not have to pick one forever. fmicon serves every icon in both formats from its CDN: SVG at <code>cdn.fmicon.dev/svg/</code> and a 256 px PNG at <code>cdn.fmicon.dev/png/</code>. Use the SVG on your site and grab the PNG for the email.</p>
+
+<h2>SVG vs PNG: a side-by-side comparison</h2>
+<p>SVG wins on sharpness, file size at multiple resolutions, and colour control. PNG wins on support in email and older tools. Both are lossless and both support transparency.</p>
+<table>
+<thead>
+<tr><th>Feature</th><th>SVG</th><th>PNG</th></tr>
+</thead>
+<tbody>
+<tr><td>Type</td><td>Vector (shapes)</td><td>Raster (pixels)</td></tr>
+<tr><td>Sharp at any size</td><td>Yes</td><td>Only at its own size</td></tr>
+<tr><td>Typical icon size</td><td>0.5 to 1 KB</td><td>0.5 to 7 KB, per copy</td></tr>
+<tr><td>Change colour with CSS</td><td>Yes, with currentColor</td><td>No</td></tr>
+<tr><td>Transparency</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Works in Gmail</td><td>No</td><td>Yes</td></tr>
+<tr><td>Editable in Figma</td><td>Yes, as shapes</td><td>Only as an image</td></tr>
+<tr><td>Best for</td><td>Websites, apps, design files</td><td>Email, social cards, older tools</td></tr>
+</tbody>
+</table>
+
+<h2>What this means for your project</h2>
+<p>For a website or app, make SVG your default and keep PNG as a backup format. That one rule covers almost every case I have seen.</p>
+<ol>
+<li>Use SVG icons in your interface: buttons, menus, tab bars and lists.</li>
+<li>Use a component package if you build with React, Vue or Svelte. It handles size, colour and accessibility for you. Our <a href="/blog/react-icons">guide to React icons</a> walks through it.</li>
+<li>Use PNG for email, social cards and anything that will be pasted into another app.</li>
+<li>Give meaningful icons a text label. Our <a href="/blog/accessible-icons">accessible icons guide</a> covers the rules in plain words.</li>
+</ol>
+
+<h2>My take after switching a whole icon set</h2>
+<p>Based on what I've seen building fmicon, SVG is not just the better format, it is the less stressful one. I used to keep folders of PNGs in five sizes and three colours. Now one SVG file does the job of all of them.</p>
+<p>The only time I reach for PNG is when something outside my control needs it. That is a nice place to be. You stop managing files and start designing.</p>
+
+<h2>Pick SVG first, keep PNG for the edges</h2>
+<p>In the SVG vs PNG question, SVG wins for icons on the web: it is sharp everywhere, small, and easy to recolour. PNG still earns its place in email, social cards and older tools. If you want both without the busywork, <a href="/icons">browse the free fmicon icons</a>, copy the SVG, and download the PNG only when you need it.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Does Google index SVG images?</h3>
+<p>Yes, Google indexes SVG images. Google's image SEO documentation lists SVG among the supported formats, next to JPEG, PNG, WebP, GIF, BMP and AVIF. For best results, add a descriptive file name and alt text, and place the image near related text on a page Google can crawl.</p>
+
+<h3>Is it safe to use SVG files on a website?</h3>
+<p>Yes, SVG files are safe when they come from a trusted source. SVG is code, so a file can hold scripts. Browsers do not run scripts in an SVG loaded with an img tag. If users can upload SVG files to your site, clean them with a sanitizer such as DOMPurify first.</p>
+
+<h3>How do you convert an SVG icon to PNG?</h3>
+<p>You can convert an SVG icon to PNG with a design tool such as Figma or Inkscape, or with a command-line renderer like resvg. Export at two or three times the display size for sharp screens. fmicon already hosts a 256 px PNG of every icon on its CDN.</p>
+
+<h3>Is WebP better than PNG for icons?</h3>
+<p>WebP can be smaller than PNG for pixel images. According to Google's WebP documentation, lossless WebP files are about 26% smaller than PNGs. For interface icons, SVG still beats both, because one vector file stays sharp at every size and can change colour with CSS.</p>
+
+<h3>Should a logo be SVG or PNG?</h3>
+<p>A logo should be SVG on your website and PNG for places that need pixels. SVG keeps the logo crisp on every screen and at any size. Keep a PNG copy at around 512 px for email signatures, social profiles and documents that do not accept SVG.</p>
+
+</article>
+</body>
+</html>

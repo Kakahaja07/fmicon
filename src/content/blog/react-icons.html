@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>React Icons: How to Add Icons to a React App (2026)</title>
+<meta name="description" content="A simple guide to React icons: install an icon library, import only what you need, set size and colour, and keep icons accessible. Real code you can copy.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do you add icons to a React app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The easiest way to add icons to a React app is to install an icon package from npm, such as fmicon-react, and import each icon as a component. You write <Lock size={24} /> like any other component. Modern bundlers like Vite and webpack then keep only the icons you import."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do React icon packages work with Next.js?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, React icon packages that ship standard ES modules work with Next.js, in both the App Router and the Pages Router. fmicon-react icons are plain components that render SVG, so you import them in any page or component the same way you would in a Vite or Create React App project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you use SVG files directly in React?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can use SVG files directly in React. The simplest way is an img tag pointing to the file. To change colour or size with props, paste the SVG markup into a component, use a tool like SVGR to convert it, or install a ready-made icon package such as fmicon-react."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you change a React icon's colour on hover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You change a React icon's colour on hover by changing the CSS color of its parent. Icons drawn with currentColor, like fmicon-react, follow the parent's text colour. So a rule such as button:hover with color set to blue turns the icon blue too, with no extra props or JavaScript."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should you use an icon font in React?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, most React projects should use SVG icon components instead of an icon font. SVG icons render more sharply, load only the icons you use, and are easier to label for screen readers. GitHub switched its Octicons from a font to SVG in 2016 for these reasons."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are React icons free for commercial use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many React icon libraries are free for commercial use, but the licence decides. fmicon-react, Heroicons and Lucide all use permissive open-source licences such as MIT or ISC, which allow commercial projects. Always read the licence file in the package before you ship, especially in bundles that combine several icon sets."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<article>
+
+<h1>React Icons: How to Add Icons to a React App</h1>
+
+<h3>How do you add icons to a React app?</h3>
+<p>The easiest way to add icons to a React app is to install an icon package from npm, such as fmicon-react, and import each icon as a component. You write <code>&lt;Lock size={24} /&gt;</code> like any other component. Modern bundlers like Vite and webpack then keep only the icons you import.</p>
+
+<p>The first React app I shipped had icons copied in as loose SVG files. Within a month there were three slightly different trash icons and nobody knew which one was right. Switching to one icon package fixed that in an afternoon.</p>
+
+<p>Here's the good news. Adding React icons the clean way is simpler than it sounds. This guide walks you through it step by step, with code you can paste straight into your project.</p>
+
+<h2>What is a React icon library?</h2>
+<p>A React icon library is an npm package where every icon is a React component. Each component renders an inline SVG, so you can set its size, colour and label with props instead of editing files.</p>
+<p>Before components, many teams used icon fonts, where each icon was a letter in a custom font. That worked, but it had problems with blurry edges and screen readers. GitHub wrote about this in 2016, when it moved its Octicons from an icon font to SVG. The team said SVG icons rendered more crisply and were easier to make accessible.</p>
+<p>Today, almost every popular React icon set ships as SVG components. Lucide grew out of the Feather icons project. Heroicons comes from Tailwind Labs, the team behind Tailwind CSS. fmicon adds 891 icons in 8 styles, from clean <a href="/icons/linear">linear icons</a> to soft <a href="/icons/glass">glass icons</a>.</p>
+
+<h2>How to install React icons, step by step</h2>
+<p>You install React icons with one npm command and then import the icons you need. The whole setup takes about two minutes. You've got this.</p>
+
+<h3>Step 1: Install the package</h3>
+<pre><code>npm install fmicon-react</code></pre>
+<p>It works the same with pnpm, Yarn or Bun. The package supports React 17 and newer, which includes React 18 and 19.</p>
+
+<h3>Step 2: Import an icon</h3>
+<pre><code>import { Lock } from "fmicon-react";
+
+export function LoginButton() {
+  return (
+    &lt;button&gt;
+      &lt;Lock size={18} /&gt;
+      Log in
+    &lt;/button&gt;
+  );
+}</code></pre>
+<p>Component names follow the icon's name in PascalCase. So <code>home-2</code> becomes <code>Home2</code> and <code>arrow-circle-right</code> becomes <code>ArrowCircleRight</code>. You can search every name on the <a href="/icons">icon browser</a>, and each icon page, like the <a href="/icons/linear/lock">lock icon</a>, shows its ready-made React code.</p>
+
+<h3>Step 3: Pick a style</h3>
+<pre><code>&lt;Lock variant="bold" /&gt;</code></pre>
+<p>This part is actually really easy. One <code>variant</code> prop switches between linear, outline, bold, bulk, twotone, broken, glass and duotone. A neat trick is linear for idle states and <a href="/icons/bold">bold</a> for the selected one, like an active tab.</p>
+
+<h2>How do you change the size and colour of React icons?</h2>
+<p>You change the size of a React icon with the <code>size</code> prop and its colour with the <code>color</code> prop or plain CSS. By default, fmicon icons are 24 px and take the text colour of their parent.</p>
+<pre><code>&lt;Lock size={20} color="#1265ec" strokeWidth={1.5} /&gt;</code></pre>
+<p>The text colour default is the part I like most. Because the icons use <code>currentColor</code>, an icon inside a red error message turns red on its own. A link icon follows the link's hover colour. You write less code and the colours never drift apart.</p>
+<p>Line styles also take a <code>strokeWidth</code> prop. A thinner stroke, like 1 or 1.25, looks calm at large sizes. A thicker stroke, like 2, reads better at 16 px (about 4 mm on a typical laptop screen).</p>
+
+<h2>How do you keep React icons from bloating your bundle?</h2>
+<p>You keep React icons light by importing only the icons you use. Bundlers such as Vite, webpack and Rollup remove unused exports through tree shaking, so 891 icons in the package does not mean 891 icons in your app.</p>
+<p>The webpack documentation describes tree shaking as removing dead code, and it relies on ES module <code>import</code> and <code>export</code> syntax. fmicon-react ships every icon as its own ES module, so this works out of the box.</p>
+<p>If you want to be extra sure, or your setup does not tree shake, import the single file directly:</p>
+<pre><code>import { Lock } from "fmicon-react/icons/lock";</code></pre>
+<p>In my tests, a typical linear icon adds well under 1 KB once gzipped. Ten icons barely show up in a bundle report. Our <a href="/blog/svg-vs-png">SVG vs PNG comparison</a> has the exact file sizes.</p>
+
+<h2>How do you make React icons accessible?</h2>
+<p>Decorative icons should be hidden from screen readers, and icons that carry meaning need a text name. fmicon-react hides icons with <code>aria-hidden</code> by default and adds a label when you pass a <code>title</code> prop.</p>
+<pre><code>// Decorative: the button text already says "Delete"
+&lt;button&gt;&lt;Trash /&gt; Delete&lt;/button&gt;
+
+// Icon-only: give the button a name
+&lt;button aria-label="Delete"&gt;&lt;Trash /&gt;&lt;/button&gt;
+
+// Standalone meaningful icon
+&lt;Warning2 title="Warning" /&gt;</code></pre>
+<p>Most people are surprised to learn how often this goes wrong. WebAIM's yearly study of the top one million home pages keeps listing empty buttons and empty links among the most common accessibility errors. An icon button with no name is exactly that. Our <a href="/blog/accessible-icons">accessible icons guide</a> covers contrast and tap sizes too.</p>
+
+<h2>Which React icon library should you choose?</h2>
+<p>The best React icon library is the one whose style fits your product and whose licence fits your project. Every option below is a solid choice. They just shine in different situations.</p>
+<table>
+<thead>
+<tr><th>Option</th><th>What it is</th><th>It shines when</th></tr>
+</thead>
+<tbody>
+<tr><td>fmicon-react</td><td>891 icons, 8 styles, MIT licence</td><td>You want several styles of one icon, including glass and duotone</td></tr>
+<tr><td>Lucide React</td><td>A large line icon set, ISC licence</td><td>You want a single clean line style</td></tr>
+<tr><td>Heroicons</td><td>Icons from Tailwind Labs, MIT licence</td><td>Your app is built with Tailwind CSS</td></tr>
+<tr><td>react-icons</td><td>Many popular icon packs in one package</td><td>You need icons from several different sets</td></tr>
+<tr><td>SVGR</td><td>A tool that turns your SVG files into components</td><td>Your designer draws custom icons</td></tr>
+</tbody>
+</table>
+<p>Whatever you pick, stick to one main set. Mixing sets is how you end up with three different trash icons, like I did.</p>
+
+<h2>Do the same icons work in React Native, Vue and Svelte?</h2>
+<p>Yes, fmicon publishes the same icons for React Native, Vue 3 and Svelte, with the same names and props. That makes it easy to share a design language between a web app and a mobile app.</p>
+<ul>
+<li>React Native: <code>npm i fmicon-react-native react-native-svg</code>, see the <a href="/docs/react-native">React Native docs</a></li>
+<li>Vue 3: <code>npm i fmicon-vue</code>, see the <a href="/docs/vue">Vue docs</a></li>
+<li>Svelte: <code>npm i fmicon-svelte</code>, see the <a href="/docs/svelte">Svelte docs</a></li>
+<li>No framework: <code>npm i fmicon</code>, see the <a href="/docs/vanilla">vanilla JS docs</a></li>
+</ul>
+
+<h2>What this means for your next project</h2>
+<p>For most React projects, one icon package plus three habits is all you need. Here's exactly what to do:</p>
+<ol>
+<li>Install one icon package and use it everywhere.</li>
+<li>Let icons inherit text colour instead of hard-coding colours.</li>
+<li>Name every icon-only button with <code>aria-label</code>.</li>
+<li>Use one style for idle states and a filled style for active states.</li>
+</ol>
+<p>Once you do this once, it becomes second nature.</p>
+
+<h2>React icons, done the easy way</h2>
+<p>React icons work best as components: install a package, import what you need, and let props handle size, colour and labels. Your bundle stays small and your icons stay consistent. To try it now, run <code>npm i fmicon-react</code>, then pick icons from the <a href="/icons">free icon library</a> or read the full <a href="/docs/react">React docs</a>.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Do React icon packages work with Next.js?</h3>
+<p>Yes, React icon packages that ship standard ES modules work with Next.js, in both the App Router and the Pages Router. fmicon-react icons are plain components that render SVG, so you import them in any page or component the same way you would in a Vite or Create React App project.</p>
+
+<h3>Can you use SVG files directly in React?</h3>
+<p>Yes, you can use SVG files directly in React. The simplest way is an img tag pointing to the file. To change colour or size with props, paste the SVG markup into a component, use a tool like SVGR to convert it, or install a ready-made icon package such as fmicon-react.</p>
+
+<h3>How do you change a React icon's colour on hover?</h3>
+<p>You change a React icon's colour on hover by changing the CSS color of its parent. Icons drawn with currentColor, like fmicon-react, follow the parent's text colour. So a rule such as button:hover with color set to blue turns the icon blue too, with no extra props or JavaScript.</p>
+
+<h3>Should you use an icon font in React?</h3>
+<p>No, most React projects should use SVG icon components instead of an icon font. SVG icons render more sharply, load only the icons you use, and are easier to label for screen readers. GitHub switched its Octicons from a font to SVG in 2016 for these reasons.</p>
+
+<h3>Are React icons free for commercial use?</h3>
+<p>Many React icon libraries are free for commercial use, but the licence decides. fmicon-react, Heroicons and Lucide all use permissive open-source licences such as MIT or ISC, which allow commercial projects. Always read the licence file in the package before you ship, especially in bundles that combine several icon sets.</p>
+
+</article>
+</body>
+</html>

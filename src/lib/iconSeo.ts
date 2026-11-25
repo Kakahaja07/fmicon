@@ -42,12 +42,12 @@ const categoryLabel = new Map<string, string>(freeIconsMeta.categories.map((c) =
 export const labelForCategory = (slug: string) => categoryLabel.get(slug) ?? humanName(slug);
 
 /** `image`: a share card from public/og (built by `npm run social`), e.g. "docs". */
-type HeadParts = { title: string; description: string; path: string; jsonLd?: object[]; image?: "home" | "docs" | "styles" };
+type HeadParts = { title: string; description: string; path: string; jsonLd?: object[]; /** A card in public/og by name, or a path such as "/og/blog-x.png" */ image?: string };
 
 /** Title, description, canonical, Open Graph and structured data for one page. */
 export function pageHead({ title, description, path, jsonLd = [], image = "home" }: HeadParts) {
   const url = site + path;
-  const card = `${site}/og/${image}.png`;
+  const card = image.startsWith("/") ? site + image : `${site}/og/${image}.png`;
   return {
     meta: [
       { title },

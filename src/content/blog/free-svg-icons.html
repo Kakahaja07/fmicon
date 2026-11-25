@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free SVG Icons for Websites: How to Find and Use Them</title>
+<meta name="description" content="Where to get free SVG icons for your website, how to check the licence, and three easy ways to add, size and recolour them. Simple steps with real code.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can you get free SVG icons for a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can get free SVG icons from open-source icon libraries such as fmicon, which offers 891 icons in 8 styles under the MIT licence. Open-source sets let you download, copy or install icons and use them in personal and commercial projects. Always check the licence first, because some free icons still require attribution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you use free SVG icons for commercial projects?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can use free SVG icons for commercial projects when the licence allows it. MIT, ISC and CC0 licences all permit commercial use. fmicon uses the MIT licence, so its 891 icons work in client sites, apps and products you sell, with no fee and no sign-up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you need to credit free icons on your website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, you do not need to credit icons under MIT, ISC or CC0 licences on your website. Icons under CC BY 4.0 do need visible credit to the author. With MIT icons such as fmicon, you only keep the licence text in your source code, not in your interface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you download an SVG icon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You download an SVG icon by opening its page in an icon library and clicking the SVG download or copy button. On fmicon, every icon page lets you pick a style, size and colour, then copy the SVG code, download the file, or copy a CDN link."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are SVG icons good for SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SVG icons help SEO indirectly by keeping pages light and fast, which supports good Core Web Vitals scores. Google can also index SVG files as images. Icons themselves rarely rank, so give important images descriptive alt text and keep decorative icons hidden from screen readers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you edit free SVG icons in Figma?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, you can edit free SVG icons in Figma. Paste the SVG code or drag the file onto the canvas, and Figma turns it into editable vector layers. You can then change stroke width, colour and shape, as long as the icon's licence allows changes, which MIT does."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<article>
+
+<h1>Free SVG Icons for Websites: How to Find and Use Them</h1>
+
+<h3>Where can you get free SVG icons for a website?</h3>
+<p>You can get free SVG icons from open-source icon libraries such as fmicon, which offers 891 icons in 8 styles under the MIT licence. Open-source sets let you download, copy or install icons and use them in personal and commercial projects. Always check the licence first, because some free icons still require attribution.</p>
+
+<p>A friend once sent me a landing page that looked great, until I scrolled to the footer. Every icon came from a different free pack. One was thin, one was chunky, one had rounded corners. The page felt slightly off, and she could not say why.</p>
+
+<p>That is the hidden cost of grabbing free icons one at a time. Let me explain how to find free SVG icons that look like they belong together, how to check you can really use them, and how to put them on your site in a few minutes.</p>
+
+<h2>What makes an SVG icon truly free to use?</h2>
+<p>An SVG icon is free to use when its licence allows your kind of project without payment. Permissive licences such as MIT, ISC and CC0 let you use icons commercially with no credit in your interface.</p>
+<p>Here's something most people don't know. "Free" on an icon site often means free to download, not free to use any way you like. The licence is what counts.</p>
+<ul>
+<li><strong>MIT and ISC.</strong> Both are approved by the Open Source Initiative. You can use, change and sell work that includes the icons. You keep the licence text with the source files, not in your app.</li>
+<li><strong>CC0.</strong> Creative Commons Zero puts work in the public domain. No conditions at all.</li>
+<li><strong>CC BY 4.0.</strong> Creative Commons says this licence requires attribution. You must credit the author wherever you use the icons, which many teams forget.</li>
+<li><strong>"Free for personal use".</strong> Not free for a business site. Skip these for client work.</li>
+</ul>
+<p>fmicon uses the MIT licence. That means every icon is free for personal and commercial work, with no sign-up and no credit needed on your site.</p>
+
+<h2>How do you pick a good free SVG icon set?</h2>
+<p>Pick one icon set that has a consistent grid, a consistent stroke, enough icons for your whole product, and the formats you need. Consistency matters more than any single icon.</p>
+<p>I use this short checklist before I commit to a set:</p>
+<ol>
+<li><strong>One grid.</strong> Icons should share the same canvas, usually 24 by 24 px. fmicon draws every icon on a 24 px grid, so they line up in a row.</li>
+<li><strong>One stroke weight.</strong> Line icons should use the same stroke, such as 1.5 px. Mixed strokes are what made my friend's footer feel off.</li>
+<li><strong>Enough coverage.</strong> Search for the ten icons you need most, like home, search, settings and lock. If three are missing, keep looking.</li>
+<li><strong>More than one style.</strong> Having a filled version of each outline icon makes active states easy. fmicon ships 8 styles, from <a href="/icons/linear">linear</a> to <a href="/icons/duotone">duotone</a>.</li>
+<li><strong>The formats you need.</strong> Raw SVG for the web, PNG for email, and packages if you use React, Vue or Svelte.</li>
+<li><strong>Recent updates.</strong> Check the GitHub repository. A set that is still maintained will keep growing with you.</li>
+</ol>
+
+<h2>How do you add free SVG icons to a website?</h2>
+<p>There are three easy ways to add free SVG icons to a website: paste the SVG code inline, load the file with an img tag or CDN link, or install an icon package from npm. Each takes under five minutes.</p>
+
+<h3>Option 1: Paste the SVG inline</h3>
+<p>Copy the SVG code from an icon page, such as the <a href="/icons/linear/home">home icon</a>, and paste it into your HTML. Inline SVG is the most flexible option, because CSS can reach inside it.</p>
+<pre><code>&lt;a href="/" class="nav-link"&gt;
+  &lt;svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"&gt;
+    &lt;path d="..." stroke="currentColor" stroke-width="1.5" /&gt;
+  &lt;/svg&gt;
+  Home
+&lt;/a&gt;</code></pre>
+
+<h3>Option 2: Link the file from a CDN</h3>
+<p>A CDN (content delivery network) serves files from servers close to your visitors. fmicon hosts every icon at <code>cdn.fmicon.dev</code>, so you can link it without downloading anything.</p>
+<pre><code>&lt;img src="https://cdn.fmicon.dev/svg/linear/search-normal.svg" alt="Search" width="24" height="24"&gt;</code></pre>
+<p>This is the quickest way to try icons in a prototype or a no-code builder. The trade-off is that you cannot recolour an img with CSS. The <a href="/docs/svg">raw SVG and CDN docs</a> list every path.</p>
+
+<h3>Option 3: Install a package</h3>
+<p>If your site uses a framework, a package is the cleanest option. You import icons as components and set size and colour with props.</p>
+<pre><code>npm i fmicon-react   # or fmicon-vue, fmicon-svelte, fmicon</code></pre>
+<p>Our <a href="/blog/react-icons">React icons guide</a> covers this step by step, and the <a href="/docs">docs</a> cover every framework.</p>
+
+<h2>How do you change the colour of a free SVG icon?</h2>
+<p>You change the colour of an SVG icon by setting the CSS color of its parent, as long as the icon uses currentColor. For an icon in an img tag, you need a different file or a CSS filter instead.</p>
+<p>MDN Web Docs explains that <code>currentColor</code> takes the value of the element's <code>color</code> property. So this one rule turns every inline icon in your navigation blue:</p>
+<pre><code>.nav-link { color: #1265ec; }
+.nav-link:hover { color: #0b4fc0; }</code></pre>
+<p>This is genuinely one of my favourite things about SVG. Your icons follow your brand colours and hover states with zero extra files. You can also test colours live on any <a href="/icons/bold">icon page</a> before you copy the code.</p>
+
+<h2>Do free SVG icons slow down a website?</h2>
+<p>No, well-made SVG icons barely affect page speed. A typical line icon is under 1 KB, and servers compress SVG further because it is plain text.</p>
+<p>I measured all 891 linear icons in fmicon. They average 878 bytes (0.86 KB) each. The home icon drops from 541 to 300 bytes with gzip. Twenty icons on a page add less weight than one small photo.</p>
+<p>Two habits keep them fast. Set <code>width</code> and <code>height</code> on every icon so the layout does not jump while loading. And only load the icons a page uses, which packages do for you. Our <a href="/blog/svg-vs-png">SVG vs PNG test</a> shows the full numbers.</p>
+
+<h2>What this means for your website</h2>
+<p>For most sites, the best plan is one free, MIT-licensed SVG icon set, used everywhere, in one or two styles. Here's a simple way to start today:</p>
+<ol>
+<li>Open the <a href="/icons">fmicon icon library</a> and search the ten icons your site needs.</li>
+<li>Choose a main style, like linear, and a filled style, like bold, for active states.</li>
+<li>Copy the SVG, link it from the CDN, or install the package.</li>
+<li>Give icon-only buttons a label. The <a href="/blog/accessible-icons">accessible icons guide</a> shows how.</li>
+</ol>
+
+<h2>My honest view on free icons</h2>
+<p>Based on what I've seen, free icons are not a compromise anymore. The best open-source sets are drawn as carefully as paid ones. What separates a polished site from a messy one is not price, it is sticking to one set.</p>
+<p>That is exactly why I built fmicon with 8 styles of the same 891 icons. You get variety without breaking consistency.</p>
+
+<h2>Start with one free set and stick to it</h2>
+<p>Free SVG icons are easy to find, but the right ones share a grid, a stroke and a clear licence. Pick one open-source set, add icons inline, by CDN or by package, and let CSS handle the colours. When you are ready, <a href="/icons">browse all 891 free SVG icons</a> and copy your first one.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Can you use free SVG icons for commercial projects?</h3>
+<p>Yes, you can use free SVG icons for commercial projects when the licence allows it. MIT, ISC and CC0 licences all permit commercial use. fmicon uses the MIT licence, so its 891 icons work in client sites, apps and products you sell, with no fee and no sign-up.</p>
+
+<h3>Do you need to credit free icons on your website?</h3>
+<p>No, you do not need to credit icons under MIT, ISC or CC0 licences on your website. Icons under CC BY 4.0 do need visible credit to the author. With MIT icons such as fmicon, you only keep the licence text in your source code, not in your interface.</p>
+
+<h3>How do you download an SVG icon?</h3>
+<p>You download an SVG icon by opening its page in an icon library and clicking the SVG download or copy button. On fmicon, every icon page lets you pick a style, size and colour, then copy the SVG code, download the file, or copy a CDN link.</p>
+
+<h3>Are SVG icons good for SEO?</h3>
+<p>SVG icons help SEO indirectly by keeping pages light and fast, which supports good Core Web Vitals scores. Google can also index SVG files as images. Icons themselves rarely rank, so give important images descriptive alt text and keep decorative icons hidden from screen readers.</p>
+
+<h3>Can you edit free SVG icons in Figma?</h3>
+<p>Yes, you can edit free SVG icons in Figma. Paste the SVG code or drag the file onto the canvas, and Figma turns it into editable vector layers. You can then change stroke width, colour and shape, as long as the icon's licence allows changes, which MIT does.</p>
+
+</article>
+</body>
+</html>

@@ -26,7 +26,7 @@ export const brand = {
 
 /* ------------------------------ Open source ------------------------------ */
 
-const REPO = "https://github.com/Kakahaja07/fmicon";
+export const REPO = "https://github.com/Kakahaja07/fmicon";
 
 /**
  * Icon CDN. Our own: cdn.fmicon.dev (Cloudflare R2, filled by `npm run cdn:build && npm run cdn:upload`),
@@ -34,7 +34,7 @@ const REPO = "https://github.com/Kakahaja07/fmicon";
  * Until that bucket is live, SVGs come from jsDelivr (straight from the GitHub repo) and PNG links stay hidden.
  */
 const CDN_LIVE = true;
-const CDN = "https://cdn.fmicon.dev";
+export const CDN = "https://cdn.fmicon.dev";
 
 export const openSource = {
   repo: REPO,
@@ -85,11 +85,10 @@ export type NavLink = { label: string; href: string; id: string; page?: boolean;
 
 export const nav = {
   links: [
-    { label: "Home", href: "/#top", id: "top", optional: true },
-    { label: "Features", href: "/#features", id: "features", optional: true },
     { label: "Icons", href: "/icons", id: "icons", page: true },
     { label: "Docs", href: "/docs", id: "docs", page: true },
-    { label: "Open source", href: "/#open-source", id: "open-source", optional: true },
+    { label: "Packages", href: "/packages", id: "packages", page: true },
+    { label: "Blog", href: "/blog", id: "blog", page: true },
   ] satisfies NavLink[] as NavLink[],
   cta: { label: "Star on GitHub", href: REPO },
 };
@@ -206,7 +205,7 @@ export const library = {
 
 
 export const story = {
-  title: "Why I made fmicon",
+  title: "Why I made fmicon.dev for free",
   // PLACEHOLDER story: rewrite these paragraphs in your own words
   paragraphs: [
     "I was an icon hoarder. Thousands of SVGs across a dozen sets, and finding the right one took longer every week.",
@@ -361,6 +360,7 @@ export const footer = {
         { label: "Request an icon", href: `${REPO}/issues`, external: true },
         { label: "Contribute", href: `${REPO}/pulls`, external: true },
         { label: "MIT licence", href: `${REPO}/blob/main/LICENSE`, external: true },
+        { label: "Blog", href: "/blog" },
       ],
     },
     {

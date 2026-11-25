@@ -11,7 +11,10 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SiteRouteImport } from './routes/_site'
 import { Route as SiteIndexRouteImport } from './routes/_site.index'
+import { Route as SitePackagesRouteImport } from './routes/_site.packages'
 import { Route as IconsIndexRouteImport } from './routes/icons.index'
+import { Route as SiteBlogIndexRouteImport } from './routes/_site.blog.index'
+import { Route as SiteBlogSlugRouteImport } from './routes/_site.blog.$slug'
 import { Route as SiteDocsIndexRouteImport } from './routes/_site.docs.index'
 import { Route as SiteDocsFrameworkRouteImport } from './routes/_site.docs.$framework'
 import { Route as IconsStyleIndexRouteImport } from './routes/icons.$style.index'
@@ -26,10 +29,25 @@ const SiteIndexRoute = SiteIndexRouteImport.update({
   path: '/',
   getParentRoute: () => SiteRoute,
 } as any)
+const SitePackagesRoute = SitePackagesRouteImport.update({
+  id: '/packages',
+  path: '/packages',
+  getParentRoute: () => SiteRoute,
+} as any)
 const IconsIndexRoute = IconsIndexRouteImport.update({
   id: '/icons/',
   path: '/icons/',
   getParentRoute: () => rootRouteImport,
+} as any)
+const SiteBlogIndexRoute = SiteBlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => SiteRoute,
+} as any)
+const SiteBlogSlugRoute = SiteBlogSlugRouteImport.update({
+  id: '/blog/$slug',
+  path: '/blog/$slug',
+  getParentRoute: () => SiteRoute,
 } as any)
 const SiteDocsIndexRoute = SiteDocsIndexRouteImport.update({
   id: '/docs/',
@@ -54,27 +72,36 @@ const IconsStyleSlugRoute = IconsStyleSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof SiteIndexRoute
+  '/packages': typeof SitePackagesRoute
   '/icons/': typeof IconsIndexRoute
+  '/blog/$slug': typeof SiteBlogSlugRoute
   '/docs/$framework': typeof SiteDocsFrameworkRoute
   '/icons/$style/$slug': typeof IconsStyleSlugRoute
+  '/blog/': typeof SiteBlogIndexRoute
   '/docs/': typeof SiteDocsIndexRoute
   '/icons/$style/': typeof IconsStyleIndexRoute
 }
 export interface FileRoutesByTo {
+  '/packages': typeof SitePackagesRoute
   '/': typeof SiteIndexRoute
   '/icons': typeof IconsIndexRoute
+  '/blog/$slug': typeof SiteBlogSlugRoute
   '/docs/$framework': typeof SiteDocsFrameworkRoute
   '/icons/$style/$slug': typeof IconsStyleSlugRoute
+  '/blog': typeof SiteBlogIndexRoute
   '/docs': typeof SiteDocsIndexRoute
   '/icons/$style': typeof IconsStyleIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/_site': typeof SiteRouteWithChildren
+  '/_site/packages': typeof SitePackagesRoute
   '/_site/': typeof SiteIndexRoute
   '/icons/': typeof IconsIndexRoute
+  '/_site/blog/$slug': typeof SiteBlogSlugRoute
   '/_site/docs/$framework': typeof SiteDocsFrameworkRoute
   '/icons/$style/$slug': typeof IconsStyleSlugRoute
+  '/_site/blog/': typeof SiteBlogIndexRoute
   '/_site/docs/': typeof SiteDocsIndexRoute
   '/icons/$style/': typeof IconsStyleIndexRoute
 }
@@ -82,26 +109,35 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/packages'
     | '/icons/'
+    | '/blog/$slug'
     | '/docs/$framework'
     | '/icons/$style/$slug'
+    | '/blog/'
     | '/docs/'
     | '/icons/$style/'
   fileRoutesByTo: FileRoutesByTo
   to:
+    | '/packages'
     | '/'
     | '/icons'
+    | '/blog/$slug'
     | '/docs/$framework'
     | '/icons/$style/$slug'
+    | '/blog'
     | '/docs'
     | '/icons/$style'
   id:
     | '__root__'
     | '/_site'
+    | '/_site/packages'
     | '/_site/'
     | '/icons/'
+    | '/_site/blog/$slug'
     | '/_site/docs/$framework'
     | '/icons/$style/$slug'
+    | '/_site/blog/'
     | '/_site/docs/'
     | '/icons/$style/'
   fileRoutesById: FileRoutesById
@@ -129,12 +165,33 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteIndexRouteImport
       parentRoute: typeof SiteRoute
     }
+    '/_site/packages': {
+      id: '/_site/packages'
+      path: '/packages'
+      fullPath: '/packages'
+      preLoaderRoute: typeof SitePackagesRouteImport
+      parentRoute: typeof SiteRoute
+    }
     '/icons/': {
       id: '/icons/'
       path: '/icons'
       fullPath: '/icons/'
       preLoaderRoute: typeof IconsIndexRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_site/blog/': {
+      id: '/_site/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof SiteBlogIndexRouteImport
+      parentRoute: typeof SiteRoute
+    }
+    '/_site/blog/$slug': {
+      id: '/_site/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof SiteBlogSlugRouteImport
+      parentRoute: typeof SiteRoute
     }
     '/_site/docs/': {
       id: '/_site/docs/'
@@ -168,14 +225,20 @@ declare module '@tanstack/react-router' {
 }
 
 interface SiteRouteChildren {
+  SitePackagesRoute: typeof SitePackagesRoute
   SiteIndexRoute: typeof SiteIndexRoute
+  SiteBlogSlugRoute: typeof SiteBlogSlugRoute
   SiteDocsFrameworkRoute: typeof SiteDocsFrameworkRoute
+  SiteBlogIndexRoute: typeof SiteBlogIndexRoute
   SiteDocsIndexRoute: typeof SiteDocsIndexRoute
 }
 
 const SiteRouteChildren: SiteRouteChildren = {
+  SitePackagesRoute: SitePackagesRoute,
   SiteIndexRoute: SiteIndexRoute,
+  SiteBlogSlugRoute: SiteBlogSlugRoute,
   SiteDocsFrameworkRoute: SiteDocsFrameworkRoute,
+  SiteBlogIndexRoute: SiteBlogIndexRoute,
   SiteDocsIndexRoute: SiteDocsIndexRoute,
 }
 

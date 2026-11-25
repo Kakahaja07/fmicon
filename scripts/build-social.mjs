@@ -123,10 +123,40 @@ const cards = {
   },
 };
 
+// Blog posts: the same card, used as the post's thumbnail and share image (public/og/blog-<slug>.png).
+// Keep the slugs in step with src/content/blog/index.ts.
+Object.assign(cards, {
+  "blog-svg-vs-png": {
+    lines: ["SVG vs PNG", "for icons:", "which wins?"],
+    prompt: `&lt;img src="<b>home.svg</b>" /&gt;`,
+    tiles: ["image", "gallery", "document", "home", "monitor", "mobile", "colorfilter", "brush", "folder", "cloud", "export", "magicpen"].map(icon),
+  },
+  "blog-react-icons": {
+    lines: ["React icons,", "the easy", "way"],
+    prompt: `<b>import</b> { Lock } <b>from</b> "fmicon-react"`,
+    tiles: ["code", "command", "layer", "lock", "monitor", "mobile", "setting-2", "search-normal", "user", "notification", "heart", "star"].map(icon),
+    highlight: 3,
+  },
+  "blog-free-svg-icons": {
+    lines: ["Free SVG", "icons for", "your website"],
+    prompt: `cdn.fmicon.dev/<b>svg</b>/linear/home.svg`,
+    tiles: ["home", "star", "heart", "global", "shop", "calendar", "message", "location", "camera", "wallet", "gift", "people"].map(icon),
+    highlight: 0,
+  },
+  "blog-accessible-icons": {
+    lines: ["Icons that", "everyone", "can use"],
+    prompt: `&lt;button <b>aria-label</b>="Close"&gt;`,
+    tiles: ["eye", "user", "tick-circle", "close-circle", "info-circle", "warning-2", "notification", "keyboard", "microphone", "volume-high", "eye-slash", "shield-tick"].map(icon),
+    highlight: 3,
+  },
+});
+
 mkdirSync(OUT, { recursive: true });
 const work = mkdtempSync(join(tmpdir(), "fmicons-og-"));
 try {
+  const only = process.argv[2];
   for (const [name, card] of Object.entries(cards)) {
+    if (only && !name.startsWith(only)) continue;
     const html = join(work, `${name}.html`);
     writeFileSync(html, page(card));
     const png = resolve(OUT, `${name}.png`);

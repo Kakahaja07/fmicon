@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessible Icons: A Simple Guide for Websites and Apps</title>
+<meta name="description" content="How to make accessible icons: labels for screen readers, 3:1 contrast, 24 px tap targets and colour-safe states. Clear WCAG 2.2 rules with code you can copy.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What makes an icon accessible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An accessible icon is one that every user can see, understand and operate, including people who use screen readers. It needs a text name when it carries meaning, a contrast ratio of at least 3:1 against its background, and a tap target of at least 24 by 24 CSS pixels under WCAG 2.2."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should icons have alt text?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, icons that carry meaning should have alt text or an accessible name, and decorative icons should not. For an img tag, write a short alt such as \"Search\", or use an empty alt for decoration. For inline SVG, use aria-label on the button or a title inside the SVG."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does aria-hidden do on an icon?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The aria-hidden=\"true\" attribute hides an icon from screen readers while keeping it visible on screen. Use it on decorative icons that repeat nearby text, such as a trash icon beside the word \"Delete\". Never put aria-hidden on a button itself, or the whole button disappears for screen reader users."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are icon fonts accessible?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Icon fonts are harder to make accessible than SVG icons. Screen readers may read the font's character as random text, and users who set their own fonts can see broken boxes instead of icons. GitHub moved its Octicons from a font to SVG in 2016, partly for accessibility."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the minimum size for an icon button?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The minimum size for an icon button is 24 by 24 CSS pixels under WCAG 2.2 success criterion 2.5.8. For touch screens, aim for 44 by 44 pixels, which matches Apple's guidance and the stricter WCAG criterion 2.5.5. The icon inside can stay 20 or 24 pixels."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do decorative icons need a label?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, decorative icons do not need a label, and adding one creates noise. A decorative icon repeats information that nearby text already gives. Hide it with aria-hidden=\"true\" so screen readers skip it. Packages such as fmicon-react already hide icons by default unless you pass a title."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<article>
+
+<h1>Accessible Icons: How to Make Icons Everyone Can Use</h1>
+
+<h3>What makes an icon accessible?</h3>
+<p>An accessible icon is one that every user can see, understand and operate, including people who use screen readers. It needs a text name when it carries meaning, a contrast ratio of at least 3:1 against its background, and a tap target of at least 24 by 24 CSS pixels under WCAG 2.2.</p>
+
+<p>I once turned on VoiceOver and tabbed through a dashboard I had designed. The screen reader said "button" four times in a row. No names, just "button". Those were my beautiful icon-only buttons, and to a blind user they were four mystery boxes.</p>
+
+<p>Here's the good news. Accessible icons take a few small habits, not a redesign. Let me walk you through them one by one, with the actual rules and code.</p>
+
+<h2>Why do accessible icons matter?</h2>
+<p>Accessible icons matter because a large share of people rely on screen readers, zoom, high contrast or careful tapping. An icon that only works for perfect eyesight and steady hands shuts those people out.</p>
+<p>According to the World Health Organization's World Report on Vision, at least 2.2 billion people worldwide have a near or distance vision impairment. Colour vision deficiency affects about 1 in 12 men and 1 in 200 women, according to the UK's NHS.</p>
+<p>The problem is common on the web, too. WebAIM's yearly Million report checks the home pages of the top one million websites. In recent years it has found detectable WCAG failures on more than 94% of them, and empty buttons and empty links keep showing up in its list of the most common errors. An unnamed icon button is exactly that.</p>
+<p>WCAG stands for Web Content Accessibility Guidelines. The W3C publishes them, and version 2.2 became an official recommendation in October 2023. Many accessibility laws point to WCAG as the standard to meet.</p>
+
+<h2>Decorative or meaningful: which kind is your icon?</h2>
+<p>Every icon is either decorative or meaningful, and the two need opposite treatment. A decorative icon repeats nearby text, so hide it. A meaningful icon carries information on its own, so give it a name.</p>
+<p>WCAG success criterion 1.1.1, Non-text Content, asks for a text alternative for meaningful images and wants decorative ones ignored by assistive technology. Here's how that looks in practice:</p>
+<table>
+<thead>
+<tr><th>Example</th><th>Type</th><th>What to do</th></tr>
+</thead>
+<tbody>
+<tr><td>Trash icon next to the word "Delete"</td><td>Decorative</td><td>Hide it with <code>aria-hidden="true"</code></td></tr>
+<tr><td>Icon-only trash button</td><td>Meaningful</td><td>Name the button with <code>aria-label="Delete"</code></td></tr>
+<tr><td>Warning icon beside a form field</td><td>Meaningful</td><td>Give the icon a title or add visible text</td></tr>
+<tr><td>Star icons in a feature list</td><td>Decorative</td><td>Hide them</td></tr>
+</tbody>
+</table>
+
+<h2>How do you label an icon-only button?</h2>
+<p>You label an icon-only button by putting the name on the button, not the icon. Add <code>aria-label</code> to the button and hide the SVG inside it with <code>aria-hidden="true"</code>.</p>
+<pre><code>&lt;button type="button" aria-label="Close"&gt;
+  &lt;svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"&gt;...&lt;/svg&gt;
+&lt;/button&gt;</code></pre>
+<p>With a component package, it is even shorter. fmicon-react, fmicon-vue and fmicon-svelte hide icons by default, so you only name the button:</p>
+<pre><code>&lt;button aria-label="Close"&gt;&lt;CloseCircle /&gt;&lt;/button&gt;
+
+// A standalone icon that carries meaning
+&lt;Warning2 title="Warning" /&gt;</code></pre>
+<p>Keep labels short and action-based: "Close", "Search", "Open menu". Skip words like "icon" or "button", because the screen reader already announces the role. The <a href="/blog/react-icons">React icons guide</a> shows more patterns.</p>
+
+<h2>How much contrast does an icon need?</h2>
+<p>A meaningful icon needs a contrast ratio of at least 3:1 against its background. That rule comes from WCAG 2.1 success criterion 1.4.11, Non-text Contrast, at level AA.</p>
+<p>Text has a stricter rule of 4.5:1 for normal sizes. Icons get 3:1 because they are usually bolder shapes. In practice, light grey icons on a white background are the classic failure. A grey like <code>#767676</code> on white passes, while a pale <code>#c4c4c4</code> does not.</p>
+<p>Thin strokes make this harder, because there is less ink to see. If an icon looks faint at 16 px, try a <a href="/icons/bold">bold</a> or <a href="/icons/bulk">bulk</a> style, or raise the stroke width. You can test both live on any icon page, like the <a href="/icons/linear/eye">eye icon</a>.</p>
+
+<h2>How big should icons and tap targets be?</h2>
+<p>The clickable area around an icon should be at least 24 by 24 CSS pixels under WCAG 2.2, and 44 by 44 or larger is better on touch screens. The icon itself can stay smaller inside that area.</p>
+<p>WCAG 2.2 added success criterion 2.5.8, Target Size (Minimum), at level AA, which sets the 24 px floor. Its stricter cousin, 2.5.5, asks for 44 by 44 px at level AAA. Platform guidelines agree on similar sizes:</p>
+<ul>
+<li>Apple's Human Interface Guidelines recommend touch targets of at least 44 by 44 points.</li>
+<li>Google's Material Design recommends at least 48 by 48 dp, which is about 9 mm (0.35 inches) on screen.</li>
+</ul>
+<p>A simple pattern: draw a 20 or 24 px icon, then give the button padding so the whole hit area reaches 40 to 48 px.</p>
+<pre><code>.icon-button {
+  display: inline-grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+}</code></pre>
+
+<h2>Why shouldn't icons rely on colour alone?</h2>
+<p>Icons should not rely on colour alone because many people cannot tell certain colours apart. WCAG success criterion 1.4.1, Use of Color, asks you to pair colour with another clue, like shape or text.</p>
+<p>A green dot for "online" and a red dot for "offline" look the same to many colour-blind users. Swap one for a different shape, or add a word. This is where icon styles help. A <a href="/icons/linear/tick-circle">tick circle</a> and a <a href="/icons/linear/close-circle">close circle</a> differ in shape, not just colour.</p>
+<p>The same goes for selected states. Switching a tab icon from linear to bold, as many apps do, gives a shape change that everyone can see.</p>
+
+<h2>Should icons have visible text labels?</h2>
+<p>Yes, most icons work better with a visible text label next to them. Only a handful of icons, like search, home and print, are understood without words.</p>
+<p>Aurora Harley, writing for the Nielsen Norman Group, a respected UX research firm, explains that icons are often ambiguous and recommends a visible text label for nearly all of them. I see this all the time in user tests. People hover, guess, and hesitate.</p>
+<p>A visible label also helps voice control users. They can say "click Settings" only if the word "Settings" is on screen.</p>
+
+<h2>How do you test whether your icons are accessible?</h2>
+<p>Test your icons with a screen reader, a keyboard and an automated checker. Together they catch most icon problems in about 15 minutes per page.</p>
+<ol>
+<li><strong>Keyboard.</strong> Press Tab through the page. Every icon button should get a visible focus ring.</li>
+<li><strong>Screen reader.</strong> Use VoiceOver on Mac and iPhone, or the free NVDA on Windows. Every button should say a clear name.</li>
+<li><strong>Automated check.</strong> Run Lighthouse in Chrome DevTools or Deque's free axe DevTools extension. Both flag buttons without names and low contrast.</li>
+<li><strong>Zoom.</strong> Zoom the browser to 200%. Icons should stay sharp, which SVG icons do. Our <a href="/blog/svg-vs-png">SVG vs PNG guide</a> explains why.</li>
+</ol>
+
+<h2>What this means for your product</h2>
+<p>For most teams, five habits cover nearly every icon accessibility issue. Once you know them, you will never ship a nameless button again:</p>
+<ol>
+<li>Hide decorative icons with <code>aria-hidden="true"</code>.</li>
+<li>Name icon-only buttons with <code>aria-label</code>.</li>
+<li>Keep icon contrast at 3:1 or higher.</li>
+<li>Make tap targets at least 24 px, ideally 44 px.</li>
+<li>Pair colour with shape or text.</li>
+</ol>
+<p>fmicon handles the first habit for you. Its components are hidden from screen readers unless you give them a title, and every icon is drawn on a 24 px grid. You can <a href="/icons">browse the free icons</a> or read the accessibility notes in the <a href="/docs/react">docs</a>.</p>
+
+<h2>Small habits, a site everyone can use</h2>
+<p>Accessible icons come down to clear names, enough contrast, big enough targets and more than colour. None of it is hard, and each fix helps real people today. Start with your icon-only buttons, give each one a name, and you have already fixed the most common icon error on the web.</p>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>Should icons have alt text?</h3>
+<p>Yes, icons that carry meaning should have alt text or an accessible name, and decorative icons should not. For an img tag, write a short alt such as "Search", or use an empty alt for decoration. For inline SVG, use aria-label on the button or a title inside the SVG.</p>
+
+<h3>What does aria-hidden do on an icon?</h3>
+<p>The aria-hidden="true" attribute hides an icon from screen readers while keeping it visible on screen. Use it on decorative icons that repeat nearby text, such as a trash icon beside the word "Delete". Never put aria-hidden on a button itself, or the whole button disappears for screen reader users.</p>
+
+<h3>Are icon fonts accessible?</h3>
+<p>Icon fonts are harder to make accessible than SVG icons. Screen readers may read the font's character as random text, and users who set their own fonts can see broken boxes instead of icons. GitHub moved its Octicons from a font to SVG in 2016, partly for accessibility.</p>
+
+<h3>What is the minimum size for an icon button?</h3>
+<p>The minimum size for an icon button is 24 by 24 CSS pixels under WCAG 2.2 success criterion 2.5.8. For touch screens, aim for 44 by 44 pixels, which matches Apple's guidance and the stricter WCAG criterion 2.5.5. The icon inside can stay 20 or 24 pixels.</p>
+
+<h3>Do decorative icons need a label?</h3>
+<p>No, decorative icons do not need a label, and adding one creates noise. A decorative icon repeats information that nearby text already gives. Hide it with aria-hidden="true" so screen readers skip it. Packages such as fmicon-react already hide icons by default unless you pass a title.</p>
+
+</article>
+</body>
+</html>

@@ -1,4 +1,4 @@
-import { story } from "~/content/site";
+import { openSource, story } from "~/content/site";
 import { Avatar } from "~/components/ui/Avatar";
 import { Container } from "~/components/ui/Container";
 import { Reveal } from "~/components/ui/Reveal";
@@ -28,7 +28,19 @@ export function MakerNote() {
                 {p}
               </p>
             ))}
-            <p className={s.ps}>{story.ps}</p>
+            {/* Hand-written P.S.: a green pencil note that links to a new GitHub issue */}
+            <a className={s.ps} href={`${openSource.repo}/issues/new`} target="_blank" rel="noreferrer">
+              <span className={s.psText}>
+                {story.ps}
+                <svg className={s.psLine} viewBox="0 0 300 10" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M2 6.5C40 4 70 8 110 5.6S180 3.4 220 6.2 270 7.4 298 4.8" />
+                </svg>
+              </span>
+              <svg className={s.psArrow} viewBox="0 0 26 14" aria-hidden="true">
+                <path d="M2 8.4C8 6.4 14 7.8 22 6.6" />
+                <path d="M17.4 2.6C19.6 4.2 21.2 5.4 22.6 6.6 20.8 7.8 19.2 9.4 17.6 11.4" />
+              </svg>
+            </a>
           </div>
         </Reveal>
       </Container>
