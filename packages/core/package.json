@@ -1,0 +1,45 @@
+{
+  "name": "@fmicons/core",
+  "version": "0.1.0",
+  "description": "891 FM Icons as framework-free data, plus a toSvg() helper.",
+  "keywords": [
+    "icons",
+    "svg",
+    "fmicons",
+    "svg-icons",
+    "vanilla-js"
+  ],
+  "license": "MIT",
+  "homepage": "https://fmicons.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kakahaja07/fmicons.git",
+    "directory": "packages/core"
+  },
+  "bugs": {
+    "url": "https://github.com/Kakahaja07/fmicons/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./all": {
+      "types": "./dist/all.d.ts",
+      "default": "./dist/all.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "default": "./dist/icons/*.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ]
+}

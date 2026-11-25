@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-thorchain-rune-dark-s0" d="M16.3801 17.57L6.08011 21.91C5.01011 22.36 4.08011 21.03 4.87011 20.18L12.6801 11.7L16.7301 15.82C17.2701 16.36 17.0901 17.28 16.3801 17.57Z"/>
+  <path id="g-company-logos-thorchain-rune-dark-s1" d="M19.17 3.76992L12.68 11.6999L8.63003 7.59992C8.09003 7.04992 8.27003 6.12992 8.98003 5.83992L17.92 2.08992C18.96 1.64992 19.89 2.89992 19.17 3.76992Z"/>
+  <linearGradient id="g-company-logos-thorchain-rune-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-thorchain-rune-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-thorchain-rune-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-thorchain-rune-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-thorchain-rune-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-thorchain-rune-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-thorchain-rune-dark-s0" fill="url(#g-company-logos-thorchain-rune-dark-glass)"/>
+<g mask="url(#g-company-logos-thorchain-rune-dark-in0)"><use xlink:href="#g-company-logos-thorchain-rune-dark-s0" fill="none" stroke="url(#g-company-logos-thorchain-rune-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-thorchain-rune-dark-s1" fill="url(#g-company-logos-thorchain-rune-dark-solid)"/>
+</svg>

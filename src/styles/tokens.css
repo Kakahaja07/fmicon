@@ -1,0 +1,211 @@
+/* ==========================================================================
+   Design tokens: the ONLY place colours, fonts, radii, shadows and motion
+   are defined. Every component reads these variables, so a change here
+   restyles the whole site.
+
+   Quick re-brand: change --brand and --brand-success (and their dark
+   versions below). Buttons, links, focus rings, radios and tints derive
+   from them automatically.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand ---- */
+  --brand: #1265ec;
+  --brand-success: #34c759;
+
+  /* ---- Text ---- */
+  --text: #31383c;
+  --text-2: #4c5153;
+  --text-3: #6b7175;
+  --text-faint: #c4c8cc;
+  --text-on-brand: #ffffff;
+
+  /* ---- Surfaces ---- */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-glass: rgba(255, 255, 255, 0.72);
+  --surface-inverse: #111214;
+  --fill: #f2f2f7;
+  --fill-subtle: #f7f7f9;
+  --fill-translucent: rgba(0, 0, 0, 0.04);
+  --hairline: rgba(64, 64, 64, 0.08);
+  --hairline-strong: rgba(64, 64, 64, 0.14);
+  --sky: #f2f9fe;
+
+  /* ---- Navigation ---- */
+  --surface-glass-strong: rgba(255, 255, 255, 0.86);
+  --nav-pill: #ffffff;
+  --nav-pill-shadow: 0 1px 2px rgba(40, 50, 70, 0.1), 0 0 0 1px rgba(64, 64, 64, 0.06);
+
+  /* ---- Derived accents (no need to edit) ---- */
+  --accent: var(--brand);
+  --accent-soft: color-mix(in srgb, var(--brand) 10%, var(--surface));
+  --accent-ring: color-mix(in srgb, var(--brand) 28%, transparent);
+
+  /* ---- Palette (stickers, tiles, art) ---- */
+  --red: #ff383c;
+  --orange: #ff8d28;
+  --yellow: #ffcc00;
+  --green: #34c759;
+  --mint: #00c8b3;
+  --teal: #00c3d0;
+  --blue: #0088ff;
+  --indigo: #6155f5;
+  --purple: #cb30e0;
+  --pink: #ff2d55;
+
+  /* ---- Buttons (built from the brand colours) ---- */
+  --btn-primary: linear-gradient(color-mix(in srgb, var(--brand) 88%, #fff), var(--brand));
+  --btn-success: linear-gradient(color-mix(in srgb, var(--brand-success) 75%, #fff), var(--brand-success));
+  --btn-dark: linear-gradient(#3a3f43, #23272a);
+  --btn-dark-text: #ffffff;
+
+  /* ---- Icon grid cards ---- */
+  --cell-bg: transparent; /* plain grid; the card appears on hover */
+  --cell-bg-hover: #f3f3f6;
+
+  /* ---- Code blocks ---- */
+  --code-bg: #f7f7f9;
+  --code-text: #31383c;
+  --code-gutter: #b8bcc0;
+  --code-keyword: #c2185b;
+  --code-tag: #1265ec;
+  --code-attr: #7c3aed;
+  --code-string: #138a43;
+  --code-punct: #8a9096;
+  --code-comment: #8a9096;
+
+  /* ---- Stickers ---- */
+  --sticker-edge: #ffffff;
+  --sticker-shadow: rgba(40, 50, 70, 0.18);
+
+  /* ---- Showcase stage behind the app window ---- */
+  --stage-gradient: linear-gradient(180deg, #c9cbe6 0%, #d7cfe2 38%, #f0c9b4 70%, #e9a889 100%);
+
+  /* ---- Shadows ---- */
+  --shadow-card: 0 18px 47px rgba(64, 64, 64, 0.03), 0 7.5px 19px rgba(64, 64, 64, 0.02),
+    0 4px 10.5px rgba(64, 64, 64, 0.02), 0 0 0 1px rgba(64, 64, 64, 0.04);
+  --shadow-pop: 0 24px 60px rgba(40, 50, 70, 0.12), 0 6px 16px rgba(40, 50, 70, 0.06),
+    0 0 0 1px rgba(64, 64, 64, 0.05);
+  --shadow-nav: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 6px 20px rgba(40, 50, 70, 0.07), 0 0 0 1px rgba(64, 64, 64, 0.06);
+  --shadow-nav-raised: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 12px 32px rgba(40, 50, 70, 0.12),
+    0 2px 6px rgba(40, 50, 70, 0.05), 0 0 0 1px rgba(64, 64, 64, 0.06);
+  --shadow-control: 0 1px 2px rgba(40, 50, 70, 0.08), 0 0 0 1px rgba(64, 64, 64, 0.09);
+  --shadow-window: 0 30px 80px rgba(30, 30, 60, 0.28), 0 0 0 1px rgba(0, 0, 0, 0.08);
+
+  /* ---- Type ---- */
+  --font: "Goeist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Goeist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-hand: "Gochi Hand", "Comic Sans MS", cursive;
+  --font-sign: "Homemade Apple", "Snell Roundhand", cursive;
+
+  /* Weights: kept light on purpose. Headings use --weight-strong. */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-strong: 600;
+
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-md: 15px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-display: 40px;
+
+  /* ---- Shape ---- */
+  --radius-card: 20px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+  --radius-pill: 999px;
+
+  /* ---- Layout ---- */
+  --wrap: 1024px;
+  --tool-bar: 52px; /* height of the icon tool's top bar; sticky columns sit right under it */
+  --gutter: 16px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --dur-fast: 150ms;
+  --dur: 220ms;
+  --dur-slow: 480ms;
+
+  /* ---- Texture ---- */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 -1.25'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --grain-opacity: 0.012; /* barely there, so white stays crisp white */
+  --grain-filter: none;
+
+  color-scheme: light;
+}
+
+/* Dark theme. Set by the inline theme script (system preference or the
+   footer toggle), so there is only one dark block to maintain. */
+:root[data-theme="dark"] {
+  --brand: #4d8fff;
+  --brand-success: #30d158;
+
+  --text: #ececec;
+  --text-2: #c2c2c4;
+  --text-3: #9c9ca0;
+  --text-faint: #4b4b4d;
+
+  --bg: #161617;
+  --surface: #1f1f21;
+  --surface-glass: rgba(44, 44, 46, 0.82);
+  --surface-inverse: #0b0b0c;
+  --fill: #333336;
+  --fill-subtle: #29292b;
+  --fill-translucent: rgba(255, 255, 255, 0.08);
+  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+  --sky: #1d1f24;
+
+  --surface-glass-strong: rgba(44, 44, 46, 0.92);
+  --nav-pill: rgba(255, 255, 255, 0.1);
+  --nav-pill-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 0 1px rgba(255, 255, 255, 0.06);
+
+  --red: #ff4245;
+  --orange: #ff9230;
+  --yellow: #ffd600;
+  --green: #30d158;
+  --mint: #00dac3;
+  --teal: #00d2e0;
+  --blue: #0091ff;
+  --indigo: #6d7cff;
+  --purple: #db34f2;
+  --pink: #ff375f;
+
+  --btn-dark: linear-gradient(#f2f2f4, #dcdcde);
+  --btn-dark-text: #1a1a1c;
+
+  --cell-bg: transparent;
+  --cell-bg-hover: rgba(255, 255, 255, 0.05);
+
+  --code-bg: #141416;
+  --code-text: #d6d6d9;
+  --code-gutter: #4a4a4f;
+  --code-keyword: #ff7ab2;
+  --code-tag: #6cb4ff;
+  --code-attr: #c3a6ff;
+  --code-string: #8fd9a0;
+  --code-punct: #8a8a90;
+  --code-comment: #6c6c72;
+
+  --sticker-edge: #2c2c2f;
+  --sticker-shadow: rgba(0, 0, 0, 0.5);
+
+  --stage-gradient: linear-gradient(180deg, #2a2b3d 0%, #352f42 38%, #5a3f3a 70%, #7a4a36 100%);
+
+  --shadow-card: 0 0 0 1px rgba(255, 255, 255, 0.07);
+  --shadow-pop: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-nav: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 6px 20px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --shadow-nav-raised: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-control: 0 0 0 1px rgba(255, 255, 255, 0.1);
+  --shadow-window: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.08);
+
+  --grain-opacity: 0.03;
+  --grain-filter: invert(1);
+
+  color-scheme: dark;
+}

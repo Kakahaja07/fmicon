@@ -1,0 +1,105 @@
+.art {
+  position: absolute;
+  inset: auto 0 0;
+  height: 300px;
+  background: radial-gradient(80% 80% at 50% 100%, color-mix(in srgb, var(--brand) 22%, transparent), transparent 70%);
+}
+
+.window {
+  position: absolute;
+  width: 220px;
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow-pop);
+  overflow: hidden;
+  transition: transform 400ms var(--ease-out);
+}
+
+.mac {
+  left: calc(50% - 200px);
+  bottom: 40px;
+  transform: rotate(-4deg);
+}
+
+.win {
+  left: calc(50% - 20px);
+  bottom: 70px;
+  border-radius: 8px;
+  transform: rotate(3deg);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :global(article):hover .mac { transform: rotate(-6deg) translateY(-6px); }
+  :global(article):hover .win { transform: rotate(5deg) translateY(-6px); }
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 30px;
+  background: var(--fill);
+  font-size: 11px;
+  font-weight: var(--weight-medium);
+  color: var(--text-3);
+}
+
+.lights {
+  position: absolute;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.lights i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ff5f57;
+}
+.lights i:nth-child(2) { background: #febc2e; }
+.lights i:nth-child(3) { background: #28c840; }
+
+/* Windows: square corners, controls on the right */
+.controls {
+  position: absolute;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-2);
+}
+
+.max {
+  width: 9px;
+  height: 9px;
+  border: 1.2px solid currentColor;
+  border-radius: 1px;
+}
+
+.close {
+  transform: rotate(45deg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  padding: 12px;
+}
+
+.grid span {
+  display: grid;
+  place-items: center;
+  height: 44px;
+  border-radius: 9px;
+  background: var(--fill-subtle);
+  color: var(--text);
+}
+
+.win .grid span:first-child {
+  background: var(--accent-soft);
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1.5px var(--accent);
+}

@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-minus-cirlce-dark-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-essetional-minus-cirlce-dark-s1" d="M15.9199 12.75H7.91992C7.50992 12.75 7.16992 12.41 7.16992 12C7.16992 11.59 7.50992 11.25 7.91992 11.25H15.9199C16.3299 11.25 16.6699 11.59 16.6699 12C16.6699 12.41 16.3399 12.75 15.9199 12.75Z"/>
+  <linearGradient id="g-essetional-minus-cirlce-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-minus-cirlce-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-essetional-minus-cirlce-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-minus-cirlce-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-minus-cirlce-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-minus-cirlce-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-essetional-minus-cirlce-dark-s0" fill="url(#g-essetional-minus-cirlce-dark-glass)"/>
+<g mask="url(#g-essetional-minus-cirlce-dark-in0)"><use xlink:href="#g-essetional-minus-cirlce-dark-s0" fill="none" stroke="url(#g-essetional-minus-cirlce-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-essetional-minus-cirlce-dark-s1" fill="url(#g-essetional-minus-cirlce-dark-solid)"/>
+</svg>

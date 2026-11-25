@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-content-document-cloud-light-s0" d="M20.5 10.19H17.61C15.24 10.19 13.31 8.26 13.31 5.89V3C13.31 2.45 12.86 2 12.31 2H8.07C4.99 2 2.5 4.00001 2.5 7.57001V16.43C2.5 20 4.99 22 8.07 22H15.93C19.01 22 21.5 20 21.5 16.43V11.19C21.5 10.64 21.05 10.19 20.5 10.19Z"/>
+  <path id="g-content-document-cloud-light-s1" d="M15.7999 2.21C15.3899 1.8 14.6799 2.07998 14.6799 2.64998V6.13999C14.6799 7.59999 15.9199 8.80999 17.4299 8.80999C18.3799 8.81999 19.6999 8.82 20.8299 8.82C21.3999 8.82 21.6999 8.14999 21.2999 7.74999C19.8599 6.29999 17.2799 3.69 15.7999 2.21Z"/>
+  <path id="g-content-document-cloud-light-s2" d="M14.7601 19.2601C12.4101 19.4301 12.4101 22.8301 14.7601 23.0001H20.3201C20.9901 23.0001 21.6501 22.7501 22.1401 22.3001C23.7901 20.8601 22.9101 17.9801 20.7401 17.7101C19.9601 13.0201 13.1801 14.8001 14.7801 19.2701"/>
+  <linearGradient id="g-content-document-cloud-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-content-document-cloud-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-content-document-cloud-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-content-document-cloud-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-content-document-cloud-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-content-document-cloud-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-content-document-cloud-light-s0" fill="url(#g-content-document-cloud-light-glass)"/>
+<g mask="url(#g-content-document-cloud-light-in0)"><use xlink:href="#g-content-document-cloud-light-s0" fill="none" stroke="url(#g-content-document-cloud-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-content-document-cloud-light-s1" fill="url(#g-content-document-cloud-light-solid)"/>
+<use xlink:href="#g-content-document-cloud-light-s2" fill="url(#g-content-document-cloud-light-solid)"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-weight-light-s0" d="M17.1802 5.25C15.4702 5.25 13.4302 5.9 13.4302 9V15C13.4302 18.1 15.4702 18.75 17.1802 18.75C18.8902 18.75 20.9302 18.1 20.9302 15V9C20.9302 5.9 18.8902 5.25 17.1802 5.25Z"/>
+  <path id="g-essetional-weight-light-s1" d="M6.81982 5.25C5.10982 5.25 3.06982 5.9 3.06982 9V15C3.06982 18.1 5.10982 18.75 6.81982 18.75C8.52982 18.75 10.5698 18.1 10.5698 15V9C10.5698 5.9 8.52982 5.25 6.81982 5.25Z"/>
+  <path id="g-essetional-weight-light-s2" d="M13.4298 11.25H10.5698V12.75H13.4298V11.25Z"/>
+  <path id="g-essetional-weight-light-s3" d="M22.5 15.25C22.09 15.25 21.75 14.91 21.75 14.5V9.5C21.75 9.09 22.09 8.75 22.5 8.75C22.91 8.75 23.25 9.09 23.25 9.5V14.5C23.25 14.91 22.91 15.25 22.5 15.25Z"/>
+  <path id="g-essetional-weight-light-s4" d="M1.5 15.25C1.09 15.25 0.75 14.91 0.75 14.5V9.5C0.75 9.09 1.09 8.75 1.5 8.75C1.91 8.75 2.25 9.09 2.25 9.5V14.5C2.25 14.91 1.91 15.25 1.5 15.25Z"/>
+  <linearGradient id="g-essetional-weight-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-weight-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-weight-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-weight-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-weight-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-weight-light-s0" fill="#fff"/></mask>
+  <mask id="g-essetional-weight-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-weight-light-s1" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-essetional-weight-light-s0" fill="url(#g-essetional-weight-light-glass)"/>
+<g mask="url(#g-essetional-weight-light-in0)"><use xlink:href="#g-essetional-weight-light-s0" fill="none" stroke="url(#g-essetional-weight-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-essetional-weight-light-s1" fill="url(#g-essetional-weight-light-glass)"/>
+<g mask="url(#g-essetional-weight-light-in1)"><use xlink:href="#g-essetional-weight-light-s1" fill="none" stroke="url(#g-essetional-weight-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-essetional-weight-light-s2" fill="url(#g-essetional-weight-light-solid)"/>
+<use xlink:href="#g-essetional-weight-light-s3" fill="url(#g-essetional-weight-light-solid)"/>
+<use xlink:href="#g-essetional-weight-light-s4" fill="url(#g-essetional-weight-light-solid)"/>
+</svg>

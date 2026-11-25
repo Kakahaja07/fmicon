@@ -1,0 +1,47 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dot,
+.custom {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow 200ms ease;
+}
+
+.dot {
+  background: var(--dot);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.dot:active,
+.custom:active {
+  transform: scale(0.9);
+}
+
+.dot[aria-checked="true"],
+.custom[data-on] {
+  box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--accent);
+}
+
+/* Rainbow ring for "pick your own" */
+.custom {
+  background: conic-gradient(#ff383c, #ffcc00, #34c759, #00c3d0, #0088ff, #cb30e0, #ff383c);
+  overflow: hidden;
+}
+
+.custom input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

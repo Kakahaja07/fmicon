@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-money-percentage-circle-dark-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-money-percentage-circle-dark-s1" d="M8.32025 16.02C8.13025 16.02 7.94025 15.95 7.79025 15.8C7.50025 15.51 7.50025 15.03 7.79025 14.74L14.3402 8.19003C14.6302 7.90003 15.1102 7.90003 15.4002 8.19003C15.6902 8.48003 15.6902 8.96003 15.4002 9.25003L8.85025 15.8C8.70025 15.95 8.51025 16.02 8.32025 16.02Z"/>
+  <path id="g-money-percentage-circle-dark-s2" d="M8.73001 7.66003C7.92001 7.66003 7.25 8.32005 7.25 9.14005C7.25 9.95005 7.91001 10.62 8.73001 10.62C9.54001 10.62 10.21 9.96005 10.21 9.14005C10.2 8.32005 9.54001 7.66003 8.73001 7.66003Z"/>
+  <path id="g-money-percentage-circle-dark-s3" d="M15.27 13.39C14.46 13.39 13.79 14.05 13.79 14.87C13.79 15.68 14.45 16.35 15.27 16.35C16.08 16.35 16.75 15.69 16.75 14.87C16.75 14.05 16.09 13.39 15.27 13.39Z"/>
+  <linearGradient id="g-money-percentage-circle-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-money-percentage-circle-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-money-percentage-circle-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-money-percentage-circle-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-money-percentage-circle-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-money-percentage-circle-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-money-percentage-circle-dark-s0" fill="url(#g-money-percentage-circle-dark-glass)"/>
+<g mask="url(#g-money-percentage-circle-dark-in0)"><use xlink:href="#g-money-percentage-circle-dark-s0" fill="none" stroke="url(#g-money-percentage-circle-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-money-percentage-circle-dark-s1" fill="url(#g-money-percentage-circle-dark-solid)"/>
+<use xlink:href="#g-money-percentage-circle-dark-s2" fill="url(#g-money-percentage-circle-dark-solid)"/>
+<use xlink:href="#g-money-percentage-circle-dark-s3" fill="url(#g-money-percentage-circle-dark-solid)"/>
+</svg>

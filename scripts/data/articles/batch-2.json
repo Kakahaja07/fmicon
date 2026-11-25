@@ -1,0 +1,893 @@
+{
+  "user-add": {
+    "intro": "The add user icon shows a person silhouette with a small plus badge beside it, and it tells people that pressing it will bring someone new into a list, team or contact book. You will find it on invite buttons, member panels and social profiles, where it starts the flow of adding a teammate, a friend or a new account.",
+    "meaning": "Pairing a person with a plus sign borrows the general plus-means-create convention and narrows it to people. Social apps read it as a follow icon or a friend request, while workplace tools read it as an invitation to join a workspace. It differs from the plain user icon, which opens a profile, and from the group icon, which lists existing members. The plus badge is what turns a passive identity symbol into an action.",
+    "uses": [
+      "Team settings page: an Invite member button that opens a dialog for entering a colleague's email address and role.",
+      "Social profile header: a button beside the username that sends a friend request or starts following the account.",
+      "Messaging app contacts list: a top bar action for adding a new contact by phone number or username.",
+      "Shared document toolbar: a control that lets the owner give another person access to view or edit the file."
+    ],
+    "tips": [
+      "Keep the plus badge large enough to read at 16 pixels; if it blurs into the shoulder, people see a plain profile icon instead.",
+      "Swap to the bold style or a tick badge once a request is sent, so people can tell a pending invite from an open action.",
+      "Pair it with a text label such as Invite or Add friend in toolbars, because the same glyph means different things across products."
+    ],
+    "aria": "Invite people",
+    "pairs": ["user", "profile-2user", "people"],
+    "faq": [
+      {
+        "q": "What does the add user icon mean?",
+        "a": "It means add a new person to something: a contact list, a team, a chat or a shared file. The plus badge signals creation, and the silhouette says the thing being created is a link to a person rather than a new document or item."
+      },
+      {
+        "q": "Which icon should I use for invite or add friend?",
+        "a": "Use the person with a plus badge for both, since it is the most widely recognised add friend icon and works well as an invite icon in team tools. Add a short label, because a social follow and a workspace invitation carry different consequences for the person on the other end."
+      }
+    ]
+  },
+  "message": {
+    "intro": "The message icon is a single speech bubble with three dots inside, the shorthand for a conversation that is waiting to be read or written. In an interface it opens a chat thread, starts a direct message or shows where replies live, and the dots hint that someone is typing or has something to say.",
+    "meaning": "Speech bubbles come from comic strips, where they mark spoken words, and phones adopted them for SMS threads in the early 2000s. The three dots echo the typing indicator in modern chat apps. People often use it as a text message icon, but on blogs and forums the same glyph reads as a reply or discussion marker. A single bubble suggests one conversation; two overlapping bubbles suggest a group chat or a whole messaging area.",
+    "uses": [
+      "Product page header: a Message seller button that opens a private thread with the shop owner.",
+      "Mobile bottom navigation: the tab that leads to a list of direct conversations, often with an unread count badge.",
+      "Article footer: a control that shows the comment count and scrolls the reader down to the discussion.",
+      "Support widget launcher: a floating button in the page corner that opens live chat with a help agent."
+    ],
+    "tips": [
+      "Put unread counts on the top right of the bubble, away from the three dots, so the badge never reads as a fourth dot.",
+      "Decide early whether the glyph means comments or private messages in your product, and keep that meaning on every screen.",
+      "Animate the dots only for a true typing indicator; on a static button, moving dots look like a loading spinner."
+    ],
+    "aria": "Open messages",
+    "pairs": ["messages-2", "send", "notification"],
+    "faq": [
+      {
+        "q": "What does the speech bubble with three dots mean?",
+        "a": "It means a message or a conversation. The bubble marks speech, and the three dots come from the typing indicator in chat apps, so the icon reads as someone has something to say. Tapping it usually opens a thread or starts a new direct message."
+      },
+      {
+        "q": "Is the message icon the same as a comment icon?",
+        "a": "Visually they are often the same speech bubble, but the job differs. A message is private between people, while a comment is public and attached to a post. If your product has both, give one a label or use a second bubble style so readers can tell them apart."
+      }
+    ]
+  },
+  "messages-2": {
+    "intro": "The chat icon shows two overlapping speech bubbles, a back-and-forth between at least two people. Use it to open a messaging area, a group conversation or a live support channel, where the point is the exchange itself rather than one single message. It works well as a navigation tab because it names a whole place in the app.",
+    "meaning": "Two bubbles turn a single remark into dialogue, which is why this chat bubbles icon usually labels a conversations hub, group threads or team channels. The overlap shows replies stacking up over time. A single speech bubble icon tends to mean one message or one comment, so choose the pair when the destination holds many conversations. It also differs from the envelope, which signals slower, more formal email rather than real-time talk.",
+    "uses": [
+      "Team workspace sidebar: the entry that opens channels and group conversations, separate from email and file areas.",
+      "Customer help centre: a Chat with us button that connects visitors to a live agent during opening hours.",
+      "Marketplace order page: a link to the buyer and seller conversation history about a specific order.",
+      "Online class screen: a toggle that shows or hides the group chat panel beside the video feed."
+    ],
+    "tips": [
+      "Leave a clear gap where the bubbles overlap; at 16 pixels a shared outline merges into one blob and loses the dialogue idea.",
+      "Use the bold style for the active Chat tab and keep the linear style for the other tabs so the current section stands out.",
+      "If you show a presence dot for live support, place it outside the bubbles so it is not mistaken for an unread message."
+    ],
+    "aria": "Open chat",
+    "pairs": ["message", "people", "notification"],
+    "faq": [
+      {
+        "q": "What is the difference between a chat icon and a message icon?",
+        "a": "Two bubbles suggest an ongoing conversation between several people, while a single bubble suggests one message or one thread. Many apps use two bubbles for the main conversations tab and one bubble for a button that starts a new direct message, so the pair works as a small system."
+      },
+      {
+        "q": "What does the two speech bubbles icon mean?",
+        "a": "It means conversation or discussion. Two bubbles show people talking back and forth, so the icon is used for group chats, messaging tabs, forums and live support. It promises real-time or near real-time replies, unlike an envelope, which points to email."
+      }
+    ]
+  },
+  "sms": {
+    "intro": "The email icon is a closed envelope, the universal sign for electronic mail and written messages that arrive in an inbox. In an interface it opens a mail client, starts a new message to a contact or marks a field where someone types an email address, such as a sign-up or newsletter form.",
+    "meaning": "The envelope is a direct carry-over from paper post, and early desktop mail programs adopted it in the 1980s and 1990s, so most people recognise it as a mail icon without a label. It suggests something written and slightly formal. A paper plane means send, not mail itself, and a tray with a down arrow means inbox. A speech bubble points to chat, while an open envelope usually marks a message that has been read.",
+    "uses": [
+      "Sign-up form: a leading icon inside the email address field that tells people what to type before they read the label.",
+      "Website footer: a contact link that opens the visitor's mail app with the company address already filled in.",
+      "Account settings page: the row for changing the email used for login, receipts and password reset messages.",
+      "Contact card in a CRM: a quick action beside the customer's name that drafts a new email to them."
+    ],
+    "tips": [
+      "Inside input fields, keep the envelope at 18 to 20 pixels in a muted colour so it guides the eye without competing with typed text.",
+      "Use a mailto link with care on mobile; offer a copy address option too, since many people have no default mail app set up.",
+      "Show a closed envelope for unread items and an open one for read items only if your list makes that state difference meaningful."
+    ],
+    "aria": "Send email",
+    "pairs": ["direct-inbox", "send", "message"],
+    "faq": [
+      {
+        "q": "What does the envelope icon mean?",
+        "a": "It means email or mail. It comes from postal letters and has been the standard symbol for electronic mail since early desktop software. In apps it opens your inbox, starts a new message or marks a field where you type an email address."
+      },
+      {
+        "q": "Should I use an envelope or a paper plane for email?",
+        "a": "Use the envelope for email as a place or a contact method, and the paper plane for the act of sending. A Contact us link takes the envelope, while the button at the bottom of a compose window works better as a paper plane with a Send label."
+      }
+    ]
+  },
+  "notification": {
+    "intro": "The notification icon is a bell, and it tells people where updates, reminders and activity from other users collect. Placed in a header or tab bar, it opens a feed of recent events, and a small badge on it signals that something new has arrived since the last visit.",
+    "meaning": "Bells have signalled news and attention for centuries, from church towers to shop doors, and software adopted the shape once social networks needed a home for likes, mentions and replies. A crossed-out bell means muted. It is gentler than an alert icon such as a warning triangle, which flags a problem that needs action. The bell says something happened; the triangle says something is wrong and needs fixing.",
+    "uses": [
+      "App header: the top right bell that opens a dropdown of mentions, replies and system updates with an unread badge.",
+      "Product page: a Notify me when back in stock button for items that have sold out.",
+      "Channel settings in a team chat: a bell toggle to mute or unmute a busy channel.",
+      "Course dashboard: a reminder setting that alerts students before an assignment deadline closes."
+    ],
+    "tips": [
+      "Cap the badge count at 9+ or 99+ so the number never grows wider than the bell and covers its shape.",
+      "Use a bell with a slash for muted states rather than greying it out, since grey often reads as disabled.",
+      "Give the icon-only button an aria-label that includes the unread count, for example Notifications, 3 unread, so screen reader users hear the same news."
+    ],
+    "aria": "Open notifications",
+    "pairs": ["message", "setting", "user"],
+    "faq": [
+      {
+        "q": "What does the bell icon mean on an app?",
+        "a": "It means notifications. Tapping it shows recent activity such as mentions, replies, reminders or account updates. A dot or number on the bell means there are new items, and a bell with a line through it means notifications are turned off."
+      },
+      {
+        "q": "Bell or warning triangle for alerts?",
+        "a": "Use the bell for routine updates people may want to know about, and a warning triangle for problems that need attention, such as a failed payment. Mixing them up teaches people to ignore real warnings, so keep the triangle for errors and risks."
+      }
+    ]
+  },
+  "call": {
+    "intro": "The phone icon shows a telephone handset, the curved receiver from a desk phone, and it means start a voice call or show a phone number. In interfaces it sits on contact cards, support pages and chat headers, where one tap dials a person or business without copying digits by hand.",
+    "meaning": "The handset shape dates from landline telephones, and it survived the move to smartphones because a receiver is far easier to recognise than a slab of glass. Turned upward and green it means answer; tilted down and red it means hang up. A mobile phone outline means the device itself, such as a number type or a device setting, rather than the act of calling. As a call icon it should always start or describe a voice conversation.",
+    "uses": [
+      "Restaurant listing: a Call button that dials the venue for bookings directly from the search result.",
+      "Chat header: a voice call control placed next to the video call button above the conversation.",
+      "Delivery tracking screen: a button to phone the courier when they cannot find the address.",
+      "Contact page sidebar: the support line number shown beside the handset, linked with a tel link on mobile."
+    ],
+    "tips": [
+      "Link the icon to a tel URL on mobile so a tap opens the dialler, and show the number as text for desktop users.",
+      "Reserve green and red handsets for incoming call screens; on ordinary buttons, a neutral colour avoids looking like an answer prompt.",
+      "Keep the handset angle consistent: mixing upright and tilted versions across screens makes the hang up state harder to spot."
+    ],
+    "aria": "Start voice call",
+    "pairs": ["video", "message", "user"],
+    "faq": [
+      {
+        "q": "What does the telephone icon mean?",
+        "a": "It means a voice call or a phone number. Tapping it usually dials the number or starts an in-app voice call. Its handset shape comes from landline phones, which is why it stays recognisable even though most calls now happen on smartphones."
+      },
+      {
+        "q": "Phone icon or mobile icon for a contact number?",
+        "a": "Use the handset for the action of calling and for a general phone number. Use a mobile device outline only when you need to tell a mobile number apart from a landline, or when the icon refers to the device itself, such as app download links."
+      }
+    ]
+  },
+  "microphone": {
+    "intro": "The microphone icon shows a rounded mic capsule on a small stand, and it marks anything that records or listens to your voice. Use it for voice notes, voice search, dictation and the mute control in calls, where it shows whether other people can currently hear you.",
+    "meaning": "The capsule-and-stand shape comes from studio and podcast microphones, and it replaced older stage mic drawings because it stays clear at small sizes. With a slash through it, the mic icon means muted. People read it as input, so it differs from a speaker or volume icon, which means sound coming out, and from headphones, which suggest listening privately. In search bars it signals voice search rather than recording a file.",
+    "uses": [
+      "Search bar: a voice icon at the right edge of the field that starts speech-to-text search.",
+      "Video call toolbar: the mute and unmute button, shown with a slash when the microphone is off.",
+      "Chat composer: a hold-to-record button that sends a short voice note instead of typed text.",
+      "Note-taking app: a dictation control that converts spoken words into text in the current note."
+    ],
+    "tips": [
+      "Show the muted state with a slash and a red tint together, because colour alone fails for people with colour vision deficiency.",
+      "While recording, add a pulsing ring or level meter around the icon so people know the microphone is actually live.",
+      "Label the toggle by its next action, Mute or Unmute, rather than by state, so screen reader users know what pressing it will do."
+    ],
+    "aria": "Mute microphone",
+    "pairs": ["video", "call", "volume-high"],
+    "faq": [
+      {
+        "q": "What does the microphone icon with a line through it mean?",
+        "a": "It means the microphone is muted, so nobody on the call or recording can hear you. Pressing it again turns the mic back on. Most video call apps also tint it red so the muted state stands out during a meeting."
+      },
+      {
+        "q": "Microphone icon or speaker icon?",
+        "a": "Use the microphone for sound going in, such as recording, voice search or your own audio in a call. Use a speaker for sound coming out, such as volume or media playback. Swapping them confuses people about whether a control affects what they hear or what others hear."
+      }
+    ]
+  },
+  "video": {
+    "intro": "The video icon is a video camera with a lens housing on its side, and it stands for moving pictures: recording, watching or joining a video call. Place it on buttons that start a camera feed, upload a clip or turn your webcam on and off during a meeting.",
+    "meaning": "The box-and-lens shape descends from camcorders and film cameras, and it remains the standard symbol for video even though most video now comes from phones and laptops. With a slash it means camera off. It differs from the photo camera, which captures still images, and from the play triangle, which plays existing footage. In meeting apps it works as a video call icon placed beside the voice call handset.",
+    "uses": [
+      "Meeting toolbar: the camera on and off toggle, shown with a slash when the webcam is disabled.",
+      "Chat header: a button that turns a text conversation into a face-to-face video call.",
+      "Social post composer: an option for attaching a clip from the gallery or recording one straight away.",
+      "Course platform sidebar: a filter that shows only lesson videos rather than readings or quizzes."
+    ],
+    "tips": [
+      "For a capture button, add a red dot or use a dedicated record icon; the camera alone says video, not that recording starts now.",
+      "Keep the lens housing clearly separate from the body at 16 pixels, otherwise the camera reads as a plain rectangle or a battery.",
+      "When the camera is off, change both the glyph and the label, Turn camera on, so the state is obvious to screen reader users."
+    ],
+    "aria": "Start video call",
+    "pairs": ["call", "play", "camera"],
+    "faq": [
+      {
+        "q": "What does the video camera icon mean?",
+        "a": "It means video: recording a clip, joining a video call or switching your webcam on. In meeting apps a video camera with a slash means your camera is off and others cannot see you. On upload screens it marks video files rather than photos."
+      },
+      {
+        "q": "Video icon or play icon for a video?",
+        "a": "Use the play triangle when people can watch something that already exists, such as a thumbnail or a lesson. Use the video camera when the action creates or streams video, like recording, uploading or joining a call. The camera is about capture, the triangle about playback."
+      }
+    ]
+  },
+  "direct-inbox": {
+    "intro": "The inbox icon shows an open tray with an arrow pointing down into it, meaning things arriving and waiting for you. It labels the place where new messages, requests or tasks land, and it suits mail apps, support queues, approval lists and any screen where incoming items need sorting.",
+    "meaning": "The inbox tray icon comes from the physical in-tray on an office desk, where papers waited to be dealt with. The down arrow stresses arrival, which is why some people read it as a download to inbox icon. It differs from the envelope, which means a single email or the idea of mail, and from the archive box, which holds items already handled. A mailbox icon with a flag is the postal variant of the same idea.",
+    "uses": [
+      "Email client sidebar: the top folder entry for new mail, with an unread count on the right.",
+      "Help desk dashboard: the queue of incoming customer tickets that no agent has picked up yet.",
+      "Project tool: a personal inbox that gathers mentions, assignments and review requests from every project.",
+      "File sharing app: a received files section for documents other people have sent you."
+    ],
+    "tips": [
+      "Keep the down arrow short so the tray opening stays visible, since the tray shape is what separates this from a plain download icon.",
+      "Place the archive icon nearby so people learn the flow: items arrive in the inbox, then move to the archive once handled.",
+      "Show an empty inbox state with a friendly message instead of a blank list, so reaching zero feels like a finish line."
+    ],
+    "aria": "Open inbox",
+    "pairs": ["sms", "archive", "notification"],
+    "faq": [
+      {
+        "q": "What does the tray with a down arrow mean?",
+        "a": "It means inbox: the place where incoming items arrive. The arrow points into the tray to show new things landing there. Mail apps use it for new email, while work tools use it for requests, mentions and tasks that still need your attention."
+      },
+      {
+        "q": "Inbox icon or envelope icon for email?",
+        "a": "Use the inbox tray for the folder or screen that collects incoming mail, and the envelope for email in general or a single message. In a mail app sidebar the tray labels the Inbox folder, while the envelope works for a contact link or an email field."
+      }
+    ]
+  },
+  "emoji-happy": {
+    "intro": "The smiley face icon is a smiling face drawn inside a rounded square, and in most interfaces it opens an emoji picker or a reaction menu. It invites a quick, friendly response, so you will see it in chat composers, comment boxes and feedback widgets where tone matters more than words.",
+    "meaning": "The smiling face traces back to the 1960s yellow smiley badge and later to text emoticons typed with a colon and a bracket in early online chat. Today people treat it as an emoji icon: press it and a grid of faces and symbols appears. Placed among other faces, a happy face icon becomes the satisfied option on a rating scale. It differs from the heart or thumbs up, which record one fixed reaction straight away instead of opening a choice.",
+    "uses": [
+      "Chat composer: a button beside the text field that opens the emoji and sticker picker.",
+      "Message hover menu: an add reaction control that lets people respond to a message with any emoji.",
+      "Post-purchase survey: the happiest option in a row of faces rating the checkout experience.",
+      "Profile status editor: a control for choosing an emoji that appears beside your name, like a holiday or busy marker."
+    ],
+    "tips": [
+      "The rounded square frame keeps the face from looking like a user avatar; keep it rather than switching to a plain circle in tight spaces.",
+      "In rating scales, add text such as Very happy under each face, because expressions read differently across cultures and to screen readers.",
+      "Place the emoji picker button on the opposite side from Send, so a mistapped smile never fires off a half-written message."
+    ],
+    "aria": "Add emoji",
+    "pairs": ["message", "like", "heart"],
+    "faq": [
+      {
+        "q": "What does the smiley icon in a chat box do?",
+        "a": "It opens the emoji picker. Tap it and a panel of faces, gestures and symbols appears, and choosing one inserts it into your message. In some apps a smiley with a small plus sign adds a reaction to an existing message instead."
+      },
+      {
+        "q": "Should I use a smiley face or a thumbs up for reactions?",
+        "a": "Use the smiley face when people should choose from many reactions, since it opens a menu. Use a thumbs up when there is only one quick reaction, such as liking a comment. Many apps show both: the thumbs up for one tap, the smiley for everything else."
+      }
+    ]
+  },
+  "like": {
+    "intro": "The thumbs up icon shows a hand with the thumb raised, the gesture for yes, good or I agree. In interfaces it records quick approval: liking a post, upvoting an answer, rating a recommendation or confirming that a help article was useful. One tap, no words needed.",
+    "meaning": "The raised thumb has long meant approval in many countries, and Facebook made the like button a fixture of social media from 2009. It signals agreement or appreciation, which is lighter than love. A heart suggests affection or saving a favourite, while a thumbs up suggests yes, this is good. In review tools it can also act as an approve icon. Be aware that the gesture is considered rude in a few places, such as parts of West Africa and the Middle East.",
+    "uses": [
+      "Help centre article footer: a Was this helpful row with thumbs up and thumbs down buttons.",
+      "Social feed post: the like button under each post, filled when the current user has liked it.",
+      "Streaming recommendation card: a rating control that teaches the algorithm which shows you want more of.",
+      "AI chat reply toolbar: a feedback button for marking a response as useful, beside copy and regenerate."
+    ],
+    "tips": [
+      "Fill the glyph with the bold style once liked, and keep the count next to it, so people see both their action and the total.",
+      "When pairing with thumbs down, flip the same hand vertically so both icons share weight and neither looks more important.",
+      "Use aria-pressed on the button so screen readers announce whether the post is currently liked, not just the word Like."
+    ],
+    "aria": "Like this post",
+    "pairs": ["heart", "message", "share"],
+    "faq": [
+      {
+        "q": "What is the difference between the like icon and the heart icon?",
+        "a": "A thumbs up means approval or agreement, while a heart suggests affection or saving something as a favourite. Use the thumbs up for feedback such as helpful answers, and the heart when people collect things they love, like products, songs or photos."
+      },
+      {
+        "q": "What does thumbs up mean in an app?",
+        "a": "It means like, approve or this was helpful. Tapping it adds your positive reaction and often trains recommendations or ranks answers higher. A filled thumbs up shows you have already reacted, and tapping it again usually removes the like."
+      }
+    ]
+  },
+  "heart": {
+    "intro": "The heart icon is a simple heart shape, used to say I love this or save this for later. In products it adds items to a favourites list, likes a photo or song, or marks a wishlist entry, and filling the outline shows that the current user has already chosen it.",
+    "meaning": "The heart has symbolised love and affection since medieval times, and photo and social apps made the love icon the standard way to react to posts in the 2010s. It carries more warmth than a thumbs up, which reads as agreement, and more personal feeling than a star, which suggests rating or importance. In shops the heart usually means wishlist, so people expect it to save an item without buying it or adding it to the basket.",
+    "uses": [
+      "Online shop product card: a wishlist toggle in the image corner that saves the item for later.",
+      "Music app now playing screen: a button that adds the current song to your liked tracks.",
+      "Photo feed: a double-tap or button reaction on images, with a short count of hearts beneath.",
+      "Recipe site: a save button beside each recipe that builds a personal collection you can return to."
+    ],
+    "tips": [
+      "Use the linear heart for unsaved and the bold, filled heart for saved; the switch between them is the whole interaction.",
+      "A quick scale pop on tap feels right for a heart, but keep it under 300 milliseconds so repeated tapping never feels slow.",
+      "Red is the expected filled colour, so check the contrast of a red heart on photo thumbnails and add a light backing circle if needed."
+    ],
+    "aria": "Add to favourites",
+    "pairs": ["like", "star", "bookmark"],
+    "faq": [
+      {
+        "q": "What does the heart icon mean on a website?",
+        "a": "On most websites the heart means save to favourites or wishlist. On social apps it means you love a post. Tapping an empty heart fills it, and tapping a filled heart removes it from your saved list or takes back the reaction."
+      },
+      {
+        "q": "Heart icon or star icon for favourites?",
+        "a": "Use the heart for emotional saving, like wishlists, liked songs and photos. Use the star when favourites mean importance or priority, such as starred emails or pinned contacts, or when stars already rate items. Avoid using both for the same job in one product."
+      }
+    ]
+  },
+  "star": {
+    "intro": "The star icon is a five-pointed star, and it does two jobs in interfaces: rating something on a scale and marking an item as important or a favourite. Rows of stars show review scores, while a single star toggle pins an email, file or contact to the top of a list.",
+    "meaning": "Stars have meant excellence since hotel and restaurant guides started grading with them in the early twentieth century, so a row of five works as a rating icon almost everywhere. A single star means starred or important, a habit popularised by email clients. It differs from the heart, which carries affection, and from the bookmark, which simply saves a place to come back to. Half-filled stars show average scores between whole numbers.",
+    "uses": [
+      "Product review summary: a row of five stars with the average score and the number of reviews beside it.",
+      "Email list row: a toggle that stars a message so it appears in the starred folder.",
+      "Code repository page: a star button that shows interest in a project and counts its total stars.",
+      "App feedback prompt: a tappable five-star scale asking customers to rate their latest order."
+    ],
+    "tips": [
+      "For rating inputs, make each star at least 32 pixels wide with spacing, because tapping the fourth star of a small row is fiddly.",
+      "Render half stars with a clipped filled star over an outline star rather than a separate glyph, so the shapes line up exactly.",
+      "Expose the score as text, for example Rated 4.5 out of 5, since screen readers cannot count filled stars."
+    ],
+    "aria": "Star this item",
+    "pairs": ["heart", "medal-star", "bookmark"],
+    "faq": [
+      {
+        "q": "What does a star icon mean?",
+        "a": "A single star usually means favourite or important: starring an email, file or project keeps it easy to find. A row of stars means a rating, where the number of filled stars shows the score. The context, one star or five, tells people which meaning applies."
+      },
+      {
+        "q": "Should I use a star or a heart as a favourite icon?",
+        "a": "Pick the star when favourites mean priority or quick access, as in starred emails or documents. Pick the heart when saving is personal, like a wishlist or liked songs. If your product already uses stars for ratings, choose the heart for favourites to avoid confusion."
+      }
+    ]
+  },
+  "medal-star": {
+    "intro": "The badge icon shows a rosette medal with a star in its centre, a symbol of recognition earned through effort. Interfaces use it for achievements, verified status, loyalty tiers and awards, anywhere you want to show that a person, product or account has reached a milestone or passed a check.",
+    "meaning": "Rosettes and medals come from prize-giving at shows, races and military honours, so people read the shape as something won rather than bought. With a star inside, it works as a general achievement icon for streaks, levels and certificates. It differs from the crown, which suggests a paid premium tier or top rank, and from a plain star, which means rating or favourite. On profiles it can also signal verified or expert status within a community.",
+    "uses": [
+      "Learning app profile: a section listing earned badges for completed courses, streaks and quiz scores.",
+      "Marketplace seller page: a top-rated seller marker beside the shop name, with a tooltip explaining the criteria.",
+      "Fitness tracker: a notification card celebrating a new personal best or a monthly step goal reached.",
+      "Conference website: the awards page header listing this year's winners in each category."
+    ],
+    "tips": [
+      "Explain what each badge means in a tooltip or detail sheet; an unexplained medal on a profile raises questions rather than trust.",
+      "Show locked badges in the linear style and earned ones in bold or colour, so the collection reads as progress at a glance.",
+      "Keep the star inside the rosette simple; below 20 pixels, that star detail is the first part of the glyph to blur."
+    ],
+    "aria": "View achievements",
+    "pairs": ["star", "crown", "user"],
+    "faq": [
+      {
+        "q": "What does a medal icon mean in an app?",
+        "a": "It means an achievement or award. It appears when you complete a goal, reach a level or earn recognition, such as a top contributor title. Tapping it usually opens a list of earned and locked achievements with the steps needed to get the rest."
+      },
+      {
+        "q": "Badge icon or crown icon for a top user?",
+        "a": "Use the badge for something earned through activity, like completing courses or getting great reviews. Use the crown for rank or a paid tier, such as premium members or the top spot on a leaderboard. An award icon feels earned; a crown feels exclusive."
+      }
+    ]
+  },
+  "crown": {
+    "intro": "The crown icon is a simple royal crown, and in apps it marks premium features, paid plans or the top position in a ranking. Put it next to locked tools, subscription tiers and leaderboard leaders, where it tells people that something sits above the standard level.",
+    "meaning": "Crowns have stood for kingship and the highest status for thousands of years, so the shape reads instantly as top tier. Software turned it into a premium icon for paid plans, and games use it for first place or the host of a room. As a king icon it also appears in chess apps for the king piece. It differs from a medal, which is earned through activity, and from a lock, which only says access is blocked.",
+    "uses": [
+      "Pricing page: a crown beside the Pro plan name to mark it as the premium tier.",
+      "Feature menu in a design app: a small crown next to tools that need an upgraded subscription.",
+      "Game leaderboard: the first place row, with the crown above the winner's avatar.",
+      "Group chat member list: a marker beside the owner or host who can remove members and change settings."
+    ],
+    "tips": [
+      "Place a small crown beside the feature name rather than replacing the feature's own icon, so people still know what the tool does.",
+      "Gold or amber is the expected colour for premium crowns; keep it consistent so the crown always signals the same tier.",
+      "If tapping a crowned feature opens an upgrade prompt, say so in the label, for example Pro feature, rather than silently blocking the action."
+    ],
+    "aria": "Upgrade to premium",
+    "pairs": ["medal-star", "star", "wallet"],
+    "faq": [
+      {
+        "q": "What does the crown icon mean in an app?",
+        "a": "It usually means premium or paid. A crown next to a feature shows it needs a subscription, and a crown on a profile shows a member of a paid plan. In games and group chats it can also mark first place or the person who owns the room."
+      },
+      {
+        "q": "Crown icon or lock icon for premium features?",
+        "a": "Use the crown when you want the feature to feel desirable and part of an upgrade, and the lock when access is blocked for security or permission reasons. A crown invites people to upgrade; a lock tells them they are not allowed in, which feels far less friendly."
+      }
+    ]
+  },
+  "magic-star": {
+    "intro": "The AI icon shows a star surrounded by small sparkles, the symbol most products now use for features powered by artificial intelligence. Put it on buttons that generate, summarise, rewrite or suggest content automatically, so people know the result comes from a model rather than a fixed rule.",
+    "meaning": "Sparkles once meant new, clean or magical, from cartoon shine marks to one-tap photo fixes. Around 2023, major writing, design and productivity tools adopted sparkles for their generative features, and the shape quickly became the shorthand for AI. It differs from a plain star, which means rating or favourite, and from a wand, which older apps used for automatic corrections. The extra small stars are what suggest something being created.",
+    "uses": [
+      "Document editor toolbar: a Write with AI button that drafts or rewrites the selected paragraph.",
+      "Email client: a summarise thread action at the top of a long conversation with many replies.",
+      "Photo app: a one-tap edit that removes background objects or fixes poor lighting in a picture.",
+      "Search bar: a toggle between ordinary keyword results and an AI generated answer at the top."
+    ],
+    "tips": [
+      "Reserve the sparkle for AI features only; using it for new or promoted items as well dilutes the meaning people now expect.",
+      "Pair it with a verb label like Summarise or Generate, because the sparkle says how something works, not what it will do.",
+      "Mark AI generated output with the same small sparkle, so people can trace which content came from the model and review it."
+    ],
+    "aria": "Generate with AI",
+    "pairs": ["edit", "note", "search-normal"],
+    "faq": [
+      {
+        "q": "Why do apps use sparkles for AI features?",
+        "a": "Sparkles suggest something appearing as if by magic, which fits content that is generated in a moment. Large software makers adopted the AI sparkle icon for their generative features, and other products followed so people would recognise the pattern. It now reads as AI across most tools."
+      },
+      {
+        "q": "What is the magic icon in apps?",
+        "a": "It is a star with small sparkles that marks an automatic feature that does work for you, most often using AI. Pressing it might write a draft, tidy a photo or suggest replies. Treat its output as a suggestion you can review, edit or undo."
+      }
+    ]
+  },
+  "folder": {
+    "intro": "The folder icon is a closed folder with a tab on top, and it means a container that groups files, documents or other folders. Use it wherever people organise content into collections, from cloud storage and email labels to project spaces, and let a click open the folder to show what is inside.",
+    "meaning": "The shape comes from the paper file folder in office filing cabinets, and graphical desktops adopted it in the early 1980s, making it one of the oldest computer symbols still in daily use. Developers often call it a directory icon, since folders map onto file system directories. A closed folder means a collection you can open; an open folder shows the one you are in. An archive box means stored away, not organised.",
+    "uses": [
+      "Cloud storage file list: the rows for folders, shown above individual files so people can browse the hierarchy.",
+      "Email sidebar: custom folders where people file receipts, travel bookings and project mail.",
+      "Code editor explorer: collapsible project directories shown beside the source files they contain.",
+      "Design tool home screen: project folders that group related files for one client or campaign."
+    ],
+    "tips": [
+      "Keep the tab position consistent with your open folder icon, so expanding a tree does not appear to swap the whole shape.",
+      "Use colour or a small badge for shared folders rather than drawing people inside the folder, which gets muddy at 16 pixels.",
+      "In tree views, use the closed folder for collapsed rows and the open folder for expanded rows, matching the chevron state."
+    ],
+    "aria": "Browse files",
+    "pairs": ["folder-open", "document", "archive"],
+    "faq": [
+      {
+        "q": "What does the folder icon mean?",
+        "a": "It means a folder: a container for files and other folders. Opening it shows its contents. The symbol comes from paper office folders, and computers have used it since the first graphical desktops to show how files are organised into groups."
+      },
+      {
+        "q": "Folder or archive icon for old projects?",
+        "a": "Use the folder while projects are active and people still browse and edit them. Use the archive box once a project is finished and moved out of everyday view. Folders organise, archives put things away, and the two icons help people tell current work from stored work."
+      }
+    ]
+  },
+  "folder-open": {
+    "intro": "The open folder icon shows a folder with a document peeking out, meaning a collection that is currently open or a prompt to open one. Use it for Open file commands, the expanded state in a file tree and the current location in a breadcrumb, where people need to see which folder they are inside.",
+    "meaning": "Early desktop systems showed a folder opening when you clicked it, and the open shape has meant you are here, or open something, ever since. The visible document makes the container feel active. A closed folder icon reads as a collection waiting to be opened, so the two work as a pair for collapsed and expanded states. In menus, this shape also stands for Open, the command that loads a saved file from storage.",
+    "uses": [
+      "Desktop app File menu: the Open command that shows a dialog for choosing a saved document.",
+      "Code editor tree: expanded project directories, switching back to a closed folder when collapsed.",
+      "Upload dialog: a Browse button that opens the system file picker to choose files from the device.",
+      "Cloud storage breadcrumb: the current folder at the end of the path, showing where new uploads will land."
+    ],
+    "tips": [
+      "Draw the document inside clearly enough that the icon never reads as a closed folder with a stray line at small sizes.",
+      "Use it for Open and Browse actions, but keep the closed folder for New folder, since a plus badge on an open folder looks cluttered.",
+      "In file trees, swap closed and open folders instantly on expand; animating the change slows down people navigating with arrow keys."
+    ],
+    "aria": "Open file",
+    "pairs": ["folder", "document-text", "import"],
+    "faq": [
+      {
+        "q": "What does the folder open icon mean?",
+        "a": "It means a folder that is open, or the command to open a file. In file trees it marks an expanded folder whose contents are showing. In toolbars and menus it stands for Open, the action that loads a saved document from your device or cloud storage."
+      },
+      {
+        "q": "Should a file tree use open and closed folders?",
+        "a": "Yes, swapping between them is a clear way to show which folders are expanded. Use the closed folder for collapsed rows and the open one for expanded rows, alongside a chevron. The pair also makes the current location easy to spot in a long tree."
+      }
+    ]
+  },
+  "document": {
+    "intro": "The document icon is a single page with a folded top corner, the standard sign for a file or written document. Use it to represent a file in a list, a new blank page or an attachment, especially when the file type is unknown or does not matter to the task in hand.",
+    "meaning": "The dog-eared page goes back to early desktop interfaces, where the folded corner separated documents from plain rectangles such as windows or cards. It reads as a paper icon for anything written, printed or saved. A page with lines of text suggests readable content, so the blank version works better for a generic or new file. Folders hold documents, and a clipboard suggests a form or checklist rather than a single file.",
+    "uses": [
+      "File manager list: the generic file type for formats without a dedicated icon, like unknown extensions.",
+      "Writing app home screen: a New document tile that creates a blank page ready for typing.",
+      "Chat message: an attachment chip showing the file name and size below the sender's text.",
+      "Developer portal sidebar: a docs icon beside the link to the API reference pages."
+    ],
+    "tips": [
+      "Add a small extension label such as PDF or CSV under the page when people pick between file types, rather than drawing separate icons.",
+      "Keep the folded corner on the top right; flipping it to the left makes the page look mirrored or broken.",
+      "In empty file lists, a large linear document with one short line of text reads calmer than a bold, filled page."
+    ],
+    "aria": "New document",
+    "pairs": ["folder", "document-text", "edit"],
+    "faq": [
+      {
+        "q": "What does the document icon with a folded corner mean?",
+        "a": "It means a file or document. The folded corner shows a sheet of paper, which is how computers have shown files since the earliest graphical desktops. A blank page usually stands for a generic or new file, while lines on the page suggest written content."
+      },
+      {
+        "q": "Blank page or page with lines: which should I use?",
+        "a": "Use the blank page for generic files, new documents and attachments of any type. Use the page with lines when the content is readable text, such as notes, articles or reports. Both are recognised, so choose by whether the file's contents matter in that context."
+      }
+    ]
+  },
+  "document-text": {
+    "intro": "The file icon shows a page covered in lines of text, telling people this is a readable document such as a report, contract, article or text file. Use it in file lists, attachment chips and content menus where the words inside the file matter, not just the fact that a file exists.",
+    "meaning": "Horizontal lines on a page are the shorthand for writing, borrowed from ruled paper and printed reports. As a text file icon, it suggests content you can read, search or edit, which separates it from a blank page that only says file. It differs from the note icon, which suggests a quick jotting, and the clipboard, which suggests a checklist or form. Lines make it the natural choice for terms, invoices and articles.",
+    "uses": [
+      "Account footer: a link to the terms of service and privacy policy pages.",
+      "Upload list: a row for plain text, Markdown or Word files, with the file name and size.",
+      "Search results page: a filter that narrows results to documents rather than images or videos.",
+      "Accounting dashboard: a button to view or download the invoice for a completed payment."
+    ],
+    "tips": [
+      "Use two or three lines rather than many; at 16 pixels, five lines blur into a grey block and the page loses its shape.",
+      "Shorten the last line of text in the glyph, as real paragraphs do, so the page reads as writing rather than a table.",
+      "When the icon opens a file preview, label it View document, and add the file size if the download could be large."
+    ],
+    "aria": "View document",
+    "pairs": ["document", "copy", "export"],
+    "faq": [
+      {
+        "q": "What does a page with lines icon mean?",
+        "a": "It means a text document: something with written content you can read. People see it on reports, articles, terms pages and text files. The lines separate it from a blank page icon, which usually stands for any file or a new empty document."
+      },
+      {
+        "q": "Which document icon works best for terms and policies?",
+        "a": "Use the page with lines of text, because terms, policies and contracts are written content people read. A blank page suggests an empty or generic file. If the link opens a PDF rather than a web page, add the format and file size next to the label."
+      }
+    ]
+  },
+  "copy": {
+    "intro": "The copy icon shows two overlapping rounded squares, a front copy sitting on top of the original. Clicking it copies text, a link, code or a value to the clipboard, so people can paste it somewhere else. It is the small button you place right beside API keys, invite links and code snippets.",
+    "meaning": "Overlapping squares picture one item becoming two, a convention settled by office and design software in the 1990s. In editors the same glyph can act as a duplicate icon, creating a second copy of a layer, slide or row in place, which is why context and labels matter. It differs from the clipboard, which suggests paste or a task list, and from share, which sends content to another app or person.",
+    "uses": [
+      "Developer docs code block: a button in the top right corner that copies the whole snippet.",
+      "Referral page: a button next to the invite link that copies it for pasting into chats.",
+      "Design tool layer menu: a Duplicate action that creates a copy of the selected layer.",
+      "Order confirmation screen: a control beside the order reference so customers can paste it into a support form."
+    ],
+    "tips": [
+      "Swap the glyph for a tick for about two seconds after copying, so people get feedback without a separate toast.",
+      "Make the hit area at least 32 pixels even though the glyph is small, because people tap copy buttons quickly beside dense text.",
+      "Announce the result to screen readers with a live region saying Copied to clipboard, since the visual tick is silent."
+    ],
+    "aria": "Copy to clipboard",
+    "pairs": ["link", "share", "clipboard-text"],
+    "faq": [
+      {
+        "q": "What does the two squares icon mean?",
+        "a": "Two overlapping squares mean copy. Clicking it places the text, link or code next to it on your clipboard, ready to paste with Ctrl+V or Cmd+V. In design and spreadsheet tools the same icon sometimes means duplicate, which makes a second copy in place."
+      },
+      {
+        "q": "Which icon means paste?",
+        "a": "Paste is usually shown as a clipboard, while copy is shown as two overlapping squares. If you need a copy paste icon pair in a toolbar, use the squares for copy and the clipboard for paste, each with a tooltip naming its keyboard shortcut."
+      }
+    ]
+  },
+  "edit": {
+    "intro": "The edit icon shows a pencil resting over a square, meaning change what is here. Put it beside profile details, settings rows, comments and saved content, where clicking turns read-only text into a form or opens an editor. The square tells people the pencil acts on an existing item rather than starting a blank page.",
+    "meaning": "Pencils have long stood for writing that can be rubbed out and changed, so the pencil icon suits edits better than a pen. Placing it over a square narrows the meaning to editing an existing item, a pattern common in mail and settings screens. A pencil alone can also act as a write icon for composing something new. It differs from the note, which holds written content, and from the settings gear, which changes how things behave.",
+    "uses": [
+      "Profile page: a button beside the name and bio that switches the fields into editable inputs.",
+      "Comment thread: an edit action in the menu of your own comments, shown only to the author.",
+      "Mail app header: a compose button that opens a blank message window.",
+      "Checkout summary: a link next to the delivery address so people can correct it before paying."
+    ],
+    "tips": [
+      "Show edit icons on hover for dense tables, but keep them visible on touch screens, where there is no hover state to reveal them.",
+      "Give each pencil a specific label, such as Edit address, so screen reader users know which of many edit buttons they are on.",
+      "After saving, return clearly to the read-only state; leaving the pencil highlighted makes people unsure whether changes were kept."
+    ],
+    "aria": "Edit details",
+    "pairs": ["trash", "copy", "document"],
+    "faq": [
+      {
+        "q": "What does the pencil icon mean?",
+        "a": "It means edit or write. Next to existing content, it lets you change it, such as a name, address or comment. In mail and notes apps, a pencil on its own usually means compose, starting a new message or note from scratch."
+      },
+      {
+        "q": "Where should the edit icon go next to a field?",
+        "a": "Place it right after the value it edits, on the same line, or at the top right of a card that holds several fields. Keep the position the same across the product, so people learn where to look without reading every label on the page."
+      }
+    ]
+  },
+  "trash": {
+    "intro": "The trash icon is a bin with a lid, and it means delete or move this to the bin. Use it on rows, cards and selected items where people remove things they no longer want, and pair it with a confirmation or undo option so a slip of the finger is never permanent.",
+    "meaning": "The waste bin metaphor came from early desktop computers, where you dragged files to the trash or wastebasket and could still fish them out later. That is why many people expect the delete icon to be recoverable. British users often call it a bin icon. It differs from the archive box, which keeps an item but hides it, and from a close cross, which only dismisses a panel or clears a field.",
+    "uses": [
+      "Email message toolbar: a delete button that moves the open message to the bin folder.",
+      "Shopping basket: a control on each line that removes the item from the order.",
+      "Photo app selection bar: a button that deletes the chosen photos after a confirmation step.",
+      "Settings danger zone: the Delete account button, paired with a typed confirmation of the account name."
+    ],
+    "tips": [
+      "Colour it red only for destructive confirmation steps; a red bin on every list row turns into visual noise and loses its warning.",
+      "Offer an undo toast for a few seconds after deleting, which is kinder than a dialog for small, recoverable removals.",
+      "Keep the bin away from Save or Send buttons, since accidental taps on the bin cost far more than accidental saves."
+    ],
+    "aria": "Delete item",
+    "pairs": ["edit", "archive", "close-circle"],
+    "faq": [
+      {
+        "q": "What is the difference between delete and archive icons?",
+        "a": "The trash icon deletes an item, either straight away or after a stay in the bin. The archive box keeps the item but moves it out of your main view, so you can find it later. Use archive for things people may need again, like old emails."
+      },
+      {
+        "q": "Should the trash icon be red?",
+        "a": "Usually not on every row. Keep the bin neutral in lists and toolbars, and use red for the final confirmation button or for delete actions that cannot be undone. That way red keeps meaning danger, and people notice it when it matters."
+      }
+    ]
+  },
+  "archive": {
+    "intro": "The archive icon is a storage box with a lid, meaning put this away but keep it. Use it on emails, chats, projects and orders that are finished but may be needed later, so people can clear their main view without the worry that comes with deleting.",
+    "meaning": "The box comes from office filing, where finished papers went into boxed archives on a shelf. Mail apps popularised it as the alternative to delete, so people expect archived items to stay searchable. As a storage box icon it can also mean stock or warehouse in retail tools. It differs from the bin, which removes things, and from the folder, which organises active work rather than storing finished work away.",
+    "uses": [
+      "Email swipe actions: a swipe that archives a message and removes it from the inbox.",
+      "Project management board: an Archive project option for completed work that should leave the active list.",
+      "Chat list: a long press action that hides a quiet conversation in an archived section.",
+      "Online store admin: a control that retires a discontinued product without losing its sales history."
+    ],
+    "tips": [
+      "Confirm archiving with a short toast and an undo link, and tell people where archived items now live.",
+      "Keep archive and delete visually distinct, the box neutral and the bin red on confirmation, because both glyphs are lidded containers at a glance.",
+      "Use the same box with an upward arrow, or a clear label, for Unarchive, so restoring feels like the reverse of the same action."
+    ],
+    "aria": "Archive item",
+    "pairs": ["trash", "folder", "direct-inbox"],
+    "faq": [
+      {
+        "q": "What does the archive icon mean in email?",
+        "a": "It means move the message out of your inbox without deleting it. Archived emails stay in your account, usually under All mail or Archive, and still appear in search. It is a tidy way to clear the inbox while keeping a record of every conversation."
+      },
+      {
+        "q": "Box icon or folder icon for storing old items?",
+        "a": "Use the box for items that are finished and stored away, and the folder for groups of active items people still browse. A box signals done and kept, while a folder signals organised and in use, so the choice tells people how fresh the content is."
+      }
+    ]
+  },
+  "bookmark": {
+    "intro": "The bookmark icon shows a ribbon bookmark inside a rounded square, meaning save this to come back to later. It belongs on articles, posts, recipes, jobs and listings, where people want a reading list without any public reaction. Filling the ribbon shows the item is already in their saved collection.",
+    "meaning": "Ribbon bookmarks come from printed books, where a strip of fabric marks your page. Web browsers adopted the idea for saved sites, and social apps now use the ribbon as a save icon for posts. Unlike a heart or thumbs up, a bookmark is private: it is about returning, not approving. A floppy disk means save changes to a file, which is a different job altogether.",
+    "uses": [
+      "News article header: a save for later button that adds the story to the reader's list.",
+      "Social post action bar: the ribbon on the right that saves a post to private collections.",
+      "Job board listing: a control that keeps a vacancy in a shortlist to apply for later.",
+      "Online course lesson: a marker for returning to a specific video or chapter."
+    ],
+    "tips": [
+      "Use the linear ribbon for unsaved and the bold, filled ribbon for saved; people scan for that fill change after tapping.",
+      "Do not show a count next to a bookmark, as saving is private and public numbers make people hesitate to save.",
+      "Add a link to the saved list in the toast after saving, so people discover where their bookmarks went."
+    ],
+    "aria": "Save for later",
+    "pairs": ["heart", "share", "star"],
+    "faq": [
+      {
+        "q": "What does the bookmark icon mean on social media?",
+        "a": "It means save the post privately. Tapping the ribbon adds the post to your saved items, and the author is not notified. You can find it later in a Saved or Collections section of your profile, which makes it a personal reading list."
+      },
+      {
+        "q": "Bookmark icon or heart icon for saved items?",
+        "a": "Use the bookmark when saving is private and about returning later, such as articles and recipes. Use the heart when saving also expresses liking, such as wishlists or liked songs. A saved icon shaped like a ribbon tells people nobody else will see the action."
+      }
+    ]
+  },
+  "clipboard-text": {
+    "intro": "The clipboard icon shows a clipboard holding a sheet with lines of text, the familiar symbol for forms, lists and paperwork. Use it for tasks, surveys, reports, order summaries and the paste command, where people deal with a structured list rather than a free-form document.",
+    "meaning": "Clipboards are the tool of inspectors, nurses and site managers, so the shape suggests a list being worked through. That makes it a natural checklist icon or task icon in productivity apps. Software also uses an empty clipboard for paste, since copied content waits on the clipboard. It differs from the document, which is a file, and from the notepad, which suggests loose notes rather than structured items to tick off.",
+    "uses": [
+      "Project app sidebar: a My tasks entry that lists work assigned to the signed-in person.",
+      "Clinic booking flow: the health questionnaire step that patients fill in before an appointment.",
+      "Restaurant ordering app: the order summary screen shown just before the customer pays.",
+      "Text editor right-click menu: the Paste command, listed beside Cut and Copy."
+    ],
+    "tips": [
+      "Draw the clip at the top clearly; without it, the shape becomes a plain document and loses the form or task meaning.",
+      "If you use it for both paste and tasks in one product, pick one meaning for the clipboard and give the other a different icon.",
+      "Add a progress count such as 3 of 8 beside task lists, so the clipboard shows how much of the list remains."
+    ],
+    "aria": "View tasks",
+    "pairs": ["note", "calendar", "copy"],
+    "faq": [
+      {
+        "q": "What does the clipboard icon mean?",
+        "a": "It usually means a list, form or task. In productivity tools it opens tasks or checklists, and in forms it marks a questionnaire. In text editors it also stands for paste, because copied content sits on your clipboard until you paste it somewhere."
+      },
+      {
+        "q": "Clipboard or notepad icon for a to-do list?",
+        "a": "Use the clipboard for structured tasks with a clear set of items to finish, like an onboarding checklist. Use the notepad for free writing, quick reminders and jottings. The clipboard suggests getting through a list; the notepad suggests capturing ideas as they come."
+      }
+    ]
+  },
+  "note": {
+    "intro": "The notes icon shows a notepad with a clip at the top, the place for quick thoughts, reminders and jottings. Use it to open a notes app, add a private note to a record or show where meeting notes live, any spot where people write freely rather than fill in fields.",
+    "meaning": "Notepads and memo pads have always held quick, informal writing, so the symbol reads as personal and unfinished, unlike a polished document. In business tools it often works as a memo icon for internal remarks on a customer or order. A square with a curled corner is the sticky note icon variant, used for reminders on boards. It differs from the clipboard, which suggests a checklist, and from the pencil, which means edit.",
+    "uses": [
+      "CRM contact page: an internal notes tab where staff log calls and details customers mentioned.",
+      "Video meeting sidebar: a shared notes panel that collects agenda points and agreed actions.",
+      "Reading app: a button that adds a personal note to a highlighted passage.",
+      "Order details in an admin panel: a field for delivery instructions or gift messages."
+    ],
+    "tips": [
+      "Show a small dot on the icon when a record already has notes, so staff do not miss a customer's special instructions.",
+      "Label private notes clearly, such as Only visible to you, because people write more candidly in notes than in comments.",
+      "Keep the clip visible at small sizes; it is the detail that separates the notepad from a plain text document."
+    ],
+    "aria": "Add a note",
+    "pairs": ["edit", "clipboard-text", "calendar"],
+    "faq": [
+      {
+        "q": "What does the note icon mean?",
+        "a": "It means a place for quick, personal writing. Tapping it opens a notes list or adds a new note, often private, to a contact, order or document. It suggests informal jottings rather than a finished document that you would share or publish."
+      },
+      {
+        "q": "Notepad or document icon for a notes app?",
+        "a": "Use the notepad for a notes app or a notes feature, because people associate it with quick capture. Save the document icon for files that are written, saved and shared with others. The difference helps people tell a rough jotting from a finished file."
+      }
+    ]
+  },
+  "gallery": {
+    "intro": "The gallery icon shows a picture frame holding a mountain and a sun, meaning a collection of photos or images. Use it to open a photo library, choose a picture from the device or switch a view into a grid of images. It points to many pictures, not one single file.",
+    "meaning": "The mountain and sun come from the classic holiday landscape photo, and early phone and camera software used it for the photos icon on home screens. Framing the scene suggests a picture on display, so people read it as a library or album. A bare landscape tends to mark one picture or an image field, while the camera means taking a new photo rather than picking an existing one.",
+    "uses": [
+      "Chat attachment menu: the option that opens the device's photo library to pick images to send.",
+      "Property listing page: a View all photos button placed over the main listing image.",
+      "Profile picture editor: a choice between taking a new photo and choosing one from the library.",
+      "Content management system: the media library that lists every uploaded image with its size and date."
+    ],
+    "tips": [
+      "Put the gallery and camera options side by side in attachment menus, with labels, because many people mix up pick and take.",
+      "Add a count to a View all photos button, such as 24 photos, so people know the size of the gallery before opening it.",
+      "Request photo library access only after the tap, and explain why, so the permission prompt makes sense to people."
+    ],
+    "aria": "Open photo gallery",
+    "pairs": ["image", "camera", "folder"],
+    "faq": [
+      {
+        "q": "What does the photo gallery icon mean?",
+        "a": "It means your collection of photos. Tapping it opens the photo library or an album, where you can browse, pick or share pictures. The mountain and sun inside a frame show a landscape photo, the most common way to suggest pictures in one small symbol."
+      },
+      {
+        "q": "Gallery icon or camera icon for uploading a photo?",
+        "a": "Use the gallery when people pick a photo they already have, and the camera when they take a new one. Many upload menus show both with labels, Choose from library and Take photo, because people want different routes at different moments."
+      }
+    ]
+  },
+  "camera": {
+    "intro": "The camera icon is a photo camera with a round lens, and it means take a picture. Use it to open the device camera, scan a code or document, or change a profile photo, wherever capturing something new is faster than finding an existing file.",
+    "meaning": "The boxy body and central lens come from compact film and digital cameras, a shape that has survived even though most photos are now taken on phones. As a photo camera icon it signals still images: snapping, scanning or switching to camera mode. A video camera with a side lens means moving footage, and the mountain landscape means images that already exist. With a small plus, it often means add photo.",
+    "uses": [
+      "Profile settings: a small camera badge on the avatar that lets people change their photo.",
+      "Banking app: a deposit action that photographs a cheque or scans a bill for payment.",
+      "Messaging app composer: a shortcut that opens the camera to send a photo straight into the chat.",
+      "Product search: a visual search button that finds items from a photo of something similar."
+    ],
+    "tips": [
+      "Keep the lens large and centred; at 16 pixels it is the only detail separating the camera from a briefcase or a bag.",
+      "On avatars, place the camera badge on the bottom right with a contrasting ring, so it reads as a button rather than part of the photo.",
+      "Explain the camera permission in your own words before the system prompt appears, so people know why the app needs access."
+    ],
+    "aria": "Take a photo",
+    "pairs": ["gallery", "image", "video"],
+    "faq": [
+      {
+        "q": "What does the camera icon do in an app?",
+        "a": "It opens the camera so you can take a new photo. Depending on the app, that picture might be sent in a chat, set as your profile picture, used to scan a document or searched for matching products. A camera with a slash means camera access is off."
+      },
+      {
+        "q": "Camera icon or video icon for recording?",
+        "a": "Use the photo camera for still pictures and scanning, and the video camera for recording clips or starting video calls. If one button does both, as phone camera apps do, use the photo camera and offer a mode switch for video inside the capture screen."
+      }
+    ]
+  },
+  "image": {
+    "intro": "The image icon shows a simple mountain landscape, the shorthand for a single picture or image file. Use it in editors to insert an image, in upload fields to show where a photo goes and as a placeholder while a picture loads or when one is missing.",
+    "meaning": "A landscape with peaks is the most common picture icon because it suggests a photo without depicting any particular subject. Early web browsers and word processors used it for broken or loading images, and the convention stuck. People sometimes describe it by its shape, but in interfaces it rarely means mountains or hiking. It differs from the gallery, which suggests a whole collection, and from the camera, which means taking a new photo.",
+    "uses": [
+      "Rich text editor toolbar: the Insert image button beside the link and table controls.",
+      "Blog post editor: the featured image slot, showing the icon until an image is uploaded.",
+      "Product grid: a placeholder shown when a product photo has failed to load.",
+      "File upload area: a hint that the field accepts JPG, PNG or WebP image files."
+    ],
+    "tips": [
+      "Use a light grey version as a loading placeholder, sized to the final image's ratio so the page does not jump when it arrives.",
+      "After someone presses Insert image, show the alt text field in the very next step, so accessible images become the default path.",
+      "Avoid the image icon for galleries or albums; one landscape reads as one picture, and people expect a single file behind it."
+    ],
+    "aria": "Insert image",
+    "pairs": ["gallery", "camera", "document"],
+    "faq": [
+      {
+        "q": "What does the mountain icon mean in apps?",
+        "a": "A small mountain landscape in an app almost always means an image or photo, not mountains. It shows up on insert image buttons, image upload fields and placeholders. The peaks, and sometimes a sun, suggest a generic landscape photo, which is why it became the standard symbol."
+      },
+      {
+        "q": "Image icon or photo icon: is there a difference?",
+        "a": "Not in most interfaces: both use the landscape shape and mean a picture. Some products use photo for camera pictures and image for any graphic, including illustrations and screenshots. What matters more is labelling the action, such as Insert image or Upload photo."
+      }
+    ]
+  },
+  "music": {
+    "intro": "The music icon shows a pair of joined music notes, the symbol for songs, audio and anything you listen to. Use it for a music library, a soundtrack picker in a video editor, audio file types or a Now playing indicator, where people need to spot sound content quickly.",
+    "meaning": "Beamed notes come straight from written sheet music, which makes the symbol readable worldwide without a word. It means music or audio content in general rather than any control. It differs from the speaker, which sets volume, from headphones, which suggest listening or audio output, and from the microphone, which records sound. A single note can work as a song icon in a track list, while joined notes suggest music in general.",
+    "uses": [
+      "Video editor timeline: the Add music button that opens a library of royalty-free tracks.",
+      "Story creation screen: a sticker option that adds a song clip to a photo story.",
+      "File browser: the file type marker for MP3, WAV and other audio files.",
+      "Smart home app: the room card showing which speaker is currently playing music."
+    ],
+    "tips": [
+      "Keep the beam between the notes thick enough at 16 pixels, or the notes split into two dots on sticks.",
+      "Show a small animated equaliser next to the track title for Now playing, rather than animating the note itself.",
+      "If the icon mutes or unmutes background music, label it Music on or Music off, since the note alone does not show state."
+    ],
+    "aria": "Add music",
+    "pairs": ["play", "headphone", "volume-high"],
+    "faq": [
+      {
+        "q": "What does the music note icon mean?",
+        "a": "It means music or audio. You will see it on music library tabs, audio files, soundtrack pickers and Now playing indicators. Notes come from sheet music, so the symbol is understood across languages, even by people who have never learned to read music."
+      },
+      {
+        "q": "Music icon or headphone icon for an audio section?",
+        "a": "Use the music notes when the content is songs or soundtracks, and headphones when the content is listening in general, such as podcasts, audiobooks or audio output settings. Notes describe what you hear; headphones describe how you listen to it."
+      }
+    ]
+  },
+  "play": {
+    "intro": "The play icon is a rounded triangle pointing right, the command to start playback. Put it on video thumbnails, audio players, slideshows, animations and onboarding tours, anywhere people press to set media moving. Once playback begins, it should switch to the pause icon in the same spot.",
+    "meaning": "The right-pointing triangle came from tape recorders and video cassette players, where it showed the direction the tape moved, and it has meant play ever since. As a video play icon centred over a thumbnail, it tells people the image is a video rather than a photo. It differs from a right arrow or chevron, which means next or go forward, so keep the triangle for media and the arrow for navigation.",
+    "uses": [
+      "Video thumbnail: a play button icon centred over the frame, often on a translucent circle.",
+      "Podcast app episode row: a button that starts the episode from the last listened position.",
+      "Presentation tool header: a Present button that starts the slideshow in full screen.",
+      "Animation editor timeline: a preview control that plays the current scene from the playhead."
+    ],
+    "tips": [
+      "Nudge the triangle slightly right inside a circle; geometric centring looks off because its visual weight sits on the flat left side.",
+      "Toggle play and pause in the same button and spot, and update the aria-label to match, so focus never jumps.",
+      "On thumbnails, put the triangle on a semi-transparent dark circle, so it stays visible over bright and busy frames."
+    ],
+    "aria": "Play video",
+    "pairs": ["pause", "video", "music"],
+    "faq": [
+      {
+        "q": "Why does the play icon look like a triangle?",
+        "a": "The triangle comes from tape recorders and video players, where it showed the tape moving forward. Pressing it started playback, and the symbol carried over to digital players. It points right because those machines came from left-to-right reading cultures, matching the way time moves along a timeline."
+      },
+      {
+        "q": "How do I centre a play icon in a circle?",
+        "a": "Shift the triangle a little to the right of the true centre, roughly 5 to 8 per cent of the circle's width. The triangle's mass sits on its flat left side, so a mathematically centred triangle looks pushed left. Optical centring makes the button look balanced."
+      }
+    ]
+  },
+  "pause": {
+    "intro": "The pause icon shows two vertical bars side by side, the command to stop playback for now while keeping your place. It appears on video and audio players, timers, slideshows, downloads and uploads, wherever something is running and people may want to hold it and carry on later.",
+    "meaning": "The two bars came from tape decks and video recorders, where pause held the tape in place without ejecting it, and the symbol spread from there to every digital player. The pause button icon promises you can resume from the same point. It differs from stop, a filled square that ends playback and returns to the start, and from the close cross, which shuts the player entirely.",
+    "uses": [
+      "Video player controls: the pause button in the same spot as play, swapping as playback toggles.",
+      "Fitness app workout screen: a large pause control that stops the timer during a rest.",
+      "File transfer list: a control beside each download that holds it until the connection improves.",
+      "Homepage carousel: a pause button that stops auto-advancing slides for people who need more reading time."
+    ],
+    "tips": [
+      "Leave a gap between the bars at least as wide as one bar, so the icon does not read as a single thick block at small sizes.",
+      "Any auto-playing carousel or animation lasting more than five seconds needs a visible pause control to meet WCAG success criterion 2.2.2.",
+      "Keep the pause button the same size as play, so the toggle does not shift the surrounding controls when it switches."
+    ],
+    "aria": "Pause playback",
+    "pairs": ["play", "video", "music"],
+    "faq": [
+      {
+        "q": "What is the difference between pause and stop icons?",
+        "a": "Pause, shown as two vertical bars, holds playback where it is, so you can carry on from the same moment. Stop, shown as a filled square, ends playback and usually returns to the start. Most streaming players only offer pause, since resuming is what people want."
+      },
+      {
+        "q": "Should play and pause be one button or two?",
+        "a": "Use one toggle button in most players: it shows play while paused and pause while playing. That saves space and keeps the control in one place. Two separate buttons only make sense when both actions stay available, as in some professional audio tools."
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-flag-light-s0" d="M5.1499 22C4.7399 22 4.3999 21.66 4.3999 21.25V2.75C4.3999 2.34 4.7399 2 5.1499 2C5.5599 2 5.8999 2.34 5.8999 2.75V21.25C5.8999 21.66 5.5599 22 5.1499 22Z"/>
+  <path id="g-essetional-flag-light-s1" d="M18.02 12.3301L16.8 11.1101C16.51 10.8601 16.34 10.4901 16.33 10.0801C16.31 9.63011 16.49 9.18011 16.82 8.85011L18.02 7.65011C19.06 6.61011 19.45 5.61011 19.12 4.82011C18.8 4.04011 17.81 3.61011 16.35 3.61011H5.15002C4.94002 3.62011 4.77002 3.79011 4.77002 4.00011V16.0001C4.77002 16.2101 4.94002 16.3801 5.15002 16.3801H16.35C17.79 16.3801 18.76 15.9401 19.09 15.1501C19.42 14.3501 19.04 13.3601 18.02 12.3301Z"/>
+  <linearGradient id="g-essetional-flag-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-flag-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-flag-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-flag-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-flag-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-flag-light-s1" fill="#000"/></mask>
+  <mask id="g-essetional-flag-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-flag-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-essetional-flag-light-out0)"><use xlink:href="#g-essetional-flag-light-s0" fill="url(#g-essetional-flag-light-solid)"/></g>
+<g mask="url(#g-essetional-flag-light-in1)"><g filter="url(#g-essetional-flag-light-blur)"><use xlink:href="#g-essetional-flag-light-s0" fill="url(#g-essetional-flag-light-solid)"/></g></g>
+<use xlink:href="#g-essetional-flag-light-s1" fill="url(#g-essetional-flag-light-glass)"/>
+<g mask="url(#g-essetional-flag-light-in1)"><use xlink:href="#g-essetional-flag-light-s1" fill="none" stroke="url(#g-essetional-flag-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

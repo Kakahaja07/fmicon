@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-weather-drop-dark-s0" d="M16.59 7.41L6.30996 17.69C5.82996 18.17 5.00996 18.06 4.71996 17.45C4.19996 16.38 3.89996 15.17 3.89996 13.9C3.87996 8.38 9.47996 3.66 11.38 2.21C11.75 1.93 12.25 1.93 12.61 2.21C13.48 2.87 15.11 4.24 16.64 6.04C16.98 6.44 16.96 7.04 16.59 7.41Z"/>
+  <path id="g-weather-drop-dark-s1" d="M20.1 13.91C20.1 18.37 16.47 22 12 22C10.21 22 8.53996 21.42 7.18996 20.42C6.69996 20.06 6.65996 19.34 7.08996 18.91L17.16 8.84002C17.63 8.37002 18.42 8.47002 18.74 9.05002C19.56 10.56 20.11 12.2 20.1 13.91Z"/>
+  <linearGradient id="g-weather-drop-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-weather-drop-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-weather-drop-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-weather-drop-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-weather-drop-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-weather-drop-dark-s1" fill="#000"/></mask>
+  <mask id="g-weather-drop-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-weather-drop-dark-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-weather-drop-dark-out0)"><use xlink:href="#g-weather-drop-dark-s0" fill="url(#g-weather-drop-dark-solid)"/></g>
+<g mask="url(#g-weather-drop-dark-in1)"><g filter="url(#g-weather-drop-dark-blur)"><use xlink:href="#g-weather-drop-dark-s0" fill="url(#g-weather-drop-dark-solid)"/></g></g>
+<use xlink:href="#g-weather-drop-dark-s1" fill="url(#g-weather-drop-dark-glass)"/>
+<g mask="url(#g-weather-drop-dark-in1)"><use xlink:href="#g-weather-drop-dark-s1" fill="none" stroke="url(#g-weather-drop-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

@@ -1,0 +1,108 @@
+/* Open source: what you get on the left, install and use on the right.
+   Layout follows the space it is given (container query), so it fits the home page and the tool. */
+.wrap {
+  container-type: inline-size;
+}
+
+.panel {
+  width: min(1000px, 100%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow-pop);
+  overflow: hidden;
+}
+
+/* ---- Pitch ---- */
+.pitch {
+  padding: 36px;
+  background: radial-gradient(90% 70% at 0% 0%, color-mix(in srgb, var(--brand) 14%, transparent), transparent 70%);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--green) 14%, transparent);
+  color: color-mix(in srgb, var(--green) 80%, var(--text));
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.title {
+  margin-top: 16px;
+  font-size: 32px;
+  font-weight: var(--weight-strong);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.text {
+  margin-top: 8px;
+  max-width: 44ch;
+  color: var(--text-2);
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.perks {
+  margin-top: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.perks li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: var(--text-md);
+}
+
+.perkIcon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+/* ---- Use ---- */
+.use {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 28px;
+  background: var(--fill-subtle);
+  border-left: 1px solid var(--hairline);
+}
+
+.code {
+  height: 220px;
+}
+
+@container (max-width: 820px) {
+  .panel { grid-template-columns: 1fr; width: min(560px, 100%); }
+  .use { border-left: 0; border-top: 1px solid var(--hairline); }
+}
+
+@media (max-width: 640px) {
+  .pitch, .use { padding: 24px 20px; }
+  .title { font-size: 26px; }
+}

@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-location-picture-frame-dark-s0" d="M16.19 2H7.82001C4.18001 2 2.01001 4.17 2.01001 7.81V16.18C2.01001 19.82 4.18001 21.99 7.82001 21.99H16.19C19.83 21.99 22 19.82 22 16.18V7.81C22 4.17 19.83 2 16.19 2Z"/>
+  <path id="g-location-picture-frame-dark-s1" d="M14.78 22H13.18L10.99 13.16L2.21002 15.72L2 15.79V14.22L10.63 11.7L8.21997 2H9.78003L14.78 22Z"/>
+  <linearGradient id="g-location-picture-frame-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-location-picture-frame-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-location-picture-frame-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-location-picture-frame-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-location-picture-frame-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-location-picture-frame-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-location-picture-frame-dark-s0" fill="url(#g-location-picture-frame-dark-glass)"/>
+<g mask="url(#g-location-picture-frame-dark-in0)"><use xlink:href="#g-location-picture-frame-dark-s0" fill="none" stroke="url(#g-location-picture-frame-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-location-picture-frame-dark-s1" fill="url(#g-location-picture-frame-dark-solid)"/>
+</svg>

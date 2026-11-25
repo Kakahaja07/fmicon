@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-youtube-light-s0" d="M17 20H7C4 20 2 18 2 15V9C2 6 4 4 7 4H17C20 4 22 6 22 9V15C22 18 20 20 17 20Z"/>
+  <path id="g-company-logos-youtube-light-s1" d="M11.4201 9.49009L13.8901 10.9701C14.8301 11.5401 14.8301 12.4601 13.8901 13.0301L11.4201 14.5101C10.4201 15.1101 9.6001 14.6501 9.6001 13.4801V10.5101C9.6001 9.3501 10.4201 8.89009 11.4201 9.49009Z"/>
+  <linearGradient id="g-company-logos-youtube-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-youtube-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-youtube-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-youtube-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-youtube-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-youtube-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-youtube-light-s0" fill="url(#g-company-logos-youtube-light-glass)"/>
+<g mask="url(#g-company-logos-youtube-light-in0)"><use xlink:href="#g-company-logos-youtube-light-s0" fill="none" stroke="url(#g-company-logos-youtube-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-youtube-light-s1" fill="url(#g-company-logos-youtube-light-solid)"/>
+</svg>

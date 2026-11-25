@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-video-audio-image-radio-light-s0" d="M22 10V17C22 20 20 22 17 22H7C4 22 2 20 2 17V10C2 7.26 3.67 5.34999 6.25 5.04999C6.49 5.00999 6.74 5 7 5H17C20 5 22 7 22 10Z"/>
+  <path id="g-video-audio-image-radio-light-s1" d="M7.75 2V5H7C6.74 5 6.49 5.00999 6.25 5.04999V2C6.25 1.59 6.59 1.25 7 1.25C7.41 1.25 7.75 1.59 7.75 2Z"/>
+  <path id="g-video-audio-image-radio-light-s2" d="M7.88 16C9.26072 16 10.38 14.8807 10.38 13.5C10.38 12.1193 9.26072 11 7.88 11C6.49929 11 5.38 12.1193 5.38 13.5C5.38 14.8807 6.49929 16 7.88 16Z"/>
+  <path id="g-video-audio-image-radio-light-s3" d="M17.88 12.25H13.88C13.47 12.25 13.13 11.91 13.13 11.5C13.13 11.09 13.47 10.75 13.88 10.75H17.88C18.29 10.75 18.63 11.09 18.63 11.5C18.63 11.91 18.29 12.25 17.88 12.25Z"/>
+  <path id="g-video-audio-image-radio-light-s4" d="M14.38 16.25H13.88C13.47 16.25 13.13 15.91 13.13 15.5C13.13 15.09 13.47 14.75 13.88 14.75H14.38C14.79 14.75 15.13 15.09 15.13 15.5C15.13 15.91 14.79 16.25 14.38 16.25Z"/>
+  <path id="g-video-audio-image-radio-light-s5" d="M17.88 16.25H17.38C16.97 16.25 16.63 15.91 16.63 15.5C16.63 15.09 16.97 14.75 17.38 14.75H17.88C18.29 14.75 18.63 15.09 18.63 15.5C18.63 15.91 18.29 16.25 17.88 16.25Z"/>
+  <linearGradient id="g-video-audio-image-radio-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-video-audio-image-radio-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-video-audio-image-radio-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-video-audio-image-radio-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-video-audio-image-radio-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-video-audio-image-radio-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-video-audio-image-radio-light-s0" fill="url(#g-video-audio-image-radio-light-glass)"/>
+<g mask="url(#g-video-audio-image-radio-light-in0)"><use xlink:href="#g-video-audio-image-radio-light-s0" fill="none" stroke="url(#g-video-audio-image-radio-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-video-audio-image-radio-light-s1" fill="url(#g-video-audio-image-radio-light-solid)"/>
+<use xlink:href="#g-video-audio-image-radio-light-s2" fill="url(#g-video-audio-image-radio-light-solid)"/>
+<use xlink:href="#g-video-audio-image-radio-light-s3" fill="url(#g-video-audio-image-radio-light-solid)"/>
+<use xlink:href="#g-video-audio-image-radio-light-s4" fill="url(#g-video-audio-image-radio-light-solid)"/>
+<use xlink:href="#g-video-audio-image-radio-light-s5" fill="url(#g-video-audio-image-radio-light-solid)"/>
+</svg>

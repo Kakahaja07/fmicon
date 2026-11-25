@@ -1,0 +1,26 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-dropbox-dark-s0" d="M11.9999 6.00005L6.43985 10.0001L3.18985 7.80006C2.60985 7.41006 2.59986 6.57006 3.16986 6.16006L6.99985 3.40005C7.33985 3.16005 7.79986 3.15005 8.13986 3.38005L11.9999 6.00005Z"/>
+  <path id="g-company-logos-dropbox-dark-s1" d="M20.81 7.80005L17.56 10L12 6.00005L15.86 3.39005C16.21 3.16005 16.66 3.16005 17 3.41005L20.83 6.17005C21.4 6.57005 21.39 7.41005 20.81 7.80005Z"/>
+  <path id="g-company-logos-dropbox-dark-s2" d="M11.9999 14L7.55992 17L4.99992 15.16L3.15992 13.84C2.59992 13.43 2.60991 12.59 3.17991 12.2L6.42991 10L11.9999 14Z"/>
+  <path id="g-company-logos-dropbox-dark-s3" d="M20.81 12.2C21.39 12.59 21.4 13.43 20.83 13.84L19 15.16L16.44 17L12 14L17.56 10L20.81 12.2Z"/>
+  <path id="g-company-logos-dropbox-dark-s4" d="M19 15.16V18.13C19 18.52 18.77 18.87 18.42 19.04L12.42 21.81C12.15 21.93 11.85 21.93 11.58 21.81L5.57999 19.04C5.22999 18.88 5 18.52 5 18.13V15.16L7.56 17L12 14L16.44 17L19 15.16Z"/>
+  <linearGradient id="g-company-logos-dropbox-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-dropbox-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-dropbox-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-dropbox-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-dropbox-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-dropbox-dark-s0" fill="#fff"/></mask>
+  <mask id="g-company-logos-dropbox-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-dropbox-dark-s1" fill="#fff"/></mask>
+  <mask id="g-company-logos-dropbox-dark-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-dropbox-dark-s2" fill="#fff"/></mask>
+  <mask id="g-company-logos-dropbox-dark-in3" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-dropbox-dark-s3" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-dropbox-dark-s0" fill="url(#g-company-logos-dropbox-dark-glass)"/>
+<g mask="url(#g-company-logos-dropbox-dark-in0)"><use xlink:href="#g-company-logos-dropbox-dark-s0" fill="none" stroke="url(#g-company-logos-dropbox-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-dropbox-dark-s1" fill="url(#g-company-logos-dropbox-dark-glass)"/>
+<g mask="url(#g-company-logos-dropbox-dark-in1)"><use xlink:href="#g-company-logos-dropbox-dark-s1" fill="none" stroke="url(#g-company-logos-dropbox-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-dropbox-dark-s2" fill="url(#g-company-logos-dropbox-dark-glass)"/>
+<g mask="url(#g-company-logos-dropbox-dark-in2)"><use xlink:href="#g-company-logos-dropbox-dark-s2" fill="none" stroke="url(#g-company-logos-dropbox-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-dropbox-dark-s3" fill="url(#g-company-logos-dropbox-dark-glass)"/>
+<g mask="url(#g-company-logos-dropbox-dark-in3)"><use xlink:href="#g-company-logos-dropbox-dark-s3" fill="none" stroke="url(#g-company-logos-dropbox-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-dropbox-dark-s4" fill="url(#g-company-logos-dropbox-dark-solid)"/>
+</svg>

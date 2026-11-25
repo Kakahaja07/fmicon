@@ -1,0 +1,24 @@
+.avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  border-radius: 50%;
+  background: linear-gradient(140deg, var(--a1), var(--a2));
+  color: #fff;
+  font-weight: var(--weight-strong);
+}
+
+.md { width: 36px; height: 36px; font-size: 14px; }
+.lg { width: 56px; height: 56px; font-size: 20px; }
+.sm { width: 24px; height: 24px; font-size: 10px; box-shadow: 0 0 0 2px var(--bg); }
+
+/* Emoji face: bigger glyph, colour emoji font, a soft inner ring */
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  line-height: 1;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, 0.35);
+}
+
+.md.emoji { font-size: 20px; }
+.lg.emoji { font-size: 30px; }
+.sm.emoji { font-size: 13px; box-shadow: 0 0 0 2px var(--bg); }

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-safe-home-light-s0" d="M23.0001 15.3699V17.5599C23.0001 19.9999 21.2201 22.2999 18.8001 22.9699C18.6301 23.0099 18.4501 23.0099 18.2901 22.9699C17.1101 22.6499 16.0701 21.9299 15.3401 20.9999C14.5501 20.0199 14.0901 18.8099 14.0901 17.5599V15.3699C14.0901 14.9499 14.4001 14.49 14.7801 14.33L17.5601 13.1899C18.1901 12.9399 18.8901 12.9399 19.5201 13.1899L20.5201 13.5999L22.3101 14.33C22.6901 14.49 23.0001 14.9499 23.0001 15.3699Z"/>
+  <path id="g-essetional-safe-home-light-s1" d="M20.9501 11.0101L20.52 13.6L19.52 13.1901C18.89 12.9401 18.19 12.9401 17.56 13.1901L14.78 14.3301C14.4 14.4901 14.09 14.95 14.09 15.37V17.56C14.09 18.81 14.55 20.0201 15.34 21H6.18003C4.81003 21 3.52005 19.91 3.29005 18.56L2.03004 11.0101C1.87004 10.0801 2.34002 8.83004 3.08002 8.24004L9.66004 2.98003C10.67 2.17003 12.31 2.17004 13.32 2.99004L19.9 8.24004C20.63 8.83004 21.1101 10.0801 20.9501 11.0101Z"/>
+  <linearGradient id="g-essetional-safe-home-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-safe-home-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-safe-home-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-safe-home-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-safe-home-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-safe-home-light-s1" fill="#000"/></mask>
+  <mask id="g-essetional-safe-home-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-safe-home-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-essetional-safe-home-light-out0)"><use xlink:href="#g-essetional-safe-home-light-s0" fill="url(#g-essetional-safe-home-light-solid)"/></g>
+<g mask="url(#g-essetional-safe-home-light-in1)"><g filter="url(#g-essetional-safe-home-light-blur)"><use xlink:href="#g-essetional-safe-home-light-s0" fill="url(#g-essetional-safe-home-light-solid)"/></g></g>
+<use xlink:href="#g-essetional-safe-home-light-s1" fill="url(#g-essetional-safe-home-light-glass)"/>
+<g mask="url(#g-essetional-safe-home-light-in1)"><use xlink:href="#g-essetional-safe-home-light-s1" fill="none" stroke="url(#g-essetional-safe-home-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

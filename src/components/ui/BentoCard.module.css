@@ -1,0 +1,66 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  padding: 28px;
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  transition: transform 300ms var(--ease-out), box-shadow 300ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-pop);
+  }
+}
+
+.bottom { justify-content: flex-end; }
+
+.dark {
+  background: var(--surface-inverse);
+  color: #fff;
+  --card-desc: rgba(255, 255, 255, 0.72);
+}
+
+.art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.title {
+  position: relative;
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-strong);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.desc {
+  position: relative;
+  margin-top: 6px;
+  color: var(--card-desc, var(--text-2));
+}
+
+.card > :global(span[aria-hidden]) {
+  z-index: 3;
+}
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; gap: 12px; }
+  .card { height: 400px; padding: 22px; }
+  .title { font-size: 21px; }
+}

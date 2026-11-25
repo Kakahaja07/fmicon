@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-money-chart-square-dark-s0" d="M16.1898 2H7.81976C4.17976 2 2.00977 4.17 2.00977 7.81V16.18C2.00977 19.82 4.17976 21.99 7.81976 21.99H16.1898C19.8298 21.99 21.9998 19.82 21.9998 16.18V7.81C21.9998 4.17 19.8298 2 16.1898 2Z"/>
+  <path id="g-money-chart-square-dark-s1" d="M10.1098 11.15H7.45981C6.82981 11.15 6.31982 11.66 6.31982 12.29V17.41H10.1098V11.15V11.15Z"/>
+  <path id="g-money-chart-square-dark-s2" d="M12.7596 6.59998H11.2396C10.6096 6.59998 10.0996 7.10999 10.0996 7.73999V17.4H13.8896V7.73999C13.8896 7.10999 13.3896 6.59998 12.7596 6.59998Z"/>
+  <path id="g-money-chart-square-dark-s3" d="M16.5499 12.85H13.8999V17.4H17.6899V13.99C17.6799 13.36 17.1699 12.85 16.5499 12.85Z"/>
+  <linearGradient id="g-money-chart-square-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-money-chart-square-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-money-chart-square-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-money-chart-square-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-money-chart-square-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-money-chart-square-dark-s0" fill="#fff"/></mask>
+  <mask id="g-money-chart-square-dark-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-money-chart-square-dark-s2" fill="#000"/></mask>
+  <mask id="g-money-chart-square-dark-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-money-chart-square-dark-s2" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-money-chart-square-dark-s0" fill="url(#g-money-chart-square-dark-glass)"/>
+<g mask="url(#g-money-chart-square-dark-in0)"><use xlink:href="#g-money-chart-square-dark-s0" fill="none" stroke="url(#g-money-chart-square-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-money-chart-square-dark-out1)"><use xlink:href="#g-money-chart-square-dark-s1" fill="url(#g-money-chart-square-dark-solid)"/></g>
+<g mask="url(#g-money-chart-square-dark-in2)"><g filter="url(#g-money-chart-square-dark-blur)"><use xlink:href="#g-money-chart-square-dark-s1" fill="url(#g-money-chart-square-dark-solid)"/></g></g>
+<use xlink:href="#g-money-chart-square-dark-s2" fill="url(#g-money-chart-square-dark-glass)"/>
+<g mask="url(#g-money-chart-square-dark-in2)"><use xlink:href="#g-money-chart-square-dark-s2" fill="none" stroke="url(#g-money-chart-square-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-money-chart-square-dark-s3" fill="url(#g-money-chart-square-dark-solid)"/>
+</svg>

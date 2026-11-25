@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-design-tools-mask-dark-s0" d="M22 12C22 17.04 18.26 21.21 13.41 21.9C12.95 21.97 12.48 22 12 22C9.24 22 6.73999 20.88 4.92999 19.07C3.11999 17.26 2 14.76 2 12C2 6.48 6.48 2 12 2C14.76 2 17.26 3.12 19.07 4.93C20.88 6.74 22 9.24 22 12Z"/>
+  <path id="g-design-tools-mask-dark-s1" d="M14.83 10.23L12.3499 12.71L18.8799 19.24C18.5199 19.59 18.1299 19.91 17.7199 20.2L11.2899 13.77L8.81995 16.24L13.9399 21.37C14.0499 21.48 14.12 21.62 14.15 21.76C14.15 21.76 14.15 21.76 14.15 21.77C13.91 21.82 13.6599 21.87 13.4099 21.9C13.0899 21.95 12.7699 21.98 12.4399 21.99L7.75995 17.3L5.47992 19.58C5.28992 19.42 5.10993 19.25 4.92993 19.07C4.74993 18.89 4.57992 18.71 4.41992 18.52L18.52 4.42C18.71 4.58 18.8899 4.75 19.0699 4.93C19.2499 5.11 19.42 5.29 19.58 5.48L15.89 9.17L21.58 14.86C21.42 15.39 21.2199 15.89 20.9799 16.38L14.83 10.23Z"/>
+  <linearGradient id="g-design-tools-mask-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-design-tools-mask-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-design-tools-mask-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-design-tools-mask-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-design-tools-mask-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-design-tools-mask-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-design-tools-mask-dark-s0" fill="url(#g-design-tools-mask-dark-glass)"/>
+<g mask="url(#g-design-tools-mask-dark-in0)"><use xlink:href="#g-design-tools-mask-dark-s0" fill="none" stroke="url(#g-design-tools-mask-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-design-tools-mask-dark-s1" fill="url(#g-design-tools-mask-dark-solid)"/>
+</svg>

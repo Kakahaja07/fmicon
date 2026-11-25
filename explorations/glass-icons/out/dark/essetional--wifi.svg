@@ -1,0 +1,23 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-wifi-dark-s0" d="M19.0899 12.5899C18.9299 12.5899 18.7699 12.5399 18.6299 12.4299C14.5999 9.3199 9.38993 9.3199 5.35993 12.4299C5.02993 12.6799 4.55993 12.6199 4.30993 12.2999C4.05993 11.9699 4.11994 11.4999 4.43994 11.2499C9.02994 7.6999 14.9599 7.6999 19.5399 11.2499C19.8699 11.4999 19.9299 11.9699 19.6699 12.2999C19.5399 12.4899 19.3199 12.5899 19.0899 12.5899Z"/>
+  <path id="g-essetional-wifi-dark-s1" d="M22 9.1099C21.84 9.1099 21.68 9.0599 21.54 8.94989C15.74 4.46989 8.25004 4.46989 2.46004 8.94989C2.13004 9.19989 1.66003 9.13991 1.41003 8.81991C1.16003 8.48991 1.22002 8.0199 1.54002 7.7699C7.89002 2.8599 16.1 2.8599 22.46 7.7699C22.79 8.0199 22.85 8.48991 22.59 8.81991C22.45 9.00991 22.22 9.1099 22 9.1099Z"/>
+  <path id="g-essetional-wifi-dark-s2" d="M17.2101 16.24C17.0501 16.24 16.8901 16.19 16.7501 16.08C13.8701 13.85 10.1401 13.85 7.25007 16.08C6.92007 16.33 6.45007 16.27 6.20007 15.95C5.95007 15.62 6.01007 15.15 6.33007 14.9C9.77007 12.24 14.2201 12.24 17.6601 14.9C17.9901 15.15 18.0501 15.62 17.7901 15.95C17.6501 16.14 17.4301 16.24 17.2101 16.24Z"/>
+  <path id="g-essetional-wifi-dark-s3" d="M14.6002 19.9C14.4402 19.9 14.2802 19.85 14.1402 19.74C12.8402 18.73 11.1502 18.73 9.85017 19.74C9.52017 19.99 9.05017 19.93 8.80017 19.61C8.55017 19.28 8.61016 18.81 8.93016 18.56C10.7902 17.12 13.1902 17.12 15.0502 18.56C15.3802 18.81 15.4402 19.28 15.1802 19.61C15.0502 19.79 14.8302 19.9 14.6002 19.9Z"/>
+  <linearGradient id="g-essetional-wifi-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-wifi-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-essetional-wifi-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-wifi-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-wifi-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-wifi-dark-s0" fill="#fff"/></mask>
+  <mask id="g-essetional-wifi-dark-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-wifi-dark-s3" fill="#000"/></mask>
+  <mask id="g-essetional-wifi-dark-out2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-wifi-dark-s3" fill="#000"/></mask>
+  <mask id="g-essetional-wifi-dark-in3" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-wifi-dark-s3" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-essetional-wifi-dark-s0" fill="url(#g-essetional-wifi-dark-glass)"/>
+<g mask="url(#g-essetional-wifi-dark-in0)"><use xlink:href="#g-essetional-wifi-dark-s0" fill="none" stroke="url(#g-essetional-wifi-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-essetional-wifi-dark-out1)"><use xlink:href="#g-essetional-wifi-dark-s1" fill="url(#g-essetional-wifi-dark-solid)"/></g>
+<g mask="url(#g-essetional-wifi-dark-out2)"><use xlink:href="#g-essetional-wifi-dark-s2" fill="url(#g-essetional-wifi-dark-solid)"/></g>
+<g mask="url(#g-essetional-wifi-dark-in3)"><g filter="url(#g-essetional-wifi-dark-blur)"><use xlink:href="#g-essetional-wifi-dark-s1" fill="url(#g-essetional-wifi-dark-solid)"/><use xlink:href="#g-essetional-wifi-dark-s2" fill="url(#g-essetional-wifi-dark-solid)"/></g></g>
+<use xlink:href="#g-essetional-wifi-dark-s3" fill="url(#g-essetional-wifi-dark-glass)"/>
+<g mask="url(#g-essetional-wifi-dark-in3)"><use xlink:href="#g-essetional-wifi-dark-s3" fill="none" stroke="url(#g-essetional-wifi-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

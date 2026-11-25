@@ -1,0 +1,47 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { brand } from "~/content/site";
+import { docPages, docsIntro } from "~/content/docs";
+import { DocsLayout } from "~/components/docs/DocsLayout";
+import { Inline } from "~/components/docs/DocContent";
+import { FrameworkLogo } from "~/components/ui/FrameworkLogo";
+import { pageHead } from "~/lib/iconSeo";
+import s from "~/components/docs/DocsIntro.module.css";
+
+export const Route = createFileRoute("/_site/docs/")({
+  head: () =>
+    pageHead({
+      title: `Docs: get started with ${brand.name}`,
+      description: "Install FM Icons for React, Vue, Svelte, React Native or vanilla JS, or use the raw SVGs from the CDN. Props, styles, accessibility and more.",
+      path: "/docs",
+    }),
+  component: DocsIntro,
+});
+
+function DocsIntro() {
+  return (
+    <DocsLayout toc={[{ id: "intro", title: docsIntro.title }, { id: "integrations", title: docsIntro.choose }]}>
+      <article className={s.article}>
+        <section id="intro" className={s.section}>
+          <h1 className={s.h1}>{docsIntro.title}</h1>
+          {docsIntro.text.map((t) => (
+            <p key={t}>
+              <Inline text={t} />
+            </p>
+          ))}
+        </section>
+
+        <section id="integrations" className={s.section}>
+          <h2 className={s.h2}>{docsIntro.choose}</h2>
+          <div className={s.grid}>
+            {docPages.map((p) => (
+              <Link key={p.id} to="/docs/$framework" params={{ framework: p.id }} className={s.card}>
+                <FrameworkLogo framework={p.logo} size={20} />
+                {p.label}
+              </Link>
+            ))}
+          </div>
+        </section>
+      </article>
+    </DocsLayout>
+  );
+}

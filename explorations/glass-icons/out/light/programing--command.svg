@@ -1,0 +1,31 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-programing-command-light-s0" d="M16 8H8V16H16V8Z"/>
+  <path id="g-programing-command-light-s1" d="M5 22C6.65 22 8 20.65 8 19V16H5C3.35 16 2 17.35 2 19C2 20.65 3.35 22 5 22Z"/>
+  <path id="g-programing-command-light-s2" d="M5 8H8V5C8 3.35 6.65 2 5 2C3.35 2 2 3.35 2 5C2 6.65 3.35 8 5 8Z"/>
+  <path id="g-programing-command-light-s3" d="M16 8H19C20.65 8 22 6.65 22 5C22 3.35 20.65 2 19 2C17.35 2 16 3.35 16 5V8Z"/>
+  <path id="g-programing-command-light-s4" d="M19 22C20.65 22 22 20.65 22 19C22 17.35 20.65 16 19 16H16V19C16 20.65 17.35 22 19 22Z"/>
+  <linearGradient id="g-programing-command-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-programing-command-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-programing-command-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-programing-command-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-programing-command-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-programing-command-light-s1" fill="#000"/><use xlink:href="#g-programing-command-light-s2" fill="#000"/><use xlink:href="#g-programing-command-light-s3" fill="#000"/><use xlink:href="#g-programing-command-light-s4" fill="#000"/></mask>
+  <mask id="g-programing-command-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-programing-command-light-s1" fill="#fff"/></mask>
+  <mask id="g-programing-command-light-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-programing-command-light-s2" fill="#fff"/></mask>
+  <mask id="g-programing-command-light-in3" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-programing-command-light-s3" fill="#fff"/></mask>
+  <mask id="g-programing-command-light-in4" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-programing-command-light-s4" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-programing-command-light-out0)"><use xlink:href="#g-programing-command-light-s0" fill="url(#g-programing-command-light-solid)"/></g>
+<g mask="url(#g-programing-command-light-in1)"><g filter="url(#g-programing-command-light-blur)"><use xlink:href="#g-programing-command-light-s0" fill="url(#g-programing-command-light-solid)"/></g></g>
+<use xlink:href="#g-programing-command-light-s1" fill="url(#g-programing-command-light-glass)"/>
+<g mask="url(#g-programing-command-light-in1)"><use xlink:href="#g-programing-command-light-s1" fill="none" stroke="url(#g-programing-command-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-programing-command-light-in2)"><g filter="url(#g-programing-command-light-blur)"><use xlink:href="#g-programing-command-light-s0" fill="url(#g-programing-command-light-solid)"/></g></g>
+<use xlink:href="#g-programing-command-light-s2" fill="url(#g-programing-command-light-glass)"/>
+<g mask="url(#g-programing-command-light-in2)"><use xlink:href="#g-programing-command-light-s2" fill="none" stroke="url(#g-programing-command-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-programing-command-light-in3)"><g filter="url(#g-programing-command-light-blur)"><use xlink:href="#g-programing-command-light-s0" fill="url(#g-programing-command-light-solid)"/></g></g>
+<use xlink:href="#g-programing-command-light-s3" fill="url(#g-programing-command-light-glass)"/>
+<g mask="url(#g-programing-command-light-in3)"><use xlink:href="#g-programing-command-light-s3" fill="none" stroke="url(#g-programing-command-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-programing-command-light-in4)"><g filter="url(#g-programing-command-light-blur)"><use xlink:href="#g-programing-command-light-s0" fill="url(#g-programing-command-light-solid)"/></g></g>
+<use xlink:href="#g-programing-command-light-s4" fill="url(#g-programing-command-light-glass)"/>
+<g mask="url(#g-programing-command-light-in4)"><use xlink:href="#g-programing-command-light-s4" fill="none" stroke="url(#g-programing-command-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

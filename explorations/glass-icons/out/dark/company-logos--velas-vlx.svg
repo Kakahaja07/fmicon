@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-velas-vlx-dark-s0" d="M21 3.1499H3C2.59 3.1499 2.25 3.4899 2.25 3.8999C2.25 4.3099 2.59 4.6499 3 4.6499H21C21.41 4.6499 21.75 4.3099 21.75 3.8999C21.75 3.4899 21.41 3.1499 21 3.1499Z"/>
+  <path id="g-company-logos-velas-vlx-dark-s1" d="M4.04006 6.23999H19.9701C20.8501 6.23999 21.38 7.20999 20.9 7.94999L12.9401 20.34C12.5001 21.02 11.5101 21.02 11.0701 20.34L3.10006 7.94999C2.63006 7.20999 3.16006 6.23999 4.04006 6.23999Z"/>
+  <linearGradient id="g-company-logos-velas-vlx-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-velas-vlx-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-velas-vlx-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-velas-vlx-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<use xlink:href="#g-company-logos-velas-vlx-dark-s0" fill="url(#g-company-logos-velas-vlx-dark-solid)"/>
+<use xlink:href="#g-company-logos-velas-vlx-dark-s1" fill="url(#g-company-logos-velas-vlx-dark-solid)"/>
+</svg>

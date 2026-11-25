@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-mouse-square-light-s0" d="M15.4798 2H7.52977C4.06977 2 2.00977 4.05999 2.00977 7.51999V15.47C2.00977 18.93 4.07977 20.99 7.52977 20.99H15.4798C18.9398 20.99 20.9998 18.93 20.9998 15.47V7.51999C20.9998 4.05999 18.9298 2 15.4798 2Z"/>
+  <path id="g-essetional-mouse-square-light-s1" d="M21.9602 18.84L20.3302 19.39C19.8802 19.54 19.5202 19.89 19.3702 20.35L18.8202 21.98C18.3502 23.39 16.3702 23.36 15.9302 21.95L14.0802 16C13.7202 14.82 14.8102 13.72 15.9802 14.09L21.9402 15.94C23.3402 16.38 23.3602 18.37 21.9602 18.84Z"/>
+  <linearGradient id="g-essetional-mouse-square-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-mouse-square-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-mouse-square-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-mouse-square-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-mouse-square-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-mouse-square-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-essetional-mouse-square-light-s0" fill="url(#g-essetional-mouse-square-light-glass)"/>
+<g mask="url(#g-essetional-mouse-square-light-in0)"><use xlink:href="#g-essetional-mouse-square-light-s0" fill="none" stroke="url(#g-essetional-mouse-square-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-essetional-mouse-square-light-s1" fill="url(#g-essetional-mouse-square-light-solid)"/>
+</svg>

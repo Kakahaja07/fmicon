@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-weather-cloud-minus-light-s0" d="M21.74 11.7401C21.13 9.74005 19.61 8.30005 17.7 7.87005C17.14 5.37005 15.6 3.58005 13.42 2.90005C11.04 2.17005 8.28 2.88005 6.55 4.69005C5.02 6.28005 4.52 8.47005 5.11 10.8001C2.98 11.3201 2 13.1801 2 14.8601C2 16.7401 3.23 18.8501 5.97 19.0401H8.5V16.4101C8.5 15.1401 9.26 14.3801 10.53 14.3801H13.47C14.74 14.3801 15.5 15.1401 15.5 16.4101V19.0401H16.31C16.32 19.0401 16.34 19.0401 16.35 19.0401C17.77 19.0401 19.13 18.5101 20.17 17.5601C21.8 16.1401 22.4 13.9101 21.74 11.7401Z"/>
+  <path id="g-weather-cloud-minus-light-s1" d="M13.47 14.39H10.53C9.26 14.39 8.5 15.15 8.5 16.42V19.36C8.5 20.63 9.26 21.39 10.53 21.39H13.47C14.74 21.39 15.5 20.63 15.5 19.36V16.42C15.5 15.15 14.74 14.39 13.47 14.39ZM13.71 18.46H10.3C9.94 18.46 9.65 18.17 9.65 17.81C9.65 17.46 9.94 17.17 10.3 17.17H13.72C14.07 17.17 14.36 17.46 14.36 17.81C14.35 18.18 14.06 18.46 13.71 18.46Z"/>
+  <linearGradient id="g-weather-cloud-minus-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-weather-cloud-minus-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-weather-cloud-minus-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-weather-cloud-minus-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-weather-cloud-minus-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-weather-cloud-minus-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-weather-cloud-minus-light-s0" fill="url(#g-weather-cloud-minus-light-glass)"/>
+<g mask="url(#g-weather-cloud-minus-light-in0)"><use xlink:href="#g-weather-cloud-minus-light-s0" fill="none" stroke="url(#g-weather-cloud-minus-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-weather-cloud-minus-light-s1" fill="url(#g-weather-cloud-minus-light-solid)"/>
+</svg>

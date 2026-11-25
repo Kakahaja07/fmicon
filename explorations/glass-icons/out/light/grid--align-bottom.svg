@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-align-bottom-light-s0" d="M8.02 4.62H6.98C5.39 4.62 4.75 5.22 4.75 6.74V18.62H10.25V6.74C10.24 5.22 9.6 4.62 8.02 4.62Z"/>
+  <path id="g-grid-align-bottom-light-s1" d="M16.52 9.62H15.48C13.89 9.62 13.25 10.23 13.25 11.74V18.62H18.75V11.74C18.75 10.23 18.1 9.62 16.52 9.62Z"/>
+  <path id="g-grid-align-bottom-light-s2" d="M2.75 17.88H21.25C21.66 17.88 22 18.22 22 18.63C22 19.04 21.66 19.38 21.25 19.38H2.75C2.34 19.38 2 19.04 2 18.62C2 18.2 2.34 17.88 2.75 17.88Z"/>
+  <linearGradient id="g-grid-align-bottom-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-align-bottom-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-grid-align-bottom-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-align-bottom-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-align-bottom-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-grid-align-bottom-light-s1" fill="#000"/></mask>
+  <mask id="g-grid-align-bottom-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-align-bottom-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-grid-align-bottom-light-out0)"><use xlink:href="#g-grid-align-bottom-light-s0" fill="url(#g-grid-align-bottom-light-solid)"/></g>
+<g mask="url(#g-grid-align-bottom-light-in1)"><g filter="url(#g-grid-align-bottom-light-blur)"><use xlink:href="#g-grid-align-bottom-light-s0" fill="url(#g-grid-align-bottom-light-solid)"/></g></g>
+<use xlink:href="#g-grid-align-bottom-light-s1" fill="url(#g-grid-align-bottom-light-glass)"/>
+<g mask="url(#g-grid-align-bottom-light-in1)"><use xlink:href="#g-grid-align-bottom-light-s1" fill="none" stroke="url(#g-grid-align-bottom-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-align-bottom-light-s2" fill="url(#g-grid-align-bottom-light-solid)"/>
+</svg>

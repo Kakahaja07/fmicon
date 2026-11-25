@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-settings-toggle-on-dark-s0" d="M7.35 3.85999H16.65C20.75 3.85999 22 5.10999 22 9.20999V14.79C22 18.89 20.75 20.14 16.65 20.14H7.35C3.25 20.14 2 18.89 2 14.79V9.20999C2 5.10999 3.25 3.85999 7.35 3.85999Z"/>
+  <path id="g-settings-toggle-on-dark-s1" d="M13.2102 7.57996H15.4402C17.6902 7.57996 18.7402 8.62996 18.7402 10.88V13.11C18.7402 15.36 17.6902 16.41 15.4402 16.41H13.2102C10.9602 16.41 9.91016 15.36 9.91016 13.11V10.88C9.91016 8.62996 10.9602 7.57996 13.2102 7.57996Z"/>
+  <linearGradient id="g-settings-toggle-on-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-settings-toggle-on-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-settings-toggle-on-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-settings-toggle-on-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-settings-toggle-on-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-toggle-on-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-settings-toggle-on-dark-s0" fill="url(#g-settings-toggle-on-dark-glass)"/>
+<g mask="url(#g-settings-toggle-on-dark-in0)"><use xlink:href="#g-settings-toggle-on-dark-s0" fill="none" stroke="url(#g-settings-toggle-on-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-settings-toggle-on-dark-s1" fill="url(#g-settings-toggle-on-dark-solid)"/>
+</svg>

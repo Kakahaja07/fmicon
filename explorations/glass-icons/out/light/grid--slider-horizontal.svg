@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-slider-horizontal-light-s0" d="M15 2H9C7.34 2 6 3.34 6 5V19C6 20.66 7.34 22 9 22H15C16.66 22 18 20.66 18 19V5C18 3.34 16.66 2 15 2Z"/>
+  <path id="g-grid-slider-horizontal-light-s1" d="M18.67 5.33H18.33C18.21 5.33 18.1 5.33 17.98 5.34C17.99 5.39 18 5.44 18 5.5V7V17V18.5C18 18.56 17.99 18.61 17.98 18.66C18.09 18.67 18.2 18.67 18.33 18.67H18.67C21.33 18.67 22 18 22 15.33V8.67C22 6 21.33 5.33 18.67 5.33Z"/>
+  <path id="g-grid-slider-horizontal-light-s2" d="M6 18.5V17V7V5.5C6 5.44 6.01 5.39 6.02 5.34C5.9 5.33 5.79 5.33 5.67 5.33H5.33C2.67 5.33 2 6 2 8.67V15.33C2 18 2.67 18.67 5.33 18.67H5.67C5.79 18.67 5.9 18.67 6.02 18.66C6.01 18.61 6 18.56 6 18.5Z"/>
+  <linearGradient id="g-grid-slider-horizontal-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-slider-horizontal-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-grid-slider-horizontal-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-slider-horizontal-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-slider-horizontal-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-slider-horizontal-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-grid-slider-horizontal-light-s0" fill="url(#g-grid-slider-horizontal-light-glass)"/>
+<g mask="url(#g-grid-slider-horizontal-light-in0)"><use xlink:href="#g-grid-slider-horizontal-light-s0" fill="none" stroke="url(#g-grid-slider-horizontal-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-slider-horizontal-light-s1" fill="url(#g-grid-slider-horizontal-light-solid)"/>
+<use xlink:href="#g-grid-slider-horizontal-light-s2" fill="url(#g-grid-slider-horizontal-light-solid)"/>
+</svg>

@@ -1,0 +1,32 @@
+{
+  "name": "@fmicons/svg",
+  "version": "0.1.0",
+  "description": "891 FM Icons as plain SVG files in 9 styles.",
+  "keywords": [
+    "icons",
+    "svg",
+    "fmicons",
+    "svg-icons"
+  ],
+  "license": "MIT",
+  "homepage": "https://fmicons.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kakahaja07/fmicons.git",
+    "directory": "packages/svg"
+  },
+  "bugs": {
+    "url": "https://github.com/Kakahaja07/fmicons/issues"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    "./icons/*": "./icons/*",
+    "./icons.json": "./icons.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "icons",
+    "icons.json"
+  ]
+}

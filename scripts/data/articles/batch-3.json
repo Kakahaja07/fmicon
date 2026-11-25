@@ -1,0 +1,1025 @@
+{
+  "volume-high": {
+    "intro": "This speaker icon shows a loudspeaker cone with two curved sound waves spreading out to the right, the standard sign that audio is on and playing at a high level. In an interface it usually toggles mute, opens a volume slider or tells people that a video, call or notification will make noise when it plays.",
+    "meaning": "People read the number of arcs as loudness: one wave for low, two for high, and a slash or cross through the cone for muted. The shape comes from hi-fi and radio controls, and every major operating system kept it. Unlike a headphones glyph, which suggests private listening or an audio device, the speaker means sound coming out of the device into the room.",
+    "uses": [
+      "Video player controls: sits beside the progress bar and toggles mute, with a hover slider for fine volume changes.",
+      "Messaging app settings: marks the row where people choose notification sounds and in-app ringtones.",
+      "Podcast or audiobook screen: opens the output picker so listeners can switch between the phone speaker and Bluetooth.",
+      "Language learning lesson: plays the spoken pronunciation of a word when tapped next to the written text."
+    ],
+    "tips": [
+      "Swap the glyph for a muted version with a slash when sound is off, so the icon always reflects the current state rather than the action.",
+      "Keep the two sound waves clearly apart at 16 px, or the arcs merge into a blurred wedge on low-density screens.",
+      "For a mute toggle, set aria-pressed on the button and switch the label between mute and unmute so screen reader users hear the change."
+    ],
+    "aria": "Mute sound",
+    "pairs": [
+      "play",
+      "music",
+      "headphone"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a sound icon and a volume icon?",
+        "a": "There is usually no difference: both names describe a speaker with waves, and people search for them interchangeably. Some teams use the plain speaker for sound on or off and add a slider or level bars when the control adjusts volume, which keeps the two jobs visually distinct."
+      },
+      {
+        "q": "Why is the audio icon crossed out on my video?",
+        "a": "A crossed out speaker means the sound is muted, either by you, by the site or by the browser's autoplay rules. Most browsers start videos silent until you interact with the page, so tap the icon once and the waves return along with the sound."
+      }
+    ]
+  },
+  "code": {
+    "intro": "This code icon draws a terminal prompt, a chevron followed by an underscore cursor, inside a rounded square. It points people to anything technical: a console, a script editor, an embed snippet or developer settings. Use it where the next screen involves typed commands or source code rather than buttons and forms.",
+    "meaning": "The >_ mark copies the prompt you see in a shell window, where the chevron waits for input and the underscore stands in for the blinking cursor. People read it as raw, text based control of a system. That sets it apart from the angle bracket pair </>, which suggests markup and source files, and from the command key symbol, which is about keyboard shortcuts rather than a shell.",
+    "uses": [
+      "Developer dashboard: labels the API console tab where engineers test requests and read raw responses.",
+      "Hosting control panel: opens a browser based shell for the server so admins can run commands without a separate SSH client.",
+      "Blog editor toolbar: inserts a formatted code block for snippets, keeping monospaced text separate from paragraphs.",
+      "App settings page: marks a hidden advanced section with debug logs, feature flags and experimental options."
+    ],
+    "tips": [
+      "Keep the underscore shorter than the chevron is wide, otherwise at 16 px the glyph reads as a play arrow followed by a dash.",
+      "Pair it with a text label like Console or Terminal in navigation, because non-technical users rarely recognise the prompt symbol on its own.",
+      "On dark editor themes, check that the rounded square outline keeps at least 3:1 contrast against the panel colour behind it."
+    ],
+    "aria": "Open terminal",
+    "pairs": [
+      "command",
+      "keyboard",
+      "monitor"
+    ],
+    "faq": [
+      {
+        "q": "What does the terminal icon mean?",
+        "a": "It stands for a text based command window, where you type instructions instead of clicking. The chevron is the prompt and the underscore is the cursor. Apps use it to open a console, a shell on a remote server or a panel showing logs and command output."
+      },
+      {
+        "q": "Which icon should a developer section of a website use?",
+        "a": "A prompt symbol or a pair of angle brackets both work as a developer icon, so pick by content. The prompt suits pages about running commands, command line tools and servers, while angle brackets suit pages about markup, components or embedding snippets into a site."
+      }
+    ]
+  },
+  "command": {
+    "intro": "The command icon is the looped square symbol printed on the Command key of Apple keyboards. In an interface it signals a keyboard shortcut or a quick action launcher: tap it to open a command palette, show a shortcut cheat sheet or hint that a feature can be triggered from the keyboard.",
+    "meaning": "The four-looped shape is a Scandinavian place of interest sign, picked for the first Macintosh in 1984 after Steve Jobs felt the Apple logo appeared in menus too often. People now read it as power user territory: shortcuts, palettes and hidden speed. It should not be confused with the Windows Ctrl key, which has no symbol, or with the >_ prompt, which means typing into a terminal.",
+    "uses": [
+      "Productivity app sidebar: opens a command palette where people search for actions instead of hunting through menus.",
+      "Menu items in a Mac web app: sits before the shortcut letter, showing that the action has a keyboard equivalent.",
+      "Onboarding tooltip: highlights the shortcut that opens quick search, teaching new users a faster route through the product.",
+      "Help centre article: marks the section listing every shortcut, grouped by editing, navigation and formatting tasks."
+    ],
+    "tips": [
+      "Detect the platform and show Ctrl as text on Windows and Linux, since the looped symbol only matches the physical key on Apple keyboards.",
+      "When used inline next to letters, size the glyph to the cap height of the text so the shortcut reads as one unit.",
+      "Give an icon-only palette button a label naming the action, and add aria-keyshortcuts so the key combination is announced too."
+    ],
+    "aria": "Open command palette",
+    "pairs": [
+      "keyboard",
+      "code",
+      "search-normal"
+    ],
+    "faq": [
+      {
+        "q": "What is the mac command icon called?",
+        "a": "It is usually called the command symbol, cloverleaf or looped square, and Unicode lists it as the place of interest sign, U+2318. On a Mac it sits on the Command key beside the space bar and appears in menus next to every shortcut that uses that key."
+      },
+      {
+        "q": "Is the cmd icon the same as a keyboard shortcut icon?",
+        "a": "Not quite: the looped symbol stands for one specific Apple modifier key, while a general shortcut symbol usually shows a keyboard or keycap to mean shortcuts in any app. Use the command symbol for Mac shortcut hints and a keyboard glyph for a cross-platform shortcut list."
+      }
+    ]
+  },
+  "calendar": {
+    "intro": "This calendar icon shows a single calendar page with two binding rings at the top and small dots marking the days. It is the familiar shorthand for dates and planning: use it on buttons that open a date picker, link to a schedule or show when something happens, such as a booking, deadline or meeting.",
+    "meaning": "The rings and header bar come from desk and wall calendars that hang from spiral binding, so people read the shape as a span of days rather than one moment. That separates it from a clock, which points to hours and minutes, and from a calendar with a tick or a plus, which usually means a confirmed or new event. Some apps print today's date inside the page to make it live.",
+    "uses": [
+      "Booking form: sits inside the date field and opens a month picker when the guest clicks or taps it.",
+      "Project management board: marks the due date on each task card and filters the view by deadline.",
+      "Event listing page: precedes the date and time line so readers find when the session starts at a glance.",
+      "Dashboard header: switches report ranges between last week, last month and a custom set of dates."
+    ],
+    "tips": [
+      "The day dots read well from 20 px up; at 16 px use a heavier style so they do not blur into a grey patch.",
+      "In a date input, put the icon inside the field and make it a real button so keyboard users can open the picker too.",
+      "If you print the day number inside the page, update it with the user's time zone so the icon never shows yesterday's date."
+    ],
+    "aria": "Choose a date",
+    "pairs": [
+      "clock",
+      "timer",
+      "notification"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a date icon and a schedule icon?",
+        "a": "A date symbol usually means one specific day, so it suits date fields and timestamps. A schedule symbol covers planning across time, often a calendar combined with a clock, and suits timetables, rotas and booking slots. In practice many products use the plain calendar page for both."
+      },
+      {
+        "q": "Which icon should mark an event on a website?",
+        "a": "Use the calendar page as the event icon next to the date line, and keep separate ticket and pin icons for passes and the venue. Adding a small Add to calendar button with the same glyph helps visitors save the event to their own app in one step."
+      }
+    ]
+  },
+  "clock": {
+    "intro": "This watch icon draws a wristwatch: a round face with two hands, held between short strap sections above and below. It says time, but personal time on your wrist rather than a clock on the wall. Use it for wearables, watch faces, workout timers, reminders tied to a device or a store category selling watches.",
+    "meaning": "A wristwatch reads as time that travels with you, which is why fitness, wearable and shopping apps prefer it to a wall clock. The straps are what separate it from a plain clock icon, a bare circle with two hands that means current time, history or opening hours. Keep it distinct from the hourglass too: the hourglass means time running out, while the watch simply means time.",
+    "uses": [
+      "Wearable companion app: opens the paired device screen where people manage watch faces, battery and notifications.",
+      "Online shop navigation: labels the watches and accessories category, next to jewellery and bags.",
+      "Fitness tracker summary: marks active minutes or workout duration recorded on the wrist during the day.",
+      "Reminder settings: shows that an alert will vibrate on the watch instead of sounding on the phone."
+    ],
+    "tips": [
+      "Avoid it for general timestamps or recent history; a plain round clock reads faster there and keeps the wristwatch free for wearable features.",
+      "At 16 px keep the strap stubs short and the face large, so the hands stay visible and the glyph does not look like a lock.",
+      "Label it explicitly, for example Watch settings, because people may guess it means time, alarms or a fitness device depending on context."
+    ],
+    "aria": "Open watch settings",
+    "pairs": [
+      "timer",
+      "calendar",
+      "mobile"
+    ],
+    "faq": [
+      {
+        "q": "Is a watch icon the same as a time icon?",
+        "a": "Not exactly. Time is usually shown as a plain clock face, which stands for current time, durations or history. A watch adds straps, which ties the idea to a wrist, so it fits wearables, workouts and watch shops better than generic timestamps or opening hours."
+      },
+      {
+        "q": "Can a wristwatch work as a smartwatch icon?",
+        "a": "Yes, it works well for smartwatches when the context is a paired device, a watch app or wearable settings. If you need to show a digital model specifically, a square face reads more like a smartwatch, but the round face is widely understood for both."
+      }
+    ]
+  },
+  "timer": {
+    "intro": "This hourglass icon shows two glass bulbs joined at a narrow neck, the old sign for time passing and running out. In an interface it marks waiting, a limited offer, a countdown or a pending state, for example an order being processed or a session that will expire soon.",
+    "meaning": "Sand falling through a neck makes the passing of time visible, so people read the hourglass as finite time: something will end, or something is in progress. Older desktop systems used it as the busy cursor, which still colours how people see it. A clock or watch means time in general, a stopwatch means measuring, and the hourglass means waiting or a deadline.",
+    "uses": [
+      "Checkout page: sits beside a reserved seat or stock countdown, showing how long the item stays held.",
+      "Order history: marks payments or refunds that are still pending, separate from completed and failed states.",
+      "Quiz or exam app: labels the remaining time per question and changes colour as the limit approaches.",
+      "Sale banner: precedes the ends in text on a flash sale so shoppers know the offer is temporary."
+    ],
+    "tips": [
+      "Use it as a static status, not a loading spinner; a still hourglass beside a label reads clearer than a rotating one that suggests a frozen app.",
+      "Pair the icon with the actual remaining time in text, because the glyph alone never tells people how long they have.",
+      "Avoid colouring every hourglass red until time is nearly up, otherwise each pending row looks like an error and the warning loses force."
+    ],
+    "aria": "Show time left",
+    "pairs": [
+      "clock",
+      "calendar",
+      "notification"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a timer icon and a sand timer icon?",
+        "a": "The usual timer glyph is a stopwatch with a button on top, used for measuring or starting a countdown. The sand version is the hourglass, which reads more as waiting or time running out. Use the stopwatch for controls and the hourglass for status."
+      },
+      {
+        "q": "Which icon works best for a countdown?",
+        "a": "The hourglass is a good countdown icon when you want urgency, such as an expiring offer or a reserved ticket. Place it beside a live timer in text, and announce changes sparingly with an aria-live region so screen readers are not interrupted every second."
+      }
+    ]
+  },
+  "location": {
+    "intro": "This location icon is a map pin: a rounded teardrop with a point at the bottom and a hole in the centre. It marks a single place, so use it next to addresses, store finders, delivery points and buttons that use the device's position to show what is nearby.",
+    "meaning": "The teardrop comes from the pushpins people stuck into paper maps, and digital map services made it the default marker for one exact spot. The point shows where, and the round head leaves room for a dot or number. It differs from a map glyph, which means a whole area or route, and from the arrow-shaped navigation cursor, which means your current heading.",
+    "uses": [
+      "Store locator: labels the search box and each result card so shoppers see the branch address and distance.",
+      "Food delivery app header: shows the current delivery address and opens a sheet to change it.",
+      "Contact page footer: sits before the office address and links straight to directions in the visitor's map app.",
+      "Event detail screen: marks the venue name and opens the exact spot on a map when tapped."
+    ],
+    "tips": [
+      "Anchor the pin by its point, not its centre, when placing it on a map, otherwise markers drift above the real location as people zoom.",
+      "Ask for location permission only after someone taps the pin button, and explain why in the label, such as Use my location.",
+      "In address lists, keep the pin decorative with aria-hidden, since the written address already carries the meaning for screen readers."
+    ],
+    "aria": "Use my location",
+    "pairs": [
+      "map",
+      "global",
+      "call"
+    ],
+    "faq": [
+      {
+        "q": "Is a map pin icon the same as a location pin icon?",
+        "a": "Yes, both names describe the same teardrop marker, and people search for them interchangeably. Designers sometimes call it a map pin when it sits on a map and a location pin when it appears beside an address or in a form, but the glyph is identical."
+      },
+      {
+        "q": "Which icon should I use for GPS?",
+        "a": "For a GPS icon that means use my current position, a crosshair or a filled navigation arrow is clearer than a pin. Keep the pin for fixed places, like a shop or venue, so people can tell their own position apart from destinations on the same map."
+      }
+    ]
+  },
+  "map": {
+    "intro": "This map icon draws a square paper map with a road running diagonally across it and a small pin marking one spot. It stands for an area and the way through it, so use it to open a map view, show directions, switch a list of results into a map or link to a trip.",
+    "meaning": "Folded road maps and tourist leaflets taught people to read this shape as a whole area to explore. The diagonal road adds the idea of travelling from one place to another, and the pin marks a destination within it. A pin on its own means one exact place, a globe means the world or language, and a compass or arrow means live direction.",
+    "uses": [
+      "Property search results: toggles between the list of homes and a map showing where each listing sits.",
+      "Travel booking app: opens the itinerary map with every hotel, flight and activity plotted across the trip.",
+      "Running or cycling app: marks the saved routes tab where people replay and share past outdoor activities.",
+      "Delivery tracking page: shows the courier's path from the depot to the customer's door in real time."
+    ],
+    "tips": [
+      "Use the map icon on one side of a view toggle and a list icon on the other, so people see exactly which view each segment opens.",
+      "The small pin inside blurs at 16 px; use 20 px or larger in toolbars so both the road and the pin stay readable.",
+      "If the map itself is hard to use with assistive tech, offer the same places as a text list and label the button Show map."
+    ],
+    "aria": "Show map",
+    "pairs": [
+      "location",
+      "global",
+      "search-normal"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a map icon and a navigation icon?",
+        "a": "A map means look at an area, while navigation, usually shown as an arrow or compass, means turn-by-turn guidance from where you stand. Use the paper map for browsing places and the arrow when the button starts directions or recentres the view on the user."
+      },
+      {
+        "q": "What does a route icon usually look like?",
+        "a": "Routes are normally drawn as a dashed or curved line joining two points, sometimes laid across a map like the road in this glyph. It tells people the screen is about a journey, so it suits directions, delivery tracking, saved hikes and planned trips."
+      }
+    ]
+  },
+  "global": {
+    "intro": "This globe icon draws a sphere crossed by curved meridians and lines of latitude. On screen it stands for the world beyond one place: switching language or region, visiting a website, setting content to public or showing that a feature works internationally. You will most often find it in footers, headers and sharing settings.",
+    "meaning": "Meridian lines make a circle read as Earth without drawing any continents, so the symbol feels neutral and works in every market. People connect it with the web, public visibility and multiple languages. It differs from a map, which means a specific area, and from a pin, which means one place. It also differs from wifi arcs, which are about the connection itself rather than where content reaches.",
+    "uses": [
+      "Site header: opens the language and region selector so visitors switch content and currency in one place.",
+      "Social post composer: shows the post is visible to everyone, as opposed to friends only or private.",
+      "Contact card in a CRM: links to the company's site alongside phone and email details.",
+      "Desktop app settings page: labels network and proxy options that control how the app reaches the internet."
+    ],
+    "tips": [
+      "Next to a language picker, show the current language name in text beside the globe, written in that language, such as Deutsch or Español.",
+      "At 16 px keep only two or three meridians; a dense grid of lines closes up and the globe looks like a ball of string.",
+      "When it means public visibility, add a tooltip or label like Anyone can see this, because that meaning is not obvious to everyone."
+    ],
+    "aria": "Change language",
+    "pairs": [
+      "location",
+      "map",
+      "link"
+    ],
+    "faq": [
+      {
+        "q": "What does the globe icon mean on a website?",
+        "a": "On a website the globe icon usually opens language or region settings, so you can switch content, currency or shipping country. In social apps it also marks posts that are public. If it sits next to a URL, it acts as a website icon linking to the company's site."
+      },
+      {
+        "q": "Should I use a globe as the language icon?",
+        "a": "A globe works for language switching when paired with the current language name, which most people recognise. Flags are a poor alternative because one language spans many countries. Some products add a small letter A beside the globe so the translation meaning is clearer."
+      }
+    ]
+  },
+  "wallet": {
+    "intro": "This wallet icon shows a folding wallet with a flap peeking over the top and a clasp tab on the right side, the everyday sign for money you hold. Use it for a stored balance, saved payment methods, top-ups, rewards credit or a digital wallet area, anywhere the screen is about funds the user already owns.",
+    "meaning": "A wallet holds several things at once, cash, cards and receipts, so people read the icon as a container for their money rather than one payment. That is the main difference from a credit card glyph, which means one specific card or paying right now. Banknotes mean cash and amounts, and a dollar in a circle means price or currency. Choose the wallet for balances and stored methods.",
+    "uses": [
+      "Ride-hailing app menu: opens the wallet screen with the current credit balance, saved cards and promo codes.",
+      "Banking dashboard: labels the accounts overview where people see balances across currencies at a glance.",
+      "Marketplace seller hub: marks the payouts section showing earnings waiting to be transferred to a bank.",
+      "Game store: shows the in-app coin balance and opens the top-up sheet when tapped."
+    ],
+    "tips": [
+      "Show the balance as text beside the wallet in headers, since people tap it to check how much they have, not to discover the feature.",
+      "Keep the clasp tab clearly visible at 20 px and below; without it the glyph reads as a plain rectangle or a card.",
+      "Label the button Wallet or Balance rather than Payments, so screen reader users know it opens their funds, not a checkout."
+    ],
+    "aria": "Open wallet",
+    "pairs": [
+      "card",
+      "money",
+      "receipt"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a wallet icon and a payment icon?",
+        "a": "A wallet icon means a place where money is stored, like a balance or saved cards. A payment symbol, usually a card or a hand with a coin, means the act of paying. Use the wallet for account areas and the card for pay buttons and checkout steps."
+      },
+      {
+        "q": "Which icon suits a personal finance app?",
+        "a": "A wallet makes a friendly finance icon for the main accounts tab because it suggests money you own. Pair it with a chart or trend arrow for spending insights and a receipt for transactions, so each tab in the app has its own clear symbol."
+      }
+    ]
+  },
+  "card": {
+    "intro": "This credit card icon draws a plastic card with a stripe band across the top and short lines standing in for the card number. It means paying with a card or managing one: use it on checkout payment steps, saved card lists, billing settings and buttons that add, replace or freeze a card.",
+    "meaning": "The stripe band and number lines come straight from bank cards, so people read the glyph as one method of payment rather than money in general. It is often confused with a wallet, which means a stored balance holding several methods, and with a receipt, which means proof of a payment already made. Many shops show it on the pay button to signal that card details are next.",
+    "uses": [
+      "Checkout page: labels the card payment option alongside wallets and bank transfer, opening the card details form.",
+      "Subscription billing settings: marks the current card on file with its last four digits and expiry date.",
+      "Banking app card controls: opens freeze, PIN reminder and spending limit options for a physical or virtual card.",
+      "Mobile payment onboarding: shows the step where people scan or add a card to start paying in shops."
+    ],
+    "tips": [
+      "Keep the stripe band thick enough to survive 16 px; a hairline stripe disappears and the card reads as an empty rectangle.",
+      "Beside saved cards, show the network logo and last four digits as text, since the generic glyph cannot tell two cards apart.",
+      "On a pay button, keep the action in the label, such as Pay by card, rather than relying on the icon alone."
+    ],
+    "aria": "Add payment card",
+    "pairs": [
+      "wallet",
+      "shopping-cart",
+      "receipt"
+    ],
+    "faq": [
+      {
+        "q": "Can I use the same icon as a debit card icon?",
+        "a": "Yes, one card glyph covers both credit and debit because the physical cards look the same. If your product separates them, say so in the label or a tag rather than drawing different shapes, since people cannot tell card types apart from an outline."
+      },
+      {
+        "q": "Which card icon should a checkout page use?",
+        "a": "Use the plain card glyph for the card payment option and keep network logos for the accepted cards row. Showing the generic glyph on the option and real logos below it helps shoppers recognise the method quickly without crowding the button."
+      }
+    ]
+  },
+  "money": {
+    "intro": "This money icon shows a banknote: a rounded rectangle with a circle in the middle and a short mark at each end. It stands for cash and amounts, so use it for cash payment options, prices, earnings, transfers and any figure in a finance view that represents real funds.",
+    "meaning": "A note reads as physical cash, which makes it the clearest sign for amounts, cash on delivery and money changing hands. It differs from a dollar sign, which ties the idea to one currency and to price labels, from a card, which means paying by card, and from a wallet, which means a stored balance. Because this note carries no currency symbol, it works in any market.",
+    "uses": [
+      "Checkout page: marks the cash on delivery option so shoppers can pay the courier at the door.",
+      "Freelancer dashboard: labels the earnings card showing income this month compared with the previous one.",
+      "Expense tracker: tags cash transactions entered by hand, separate from card payments synced from the bank.",
+      "Money transfer app: sits on the send money tab where people choose a recipient and an amount."
+    ],
+    "tips": [
+      "Use this note for neutral money and keep currency symbols for prices, so the glyph does not imply dollars to people paying in pounds or rupees.",
+      "Make the centre circle large enough to read at 16 px, otherwise the banknote becomes a plain rectangle like a card or ticket.",
+      "When it labels a cash payment option, write Cash on delivery in the label, because the icon alone could mean any payment."
+    ],
+    "aria": "Pay with cash",
+    "pairs": [
+      "wallet",
+      "dollar-circle",
+      "card"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a cash icon and a banknote icon?",
+        "a": "In most icon sets they are the same: cash is usually drawn as a single banknote or a small stack of notes. Some sets add coins to the cash version. Use one note for neutral amounts and a stack when you want to suggest a larger sum."
+      },
+      {
+        "q": "Which money icon works for international apps?",
+        "a": "A banknote without a printed symbol works best internationally, because it does not tie the interface to dollars or euros. Show the actual currency in text beside amounts, and keep currency specific symbols for price tags, exchange screens and currency pickers."
+      }
+    ]
+  },
+  "dollar-circle": {
+    "intro": "This dollar icon puts a dollar sign inside a circle, like a coin seen face on. It points to price, payment or earnings in US dollars and other dollar currencies. Use it for pricing pages, paid features, payouts, tipping and filters that sort or limit results by cost.",
+    "meaning": "The circle turns the sign into a coin, so people read it as money with a specific value rather than cash in general. Because it names a currency, it suits products priced in dollars and can feel odd elsewhere. A banknote reads as neutral money, a wallet as a stored balance and a percent badge as a discount. For multi-currency apps, swap the symbol for the local one.",
+    "uses": [
+      "Pricing page: marks the plan comparison row showing monthly cost, annual cost and what each tier includes.",
+      "Restaurant search filters: lets diners pick a price range shown as one to four symbols.",
+      "Creator platform: labels the tips and payouts screen where income from supporters is collected.",
+      "Feature table in a SaaS app: flags paid add-ons next to free features so costs are clear before upgrading."
+    ],
+    "tips": [
+      "Only use the dollar version where prices really are in dollars; for other markets put the matching currency symbol inside the same circle.",
+      "Keep the vertical stroke through the S visible at 16 px, otherwise the glyph reads as the letter S in a circle.",
+      "Avoid making the icon the only sign of a paid feature; add text such as Paid or the price for screen reader users."
+    ],
+    "aria": "View pricing",
+    "pairs": [
+      "money",
+      "wallet",
+      "discount-shape"
+    ],
+    "faq": [
+      {
+        "q": "What does a dollar sign icon mean in an app?",
+        "a": "It usually means price, payment or money earned. In a menu it may open billing or payouts, beside a feature it can mark a paid upgrade, and in filters it often sets a price range. The circle around it makes the sign read like a coin."
+      },
+      {
+        "q": "Should I use a dollar icon as a general currency icon?",
+        "a": "Only if your users pay in dollars. For international products, a neutral banknote or coin stack works better, and the active currency should be shown in text. Many apps swap the symbol automatically based on the user's region settings."
+      }
+    ]
+  },
+  "bag": {
+    "intro": "This shopping basket icon draws a basket with a rim, two angled handles rising from it and slatted sides, the kind you pick up at a supermarket door. Use it for the place where shoppers collect items before paying: the basket button in a header, add to basket actions and grocery order screens.",
+    "meaning": "British shops and many grocery apps say basket where American shops say cart, so the glyph reads naturally for UK and European audiences. People see it as a small, quick shop rather than a big weekly haul. It differs from a shopping bag, which suggests fashion boutiques or a finished purchase, and from a trolley or cart, which suits large orders and US shoppers.",
+    "uses": [
+      "Grocery delivery app header: shows the basket button with a count badge for items waiting to be ordered.",
+      "Product card in a UK fashion shop: sits on the add to basket button below the size selector.",
+      "Quick commerce checkout: labels the review basket step before the delivery slot and payment are chosen.",
+      "Recipe app: adds every ingredient for a meal to the linked supermarket basket in one tap."
+    ],
+    "tips": [
+      "Match the icon to your copy: if buttons say Add to basket use this glyph, and if they say cart use a trolley, so wording and image agree.",
+      "Place the item count badge at the top right, above the handle, where it will not cover the basket's slats.",
+      "Give the header button a label that includes the count, such as Basket, 3 items, and update it whenever items change."
+    ],
+    "aria": "View basket",
+    "pairs": [
+      "shopping-cart",
+      "receipt",
+      "heart"
+    ],
+    "faq": [
+      {
+        "q": "Basket icon or shopping bag icon: which should a shop use?",
+        "a": "Use a basket when your copy says basket, which is common in the UK and in grocery apps. A bag suits fashion and beauty stores where items feel like boutique purchases. Pick one and use it everywhere, from the header to the order confirmation."
+      },
+      {
+        "q": "What is a good shop icon for a website menu?",
+        "a": "For a menu link to the store itself, a storefront or a bag usually works better than the basket. Keep the basket for the place holding chosen items, so visitors do not confuse browsing the shop with opening their own order."
+      }
+    ]
+  },
+  "shopping-cart": {
+    "intro": "This shopping cart icon draws a wheeled trolley with a wire basket and a push handle. It is the most recognised button in online retail: it opens the cart, shows how many items are inside and sits on add to cart actions throughout product pages and listings.",
+    "meaning": "Early US online stores borrowed the supermarket trolley, and it became shorthand for everything picked but not yet paid for. People now expect it in the top right corner of a shop. It differs from a basket, which suits British wording and small grocery orders, and from a bag, which often means fashion stores or completed orders. A cart with a plus means adding, not viewing.",
+    "uses": [
+      "Online shop header: sits top right with a badge showing the number of items and opens a slide-out cart.",
+      "Product listing grid: appears on a quick add button over each thumbnail so shoppers add items without opening the page.",
+      "Mobile shop tab bar: gives the cart its own tab so it stays one tap away while browsing.",
+      "Abandoned cart email: leads the reminder block that brings shoppers back to the items they left behind."
+    ],
+    "tips": [
+      "Animate the badge, not the whole cart, when an item is added; a small scale on the count confirms the action without distracting.",
+      "Keep the wheels clearly separate from the basket at 16 px, otherwise the cart reads as a box or a chair.",
+      "Write the button label as Cart, 2 items and put the count in an aria-live region so assistive tech announces each change."
+    ],
+    "aria": "Open cart",
+    "pairs": [
+      "bag",
+      "card",
+      "receipt"
+    ],
+    "faq": [
+      {
+        "q": "What should an add to cart icon look like?",
+        "a": "It is usually the cart with a small plus, or the cart alone on a button labelled Add to cart. The plus helps when space is tight on product cards. On full-width buttons, the text does the work and the cart glyph simply adds recognition."
+      },
+      {
+        "q": "Is the cart icon understood worldwide?",
+        "a": "Yes, the trolley is one of the most widely recognised shopping symbols, even in markets where shops say basket or bag. Match it to your copy where you can, but people in most countries will read a cart in the header as their order in progress."
+      }
+    ]
+  },
+  "gift": {
+    "intro": "This gift icon shows a wrapped box with a lid, a ribbon running down the front and a bow on top. It signals something given for free or for someone else: gift cards, referral rewards, birthday offers, gift wrapping at checkout and sending a present to another person's address.",
+    "meaning": "A bow on a box is understood almost everywhere as a present, so the icon carries warmth and surprise. Product teams use it for perks that feel like a treat rather than a deal. It differs from a discount badge, which means money off, from a ticket, which means entry or a voucher, and from a star or medal, which means achievement. A gift says something is coming to you.",
+    "uses": [
+      "Checkout page: offers a gift wrap and message option so the parcel arrives ready to give.",
+      "Referral screen in a banking app: shows the reward both friends receive when an invite is accepted.",
+      "Online store navigation: links to gift cards and a gift finder organised by recipient and budget.",
+      "Loyalty app home: highlights a birthday treat waiting to be claimed during the customer's birthday month."
+    ],
+    "tips": [
+      "Reserve it for real rewards; if every promotion carries a gift, people stop opening it and it starts to feel like an advert.",
+      "A small dot badge on the box works well for unclaimed rewards, but remove it as soon as the reward is opened.",
+      "Label the action specifically, such as Claim reward or Send as a gift, because the box alone can mean many things."
+    ],
+    "aria": "Claim reward",
+    "pairs": [
+      "discount-shape",
+      "ticket",
+      "star"
+    ],
+    "faq": [
+      {
+        "q": "Is a present icon the same as a gift box icon?",
+        "a": "Yes, both describe a wrapped box with a ribbon, and they are used interchangeably. Some sets draw the box with an open lid to mean unwrapping or revealing a reward, while the closed version means a present still to give or receive."
+      },
+      {
+        "q": "When should I use a reward icon instead of a discount icon?",
+        "a": "Use the gift when people receive something extra, like credit, a free item or a perk. Use a discount badge when the offer is money off a price. Keeping them separate helps customers understand what they are getting before they tap."
+      }
+    ]
+  },
+  "receipt": {
+    "intro": "This receipt icon draws a till slip with a wavy torn edge along the bottom and two lines of printed text. It means proof of a purchase or a bill to pay: use it for order history, transaction details, invoices, expense uploads and the split the bill screen in shared payment apps.",
+    "meaning": "The torn edge copies the paper ribbon that comes out of a shop till, so people read the icon as a record of money already spent. It differs from a document, which is any file, from a wallet, which holds money, and from a clipboard, which suggests tasks or checklists. Many apps use it for the orders tab, since every order ends with a receipt.",
+    "uses": [
+      "Food delivery app: opens past orders with totals, delivery fees and a reorder button for each one.",
+      "Expense management tool: marks the upload area where staff snap receipts to attach to a claim.",
+      "Accounting software sidebar: labels the invoices list showing sent, paid and overdue bills for each client.",
+      "Group payment app: starts the split screen where friends divide a restaurant bill item by item."
+    ],
+    "tips": [
+      "Keep the torn edge bold, with only a few large waves at 16 px, or it blurs into a straight line and the glyph becomes a document.",
+      "Use a status colour or badge, not a second icon, to show paid, pending or refunded receipts in the same list.",
+      "In navigation, label it Orders or Receipts to match the screen title, since the glyph alone can be read as invoices or a menu."
+    ],
+    "aria": "View receipt",
+    "pairs": [
+      "wallet",
+      "card",
+      "document-text"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between an invoice icon and a receipt icon?",
+        "a": "An invoice asks for payment and a receipt confirms it, but icon sets often draw both as a page of lines. Use the torn edge for receipts and completed purchases, and a page with a folded corner or a currency mark for an invoice still due."
+      },
+      {
+        "q": "Which icon should an order history tab use?",
+        "a": "A receipt works well as the order icon for history and past purchases because people link it to a finished transaction. Use a parcel or a van for tracking a delivery in progress, so the two states stay distinct in the menu and people find the right screen first time."
+      }
+    ]
+  },
+  "ticket": {
+    "intro": "This ticket icon draws a ticket stub with a notch cut into each side and a perforated line where the stub tears off. It means admission or a voucher: use it for event bookings, boarding passes, cinema seats, coupon codes and support tickets, anywhere a single pass gives someone access to something.",
+    "meaning": "The notched edges and tear line come from paper tickets ripped at a box office, so people link the shape to entry, travel and events. In customer support tools it also means a request with its own number. A coupon uses the same outline with a percent sign or scissors, a receipt has a torn bottom edge and means payment made, and a gift means something received.",
+    "uses": [
+      "Event app: opens the tickets wallet with each pass, seat number and a scannable code for the door.",
+      "Help desk sidebar: labels the tickets queue where agents see open, pending and solved support requests.",
+      "Airline or rail app: marks the trips tab holding boarding passes and booking references for upcoming journeys.",
+      "Checkout page: sits beside the promo code field where shoppers enter a voucher before paying."
+    ],
+    "tips": [
+      "Keep the side notches deep enough to see at 16 px; shallow notches leave a plain rectangle that looks like a card.",
+      "When it means a coupon, add a percent sign or the word Voucher in the label, because many people read the stub as event entry first.",
+      "Show the number of upcoming passes in the tab label, such as Tickets, 2, so people know a pass is ready before opening it."
+    ],
+    "aria": "View tickets",
+    "pairs": [
+      "calendar",
+      "discount-shape",
+      "location"
+    ],
+    "faq": [
+      {
+        "q": "Can a ticket icon be used as a coupon icon?",
+        "a": "Yes, a ticket stub often doubles as a voucher symbol because vouchers are printed on similar notched slips. Add a percent sign, a scissors line or the word coupon nearby so people do not mistake it for event entry or a support request."
+      },
+      {
+        "q": "What is the best event ticket icon for a booking app?",
+        "a": "A notched stub is the clearest choice because it matches the paper tickets people know from concerts and cinemas. Use it for the passes tab and the booking confirmation, and add a calendar for dates and a pin for the venue."
+      }
+    ]
+  },
+  "discount-shape": {
+    "intro": "This discount icon shows a scalloped badge, like a rosette price sticker, with a percent sign in the middle. It flags money off: use it on sale prices, promo code fields, offer banners and product cards that carry a reduction, so shoppers spot deals while scanning a page.",
+    "meaning": "Wavy-edged price stickers have marked reductions in shops for decades, and the percent sign makes the meaning precise: a share taken off the price. People read it as a deal they can claim now. It differs from a gift, which means something extra for free, from a ticket, which means entry or a voucher, and from a medal badge, which means an achievement.",
+    "uses": [
+      "Product card in a fashion shop: sits next to the reduced price with the percentage saved.",
+      "Checkout page: labels the promo code row and shows the applied reduction above the order total.",
+      "Food delivery home screen: marks restaurants with active offers so hungry users can filter for deals.",
+      "SaaS pricing page: highlights the saving on annual plans compared with paying month by month."
+    ],
+    "tips": [
+      "Do not rely on red alone for sale badges; the percent sign and a text label such as 20% off carry the meaning for colour-blind shoppers.",
+      "At 16 px the scalloped edge can look fuzzy, so test it against a plain circle badge and use the larger size if needed.",
+      "Use it sparingly on listing pages; when every product carries a discount badge, none of them stands out."
+    ],
+    "aria": "Apply discount",
+    "pairs": [
+      "ticket",
+      "gift",
+      "shopping-cart"
+    ],
+    "faq": [
+      {
+        "q": "What does a percentage icon mean in a shop?",
+        "a": "In a shop the percent sign almost always means a discount or sale, showing that a share is taken off the price. In finance apps the same sign can mean interest rates or returns, so check the context and add a label wherever the meanings could clash."
+      },
+      {
+        "q": "Is a sale icon different from a sale tag icon?",
+        "a": "The first is often this scalloped badge with a percent sign, while the second shows a price tag with a hole and string. Use the badge for discounts and offers, and the tag for prices, labels or product tagging in a catalogue."
+      }
+    ]
+  },
+  "chart": {
+    "intro": "This progress icon draws three concentric partial rings, each arc stopping at a different point like a radial chart. It shows how far something has come against a goal: daily activity, course completion, storage used or quota left. Use it to link to a progress view or a goals dashboard.",
+    "meaning": "Rings that fill around a centre borrow from round gauges and fitness tracker activity rings, so people read them as several goals each partly met. Because the arcs are open, the glyph suggests progress still under way rather than a split of a whole. A pie or donut chart shows parts of one total, a line chart shows change over time, and a bar chart compares categories.",
+    "uses": [
+      "Fitness app home: opens the daily goals view with separate rings for steps, active minutes and sleep.",
+      "Online course dashboard: shows how much of each module a learner has finished and what is left.",
+      "Cloud storage settings: labels the usage section where people see space taken by photos, files and backups.",
+      "Habit tracker widget: marks weekly streaks so users see which habits are on track at a glance."
+    ],
+    "tips": [
+      "Do not use the static glyph as a live indicator; draw real rings with values and give them role progressbar and aria-valuenow.",
+      "At 16 px the three rings sit close together, so use a bolder style or 20 px to keep the gaps between arcs open.",
+      "Label it by goal, such as Progress or Goals, rather than Charts, so people know it shows their own progress, not general data."
+    ],
+    "aria": "View progress",
+    "pairs": [
+      "graph",
+      "trend-up",
+      "diagram"
+    ],
+    "faq": [
+      {
+        "q": "Is this a donut chart icon or a progress icon?",
+        "a": "It is closer to a progress icon. A donut chart shows one ring split into segments of a whole, while these concentric open rings show several goals each partly complete. Use a segmented donut for budgets or shares, and rings for completion and targets."
+      },
+      {
+        "q": "Which chart icon suits a statistics page?",
+        "a": "For a general statistics icon, a bar, pie or line chart reads faster than radial rings, because people link those shapes with data and reports. Keep the rings for goals and completion, so each page in your product has its own symbol and people can predict where a link goes."
+      }
+    ]
+  },
+  "graph": {
+    "intro": "This graph icon draws a pie chart with one quarter slice pulled slightly away from the rest of the circle. It stands for data broken into shares, so use it to open analytics, reports and breakdowns such as traffic by source, spending by category or votes by option in a dashboard.",
+    "meaning": "A pie with a lifted slice is a long-standing business chart convention: the detached piece highlights one share of the total, so people read the icon as reports, breakdowns and measured results. It differs from a line chart, which tracks change over time, from radial rings, which show progress towards goals, and from a rising arrow, which means growth in a single number.",
+    "uses": [
+      "Admin dashboard sidebar: labels the analytics section with traffic, sales and conversion reports.",
+      "Budgeting app: opens the spending breakdown showing what share of money went on rent, food and travel.",
+      "Survey tool: switches finished poll results into a chart showing how responses split across each option.",
+      "Email marketing app: marks the campaign results tab with opens, clicks and unsubscribes as shares of all sends."
+    ],
+    "tips": [
+      "Keep a visible gap between the lifted slice and the circle at 16 px, otherwise the glyph closes up into a plain disc with a notch.",
+      "Use it for breakdowns of a total; for figures that change over time, a line chart icon sets clearer expectations.",
+      "Label it Analytics or Reports in navigation, since a pie on its own could mean budgets, statistics or a single chart."
+    ],
+    "aria": "Open analytics",
+    "pairs": [
+      "diagram",
+      "chart",
+      "trend-up"
+    ],
+    "faq": [
+      {
+        "q": "What does an analytics icon usually look like?",
+        "a": "It usually shows a small chart: a pie, bars or a rising line. People recognise it as the place for reports and metrics, so it suits dashboard navigation. A pie with a slice pulled out, like this one, hints that the page breaks numbers into shares."
+      },
+      {
+        "q": "Which statistics icon should I use, a pie or a line chart?",
+        "a": "Pick by the data behind it. A pie suits breakdowns of one total, such as traffic by country or budget by category. A line chart suits values over time, such as weekly sign-ups. Matching the glyph to the data helps people predict the screen."
+      }
+    ]
+  },
+  "trend-up": {
+    "intro": "This growth icon shows a zigzag line climbing to an arrowhead inside a rounded square, pointing up and to the right. It signals that a number has risen: revenue, followers, views or savings. Use it on stat cards, trending lists, investment summaries and anywhere a positive change needs a quick visual cue.",
+    "meaning": "Up and to the right is the shape of any rising chart, so the arrow reads as improvement in almost every culture that writes left to right. Where a full chart means a report to open, the arrow means one value going up. It differs from an export arrow, which points straight up out of a tray, and from a plain up arrow, which means scroll or move up.",
+    "uses": [
+      "Sales dashboard stat card: sits beside the percentage change in revenue compared with the previous period.",
+      "Social app explore tab: labels the trending section listing posts and topics gaining attention right now.",
+      "Investment app portfolio: marks holdings that have gained value since purchase, alongside the amount and percentage.",
+      "Business plan builder: introduces the growth targets step where founders set goals for users and revenue."
+    ],
+    "tips": [
+      "Pair the arrow with the actual change in text, such as +12%, because colour and direction alone fail for screen readers and colour-blind users.",
+      "Use a mirrored falling version for drops, so stat cards can show both directions with the same frame and stroke weight.",
+      "Avoid green for growth in markets where red means rising prices, such as mainland China, and follow local colour conventions instead."
+    ],
+    "aria": "View growth",
+    "pairs": [
+      "graph",
+      "chart",
+      "dollar-circle"
+    ],
+    "faq": [
+      {
+        "q": "What does the trending up icon mean?",
+        "a": "It means a value is increasing, or that something is gaining popularity right now. On a stat card it shows a rise in a metric, while in a social or news app it marks the list of topics people are talking about most."
+      },
+      {
+        "q": "Which stock icon shows a price going up?",
+        "a": "An arrow climbing up and to the right is the standard sign for a rising share price. Show the percentage next to it and use a falling arrow for drops. Many apps add colour, but the direction and the number should carry the meaning on their own."
+      }
+    ]
+  },
+  "diagram": {
+    "intro": "This line chart icon draws a zigzag line plotted against two axes, a vertical one on the left and a horizontal one along the bottom. It stands for data over time: use it to open a chart view, switch a table into a graph or label reports showing trends by day, week or month.",
+    "meaning": "Axes turn a line into a measured chart, so people read the icon as real data rather than a general idea of growth. The line plots one value through time, which suits traffic, prices and temperatures. It differs from a bar chart, which compares categories, from radial rings, which show goal progress, and from a pie chart, which splits one total into shares.",
+    "uses": [
+      "Data table toolbar: switches the same results between a table and a chart view without leaving the page.",
+      "Weather app detail screen: opens the hourly temperature chart for the next two days.",
+      "Crypto or share tracker: shows the price history of a coin or stock across selectable time ranges.",
+      "Server monitoring tool: labels the metrics tab plotting CPU, memory and response time over the last hour."
+    ],
+    "tips": [
+      "When drawing a larger version, keep the axes thinner or lighter than the data line, so the zigzag stays the focus.",
+      "For a table and chart toggle, use aria-pressed on each option so screen reader users know which view is showing.",
+      "Do not add gridlines or data points to the glyph below 24 px; they turn it into noise and slow recognition."
+    ],
+    "aria": "Show line chart",
+    "pairs": [
+      "graph",
+      "chart",
+      "trend-up"
+    ],
+    "faq": [
+      {
+        "q": "Is a line graph icon the same as a line chart icon?",
+        "a": "Yes, line graph and line chart are two names for the same thing, and the icons look identical: a zigzag line over two axes. British teams tend to say graph in everyday speech, while chart is more common in software menus and data tools."
+      },
+      {
+        "q": "When should I use a diagram icon instead of a chart?",
+        "a": "Use a diagram symbol, usually boxes joined by lines, for flowcharts, mind maps and architecture drawings. Use a line chart for numbers plotted over time. Mixing them confuses people, because a diagram shows how things connect while a chart shows how values change."
+      }
+    ]
+  },
+  "monitor": {
+    "intro": "This computer icon draws a desktop monitor with a bezel strip along the bottom of the screen, a short neck and a flat base. It means a desktop device or a large screen: use it for desktop app downloads, screen sharing, display settings, device lists and desktop preview modes in website and email builders.",
+    "meaning": "A screen on a stand reads as a desktop computer, a fixed machine at a desk, which sets it apart from a laptop with a hinged keyboard and from a phone. In responsive design tools it sits in a row with phone and tablet icons, each meaning a preview width. People also read it as screen sharing or display options when it appears in a call or settings.",
+    "uses": [
+      "Website builder toolbar: switches the canvas to a desktop preview width next to tablet and phone options.",
+      "Video call controls: starts screen sharing so others in the meeting can see your display.",
+      "Account security page: lists signed-in devices, with this glyph marking desktop browsers and apps.",
+      "Download page: points visitors to the Windows and Mac versions of the app beside mobile store links."
+    ],
+    "tips": [
+      "In a device preview row, keep the monitor, tablet and phone glyphs at the same stroke weight and height so they read as one set.",
+      "For screen sharing, add an arrow or the label Share screen, because the plain monitor may suggest display settings instead.",
+      "Give each device toggle a clear accessible name, such as Desktop preview, so screen readers announce which width is selected."
+    ],
+    "aria": "Desktop preview",
+    "pairs": [
+      "mobile",
+      "keyboard",
+      "code"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a monitor icon and a desktop icon?",
+        "a": "In most products they are the same glyph: a screen on a stand. Monitor tends to describe the hardware or display settings, while desktop describes the desktop version of an app or a desktop preview. The label you add decides which meaning people take."
+      },
+      {
+        "q": "Which screen icon should a screen sharing button use?",
+        "a": "A monitor with an upward arrow, or the plain monitor with a Share screen label, is the clearest choice for sharing. Most video call apps use a variation of it, so people already know where to look for it in the call toolbar."
+      }
+    ]
+  },
+  "mobile": {
+    "intro": "This cell phone icon draws a smartphone: a tall rounded rectangle with a speaker slot at the top and a round home button at the bottom. It means the phone as a device, not a call, so use it for app download links, mobile previews, phone number fields, two-step sign-in and device lists.",
+    "meaning": "A slim rounded rectangle reads instantly as a smartphone, the device itself, because almost everyone carries one. That makes it different from a telephone handset, which means making a call, and from a monitor or tablet, which mean other screen sizes. In security flows people read it as something sent to their phone, like a verification code or a push approval.",
+    "uses": [
+      "Website builder toolbar: switches the canvas to a phone-width preview next to tablet and desktop options.",
+      "Two-step sign-in screen: shows that a code has been sent by text message to the user's phone.",
+      "Marketing site footer: links to the app store pages for the iPhone and Android versions of the app.",
+      "Contact form: marks the mobile number field, separate from the landline and email fields."
+    ],
+    "tips": [
+      "Use a handset for call buttons and keep the smartphone for the device; mixing them makes people tap Call when they wanted a text.",
+      "Keep the home button and speaker slot visible at 16 px, since they are the only details that stop the phone reading as a card.",
+      "Label device list rows with the model name in text, because the generic glyph cannot tell an old phone from a new one."
+    ],
+    "aria": "Mobile preview",
+    "pairs": [
+      "monitor",
+      "call",
+      "message"
+    ],
+    "faq": [
+      {
+        "q": "Is a smartphone icon the same as a mobile phone icon?",
+        "a": "Yes, in modern interfaces they are the same: a tall rounded rectangle with a screen. Older sets used to show a chunky handset with buttons, but since touchscreen phones took over, almost every set draws the smartphone shape for both terms."
+      },
+      {
+        "q": "Should I use a mobile icon or a phone icon for calls?",
+        "a": "Use a phone handset for calls and the smartphone for the device itself. The handset means start a call, while the device glyph means texts, apps, previews and anything sent to your phone. Keeping them separate prevents accidental calls from contact screens."
+      }
+    ]
+  },
+  "headphone": {
+    "intro": "This headphones icon draws over-ear headphones: a curved headband joining two padded ear cups. It signals listening, often privately, so use it for music and podcast apps, audio settings, connected Bluetooth devices, listening modes and support links where a real person is ready to talk to you.",
+    "meaning": "Headphones read as personal listening, sound for one person rather than the room, which is why music apps and audio guides use them. A speaker means sound playing out loud, a music note means the content itself, and a headset with a microphone boom means talking as well as listening, usually support or gaming chat. Without a mic, this glyph leans towards listening.",
+    "uses": [
+      "Music streaming app: marks the connected device chip when audio is playing through wireless headphones.",
+      "Museum guide app: opens the audio tour for an exhibit, with track numbers matching the gallery labels.",
+      "Help centre header: links to phone support, showing a person is ready to speak with the customer.",
+      "Video game settings: labels the sound output section with surround sound and voice chat volume options."
+    ],
+    "tips": [
+      "For live support, add a microphone boom or a label like Talk to us, because plain headphones suggest listening rather than speaking.",
+      "Keep the ear cups chunky at 16 px; thin cups disappear and the headband alone looks like an arch or a magnet.",
+      "When it shows a connected device, include the device name in the label so screen readers announce where sound is going."
+    ],
+    "aria": "Audio settings",
+    "pairs": [
+      "music",
+      "volume-high",
+      "microphone"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a headphones icon and a headset icon?",
+        "a": "A headset adds a small microphone arm in front of the mouth, so it means speaking as well as listening. Use it for customer support, calls and gaming chat. Plain headphones mean listening only, which suits music, podcasts and audio guides."
+      },
+      {
+        "q": "Why do support pages use headphones?",
+        "a": "Support pages use headphones because call centre staff wear them, so the glyph suggests a real person ready to help. If your support is chat only, a speech bubble is clearer, and the headphones can stay for phone or voice support options."
+      }
+    ]
+  },
+  "keyboard": {
+    "intro": "This keyboard icon draws a computer keyboard: a wide rounded rectangle with a few keys along the top and a long space bar below. Use it to open a list of keyboard shortcuts, switch between on-screen keyboards, show text entry options or mark settings for languages and typing preferences.",
+    "meaning": "A few keys above a long space bar read as a keyboard even at small sizes, so people link the icon with typing, shortcuts and text entry. The command symbol is narrower in meaning: one Mac modifier key used in shortcut hints, while a code prompt means a terminal. On mobile, a keyboard with a down arrow is the familiar sign for hiding the on-screen keyboard.",
+    "uses": [
+      "Web app help menu: opens the shortcuts overlay listing keys for search, navigation and editing.",
+      "Phone settings: labels the keyboards section with languages, autocorrect and swipe typing options.",
+      "Chat composer on tablets: toggles between the on-screen keyboard and the emoji or sticker panels.",
+      "Accessibility settings page: marks options for sticky keys, key repeat speed and keyboard navigation."
+    ],
+    "tips": [
+      "Keep the key details sparse at 16 px; adding more rows of keys turns the glyph into a grey grid that reads as a calendar.",
+      "Bind the shortcuts overlay to the question mark key and mention it in the button's tooltip, since keyboard users look there first.",
+      "Use the keyboard glyph to label shortcut lists, but write the actual keys as text in kbd elements rather than as tiny icons."
+    ],
+    "aria": "Keyboard shortcuts",
+    "pairs": [
+      "command",
+      "monitor",
+      "code"
+    ],
+    "faq": [
+      {
+        "q": "What does a typing icon look like in chat apps?",
+        "a": "In chat apps the typing indicator is usually three animated dots in a bubble, not a keyboard. The keyboard glyph appears instead in settings and input menus. Use the dots for someone typing now and the keyboard for options about how you type."
+      },
+      {
+        "q": "Can a keyboard work as an input icon?",
+        "a": "Yes, a keyboard is a common choice when the screen offers several ways to enter text, such as typing, voice or handwriting. Pair it with a microphone and a pen so each method has its own button, and show clearly which one is active."
+      }
+    ]
+  },
+  "printer": {
+    "intro": "This printer icon draws a desktop printer with a paper tray on top and a printed sheet coming out of the slot below. It has one clear job: print the current page, document, ticket or label. Use it on invoices, receipts, boarding passes, recipes, shipping labels and reports people may want on paper.",
+    "meaning": "Even as people print less, the boxy printer with paper showing remains one of the clearest action icons, because the object does exactly one thing. People expect it to open the print dialog, often with a print-friendly layout. It differs from a download or export arrow, which saves a file, and from a document, which opens or previews a page without printing it.",
+    "uses": [
+      "Invoice detail page: opens the print dialog with a clean layout showing only the bill and company details.",
+      "Recipe site: prints the ingredients and method without adverts, comments or the site navigation.",
+      "Shipping dashboard: prints carrier labels for selected orders in one batch, ready for packing.",
+      "Event confirmation email: lets attendees print their ticket for venues that still ask for paper."
+    ],
+    "tips": [
+      "Add a print stylesheet behind the button; the icon promises a tidy page, so hide menus, adverts and buttons in the printed version.",
+      "Keep the output sheet visible below the printer body at 16 px, otherwise the glyph reads as a box or a fax machine.",
+      "Label icon-only buttons Print invoice or Print ticket, so people know which part of the page will be printed."
+    ],
+    "aria": "Print page",
+    "pairs": [
+      "document-text",
+      "receipt",
+      "export"
+    ],
+    "faq": [
+      {
+        "q": "What is the difference between a print icon and a download icon?",
+        "a": "A print button opens the print dialog to make a paper copy, while a download button saves a file to the device. Offer both on invoices and tickets, since some people want a PDF for their records and others want a printed copy straight away."
+      },
+      {
+        "q": "Where should the printer icon go on a page?",
+        "a": "Place it near the top right of the content it prints, such as an invoice or recipe card, grouped with share and download. Keeping it beside the printable block, rather than in the site header, makes it clear exactly what will come out of the printer."
+      }
+    ]
+  },
+  "wifi": {
+    "intro": "This wifi icon shows stacked signal arcs fanning out from a dot, the standard sign for a wireless network. Use it for network settings, connection status, offline warnings, venue amenities and device pairing screens, anywhere people need to know whether they are connected and how strong the signal is.",
+    "meaning": "The arcs picture a signal spreading outwards from a router, and the number filled in shows strength: all arcs for a strong signal, one for weak. A slash or cross through it means disconnected. It differs from mobile signal bars, which mean a cellular network, from a globe, which means the web or language, and from the Bluetooth rune, which pairs nearby devices.",
+    "uses": [
+      "Hotel booking page: lists free wifi among room amenities next to breakfast, parking and air conditioning.",
+      "Smart home app: opens network setup when a new plug or camera needs joining to the home router.",
+      "Offline banner in a web app: shows a crossed wifi glyph when the connection drops, with a retry button.",
+      "Café table QR page: shows the network name and password so customers can join without asking staff."
+    ],
+    "tips": [
+      "Show signal strength by filling arcs from the bottom up and fading the empty ones, keeping the full shape visible for comparison.",
+      "Announce connection changes with a text message in an aria-live region, since a quietly changing icon goes unnoticed by many users.",
+      "Keep three arcs with clear gaps at 16 px; a fourth arc at that size closes the gaps and the shape becomes a solid fan."
+    ],
+    "aria": "Wifi settings",
+    "pairs": [
+      "battery-full",
+      "cloud",
+      "global"
+    ],
+    "faq": [
+      {
+        "q": "What does the wifi icon with an exclamation mark mean?",
+        "a": "It means the device is connected to a wifi network but cannot reach the internet. The router is working locally, but the line to your provider may be down. In your own apps, pair this state with a short message and a retry option."
+      },
+      {
+        "q": "Is a wireless icon the same as an internet connection icon?",
+        "a": "Not always. The wireless arcs mean a wifi network specifically, while a general connection symbol can be a globe, a cable or signal bars, covering any route online. Use the arcs for network settings and a more general symbol when the connection type does not matter."
+      }
+    ]
+  },
+  "battery-full": {
+    "intro": "This battery icon shows a horizontal battery with a small terminal cap on the right, filled with three charge bars to show a full charge. Use it for device power status, battery saver settings, charging progress in companion apps and product specs that compare how long phones, laptops or earbuds last between charges.",
+    "meaning": "The cell with a cap on one end comes from AA batteries, and the number of bars reads as remaining power: full, half, low or almost empty. People check it constantly in status bars, so they read it fast. A lightning bolt inside means charging, red fill means low and an outline only means empty. Unlike a plug, it shows stored power, not mains power.",
+    "uses": [
+      "Wireless earbuds companion app: shows the charge left in each earbud and in the case.",
+      "Phone settings: labels the battery section with usage by app and battery saver controls.",
+      "Electric scooter rental map: marks each scooter's range so riders pick one with enough charge.",
+      "Product comparison page: sits beside battery life figures for laptops, given in hours of video playback."
+    ],
+    "tips": [
+      "Never rely on fill colour alone for low battery; show the percentage in text so colour-blind users and screen readers get the value.",
+      "Keep the terminal cap visible at 16 px; without it the glyph reads as a plain bar or a progress indicator.",
+      "Use the full version only when the charge really is full, and switch to half or low states so the icon stays truthful."
+    ],
+    "aria": "Battery status",
+    "pairs": [
+      "wifi",
+      "mobile",
+      "setting"
+    ],
+    "faq": [
+      {
+        "q": "What does a charging icon look like?",
+        "a": "Charging is usually shown as a battery with a lightning bolt inside or beside it, showing power is flowing in. Some systems animate the bars rising. Use it only while the device is connected, and return to the plain battery once charging stops or the cable is removed."
+      },
+      {
+        "q": "When should I show a battery full icon?",
+        "a": "Show the full version when the charge reaches 100 percent, or close to it, in a status bar or device card. Many apps also use it as a cue to unplug, and it works as a positive status beside long battery life claims on product pages."
+      }
+    ]
+  },
+  "cloud": {
+    "intro": "This cloud icon draws a simple puffy cloud outline, the shorthand for online storage and services running on remote servers. Use it to mark files that are synced or backed up, link to a drive, show sync status or label hosting and cloud settings in developer and admin tools.",
+    "meaning": "Network diagrams drew the internet as a cloud long before cloud computing had a name, so the shape came to mean somewhere off your device. People read it as storage, sync and backup. With an up arrow it means upload, with a down arrow download, and with a slash it means offline or not synced. Keep it apart from weather icons by leaving out sun and rain.",
+    "uses": [
+      "File manager list: marks files stored online only, separate from those downloaded to the device.",
+      "Photo app settings: labels the backup section showing how many photos are safely copied online.",
+      "Hosting control panel: opens the servers area where admins start, stop and resize virtual machines.",
+      "Note-taking app header: shows sync status, turning into a crossed cloud when changes are waiting to upload."
+    ],
+    "tips": [
+      "Use small badges on the cloud for state, such as a tick for synced or an arrow for uploading, rather than separate icons.",
+      "In weather or travel apps, avoid this plain cloud for storage features, because people will read it as an overcast forecast.",
+      "Pair sync status changes with text like Saved or Offline, since many users never notice a small cloud changing shape."
+    ],
+    "aria": "Open cloud storage",
+    "pairs": [
+      "folder",
+      "import",
+      "export"
+    ],
+    "faq": [
+      {
+        "q": "What does a cloud storage icon usually look like?",
+        "a": "It is usually a plain cloud outline, sometimes with a tick, an arrow or a small drive inside. It tells people the files live online rather than only on the device, so it suits drive links, backup settings and sync status."
+      },
+      {
+        "q": "Which icon works for cloud upload?",
+        "a": "For a cloud upload icon, add an upward arrow inside the cloud or place an upload arrow beside it. The arrow carries the action and the cloud says where the file is going. Use the plain cloud for status and the arrow version for buttons."
+      }
+    ]
+  },
+  "lock": {
+    "intro": "This lock icon shows a closed padlock with its shackle pressed down into the body. It signals that something is secured or restricted: a private album, a password field, a premium feature behind a plan, an encrypted chat or a setting that only an admin can change.",
+    "meaning": "A shut padlock means protected, private or not available to you right now, and context decides which. Browsers taught people to see it as a sign of a secure connection, though most now show it less prominently. The open padlock means unlocked or editable, a shield means protection in general, and a key means signing in or credentials. On a toggle, the closed lock should show the current state, not the action.",
+    "uses": [
+      "Sign-in form: sits inside the password input, next to the toggle that shows or hides the characters.",
+      "Photo app: marks the hidden album that needs face recognition or a passcode to open.",
+      "SaaS feature list: shows which tools need an upgrade, with the plan name revealed on hover.",
+      "Document sharing dialog: indicates a file restricted to named people rather than anyone with the link."
+    ],
+    "tips": [
+      "When the lock marks a paid feature, say so in text, such as Pro plan, because people may think the feature is broken or forbidden.",
+      "Keep the gap inside the shackle clear at 16 px; if it fills in, the padlock starts to look like a shopping bag.",
+      "On a lock toggle, update both the glyph and the label between Lock and Unlock so the current state is never ambiguous."
+    ],
+    "aria": "Lock item",
+    "pairs": [
+      "unlock",
+      "user",
+      "setting"
+    ],
+    "faq": [
+      {
+        "q": "Lock icon or padlock icon: is there a difference?",
+        "a": "No, they are the same symbol: people use both names interchangeably, and both mean secured or restricted. Some sets draw a door lock or keyhole for physical access, but in software the padlock is the standard for privacy and protection."
+      },
+      {
+        "q": "Is a lock the right security icon for a settings page?",
+        "a": "A lock suits privacy and password sections, but a shield usually reads better as the symbol for a whole security settings area. Use the shield for the section title and the lock for individual items, such as passwords, two-step sign-in and app passcodes."
+      }
+    ]
+  },
+  "unlock": {
+    "intro": "This unlock icon shows an open padlock, its shackle lifted and released on one side. It means something is accessible or editable: a feature now available, a document open to edits, a vault that has been opened or a button that removes a restriction after someone confirms who they are.",
+    "meaning": "The raised shackle tells people the lock has been released, so the icon reads as access granted or protection off. Context matters: in a security setting an open padlock can be a warning that something is exposed, while in a game or course it can celebrate new content. It is the paired state of the closed lock, and the two should share the same body shape.",
+    "uses": [
+      "Password manager vault: shows the vault is open, with a button to lock it again before stepping away.",
+      "Shared spreadsheet: marks cells or sheets anyone can edit, next to locked ranges that need permission.",
+      "Learning app course map: highlights lessons now open after the learner finishes the previous unit.",
+      "Phone settings: flags apps with access to location or camera that may need a review."
+    ],
+    "tips": [
+      "Keep the closed and open padlock identical apart from the shackle, so people instantly recognise them as two states of one control.",
+      "When an open padlock means exposed content, pair it with a warning colour and text rather than the friendly accent used for new features.",
+      "For a toggle button, name the action in the label, such as Lock vault, and set aria-pressed to reflect the current state."
+    ],
+    "aria": "Unlock item",
+    "pairs": [
+      "lock",
+      "login",
+      "setting"
+    ],
+    "faq": [
+      {
+        "q": "What does the unlocked icon mean on a file or note?",
+        "a": "An open padlock on a file or note means it is open to edits or not protected by a password. Tap it to lock the item again. In shared documents, the open padlock usually shows that anyone with access can change the content."
+      },
+      {
+        "q": "Is an open padlock icon a good privacy icon?",
+        "a": "Not on its own. An open shackle suggests something is exposed, so it works as a warning beside a public setting. For general privacy, a closed padlock, a shield or an eye with a slash reads better, because people expect privacy to look like protection."
+      }
+    ]
+  }
+}

@@ -1,0 +1,893 @@
+{
+  "home": {
+    "intro": "This home icon draws a house outline with a pitched roof, and in an interface it takes people straight back to the main screen or landing page. It is the anchor of most navigation bars: wherever someone ends up in an app, one tap on the house returns them to a familiar starting point.",
+    "meaning": "People read the house as 'the start', a convention that grew out of early web browsers, where a house button loaded your chosen home page. It now stands for the top level of a product rather than a literal building. Keep it distinct from a location pin or a property symbol: a home page icon should open the root view, not an address, a listing or a saved place.",
+    "uses": [
+      "Bottom tab bars: the first tab in most mobile apps, returning people to the feed or dashboard from any section.",
+      "Breadcrumb trails: a small house replaces the word Home at the start of the path on documentation sites.",
+      "Smart home apps: a tile for the whole household, grouping rooms, devices and scenes on one screen.",
+      "Error pages: a 404 screen offers a house button so lost visitors can return to the homepage in one click."
+    ],
+    "tips": [
+      "Show the active tab in the bold style and inactive tabs in linear, so people can see at a glance that they are already home.",
+      "In a bottom bar, keep the house as the first tab on the left; moving it confuses people who rely on muscle memory from other apps.",
+      "If someone taps home while already on the home screen, scroll the feed back to the top, since many people now expect that behaviour."
+    ],
+    "aria": "Go to home",
+    "pairs": ["search-normal", "notification", "user"],
+    "faq": [
+      {
+        "q": "What does the home icon mean?",
+        "a": "The home icon means 'go back to the start'. Tapping it opens the main screen of an app or the homepage of a website. It rarely refers to a physical house; in a navigation bar it marks the top level that every other section branches from."
+      },
+      {
+        "q": "Should I use a house icon or the word Home?",
+        "a": "Use both when space allows, and the icon alone only in tight spots such as a bottom tab bar. The house is one of the most widely recognised symbols in interface design, yet a short label still helps new visitors and people using screen readers."
+      }
+    ]
+  },
+  "home-2": {
+    "intro": "This house icon is a simple house shape with a door drawn at its base, a slightly more literal take on the home symbol. Use it for a home button when you want a friendlier, more illustrative feel, or anywhere the content really is about a building, such as a property address or a household profile.",
+    "meaning": "The door changes the reading a little. A bare roof outline reads as an abstract 'start' marker, while a house with a door suggests a real place you can walk into. That makes this version a good fit for property, delivery and household features, and still a perfectly valid home icon for navigation. Avoid using two different house shapes in one product, or people will wonder whether they lead to different places.",
+    "uses": [
+      "Property listing apps: marks houses as a property type next to flats, offices and land in search filters.",
+      "Delivery checkouts: labels the saved home address so customers can tell it apart from their work address.",
+      "Household accounts: identifies the shared household profile in budgeting, streaming or utility apps with several members.",
+      "Children's and casual apps: a softer, more drawn home button that suits rounded type and playful layouts."
+    ],
+    "tips": [
+      "The door detail fades below about 16 pixels, so at very small sizes switch to the plainer roof-only house for a cleaner shape.",
+      "When the icon marks an address rather than navigation, give it a visible text label such as Home address to avoid any confusion.",
+      "Choose one house glyph for navigation across the whole product, and keep this door version for physical places if you need both."
+    ],
+    "aria": "Open home screen",
+    "pairs": ["home", "location", "map"],
+    "faq": [
+      {
+        "q": "What is the difference between the two house icons?",
+        "a": "The difference is the door. A plain roof outline works as an abstract home button, while a house with a door reads more like an actual building. Both can open your main screen, but the door version also suits addresses, property listings and household settings."
+      },
+      {
+        "q": "Can I use a house icon for a home address field?",
+        "a": "Yes, a house is a common marker for a saved home address in delivery, ride hailing and map apps. Put it beside the address text rather than on its own, and use a different glyph, such as a briefcase, for the work address."
+      }
+    ]
+  },
+  "search-normal": {
+    "intro": "The search icon is a magnifying glass, and it tells people they can look for something by typing a query. You will find it at the start of search fields, on toolbar buttons that open a search overlay, and in tab bars where a dedicated search or explore screen sits.",
+    "meaning": "The lens comes from the idea of looking closely at something, and it has meant 'search' on computers since the 1990s. It is now so familiar that many interfaces drop the word Search entirely. Do not confuse it with a zoom control: a magnifying glass with a plus or minus inside means zoom in or out, while the plain lens means find. Filtering has its own funnel symbol, so keep the lens for search.",
+    "uses": [
+      "Website headers: a lens button that expands into a full search bar on small screens to save room.",
+      "Search inputs: placed inside the left edge of the field as a quiet hint of what the box does.",
+      "Mobile tab bars: the explore or discover tab in shopping, music and social apps.",
+      "Data tables: a compact search box above admin tables for finding a record by name, email or order number."
+    ],
+    "tips": [
+      "Place the lens at the leading edge of a search field and keep placeholder text specific, for example Search orders, rather than just repeating Search.",
+      "If the lens is a button that opens search, make the hit area at least 44 by 44 pixels even when the glyph is drawn at 20.",
+      "In desktop apps, support a slash or Ctrl+K shortcut next to the search icon and show that shortcut as a hint inside the field."
+    ],
+    "aria": "Open search",
+    "pairs": ["filter", "close-circle", "menu"],
+    "faq": [
+      {
+        "q": "What does the magnifying glass icon mean?",
+        "a": "It means search. Tapping or clicking the magnifying glass opens a search field or runs a search with what you typed. When it contains a plus or minus sign it means zoom instead, which is why the plain lens is kept for finding content."
+      },
+      {
+        "q": "Where should the search icon go in a search bar?",
+        "a": "Put it on the left, inside the field, for left-to-right languages, so it reads as a label before the text. A separate submit button on the right is optional, because most people simply press Enter. In right-to-left layouts, move it to the right."
+      }
+    ]
+  },
+  "setting": {
+    "intro": "This settings icon is a hexagon nut with a circle at its centre, a cleaner alternative to the classic toothed gear. It opens the place where people change preferences, account options and app behaviour, and it usually sits in a profile menu, a sidebar footer or the top corner of a screen.",
+    "meaning": "Settings symbols borrow from machinery: adjusting a machine meant turning nuts and gears, so a mechanical part came to mean 'change how this works'. This hexagon version has smooth flat sides instead of teeth, which keeps it crisp at tiny sizes and gives it a calm, minimal feel. A traditional settings gear icon carries the same meaning, so choose one shape and use it everywhere rather than mixing both.",
+    "uses": [
+      "Account menus: the Settings entry below the profile name, leading to privacy, notification and password options.",
+      "Desktop sidebars: pinned at the bottom of the navigation in project tools and email clients.",
+      "Widget headers: a small control on a dashboard card that opens options for that one card only.",
+      "Mobile app top bars: the right-hand action on a profile screen, leading to preferences and sign out."
+    ],
+    "tips": [
+      "The flat-sided nut stays sharp at 16 pixels where a toothed gear can blur, so it suits dense toolbars and table rows.",
+      "Label it Settings in menus and sidebars, and only drop the label in top bars where the profile context makes the meaning obvious.",
+      "If the icon opens options for a single item rather than the whole app, say so in the accessible name, for example Chart settings."
+    ],
+    "aria": "Open settings",
+    "pairs": ["user", "notification", "logout"],
+    "faq": [
+      {
+        "q": "Why is the settings icon a gear or a nut?",
+        "a": "Because changing settings is like adjusting a machine. Gears, cogs and nuts are the parts you turn to tune machinery, so they became shorthand for configuration in early operating systems. The hexagon nut keeps that idea with a simpler outline that reads well at small sizes."
+      },
+      {
+        "q": "Settings icon or sliders icon: which should I use?",
+        "a": "Use the settings icon for app-wide preferences and account options. Sliders, horizontal lines with small knobs, suit adjusting a view, such as filters or display options on one screen. Using both lets people tell global settings apart from quick, local controls."
+      }
+    ]
+  },
+  "setting-2": {
+    "intro": "This gear icon is a toothed gear wheel, the most widely recognised symbol for settings and configuration. Use it on buttons that open preferences, admin panels or advanced options. Because the teeth give it such a distinctive outline, it reads clearly even in a crowded toolbar or a busy mobile top bar.",
+    "meaning": "Early desktop operating systems used gears for their control panels, and smartphones cemented the idea by making a gear the face of the Settings app. People also read it as machinery or process, so it suits automation, integrations and system tools. Compared with a cog icon drawn as a flat nut, the toothed wheel looks more mechanical and familiar. Two interlocking gears usually suggest a workflow or integration rather than settings.",
+    "uses": [
+      "Admin consoles: the entry point to organisation settings, roles, billing contacts and security policies.",
+      "Automation tools: marks a workflow step that runs a system action rather than sending a message.",
+      "Video players: opens quality, playback speed and subtitle options from the control bar.",
+      "Developer dashboards: labels configuration pages for environment variables, API keys and build options."
+    ],
+    "tips": [
+      "Gear teeth need room to read, so draw it at 20 pixels or more, or use the simpler hexagon settings shape in very small spots.",
+      "Avoid spinning the gear as a loading animation on a settings screen, because people may read it as a stuck process rather than progress.",
+      "On a video player, open a compact menu next to the gear instead of a full settings page, so viewers do not lose their place."
+    ],
+    "aria": "Open preferences",
+    "pairs": ["setting", "code", "monitor"],
+    "faq": [
+      {
+        "q": "What is the gear icon called?",
+        "a": "It is usually called the gear or settings icon, and some people call it the cog. All three names describe the same toothed wheel. In most apps it opens preferences or configuration, and on phones it is the symbol for the system Settings app."
+      },
+      {
+        "q": "Is a gear icon the same as a settings icon?",
+        "a": "Mostly, yes. The gear is the most common settings symbol, but some interfaces use a hexagon nut or sliders instead. Pick one shape for settings across your product and use it consistently, so people learn where configuration lives."
+      }
+    ]
+  },
+  "menu": {
+    "intro": "The menu icon is three horizontal lines stacked on top of each other, and it opens a hidden list of navigation links. It is the standard way to fold a website's main navigation into a single button on phones, and it often toggles a side drawer in apps and dashboards.",
+    "meaning": "The three lines picture a list of items, which is why the symbol was drawn for the Xerox Star workstation back in 1981. Its nickname, the hamburger menu icon, comes from the stacked bun and patty look. It means 'more navigation is hidden here'. It differs from the three dots of an ellipsis, which hold actions for one item, and from a list view toggle, which usually has bullets beside the lines.",
+    "uses": [
+      "Mobile website headers: collapses the full navigation into a slide-out panel on screens narrower than a tablet.",
+      "Admin dashboards: toggles the left sidebar between expanded labels and a narrow icon-only rail.",
+      "Email clients: opens the folder list with inbox, sent, drafts and labels on small screens.",
+      "Documentation sites: reveals the table of contents for the current guide on phones."
+    ],
+    "tips": [
+      "Hidden navigation gets used less, so on desktop show the links in full and keep the three lines for narrow breakpoints only.",
+      "Add aria-expanded to the button and swap the lines for a close icon while the drawer is open, so the state is clear.",
+      "Placing the word Menu beside the three lines tends to help older and less technical visitors find the navigation faster."
+    ],
+    "aria": "Open menu",
+    "pairs": ["close-circle", "home", "search-normal"],
+    "faq": [
+      {
+        "q": "Why is it called a hamburger menu?",
+        "a": "It is called a hamburger menu because the three stacked lines look like a bun, a patty and another bun. The symbol is older than the nickname: it appeared on the Xerox Star in 1981 to represent a list of options, long before phones popularised it."
+      },
+      {
+        "q": "Hamburger menu or tab bar: which is better for navigation?",
+        "a": "A tab bar is usually better when you have five or fewer main sections, because every option stays visible. A navigation menu icon suits larger site structures or secondary links. Many apps combine both: tabs for core areas and a drawer for everything else."
+      }
+    ]
+  },
+  "more": {
+    "intro": "The ellipsis icon is three horizontal dots, and it opens a short list of extra actions that do not fit on screen. You see it on cards, list rows, chat messages and toolbars, where it hides options such as rename, duplicate, report or delete until someone asks for them.",
+    "meaning": "The dots borrow from punctuation, where an ellipsis signals that something has been left out. In interfaces it means 'there is more here'. Horizontal dots are sometimes nicknamed a meatballs menu, while vertical dots form the kebab menu icon common on Android. Both usually open actions for one specific item, unlike the hamburger, which opens site navigation. Pick one orientation and keep it throughout your product.",
+    "uses": [
+      "File managers: sits at the end of each file row with rename, move, share and delete options.",
+      "Social feeds: the top corner of a post, holding report, hide, mute and copy link actions.",
+      "Kanban boards: opens card actions such as archive, change colour or move to another column.",
+      "Toolbars with overflow: collects lower-priority buttons when the window gets too narrow to show them all."
+    ],
+    "tips": [
+      "Three small dots make a tiny target, so pad the button to at least 40 by 40 pixels even though the glyph itself is short.",
+      "Never hide the single most common action behind the dots; give it its own button and keep the menu for secondary choices.",
+      "In long lists, use an accessible name that says which item the menu belongs to, such as More options for invoice 104."
+    ],
+    "aria": "More options",
+    "pairs": ["edit", "trash", "share"],
+    "faq": [
+      {
+        "q": "What is the three dots icon called?",
+        "a": "It is usually called an ellipsis, more or overflow menu. Horizontal dots are nicknamed a meatballs menu and vertical dots a kebab menu. All of them open a list of extra actions, so the name matters less than placing it consistently."
+      },
+      {
+        "q": "What is the difference between a more icon and a menu icon?",
+        "a": "Three dots open actions for one item, such as editing or deleting a message. A menu icon, three lines, opens navigation for the whole site or app. Keeping to that split helps people predict what each button will show."
+      }
+    ]
+  },
+  "category": {
+    "intro": "This category icon shows four rounded squares arranged in a two by two grid, standing for groups of content laid out side by side. Use it to open a list of product categories, a collection of sections, or an overview screen where everything is sorted into labelled tiles that people can browse.",
+    "meaning": "Four equal tiles suggest content that has been sorted into separate groups, much like the aisles of a shop. That is why it is common for category browsing in ecommerce, and why it doubles as an apps icon on launchers, where each square stands for a program. Beside a list symbol it means a grid layout instead. If your product also has a chart-heavy overview, give that page a chart symbol to keep the meanings apart.",
+    "uses": [
+      "Online shop navigation: a Categories tab that lists departments such as clothing, homeware and electronics.",
+      "App launchers: opens a panel of connected tools in workplace suites and browser extensions.",
+      "Recipe and content apps: a Browse screen with cuisines or topics shown as picture tiles.",
+      "Marketplace filters: a button that opens a category picker before people narrow results by price or brand."
+    ],
+    "tips": [
+      "Use the bold style for the active category tab, and keep all four squares the same size so the grid reads cleanly at small sizes.",
+      "When the four squares open categories, avoid also using them as a layout toggle on the same screen, or people will mix the two up.",
+      "Give a categories button a text label in tab bars, because four squares can also be read as apps, grid view or a dashboard."
+    ],
+    "aria": "Browse categories",
+    "pairs": ["element-3", "filter", "search-normal"],
+    "faq": [
+      {
+        "q": "What does the four squares icon mean?",
+        "a": "It usually means categories, apps or a grid of items. The exact meaning depends on context: in a shop it opens product categories, on a launcher it shows available apps, and beside a list symbol it switches to a tiled view. A label removes any doubt."
+      },
+      {
+        "q": "Can I use the category icon as a dashboard icon?",
+        "a": "Yes, many products use four squares as the sidebar link for a dashboard, because a dashboard is a set of panels. If your dashboard is mostly charts, a chart symbol may describe it better and leave the four squares free for categories."
+      }
+    ]
+  },
+  "element-3": {
+    "intro": "This grid icon is a two by two grid of rounded squares, and its most common job is switching content into a tiled layout. Put it next to a list toggle above photos, files or products, so people can choose between big thumbnails and a compact list depending on what they are scanning for.",
+    "meaning": "A grid of equal cells has meant 'show items as tiles' since early file browsers offered icon views of folders. People read it as visual, image-first browsing, while stacked lines mean detailed rows. In a sidebar it also works as a dashboard icon, standing for a page built from panels. It looks close to a category symbol, so decide which job it does in your product and keep that meaning fixed.",
+    "uses": [
+      "Photo libraries: switches between a dense thumbnail grid and a list sorted by date or file size.",
+      "Cloud storage: a view toggle above folders, often remembered separately for each folder.",
+      "Product listing pages: lets shoppers see two items per row on mobile instead of one long column.",
+      "Project dashboards: the Overview item at the top of a sidebar, opening a page of summary widgets."
+    ],
+    "tips": [
+      "In a grid and list toggle, show the active view with the bold style and a filled background, not with colour alone.",
+      "Remember the chosen layout between visits, because people who switch to the grid view icon usually want the same view next time.",
+      "Use a segmented control with both options visible rather than one button that flips, so the current state is always obvious."
+    ],
+    "aria": "Show as grid",
+    "pairs": ["category", "filter", "gallery"],
+    "faq": [
+      {
+        "q": "What does the grid icon mean?",
+        "a": "The grid icon means 'show these items as tiles'. Clicking it changes a list of files, photos or products into a layout of thumbnails. In some sidebars the same four squares icon opens a dashboard or an app overview instead, so context matters."
+      },
+      {
+        "q": "Grid icon or category icon: what is the difference?",
+        "a": "They can look identical, so the difference is the job. A grid icon changes how items are displayed, while a category icon leads to groups of content. If you need both, give them clear labels or different glyphs so people do not confuse them."
+      }
+    ]
+  },
+  "filter": {
+    "intro": "The filter icon is a funnel, and it lets people narrow a long set of results down to only what matches their criteria. It opens a filter panel or menu above product grids, tables, search results and inboxes, where options like price, date, status or category can be switched on.",
+    "meaning": "A funnel lets only certain things pass through, which maps neatly onto filtering data. Spreadsheets made it familiar with filter buttons on column headers. It is often confused with sorting controls, usually drawn as up and down arrows or stacked bars of different lengths: sorting reorders everything, while filtering hides what does not match. If a screen does both, give each its own control.",
+    "uses": [
+      "Ecommerce search results: opens a side panel or bottom sheet with size, colour, price and brand options.",
+      "Spreadsheet and table headers: a small funnel on each column to show only the matching rows.",
+      "Email inboxes: narrows messages to unread, starred or with attachments in a single tap.",
+      "Analytics reports: limits charts to a date range, country or traffic source before exporting them."
+    ],
+    "tips": [
+      "Show how many filters are active with a small count badge on the funnel, and switch it to the bold style while any apply.",
+      "Offer a Clear all link inside the filter panel, so people can reset in one step instead of unticking options one by one.",
+      "On mobile, open filters in a bottom sheet and apply them with a button, rather than reloading results after every single tap."
+    ],
+    "aria": "Filter results",
+    "pairs": ["search-normal", "category", "close-circle"],
+    "faq": [
+      {
+        "q": "What does the funnel icon mean?",
+        "a": "The funnel icon means filter. It opens controls that hide anything not matching what you choose, such as a price range or a date. The original items still exist; the filter only changes what is shown until you clear it."
+      },
+      {
+        "q": "Filter icon or sort icon: which should I use?",
+        "a": "Use the filter icon when people need to remove items from view, and sorting controls when they need to change the order. They solve different problems, so most product lists and tables show both side by side, each with its own label."
+      }
+    ]
+  },
+  "add": {
+    "intro": "The plus icon is a plain plus sign, two short strokes crossing at the centre, and it means create or add something new. It labels buttons that start a new document, add an item to a list, open a blank form, or increase a quantity by one in a counter.",
+    "meaning": "The plus sign comes straight from arithmetic, where it means adding one thing to another, so people read it as 'make more' or 'add another'. It is one of the few symbols that works without a label almost everywhere. A plain plus sign icon looks lighter than a plus in a circle, which reads as a stronger, button-like call to action. Rotated 45 degrees, the same cross becomes a close mark.",
+    "uses": [
+      "Quantity steppers: the right half of a minus and plus counter on cart items and booking forms.",
+      "Floating action buttons: the main create button on mobile, starting a new note, post or task.",
+      "Accordion and FAQ lists: shows that a section can be expanded, turning into a minus once open.",
+      "Tab strips: the button at the end of a row of browser or editor tabs that opens a new one."
+    ],
+    "tips": [
+      "If several plus buttons share one screen, add a word to each, such as New project or Add member, so every action is clear.",
+      "Turn a plus into a close cross by rotating it 45 degrees when it opens a menu, and keep the rotation short, around 200 milliseconds.",
+      "Draw it with the same stroke weight as the minus in quantity steppers, so the pair looks balanced at a glance."
+    ],
+    "aria": "Add item",
+    "pairs": ["minus", "add-circle", "edit"],
+    "faq": [
+      {
+        "q": "What does the plus icon mean?",
+        "a": "The plus icon means add or create. Clicking it usually makes something new, such as a file, a contact or a row, or increases a value by one. In expandable lists it can also mean 'show more', turning into a minus when the section opens."
+      },
+      {
+        "q": "Plain plus or an add icon with a circle: which is better?",
+        "a": "Use the plain plus for inline actions, steppers and tab strips where a light mark fits. Use the circled version when the action needs to stand out as a button on its own, such as the main create action on a mobile screen."
+      }
+    ]
+  },
+  "add-circle": {
+    "intro": "This add icon draws a plus sign inside a circle, which makes it look like a ready-made button. It marks the action of adding something new, such as a contact, an attachment, a card or a line item, and it stands out more clearly against busy content than a bare plus sign does.",
+    "meaning": "The circle frames the plus and turns a maths symbol into a pressable object, so people read it as an invitation: 'tap here to add'. That is why the plus circle icon is popular for primary create actions and empty states. Compare it with the circled X, which removes things, and the circled tick, which confirms. Keep the inner plus the same weight as the ring so it never reads as a medical cross.",
+    "uses": [
+      "Empty states: a large circled plus in the middle of an empty list, inviting people to create their first item.",
+      "Form builders: appears between fields so editors can insert a new question at that exact position.",
+      "Contact and team pickers: an add button icon at the end of a row of avatars to invite another person.",
+      "Story and status rows: the first bubble in a row of circular avatars, used to post your own update."
+    ],
+    "tips": [
+      "Because the ring already makes a shape, do not place this icon inside another coloured circle background, or the outline will look doubled.",
+      "Use the bold style for the main create action on a screen and linear for secondary add points such as inline insert buttons.",
+      "In editors with many insert points, show the circled plus only on hover or focus, so the page does not fill up with buttons."
+    ],
+    "aria": "Add new",
+    "pairs": ["add", "close-circle", "user-add"],
+    "faq": [
+      {
+        "q": "What does a plus in a circle mean?",
+        "a": "A plus in a circle means add or create, presented as a button. It is used when the action should be easy to spot, like creating the first item in an empty list or adding a person to a group. The circle makes it feel tappable."
+      },
+      {
+        "q": "When should I use a circled plus instead of a plain plus icon?",
+        "a": "Use the circled version when the add action stands on its own or needs visual weight, such as in empty states or story rows. Use a plain plus inside existing buttons, menus and steppers, where a second outline would only add clutter."
+      }
+    ]
+  },
+  "minus": {
+    "intro": "The minus icon is a single horizontal line, and it means take away, reduce or collapse. It sits on the left of quantity steppers, removes a row from a list, zooms out on a map, and closes an expanded accordion section that a plus sign opened a moment before.",
+    "meaning": "The line comes from the subtraction sign, so people read it as 'one less'. It is gentler than a bin or a cross: a remove icon drawn as a minus suggests taking something out of a selection, not destroying it for good. On some window controls it also stands for minimise. Because the shape is so plain, it relies heavily on placement, usually directly beside a matching plus.",
+    "uses": [
+      "Shopping carts: lowers an item's quantity by one, often becoming a bin icon when the count reaches one.",
+      "Map controls: the zoom out button directly below zoom in, at the corner of a map view.",
+      "Accordion lists: shows that an expanded section can be collapsed again with one click.",
+      "Form repeaters: removes an extra phone number, guest or address line that someone added by mistake."
+    ],
+    "tips": [
+      "Disable the minus at the lowest allowed value instead of hiding it, so the stepper does not jump in width.",
+      "A thin horizontal line is easy to miss, so make its hit area square and at least as large as the matching plus button.",
+      "Give the button a specific accessible name such as Decrease quantity, because a lone dash tells screen reader users nothing."
+    ],
+    "aria": "Decrease quantity",
+    "pairs": ["add", "trash", "shopping-cart"],
+    "faq": [
+      {
+        "q": "What does the minus icon mean?",
+        "a": "The minus icon means remove, reduce or collapse. In a counter it lowers the number by one, on a map it zooms out, and in an expandable list it closes the open section. It suggests a small, reversible change rather than deleting something."
+      },
+      {
+        "q": "Should a minus icon or a bin icon remove an item?",
+        "a": "Use a minus when the action reduces a quantity or takes an item out of a selection, and a bin when it deletes something. Many carts switch from minus to bin at a quantity of one, which makes the consequence of the next tap clear."
+      }
+    ]
+  },
+  "close-circle": {
+    "intro": "This close icon draws an X inside a circle, and it dismisses, clears or cancels something. You will see it at the end of search fields to wipe the text, on chips and tags to remove them, on notifications and banners, and as a clear failure marker in status lists.",
+    "meaning": "The X comes from crossing something out, so people read it as 'get rid of this' or 'no'. The circle makes it a self-contained button, ideal for small spots such as clearing a field. As a status marker, the circled X means failed or invalid, the opposite of a circled tick. A plain X without a ring is the more usual choice for closing windows and dialogs.",
+    "uses": [
+      "Search fields: appears on the right once text is typed, clearing the query in one tap.",
+      "Filter chips: removes a single applied filter such as Size M or Under 50 from a results page.",
+      "Upload lists: cancels a file that is still uploading or removes one that has failed.",
+      "Validation messages: marks a failed check, such as a password rule that has not been met yet."
+    ],
+    "tips": [
+      "As a status marker, pair the circled X with text such as Payment failed, because red alone does not help colour-blind users.",
+      "Show the clear button in a search field only once there is text, so the empty field stays calm and uncluttered.",
+      "When the X closes a dialog, return focus to the button that opened it, so keyboard users do not lose their place."
+    ],
+    "aria": "Close panel",
+    "pairs": ["tick-circle", "search-normal", "trash"],
+    "faq": [
+      {
+        "q": "What does the X icon in a circle mean?",
+        "a": "It means close, clear or cancel. On a banner it dismisses it, inside a field it clears the text, and on a tag it removes that tag. In a status list a circled X shows that something failed or is not allowed."
+      },
+      {
+        "q": "Close icon or Cancel button: which should a dialog use?",
+        "a": "Most dialogs need both. The close icon in the corner is a quick way out, and a Cancel button beside the main action makes the choice explicit. Both should do the same thing: close the dialog without saving or changing anything."
+      }
+    ]
+  },
+  "tick-circle": {
+    "intro": "This check mark icon draws a tick inside a circle, and it confirms that something is done, correct or successful. Use it on completed steps, verified details, successful payments and finished uploads, or as the symbol in a toast that tells people their changes have been saved.",
+    "meaning": "The tick has marked correct answers on paper for centuries, so it reads as 'yes' or 'done' with almost no explanation. Wrapping it in a circle turns it into a status badge, which is why it is the standard success icon in alerts and progress trackers. One cultural catch: in Swedish schools a tick has traditionally marked a wrong answer, so pair it with words for international audiences.",
+    "uses": [
+      "Checkout confirmation screens: a large circled tick above the order number once payment goes through.",
+      "Onboarding checklists: replaces an empty circle when a setup step, such as verifying an email address, is complete.",
+      "Password rules: turns each requirement green with a tick as the new password meets it.",
+      "Delivery tracking: marks completed stages such as Ordered, Packed and Shipped on a timeline."
+    ],
+    "tips": [
+      "Use a green fill or stroke for success, but always add text such as Saved, since colour alone fails for colour-blind users.",
+      "Keep the circled tick for showing status; for an option people can select, use a real checkbox with a square outline.",
+      "A short scale-in when the tick appears, around 150 milliseconds, makes success feel finished without slowing anyone down."
+    ],
+    "aria": "Mark as done",
+    "pairs": ["close-circle", "notification", "clipboard-text"],
+    "faq": [
+      {
+        "q": "What does a check mark in a circle mean?",
+        "a": "A check mark in a circle means success or completion. It shows that a task is finished, a payment went through or a field is valid. It is a status rather than a control, so people expect to read it, not click it."
+      },
+      {
+        "q": "Is a checkmark icon the same as a tick icon?",
+        "a": "Yes, they are the same symbol. Checkmark is the usual American word and tick the British one. In interfaces both describe the angled mark that confirms something, and the circled version is the common choice for success messages and completed steps."
+      }
+    ]
+  },
+  "arrow-left": {
+    "intro": "This left arrow icon is a chevron pointing left, and it usually means go back or show the previous item. It is the classic back button in the top left corner of mobile screens, and it moves carousels, calendars and paginated lists one step backwards.",
+    "meaning": "In left-to-right languages, left is where you came from, so a left-pointing chevron reads as 'back' or 'previous'. A chevron left icon looks lighter than a full arrow with a shaft, which suits navigation people use constantly. Note the difference between back, which returns to the previous screen in history, and previous, which moves to the item before in a sequence. In right-to-left languages the direction flips.",
+    "uses": [
+      "Mobile app headers: the back button at the top left of every screen below the first level.",
+      "Image carousels: a control on the left edge that slides back to the previous photo.",
+      "Date pickers: steps the calendar back one month, next to the month and year title.",
+      "Multi-step forms: returns to the previous step without losing what someone already filled in."
+    ],
+    "tips": [
+      "Mirror the chevron in right-to-left layouts such as Arabic and Hebrew, where going back points to the right instead.",
+      "In headers, extend the tap area beyond the chevron to include the parent screen's title, so the back target is easy to hit.",
+      "Name the destination for screen readers, for example Back to orders, rather than just Back or Left arrow."
+    ],
+    "aria": "Go back",
+    "pairs": ["arrow-right", "home", "close-circle"],
+    "faq": [
+      {
+        "q": "What does the back arrow icon mean?",
+        "a": "It means return to where you were before. In an app it closes the current screen and shows the previous one, and in a slider it moves to the earlier item. It should never throw away someone's work without warning."
+      },
+      {
+        "q": "Should a back icon be a chevron or a full arrow?",
+        "a": "Both are understood. Chevrons are common on iOS and in compact navigation, while Android has traditionally used an arrow with a shaft. Pick one style for your product and keep it consistent, so people always find the back button in the same corner."
+      }
+    ]
+  },
+  "arrow-right": {
+    "intro": "This right arrow icon is a chevron pointing right, and it signals that tapping leads forward: to the next item, a deeper screen or more detail. It is the small marker at the end of list rows in settings screens, and the next control on carousels, galleries and paged content.",
+    "meaning": "Reading direction gives the right-pointing chevron its meaning: in left-to-right languages, right is where you are going next. At the end of a row it promises 'this opens another screen', which is why settings lists use it so heavily. Compare it with an external link symbol, which leaves the product, and with a circled next arrow, which acts as a stronger button. In right-to-left languages it means back.",
+    "uses": [
+      "Settings lists: a chevron right icon at the end of each row that opens a sub-page.",
+      "Image galleries: the right-hand control that advances to the next photo or slide.",
+      "Breadcrumbs: small separators between levels of a path such as Shop, Shoes and Running.",
+      "Text links: placed after a call to action like See all reviews to hint at movement."
+    ],
+    "tips": [
+      "Use a muted colour for row chevrons so they read as a hint, and keep the whole row clickable rather than just the arrow.",
+      "Do not put a chevron on rows that toggle or expand in place; reserve it for rows that open another screen.",
+      "In breadcrumbs, hide the separator chevrons from screen readers, since the list structure already conveys the hierarchy."
+    ],
+    "aria": "Next item",
+    "pairs": ["arrow-left", "arrow-circle-right", "link"],
+    "faq": [
+      {
+        "q": "What does a right arrow icon mean in a list?",
+        "a": "It means the row opens another screen with more detail. Settings apps, menus and contact lists use the small right chevron to show that tapping goes deeper, as opposed to a toggle or checkbox that changes something on the spot."
+      },
+      {
+        "q": "Is a forward icon the same as a next icon?",
+        "a": "They are close but not identical. Forward often refers to browser history, returning to a page you visited and then left, while next moves to the following item in a sequence. Both usually point right, so labels help when both appear."
+      }
+    ]
+  },
+  "arrow-up": {
+    "intro": "This up arrow icon is a chevron pointing up, and it is used to collapse an open section, scroll back to the top, or sort in ascending order. Paired with its downward twin, it shows people whether a panel, dropdown or accordion is currently open or closed.",
+    "meaning": "Up is read as 'less', 'back to the top' or 'fold this away'. On an expanded accordion, the upward chevron says the content can be closed, so it works as a collapse icon. On a long page, a floating up chevron jumps back to the header, and in tables it marks ascending order. Note that an arrow rising out of a tray means upload or export, not scrolling.",
+    "uses": [
+      "Accordion headers: replaces the down chevron once a section opens, showing that it can be collapsed.",
+      "Long articles: a floating back to top button that appears after people scroll a few screens.",
+      "Table headers: shows ascending sort on the active column, from A to Z or lowest to highest.",
+      "Number inputs: the upper half of a spin control that raises a value step by step."
+    ],
+    "tips": [
+      "Rotate a single chevron 180 degrees when toggling open and closed rather than swapping images, so the change can animate smoothly.",
+      "Only show a back to top button after the reader has scrolled well down the page, and keep it clear of chat widgets.",
+      "For accordions, set aria-expanded on the header button; the chevron itself is decoration and can be hidden from screen readers."
+    ],
+    "aria": "Back to top",
+    "pairs": ["arrow-down", "filter", "document-text"],
+    "faq": [
+      {
+        "q": "What does the up arrow icon mean?",
+        "a": "The up arrow icon usually means collapse, scroll to the top or increase. Its exact job depends on where it sits: on an open panel it folds it away, on a long page it jumps up to the header, and in a table it means ascending order."
+      },
+      {
+        "q": "Which way should a chevron point when a section is open?",
+        "a": "Most interfaces point the chevron up when a section is open and down when it is closed, so the arrow shows what will happen next. Some use right for closed and down for open. Either works if you apply it everywhere."
+      }
+    ]
+  },
+  "arrow-down": {
+    "intro": "This down arrow icon is a chevron pointing down, and it tells people that something will open below when they click. It is the familiar marker on select fields and dropdown buttons, the toggle on closed accordion sections, and a scroll hint at the bottom of a hero section.",
+    "meaning": "A downward chevron says 'there is more underneath'. On form fields, the dropdown arrow icon became standard through operating system select menus, so people instantly expect a list of options. It can also mean expand, descending order or scroll down. Do not confuse it with a download symbol: an arrow pointing into a tray or onto a line saves a file, while the bare chevron only reveals content.",
+    "uses": [
+      "Select fields: sits at the right edge of a country, size or language picker.",
+      "Split buttons: the narrow right part of a button like Save that reveals Save as and Export.",
+      "FAQ accordions: marks each closed question, rotating to point up when the answer is shown.",
+      "Landing page heroes: a small chevron near the bottom of the screen that invites visitors to scroll."
+    ],
+    "tips": [
+      "Keep the dropdown chevron inside the field, about 12 pixels from the right edge, so it reads as part of the control.",
+      "In split buttons, separate the chevron with a thin divider and give it its own accessible name, such as More save options.",
+      "A scroll hint chevron should move gently and stop after a few loops, since constant motion distracts people reading the page."
+    ],
+    "aria": "Show more options",
+    "pairs": ["arrow-up", "filter", "menu"],
+    "faq": [
+      {
+        "q": "What does the down arrow icon mean on a button?",
+        "a": "It means the button opens a menu or list below it. On a select field it shows the options to choose from, and on a split button it reveals related actions. It does not download anything, because a download symbol has a tray or line under the arrow."
+      },
+      {
+        "q": "Chevron down icon or caret: which should a dropdown use?",
+        "a": "Either works. A chevron is drawn as an open angle and a caret as a small filled triangle. Chevrons match outline icon styles and modern forms better, while carets suit dense desktop tools. Use one shape across all your dropdowns."
+      }
+    ]
+  },
+  "arrow-circle-right": {
+    "intro": "This next icon is a chevron pointing right inside a circle, a self-contained button that moves people forward. It works well for continue steps in onboarding, slide controls laid over images, and compact submit buttons where a full text label will not fit, such as the end of a code entry field.",
+    "meaning": "The circle frames the chevron and turns a hint into a clear call to action, so people read it as 'go on' rather than 'this row opens'. That is why the arrow circle icon is popular in onboarding flows and over photos, where a bare chevron could get lost against the image. Compared with a plain right chevron it carries more weight; compared with a paper plane, it moves on rather than sends.",
+    "uses": [
+      "Onboarding screens: the button in the bottom corner that moves to the next intro slide.",
+      "Image sliders: next controls laid over the photo, where the circle keeps them visible on any background.",
+      "Newsletter sign-up fields: a compact submit button at the end of an email input in website footers.",
+      "Course and lesson players: moves on to the next lesson once the current one is finished."
+    ],
+    "tips": [
+      "Over photos, give the circle a solid or blurred background so the chevron stays readable on both light and dark images.",
+      "On the last onboarding slide, change the circled arrow to a text button such as Get started, so people know the flow is ending.",
+      "Nudge the chevron slightly right inside the circle, because a mathematically centred chevron looks as if it sits too far left."
+    ],
+    "aria": "Next slide",
+    "pairs": ["arrow-right", "arrow-left", "play"],
+    "faq": [
+      {
+        "q": "What does a next arrow icon in a circle mean?",
+        "a": "It means continue or go to the next item. It is a button rather than a hint, so people expect it to move them on through a slideshow, a setup flow or a lesson sequence when they tap it."
+      },
+      {
+        "q": "Is this a forward icon or a submit icon?",
+        "a": "It can be both. In a slideshow or onboarding flow it acts as a forward button, moving to the next step. At the end of a short field, such as an email sign-up, it submits the form. Say which in the accessible name so the job is clear."
+      }
+    ]
+  },
+  "refresh": {
+    "intro": "The refresh icon is a circular arrow, drawn here with half its loop dashed, and it reloads the current content to show the latest data. Put it on feeds, dashboards, tables and error states where people want to fetch fresh results without leaving the page or restarting the app.",
+    "meaning": "A circular arrow suggests going round once more, so people read it as 'load this again'. Browsers made the reload icon a fixture next to the address bar, and the dashed half here hints at something in progress. It differs from a repeat symbol, which loops media or actions until switched off, and from a sync symbol, usually two arrows chasing each other, which means matching data between devices.",
+    "uses": [
+      "Analytics dashboards: refetches figures on demand, often beside a note such as Updated 5 minutes ago.",
+      "Error states: a Try again button with a circular arrow when content fails to load.",
+      "Admin tables: reloads order or ticket lists without losing the current filters or scroll position.",
+      "Weather and exchange rate widgets: updates a single card's data without reloading the rest of the page."
+    ],
+    "tips": [
+      "Spin the arrow while loading and stop when data arrives, then show a timestamp so people know the refresh actually worked.",
+      "Disable the button briefly during a refresh to stop repeated clicks from firing several identical requests at once.",
+      "On mobile lists, support pull to refresh as well, but keep a visible button for people who never discover the gesture."
+    ],
+    "aria": "Refresh page",
+    "pairs": ["repeat", "close-circle", "clock"],
+    "faq": [
+      {
+        "q": "What does the refresh icon mean?",
+        "a": "The refresh icon means reload the content you are looking at so it shows the latest version. It fetches new data from the server without changing what you were doing, such as your filters, your position in a list or your current page."
+      },
+      {
+        "q": "Refresh icon or sync icon: which should I use?",
+        "a": "Use the refresh icon when one screen should load fresh data. Use a sync symbol when information is being matched across devices or services, such as cloud files or calendars. Sync describes an ongoing connection, while refresh is a single request."
+      }
+    ]
+  },
+  "repeat": {
+    "intro": "The repeat icon is two arrows that chase each other round a rectangular loop, and it switches on repeat playback. Music and podcast players use it to replay a track or a whole playlist, and it also appears in task and calendar tools to make an event or action recur.",
+    "meaning": "Two arrows travelling in a closed loop picture something that keeps going round, so the loop icon means 'do this again and again'. Software media players made it familiar, often adding a small 1 to mean repeat one track. Unlike a refresh symbol, which reloads once, repeat keeps happening until switched off. A replay icon, usually a single curved arrow, plays something again just once.",
+    "uses": [
+      "Music players: cycles through repeat off, repeat all and repeat one beside the shuffle button.",
+      "Calendar events: marks meetings that recur weekly or monthly in agenda and month views.",
+      "Recurring payments: labels subscriptions and standing orders in banking and budgeting apps.",
+      "Task managers: shows that a chore or reminder comes back again after it is ticked off."
+    ],
+    "tips": [
+      "Show the on state clearly with the bold style or an accent colour, and add a small 1 badge for repeat one.",
+      "Cycle through modes in a fixed order on each tap, and announce the new mode, for example Repeat all on, to screen readers.",
+      "In calendars, keep the loop small beside the event title so it signals recurrence without competing with the time."
+    ],
+    "aria": "Toggle repeat",
+    "pairs": ["play", "pause", "music"],
+    "faq": [
+      {
+        "q": "What does the repeat icon mean?",
+        "a": "The repeat icon means play or run something again on a loop. In a music player it repeats the current playlist, or one track if a small 1 appears. In calendars and task apps it marks items that recur on a schedule."
+      },
+      {
+        "q": "Is the repeat icon the same as the sync icon?",
+        "a": "No, although the arrows look similar. A repeat icon is a loop for playback or recurring events. A sync symbol, usually two curved arrows in a circle, means data is being matched between devices. Keep each to its own job so people are not confused."
+      }
+    ]
+  },
+  "export": {
+    "intro": "The export icon shows an arrow pointing up and out of a tray, and it sends data out of the current app into a file or another place. Use it for buttons such as Export to CSV or Save as PDF, and for sending files from a device up to a server.",
+    "meaning": "The tray stands for the app or device, and the arrow leaving it shows content going out. That is why the same glyph doubles as an upload icon: in both cases something moves from here to somewhere else. On some phones a very similar box with an arrow means share, so people sometimes call it a share out icon. Its partner, an arrow going down into a tray, means import or download.",
+    "uses": [
+      "Analytics reports: exports the current table or chart to CSV, Excel or PDF for offline sharing.",
+      "Upload forms: labels the area where people pick a photo, CV or document to send to the server.",
+      "Design and video tools: opens export settings for file type, size and quality before rendering.",
+      "Contact and calendar apps: saves the whole list as a vCard or calendar file for another service."
+    ],
+    "tips": [
+      "Put the output format in the label, such as Export CSV, because people want to know what kind of file they will get.",
+      "For long exports, show progress or email a link when it is ready, rather than freezing the button with no feedback.",
+      "Use this tray arrow for uploads and exports and the paper plane for sending messages, so the two actions never look alike."
+    ],
+    "aria": "Export data",
+    "pairs": ["import", "document", "share"],
+    "faq": [
+      {
+        "q": "What does the export icon mean?",
+        "a": "The export icon means move content out of the app, usually into a file such as a CSV, PDF or image. The arrow leaving the tray shows data going outward. The same symbol is often used for uploading a file from your device to a website."
+      },
+      {
+        "q": "What is the difference between export and share icons?",
+        "a": "Export creates a file or copy that leaves the app, while share sends a link or item to a person or another app. Some platforms draw share as a box with an arrow, so a three-circle share symbol avoids confusion with export on those systems."
+      }
+    ]
+  },
+  "import": {
+    "intro": "The import icon is an arrow pointing down into a tray, and it brings data or files into the current app from somewhere else. Use it for importing contacts from a spreadsheet, loading a saved project or settings file, or downloading a file onto the device.",
+    "meaning": "The tray stands for your app or device, and the arrow coming into it shows content arriving. That is why the same shape reads as download on websites: in both cases something lands here from elsewhere. Pair it with the export arrow going up and out. Avoid using a bare down chevron for this job, since a chevron only opens menus and never brings in files.",
+    "uses": [
+      "CRM tools: an import file icon on the contacts page that accepts CSV or Excel files with column mapping.",
+      "Password and bookmark managers: brings in saved data exported from another browser or app.",
+      "Website resource pages: the download button for brochures, templates or app installers.",
+      "Note-taking apps: imports documents from cloud storage or older formats into the workspace."
+    ],
+    "tips": [
+      "Say which formats are accepted right beside the button, for example CSV or XLSX up to 10 MB, before anyone picks a file.",
+      "Preview imported rows before saving them, so people can fix column mapping errors before they affect thousands of records.",
+      "When the icon means download, add the file type and size to the label, such as PDF, 2 MB, so people know what to expect."
+    ],
+    "aria": "Import file",
+    "pairs": ["export", "document", "folder"],
+    "faq": [
+      {
+        "q": "What does the import icon mean?",
+        "a": "The import icon means bring something into the app from outside, such as a contact list, a backup or a file from cloud storage. The arrow going down into the tray shows data arriving, and the import usually ends with a step to check or map the new content."
+      },
+      {
+        "q": "Import icon or download icon: are they different?",
+        "a": "They often share the same glyph. Import loads data into the app you are using, while download saves a file onto your device. Use the same arrow and tray for both, and let the label, such as Import contacts or Download PDF, say which happens."
+      }
+    ]
+  },
+  "login": {
+    "intro": "The login icon shows an arrow entering a door bracket, picturing someone stepping inside. It labels the button or menu entry that opens a sign-in form, and it usually sits in the top right of a website header or on the welcome screen of an app.",
+    "meaning": "The bracket stands for a doorway and the arrow for a person walking in, which reads naturally as 'enter your account'. The sign in icon is the exact mirror of the logout symbol, where the arrow leaves the door, so direction carries all the meaning. People sometimes confuse it with an enter icon, the bent arrow printed on the keyboard Return key, which submits text rather than opening an account.",
+    "uses": [
+      "Website headers: a Sign in link with the door arrow, placed beside a more prominent Create account button.",
+      "Kiosks and shared tablets: the start screen action that asks staff to identify themselves before working.",
+      "Checkout pages: offers returning customers a quick way to sign in before entering delivery details.",
+      "Single sign-on pages: appears on the main button that continues to the company's identity provider."
+    ],
+    "tips": [
+      "Always pair it with the words Sign in or Log in, because the door arrow alone is less recognised than a person silhouette.",
+      "Make sure the arrow points into the bracket for login and out of it for logout, and never swap them for visual balance.",
+      "Pick either Sign in or Log in and use the same verb in the button label, the form title and the confirmation message."
+    ],
+    "aria": "Sign in",
+    "pairs": ["logout", "user", "lock"],
+    "faq": [
+      {
+        "q": "What does the login icon look like?",
+        "a": "The login icon looks like an arrow going into a door or bracket, showing someone entering. Some products use a key or a person silhouette instead, but the door arrow is the clearest choice because it pairs directly with the logout icon, where the arrow leaves."
+      },
+      {
+        "q": "Sign in or log in: which label goes with the icon?",
+        "a": "Both are correct and widely understood. Sign in is common on large consumer platforms, while log in is popular in tools and dashboards. What matters is using one consistently, and keeping sign up or register clearly different so people do not mix them up."
+      }
+    ]
+  },
+  "logout": {
+    "intro": "The logout icon shows an arrow leaving a door bracket, picturing someone stepping out. It ends the current session and signs the person out of their account, and it normally lives at the bottom of a profile menu or settings screen rather than in the main navigation.",
+    "meaning": "The bracket is a doorway and the arrow heads out of it, so people read it as 'leave this account'. It mirrors the sign in symbol, which is why the arrow's direction must stay clear. As an exit icon it can also mean leaving a shared space, such as a group call or a workspace. It differs from a power button, which shuts down a device rather than ending a session.",
+    "uses": [
+      "Profile dropdowns: the last item in the menu under the avatar, separated from other options by a divider.",
+      "Banking apps: a visible Sign out button in the header for people using shared or public devices.",
+      "Admin sidebars: pinned at the very bottom of the sidebar, below settings and help.",
+      "Group chats and workspaces: a Leave group action that removes you from a channel or team."
+    ],
+    "tips": [
+      "Keep sign out away from frequently used buttons, so nobody ends their session by accident while reaching for settings.",
+      "Label it Sign out or Log out in text, because the outward arrow alone is easy to confuse with export or share.",
+      "After signing out, show a short confirmation and a link to sign in again, rather than dropping people onto an unrelated page."
+    ],
+    "aria": "Sign out",
+    "pairs": ["login", "setting", "user"],
+    "faq": [
+      {
+        "q": "What does the logout icon mean?",
+        "a": "The logout icon means end your session and leave your account on this device. The arrow moving out of the door bracket shows you stepping out. You will need to sign in again to see your private data, which is why banks and work tools make it easy to find."
+      },
+      {
+        "q": "Where should the log out icon go?",
+        "a": "Put it at the end of the profile or account menu, or at the bottom of a sidebar. That keeps it easy to find when someone needs it, yet far enough from everyday actions that people do not tap it by mistake."
+      }
+    ]
+  },
+  "send": {
+    "intro": "The send icon is a paper plane pointing right, and it sends a message, comment or form to someone else. It sits at the right end of chat boxes and comment fields, and on compose screens in email apps, where it turns a draft into something delivered.",
+    "meaning": "The paper plane suggests a note folded and thrown across a room, so people read it as 'send this to someone'. Messaging apps made the paper plane the default for sending. It differs from a generic submit icon, such as a tick or a plain arrow, which saves data without a recipient. Avoid using it for sharing links; the share symbol handles passing things on to other apps.",
+    "uses": [
+      "Chat composers: the button at the right of the message box that stays greyed out until text is typed.",
+      "Comment fields: posts a reply under an article, video or task without a separate submit button.",
+      "Email compose screens: the main action in the top bar, often next to the attachment button.",
+      "Invitation forms: sends an invite to a teammate once their email address has been entered."
+    ],
+    "tips": [
+      "Dim the send button while the field is empty, then switch it to the accent colour as soon as any text appears.",
+      "Point the plane in the reading direction and mirror it in right-to-left languages, so it always flies towards the recipient.",
+      "Show a brief sending state on the message itself rather than on the button, so people can carry on typing the next one."
+    ],
+    "aria": "Send message",
+    "pairs": ["message", "emoji-happy", "microphone"],
+    "faq": [
+      {
+        "q": "What does the paper plane icon mean?",
+        "a": "The paper plane means send. Tapping it delivers your message, comment or email to the recipient. It is used across chat, email and social apps, and it usually appears at the right edge of the text field once you have typed something."
+      },
+      {
+        "q": "Send icon or a submit button: which should a form use?",
+        "a": "Use the send icon when the form goes to a person, such as a chat message or an email. Use a text button for forms that save data, like sign-ups or checkout steps, where a paper plane would feel out of place and confusing."
+      }
+    ]
+  },
+  "share": {
+    "intro": "The share icon shows three circles joined by two lines, like points in a small network, and it opens ways to pass content on. Tapping it typically brings up a share sheet with messaging apps, email, social networks and a copy link option for the current page, photo or file.",
+    "meaning": "The connected nodes suggest one thing spreading out to several people, which maps neatly onto sharing. Android made this three-node shape familiar, while Apple uses a box with an upward arrow. People read it as 'send this outward to others'. It differs from a send symbol, which delivers to a chosen person inside one app, and from a link symbol, which only copies an address.",
+    "uses": [
+      "Article pages: a share button icon near the headline that opens social and messaging options.",
+      "Photo viewers: sends the current picture to another app or adds it to a shared album.",
+      "Document editors: invites collaborators by email and sets view or edit permissions.",
+      "Product pages: lets shoppers pass an item to a friend or partner before they buy."
+    ],
+    "tips": [
+      "On mobile, open the system share sheet when it is available instead of drawing your own list of social networks.",
+      "Where no share sheet is available, fall back to a copy link button with a short Copied confirmation.",
+      "In document tools, label the button Share and show who already has access, because sharing there changes permissions."
+    ],
+    "aria": "Share this",
+    "pairs": ["link", "send", "copy"],
+    "faq": [
+      {
+        "q": "What does the share icon mean?",
+        "a": "The share icon means pass this content on. It opens a list of ways to send the current page, file or photo to other people or apps, such as messages, email, social networks or copy link. Nothing is sent until you pick a destination."
+      },
+      {
+        "q": "Which share icon should I use on iPhone and Android?",
+        "a": "Many products follow each platform: a box with an upward arrow on iOS and three connected circles on Android. For a single design across platforms and the web, the three-circle version is widely recognised and avoids clashing with export."
+      }
+    ]
+  },
+  "link": {
+    "intro": "The link icon shows two chain links hooked together, and it stands for a web address or a connection between two things. Use it for copy link buttons, for inserting a hyperlink in a text editor, and for showing that an account or item is connected to another one.",
+    "meaning": "Two joined links picture a connection, so people read the chain icon as 'this points somewhere else'. Text editors made it the standard insert hyperlink button, and a broken chain usually means unlink. It differs from a share symbol, which offers many destinations, and from an external link arrow leaving a box, which opens a page outside the current site.",
+    "uses": [
+      "Rich text editors: the toolbar button that turns selected text into a clickable hyperlink.",
+      "File sharing dialogs: a Copy link button that puts a shareable address on the clipboard.",
+      "Profile pages: marks a personal website next to social and contact details.",
+      "Integration settings: shows that a calendar, bank or storage account is connected to the app."
+    ],
+    "tips": [
+      "After copying, swap the chain for a tick for a moment and show Link copied, since clipboard actions give no feedback on their own.",
+      "Support Ctrl+K for inserting links in editors and mention the shortcut in the hyperlink icon tooltip.",
+      "Label copy link buttons in words, because the chain alone could equally mean insert link or a connected account."
+    ],
+    "aria": "Copy link",
+    "pairs": ["share", "copy", "global"],
+    "faq": [
+      {
+        "q": "What does the link icon mean?",
+        "a": "The link icon means a web address or a connection. Clicking it usually copies a shareable link or opens a box to add a hyperlink to selected text. In settings it can also show that two accounts or services are connected to each other."
+      },
+      {
+        "q": "What is the difference between a link icon and a share icon?",
+        "a": "A link icon copies or inserts one address, while a share icon opens a choice of apps and people to send content to. Many products put both side by side: share for quick sending, and link for pasting anywhere you like."
+      }
+    ]
+  },
+  "maximize-4": {
+    "intro": "This expand icon is a diagonal arrow with heads at both ends, pointing out to opposite corners. It makes something bigger: opening a video or image full screen, enlarging a chart or card into a focused view, or growing a small panel until it fills the window.",
+    "meaning": "Arrows pointing away from the centre suggest stretching outward, so people read it as 'make this larger'. It is a lighter alternative to the four corner brackets often used as a fullscreen icon in video players. A single diagonal shaft can also hint at resizing by dragging a corner. Its reverse, arrows pointing inward, means collapse or exit full screen, so swap glyphs when the state changes.",
+    "uses": [
+      "Dashboard cards: opens a single chart in a larger overlay so people can read the data in detail.",
+      "Chat widgets: expands a small support bubble into a full-size conversation window.",
+      "Code and text editors: enlarges one pane to fill the screen while hiding the other panels.",
+      "Image previews: opens a thumbnail in a lightbox at its full resolution."
+    ],
+    "tips": [
+      "Switch to an inward-pointing glyph once the view is expanded, and give it a clear name such as Exit full screen.",
+      "Let the Escape key close an expanded view, and return focus to the expand button afterwards.",
+      "Place the expand control in the top right corner of a card, well away from the card's main click area."
+    ],
+    "aria": "Expand view",
+    "pairs": ["monitor", "gallery", "video"],
+    "faq": [
+      {
+        "q": "What does the expand icon mean?",
+        "a": "The expand icon means make this bigger. Clicking it opens the current video, image, chart or panel in a larger view or full screen. The arrows pointing outward to the corners show the content growing to fill more of the available space."
+      },
+      {
+        "q": "Is the expand icon the same as a maximize icon?",
+        "a": "They are closely related. A maximize button on a desktop window makes the whole window fill the screen, while an expand icon usually enlarges one element inside a page. Both use outward arrows, so the label tells people which one happens."
+      }
+    ]
+  },
+  "user": {
+    "intro": "The user icon shows the head and shoulders of one person, and it stands for an individual account or profile. It is the default placeholder before someone uploads a photo, and it labels account menus, profile tabs, sign-in prompts and any field that asks for a person's name.",
+    "meaning": "A simple head and shoulders silhouette is the most neutral way to show 'a person', so it reads as you or one other individual. In navigation it usually means my account; beside a name field, a person icon simply marks who. It differs from two or three figures, which stand for groups or teams, and from a figure with a plus, which means add a person.",
+    "uses": [
+      "App headers: an account icon in the top right that opens profile, settings and sign out.",
+      "Mobile tab bars: the last tab, leading to the person's own profile page and activity.",
+      "Comment threads: a placeholder avatar beside authors who have not added a photo yet.",
+      "Contact forms: marks the full name field, alongside envelope and phone symbols for the other fields."
+    ],
+    "tips": [
+      "Replace the silhouette with the person's photo or initials once you have them, because a real face is quicker to recognise.",
+      "Give default avatars a soft background colour based on the name, so lists of placeholder users are easier to tell apart.",
+      "Name the account button for screen readers with the person's name, such as Account menu for Sam, not just User."
+    ],
+    "aria": "Open account menu",
+    "pairs": ["profile-2user", "setting", "logout"],
+    "faq": [
+      {
+        "q": "What does the user icon mean?",
+        "a": "The user icon means a single person or account. In a header it usually opens your own profile or account menu, while next to content it shows who wrote or owns it. It stands in for a photo until one has been added."
+      },
+      {
+        "q": "User icon or profile icon: is there a difference?",
+        "a": "Usually not, because both describe the same head and shoulders figure. Some teams use the word profile when it opens someone's public page, and account when it opens settings and sign out. Either way, it always shows one person."
+      }
+    ]
+  },
+  "profile-2user": {
+    "intro": "The users icon shows two people side by side, and it stands for more than one person: a team, a shared list or a pair of accounts. Use it for member lists, contacts, shared workspaces and admin pages where people manage who has access to something.",
+    "meaning": "Two figures read as people in the plural, so this symbol shifts the focus from me to us. Admin tools use it for user management, and chat apps use it for contacts. A two people icon suggests a small group or partnership, while three figures feel larger, more like a community. Unlike a single figure, it never means your own account, so keep it out of profile menus.",
+    "uses": [
+      "Admin panels: the Users section where administrators invite, remove and change the roles of members.",
+      "Shared documents: shows how many people have access, next to the Share button.",
+      "Couples and family apps: marks a joint account, shared budget or partner profile.",
+      "Messaging apps: the contacts tab listing everyone you can start a conversation with."
+    ],
+    "tips": [
+      "Place a count beside the icon, such as 12 members, so people learn the size of the group without opening it.",
+      "Use this two-person figure for small teams and shared access, and save a three-person figure for public communities.",
+      "In access settings, pair the icon with a clear label like Manage members, because the silhouettes alone do not explain permissions."
+    ],
+    "aria": "View members",
+    "pairs": ["user", "people", "user-add"],
+    "faq": [
+      {
+        "q": "What does the users icon mean?",
+        "a": "The users icon means several people rather than one. It labels member lists, contacts, teams and user management pages. Where a single head and shoulders figure points to an individual account, two figures point to a group of accounts you can view or manage."
+      },
+      {
+        "q": "Which group icon should I use: two people or three?",
+        "a": "Use two people for small teams, contacts and shared access, and three for larger groups or communities. Three figures feel more social, while two figures feel more administrative. Whichever you choose, keep it consistent across screens."
+      }
+    ]
+  },
+  "people": {
+    "intro": "The people icon shows three figures with one standing in front, and it represents a group, a team or a community. Use it for team pages, community sections, event attendees and group chats, where the focus is on many people together rather than on individual accounts.",
+    "meaning": "Three overlapping figures read as a crowd, and the one in front suggests a leader or a group seen from outside. That makes it a natural fit for teams in workplace tools and a good symbol for communities and events. It feels larger and more social than two figures side by side, which suit member management. A single figure, by contrast, always points to one person.",
+    "uses": [
+      "Workplace tools: the Teams section listing departments, project groups and their members.",
+      "Event pages: shows how many people are attending or have signed up to go.",
+      "Community apps: the tab for groups, forums and clubs that people can join.",
+      "Group chats: marks conversations with several participants so they stand apart from one-to-one messages."
+    ],
+    "tips": [
+      "Overlapping figures lose detail below about 20 pixels, so use the two-person version in very tight table cells.",
+      "In attendee lists, swap the icon for a row of real avatars once there are photos to show.",
+      "Pair it with a label such as Teams or Groups, since the same figures could also mean audience, attendees or contacts."
+    ],
+    "aria": "View team",
+    "pairs": ["profile-2user", "user", "messages-2"],
+    "faq": [
+      {
+        "q": "What does the people icon mean?",
+        "a": "The people icon means a group of people, such as a team, a community or event attendees. It shows several figures together, with one in front, to stress the group as a whole rather than any single account or person."
+      },
+      {
+        "q": "Team icon or users icon: which fits a team page?",
+        "a": "Use the three-figure version for a team page or community, where the group itself matters. Use a two-person users icon for member management or access settings, where the job is adding and removing individual accounts."
+      }
+    ]
+  }
+}

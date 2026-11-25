@@ -1,0 +1,20 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-educare-ekt-dark-s0" d="M7.93005 5.47994L11.0601 8.60994C11.5801 9.12994 12.4301 9.12994 12.9501 8.60994L16.0801 5.47994C16.9201 4.63994 16.3301 3.18994 15.1301 3.18994H8.87006C7.68006 3.18994 7.08005 4.63994 7.93005 5.47994Z"/>
+  <path id="g-company-logos-educare-ekt-dark-s1" d="M7.93005 18.52L11.0601 15.39C11.5801 14.87 12.4301 14.87 12.9501 15.39L16.0801 18.52C16.9201 19.36 16.3301 20.81 15.1301 20.81H8.87006C7.68006 20.81 7.08005 19.36 7.93005 18.52Z"/>
+  <path id="g-company-logos-educare-ekt-dark-s2" d="M2.15994 11.4301L4.44998 7.83008C4.80998 7.26008 5.60999 7.17008 6.08999 7.65008L9.68997 11.2501C10.1 11.6601 10.1 12.3301 9.68997 12.7401L6.08999 16.3401C5.60999 16.8201 4.81998 16.7301 4.44998 16.1601L2.15994 12.5601C1.94994 12.2201 1.94994 11.7801 2.15994 11.4301Z"/>
+  <path id="g-company-logos-educare-ekt-dark-s3" d="M21.84 11.4301L19.5499 7.83008C19.1899 7.26008 18.3899 7.17008 17.9099 7.65008L14.3099 11.2501C13.8999 11.6601 13.8999 12.3301 14.3099 12.7401L17.9099 16.3401C18.3899 16.8201 19.1799 16.7301 19.5499 16.1601L21.84 12.5601C22.05 12.2201 22.05 11.7801 21.84 11.4301Z"/>
+  <linearGradient id="g-company-logos-educare-ekt-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-educare-ekt-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-educare-ekt-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-educare-ekt-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-educare-ekt-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-educare-ekt-dark-s0" fill="#fff"/></mask>
+  <mask id="g-company-logos-educare-ekt-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-educare-ekt-dark-s1" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-educare-ekt-dark-s0" fill="url(#g-company-logos-educare-ekt-dark-glass)"/>
+<g mask="url(#g-company-logos-educare-ekt-dark-in0)"><use xlink:href="#g-company-logos-educare-ekt-dark-s0" fill="none" stroke="url(#g-company-logos-educare-ekt-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-educare-ekt-dark-s1" fill="url(#g-company-logos-educare-ekt-dark-glass)"/>
+<g mask="url(#g-company-logos-educare-ekt-dark-in1)"><use xlink:href="#g-company-logos-educare-ekt-dark-s1" fill="none" stroke="url(#g-company-logos-educare-ekt-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-educare-ekt-dark-s2" fill="url(#g-company-logos-educare-ekt-dark-solid)"/>
+<use xlink:href="#g-company-logos-educare-ekt-dark-s3" fill="url(#g-company-logos-educare-ekt-dark-solid)"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-apple-light-s0" d="M19.0998 19.16C19.6898 18.26 19.9098 17.8 20.3598 16.79C17.0398 15.53 16.5098 10.8 19.7898 8.99C18.7898 7.73 17.3798 7 16.0498 7C15.0898 7 14.4298 7.25 13.8398 7.48C13.3398 7.67 12.8898 7.84 12.3298 7.84C11.7298 7.84 11.1998 7.65 10.6398 7.45C10.0398 7.23 9.39983 7 8.59983 7C7.10983 7 5.51983 7.91 4.50983 9.47C3.08983 11.67 3.33983 15.79 5.62983 19.31C6.44983 20.57 7.54984 21.98 8.97984 22C9.57984 22.01 9.96983 21.83 10.3998 21.64C10.8898 21.42 11.4198 21.18 12.3498 21.18C13.2798 21.17 13.7998 21.42 14.2898 21.64C14.7098 21.83 15.0898 22.01 15.6798 22C17.1198 21.98 18.2798 20.42 19.0998 19.16Z" fill-rule="evenodd"/>
+  <path id="g-company-logos-apple-light-s1" d="M15.8399 2C15.9999 3.1 15.5499 4.19 14.9599 4.95C14.3299 5.77 13.2299 6.41 12.1699 6.37C11.9799 5.31 12.4699 4.22 13.0699 3.49C13.7399 2.69 14.8699 2.07 15.8399 2Z" fill-rule="evenodd"/>
+  <linearGradient id="g-company-logos-apple-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-apple-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-apple-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-apple-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-apple-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-company-logos-apple-light-s1" fill="#000"/></mask>
+  <mask id="g-company-logos-apple-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-apple-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-company-logos-apple-light-out0)"><use xlink:href="#g-company-logos-apple-light-s0" fill="url(#g-company-logos-apple-light-solid)"/></g>
+<g mask="url(#g-company-logos-apple-light-in1)"><g filter="url(#g-company-logos-apple-light-blur)"><use xlink:href="#g-company-logos-apple-light-s0" fill="url(#g-company-logos-apple-light-solid)"/></g></g>
+<use xlink:href="#g-company-logos-apple-light-s1" fill="url(#g-company-logos-apple-light-glass)"/>
+<g mask="url(#g-company-logos-apple-light-in1)"><use xlink:href="#g-company-logos-apple-light-s1" fill="none" stroke="url(#g-company-logos-apple-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

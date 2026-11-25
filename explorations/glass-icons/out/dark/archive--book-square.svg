@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-archive-book-square-dark-s0" d="M16.19 2H7.82001C4.18001 2 2.01001 4.17 2.01001 7.81V16.18C2.01001 19.82 4.18001 21.99 7.82001 21.99H16.19C19.83 21.99 22 19.82 22 16.18V7.81C22 4.17 19.83 2 16.19 2Z"/>
+  <path id="g-archive-book-square-dark-s1" d="M11.5001 8.09V17.25C11.5001 17.61 11.1401 17.85 10.8101 17.71C9.60012 17.19 8.0201 16.71 6.9201 16.57L6.7301 16.55C6.1201 16.47 5.62012 15.9 5.62012 15.28V7.57999C5.62012 6.81999 6.24012 6.25 7.00012 6.31C8.25012 6.41 10.1001 7.01001 11.2601 7.67001C11.4101 7.74001 11.5001 7.91 11.5001 8.09Z"/>
+  <path id="g-archive-book-square-dark-s2" d="M18.38 7.70007V15.2701C18.38 15.89 17.88 16.4601 17.27 16.5401L17.06 16.5601C15.97 16.7101 14.4 17.1801 13.19 17.6901C12.86 17.8301 12.5 17.5901 12.5 17.2301V8.08005C12.5 7.90005 12.59 7.73008 12.75 7.64008C13.91 6.99008 15.72 6.41005 16.95 6.30005H16.99C17.76 6.31005 18.38 6.93007 18.38 7.70007Z"/>
+  <linearGradient id="g-archive-book-square-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-archive-book-square-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-archive-book-square-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-archive-book-square-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-archive-book-square-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-archive-book-square-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-archive-book-square-dark-s0" fill="url(#g-archive-book-square-dark-glass)"/>
+<g mask="url(#g-archive-book-square-dark-in0)"><use xlink:href="#g-archive-book-square-dark-s0" fill="none" stroke="url(#g-archive-book-square-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-archive-book-square-dark-s1" fill="url(#g-archive-book-square-dark-solid)"/>
+<use xlink:href="#g-archive-book-square-dark-s2" fill="url(#g-archive-book-square-dark-solid)"/>
+</svg>

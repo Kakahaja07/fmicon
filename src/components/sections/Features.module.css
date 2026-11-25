@@ -1,0 +1,35 @@
+.section {
+  padding-top: 120px;
+}
+
+.link {
+  color: var(--accent);
+  font-weight: var(--weight-medium);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover { text-decoration: underline; text-underline-offset: 3px; }
+}
+
+.bento {
+  margin-top: 48px;
+}
+
+.tiles {
+  margin-top: 16px;
+}
+
+.more {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .section { padding-top: 88px; }
+}
+
+@media (max-width: 640px) {
+  .bento { margin-top: 32px; }
+  .tiles { margin-top: 12px; }
+}

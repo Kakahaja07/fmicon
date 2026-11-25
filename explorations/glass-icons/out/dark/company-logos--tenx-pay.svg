@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-tenx-pay-dark-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-company-logos-tenx-pay-dark-s1" d="M12 12L9.45998 9.45998C9.06998 9.06998 8.43998 9.06998 8.04998 9.45998L6.20998 11.3C5.81998 11.69 5.81998 12.32 6.20998 12.71L8.04998 14.55C8.43998 14.94 9.06998 14.94 9.45998 14.55L14.55 9.45998C14.94 9.06998 15.57 9.06998 15.96 9.45998L17.8 11.3C18.19 11.69 18.19 12.32 17.8 12.71L15.96 14.55C15.57 14.94 14.94 14.94 14.55 14.55L12 12Z"/>
+  <linearGradient id="g-company-logos-tenx-pay-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-tenx-pay-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-tenx-pay-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-tenx-pay-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-tenx-pay-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-tenx-pay-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-tenx-pay-dark-s0" fill="url(#g-company-logos-tenx-pay-dark-glass)"/>
+<g mask="url(#g-company-logos-tenx-pay-dark-in0)"><use xlink:href="#g-company-logos-tenx-pay-dark-s0" fill="none" stroke="url(#g-company-logos-tenx-pay-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-tenx-pay-dark-s1" fill="url(#g-company-logos-tenx-pay-dark-solid)"/>
+</svg>

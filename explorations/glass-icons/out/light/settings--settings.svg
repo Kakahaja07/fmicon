@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-settings-settings-light-s0" d="M12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5Z"/>
+  <path id="g-settings-settings-light-s1" d="M10 12.75H2C1.59 12.75 1.25 12.41 1.25 12C1.25 11.59 1.59 11.25 2 11.25H10C10.41 11.25 10.75 11.59 10.75 12C10.75 12.41 10.41 12.75 10 12.75Z"/>
+  <path id="g-settings-settings-light-s2" d="M22 12.75H14C13.59 12.75 13.25 12.41 13.25 12C13.25 11.59 13.59 11.25 14 11.25H22C22.41 11.25 22.75 11.59 22.75 12C22.75 12.41 22.41 12.75 22 12.75Z"/>
+  <linearGradient id="g-settings-settings-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-settings-settings-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-settings-settings-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-settings-settings-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-settings-settings-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-settings-settings-light-s1" fill="#000"/><use xlink:href="#g-settings-settings-light-s2" fill="#000"/></mask>
+  <mask id="g-settings-settings-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-settings-light-s1" fill="#fff"/></mask>
+  <mask id="g-settings-settings-light-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-settings-light-s2" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-settings-settings-light-out0)"><use xlink:href="#g-settings-settings-light-s0" fill="url(#g-settings-settings-light-solid)"/></g>
+<g mask="url(#g-settings-settings-light-in1)"><g filter="url(#g-settings-settings-light-blur)"><use xlink:href="#g-settings-settings-light-s0" fill="url(#g-settings-settings-light-solid)"/></g></g>
+<use xlink:href="#g-settings-settings-light-s1" fill="url(#g-settings-settings-light-glass)"/>
+<g mask="url(#g-settings-settings-light-in1)"><use xlink:href="#g-settings-settings-light-s1" fill="none" stroke="url(#g-settings-settings-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-settings-settings-light-in2)"><g filter="url(#g-settings-settings-light-blur)"><use xlink:href="#g-settings-settings-light-s0" fill="url(#g-settings-settings-light-solid)"/></g></g>
+<use xlink:href="#g-settings-settings-light-s2" fill="url(#g-settings-settings-light-glass)"/>
+<g mask="url(#g-settings-settings-light-in2)"><use xlink:href="#g-settings-settings-light-s2" fill="none" stroke="url(#g-settings-settings-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

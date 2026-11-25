@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-avalanche-avax-light-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-company-logos-avalanche-avax-light-s1" d="M6.06033 15.58L11.6703 5.96995C11.8303 5.68995 12.2303 5.66995 12.4203 5.92995L13.9803 8.01995C14.4303 8.61995 14.4603 9.42995 14.0703 10.07L10.7303 15.42C10.4003 15.95 9.82034 16.27 9.19034 16.27H6.45035C6.10035 16.26 5.88033 15.88 6.06033 15.58Z"/>
+  <path id="g-company-logos-avalanche-avax-light-s2" d="M15.2401 12.3698L13.3201 15.5698C13.1401 15.8698 13.3601 16.2598 13.7101 16.2598H17.5501C17.9001 16.2598 18.1201 15.8798 17.9401 15.5698L16.0201 12.3698C15.8501 12.0798 15.4201 12.0798 15.2401 12.3698Z"/>
+  <linearGradient id="g-company-logos-avalanche-avax-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-avalanche-avax-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-avalanche-avax-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-avalanche-avax-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-avalanche-avax-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-avalanche-avax-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-avalanche-avax-light-s0" fill="url(#g-company-logos-avalanche-avax-light-glass)"/>
+<g mask="url(#g-company-logos-avalanche-avax-light-in0)"><use xlink:href="#g-company-logos-avalanche-avax-light-s0" fill="none" stroke="url(#g-company-logos-avalanche-avax-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-avalanche-avax-light-s1" fill="url(#g-company-logos-avalanche-avax-light-solid)"/>
+<use xlink:href="#g-company-logos-avalanche-avax-light-s2" fill="url(#g-company-logos-avalanche-avax-light-solid)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-money-receipt-edit-dark-s0" d="M6.72977 19.7C7.54977 18.82 8.79974 18.89 9.51974 19.85L10.5298 21.2C11.3398 22.27 12.6497 22.27 13.4597 21.2L14.4698 19.85C15.1898 18.89 16.4398 18.82 17.2598 19.7C19.0398 21.6 20.4897 20.97 20.4897 18.31V7.04999C20.4897 3.01999 19.5497 2.01001 15.7697 2.01001H8.20975C4.42975 2.01001 3.48975 3.01999 3.48975 7.04999V18.31C3.49975 20.97 4.95977 21.59 6.72977 19.7Z"/>
+  <path id="g-money-receipt-edit-dark-s1" d="M14.8399 9.98993L14.3399 10.4999H14.3299L11.2999 13.5299C11.1699 13.6599 10.8999 13.7999 10.7099 13.8199L9.35993 14.0199C8.86993 14.0899 8.52995 13.7399 8.59995 13.2599L8.78996 11.8999C8.81996 11.7099 8.94993 11.4499 9.07993 11.3099L12.1199 8.27994L12.6199 7.76993C12.9499 7.43993 13.3199 7.19995 13.7199 7.19995C14.0599 7.19995 14.4299 7.35993 14.8399 7.76993C15.7399 8.66993 15.4499 9.37993 14.8399 9.98993Z"/>
+  <linearGradient id="g-money-receipt-edit-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-money-receipt-edit-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-money-receipt-edit-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-money-receipt-edit-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-money-receipt-edit-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-money-receipt-edit-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-money-receipt-edit-dark-s0" fill="url(#g-money-receipt-edit-dark-glass)"/>
+<g mask="url(#g-money-receipt-edit-dark-in0)"><use xlink:href="#g-money-receipt-edit-dark-s0" fill="none" stroke="url(#g-money-receipt-edit-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-money-receipt-edit-dark-s1" fill="url(#g-money-receipt-edit-dark-solid)"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-settings-more-dark-s0" d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z"/>
+  <path id="g-settings-more-dark-s1" d="M11.9999 10.6899C11.2799 10.6899 10.6899 11.2799 10.6899 11.9999C10.6899 12.7199 11.2799 13.3099 11.9999 13.3099C12.7199 13.3099 13.3099 12.7199 13.3099 11.9999C13.3099 11.2799 12.7199 10.6899 11.9999 10.6899Z"/>
+  <path id="g-settings-more-dark-s2" d="M6.99994 10.6899C6.27994 10.6899 5.68994 11.2799 5.68994 11.9999C5.68994 12.7199 6.27994 13.3099 6.99994 13.3099C7.71994 13.3099 8.30994 12.7199 8.30994 11.9999C8.30994 11.2799 7.71994 10.6899 6.99994 10.6899Z"/>
+  <path id="g-settings-more-dark-s3" d="M16.9999 10.6899C16.2799 10.6899 15.6899 11.2799 15.6899 11.9999C15.6899 12.7199 16.2799 13.3099 16.9999 13.3099C17.7199 13.3099 18.3099 12.7199 18.3099 11.9999C18.3099 11.2799 17.7199 10.6899 16.9999 10.6899Z"/>
+  <linearGradient id="g-settings-more-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-settings-more-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-settings-more-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-settings-more-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-settings-more-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-more-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-settings-more-dark-s0" fill="url(#g-settings-more-dark-glass)"/>
+<g mask="url(#g-settings-more-dark-in0)"><use xlink:href="#g-settings-more-dark-s0" fill="none" stroke="url(#g-settings-more-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-settings-more-dark-s1" fill="url(#g-settings-more-dark-solid)"/>
+<use xlink:href="#g-settings-more-dark-s2" fill="url(#g-settings-more-dark-solid)"/>
+<use xlink:href="#g-settings-more-dark-s3" fill="url(#g-settings-more-dark-solid)"/>
+</svg>

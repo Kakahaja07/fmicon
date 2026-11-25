@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-users-profile-2user-dark-s0" d="M9 2C6.38 2 4.25 4.13 4.25 6.75C4.25 9.32 6.26 11.4 8.88 11.49C8.96 11.48 9.04 11.48 9.1 11.49C9.12 11.49 9.13 11.49 9.15 11.49C9.16 11.49 9.16 11.49 9.17 11.49C11.73 11.4 13.74 9.32 13.75 6.75C13.75 4.13 11.62 2 9 2Z"/>
+  <path id="g-users-profile-2user-dark-s1" d="M14.08 14.15C11.29 12.29 6.73996 12.29 3.92996 14.15C2.65996 15 1.95996 16.15 1.95996 17.38C1.95996 18.61 2.65996 19.75 3.91996 20.59C5.31996 21.53 7.15996 22 8.99996 22C10.84 22 12.68 21.53 14.08 20.59C15.34 19.74 16.04 18.6 16.04 17.36C16.03 16.13 15.34 14.99 14.08 14.15Z"/>
+  <path id="g-users-profile-2user-dark-s2" d="M19.99 7.33998C20.15 9.27998 18.77 10.98 16.86 11.21C16.85 11.21 16.85 11.21 16.84 11.21H16.81C16.75 11.21 16.69 11.21 16.64 11.23C15.67 11.28 14.78 10.97 14.11 10.4C15.14 9.47998 15.73 8.09998 15.61 6.59998C15.54 5.78998 15.26 5.04998 14.84 4.41998C15.22 4.22998 15.66 4.10998 16.11 4.06998C18.07 3.89998 19.82 5.35998 19.99 7.33998Z"/>
+  <path id="g-users-profile-2user-dark-s3" d="M21.99 16.59C21.91 17.56 21.29 18.4 20.25 18.97C19.25 19.52 17.99 19.78 16.74 19.75C17.46 19.1 17.88 18.29 17.96 17.43C18.06 16.19 17.47 15 16.29 14.05C15.62 13.52 14.84 13.1 13.99 12.79C16.2 12.15 18.98 12.58 20.69 13.96C21.61 14.7 22.08 15.63 21.99 16.59Z"/>
+  <linearGradient id="g-users-profile-2user-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-users-profile-2user-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-users-profile-2user-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-users-profile-2user-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-users-profile-2user-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-users-profile-2user-dark-s0" fill="#fff"/></mask>
+  <mask id="g-users-profile-2user-dark-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-users-profile-2user-dark-s2" fill="#000"/></mask>
+  <mask id="g-users-profile-2user-dark-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-users-profile-2user-dark-s2" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-users-profile-2user-dark-s0" fill="url(#g-users-profile-2user-dark-glass)"/>
+<g mask="url(#g-users-profile-2user-dark-in0)"><use xlink:href="#g-users-profile-2user-dark-s0" fill="none" stroke="url(#g-users-profile-2user-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-users-profile-2user-dark-out1)"><use xlink:href="#g-users-profile-2user-dark-s1" fill="url(#g-users-profile-2user-dark-solid)"/></g>
+<g mask="url(#g-users-profile-2user-dark-in2)"><g filter="url(#g-users-profile-2user-dark-blur)"><use xlink:href="#g-users-profile-2user-dark-s1" fill="url(#g-users-profile-2user-dark-solid)"/></g></g>
+<use xlink:href="#g-users-profile-2user-dark-s2" fill="url(#g-users-profile-2user-dark-glass)"/>
+<g mask="url(#g-users-profile-2user-dark-in2)"><use xlink:href="#g-users-profile-2user-dark-s2" fill="none" stroke="url(#g-users-profile-2user-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-users-profile-2user-dark-s3" fill="url(#g-users-profile-2user-dark-solid)"/>
+</svg>

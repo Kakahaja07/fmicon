@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-location-direct-down-light-s0" d="M17.02 2.71996L13.54 4.45996C12.57 4.93996 11.44 4.93996 10.47 4.45996L6.97997 2.70996C3.99997 1.21996 0.849974 4.43996 2.40997 7.38996L3.22997 8.92996C3.33997 9.13996 3.51997 9.30996 3.73997 9.40996L16.39 15.1C16.91 15.33 17.52 15.12 17.78 14.62L21.59 7.37996C23.14 4.43996 20 1.21996 17.02 2.71996Z"/>
+  <path id="g-location-direct-down-light-s1" d="M15.6 16.31L7.31996 12.58C6.38996 12.16 5.44996 13.16 5.92996 14.06L8.96996 19.83C10.26 22.28 13.76 22.28 15.05 19.83L16.12 17.79C16.4 17.24 16.16 16.57 15.6 16.31Z"/>
+  <linearGradient id="g-location-direct-down-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-location-direct-down-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-location-direct-down-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-location-direct-down-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-location-direct-down-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-location-direct-down-light-s1" fill="#000"/></mask>
+  <mask id="g-location-direct-down-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-location-direct-down-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-location-direct-down-light-out0)"><use xlink:href="#g-location-direct-down-light-s0" fill="url(#g-location-direct-down-light-solid)"/></g>
+<g mask="url(#g-location-direct-down-light-in1)"><g filter="url(#g-location-direct-down-light-blur)"><use xlink:href="#g-location-direct-down-light-s0" fill="url(#g-location-direct-down-light-solid)"/></g></g>
+<use xlink:href="#g-location-direct-down-light-s1" fill="url(#g-location-direct-down-light-glass)"/>
+<g mask="url(#g-location-direct-down-light-in1)"><use xlink:href="#g-location-direct-down-light-s1" fill="none" stroke="url(#g-location-direct-down-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

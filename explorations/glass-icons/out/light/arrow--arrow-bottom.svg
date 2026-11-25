@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-arrow-arrow-bottom-light-s0" d="M9.33005 6H14.67C17.99 6 19.34 8.35 17.69 11.22L16.95 12.5C16.77 12.81 16.44 13 16.08 13H7.92005C7.56005 13 7.23005 12.81 7.05005 12.5L6.31005 11.22C4.66005 8.35 6.01005 6 9.33005 6Z"/>
+  <path id="g-arrow-arrow-bottom-light-s1" d="M8.79006 14H15.2201C15.6101 14 15.8501 14.42 15.6501 14.75L15.0101 15.85C13.3601 18.72 10.6401 18.72 8.99006 15.85L8.35006 14.75C8.16006 14.42 8.40006 14 8.79006 14Z"/>
+  <linearGradient id="g-arrow-arrow-bottom-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-arrow-arrow-bottom-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-arrow-arrow-bottom-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-arrow-arrow-bottom-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-arrow-arrow-bottom-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-arrow-arrow-bottom-light-s1" fill="#000"/></mask>
+  <mask id="g-arrow-arrow-bottom-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-arrow-arrow-bottom-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-arrow-arrow-bottom-light-out0)"><use xlink:href="#g-arrow-arrow-bottom-light-s0" fill="url(#g-arrow-arrow-bottom-light-solid)"/></g>
+<g mask="url(#g-arrow-arrow-bottom-light-in1)"><g filter="url(#g-arrow-arrow-bottom-light-blur)"><use xlink:href="#g-arrow-arrow-bottom-light-s0" fill="url(#g-arrow-arrow-bottom-light-solid)"/></g></g>
+<use xlink:href="#g-arrow-arrow-bottom-light-s1" fill="url(#g-arrow-arrow-bottom-light-glass)"/>
+<g mask="url(#g-arrow-arrow-bottom-light-in1)"><use xlink:href="#g-arrow-arrow-bottom-light-s1" fill="none" stroke="url(#g-arrow-arrow-bottom-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

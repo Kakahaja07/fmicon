@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-business-presention-chart-light-s0" d="M21 2V14.1C21 16 20 17 18.1 17H5.89999C3.99999 17 3 16 3 14.1V2H21Z"/>
+  <path id="g-business-presention-chart-light-s1" d="M22 2.75H2C1.59 2.75 1.25 2.41 1.25 2C1.25 1.59 1.59 1.25 2 1.25H22C22.41 1.25 22.75 1.59 22.75 2C22.75 2.41 22.41 2.75 22 2.75Z"/>
+  <path id="g-business-presention-chart-light-s2" d="M16.67 22.34C16.54 22.6 16.27 22.75 16 22.75C15.89 22.75 15.77 22.72 15.67 22.67L12 20.84L8.33001 22.67C8.23001 22.72 8.11002 22.75 8.00002 22.75C7.73002 22.75 7.46001 22.6 7.33001 22.34C7.14001 21.96 7.29004 21.51 7.67004 21.33L11.25 19.54V17H12.75V19.54L16.33 21.33C16.71 21.51 16.86 21.96 16.67 22.34Z"/>
+  <path id="g-business-presention-chart-light-s3" d="M7.49993 11.7499C7.28993 11.7499 7.06994 11.6599 6.91994 11.4799C6.64994 11.1599 6.69992 10.6899 7.01992 10.4199L10.1699 7.78993C10.4599 7.54993 10.8299 7.44994 11.1799 7.50994C11.5399 7.56994 11.8499 7.78991 12.0399 8.10991L13.0899 9.85991L16.0199 7.41994C16.3399 7.14994 16.8099 7.19992 17.0799 7.51992C17.3499 7.83992 17.2999 8.30991 16.9799 8.57991L13.8299 11.2099C13.5399 11.4499 13.1699 11.5499 12.8199 11.4899C12.4599 11.4299 12.1499 11.2099 11.9599 10.8899L10.9099 9.13994L7.97994 11.5799C7.83994 11.6899 7.66993 11.7499 7.49993 11.7499Z"/>
+  <linearGradient id="g-business-presention-chart-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-business-presention-chart-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-business-presention-chart-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-business-presention-chart-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-business-presention-chart-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-business-presention-chart-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-business-presention-chart-light-s0" fill="url(#g-business-presention-chart-light-glass)"/>
+<g mask="url(#g-business-presention-chart-light-in0)"><use xlink:href="#g-business-presention-chart-light-s0" fill="none" stroke="url(#g-business-presention-chart-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-business-presention-chart-light-s1" fill="url(#g-business-presention-chart-light-solid)"/>
+<use xlink:href="#g-business-presention-chart-light-s2" fill="url(#g-business-presention-chart-light-solid)"/>
+<use xlink:href="#g-business-presention-chart-light-s3" fill="url(#g-business-presention-chart-light-solid)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-weather-cloud-notif-light-s0" d="M20.57 11.0099C19.81 10.0999 18.81 9.48994 17.67 9.23994C17.42 8.08994 16.96 7.08994 16.31 6.26994C16.29 6.23994 16.27 6.20994 16.25 6.18994C14.06 3.53994 10.47 3.54994 8.05004 4.91994C5.98004 6.09994 4.22004 8.58994 5.14004 12.1599C3.02004 12.6799 2.04004 14.5299 2.04004 16.1999C2.04004 18.0699 3.26004 20.1799 5.99004 20.3699H16.29C16.3 20.3699 16.32 20.3699 16.33 20.3699C17.75 20.3699 19.1 19.8499 20.14 18.8899C22.66 16.6899 22.33 13.0799 20.57 11.0099Z"/>
+  <path id="g-weather-cloud-notif-light-s1" d="M21.2698 8.76001C21.2698 9.78001 20.7998 10.7 20.0398 11.3C19.4898 11.75 18.7798 12.02 18.0098 12.02C16.2198 12.02 14.7598 10.56 14.7598 8.77001C14.7598 7.88001 15.1198 7.07001 15.7198 6.48001V6.47001C16.3098 5.88001 17.1198 5.51001 18.0098 5.51001C19.8098 5.51001 21.2698 6.97001 21.2698 8.76001Z"/>
+  <linearGradient id="g-weather-cloud-notif-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-weather-cloud-notif-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-weather-cloud-notif-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-weather-cloud-notif-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-weather-cloud-notif-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-weather-cloud-notif-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-weather-cloud-notif-light-s0" fill="url(#g-weather-cloud-notif-light-glass)"/>
+<g mask="url(#g-weather-cloud-notif-light-in0)"><use xlink:href="#g-weather-cloud-notif-light-s0" fill="none" stroke="url(#g-weather-cloud-notif-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-weather-cloud-notif-light-s1" fill="url(#g-weather-cloud-notif-light-solid)"/>
+</svg>

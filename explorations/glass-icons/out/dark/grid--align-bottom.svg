@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-align-bottom-dark-s0" d="M8.02 4.62H6.98C5.39 4.62 4.75 5.22 4.75 6.74V18.62H10.25V6.74C10.24 5.22 9.6 4.62 8.02 4.62Z"/>
+  <path id="g-grid-align-bottom-dark-s1" d="M16.52 9.62H15.48C13.89 9.62 13.25 10.23 13.25 11.74V18.62H18.75V11.74C18.75 10.23 18.1 9.62 16.52 9.62Z"/>
+  <path id="g-grid-align-bottom-dark-s2" d="M2.75 17.88H21.25C21.66 17.88 22 18.22 22 18.63C22 19.04 21.66 19.38 21.25 19.38H2.75C2.34 19.38 2 19.04 2 18.62C2 18.2 2.34 17.88 2.75 17.88Z"/>
+  <linearGradient id="g-grid-align-bottom-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-align-bottom-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-grid-align-bottom-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-align-bottom-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-align-bottom-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-grid-align-bottom-dark-s1" fill="#000"/></mask>
+  <mask id="g-grid-align-bottom-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-align-bottom-dark-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-grid-align-bottom-dark-out0)"><use xlink:href="#g-grid-align-bottom-dark-s0" fill="url(#g-grid-align-bottom-dark-solid)"/></g>
+<g mask="url(#g-grid-align-bottom-dark-in1)"><g filter="url(#g-grid-align-bottom-dark-blur)"><use xlink:href="#g-grid-align-bottom-dark-s0" fill="url(#g-grid-align-bottom-dark-solid)"/></g></g>
+<use xlink:href="#g-grid-align-bottom-dark-s1" fill="url(#g-grid-align-bottom-dark-glass)"/>
+<g mask="url(#g-grid-align-bottom-dark-in1)"><use xlink:href="#g-grid-align-bottom-dark-s1" fill="none" stroke="url(#g-grid-align-bottom-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-align-bottom-dark-s2" fill="url(#g-grid-align-bottom-dark-solid)"/>
+</svg>

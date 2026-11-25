@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-time-calendar-circle-light-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-time-calendar-circle-light-s1" d="M17.15 9.43997C16.73 8.46997 15.9401 7.71997 14.8501 7.37997V6.58997C14.8501 6.17997 14.5101 5.83997 14.1001 5.83997C13.6901 5.83997 13.3501 6.17997 13.3501 6.58997V7.17996H10.6401V6.58997C10.6401 6.17997 10.3001 5.83997 9.89007 5.83997C9.48007 5.83997 9.14007 6.17997 9.14007 6.58997V7.37997C8.05007 7.71997 7.26005 8.46997 6.84005 9.43997C6.70005 9.76997 6.94004 10.15 7.30004 10.15H16.6701C17.0501 10.14 17.29 9.76997 17.15 9.43997Z"/>
+  <path id="g-time-calendar-circle-light-s2" d="M17 11.14C17.28 11.14 17.5 11.36 17.5 11.64V14.17C17.5 16.37 16 18.17 13.5 18.17H10.5C8 18.17 6.5 16.37 6.5 14.17V11.64C6.5 11.36 6.72 11.14 7 11.14H17Z"/>
+  <linearGradient id="g-time-calendar-circle-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-time-calendar-circle-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-time-calendar-circle-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-time-calendar-circle-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-time-calendar-circle-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-time-calendar-circle-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-time-calendar-circle-light-s0" fill="url(#g-time-calendar-circle-light-glass)"/>
+<g mask="url(#g-time-calendar-circle-light-in0)"><use xlink:href="#g-time-calendar-circle-light-s0" fill="none" stroke="url(#g-time-calendar-circle-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-time-calendar-circle-light-s1" fill="url(#g-time-calendar-circle-light-solid)"/>
+<use xlink:href="#g-time-calendar-circle-light-s2" fill="url(#g-time-calendar-circle-light-solid)"/>
+</svg>

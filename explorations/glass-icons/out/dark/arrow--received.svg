@@ -1,0 +1,19 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-arrow-received-dark-s0" d="M5.00002 18.2C4.80002 18.2 4.60002 18.1 4.50002 18C4.20002 17.7 4.20002 17.2 4.50002 16.9L18.5 2.90005C18.8 2.60005 19.3 2.60005 19.6 2.90005C19.9 3.20005 19.9 3.70005 19.6 4.00005L5.60002 18C5.40002 18.2 5.20002 18.2 5.00002 18.2Z"/>
+  <path id="g-arrow-received-dark-s1" d="M15.3 18.2H5.00001C4.60001 18.2 4.20001 17.9 4.20001 17.4V7.20002C4.20001 6.80002 4.50001 6.40002 5.00001 6.40002C5.50001 6.40002 5.80001 6.70002 5.80001 7.20002V16.7H15.3C15.7 16.7 16.1 17 16.1 17.5C16.1 18 15.7 18.2 15.3 18.2Z"/>
+  <path id="g-arrow-received-dark-s2" d="M20.5 22.7999H3.50001C3.10001 22.7999 2.70001 22.5 2.70001 22C2.70001 21.5 3.00001 21.2 3.50001 21.2H20.5C20.9 21.2 21.3 21.5 21.3 22C21.3 22.5 20.9 22.7999 20.5 22.7999Z"/>
+  <linearGradient id="g-arrow-received-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-arrow-received-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-arrow-received-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-arrow-received-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-arrow-received-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-arrow-received-dark-s2" fill="#000"/></mask>
+  <mask id="g-arrow-received-dark-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-arrow-received-dark-s2" fill="#000"/></mask>
+  <mask id="g-arrow-received-dark-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-arrow-received-dark-s2" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-arrow-received-dark-out0)"><use xlink:href="#g-arrow-received-dark-s0" fill="url(#g-arrow-received-dark-solid)"/></g>
+<g mask="url(#g-arrow-received-dark-out1)"><use xlink:href="#g-arrow-received-dark-s1" fill="url(#g-arrow-received-dark-solid)"/></g>
+<g mask="url(#g-arrow-received-dark-in2)"><g filter="url(#g-arrow-received-dark-blur)"><use xlink:href="#g-arrow-received-dark-s0" fill="url(#g-arrow-received-dark-solid)"/><use xlink:href="#g-arrow-received-dark-s1" fill="url(#g-arrow-received-dark-solid)"/></g></g>
+<use xlink:href="#g-arrow-received-dark-s2" fill="url(#g-arrow-received-dark-glass)"/>
+<g mask="url(#g-arrow-received-dark-in2)"><use xlink:href="#g-arrow-received-dark-s2" fill="none" stroke="url(#g-arrow-received-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

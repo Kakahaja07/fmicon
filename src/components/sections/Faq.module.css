@@ -1,0 +1,18 @@
+.section {
+  padding-top: 110px;
+}
+
+.inner {
+  max-width: 640px;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-strong);
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 640px) {
+  .section { padding-top: 80px; }
+}

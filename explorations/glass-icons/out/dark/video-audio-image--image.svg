@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-video-audio-image-image-dark-s0" d="M22.02 16.82L18.89 9.50002C18.32 8.16002 17.47 7.40002 16.5 7.35002C15.54 7.30002 14.61 7.97002 13.9 9.25002L12 12.66C11.6 13.38 11.03 13.81 10.41 13.86C9.77998 13.92 9.14999 13.59 8.63999 12.94L8.41999 12.66C7.70999 11.77 6.82999 11.34 5.92999 11.43C5.02998 11.52 4.25998 12.14 3.74998 13.15L2.01999 16.6C1.39999 17.85 1.45999 19.3 2.18999 20.48C2.91999 21.66 4.18998 22.37 5.57998 22.37H18.34C19.68 22.37 20.93 21.7 21.67 20.58C22.43 19.46 22.55 18.05 22.02 16.82Z"/>
+  <path id="g-video-audio-image-image-dark-s1" d="M6.97 8.38012C8.83672 8.38012 10.35 6.86684 10.35 5.00012C10.35 3.13339 8.83672 1.62012 6.97 1.62012C5.10327 1.62012 3.59 3.13339 3.59 5.00012C3.59 6.86684 5.10327 8.38012 6.97 8.38012Z"/>
+  <linearGradient id="g-video-audio-image-image-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-video-audio-image-image-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-video-audio-image-image-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-video-audio-image-image-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-video-audio-image-image-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-video-audio-image-image-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-video-audio-image-image-dark-s0" fill="url(#g-video-audio-image-image-dark-glass)"/>
+<g mask="url(#g-video-audio-image-image-dark-in0)"><use xlink:href="#g-video-audio-image-image-dark-s0" fill="none" stroke="url(#g-video-audio-image-image-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-video-audio-image-image-dark-s1" fill="url(#g-video-audio-image-image-dark-solid)"/>
+</svg>

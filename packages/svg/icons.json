@@ -1,0 +1,4457 @@
+[
+  {
+    "slug": "home",
+    "name": "home",
+    "category": "essetional"
+  },
+  {
+    "slug": "home-2",
+    "name": "home-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "search-normal",
+    "name": "search-normal",
+    "category": "search"
+  },
+  {
+    "slug": "setting",
+    "name": "setting",
+    "category": "settings"
+  },
+  {
+    "slug": "setting-2",
+    "name": "setting-2",
+    "category": "settings"
+  },
+  {
+    "slug": "menu",
+    "name": "menu",
+    "category": "essetional"
+  },
+  {
+    "slug": "more",
+    "name": "more",
+    "category": "settings"
+  },
+  {
+    "slug": "category",
+    "name": "category",
+    "category": "settings"
+  },
+  {
+    "slug": "element-3",
+    "name": "element-3",
+    "category": "grid"
+  },
+  {
+    "slug": "filter",
+    "name": "filter",
+    "category": "essetional"
+  },
+  {
+    "slug": "add",
+    "name": "add",
+    "category": "essetional"
+  },
+  {
+    "slug": "add-circle",
+    "name": "add-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "minus",
+    "name": "minus",
+    "category": "essetional"
+  },
+  {
+    "slug": "close-circle",
+    "name": "close-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "tick-circle",
+    "name": "tick-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "arrow-left",
+    "name": "arrow-left",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-right",
+    "name": "arrow-right",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-up",
+    "name": "arrow-up",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-down",
+    "name": "arrow-down",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-circle-right",
+    "name": "arrow-circle-right",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh",
+    "name": "refresh",
+    "category": "arrow"
+  },
+  {
+    "slug": "repeat",
+    "name": "repeat",
+    "category": "arrow"
+  },
+  {
+    "slug": "export",
+    "name": "export",
+    "category": "arrow"
+  },
+  {
+    "slug": "import",
+    "name": "import",
+    "category": "arrow"
+  },
+  {
+    "slug": "login",
+    "name": "login",
+    "category": "arrow"
+  },
+  {
+    "slug": "logout",
+    "name": "logout",
+    "category": "arrow"
+  },
+  {
+    "slug": "send",
+    "name": "send",
+    "category": "essetional"
+  },
+  {
+    "slug": "share",
+    "name": "share",
+    "category": "essetional"
+  },
+  {
+    "slug": "link",
+    "name": "link",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "maximize-4",
+    "name": "maximize-4",
+    "category": "grid"
+  },
+  {
+    "slug": "user",
+    "name": "user",
+    "category": "users"
+  },
+  {
+    "slug": "profile-2user",
+    "name": "profile-2user",
+    "category": "users"
+  },
+  {
+    "slug": "people",
+    "name": "people",
+    "category": "users"
+  },
+  {
+    "slug": "user-add",
+    "name": "user-add",
+    "category": "users"
+  },
+  {
+    "slug": "message",
+    "name": "message",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "messages-2",
+    "name": "messages-2",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms",
+    "name": "sms",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "notification",
+    "name": "notification",
+    "category": "notifications"
+  },
+  {
+    "slug": "call",
+    "name": "call",
+    "category": "call"
+  },
+  {
+    "slug": "microphone",
+    "name": "microphone",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video",
+    "name": "video",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "direct-inbox",
+    "name": "direct-inbox",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "emoji-happy",
+    "name": "emoji-happy",
+    "category": "essetional"
+  },
+  {
+    "slug": "like",
+    "name": "like",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart",
+    "name": "heart",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "star",
+    "name": "star",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "medal-star",
+    "name": "medal-star",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "crown",
+    "name": "crown",
+    "category": "essetional"
+  },
+  {
+    "slug": "magic-star",
+    "name": "magic-star",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "folder",
+    "name": "folder",
+    "category": "files"
+  },
+  {
+    "slug": "folder-open",
+    "name": "folder-open",
+    "category": "files"
+  },
+  {
+    "slug": "document",
+    "name": "document",
+    "category": "content"
+  },
+  {
+    "slug": "document-text",
+    "name": "document-text",
+    "category": "content"
+  },
+  {
+    "slug": "copy",
+    "name": "copy",
+    "category": "design-tools"
+  },
+  {
+    "slug": "edit",
+    "name": "edit",
+    "category": "content"
+  },
+  {
+    "slug": "trash",
+    "name": "trash",
+    "category": "essetional"
+  },
+  {
+    "slug": "archive",
+    "name": "archive",
+    "category": "essetional"
+  },
+  {
+    "slug": "bookmark",
+    "name": "bookmark",
+    "category": "school-learning"
+  },
+  {
+    "slug": "clipboard-text",
+    "name": "clipboard-text",
+    "category": "content"
+  },
+  {
+    "slug": "note",
+    "name": "note",
+    "category": "content"
+  },
+  {
+    "slug": "gallery",
+    "name": "gallery",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "camera",
+    "name": "camera",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "image",
+    "name": "image",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music",
+    "name": "music",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "play",
+    "name": "play",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "pause",
+    "name": "pause",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-high",
+    "name": "volume-high",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "code",
+    "name": "code",
+    "category": "programing"
+  },
+  {
+    "slug": "command",
+    "name": "command",
+    "category": "programing"
+  },
+  {
+    "slug": "calendar",
+    "name": "calendar",
+    "category": "time"
+  },
+  {
+    "slug": "clock",
+    "name": "clock",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "timer",
+    "name": "timer",
+    "category": "time"
+  },
+  {
+    "slug": "location",
+    "name": "location",
+    "category": "location"
+  },
+  {
+    "slug": "map",
+    "name": "map",
+    "category": "location"
+  },
+  {
+    "slug": "global",
+    "name": "global",
+    "category": "location"
+  },
+  {
+    "slug": "wallet",
+    "name": "wallet",
+    "category": "money"
+  },
+  {
+    "slug": "card",
+    "name": "card",
+    "category": "money"
+  },
+  {
+    "slug": "money",
+    "name": "money",
+    "category": "money"
+  },
+  {
+    "slug": "dollar-circle",
+    "name": "dollar-circle",
+    "category": "money"
+  },
+  {
+    "slug": "bag",
+    "name": "bag",
+    "category": "shop"
+  },
+  {
+    "slug": "shopping-cart",
+    "name": "shopping-cart",
+    "category": "shop"
+  },
+  {
+    "slug": "gift",
+    "name": "gift",
+    "category": "school-learning"
+  },
+  {
+    "slug": "receipt",
+    "name": "receipt",
+    "category": "money"
+  },
+  {
+    "slug": "ticket",
+    "name": "ticket",
+    "category": "money"
+  },
+  {
+    "slug": "discount-shape",
+    "name": "discount-shape",
+    "category": "money"
+  },
+  {
+    "slug": "chart",
+    "name": "chart",
+    "category": "essetional"
+  },
+  {
+    "slug": "graph",
+    "name": "graph",
+    "category": "business"
+  },
+  {
+    "slug": "trend-up",
+    "name": "trend-up",
+    "category": "business"
+  },
+  {
+    "slug": "diagram",
+    "name": "diagram",
+    "category": "business"
+  },
+  {
+    "slug": "monitor",
+    "name": "monitor",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "mobile",
+    "name": "mobile",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "headphone",
+    "name": "headphone",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "keyboard",
+    "name": "keyboard",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "printer",
+    "name": "printer",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "wifi",
+    "name": "wifi",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-full",
+    "name": "battery-full",
+    "category": "essetional"
+  },
+  {
+    "slug": "cloud",
+    "name": "cloud",
+    "category": "weather"
+  },
+  {
+    "slug": "lock",
+    "name": "lock",
+    "category": "security"
+  },
+  {
+    "slug": "unlock",
+    "name": "unlock",
+    "category": "security"
+  },
+  {
+    "slug": "key",
+    "name": "key",
+    "category": "security"
+  },
+  {
+    "slug": "shield-tick",
+    "name": "shield-tick",
+    "category": "security"
+  },
+  {
+    "slug": "eye",
+    "name": "eye",
+    "category": "security"
+  },
+  {
+    "slug": "scan",
+    "name": "scan",
+    "category": "security"
+  },
+  {
+    "slug": "lamp-on",
+    "name": "lamp-on",
+    "category": "notifications"
+  },
+  {
+    "slug": "flash",
+    "name": "flash",
+    "category": "weather"
+  },
+  {
+    "slug": "sun",
+    "name": "sun",
+    "category": "weather"
+  },
+  {
+    "slug": "moon",
+    "name": "moon",
+    "category": "weather"
+  },
+  {
+    "slug": "coffee",
+    "name": "coffee",
+    "category": "essetional"
+  },
+  {
+    "slug": "cup",
+    "name": "cup",
+    "category": "essetional"
+  },
+  {
+    "slug": "airplane",
+    "name": "airplane",
+    "category": "car-linear"
+  },
+  {
+    "slug": "car",
+    "name": "car",
+    "category": "car-linear"
+  },
+  {
+    "slug": "truck",
+    "name": "truck",
+    "category": "delivery"
+  },
+  {
+    "slug": "building",
+    "name": "building",
+    "category": "building"
+  },
+  {
+    "slug": "box",
+    "name": "box",
+    "category": "delivery"
+  },
+  {
+    "slug": "flag",
+    "name": "flag",
+    "category": "essetional"
+  },
+  {
+    "slug": "tag",
+    "name": "tag",
+    "category": "money"
+  },
+  {
+    "slug": "lifebuoy",
+    "name": "lifebuoy",
+    "category": "design-tools"
+  },
+  {
+    "slug": "brush",
+    "name": "brush",
+    "category": "design-tools"
+  },
+  {
+    "slug": "shapes",
+    "name": "shapes",
+    "category": "design-tools"
+  },
+  {
+    "slug": "archive-archive",
+    "name": "archive",
+    "category": "archive"
+  },
+  {
+    "slug": "archive-add",
+    "name": "archive-add",
+    "category": "archive"
+  },
+  {
+    "slug": "archive-minus",
+    "name": "archive-minus",
+    "category": "archive"
+  },
+  {
+    "slug": "archive-slash",
+    "name": "archive-slash",
+    "category": "archive"
+  },
+  {
+    "slug": "archive-tick",
+    "name": "archive-tick",
+    "category": "archive"
+  },
+  {
+    "slug": "book-saved",
+    "name": "book-saved",
+    "category": "archive"
+  },
+  {
+    "slug": "book-square",
+    "name": "book-square",
+    "category": "archive"
+  },
+  {
+    "slug": "receipt-square",
+    "name": "receipt-square",
+    "category": "archive"
+  },
+  {
+    "slug": "save-2",
+    "name": "save-2",
+    "category": "archive"
+  },
+  {
+    "slug": "save-add",
+    "name": "save-add",
+    "category": "archive"
+  },
+  {
+    "slug": "save-minus",
+    "name": "save-minus",
+    "category": "archive"
+  },
+  {
+    "slug": "save-remove",
+    "name": "save-remove",
+    "category": "archive"
+  },
+  {
+    "slug": "arrange-circle",
+    "name": "arrange-circle",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrange-circle-2",
+    "name": "arrange-circle-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrange-square",
+    "name": "arrange-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrange-square-2",
+    "name": "arrange-square-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-2",
+    "name": "arrow-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-3",
+    "name": "arrow-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-bottom",
+    "name": "arrow-bottom",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-circle-down",
+    "name": "arrow-circle-down",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-circle-left",
+    "name": "arrow-circle-left",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-circle-up",
+    "name": "arrow-circle-up",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-down-2",
+    "name": "arrow-down-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-left-2",
+    "name": "arrow-left-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-left-3",
+    "name": "arrow-left-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-right-2",
+    "name": "arrow-right-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-right-3",
+    "name": "arrow-right-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-square-down",
+    "name": "arrow-square-down",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-square-left",
+    "name": "arrow-square-left",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-square-right",
+    "name": "arrow-square-right",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-square-up",
+    "name": "arrow-square-up",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-swap",
+    "name": "arrow-swap",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-swap-horizontal",
+    "name": "arrow-swap-horizontal",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-up-2",
+    "name": "arrow-up-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "arrow-up-3",
+    "name": "arrow-up-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "back-square",
+    "name": "back-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "convert",
+    "name": "convert",
+    "category": "arrow"
+  },
+  {
+    "slug": "export-2",
+    "name": "export-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "export-3",
+    "name": "export-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "export-4",
+    "name": "export-4",
+    "category": "arrow"
+  },
+  {
+    "slug": "forward-square",
+    "name": "forward-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "import-2",
+    "name": "import-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "import-3",
+    "name": "import-3",
+    "category": "arrow"
+  },
+  {
+    "slug": "import-4",
+    "name": "import-4",
+    "category": "arrow"
+  },
+  {
+    "slug": "line-arrow-down",
+    "name": "line-arrow-down",
+    "category": "arrow"
+  },
+  {
+    "slug": "line-arrow-left",
+    "name": "line-arrow-left",
+    "category": "arrow"
+  },
+  {
+    "slug": "line-arrow-right",
+    "name": "line-arrow-right",
+    "category": "arrow"
+  },
+  {
+    "slug": "line-arrow-up",
+    "name": "line-arrow-up",
+    "category": "arrow"
+  },
+  {
+    "slug": "login-2",
+    "name": "login-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "logout-2",
+    "name": "logout-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "receive-square",
+    "name": "receive-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "receive-square-2",
+    "name": "receive-square-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "received",
+    "name": "received",
+    "category": "arrow"
+  },
+  {
+    "slug": "redo",
+    "name": "redo",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh-2",
+    "name": "refresh-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh-circle",
+    "name": "refresh-circle",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh-left-square",
+    "name": "refresh-left-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh-right-square",
+    "name": "refresh-right-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "refresh-square-2",
+    "name": "refresh-square-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "repeat-circle",
+    "name": "repeat-circle",
+    "category": "arrow"
+  },
+  {
+    "slug": "rotate-left",
+    "name": "rotate-left",
+    "category": "arrow"
+  },
+  {
+    "slug": "rotate-right",
+    "name": "rotate-right",
+    "category": "arrow"
+  },
+  {
+    "slug": "send-arrow",
+    "name": "send",
+    "category": "arrow"
+  },
+  {
+    "slug": "send-sqaure-2",
+    "name": "send-sqaure-2",
+    "category": "arrow"
+  },
+  {
+    "slug": "send-square",
+    "name": "send-square",
+    "category": "arrow"
+  },
+  {
+    "slug": "undo",
+    "name": "undo",
+    "category": "arrow"
+  },
+  {
+    "slug": "aquarius",
+    "name": "aquarius",
+    "category": "astrology"
+  },
+  {
+    "slug": "gemini",
+    "name": "gemini",
+    "category": "astrology"
+  },
+  {
+    "slug": "gemini-2",
+    "name": "gemini-2",
+    "category": "astrology"
+  },
+  {
+    "slug": "sagittarius",
+    "name": "sagittarius",
+    "category": "astrology"
+  },
+  {
+    "slug": "woman",
+    "name": "woman",
+    "category": "astrology"
+  },
+  {
+    "slug": "bank",
+    "name": "bank",
+    "category": "building"
+  },
+  {
+    "slug": "building-3",
+    "name": "building-3",
+    "category": "building"
+  },
+  {
+    "slug": "building-4",
+    "name": "building-4",
+    "category": "building"
+  },
+  {
+    "slug": "buildings",
+    "name": "buildings",
+    "category": "building"
+  },
+  {
+    "slug": "buildings-2",
+    "name": "buildings-2",
+    "category": "building"
+  },
+  {
+    "slug": "buliding",
+    "name": "buliding",
+    "category": "building"
+  },
+  {
+    "slug": "courthouse",
+    "name": "courthouse",
+    "category": "building"
+  },
+  {
+    "slug": "hospital",
+    "name": "hospital",
+    "category": "building"
+  },
+  {
+    "slug": "house",
+    "name": "house",
+    "category": "building"
+  },
+  {
+    "slug": "house-2",
+    "name": "house-2",
+    "category": "building"
+  },
+  {
+    "slug": "activity",
+    "name": "activity",
+    "category": "business"
+  },
+  {
+    "slug": "chart-business",
+    "name": "chart",
+    "category": "business"
+  },
+  {
+    "slug": "chart-2",
+    "name": "chart-2",
+    "category": "business"
+  },
+  {
+    "slug": "chart-3",
+    "name": "chart-3",
+    "category": "business"
+  },
+  {
+    "slug": "chart-4",
+    "name": "chart-4",
+    "category": "business"
+  },
+  {
+    "slug": "chart-fail",
+    "name": "chart-fail",
+    "category": "business"
+  },
+  {
+    "slug": "chart-success",
+    "name": "chart-success",
+    "category": "business"
+  },
+  {
+    "slug": "favorite-chart",
+    "name": "favorite-chart",
+    "category": "business"
+  },
+  {
+    "slug": "hashtag",
+    "name": "hashtag",
+    "category": "business"
+  },
+  {
+    "slug": "health",
+    "name": "health",
+    "category": "business"
+  },
+  {
+    "slug": "home-hashtag",
+    "name": "home-hashtag",
+    "category": "business"
+  },
+  {
+    "slug": "home-trend-down",
+    "name": "home-trend-down",
+    "category": "business"
+  },
+  {
+    "slug": "home-trend-up",
+    "name": "home-trend-up",
+    "category": "business"
+  },
+  {
+    "slug": "personalcard",
+    "name": "personalcard",
+    "category": "business"
+  },
+  {
+    "slug": "presention-chart",
+    "name": "presention-chart",
+    "category": "business"
+  },
+  {
+    "slug": "status-up",
+    "name": "status-up",
+    "category": "business"
+  },
+  {
+    "slug": "trend-down",
+    "name": "trend-down",
+    "category": "business"
+  },
+  {
+    "slug": "call-add",
+    "name": "call-add",
+    "category": "call"
+  },
+  {
+    "slug": "call-calling",
+    "name": "call-calling",
+    "category": "call"
+  },
+  {
+    "slug": "call-incoming",
+    "name": "call-incoming",
+    "category": "call"
+  },
+  {
+    "slug": "call-minus",
+    "name": "call-minus",
+    "category": "call"
+  },
+  {
+    "slug": "call-outgoing",
+    "name": "call-outgoing",
+    "category": "call"
+  },
+  {
+    "slug": "call-received",
+    "name": "call-received",
+    "category": "call"
+  },
+  {
+    "slug": "call-remove",
+    "name": "call-remove",
+    "category": "call"
+  },
+  {
+    "slug": "call-slash",
+    "name": "call-slash",
+    "category": "call"
+  },
+  {
+    "slug": "airplane-square",
+    "name": "airplane-square",
+    "category": "car-linear"
+  },
+  {
+    "slug": "bus",
+    "name": "bus",
+    "category": "car-linear"
+  },
+  {
+    "slug": "driving",
+    "name": "driving",
+    "category": "car-linear"
+  },
+  {
+    "slug": "gas-station",
+    "name": "gas-station",
+    "category": "car-linear"
+  },
+  {
+    "slug": "ship",
+    "name": "ship",
+    "category": "car-linear"
+  },
+  {
+    "slug": "smart-car",
+    "name": "smart-car",
+    "category": "car-linear"
+  },
+  {
+    "slug": "airdrop",
+    "name": "airdrop",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "airpod",
+    "name": "airpod",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "airpods",
+    "name": "airpods",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "bluetooth",
+    "name": "bluetooth",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "bluetooth-2",
+    "name": "bluetooth-2",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "bluetooth-circle",
+    "name": "bluetooth-circle",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "bluetooth-rectangle",
+    "name": "bluetooth-rectangle",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cloud-add",
+    "name": "cloud-add",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cloud-change",
+    "name": "cloud-change",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cloud-connection",
+    "name": "cloud-connection",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cloud-remove",
+    "name": "cloud-remove",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cpu",
+    "name": "cpu",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cpu-charge",
+    "name": "cpu-charge",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "cpu-setting",
+    "name": "cpu-setting",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "devices",
+    "name": "devices",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "driver",
+    "name": "driver",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "driver-2",
+    "name": "driver-2",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "driver-refresh",
+    "name": "driver-refresh",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "electricity",
+    "name": "electricity",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "external-drive",
+    "name": "external-drive",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "folder-connection",
+    "name": "folder-connection",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "gameboy",
+    "name": "gameboy",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "headphones",
+    "name": "headphones",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "keyboard-open",
+    "name": "keyboard-open",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "lamp",
+    "name": "lamp",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "microscope",
+    "name": "microscope",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "mirroring-screen",
+    "name": "mirroring-screen",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "monitor-mobbile",
+    "name": "monitor-mobbile",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "monitor-recorder",
+    "name": "monitor-recorder",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "mouse",
+    "name": "mouse",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "music-play",
+    "name": "music-play",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "printer-slash",
+    "name": "printer-slash",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "ram",
+    "name": "ram",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "ram-2",
+    "name": "ram-2",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "simcard",
+    "name": "simcard",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "simcard-2",
+    "name": "simcard-2",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "simcard-3",
+    "name": "simcard-3",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "speaker",
+    "name": "speaker",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "watch",
+    "name": "watch",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "watch-status",
+    "name": "watch-status",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "weight",
+    "name": "weight",
+    "category": "computers-devices-electronics"
+  },
+  {
+    "slug": "archive-book",
+    "name": "archive-book",
+    "category": "content"
+  },
+  {
+    "slug": "bill",
+    "name": "bill",
+    "category": "content"
+  },
+  {
+    "slug": "clipboard-close",
+    "name": "clipboard-close",
+    "category": "content"
+  },
+  {
+    "slug": "clipboard-export",
+    "name": "clipboard-export",
+    "category": "content"
+  },
+  {
+    "slug": "clipboard-import",
+    "name": "clipboard-import",
+    "category": "content"
+  },
+  {
+    "slug": "clipboard-tick",
+    "name": "clipboard-tick",
+    "category": "content"
+  },
+  {
+    "slug": "copyright",
+    "name": "copyright",
+    "category": "content"
+  },
+  {
+    "slug": "creative-commons",
+    "name": "creative-commons",
+    "category": "content"
+  },
+  {
+    "slug": "document-cloud",
+    "name": "document-cloud",
+    "category": "content"
+  },
+  {
+    "slug": "document-copy",
+    "name": "document-copy",
+    "category": "content"
+  },
+  {
+    "slug": "document-download",
+    "name": "document-download",
+    "category": "content"
+  },
+  {
+    "slug": "document-favorite",
+    "name": "document-favorite",
+    "category": "content"
+  },
+  {
+    "slug": "document-filter",
+    "name": "document-filter",
+    "category": "content"
+  },
+  {
+    "slug": "document-forward",
+    "name": "document-forward",
+    "category": "content"
+  },
+  {
+    "slug": "document-like",
+    "name": "document-like",
+    "category": "content"
+  },
+  {
+    "slug": "document-normal",
+    "name": "document-normal",
+    "category": "content"
+  },
+  {
+    "slug": "document-previous",
+    "name": "document-previous",
+    "category": "content"
+  },
+  {
+    "slug": "document-sketch",
+    "name": "document-sketch",
+    "category": "content"
+  },
+  {
+    "slug": "document-text-2",
+    "name": "document-text-2",
+    "category": "content"
+  },
+  {
+    "slug": "document-upload",
+    "name": "document-upload",
+    "category": "content"
+  },
+  {
+    "slug": "edit-2",
+    "name": "edit-2",
+    "category": "content"
+  },
+  {
+    "slug": "menu-board",
+    "name": "menu-board",
+    "category": "content"
+  },
+  {
+    "slug": "note-2",
+    "name": "note-2",
+    "category": "content"
+  },
+  {
+    "slug": "note-add",
+    "name": "note-add",
+    "category": "content"
+  },
+  {
+    "slug": "note-favorite",
+    "name": "note-favorite",
+    "category": "content"
+  },
+  {
+    "slug": "note-remove",
+    "name": "note-remove",
+    "category": "content"
+  },
+  {
+    "slug": "note-text",
+    "name": "note-text",
+    "category": "content"
+  },
+  {
+    "slug": "stickynote",
+    "name": "stickynote",
+    "category": "content"
+  },
+  {
+    "slug": "task",
+    "name": "task",
+    "category": "content"
+  },
+  {
+    "slug": "task-square",
+    "name": "task-square",
+    "category": "content"
+  },
+  {
+    "slug": "bitcoin-card",
+    "name": "bitcoin-card",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "bitcoin-convert",
+    "name": "bitcoin-convert",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "bitcoin-refresh",
+    "name": "bitcoin-refresh",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "buy-crypto",
+    "name": "buy-crypto",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "card-coin",
+    "name": "card-coin",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "trade",
+    "name": "trade",
+    "category": "crypto-currency"
+  },
+  {
+    "slug": "3d-cube-scan",
+    "name": "3d-cube-scan",
+    "category": "delivery"
+  },
+  {
+    "slug": "3d-rotate",
+    "name": "3d-rotate",
+    "category": "delivery"
+  },
+  {
+    "slug": "3d-square",
+    "name": "3d-square",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-2",
+    "name": "box-2",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-add",
+    "name": "box-add",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-remove",
+    "name": "box-remove",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-search",
+    "name": "box-search",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-tick",
+    "name": "box-tick",
+    "category": "delivery"
+  },
+  {
+    "slug": "box-time",
+    "name": "box-time",
+    "category": "delivery"
+  },
+  {
+    "slug": "convert-3d-cube",
+    "name": "convert-3d-cube",
+    "category": "delivery"
+  },
+  {
+    "slug": "truck-fast",
+    "name": "truck-fast",
+    "category": "delivery"
+  },
+  {
+    "slug": "truck-remove",
+    "name": "truck-remove",
+    "category": "delivery"
+  },
+  {
+    "slug": "truck-tick",
+    "name": "truck-tick",
+    "category": "delivery"
+  },
+  {
+    "slug": "truck-time",
+    "name": "truck-time",
+    "category": "delivery"
+  },
+  {
+    "slug": "additem",
+    "name": "additem",
+    "category": "design-tools"
+  },
+  {
+    "slug": "backward-item",
+    "name": "backward-item",
+    "category": "design-tools"
+  },
+  {
+    "slug": "bezier",
+    "name": "bezier",
+    "category": "design-tools"
+  },
+  {
+    "slug": "blend",
+    "name": "blend",
+    "category": "design-tools"
+  },
+  {
+    "slug": "blend-2",
+    "name": "blend-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "blur",
+    "name": "blur",
+    "category": "design-tools"
+  },
+  {
+    "slug": "brush-2",
+    "name": "brush-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "brush-3",
+    "name": "brush-3",
+    "category": "design-tools"
+  },
+  {
+    "slug": "brush-4",
+    "name": "brush-4",
+    "category": "design-tools"
+  },
+  {
+    "slug": "brush-square",
+    "name": "brush-square",
+    "category": "design-tools"
+  },
+  {
+    "slug": "bucket",
+    "name": "bucket",
+    "category": "design-tools"
+  },
+  {
+    "slug": "bucket-circle",
+    "name": "bucket-circle",
+    "category": "design-tools"
+  },
+  {
+    "slug": "bucket-square",
+    "name": "bucket-square",
+    "category": "design-tools"
+  },
+  {
+    "slug": "color-swatch",
+    "name": "color-swatch",
+    "category": "design-tools"
+  },
+  {
+    "slug": "colorfilter",
+    "name": "colorfilter",
+    "category": "design-tools"
+  },
+  {
+    "slug": "colors-square",
+    "name": "colors-square",
+    "category": "design-tools"
+  },
+  {
+    "slug": "component",
+    "name": "component",
+    "category": "design-tools"
+  },
+  {
+    "slug": "copy-success",
+    "name": "copy-success",
+    "category": "design-tools"
+  },
+  {
+    "slug": "designtools",
+    "name": "designtools",
+    "category": "design-tools"
+  },
+  {
+    "slug": "eraser",
+    "name": "eraser",
+    "category": "design-tools"
+  },
+  {
+    "slug": "flash-circle",
+    "name": "flash-circle",
+    "category": "design-tools"
+  },
+  {
+    "slug": "forward-item",
+    "name": "forward-item",
+    "category": "design-tools"
+  },
+  {
+    "slug": "glass",
+    "name": "glass",
+    "category": "design-tools"
+  },
+  {
+    "slug": "layer",
+    "name": "layer",
+    "category": "design-tools"
+  },
+  {
+    "slug": "magicpen",
+    "name": "magicpen",
+    "category": "design-tools"
+  },
+  {
+    "slug": "main-component",
+    "name": "main-component",
+    "category": "design-tools"
+  },
+  {
+    "slug": "mask",
+    "name": "mask",
+    "category": "design-tools"
+  },
+  {
+    "slug": "mask-2",
+    "name": "mask-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "mask-3",
+    "name": "mask-3",
+    "category": "design-tools"
+  },
+  {
+    "slug": "omega-circle",
+    "name": "omega-circle",
+    "category": "design-tools"
+  },
+  {
+    "slug": "omega-square",
+    "name": "omega-square",
+    "category": "design-tools"
+  },
+  {
+    "slug": "paintbucket",
+    "name": "paintbucket",
+    "category": "design-tools"
+  },
+  {
+    "slug": "path",
+    "name": "path",
+    "category": "design-tools"
+  },
+  {
+    "slug": "path-2",
+    "name": "path-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "path-square",
+    "name": "path-square",
+    "category": "design-tools"
+  },
+  {
+    "slug": "pen-add",
+    "name": "pen-add",
+    "category": "design-tools"
+  },
+  {
+    "slug": "pen-close",
+    "name": "pen-close",
+    "category": "design-tools"
+  },
+  {
+    "slug": "pen-remove",
+    "name": "pen-remove",
+    "category": "design-tools"
+  },
+  {
+    "slug": "pen-tool",
+    "name": "pen-tool",
+    "category": "design-tools"
+  },
+  {
+    "slug": "pen-tool-2",
+    "name": "pen-tool-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "recovery-convert",
+    "name": "recovery-convert",
+    "category": "design-tools"
+  },
+  {
+    "slug": "ruler",
+    "name": "ruler",
+    "category": "design-tools"
+  },
+  {
+    "slug": "ruler-pen",
+    "name": "ruler-pen",
+    "category": "design-tools"
+  },
+  {
+    "slug": "scissor",
+    "name": "scissor",
+    "category": "design-tools"
+  },
+  {
+    "slug": "shapes-2",
+    "name": "shapes-2",
+    "category": "design-tools"
+  },
+  {
+    "slug": "size",
+    "name": "size",
+    "category": "design-tools"
+  },
+  {
+    "slug": "device-message",
+    "name": "device-message",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "direct",
+    "name": "direct",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "direct-normal",
+    "name": "direct-normal",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "direct-notification",
+    "name": "direct-notification",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "direct-send",
+    "name": "direct-send",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "directbox-default",
+    "name": "directbox-default",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "directbox-default-2",
+    "name": "directbox-default-2",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "directbox-receive",
+    "name": "directbox-receive",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "directbox-send",
+    "name": "directbox-send",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-2",
+    "name": "message-2",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-add",
+    "name": "message-add",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-add-2",
+    "name": "message-add-2",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-circle",
+    "name": "message-circle",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-edit",
+    "name": "message-edit",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-favorite",
+    "name": "message-favorite",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-minus",
+    "name": "message-minus",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-notif",
+    "name": "message-notif",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-remove",
+    "name": "message-remove",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-search",
+    "name": "message-search",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-square",
+    "name": "message-square",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-text",
+    "name": "message-text",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-text-2",
+    "name": "message-text-2",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-tick",
+    "name": "message-tick",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "message-time",
+    "name": "message-time",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "messages",
+    "name": "messages",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "messages-3",
+    "name": "messages-3",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "messages-4",
+    "name": "messages-4",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms-edit",
+    "name": "sms-edit",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms-notification",
+    "name": "sms-notification",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms-search",
+    "name": "sms-search",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms-star",
+    "name": "sms-star",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "sms-tracking",
+    "name": "sms-tracking",
+    "category": "emails-messages"
+  },
+  {
+    "slug": "3dcube",
+    "name": "3dcube",
+    "category": "essetional"
+  },
+  {
+    "slug": "add-square",
+    "name": "add-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "auto-brightness",
+    "name": "auto-brightness",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-2",
+    "name": "battery-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-charging",
+    "name": "battery-charging",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-disable",
+    "name": "battery-disable",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-empty",
+    "name": "battery-empty",
+    "category": "essetional"
+  },
+  {
+    "slug": "battery-empty-2",
+    "name": "battery-empty-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "box-2-essetional",
+    "name": "box-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "broom",
+    "name": "broom",
+    "category": "essetional"
+  },
+  {
+    "slug": "bubble",
+    "name": "bubble",
+    "category": "essetional"
+  },
+  {
+    "slug": "cake",
+    "name": "cake",
+    "category": "essetional"
+  },
+  {
+    "slug": "cd",
+    "name": "cd",
+    "category": "essetional"
+  },
+  {
+    "slug": "close-square",
+    "name": "close-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "computing",
+    "name": "computing",
+    "category": "essetional"
+  },
+  {
+    "slug": "crown-2",
+    "name": "crown-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "danger",
+    "name": "danger",
+    "category": "essetional"
+  },
+  {
+    "slug": "diamonds",
+    "name": "diamonds",
+    "category": "essetional"
+  },
+  {
+    "slug": "discover",
+    "name": "discover",
+    "category": "essetional"
+  },
+  {
+    "slug": "emoji-normal",
+    "name": "emoji-normal",
+    "category": "essetional"
+  },
+  {
+    "slug": "emoji-sad",
+    "name": "emoji-sad",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-add",
+    "name": "filter-add",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-edit",
+    "name": "filter-edit",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-remove",
+    "name": "filter-remove",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-search",
+    "name": "filter-search",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-square",
+    "name": "filter-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "filter-tick",
+    "name": "filter-tick",
+    "category": "essetional"
+  },
+  {
+    "slug": "flag-2",
+    "name": "flag-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "flash-circle-essetional",
+    "name": "flash-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "flash-slash",
+    "name": "flash-slash",
+    "category": "essetional"
+  },
+  {
+    "slug": "forbidden",
+    "name": "forbidden",
+    "category": "essetional"
+  },
+  {
+    "slug": "forbidden-2",
+    "name": "forbidden-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "ghost",
+    "name": "ghost",
+    "category": "essetional"
+  },
+  {
+    "slug": "glass-essetional",
+    "name": "glass",
+    "category": "essetional"
+  },
+  {
+    "slug": "happyemoji",
+    "name": "happyemoji",
+    "category": "essetional"
+  },
+  {
+    "slug": "home-3",
+    "name": "home-3",
+    "category": "essetional"
+  },
+  {
+    "slug": "home-wifi",
+    "name": "home-wifi",
+    "category": "essetional"
+  },
+  {
+    "slug": "info-circle",
+    "name": "info-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "information",
+    "name": "information",
+    "category": "essetional"
+  },
+  {
+    "slug": "judge",
+    "name": "judge",
+    "category": "essetional"
+  },
+  {
+    "slug": "lamp-essetional",
+    "name": "lamp",
+    "category": "essetional"
+  },
+  {
+    "slug": "level",
+    "name": "level",
+    "category": "essetional"
+  },
+  {
+    "slug": "milk",
+    "name": "milk",
+    "category": "essetional"
+  },
+  {
+    "slug": "minus-cirlce",
+    "name": "minus-cirlce",
+    "category": "essetional"
+  },
+  {
+    "slug": "minus-square",
+    "name": "minus-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "mirror",
+    "name": "mirror",
+    "category": "essetional"
+  },
+  {
+    "slug": "more-circle",
+    "name": "more-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "more-square",
+    "name": "more-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "mouse-essetional",
+    "name": "mouse",
+    "category": "essetional"
+  },
+  {
+    "slug": "mouse-circle",
+    "name": "mouse-circle",
+    "category": "essetional"
+  },
+  {
+    "slug": "mouse-square",
+    "name": "mouse-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "pet",
+    "name": "pet",
+    "category": "essetional"
+  },
+  {
+    "slug": "ranking",
+    "name": "ranking",
+    "category": "essetional"
+  },
+  {
+    "slug": "reserve",
+    "name": "reserve",
+    "category": "essetional"
+  },
+  {
+    "slug": "safe-home",
+    "name": "safe-home",
+    "category": "essetional"
+  },
+  {
+    "slug": "send-2",
+    "name": "send-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "share-2",
+    "name": "share-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "signpost",
+    "name": "signpost",
+    "category": "essetional"
+  },
+  {
+    "slug": "slash",
+    "name": "slash",
+    "category": "essetional"
+  },
+  {
+    "slug": "slider",
+    "name": "slider",
+    "category": "essetional"
+  },
+  {
+    "slug": "smart-home",
+    "name": "smart-home",
+    "category": "essetional"
+  },
+  {
+    "slug": "sort",
+    "name": "sort",
+    "category": "essetional"
+  },
+  {
+    "slug": "sound",
+    "name": "sound",
+    "category": "essetional"
+  },
+  {
+    "slug": "speedometer",
+    "name": "speedometer",
+    "category": "essetional"
+  },
+  {
+    "slug": "status",
+    "name": "status",
+    "category": "essetional"
+  },
+  {
+    "slug": "sticker",
+    "name": "sticker",
+    "category": "essetional"
+  },
+  {
+    "slug": "story",
+    "name": "story",
+    "category": "essetional"
+  },
+  {
+    "slug": "tag-cross",
+    "name": "tag-cross",
+    "category": "essetional"
+  },
+  {
+    "slug": "tag-right",
+    "name": "tag-right",
+    "category": "essetional"
+  },
+  {
+    "slug": "tick-square",
+    "name": "tick-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "tree",
+    "name": "tree",
+    "category": "essetional"
+  },
+  {
+    "slug": "triangle",
+    "name": "triangle",
+    "category": "essetional"
+  },
+  {
+    "slug": "trush-square",
+    "name": "trush-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "verify",
+    "name": "verify",
+    "category": "essetional"
+  },
+  {
+    "slug": "warning-2",
+    "name": "warning-2",
+    "category": "essetional"
+  },
+  {
+    "slug": "weight-essetional",
+    "name": "weight",
+    "category": "essetional"
+  },
+  {
+    "slug": "wifi-square",
+    "name": "wifi-square",
+    "category": "essetional"
+  },
+  {
+    "slug": "folder-2",
+    "name": "folder-2",
+    "category": "files"
+  },
+  {
+    "slug": "folder-add",
+    "name": "folder-add",
+    "category": "files"
+  },
+  {
+    "slug": "folder-cloud",
+    "name": "folder-cloud",
+    "category": "files"
+  },
+  {
+    "slug": "folder-cross",
+    "name": "folder-cross",
+    "category": "files"
+  },
+  {
+    "slug": "folder-favorite",
+    "name": "folder-favorite",
+    "category": "files"
+  },
+  {
+    "slug": "folder-minus",
+    "name": "folder-minus",
+    "category": "files"
+  },
+  {
+    "slug": "3square",
+    "name": "3square",
+    "category": "grid"
+  },
+  {
+    "slug": "align-bottom",
+    "name": "align-bottom",
+    "category": "grid"
+  },
+  {
+    "slug": "align-horizontally",
+    "name": "align-horizontally",
+    "category": "grid"
+  },
+  {
+    "slug": "align-left",
+    "name": "align-left",
+    "category": "grid"
+  },
+  {
+    "slug": "align-right",
+    "name": "align-right",
+    "category": "grid"
+  },
+  {
+    "slug": "align-top",
+    "name": "align-top",
+    "category": "grid"
+  },
+  {
+    "slug": "align-vertically",
+    "name": "align-vertically",
+    "category": "grid"
+  },
+  {
+    "slug": "convertshape",
+    "name": "convertshape",
+    "category": "grid"
+  },
+  {
+    "slug": "convertshape-2",
+    "name": "convertshape-2",
+    "category": "grid"
+  },
+  {
+    "slug": "crop",
+    "name": "crop",
+    "category": "grid"
+  },
+  {
+    "slug": "element-1",
+    "name": "element-1",
+    "category": "grid"
+  },
+  {
+    "slug": "element-2",
+    "name": "element-2",
+    "category": "grid"
+  },
+  {
+    "slug": "element-4",
+    "name": "element-4",
+    "category": "grid"
+  },
+  {
+    "slug": "element-equal",
+    "name": "element-equal",
+    "category": "grid"
+  },
+  {
+    "slug": "element-plus",
+    "name": "element-plus",
+    "category": "grid"
+  },
+  {
+    "slug": "fatrows",
+    "name": "fatrows",
+    "category": "grid"
+  },
+  {
+    "slug": "format-circle",
+    "name": "format-circle",
+    "category": "grid"
+  },
+  {
+    "slug": "format-square",
+    "name": "format-square",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-1",
+    "name": "grid-1",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-2",
+    "name": "grid-2",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-3",
+    "name": "grid-3",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-4",
+    "name": "grid-4",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-5",
+    "name": "grid-5",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-6",
+    "name": "grid-6",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-7",
+    "name": "grid-7",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-8",
+    "name": "grid-8",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-9",
+    "name": "grid-9",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-edit",
+    "name": "grid-edit",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-eraser",
+    "name": "grid-eraser",
+    "category": "grid"
+  },
+  {
+    "slug": "grid-lock",
+    "name": "grid-lock",
+    "category": "grid"
+  },
+  {
+    "slug": "kanban",
+    "name": "kanban",
+    "category": "grid"
+  },
+  {
+    "slug": "maximize",
+    "name": "maximize",
+    "category": "grid"
+  },
+  {
+    "slug": "maximize-2",
+    "name": "maximize-2",
+    "category": "grid"
+  },
+  {
+    "slug": "maximize-3",
+    "name": "maximize-3",
+    "category": "grid"
+  },
+  {
+    "slug": "maximize-5",
+    "name": "maximize-5",
+    "category": "grid"
+  },
+  {
+    "slug": "rotate-left-grid",
+    "name": "rotate-left",
+    "category": "grid"
+  },
+  {
+    "slug": "rotate-right-grid",
+    "name": "rotate-right",
+    "category": "grid"
+  },
+  {
+    "slug": "row-horizontal",
+    "name": "row-horizontal",
+    "category": "grid"
+  },
+  {
+    "slug": "row-vertical",
+    "name": "row-vertical",
+    "category": "grid"
+  },
+  {
+    "slug": "slider-horizontal",
+    "name": "slider-horizontal",
+    "category": "grid"
+  },
+  {
+    "slug": "slider-horizontal-2",
+    "name": "slider-horizontal-2",
+    "category": "grid"
+  },
+  {
+    "slug": "slider-vertical",
+    "name": "slider-vertical",
+    "category": "grid"
+  },
+  {
+    "slug": "slider-vertical-2",
+    "name": "slider-vertical-2",
+    "category": "grid"
+  },
+  {
+    "slug": "arrow",
+    "name": "arrow",
+    "category": "location"
+  },
+  {
+    "slug": "arrow-square",
+    "name": "arrow-square",
+    "category": "location"
+  },
+  {
+    "slug": "direct-down",
+    "name": "direct-down",
+    "category": "location"
+  },
+  {
+    "slug": "direct-left",
+    "name": "direct-left",
+    "category": "location"
+  },
+  {
+    "slug": "direct-right",
+    "name": "direct-right",
+    "category": "location"
+  },
+  {
+    "slug": "direct-up",
+    "name": "direct-up",
+    "category": "location"
+  },
+  {
+    "slug": "discover-location",
+    "name": "discover",
+    "category": "location"
+  },
+  {
+    "slug": "global-edit",
+    "name": "global-edit",
+    "category": "location"
+  },
+  {
+    "slug": "global-refresh",
+    "name": "global-refresh",
+    "category": "location"
+  },
+  {
+    "slug": "global-search",
+    "name": "global-search",
+    "category": "location"
+  },
+  {
+    "slug": "gps",
+    "name": "gps",
+    "category": "location"
+  },
+  {
+    "slug": "gps-slash",
+    "name": "gps-slash",
+    "category": "location"
+  },
+  {
+    "slug": "location-add",
+    "name": "location-add",
+    "category": "location"
+  },
+  {
+    "slug": "location-cross",
+    "name": "location-cross",
+    "category": "location"
+  },
+  {
+    "slug": "location-minus",
+    "name": "location-minus",
+    "category": "location"
+  },
+  {
+    "slug": "location-slash",
+    "name": "location-slash",
+    "category": "location"
+  },
+  {
+    "slug": "location-tick",
+    "name": "location-tick",
+    "category": "location"
+  },
+  {
+    "slug": "map-2",
+    "name": "map-2",
+    "category": "location"
+  },
+  {
+    "slug": "picture-frame",
+    "name": "picture-frame",
+    "category": "location"
+  },
+  {
+    "slug": "radar",
+    "name": "radar",
+    "category": "location"
+  },
+  {
+    "slug": "radar-2",
+    "name": "radar-2",
+    "category": "location"
+  },
+  {
+    "slug": "route-square",
+    "name": "route-square",
+    "category": "location"
+  },
+  {
+    "slug": "routing",
+    "name": "routing",
+    "category": "location"
+  },
+  {
+    "slug": "routing-2",
+    "name": "routing-2",
+    "category": "location"
+  },
+  {
+    "slug": "archive-money",
+    "name": "archive",
+    "category": "money"
+  },
+  {
+    "slug": "card-add",
+    "name": "card-add",
+    "category": "money"
+  },
+  {
+    "slug": "card-edit",
+    "name": "card-edit",
+    "category": "money"
+  },
+  {
+    "slug": "card-pos",
+    "name": "card-pos",
+    "category": "money"
+  },
+  {
+    "slug": "card-receive",
+    "name": "card-receive",
+    "category": "money"
+  },
+  {
+    "slug": "card-remove",
+    "name": "card-remove",
+    "category": "money"
+  },
+  {
+    "slug": "card-remove-2",
+    "name": "card-remove-2",
+    "category": "money"
+  },
+  {
+    "slug": "card-send",
+    "name": "card-send",
+    "category": "money"
+  },
+  {
+    "slug": "card-slash",
+    "name": "card-slash",
+    "category": "money"
+  },
+  {
+    "slug": "card-tick",
+    "name": "card-tick",
+    "category": "money"
+  },
+  {
+    "slug": "card-tick-2",
+    "name": "card-tick-2",
+    "category": "money"
+  },
+  {
+    "slug": "cards",
+    "name": "cards",
+    "category": "money"
+  },
+  {
+    "slug": "chart-square",
+    "name": "chart-square",
+    "category": "money"
+  },
+  {
+    "slug": "coin",
+    "name": "coin",
+    "category": "money"
+  },
+  {
+    "slug": "coin-2",
+    "name": "coin-2",
+    "category": "money"
+  },
+  {
+    "slug": "convert-card",
+    "name": "convert-card",
+    "category": "money"
+  },
+  {
+    "slug": "discount-circle",
+    "name": "discount-circle",
+    "category": "money"
+  },
+  {
+    "slug": "document-money",
+    "name": "document",
+    "category": "money"
+  },
+  {
+    "slug": "dollar-square",
+    "name": "dollar-square",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet",
+    "name": "empty-wallet",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet-add",
+    "name": "empty-wallet-add",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet-change",
+    "name": "empty-wallet-change",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet-remove",
+    "name": "empty-wallet-remove",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet-tick",
+    "name": "empty-wallet-tick",
+    "category": "money"
+  },
+  {
+    "slug": "empty-wallet-time",
+    "name": "empty-wallet-time",
+    "category": "money"
+  },
+  {
+    "slug": "math",
+    "name": "math",
+    "category": "money"
+  },
+  {
+    "slug": "money-2",
+    "name": "money-2",
+    "category": "money"
+  },
+  {
+    "slug": "money-3",
+    "name": "money-3",
+    "category": "money"
+  },
+  {
+    "slug": "money-4",
+    "name": "money-4",
+    "category": "money"
+  },
+  {
+    "slug": "money-add",
+    "name": "money-add",
+    "category": "money"
+  },
+  {
+    "slug": "money-change",
+    "name": "money-change",
+    "category": "money"
+  },
+  {
+    "slug": "money-forbidden",
+    "name": "money-forbidden",
+    "category": "money"
+  },
+  {
+    "slug": "money-recive",
+    "name": "money-recive",
+    "category": "money"
+  },
+  {
+    "slug": "money-remove",
+    "name": "money-remove",
+    "category": "money"
+  },
+  {
+    "slug": "money-send",
+    "name": "money-send",
+    "category": "money"
+  },
+  {
+    "slug": "money-tick",
+    "name": "money-tick",
+    "category": "money"
+  },
+  {
+    "slug": "money-time",
+    "name": "money-time",
+    "category": "money"
+  },
+  {
+    "slug": "moneys",
+    "name": "moneys",
+    "category": "money"
+  },
+  {
+    "slug": "percentage-circle",
+    "name": "percentage-circle",
+    "category": "money"
+  },
+  {
+    "slug": "percentage-square",
+    "name": "percentage-square",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-2",
+    "name": "receipt-2",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-2-2",
+    "name": "receipt-2-2",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-3",
+    "name": "receipt-3",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-add",
+    "name": "receipt-add",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-discount",
+    "name": "receipt-discount",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-disscount",
+    "name": "receipt-disscount",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-edit",
+    "name": "receipt-edit",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-item",
+    "name": "receipt-item",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-minus",
+    "name": "receipt-minus",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-search",
+    "name": "receipt-search",
+    "category": "money"
+  },
+  {
+    "slug": "receipt-text",
+    "name": "receipt-text",
+    "category": "money"
+  },
+  {
+    "slug": "security-card",
+    "name": "security-card",
+    "category": "money"
+  },
+  {
+    "slug": "strongbox",
+    "name": "strongbox",
+    "category": "money"
+  },
+  {
+    "slug": "strongbox-2",
+    "name": "strongbox-2",
+    "category": "money"
+  },
+  {
+    "slug": "tag-2",
+    "name": "tag-2",
+    "category": "money"
+  },
+  {
+    "slug": "ticket-2",
+    "name": "ticket-2",
+    "category": "money"
+  },
+  {
+    "slug": "ticket-discount",
+    "name": "ticket-discount",
+    "category": "money"
+  },
+  {
+    "slug": "ticket-expired",
+    "name": "ticket-expired",
+    "category": "money"
+  },
+  {
+    "slug": "ticket-star",
+    "name": "ticket-star",
+    "category": "money"
+  },
+  {
+    "slug": "transaction-minus",
+    "name": "transaction-minus",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-2",
+    "name": "wallet-2",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-3",
+    "name": "wallet-3",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-4",
+    "name": "wallet-4",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-add",
+    "name": "wallet-add",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-add-2",
+    "name": "wallet-add-2",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-check",
+    "name": "wallet-check",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-minus",
+    "name": "wallet-minus",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-money",
+    "name": "wallet-money",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-remove",
+    "name": "wallet-remove",
+    "category": "money"
+  },
+  {
+    "slug": "wallet-search",
+    "name": "wallet-search",
+    "category": "money"
+  },
+  {
+    "slug": "lamp-charge",
+    "name": "lamp-charge",
+    "category": "notifications"
+  },
+  {
+    "slug": "lamp-slash",
+    "name": "lamp-slash",
+    "category": "notifications"
+  },
+  {
+    "slug": "notification-2",
+    "name": "notification-2",
+    "category": "notifications"
+  },
+  {
+    "slug": "notification-bing",
+    "name": "notification-bing",
+    "category": "notifications"
+  },
+  {
+    "slug": "notification-circle",
+    "name": "notification-circle",
+    "category": "notifications"
+  },
+  {
+    "slug": "notification-favorite",
+    "name": "notification-favorite",
+    "category": "notifications"
+  },
+  {
+    "slug": "notification-status",
+    "name": "notification-status",
+    "category": "notifications"
+  },
+  {
+    "slug": "code-2",
+    "name": "code-2",
+    "category": "programing"
+  },
+  {
+    "slug": "code-circle",
+    "name": "code-circle",
+    "category": "programing"
+  },
+  {
+    "slug": "command-square",
+    "name": "command-square",
+    "category": "programing"
+  },
+  {
+    "slug": "data",
+    "name": "data",
+    "category": "programing"
+  },
+  {
+    "slug": "data-2",
+    "name": "data-2",
+    "category": "programing"
+  },
+  {
+    "slug": "document-code",
+    "name": "document-code",
+    "category": "programing"
+  },
+  {
+    "slug": "document-code-2",
+    "name": "document-code-2",
+    "category": "programing"
+  },
+  {
+    "slug": "hashtag-programing",
+    "name": "hashtag",
+    "category": "programing"
+  },
+  {
+    "slug": "hashtag-down",
+    "name": "hashtag-down",
+    "category": "programing"
+  },
+  {
+    "slug": "hashtag-up",
+    "name": "hashtag-up",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy",
+    "name": "hierarchy",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy-2",
+    "name": "hierarchy-2",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy-3",
+    "name": "hierarchy-3",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy-square",
+    "name": "hierarchy-square",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy-square-2",
+    "name": "hierarchy-square-2",
+    "category": "programing"
+  },
+  {
+    "slug": "hierarchy-square-3",
+    "name": "hierarchy-square-3",
+    "category": "programing"
+  },
+  {
+    "slug": "message-programming",
+    "name": "message-programming",
+    "category": "programing"
+  },
+  {
+    "slug": "mobile-programming",
+    "name": "mobile-programming",
+    "category": "programing"
+  },
+  {
+    "slug": "programming-arrow",
+    "name": "programming-arrow",
+    "category": "programing"
+  },
+  {
+    "slug": "programming-arrows",
+    "name": "programming-arrows",
+    "category": "programing"
+  },
+  {
+    "slug": "scroll",
+    "name": "scroll",
+    "category": "programing"
+  },
+  {
+    "slug": "sidebar-bottom",
+    "name": "sidebar-bottom",
+    "category": "programing"
+  },
+  {
+    "slug": "sidebar-left",
+    "name": "sidebar-left",
+    "category": "programing"
+  },
+  {
+    "slug": "sidebar-right",
+    "name": "sidebar-right",
+    "category": "programing"
+  },
+  {
+    "slug": "sidebar-top",
+    "name": "sidebar-top",
+    "category": "programing"
+  },
+  {
+    "slug": "award",
+    "name": "award",
+    "category": "school-learning"
+  },
+  {
+    "slug": "book",
+    "name": "book",
+    "category": "school-learning"
+  },
+  {
+    "slug": "book-2",
+    "name": "book-2",
+    "category": "school-learning"
+  },
+  {
+    "slug": "bookmark-2",
+    "name": "bookmark-2",
+    "category": "school-learning"
+  },
+  {
+    "slug": "briefcase",
+    "name": "briefcase",
+    "category": "school-learning"
+  },
+  {
+    "slug": "brifecase-cross",
+    "name": "brifecase-cross",
+    "category": "school-learning"
+  },
+  {
+    "slug": "brifecase-tick",
+    "name": "brifecase-tick",
+    "category": "school-learning"
+  },
+  {
+    "slug": "brifecase-timer",
+    "name": "brifecase-timer",
+    "category": "school-learning"
+  },
+  {
+    "slug": "calculator",
+    "name": "calculator",
+    "category": "school-learning"
+  },
+  {
+    "slug": "clipboard",
+    "name": "clipboard",
+    "category": "school-learning"
+  },
+  {
+    "slug": "note-school-learning",
+    "name": "note",
+    "category": "school-learning"
+  },
+  {
+    "slug": "note-2-school-learning",
+    "name": "note-2",
+    "category": "school-learning"
+  },
+  {
+    "slug": "teacher",
+    "name": "teacher",
+    "category": "school-learning"
+  },
+  {
+    "slug": "search-favorite",
+    "name": "search-favorite",
+    "category": "search"
+  },
+  {
+    "slug": "search-favorite-2",
+    "name": "search-favorite-2",
+    "category": "search"
+  },
+  {
+    "slug": "search-normal-2",
+    "name": "search-normal-2",
+    "category": "search"
+  },
+  {
+    "slug": "search-status",
+    "name": "search-status",
+    "category": "search"
+  },
+  {
+    "slug": "search-status-2",
+    "name": "search-status-2",
+    "category": "search"
+  },
+  {
+    "slug": "search-zoom-in",
+    "name": "search-zoom-in",
+    "category": "search"
+  },
+  {
+    "slug": "search-zoom-in-2",
+    "name": "search-zoom-in-2",
+    "category": "search"
+  },
+  {
+    "slug": "search-zoom-out",
+    "name": "search-zoom-out",
+    "category": "search"
+  },
+  {
+    "slug": "search-zoom-out-2",
+    "name": "search-zoom-out-2",
+    "category": "search"
+  },
+  {
+    "slug": "alarm",
+    "name": "alarm",
+    "category": "security"
+  },
+  {
+    "slug": "check",
+    "name": "check",
+    "category": "security"
+  },
+  {
+    "slug": "eye-slash",
+    "name": "eye-slash",
+    "category": "security"
+  },
+  {
+    "slug": "finger-cricle",
+    "name": "finger-cricle",
+    "category": "security"
+  },
+  {
+    "slug": "finger-scan",
+    "name": "finger-scan",
+    "category": "security"
+  },
+  {
+    "slug": "key-square",
+    "name": "key-square",
+    "category": "security"
+  },
+  {
+    "slug": "lock-2",
+    "name": "lock-2",
+    "category": "security"
+  },
+  {
+    "slug": "lock-circle",
+    "name": "lock-circle",
+    "category": "security"
+  },
+  {
+    "slug": "lock-slash",
+    "name": "lock-slash",
+    "category": "security"
+  },
+  {
+    "slug": "password-check",
+    "name": "password-check",
+    "category": "security"
+  },
+  {
+    "slug": "radar-security",
+    "name": "radar",
+    "category": "security"
+  },
+  {
+    "slug": "scan-barcode",
+    "name": "scan-barcode",
+    "category": "security"
+  },
+  {
+    "slug": "scanner",
+    "name": "scanner",
+    "category": "security"
+  },
+  {
+    "slug": "scanning",
+    "name": "scanning",
+    "category": "security"
+  },
+  {
+    "slug": "security",
+    "name": "security",
+    "category": "security"
+  },
+  {
+    "slug": "security-safe",
+    "name": "security-safe",
+    "category": "security"
+  },
+  {
+    "slug": "security-user",
+    "name": "security-user",
+    "category": "security"
+  },
+  {
+    "slug": "shield",
+    "name": "shield",
+    "category": "security"
+  },
+  {
+    "slug": "shield-cross",
+    "name": "shield-cross",
+    "category": "security"
+  },
+  {
+    "slug": "shield-search",
+    "name": "shield-search",
+    "category": "security"
+  },
+  {
+    "slug": "shield-security",
+    "name": "shield-security",
+    "category": "security"
+  },
+  {
+    "slug": "shield-slash",
+    "name": "shield-slash",
+    "category": "security"
+  },
+  {
+    "slug": "candle",
+    "name": "candle",
+    "category": "settings"
+  },
+  {
+    "slug": "candle-2",
+    "name": "candle-2",
+    "category": "settings"
+  },
+  {
+    "slug": "category-2",
+    "name": "category-2",
+    "category": "settings"
+  },
+  {
+    "slug": "menu-settings",
+    "name": "menu",
+    "category": "settings"
+  },
+  {
+    "slug": "more-2",
+    "name": "more-2",
+    "category": "settings"
+  },
+  {
+    "slug": "setting-3",
+    "name": "setting-3",
+    "category": "settings"
+  },
+  {
+    "slug": "setting-4",
+    "name": "setting-4",
+    "category": "settings"
+  },
+  {
+    "slug": "setting-5",
+    "name": "setting-5",
+    "category": "settings"
+  },
+  {
+    "slug": "settings",
+    "name": "settings",
+    "category": "settings"
+  },
+  {
+    "slug": "toggle-off",
+    "name": "toggle-off",
+    "category": "settings"
+  },
+  {
+    "slug": "toggle-off-circle",
+    "name": "toggle-off-circle",
+    "category": "settings"
+  },
+  {
+    "slug": "toggle-on",
+    "name": "toggle-on",
+    "category": "settings"
+  },
+  {
+    "slug": "toggle-on-circle",
+    "name": "toggle-on-circle",
+    "category": "settings"
+  },
+  {
+    "slug": "bag-2",
+    "name": "bag-2",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-cross",
+    "name": "bag-cross",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-cross-2",
+    "name": "bag-cross-2",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-happy",
+    "name": "bag-happy",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-tick",
+    "name": "bag-tick",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-tick-2",
+    "name": "bag-tick-2",
+    "category": "shop"
+  },
+  {
+    "slug": "bag-timer",
+    "name": "bag-timer",
+    "category": "shop"
+  },
+  {
+    "slug": "barcode",
+    "name": "barcode",
+    "category": "shop"
+  },
+  {
+    "slug": "shop",
+    "name": "shop",
+    "category": "shop"
+  },
+  {
+    "slug": "shop-add",
+    "name": "shop-add",
+    "category": "shop"
+  },
+  {
+    "slug": "shop-remove",
+    "name": "shop-remove",
+    "category": "shop"
+  },
+  {
+    "slug": "shopping-bag",
+    "name": "shopping-bag",
+    "category": "shop"
+  },
+  {
+    "slug": "24-support",
+    "name": "24-support",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "dislike",
+    "name": "dislike",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-add",
+    "name": "heart-add",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-circle",
+    "name": "heart-circle",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-edit",
+    "name": "heart-edit",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-remove",
+    "name": "heart-remove",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-search",
+    "name": "heart-search",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-slash",
+    "name": "heart-slash",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "heart-tick",
+    "name": "heart-tick",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "like-2",
+    "name": "like-2",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "like-dislike",
+    "name": "like-dislike",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "like-shapes",
+    "name": "like-shapes",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "like-tag",
+    "name": "like-tag",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "lovely",
+    "name": "lovely",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "medal",
+    "name": "medal",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "message-question",
+    "name": "message-question",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "ranking-support-like-question",
+    "name": "ranking",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "smileys",
+    "name": "smileys",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "star-2",
+    "name": "star-2",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "star-slash",
+    "name": "star-slash",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "unlimited",
+    "name": "unlimited",
+    "category": "support-like-question"
+  },
+  {
+    "slug": "calendar-2",
+    "name": "calendar-2",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-3",
+    "name": "calendar-3",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-add",
+    "name": "calendar-add",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-circle",
+    "name": "calendar-circle",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-edit",
+    "name": "calendar-edit",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-remove",
+    "name": "calendar-remove",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-search",
+    "name": "calendar-search",
+    "category": "time"
+  },
+  {
+    "slug": "calendar-tick",
+    "name": "calendar-tick",
+    "category": "time"
+  },
+  {
+    "slug": "clock-time",
+    "name": "clock",
+    "category": "time"
+  },
+  {
+    "slug": "security-time",
+    "name": "security-time",
+    "category": "time"
+  },
+  {
+    "slug": "timer-2",
+    "name": "timer-2",
+    "category": "time"
+  },
+  {
+    "slug": "timer-pause",
+    "name": "timer-pause",
+    "category": "time"
+  },
+  {
+    "slug": "timer-start",
+    "name": "timer-start",
+    "category": "time"
+  },
+  {
+    "slug": "attach-circle",
+    "name": "attach-circle",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "attach-square",
+    "name": "attach-square",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "eraser-type-paragraph-character",
+    "name": "eraser",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "firstline",
+    "name": "firstline",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "language-circle",
+    "name": "language-circle",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "language-square",
+    "name": "language-square",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "link-2",
+    "name": "link-2",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "link-2-2",
+    "name": "link-2-2",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "link-3",
+    "name": "link-3",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "link-circle",
+    "name": "link-circle",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "link-square",
+    "name": "link-square",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "maximize-type-paragraph-character",
+    "name": "maximize",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "paperclip",
+    "name": "paperclip",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "paperclip-2",
+    "name": "paperclip-2",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "pharagraphspacing",
+    "name": "pharagraphspacing",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-down",
+    "name": "quote-down",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-down-circle",
+    "name": "quote-down-circle",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-down-square",
+    "name": "quote-down-square",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-up",
+    "name": "quote-up",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-up-circle",
+    "name": "quote-up-circle",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "quote-up-square",
+    "name": "quote-up-square",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "smallcaps",
+    "name": "smallcaps",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "text",
+    "name": "text",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "text-block",
+    "name": "text-block",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "text-bold",
+    "name": "text-bold",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "text-italic",
+    "name": "text-italic",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "text-underline",
+    "name": "text-underline",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-center",
+    "name": "textalign-center",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-justifycenter",
+    "name": "textalign-justifycenter",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-justifyleft",
+    "name": "textalign-justifyleft",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-justifyright",
+    "name": "textalign-justifyright",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-left",
+    "name": "textalign-left",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "textalign-right",
+    "name": "textalign-right",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "translate",
+    "name": "translate",
+    "category": "type-paragraph-character"
+  },
+  {
+    "slug": "profile",
+    "name": "profile",
+    "category": "users"
+  },
+  {
+    "slug": "profile-add",
+    "name": "profile-add",
+    "category": "users"
+  },
+  {
+    "slug": "profile-circle",
+    "name": "profile-circle",
+    "category": "users"
+  },
+  {
+    "slug": "profile-delete",
+    "name": "profile-delete",
+    "category": "users"
+  },
+  {
+    "slug": "profile-remove",
+    "name": "profile-remove",
+    "category": "users"
+  },
+  {
+    "slug": "profile-tick",
+    "name": "profile-tick",
+    "category": "users"
+  },
+  {
+    "slug": "tag-user",
+    "name": "tag-user",
+    "category": "users"
+  },
+  {
+    "slug": "user-cirlce-add",
+    "name": "user-cirlce-add",
+    "category": "users"
+  },
+  {
+    "slug": "user-edit",
+    "name": "user-edit",
+    "category": "users"
+  },
+  {
+    "slug": "user-minus",
+    "name": "user-minus",
+    "category": "users"
+  },
+  {
+    "slug": "user-octagon",
+    "name": "user-octagon",
+    "category": "users"
+  },
+  {
+    "slug": "user-remove",
+    "name": "user-remove",
+    "category": "users"
+  },
+  {
+    "slug": "user-search",
+    "name": "user-search",
+    "category": "users"
+  },
+  {
+    "slug": "user-square",
+    "name": "user-square",
+    "category": "users"
+  },
+  {
+    "slug": "user-tag",
+    "name": "user-tag",
+    "category": "users"
+  },
+  {
+    "slug": "user-tick",
+    "name": "user-tick",
+    "category": "users"
+  },
+  {
+    "slug": "audio-square",
+    "name": "audio-square",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "backward",
+    "name": "backward",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "backward-10-seconds",
+    "name": "backward-10-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "backward-15-seconds",
+    "name": "backward-15-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "backward-5-seconds",
+    "name": "backward-5-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "camera-slash",
+    "name": "camera-slash",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "forward",
+    "name": "forward",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "forward-10-seconds",
+    "name": "forward-10-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "forward-15-seconds",
+    "name": "forward-15-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "forward-5-seconds",
+    "name": "forward-5-seconds",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-add",
+    "name": "gallery-add",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-edit",
+    "name": "gallery-edit",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-export",
+    "name": "gallery-export",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-favorite",
+    "name": "gallery-favorite",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-import",
+    "name": "gallery-import",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-remove",
+    "name": "gallery-remove",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-slash",
+    "name": "gallery-slash",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "gallery-tick",
+    "name": "gallery-tick",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "maximize-circle",
+    "name": "maximize-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "microphone-2",
+    "name": "microphone-2",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "microphone-slash",
+    "name": "microphone-slash",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "microphone-slash-2",
+    "name": "microphone-slash-2",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "mini-music-sqaure",
+    "name": "mini-music-sqaure",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-circle",
+    "name": "music-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-dashboard",
+    "name": "music-dashboard",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-filter",
+    "name": "music-filter",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-library-2",
+    "name": "music-library-2",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-playlist",
+    "name": "music-playlist",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-square",
+    "name": "music-square",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-square-add",
+    "name": "music-square-add",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-square-remove",
+    "name": "music-square-remove",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "music-square-search",
+    "name": "music-square-search",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "musicnote",
+    "name": "musicnote",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "next",
+    "name": "next",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "note-square",
+    "name": "note-square",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "pause-circle",
+    "name": "pause-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "play-add",
+    "name": "play-add",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "play-circle",
+    "name": "play-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "play-cricle",
+    "name": "play-cricle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "play-remove",
+    "name": "play-remove",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "previous",
+    "name": "previous",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "radio",
+    "name": "radio",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "record",
+    "name": "record",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "record-circle",
+    "name": "record-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "repeate-music",
+    "name": "repeate-music",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "repeate-one",
+    "name": "repeate-one",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "scissor-video-audio-image",
+    "name": "scissor",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "screenmirroring",
+    "name": "screenmirroring",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "shuffle",
+    "name": "shuffle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "stop",
+    "name": "stop",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "stop-circle",
+    "name": "stop-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "subtitle",
+    "name": "subtitle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-add",
+    "name": "video-add",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-circle",
+    "name": "video-circle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-horizontal",
+    "name": "video-horizontal",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-octagon",
+    "name": "video-octagon",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-play",
+    "name": "video-play",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-remove",
+    "name": "video-remove",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-slash",
+    "name": "video-slash",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-square",
+    "name": "video-square",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-tick",
+    "name": "video-tick",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-time",
+    "name": "video-time",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "video-vertical",
+    "name": "video-vertical",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "voice-cricle",
+    "name": "voice-cricle",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "voice-square",
+    "name": "voice-square",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume",
+    "name": "volume",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-cross",
+    "name": "volume-cross",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-low",
+    "name": "volume-low",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-low-2",
+    "name": "volume-low-2",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-mute",
+    "name": "volume-mute",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-slash",
+    "name": "volume-slash",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "volume-up",
+    "name": "volume-up",
+    "category": "video-audio-image"
+  },
+  {
+    "slug": "cloud-cross",
+    "name": "cloud-cross",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-drizzle",
+    "name": "cloud-drizzle",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-fog",
+    "name": "cloud-fog",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-lightning",
+    "name": "cloud-lightning",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-minus",
+    "name": "cloud-minus",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-notif",
+    "name": "cloud-notif",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-plus",
+    "name": "cloud-plus",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-snow",
+    "name": "cloud-snow",
+    "category": "weather"
+  },
+  {
+    "slug": "cloud-sunny",
+    "name": "cloud-sunny",
+    "category": "weather"
+  },
+  {
+    "slug": "drop",
+    "name": "drop",
+    "category": "weather"
+  },
+  {
+    "slug": "snow",
+    "name": "snow",
+    "category": "weather"
+  },
+  {
+    "slug": "sun-fog",
+    "name": "sun-fog",
+    "category": "weather"
+  },
+  {
+    "slug": "wind",
+    "name": "wind",
+    "category": "weather"
+  },
+  {
+    "slug": "wind-2",
+    "name": "wind-2",
+    "category": "weather"
+  }
+]

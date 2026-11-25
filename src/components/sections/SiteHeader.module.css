@@ -1,0 +1,118 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  padding: 14px 16px 0;
+  pointer-events: none;
+}
+
+/* Glass pill: 48px tall, 6px inset, so every child is a 36px pill (concentric corners). */
+.nav {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 48px;
+  padding: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-glass);
+  -webkit-backdrop-filter: blur(24px) saturate(1.8);
+  backdrop-filter: blur(24px) saturate(1.8);
+  box-shadow: var(--shadow-nav);
+  transition: box-shadow 300ms var(--ease-out), background-color 300ms ease;
+}
+
+.nav[data-scrolled] {
+  background: var(--surface-glass-strong);
+  box-shadow: var(--shadow-nav-raised);
+}
+
+/* ---- Logo ---- */
+.logo {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+  border-radius: 10px;
+}
+
+.logo > span {
+  transition: transform 300ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .logo:hover > span { transform: rotate(-8deg) scale(1.06); }
+}
+
+.logo:active > span { transform: scale(0.94); }
+
+/* ---- Links + sliding pill ---- */
+.links {
+  position: relative;
+  display: flex;
+  align-items: center;
+  isolation: isolate;
+}
+
+.pill {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 36px;
+  width: var(--w, 0);
+  border-radius: var(--radius-pill);
+  background: var(--nav-pill);
+  box-shadow: var(--nav-pill-shadow);
+  transform: translateX(var(--x, 0));
+}
+
+.pill[data-ready] {
+  transition: transform 320ms var(--ease-out), width 320ms var(--ease-out), opacity 200ms ease;
+}
+
+.pill[data-hidden] {
+  opacity: 0;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: var(--weight-medium);
+  color: var(--text-2);
+  transition: color 200ms ease;
+}
+
+.link[data-target],
+.link[aria-current] {
+  color: var(--text);
+}
+
+/* ---- Divider + CTA ---- */
+.divider {
+  width: 1px;
+  height: 20px;
+  margin: 0 6px 0 4px;
+  background: var(--hairline-strong);
+}
+
+.cta {
+  height: 36px;
+  padding: 0 14px 0 16px;
+}
+
+@media (max-width: 640px) {
+  .header { padding-inline: 10px; }
+  .optional { display: none; }
+  .link { padding: 0 10px; }
+  .logo { margin-right: 0; }
+  .divider { display: none; }
+  .cta { padding: 0 14px; }
+}

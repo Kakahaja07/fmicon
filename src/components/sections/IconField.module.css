@@ -1,0 +1,83 @@
+/* Sits behind the hero copy; fades out towards the centre so text stays readable */
+.field {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 560px;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(62% 68% at 50% 40%, transparent 42%, #000 86%), linear-gradient(#000 70%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: radial-gradient(62% 68% at 50% 40%, transparent 42%, #000 86%), linear-gradient(#000 70%, transparent);
+  mask-composite: intersect;
+}
+
+.grid {
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 88px);
+  grid-auto-rows: 88px;
+  translate: -50% 0;
+  animation: drift 40s linear infinite alternate;
+}
+
+.cell,
+.lit {
+  display: grid;
+  place-items: center;
+}
+
+.cell {
+  color: var(--text-faint);
+}
+
+/* A few icons wake up in colour, one after another */
+.lit {
+  position: relative;
+  color: var(--text-faint);
+  animation: wake 12.6s var(--ease-out) infinite;
+  animation-delay: var(--d);
+}
+
+.lit::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--c) 30%, transparent);
+  opacity: 0;
+  scale: 0.8;
+  animation: tile 12.6s var(--ease-out) infinite;
+  animation-delay: var(--d);
+}
+
+.lit svg {
+  position: relative;
+}
+
+@keyframes wake {
+  0%, 18%, 100% { color: var(--text-faint); }
+  4%, 12% { color: var(--c); }
+}
+
+@keyframes tile {
+  0%, 18%, 100% { opacity: 0; scale: 0.8; }
+  4%, 12% { opacity: 1; scale: 1; }
+}
+
+@keyframes drift {
+  from { transform: translateX(-24px); }
+  to { transform: translateX(24px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grid, .lit, .lit::before { animation: none; }
+}
+
+@media (max-width: 640px) {
+  .field { height: 460px; }
+  .grid { grid-template-columns: repeat(var(--cols), 64px); grid-auto-rows: 64px; }
+}

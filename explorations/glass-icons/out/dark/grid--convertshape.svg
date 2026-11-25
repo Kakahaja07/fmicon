@@ -1,0 +1,20 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-convertshape-dark-s0" d="M22 5.15V8.85C22 11.1 21.1 12 18.85 12H16.15C13.9 12 13 11.1 13 8.85V5.15C13 2.9 13.9 2 16.15 2H18.85C21.1 2 22 2.9 22 5.15Z"/>
+  <path id="g-grid-convertshape-dark-s1" d="M11 15.15V18.85C11 21.1 10.1 22 7.85 22H5.15C2.9 22 2 21.1 2 18.85V15.15C2 12.9 2.9 12 5.15 12H7.85C10.1 12 11 12.9 11 15.15Z"/>
+  <path id="g-grid-convertshape-dark-s2" d="M14.78 22C14.51 22 14.26 21.85 14.13 21.62C14 21.38 14 21.1 14.14 20.86L15.11 19.24C15.32 18.88 15.78 18.77 16.14 18.98C16.5 19.19 16.61 19.65 16.4 20.01L16.22 20.31C18.69 19.67 20.51 17.43 20.51 14.77C20.51 14.36 20.85 14.02 21.26 14.02C21.67 14.02 22 14.36 22 14.78C22 18.76 18.76 22 14.78 22Z"/>
+  <path id="g-grid-convertshape-dark-s3" d="M2.75 9.97C2.34 9.97 2 9.64 2 9.22C2 5.24 5.24 2 9.22 2C9.5 2 9.74 2.15 9.88 2.38C10.01 2.62 10.01 2.9 9.87 3.14L8.9 4.75C8.68 5.11 8.22 5.23 7.87 5.01C7.51 4.8 7.4 4.34 7.61 3.98L7.79 3.68C5.33 4.32 3.5 6.56 3.5 9.22C3.5 9.64 3.16 9.97 2.75 9.97Z"/>
+  <linearGradient id="g-grid-convertshape-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-convertshape-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-grid-convertshape-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-convertshape-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-convertshape-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-convertshape-dark-s0" fill="#fff"/></mask>
+  <mask id="g-grid-convertshape-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-convertshape-dark-s1" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-grid-convertshape-dark-s0" fill="url(#g-grid-convertshape-dark-glass)"/>
+<g mask="url(#g-grid-convertshape-dark-in0)"><use xlink:href="#g-grid-convertshape-dark-s0" fill="none" stroke="url(#g-grid-convertshape-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-convertshape-dark-s1" fill="url(#g-grid-convertshape-dark-glass)"/>
+<g mask="url(#g-grid-convertshape-dark-in1)"><use xlink:href="#g-grid-convertshape-dark-s1" fill="none" stroke="url(#g-grid-convertshape-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-convertshape-dark-s2" fill="url(#g-grid-convertshape-dark-solid)"/>
+<use xlink:href="#g-grid-convertshape-dark-s3" fill="url(#g-grid-convertshape-dark-solid)"/>
+</svg>

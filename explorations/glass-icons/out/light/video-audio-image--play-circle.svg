@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-video-audio-image-play-circle-light-s0" d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"/>
+  <path id="g-video-audio-image-play-circle-light-s1" d="M14.97 10.2301L12.07 8.56012C11.35 8.14012 10.48 8.14012 9.75999 8.56012C9.03999 8.98012 8.60999 9.72012 8.60999 10.5601V13.9101C8.60999 14.7401 9.03999 15.4901 9.75999 15.9101C10.12 16.1201 10.52 16.2201 10.91 16.2201C11.31 16.2201 11.7 16.1201 12.06 15.9101L14.96 14.2401C15.68 13.8201 16.11 13.0801 16.11 12.2401C16.13 11.4001 15.7 10.6501 14.97 10.2301Z"/>
+  <linearGradient id="g-video-audio-image-play-circle-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-video-audio-image-play-circle-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-video-audio-image-play-circle-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-video-audio-image-play-circle-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-video-audio-image-play-circle-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-video-audio-image-play-circle-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-video-audio-image-play-circle-light-s0" fill="url(#g-video-audio-image-play-circle-light-glass)"/>
+<g mask="url(#g-video-audio-image-play-circle-light-in0)"><use xlink:href="#g-video-audio-image-play-circle-light-s0" fill="none" stroke="url(#g-video-audio-image-play-circle-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-video-audio-image-play-circle-light-s1" fill="url(#g-video-audio-image-play-circle-light-solid)"/>
+</svg>

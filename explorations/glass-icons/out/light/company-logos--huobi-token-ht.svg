@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-huobi-token-ht-light-s0" d="M16.1599 10C16.1599 10 16.0099 11 12.9099 15C9.99991 18.77 14.2099 21.64 14.7099 21.97C14.7399 21.99 14.7699 21.99 14.8099 21.97C15.4899 21.55 23.0599 16.68 16.1599 10Z"/>
+  <path id="g-company-logos-huobi-token-ht-light-s1" d="M13.76 7.79006C13.76 5.49006 12.86 3.39006 11.96 2.19006C11.66 1.89006 11.16 1.99006 11.06 2.39006C10.66 3.89006 9.46001 7.09006 6.56001 10.8901C2.86001 15.6901 6.26001 20.8901 9.76001 21.8901C11.66 22.3901 9.26001 20.8901 8.96001 17.7901C8.66001 13.8901 13.76 10.9901 13.76 7.79006Z"/>
+  <linearGradient id="g-company-logos-huobi-token-ht-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-huobi-token-ht-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-huobi-token-ht-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-huobi-token-ht-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-huobi-token-ht-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-huobi-token-ht-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-huobi-token-ht-light-s0" fill="url(#g-company-logos-huobi-token-ht-light-glass)"/>
+<g mask="url(#g-company-logos-huobi-token-ht-light-in0)"><use xlink:href="#g-company-logos-huobi-token-ht-light-s0" fill="none" stroke="url(#g-company-logos-huobi-token-ht-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-huobi-token-ht-light-s1" fill="url(#g-company-logos-huobi-token-ht-light-solid)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-video-audio-image-backward-light-s0" d="M22 8.34007V15.6601C22 17.1601 20.37 18.1001 19.07 17.3501L15.9 15.5201L12.73 13.6901L12.24 13.4101V10.5901L12.73 10.3101L15.9 8.48009L19.07 6.65007C20.37 5.90007 22 6.84007 22 8.34007Z"/>
+  <path id="g-video-audio-image-backward-light-s1" d="M12.24 8.34007V15.6601C12.24 17.1601 10.61 18.1001 9.32001 17.3501L6.14002 15.5201L2.97 13.6901C1.68 12.9401 1.68 11.0601 2.97 10.3101L6.14002 8.48009L9.32001 6.65007C10.61 5.90007 12.24 6.84007 12.24 8.34007Z"/>
+  <linearGradient id="g-video-audio-image-backward-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-video-audio-image-backward-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-video-audio-image-backward-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-video-audio-image-backward-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-video-audio-image-backward-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-video-audio-image-backward-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-video-audio-image-backward-light-s0" fill="url(#g-video-audio-image-backward-light-glass)"/>
+<g mask="url(#g-video-audio-image-backward-light-in0)"><use xlink:href="#g-video-audio-image-backward-light-s0" fill="none" stroke="url(#g-video-audio-image-backward-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-video-audio-image-backward-light-s1" fill="url(#g-video-audio-image-backward-light-solid)"/>
+</svg>

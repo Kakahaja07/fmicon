@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-design-tools-brush-3-dark-s0" d="M6 2H18C19.1 2 20 2.9 20 4V8.32001H4V4C4 2.9 4.9 2 6 2Z"/>
+  <path id="g-design-tools-brush-3-dark-s1" d="M4 8.32001V11.88C4 12.96 4.58003 13.96 5.53003 14.49L8.48999 16.16C9.11999 16.51 9.51001 17.18 9.51001 17.9V20C9.51001 21.1 10.41 22 11.51 22H12.51C13.61 22 14.51 21.1 14.51 20V17.9C14.51 17.18 14.9 16.51 15.53 16.16L18.49 14.49C19.43 13.96 20.02 12.96 20.02 11.88V8.32001H4Z"/>
+  <linearGradient id="g-design-tools-brush-3-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-design-tools-brush-3-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-design-tools-brush-3-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-design-tools-brush-3-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-design-tools-brush-3-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-design-tools-brush-3-dark-s1" fill="#000"/></mask>
+  <mask id="g-design-tools-brush-3-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-design-tools-brush-3-dark-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-design-tools-brush-3-dark-out0)"><use xlink:href="#g-design-tools-brush-3-dark-s0" fill="url(#g-design-tools-brush-3-dark-solid)"/></g>
+<g mask="url(#g-design-tools-brush-3-dark-in1)"><g filter="url(#g-design-tools-brush-3-dark-blur)"><use xlink:href="#g-design-tools-brush-3-dark-s0" fill="url(#g-design-tools-brush-3-dark-solid)"/></g></g>
+<use xlink:href="#g-design-tools-brush-3-dark-s1" fill="url(#g-design-tools-brush-3-dark-glass)"/>
+<g mask="url(#g-design-tools-brush-3-dark-in1)"><use xlink:href="#g-design-tools-brush-3-dark-s1" fill="none" stroke="url(#g-design-tools-brush-3-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

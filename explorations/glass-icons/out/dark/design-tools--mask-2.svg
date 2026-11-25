@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-design-tools-mask-2-dark-s0" d="M21.9698 12C21.9698 14.94 20.6898 17.6 18.6498 19.41C16.8898 21.01 14.5598 21.97 11.9998 21.97C6.49979 21.97 2.02979 17.5 2.02979 12C2.02979 6.5 6.49979 2.03 11.9998 2.03C14.5598 2.03 16.8898 2.99 18.6498 4.59C20.6898 6.4 21.9698 9.06 21.9698 12Z"/>
+  <path id="g-design-tools-mask-2-dark-s1" d="M11.9698 16.39C11.9498 18.04 10.7198 18.44 9.56978 17.98C7.19978 17.03 5.52979 14.71 5.52979 12C5.52979 9.28999 7.19978 6.97 9.56978 6.01C10.7198 5.55 11.9498 5.95999 11.9698 7.59999V16.39Z"/>
+  <linearGradient id="g-design-tools-mask-2-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-design-tools-mask-2-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-design-tools-mask-2-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-design-tools-mask-2-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-design-tools-mask-2-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-design-tools-mask-2-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-design-tools-mask-2-dark-s0" fill="url(#g-design-tools-mask-2-dark-glass)"/>
+<g mask="url(#g-design-tools-mask-2-dark-in0)"><use xlink:href="#g-design-tools-mask-2-dark-s0" fill="none" stroke="url(#g-design-tools-mask-2-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-design-tools-mask-2-dark-s1" fill="url(#g-design-tools-mask-2-dark-solid)"/>
+</svg>

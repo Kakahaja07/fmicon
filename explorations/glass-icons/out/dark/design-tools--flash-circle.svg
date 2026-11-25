@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-design-tools-flash-circle-dark-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-design-tools-flash-circle-dark-s1" d="M8.67987 11.91L10.3299 12.32L9.37988 16.16C9.15988 17.06 9.59986 17.36 10.3599 16.83L15.5399 13.24C16.1699 12.8 16.0799 12.29 15.3299 12.1L13.6799 11.69L14.6299 7.85C14.8499 6.95 14.4099 6.65001 13.6499 7.18001L8.46988 10.77C7.83988 11.21 7.92987 11.72 8.67987 11.91Z"/>
+  <linearGradient id="g-design-tools-flash-circle-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-design-tools-flash-circle-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-design-tools-flash-circle-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-design-tools-flash-circle-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-design-tools-flash-circle-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-design-tools-flash-circle-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-design-tools-flash-circle-dark-s0" fill="url(#g-design-tools-flash-circle-dark-glass)"/>
+<g mask="url(#g-design-tools-flash-circle-dark-in0)"><use xlink:href="#g-design-tools-flash-circle-dark-s0" fill="none" stroke="url(#g-design-tools-flash-circle-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-design-tools-flash-circle-dark-s1" fill="url(#g-design-tools-flash-circle-dark-solid)"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-security-finger-cricle-light-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-security-finger-cricle-light-s1" d="M12.0001 9.87012C11.5101 9.87012 11.1001 10.2701 11.1001 10.7701V13.2401C11.1001 13.7401 11.5001 14.1401 12.0001 14.1401C12.5001 14.1401 12.9001 13.7401 12.9001 13.2401V10.7701C12.9001 10.2701 12.4901 9.87012 12.0001 9.87012Z"/>
+  <path id="g-security-finger-cricle-light-s2" d="M12 17.5499C9.38 17.5499 7.25 15.4199 7.25 12.7999V11.2C7.25 8.57995 9.38 6.44995 12 6.44995C14.62 6.44995 16.75 8.57995 16.75 11.2V12.7999C16.75 15.4199 14.62 17.5499 12 17.5499ZM12 7.94995C10.21 7.94995 8.75 9.40995 8.75 11.2V12.7999C8.75 14.5899 10.21 16.0499 12 16.0499C13.79 16.0499 15.25 14.5899 15.25 12.7999V11.2C15.25 9.40995 13.79 7.94995 12 7.94995Z"/>
+  <linearGradient id="g-security-finger-cricle-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-security-finger-cricle-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-security-finger-cricle-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-security-finger-cricle-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-security-finger-cricle-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-security-finger-cricle-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-security-finger-cricle-light-s0" fill="url(#g-security-finger-cricle-light-glass)"/>
+<g mask="url(#g-security-finger-cricle-light-in0)"><use xlink:href="#g-security-finger-cricle-light-s0" fill="none" stroke="url(#g-security-finger-cricle-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-security-finger-cricle-light-s1" fill="url(#g-security-finger-cricle-light-solid)"/>
+<use xlink:href="#g-security-finger-cricle-light-s2" fill="url(#g-security-finger-cricle-light-solid)"/>
+</svg>

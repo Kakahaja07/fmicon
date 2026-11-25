@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-share-2-light-s0" d="M12 3.66992V20.3299L11.2 21.2399C10.09 22.4999 9.18001 22.1599 9.18001 20.4799V13.2799H6.09001C4.69001 13.2799 4.30001 12.4199 5.23001 11.3699L12 3.66992Z"/>
+  <path id="g-essetional-share-2-light-s1" d="M18.77 12.6299L12 20.3299V3.6699L12.8 2.7599C13.91 1.4999 14.82 1.8399 14.82 3.5199V10.7199H17.91C19.31 10.7199 19.7 11.5799 18.77 12.6299Z"/>
+  <linearGradient id="g-essetional-share-2-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-share-2-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-share-2-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-share-2-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-share-2-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-share-2-light-s1" fill="#000"/></mask>
+  <mask id="g-essetional-share-2-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-share-2-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-essetional-share-2-light-out0)"><use xlink:href="#g-essetional-share-2-light-s0" fill="url(#g-essetional-share-2-light-solid)"/></g>
+<g mask="url(#g-essetional-share-2-light-in1)"><g filter="url(#g-essetional-share-2-light-blur)"><use xlink:href="#g-essetional-share-2-light-s0" fill="url(#g-essetional-share-2-light-solid)"/></g></g>
+<use xlink:href="#g-essetional-share-2-light-s1" fill="url(#g-essetional-share-2-light-glass)"/>
+<g mask="url(#g-essetional-share-2-light-in1)"><use xlink:href="#g-essetional-share-2-light-s1" fill="none" stroke="url(#g-essetional-share-2-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

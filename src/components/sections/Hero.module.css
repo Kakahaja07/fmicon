@@ -1,0 +1,142 @@
+.hero {
+  position: relative;
+  margin-top: -62px; /* sit under the sticky header (14px gap + 48px nav) */
+  padding: 140px 0 0;
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+/* "New · Glass and Duotone styles are here →" */
+.announce {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 32px;
+  padding: 0 12px 0 4px;
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  box-shadow: var(--shadow-control);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--text-2);
+  transition: color 150ms ease, box-shadow 150ms ease;
+  animation: rise 600ms var(--ease-out) both;
+}
+
+.announce svg {
+  transition: transform 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .announce:hover { color: var(--text); }
+  .announce:hover svg { transform: translateX(2px); }
+}
+
+.announceBadge {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  padding: 0 9px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: var(--text-xs);
+}
+
+.title {
+  margin-top: 24px;
+  max-width: 16ch;
+  font-size: 56px;
+  font-weight: var(--weight-strong);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+  animation: rise 700ms var(--ease-out) 60ms both;
+}
+
+.sub {
+  margin-top: 16px;
+  max-width: 52ch;
+  font-size: var(--text-lg);
+  line-height: 1.65;
+  color: var(--text-2);
+  text-wrap: pretty;
+  animation: rise 700ms var(--ease-out) 120ms both;
+}
+
+.search {
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.meta {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4px 6px;
+  font-size: var(--text-sm);
+  color: var(--text-3);
+}
+
+.install {
+  margin-left: 4px;
+  padding: 3px 8px;
+  border-radius: 7px;
+  background: var(--fill-translucent);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-2);
+}
+
+.showcase {
+  position: relative;
+}
+
+/* The app on a fine grid, lit softly from above in the brand colour (no photo backdrop) */
+.stage {
+  position: relative;
+  margin-top: 72px;
+  padding: 48px 48px 0;
+  border-radius: var(--radius-card) var(--radius-card) 0 0;
+  background:
+    radial-gradient(70% 60% at 50% 0%, color-mix(in srgb, var(--brand) 22%, transparent), transparent 70%),
+    linear-gradient(var(--hairline) 1px, transparent 1px) 0 0 / 32px 32px,
+    linear-gradient(90deg, var(--hairline) 1px, transparent 1px) 0 0 / 32px 32px,
+    var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  overflow: hidden;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+}
+
+@media (max-width: 900px) {
+  .stage { padding: 28px 20px 0; }
+}
+
+@media (max-width: 640px) {
+  .hero { padding-top: 116px; }
+  .title { font-size: 36px; }
+  .sub { font-size: var(--text-md); }
+  .stage { margin-top: 48px; padding: 16px 12px 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+}

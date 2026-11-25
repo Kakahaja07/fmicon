@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-support-like-question-lovely-light-s0" d="M19.86 8.08997C19.86 8.23997 19.86 8.38997 19.85 8.52997C18.32 7.95997 16.52 8.30997 15.32 9.38997C14.51 8.65997 13.46 8.24997 12.34 8.24997C9.88 8.24997 7.88 10.26 7.88 12.74C7.88 15.57 9.3 17.64 10.66 18.98C10.55 18.97 10.46 18.95 10.38 18.92C7.79 18.03 2 14.35 2 8.08997C2 5.32997 4.21999 3.09998 6.95999 3.09998C8.58999 3.09998 10.03 3.87997 10.93 5.08997C11.84 3.87997 13.28 3.09998 14.9 3.09998C17.64 3.09998 19.86 5.32997 19.86 8.08997Z"/>
+  <path id="g-support-like-question-lovely-light-s1" d="M18 9.58997C16.93 9.58997 15.96 10.11 15.36 10.91C14.76 10.11 13.8 9.58997 12.72 9.58997C10.9 9.58997 9.42001 11.07 9.42001 12.91C9.42001 13.62 9.53001 14.27 9.73001 14.87C10.67 17.84 13.56 19.61 14.99 20.1C15.19 20.17 15.52 20.17 15.73 20.1C17.16 19.61 20.05 17.84 20.99 14.87C21.19 14.26 21.3 13.61 21.3 12.91C21.3 11.07 19.82 9.58997 18 9.58997Z"/>
+  <linearGradient id="g-support-like-question-lovely-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-support-like-question-lovely-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-support-like-question-lovely-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-support-like-question-lovely-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-support-like-question-lovely-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-support-like-question-lovely-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-support-like-question-lovely-light-s0" fill="url(#g-support-like-question-lovely-light-glass)"/>
+<g mask="url(#g-support-like-question-lovely-light-in0)"><use xlink:href="#g-support-like-question-lovely-light-s0" fill="none" stroke="url(#g-support-like-question-lovely-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-support-like-question-lovely-light-s1" fill="url(#g-support-like-question-lovely-light-solid)"/>
+</svg>

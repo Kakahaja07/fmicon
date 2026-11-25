@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-video-audio-image-record-circle-light-s0" d="M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44712 2 1.96997 6.47715 1.96997 12C1.96997 17.5228 6.44712 22 11.97 22Z"/>
+  <path id="g-video-audio-image-record-circle-light-s1" d="M12 16.23C14.3362 16.23 16.23 14.3362 16.23 12C16.23 9.66386 14.3362 7.77002 12 7.77002C9.66386 7.77002 7.77002 9.66386 7.77002 12C7.77002 14.3362 9.66386 16.23 12 16.23Z"/>
+  <linearGradient id="g-video-audio-image-record-circle-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-video-audio-image-record-circle-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-video-audio-image-record-circle-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-video-audio-image-record-circle-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-video-audio-image-record-circle-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-video-audio-image-record-circle-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-video-audio-image-record-circle-light-s0" fill="url(#g-video-audio-image-record-circle-light-glass)"/>
+<g mask="url(#g-video-audio-image-record-circle-light-in0)"><use xlink:href="#g-video-audio-image-record-circle-light-s0" fill="none" stroke="url(#g-video-audio-image-record-circle-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-video-audio-image-record-circle-light-s1" fill="url(#g-video-audio-image-record-circle-light-solid)"/>
+</svg>

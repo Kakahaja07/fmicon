@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-shop-bag-tick-dark-s0" d="M19.24 5.58006H18.84L15.46 2.20006C15.19 1.93006 14.75 1.93006 14.47 2.20006C14.2 2.47006 14.2 2.91006 14.47 3.19006L16.86 5.58006H7.14L9.53 3.19006C9.8 2.92006 9.8 2.48006 9.53 2.20006C9.26 1.93006 8.82 1.93006 8.54 2.20006L5.17 5.58006H4.77C3.87 5.58006 2 5.58006 2 8.14006C2 9.11006 2.2 9.75006 2.62 10.1701C2.86 10.4201 3.15 10.5501 3.46 10.6201C3.75 10.6901 4.06 10.7001 4.36 10.7001H19.64C19.95 10.7001 20.24 10.6801 20.52 10.6201C21.36 10.4201 22 9.82006 22 8.14006C22 5.58006 20.13 5.58006 19.24 5.58006Z"/>
+  <path id="g-shop-bag-tick-dark-s1" d="M19.66 10.7H4.35996C4.06996 10.7 3.74996 10.69 3.45996 10.61L4.71996 18.3C5.00996 20.02 5.75996 22 9.08996 22H14.7C18.07 22 18.67 20.31 19.03 18.42L20.54 10.61C20.26 10.68 19.96 10.7 19.66 10.7ZM14.88 15.05L11.63 18.05C11.49 18.18 11.3 18.25 11.12 18.25C10.93 18.25 10.74 18.18 10.59 18.03L9.08996 16.53C8.79996 16.24 8.79996 15.76 9.08996 15.47C9.37996 15.18 9.85996 15.18 10.15 15.47L11.14 16.46L13.86 13.95C14.16 13.67 14.64 13.69 14.92 13.99C15.21 14.3 15.19 14.77 14.88 15.05Z"/>
+  <linearGradient id="g-shop-bag-tick-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-shop-bag-tick-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-shop-bag-tick-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-shop-bag-tick-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-shop-bag-tick-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-shop-bag-tick-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-shop-bag-tick-dark-s0" fill="url(#g-shop-bag-tick-dark-glass)"/>
+<g mask="url(#g-shop-bag-tick-dark-in0)"><use xlink:href="#g-shop-bag-tick-dark-s0" fill="none" stroke="url(#g-shop-bag-tick-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-shop-bag-tick-dark-s1" fill="url(#g-shop-bag-tick-dark-solid)"/>
+</svg>

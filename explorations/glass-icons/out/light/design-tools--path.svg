@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-design-tools-path-light-s0" d="M20.0201 10.7L17.2201 12.47L11.5601 6.81L13.3201 4.01C14.1401 2.72 15.7801 2.66 16.9901 3.86L20.1701 7.04C21.3001 8.17 21.2301 9.93 20.0201 10.7Z"/>
+  <path id="g-design-tools-path-light-s1" d="M14.7098 19.95L5.99981 20.98C5.39981 21.05 4.85981 20.96 4.40981 20.74C3.91981 20.5 3.53981 20.12 3.29981 19.63C3.07981 19.18 2.99981 18.64 3.05981 18.05L4.09981 9.33C4.34981 7.15 5.15981 6.44 7.45981 6.57L11.5798 6.82L17.2398 12.48L17.4798 16.6C17.6898 18.9 16.8998 19.7 14.7098 19.95Z"/>
+  <path id="g-design-tools-path-light-s2" d="M7.98004 17.15L4.40004 20.73C3.91004 20.49 3.53004 20.11 3.29004 19.62L6.88004 16.03C7.19004 15.73 7.69004 15.73 7.99004 16.03C8.30004 16.35 8.30004 16.84 7.98004 17.15Z"/>
+  <linearGradient id="g-design-tools-path-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-design-tools-path-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-design-tools-path-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-design-tools-path-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-design-tools-path-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-design-tools-path-light-s1" fill="#000"/></mask>
+  <mask id="g-design-tools-path-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-design-tools-path-light-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-design-tools-path-light-out0)"><use xlink:href="#g-design-tools-path-light-s0" fill="url(#g-design-tools-path-light-solid)"/></g>
+<g mask="url(#g-design-tools-path-light-in1)"><g filter="url(#g-design-tools-path-light-blur)"><use xlink:href="#g-design-tools-path-light-s0" fill="url(#g-design-tools-path-light-solid)"/></g></g>
+<use xlink:href="#g-design-tools-path-light-s1" fill="url(#g-design-tools-path-light-glass)"/>
+<g mask="url(#g-design-tools-path-light-in1)"><use xlink:href="#g-design-tools-path-light-s1" fill="none" stroke="url(#g-design-tools-path-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-design-tools-path-light-s2" fill="url(#g-design-tools-path-light-solid)"/>
+</svg>

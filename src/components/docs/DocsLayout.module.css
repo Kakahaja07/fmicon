@@ -1,0 +1,161 @@
+/* Docs: navigation · page · on this page */
+.layout {
+  width: min(1240px, 100% - 48px);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) 200px;
+  gap: 48px;
+  align-items: start;
+  padding: 112px 0 96px;
+}
+
+.side,
+.toc {
+  position: sticky;
+  top: 96px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.side::-webkit-scrollbar,
+.toc::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  display: grid;
+}
+
+.group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 22px 0 6px;
+  font-size: 12px;
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.02em;
+  color: var(--text-3);
+}
+
+.nav > .group:first-child {
+  margin-top: 0;
+}
+
+.group svg {
+  color: var(--text-3);
+}
+
+.link {
+  display: block;
+  padding: 6px 0 6px 22px;
+  font-size: var(--text-sm);
+  color: var(--text-2);
+  transition: color 150ms ease;
+}
+
+.link:hover {
+  color: var(--text);
+}
+
+.link[data-active] {
+  color: var(--accent);
+}
+
+/* Framework picker */
+.picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2px 0 4px 14px;
+}
+
+.pickerLogo {
+  position: absolute;
+  left: 10px;
+  display: grid;
+  pointer-events: none;
+}
+
+.picker select {
+  width: 100%;
+  height: 34px;
+  padding: 0 28px 0 32px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--fill-subtle)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238e8e93' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M8 9l4-4 4 4M16 15l-4 4-4-4'/%3E%3C/svg%3E")
+    no-repeat right 10px center;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-sm);
+  appearance: none;
+  cursor: pointer;
+  transition: box-shadow 150ms ease;
+}
+
+.picker select:hover {
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+}
+
+.picker select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.main {
+  min-width: 0;
+}
+
+/* On this page */
+.toc ol {
+  display: grid;
+  list-style: none;
+  border-left: 1px solid var(--hairline);
+}
+
+.toc a {
+  display: block;
+  margin-left: -1px;
+  padding: 5px 0 5px 14px;
+  border-left: 1px solid transparent;
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  transition: color 150ms ease, border-color 150ms ease;
+}
+
+.toc a:hover {
+  color: var(--text);
+}
+
+.toc a[data-active] {
+  border-left-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+  }
+  .toc {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding-top: 96px;
+  }
+  .side {
+    position: static;
+    max-height: none;
+  }
+  .nav > div,
+  .nav > .link:not([data-active]),
+  .nav > .group:not(:nth-of-type(2)) {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-money-security-card-light-s0" d="M9.41977 2.15994L3.91977 4.21994C2.86977 4.60994 2.00977 5.85993 2.00977 6.97993V15.0799C2.00977 15.8899 2.53977 16.9599 3.18977 17.4399L8.68977 21.5499C9.65977 22.2799 11.2498 22.2799 12.2198 21.5499L17.7198 17.4399C18.3698 16.9499 18.8998 15.8899 18.8998 15.0799V6.97993C18.8998 5.85993 18.0398 4.60994 16.9898 4.21994L11.4898 2.15994C10.9198 1.94994 9.98977 1.94994 9.41977 2.15994Z"/>
+  <path id="g-money-security-card-light-s1" d="M19.2601 6.76001H12.4102C12.2102 6.76001 12.0201 6.77002 11.8401 6.77002C10.1201 6.87002 9.66016 7.50002 9.66016 9.46002V9.85002C9.66016 10.2642 9.99594 10.6 10.4102 10.6H21.2502C21.6644 10.6 22.0002 10.2642 22.0002 9.85002V9.46002C22.0002 7.30002 21.4501 6.76001 19.2601 6.76001Z"/>
+  <path id="g-money-security-card-light-s2" d="M10.4199 11.7C10.0057 11.7 9.66992 12.0358 9.66992 12.45V14.54C9.66992 16.7 10.2199 17.25 12.4099 17.25H19.2599C21.4099 17.25 21.9799 16.73 21.9999 14.66V12.45C21.9999 12.0358 21.6641 11.7 21.2499 11.7H10.4199ZM13.2699 15.47H12.0199C11.7199 15.47 11.4799 15.23 11.4799 14.93C11.4799 14.63 11.7199 14.39 12.0199 14.39H13.2699C13.5699 14.39 13.8099 14.63 13.8099 14.93C13.8099 15.23 13.5699 15.47 13.2699 15.47ZM17.3199 15.47H14.8299C14.5299 15.47 14.2899 15.23 14.2899 14.93C14.2899 14.63 14.5299 14.39 14.8299 14.39H17.3199C17.6199 14.39 17.8599 14.63 17.8599 14.93C17.8699 15.23 17.6199 15.47 17.3199 15.47Z"/>
+  <linearGradient id="g-money-security-card-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-money-security-card-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-money-security-card-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-money-security-card-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-money-security-card-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-money-security-card-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-money-security-card-light-s0" fill="url(#g-money-security-card-light-glass)"/>
+<g mask="url(#g-money-security-card-light-in0)"><use xlink:href="#g-money-security-card-light-s0" fill="none" stroke="url(#g-money-security-card-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-money-security-card-light-s1" fill="url(#g-money-security-card-light-solid)"/>
+<use xlink:href="#g-money-security-card-light-s2" fill="url(#g-money-security-card-light-solid)"/>
+</svg>

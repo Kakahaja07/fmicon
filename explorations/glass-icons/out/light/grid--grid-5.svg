@@ -1,0 +1,20 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-grid-5-light-s0" d="M22 7.81V12H9V2H16.19C19.83 2 22 4.17 22 7.81Z"/>
+  <path id="g-grid-grid-5-light-s1" d="M9 2V22H7.81C4.17 22 2 19.83 2 16.19V7.81C2 4.17 4.17 2 7.81 2H9Z"/>
+  <path id="g-grid-grid-5-light-s2" d="M22 12V16.19C22 19.83 19.83 22 16.19 22H9V12H22Z"/>
+  <linearGradient id="g-grid-grid-5-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-grid-5-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-grid-grid-5-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-grid-5-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-grid-5-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-grid-5-light-s0" fill="#fff"/></mask>
+  <mask id="g-grid-grid-5-light-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-grid-grid-5-light-s2" fill="#000"/></mask>
+  <mask id="g-grid-grid-5-light-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-grid-5-light-s2" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-grid-grid-5-light-s0" fill="url(#g-grid-grid-5-light-glass)"/>
+<g mask="url(#g-grid-grid-5-light-in0)"><use xlink:href="#g-grid-grid-5-light-s0" fill="none" stroke="url(#g-grid-grid-5-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-grid-grid-5-light-out1)"><use xlink:href="#g-grid-grid-5-light-s1" fill="url(#g-grid-grid-5-light-solid)"/></g>
+<g mask="url(#g-grid-grid-5-light-in2)"><g filter="url(#g-grid-grid-5-light-blur)"><use xlink:href="#g-grid-grid-5-light-s1" fill="url(#g-grid-grid-5-light-solid)"/></g></g>
+<use xlink:href="#g-grid-grid-5-light-s2" fill="url(#g-grid-grid-5-light-glass)"/>
+<g mask="url(#g-grid-grid-5-light-in2)"><use xlink:href="#g-grid-grid-5-light-s2" fill="none" stroke="url(#g-grid-grid-5-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

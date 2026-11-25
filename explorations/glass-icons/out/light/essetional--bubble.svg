@@ -1,0 +1,21 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-bubble-light-s0" d="M15.59 1.75C12.62 1.75 10.21 4.16 10.21 7.13C10.21 10.1 12.62 12.51 15.59 12.51C18.56 12.51 20.97 10.1 20.97 7.13C20.97 4.16 18.56 1.75 15.59 1.75Z"/>
+  <path id="g-essetional-bubble-light-s1" d="M6.35977 13.03C4.52977 13.03 3.02979 14.52 3.02979 16.36C3.02979 18.2 4.51977 19.69 6.35977 19.69C8.18977 19.69 9.68979 18.2 9.68979 16.36C9.68979 14.52 8.18977 13.03 6.35977 13.03Z"/>
+  <path id="g-essetional-bubble-light-s2" d="M16.6201 16.6201C15.0701 16.6201 13.8101 17.8801 13.8101 19.4301C13.8101 20.9801 15.0701 22.2401 16.6201 22.2401C18.1701 22.2401 19.4301 20.9801 19.4301 19.4301C19.4301 17.8801 18.1701 16.6201 16.6201 16.6201Z"/>
+  <linearGradient id="g-essetional-bubble-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-bubble-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-bubble-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-bubble-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-bubble-light-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-essetional-bubble-light-s1" fill="#000"/><use xlink:href="#g-essetional-bubble-light-s2" fill="#000"/></mask>
+  <mask id="g-essetional-bubble-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-bubble-light-s1" fill="#fff"/></mask>
+  <mask id="g-essetional-bubble-light-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-bubble-light-s2" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-essetional-bubble-light-out0)"><use xlink:href="#g-essetional-bubble-light-s0" fill="url(#g-essetional-bubble-light-solid)"/></g>
+<g mask="url(#g-essetional-bubble-light-in1)"><g filter="url(#g-essetional-bubble-light-blur)"><use xlink:href="#g-essetional-bubble-light-s0" fill="url(#g-essetional-bubble-light-solid)"/></g></g>
+<use xlink:href="#g-essetional-bubble-light-s1" fill="url(#g-essetional-bubble-light-glass)"/>
+<g mask="url(#g-essetional-bubble-light-in1)"><use xlink:href="#g-essetional-bubble-light-s1" fill="none" stroke="url(#g-essetional-bubble-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-essetional-bubble-light-in2)"><g filter="url(#g-essetional-bubble-light-blur)"><use xlink:href="#g-essetional-bubble-light-s0" fill="url(#g-essetional-bubble-light-solid)"/></g></g>
+<use xlink:href="#g-essetional-bubble-light-s2" fill="url(#g-essetional-bubble-light-glass)"/>
+<g mask="url(#g-essetional-bubble-light-in2)"><use xlink:href="#g-essetional-bubble-light-s2" fill="none" stroke="url(#g-essetional-bubble-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

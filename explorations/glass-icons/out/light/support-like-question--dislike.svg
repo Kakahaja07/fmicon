@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-support-like-question-dislike-light-s0" d="M2.35002 13.96C2.74002 14.52 3.43002 14.84 4.22002 14.84H8.32002C8.59002 14.84 8.84002 14.95 9.01002 15.15C9.19002 15.35 9.26002 15.63 9.22002 15.92L8.71002 19.2C8.49002 20.18 9.14002 21.28 10.12 21.61C11.03 21.95 12.1 21.49 12.53 20.84L16.74 14.57L16.86 14.37V5.53003L16.71 5.38003L13.54 2.93003C13.12 2.51003 12.17 2.28003 11.5 2.28003H7.60002C6.26002 2.28003 4.91002 3.29003 4.61002 4.52003L2.15002 12.01C1.90002 12.72 1.97002 13.42 2.35002 13.96Z"/>
+  <path id="g-support-like-question-dislike-light-s1" d="M18.79 17.61H19.82C21.37 17.61 22 17.01 22 15.53V5.48002C22 4.00002 21.37 3.40002 19.82 3.40002H18.79C17.24 3.40002 16.61 4.00002 16.61 5.48002V15.54C16.61 17.01 17.24 17.61 18.79 17.61Z"/>
+  <linearGradient id="g-support-like-question-dislike-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-support-like-question-dislike-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-support-like-question-dislike-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-support-like-question-dislike-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-support-like-question-dislike-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-support-like-question-dislike-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-support-like-question-dislike-light-s0" fill="url(#g-support-like-question-dislike-light-glass)"/>
+<g mask="url(#g-support-like-question-dislike-light-in0)"><use xlink:href="#g-support-like-question-dislike-light-s0" fill="none" stroke="url(#g-support-like-question-dislike-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-support-like-question-dislike-light-s1" fill="url(#g-support-like-question-dislike-light-solid)"/>
+</svg>

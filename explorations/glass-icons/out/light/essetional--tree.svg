@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-essetional-tree-light-s0" d="M16.1701 10.0601H7.83007C6.65007 10.0601 6.24007 9.27007 6.93007 8.31007L11.1001 2.47007C11.5901 1.77007 12.4101 1.77007 12.9001 2.47007L17.0701 8.31007C17.7601 9.27007 17.3501 10.0601 16.1701 10.0601Z"/>
+  <path id="g-essetional-tree-light-s1" d="M17.5901 18.0001H6.41009C4.83009 18.0001 4.29009 16.9501 5.22009 15.6701L9.21008 10.0601H14.7901L18.7801 15.6701C19.7101 16.9501 19.1701 18.0001 17.5901 18.0001Z"/>
+  <path id="g-essetional-tree-light-s2" d="M12.75 18V22C12.75 22.41 12.41 22.75 12 22.75C11.59 22.75 11.25 22.41 11.25 22V18H12.75Z"/>
+  <linearGradient id="g-essetional-tree-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-essetional-tree-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-essetional-tree-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-essetional-tree-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-essetional-tree-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-essetional-tree-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-essetional-tree-light-s0" fill="url(#g-essetional-tree-light-glass)"/>
+<g mask="url(#g-essetional-tree-light-in0)"><use xlink:href="#g-essetional-tree-light-s0" fill="none" stroke="url(#g-essetional-tree-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-essetional-tree-light-s1" fill="url(#g-essetional-tree-light-solid)"/>
+<use xlink:href="#g-essetional-tree-light-s2" fill="url(#g-essetional-tree-light-solid)"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-hex-hex-light-s0" d="M17 3.33984H7L2 11.9998L7 20.6598H17L22 11.9998L17 3.33984Z"/>
+  <path id="g-company-logos-hex-hex-light-s1" d="M14.3399 8H7.02988L3.37988 14.33L7.02988 20.66H14.3399L17.9999 14.33L14.3399 8Z"/>
+  <path id="g-company-logos-hex-hex-light-s2" d="M10.8701 14H7.03009L5.1001 17.33L7.03009 20.66H10.8701L12.8001 17.33L10.8701 14Z"/>
+  <linearGradient id="g-company-logos-hex-hex-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-hex-hex-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-hex-hex-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-hex-hex-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-hex-hex-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-hex-hex-light-s0" fill="#fff"/></mask>
+  <mask id="g-company-logos-hex-hex-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-hex-hex-light-s1" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-hex-hex-light-s0" fill="url(#g-company-logos-hex-hex-light-glass)"/>
+<g mask="url(#g-company-logos-hex-hex-light-in0)"><use xlink:href="#g-company-logos-hex-hex-light-s0" fill="none" stroke="url(#g-company-logos-hex-hex-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-hex-hex-light-s1" fill="url(#g-company-logos-hex-hex-light-glass)"/>
+<g mask="url(#g-company-logos-hex-hex-light-in1)"><use xlink:href="#g-company-logos-hex-hex-light-s1" fill="none" stroke="url(#g-company-logos-hex-hex-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-hex-hex-light-s2" fill="url(#g-company-logos-hex-hex-light-solid)"/>
+</svg>

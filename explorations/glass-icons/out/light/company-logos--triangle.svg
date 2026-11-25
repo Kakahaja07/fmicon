@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-triangle-light-s0" d="M10.0498 2.85003L1.25986 11.64C1.05986 11.84 1.05986 12.15 1.25986 12.35L10.0498 21.14C10.3698 21.45 10.8999 21.23 10.8999 20.79V18.2C10.8999 18.07 10.8499 17.94 10.7499 17.85L5.24985 12.35C5.04985 12.15 5.04985 11.84 5.24985 11.64L10.7499 6.14003C10.8399 6.05003 10.8999 5.92003 10.8999 5.79003V3.20003C10.8999 2.76003 10.3598 2.54003 10.0498 2.85003Z"/>
+  <path id="g-company-logos-triangle-light-s1" d="M13.7499 2.85003L22.5399 11.64C22.7399 11.84 22.7399 12.15 22.5399 12.35L13.7499 21.14C13.4399 21.45 12.8999 21.23 12.8999 20.79V18.2C12.8999 18.07 12.9499 17.94 13.0499 17.85L18.5499 12.35C18.7499 12.15 18.7499 11.84 18.5499 11.64L13.0499 6.14003C12.9599 6.05003 12.8999 5.92003 12.8999 5.79003V3.20003C12.8999 2.76003 13.4399 2.54003 13.7499 2.85003Z"/>
+  <path id="g-company-logos-triangle-light-s2" d="M10.0498 9.85003L8.25986 11.64C8.05986 11.84 8.05986 12.15 8.25986 12.35L10.0498 14.14C10.3698 14.45 10.8999 14.23 10.8999 13.79V10.2C10.8999 9.76003 10.3598 9.54003 10.0498 9.85003Z"/>
+  <linearGradient id="g-company-logos-triangle-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-triangle-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-company-logos-triangle-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-triangle-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-triangle-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-triangle-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-triangle-light-s0" fill="url(#g-company-logos-triangle-light-glass)"/>
+<g mask="url(#g-company-logos-triangle-light-in0)"><use xlink:href="#g-company-logos-triangle-light-s0" fill="none" stroke="url(#g-company-logos-triangle-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-triangle-light-s1" fill="url(#g-company-logos-triangle-light-solid)"/>
+<use xlink:href="#g-company-logos-triangle-light-s2" fill="url(#g-company-logos-triangle-light-solid)"/>
+</svg>

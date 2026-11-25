@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-blogger-dark-s0" d="M16.1898 2H7.81976C4.17976 2 2.00977 4.17 2.00977 7.81V16.18C2.00977 19.82 4.17976 21.99 7.81976 21.99H16.1898C19.8298 21.99 21.9998 19.82 21.9998 16.18V7.81C21.9998 4.17 19.8298 2 16.1898 2Z"/>
+  <path id="g-company-logos-blogger-dark-s1" d="M17 11C16.45 11 16 10.55 16 10V9C16 7 15 6 13 6H9C7 6 6 7 6 9V15C6 17 7 18 9 18H15C17 18 18 17 18 15V12C18 11.45 17.55 11 17 11ZM10 9.25H12C12.41 9.25 12.75 9.59 12.75 10C12.75 10.41 12.41 10.75 12 10.75H10C9.59 10.75 9.25 10.41 9.25 10C9.25 9.59 9.59 9.25 10 9.25ZM14 14.75H10C9.59 14.75 9.25 14.41 9.25 14C9.25 13.59 9.59 13.25 10 13.25H14C14.41 13.25 14.75 13.59 14.75 14C14.75 14.41 14.41 14.75 14 14.75Z"/>
+  <linearGradient id="g-company-logos-blogger-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-blogger-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-blogger-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-blogger-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-blogger-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-blogger-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-blogger-dark-s0" fill="url(#g-company-logos-blogger-dark-glass)"/>
+<g mask="url(#g-company-logos-blogger-dark-in0)"><use xlink:href="#g-company-logos-blogger-dark-s0" fill="none" stroke="url(#g-company-logos-blogger-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-blogger-dark-s1" fill="url(#g-company-logos-blogger-dark-solid)"/>
+</svg>

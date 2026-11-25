@@ -1,0 +1,30 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-figma-2-dark-s0" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+  <path id="g-company-logos-figma-2-dark-s1" d="M12 6H10C8.9 6 8 6.9 8 8C8 9.1 8.9 10 10 10H12V6Z"/>
+  <path id="g-company-logos-figma-2-dark-s2" d="M12 10H10C8.9 10 8 10.9 8 12C8 13.1 8.9 14 10 14H12V10Z"/>
+  <path id="g-company-logos-figma-2-dark-s3" d="M12 14H10C8.9 14 8 14.9 8 16C8 17.1 8.9 18 10 18C11.1 18 12 17.1 12 16V14Z"/>
+  <path id="g-company-logos-figma-2-dark-s4" d="M12 6H14C15.1 6 16 6.9 16 8C16 9.1 15.1 10 14 10H12V6Z"/>
+  <path id="g-company-logos-figma-2-dark-s5" d="M14 10C15.1 10 16 10.9 16 12C16 13.1 15.1 14 14 14C12.9 14 12 13.1 12 12C12 10.9 12.9 10 14 10Z"/>
+  <linearGradient id="g-company-logos-figma-2-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-figma-2-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-figma-2-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-figma-2-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-company-logos-figma-2-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-figma-2-dark-s0" fill="#fff"/></mask>
+  <mask id="g-company-logos-figma-2-dark-out1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-company-logos-figma-2-dark-s2" fill="#000"/><use xlink:href="#g-company-logos-figma-2-dark-s4" fill="#000"/></mask>
+  <mask id="g-company-logos-figma-2-dark-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-figma-2-dark-s2" fill="#fff"/></mask>
+  <mask id="g-company-logos-figma-2-dark-out3" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-company-logos-figma-2-dark-s4" fill="#000"/></mask>
+  <mask id="g-company-logos-figma-2-dark-in4" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-company-logos-figma-2-dark-s4" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-company-logos-figma-2-dark-s0" fill="url(#g-company-logos-figma-2-dark-glass)"/>
+<g mask="url(#g-company-logos-figma-2-dark-in0)"><use xlink:href="#g-company-logos-figma-2-dark-s0" fill="none" stroke="url(#g-company-logos-figma-2-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-company-logos-figma-2-dark-out1)"><use xlink:href="#g-company-logos-figma-2-dark-s1" fill="url(#g-company-logos-figma-2-dark-solid)"/></g>
+<g mask="url(#g-company-logos-figma-2-dark-in2)"><g filter="url(#g-company-logos-figma-2-dark-blur)"><use xlink:href="#g-company-logos-figma-2-dark-s1" fill="url(#g-company-logos-figma-2-dark-solid)"/></g></g>
+<use xlink:href="#g-company-logos-figma-2-dark-s2" fill="url(#g-company-logos-figma-2-dark-glass)"/>
+<g mask="url(#g-company-logos-figma-2-dark-in2)"><use xlink:href="#g-company-logos-figma-2-dark-s2" fill="none" stroke="url(#g-company-logos-figma-2-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-company-logos-figma-2-dark-out3)"><use xlink:href="#g-company-logos-figma-2-dark-s3" fill="url(#g-company-logos-figma-2-dark-solid)"/></g>
+<g mask="url(#g-company-logos-figma-2-dark-in4)"><g filter="url(#g-company-logos-figma-2-dark-blur)"><use xlink:href="#g-company-logos-figma-2-dark-s1" fill="url(#g-company-logos-figma-2-dark-solid)"/><use xlink:href="#g-company-logos-figma-2-dark-s3" fill="url(#g-company-logos-figma-2-dark-solid)"/></g></g>
+<use xlink:href="#g-company-logos-figma-2-dark-s4" fill="url(#g-company-logos-figma-2-dark-glass)"/>
+<g mask="url(#g-company-logos-figma-2-dark-in4)"><use xlink:href="#g-company-logos-figma-2-dark-s4" fill="none" stroke="url(#g-company-logos-figma-2-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-company-logos-figma-2-dark-s5" fill="url(#g-company-logos-figma-2-dark-solid)"/>
+</svg>

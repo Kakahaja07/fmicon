@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-arrow-arrow-left-dark-s0" d="M10.77 8.52002L15.82 12.31V17.92C15.82 18.88 14.66 19.36 13.98 18.68L8.79999 13.51C7.96999 12.68 7.96999 11.33 8.79999 10.5L10.77 8.52002Z"/>
+  <path id="g-arrow-arrow-left-dark-s1" d="M15.82 6.08005V12.31L10.77 8.52005L13.98 5.31005C14.66 4.64005 15.82 5.12005 15.82 6.08005Z"/>
+  <linearGradient id="g-arrow-arrow-left-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-arrow-arrow-left-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-arrow-arrow-left-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-arrow-arrow-left-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-arrow-arrow-left-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-arrow-arrow-left-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-arrow-arrow-left-dark-s0" fill="url(#g-arrow-arrow-left-dark-glass)"/>
+<g mask="url(#g-arrow-arrow-left-dark-in0)"><use xlink:href="#g-arrow-arrow-left-dark-s0" fill="none" stroke="url(#g-arrow-arrow-left-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-arrow-arrow-left-dark-s1" fill="url(#g-arrow-arrow-left-dark-solid)"/>
+</svg>

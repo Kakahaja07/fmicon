@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-grid-align-top-dark-s0" d="M15.98 19.38H17.02C18.61 19.38 19.25 18.78 19.25 17.26V5.38H13.75V17.26C13.76 18.78 14.4 19.38 15.98 19.38Z"/>
+  <path id="g-grid-align-top-dark-s1" d="M7.48 14.38H8.52C10.11 14.38 10.75 13.77 10.75 12.26V5.38H5.25V12.26C5.26 13.77 5.9 14.38 7.48 14.38Z"/>
+  <path id="g-grid-align-top-dark-s2" d="M21.25 6.12H2.75C2.34 6.12 2 5.79 2 5.38C2 4.97 2.34 4.63 2.75 4.63H21.25C21.66 4.63 22 4.97 22 5.38C22 5.79 21.66 6.12 21.25 6.12Z"/>
+  <linearGradient id="g-grid-align-top-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-grid-align-top-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-grid-align-top-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-grid-align-top-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-grid-align-top-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-grid-align-top-dark-s1" fill="#000"/></mask>
+  <mask id="g-grid-align-top-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-grid-align-top-dark-s1" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-grid-align-top-dark-out0)"><use xlink:href="#g-grid-align-top-dark-s0" fill="url(#g-grid-align-top-dark-solid)"/></g>
+<g mask="url(#g-grid-align-top-dark-in1)"><g filter="url(#g-grid-align-top-dark-blur)"><use xlink:href="#g-grid-align-top-dark-s0" fill="url(#g-grid-align-top-dark-solid)"/></g></g>
+<use xlink:href="#g-grid-align-top-dark-s1" fill="url(#g-grid-align-top-dark-glass)"/>
+<g mask="url(#g-grid-align-top-dark-in1)"><use xlink:href="#g-grid-align-top-dark-s1" fill="none" stroke="url(#g-grid-align-top-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-grid-align-top-dark-s2" fill="url(#g-grid-align-top-dark-solid)"/>
+</svg>

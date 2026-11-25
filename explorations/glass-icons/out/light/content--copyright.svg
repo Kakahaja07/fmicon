@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-content-copyright-light-s0" d="M12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22Z"/>
+  <path id="g-content-copyright-light-s1" d="M12.24 16.75C9.61999 16.75 7.48999 14.62 7.48999 12C7.48999 9.38 9.61999 7.25 12.24 7.25C13.39 7.25 14.51 7.67 15.37 8.44C15.68 8.71 15.71 9.19 15.44 9.5C15.16 9.81 14.69 9.84001 14.38 9.57001C13.79 9.05001 13.03 8.76001 12.24 8.76001C10.45 8.76001 8.98999 10.22 8.98999 12.01C8.98999 13.8 10.45 15.26 12.24 15.26C13.02 15.26 13.79 14.97 14.38 14.45C14.69 14.18 15.17 14.21 15.44 14.52C15.71 14.83 15.68 15.31 15.37 15.58C14.5 16.33 13.39 16.75 12.24 16.75Z"/>
+  <linearGradient id="g-content-copyright-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-content-copyright-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-content-copyright-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-content-copyright-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-content-copyright-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-content-copyright-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-content-copyright-light-s0" fill="url(#g-content-copyright-light-glass)"/>
+<g mask="url(#g-content-copyright-light-in0)"><use xlink:href="#g-content-copyright-light-s0" fill="none" stroke="url(#g-content-copyright-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-content-copyright-light-s1" fill="url(#g-content-copyright-light-solid)"/>
+</svg>

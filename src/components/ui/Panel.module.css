@@ -1,0 +1,12 @@
+.panel {
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.lg { padding: 32px; }
+.md { padding: 16px 20px; }
+
+@media (max-width: 640px) {
+  .lg { padding: 24px 18px; }
+}

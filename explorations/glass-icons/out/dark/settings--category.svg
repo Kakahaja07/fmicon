@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-settings-category-dark-s0" d="M7.24 2H5.34C3.15 2 2 3.15 2 5.33V7.23C2 9.41 3.15 10.56 5.33 10.56H7.23C9.41 10.56 10.56 9.41 10.56 7.23V5.33C10.57 3.15 9.42 2 7.24 2Z"/>
+  <path id="g-settings-category-dark-s1" d="M18.6699 2H16.7699C14.5899 2 13.4399 3.15 13.4399 5.33V7.23C13.4399 9.41 14.5899 10.56 16.7699 10.56H18.6699C20.8499 10.56 21.9999 9.41 21.9999 7.23V5.33C21.9999 3.15 20.8499 2 18.6699 2Z"/>
+  <path id="g-settings-category-dark-s2" d="M18.6699 13.4301H16.7699C14.5899 13.4301 13.4399 14.5801 13.4399 16.7601V18.6601C13.4399 20.8401 14.5899 21.9901 16.7699 21.9901H18.6699C20.8499 21.9901 21.9999 20.8401 21.9999 18.6601V16.7601C21.9999 14.5801 20.8499 13.4301 18.6699 13.4301Z"/>
+  <path id="g-settings-category-dark-s3" d="M7.24 13.4301H5.34C3.15 13.4301 2 14.5801 2 16.7601V18.6601C2 20.8501 3.15 22.0001 5.33 22.0001H7.23C9.41 22.0001 10.56 20.8501 10.56 18.6701V16.7701C10.57 14.5801 9.42 13.4301 7.24 13.4301Z"/>
+  <linearGradient id="g-settings-category-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-settings-category-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-settings-category-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-settings-category-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-settings-category-dark-out0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-settings-category-dark-s1" fill="#000"/><use xlink:href="#g-settings-category-dark-s3" fill="#000"/></mask>
+  <mask id="g-settings-category-dark-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-category-dark-s1" fill="#fff"/></mask>
+  <mask id="g-settings-category-dark-out2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><rect x="-4" y="-4" width="32" height="32" fill="#fff"/><use xlink:href="#g-settings-category-dark-s3" fill="#000"/></mask>
+  <mask id="g-settings-category-dark-in3" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-settings-category-dark-s3" fill="#fff"/></mask>
+</defs>
+<g mask="url(#g-settings-category-dark-out0)"><use xlink:href="#g-settings-category-dark-s0" fill="url(#g-settings-category-dark-solid)"/></g>
+<g mask="url(#g-settings-category-dark-in1)"><g filter="url(#g-settings-category-dark-blur)"><use xlink:href="#g-settings-category-dark-s0" fill="url(#g-settings-category-dark-solid)"/></g></g>
+<use xlink:href="#g-settings-category-dark-s1" fill="url(#g-settings-category-dark-glass)"/>
+<g mask="url(#g-settings-category-dark-in1)"><use xlink:href="#g-settings-category-dark-s1" fill="none" stroke="url(#g-settings-category-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<g mask="url(#g-settings-category-dark-out2)"><use xlink:href="#g-settings-category-dark-s2" fill="url(#g-settings-category-dark-solid)"/></g>
+<g mask="url(#g-settings-category-dark-in3)"><g filter="url(#g-settings-category-dark-blur)"><use xlink:href="#g-settings-category-dark-s0" fill="url(#g-settings-category-dark-solid)"/><use xlink:href="#g-settings-category-dark-s2" fill="url(#g-settings-category-dark-solid)"/></g></g>
+<use xlink:href="#g-settings-category-dark-s3" fill="url(#g-settings-category-dark-glass)"/>
+<g mask="url(#g-settings-category-dark-in3)"><use xlink:href="#g-settings-category-dark-s3" fill="none" stroke="url(#g-settings-category-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+</svg>

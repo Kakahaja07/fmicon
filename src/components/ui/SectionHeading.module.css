@@ -1,0 +1,29 @@
+.head {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--text-display);
+  font-weight: var(--weight-strong);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.lead {
+  margin-top: 12px;
+  max-width: 62ch;
+  font-size: var(--text-lg);
+  line-height: 1.65;
+  color: var(--text-2);
+  text-wrap: pretty;
+}
+
+.narrow { max-width: 38ch; }
+
+@media (max-width: 640px) {
+  .title { font-size: 30px; line-height: 1.2; }
+  .lead { font-size: var(--text-md); }
+}

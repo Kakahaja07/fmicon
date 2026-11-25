@@ -1,0 +1,78 @@
+.panel {
+  position: absolute;
+  left: 28px;
+  right: -40px;
+  top: 124px;
+  bottom: -30px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 14px 0 0 0;
+  background: var(--fill-subtle);
+  box-shadow: 0 0 0 1px var(--hairline), 0 20px 50px rgba(40, 50, 70, 0.12);
+}
+
+.mini {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  align-content: start;
+}
+
+.mini i {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  border-radius: 9px;
+  background: var(--surface);
+  box-shadow: 0 0 0 1px var(--hairline);
+  color: var(--text-2);
+}
+
+.big {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 18px;
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(var(--text-faint) 1px, transparent 1.2px) 0 0 / 14px 14px,
+    var(--surface);
+  color: var(--accent);
+}
+
+.preview {
+  animation: morph 420ms var(--ease-out);
+}
+
+@keyframes morph {
+  from { opacity: 0; transform: scale(0.88); filter: blur(4px); }
+}
+
+.pills {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--fill);
+  font-size: 11px;
+  font-weight: var(--weight-medium);
+  color: var(--text-3);
+}
+
+.pills span {
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  transition: background-color var(--dur) ease, color var(--dur) ease;
+}
+
+.pills span[data-on] {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-control);
+}
+
+@media (max-width: 640px) {
+  .panel { top: 110px; left: 22px; }
+}

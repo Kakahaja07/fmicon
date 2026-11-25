@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-company-logos-chainlink-link-dark-s0" d="M3 8.17994V15.8299C3 16.4799 3.46 17.2599 4.03 17.5799L11.03 21.4699C11.56 21.7699 12.44 21.7699 12.97 21.4699L19.97 17.5799C20.54 17.2699 21 16.4799 21 15.8299V8.17994C21 7.52994 20.54 6.74994 19.97 6.42994L12.97 2.53994C12.44 2.23994 11.56 2.23994 11.03 2.53994L4.03 6.42994C3.46 6.73994 3 7.52994 3 8.17994Z"/>
+  <linearGradient id="g-company-logos-chainlink-link-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-company-logos-chainlink-link-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-company-logos-chainlink-link-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-company-logos-chainlink-link-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+</defs>
+<use xlink:href="#g-company-logos-chainlink-link-dark-s0" fill="url(#g-company-logos-chainlink-link-dark-solid)"/>
+</svg>

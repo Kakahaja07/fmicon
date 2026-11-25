@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-business-hashtag-light-s0" d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z"/>
+  <path id="g-business-hashtag-light-s1" d="M13.86 6.65002H10.14C8.22002 6.65002 6.65002 8.21002 6.65002 10.14V13.86C6.65002 15.78 8.22002 17.35 10.14 17.35H13.86C15.78 17.35 17.35 15.79 17.35 13.86V10.14C17.35 8.22002 15.78 6.65002 13.86 6.65002ZM15.95 10.14V11.3H12.7V8.05002H13.86C15.01 8.05002 15.95 8.99002 15.95 10.14ZM10.14 8.05002H11.3V11.31H8.05002V10.15C8.05002 8.99002 8.99002 8.05002 10.14 8.05002ZM8.05002 13.86V12.7H11.31V15.96H10.15C8.99002 15.95 8.05002 15.01 8.05002 13.86ZM13.86 15.95H12.7V12.7H15.96V13.86C15.95 15.01 15.01 15.95 13.86 15.95Z"/>
+  <linearGradient id="g-business-hashtag-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-business-hashtag-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-business-hashtag-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-business-hashtag-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-business-hashtag-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-business-hashtag-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-business-hashtag-light-s0" fill="url(#g-business-hashtag-light-glass)"/>
+<g mask="url(#g-business-hashtag-light-in0)"><use xlink:href="#g-business-hashtag-light-s0" fill="none" stroke="url(#g-business-hashtag-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-business-hashtag-light-s1" fill="url(#g-business-hashtag-light-solid)"/>
+</svg>

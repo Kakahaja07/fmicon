@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-programing-sidebar-left-dark-s0" d="M22 7.81V16.19C22 19.83 19.83 22 16.19 22H7.81C7.61 22 7.41 21.99 7.22 21.98C5.99 21.9 4.95 21.55 4.13 20.95C3.71 20.66 3.34 20.29 3.05 19.87C2.36 18.92 2 17.68 2 16.19V7.81C2 4.37 3.94 2.24 7.22 2.03C7.41 2.01 7.61 2 7.81 2H16.19C17.68 2 18.92 2.36 19.87 3.05C20.29 3.34 20.66 3.71 20.95 4.13C21.64 5.08 22 6.32 22 7.81Z"/>
+  <path id="g-programing-sidebar-left-dark-s1" d="M8.71997 2V22H7.80997C7.60997 22 7.40997 21.99 7.21997 21.98V2.03C7.40997 2.01 7.60997 2 7.80997 2H8.71997Z"/>
+  <path id="g-programing-sidebar-left-dark-s2" d="M14.97 15.31C14.78 15.31 14.59 15.24 14.44 15.09L11.88 12.53C11.59 12.24 11.59 11.76 11.88 11.47L14.44 8.91C14.73 8.62 15.21 8.62 15.5 8.91C15.79 9.2 15.79 9.68001 15.5 9.97001L13.48 12L15.51 14.03C15.8 14.32 15.8 14.8 15.51 15.09C15.36 15.24 15.17 15.31 14.97 15.31Z"/>
+  <linearGradient id="g-programing-sidebar-left-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-programing-sidebar-left-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-programing-sidebar-left-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-programing-sidebar-left-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-programing-sidebar-left-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-programing-sidebar-left-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-programing-sidebar-left-dark-s0" fill="url(#g-programing-sidebar-left-dark-glass)"/>
+<g mask="url(#g-programing-sidebar-left-dark-in0)"><use xlink:href="#g-programing-sidebar-left-dark-s0" fill="none" stroke="url(#g-programing-sidebar-left-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-programing-sidebar-left-dark-s1" fill="url(#g-programing-sidebar-left-dark-solid)"/>
+<use xlink:href="#g-programing-sidebar-left-dark-s2" fill="url(#g-programing-sidebar-left-dark-solid)"/>
+</svg>
