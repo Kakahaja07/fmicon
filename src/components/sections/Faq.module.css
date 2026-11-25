@@ -1,5 +1,5 @@
 .section {
-  padding-top: 110px;
+  padding-top: 80px;
 }
 
 .inner {
@@ -14,5 +14,5 @@
 }
 
 @media (max-width: 640px) {
-  .section { padding-top: 80px; }
+  .section { padding-top: 64px; }
 }
