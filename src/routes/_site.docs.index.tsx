@@ -29,6 +29,10 @@ function DocsIntro() {
               <Inline text={t} />
             </p>
           ))}
+          {/* Same image as the GitHub README (npm run readme) */}
+          <figure className={s.showcase}>
+            <img src="/images/showcase.png" alt="Ten FM Icons shown in the linear, bold, duotone and glass styles" width={900} height={330} loading="lazy" />
+          </figure>
         </section>
 
         <section id="integrations" className={s.section}>
