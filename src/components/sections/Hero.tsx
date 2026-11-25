@@ -2,7 +2,7 @@ import { hero } from "~/content/site";
 import { ArrowRightIcon } from "~/components/icons/Icons";
 import { Button } from "~/components/ui/Button";
 import { Container } from "~/components/ui/Container";
-import { GithubLogo } from "~/components/ui/FrameworkLogo";
+import { GithubLogo, NpmLogo } from "~/components/ui/FrameworkLogo";
 import { AppWindow } from "./AppWindow";
 import { HeroSearch } from "./HeroSearch";
 import { IconField } from "./IconField";
@@ -51,7 +51,10 @@ export function Hero() {
               {i < hero.meta.length - 1 && <span aria-hidden="true"> · </span>}
             </span>
           ))}
-          <code className={s.install}>{hero.install}</code>
+          <code className={s.install}>
+            <NpmLogo size={14} />
+            {hero.install}
+          </code>
         </p>
       </Container>
 

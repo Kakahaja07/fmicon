@@ -97,6 +97,9 @@
 }
 
 .install {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   margin-left: 4px;
   padding: 3px 8px;
   border-radius: 7px;

@@ -55,7 +55,8 @@
   --pink: #ff2d55;
 
   /* ---- Buttons (built from the brand colours) ---- */
-  --btn-primary: linear-gradient(color-mix(in srgb, var(--brand) 88%, #fff), var(--brand));
+  /* Primary actions take the logo's purple-to-blue, the brightest thing on the page */
+  --btn-primary: linear-gradient(120deg, #9b3dff 0%, #5b5bff 48%, #1e8cff 100%);
   --btn-success: linear-gradient(color-mix(in srgb, var(--brand-success) 75%, #fff), var(--brand-success));
   --btn-dark: linear-gradient(#3a3f43, #23272a);
   --btn-dark-text: #ffffff;
