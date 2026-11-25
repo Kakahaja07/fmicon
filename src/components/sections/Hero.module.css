@@ -162,14 +162,14 @@
   .stage { padding: 28px 20px 0; }
 }
 
-/* Phones: one action, fewer chips, no small print; the header already links to GitHub */
+/* Phones: tighter spacing, both buttons side by side at a smaller size, no small print */
 @media (max-width: 640px) {
-  .hero { padding-top: 92px; }
+  .hero { padding-top: 84px; }
   .announce { font-size: 12px; height: 28px; }
-  .title { margin-top: 14px; font-size: 32px; line-height: 1.12; }
+  .title { margin-top: 12px; font-size: 32px; line-height: 1.12; }
   .sub { margin-top: 10px; font-size: 14px; }
-  .actions { margin-top: 18px; }
-  .actions > :last-child { display: none; }
+  .actions { margin-top: 18px; flex-wrap: nowrap; gap: 8px; width: 100%; }
+  .actions > * { flex: 1; min-width: 0; height: 42px; padding: 0 12px; font-size: 14px; gap: 6px; border-radius: 11px; }
   .meta { display: none; }
-  .stage { margin-top: 48px; padding: 16px 12px 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .stage { margin-top: 32px; padding: 14px 10px 0; border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
 }
