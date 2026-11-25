@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { useNavigate } from "@tanstack/react-router";
-import { useToolTheme } from "~/hooks/useToolTheme";
+import type { ToolTheme } from "~/hooks/useToolTheme";
 import { idToSlug, slugToId, type ToolSearch } from "~/lib/iconSeo";
 import type { IconArticle } from "~/lib/iconArticle";
 import type { FreeIcon, IconStyle } from "~/lib/svg";
@@ -27,7 +27,7 @@ type IconsToolProps = {
  */
 export function IconsTool({ style, slug, search, intro, detail, article }: IconsToolProps) {
   const navigate = useNavigate();
-  const [theme, setTheme] = useToolTheme();
+  const theme: ToolTheme = "dark"; // the tool is dark-only, like the rest of the site
 
   const browserSearch: BrowserSearch = { ...search, style, icon: slug ? slugToId.get(slug) : undefined };
 
@@ -57,7 +57,7 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
 
   return (
     <>
-      <ToolBar query={search.q ?? ""} onQuery={(q) => onChange({ q: q || undefined })} theme={theme} onTheme={setTheme} contained={!!slug} />
+      <ToolBar query={search.q ?? ""} onQuery={(q) => onChange({ q: q || undefined })} contained={!!slug} />
       <main id="top">
         <IconBrowser
           search={browserSearch}
