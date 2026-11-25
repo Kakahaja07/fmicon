@@ -108,6 +108,12 @@
   justify-content: center;
 }
 
+/* Desktop: the buttons and the app window below carry the hero; search stays on phones */
+@media (min-width: 901px) {
+  .search { display: none; }
+  .search + .actions { margin-top: 28px; }
+}
+
 .actions {
   margin-top: 20px;
   display: flex;

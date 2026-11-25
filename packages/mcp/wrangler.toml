@@ -1,6 +1,7 @@
 # Hosted fmicon MCP server.  Deploy: npx wrangler deploy   (from packages/mcp)
 name = "fmicon-mcp"
 main = "worker.js"
+account_id = "439ed533261efd4aa0e0197f93946d3e" # account that holds the icons R2 bucket and fmicon.dev
 compatibility_date = "2025-11-01"
 compatibility_flags = ["nodejs_compat"]
 
