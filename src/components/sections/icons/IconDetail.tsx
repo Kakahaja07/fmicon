@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Link } from "@tanstack/react-router";
 import type { ToolTheme } from "~/hooks/useToolTheme";
-import type { IconArticle as Article } from "~/lib/iconArticle";
+import type { IconArticle as Article, IconVariants } from "~/lib/iconArticle";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import {
-  ArrowRightIcon,
   CodeIcon,
   CopyIcon,
   DocumentDownloadIcon,
@@ -45,6 +44,8 @@ import {
   type StrokeWeight,
 } from "~/lib/svg";
 import { IconArticle } from "./IconArticle";
+import { iconUseCopy } from "~/lib/iconUseCopy";
+import { ArrowLeft2TwotoneIcon, ArrowRight2TwotoneIcon, Home2TwotoneIcon } from "~/components/icons/Icons";
 import s from "./IconDetail.module.css";
 import { titleCase } from "~/lib/titleCase";
 
@@ -82,6 +83,8 @@ type IconDetailProps = {
   tone: ToolTheme;
   /** Article and the icon in every style; prerendered with the page */
   article?: Article;
+  /** The icon in every style (from the page loader) */
+  variants?: IconVariants;
   onNavigate: (id: string) => void;
   onBack: () => void;
 };
@@ -91,7 +94,7 @@ type IconDetailProps = {
  * copy, export and code on the right, related icons below. Prerendered for search engines.
  */
 export function IconDetail(props: IconDetailProps) {
-  const { icon, icons, style, tone, article, onNavigate, onBack } = props;
+  const { icon, icons, style, tone, article, variants, onNavigate, onBack } = props;
   const [size, setSize] = useState(props.size);
   const [weight, setWeight] = useState<StrokeWeight>(props.weight);
   const [customColor, setCustomColor] = useState(false);
@@ -138,7 +141,8 @@ export function IconDetail(props: IconDetailProps) {
   const related = pool.filter((i) => i.category === icon.category && i.id !== icon.id).slice(0, 12);
   const pairs = (article?.pairs ?? []).map((slug) => pool.find((i) => i.slug === slug)).filter((i): i is FreeIcon => !!i);
   const variantBody = (st: IconStyle) =>
-    (st === "glass" && tone === "light" ? article?.glassLight : article?.variants[st]) ?? freeIconsMeta.samples[st];
+    (st === "glass" && tone === "light" ? (variants?.["glass-light"] ?? article?.glassLight) : (variants?.[st] ?? article?.variants[st])) ??
+    (st === style ? icon.body : freeIconsMeta.samples[st]);
 
   const show = (text: string) => {
     setFlash(text);
@@ -165,16 +169,28 @@ export function IconDetail(props: IconDetailProps) {
     <article className={s.detail} style={{ "--stroke": stroke ?? 1.5 } as CSSProperties}>
       {/* Where you are, and how to move on */}
       <header className={s.bar}>
-        <button type="button" className={s.back} onClick={onBack}>
-          <ArrowRightIcon size={16} className={s.flip} />
-          All icons
-        </button>
+        {/* Breadcrumb: All icons is home; category and style are links back into the grid */}
         <nav className={s.crumbs} aria-label="Breadcrumb">
-          <span>{category}</span>
-          <ArrowRightIcon size={12} />
-          <span>{styleLabels[style]}</span>
-          <ArrowRightIcon size={12} />
-          <b>{icon.name}</b>
+          <Link to="/icons" className={s.home} onClick={(e) => (e.preventDefault(), onBack())}>
+            <Home2TwotoneIcon size={16} />
+            All icons
+          </Link>
+          <ArrowRight2TwotoneIcon size={14} className={s.sep} />
+          <Link to="/icons" search={{ cat: icon.category }} className={s.crumb}>
+            {category}
+          </Link>
+          <ArrowRight2TwotoneIcon size={14} className={s.sep} />
+          {style === "linear" ? (
+            <Link to="/icons" className={s.crumb}>
+              {styleLabels[style]}
+            </Link>
+          ) : (
+            <Link to="/icons/$style" params={{ style }} className={s.crumb}>
+              {styleLabels[style]}
+            </Link>
+          )}
+          <ArrowRight2TwotoneIcon size={14} className={s.sep} />
+          <b aria-current="page">{icon.name}</b>
         </nav>
         <div className={s.barEnd}>
           {index >= 0 && (
@@ -182,12 +198,15 @@ export function IconDetail(props: IconDetailProps) {
               {index + 1} / {icons.length}
             </span>
           )}
-          <button type="button" className={s.iconBtn} onClick={() => go(-1)} aria-label="Previous icon" title="Previous (←)">
-            <ArrowRightIcon size={18} className={s.flip} />
-          </button>
-          <button type="button" className={s.iconBtn} onClick={() => go(1)} aria-label="Next icon" title="Next (→)">
-            <ArrowRightIcon size={18} />
-          </button>
+          {/* Previous / next as one joined control */}
+          <div className={s.stepper} role="group" aria-label="Browse icons">
+            <button type="button" onClick={() => go(-1)} aria-label="Previous icon" title="Previous (←)">
+              <ArrowLeft2TwotoneIcon size={18} />
+            </button>
+            <button type="button" onClick={() => go(1)} aria-label="Next icon" title="Next (→)">
+              <ArrowRight2TwotoneIcon size={18} />
+            </button>
+          </div>
           <button type="button" className={s.iconBtn} onClick={() => copy(window.location.href, "Link copied")} aria-label="Copy link" title="Copy link">
             <LinkIcon size={18} />
           </button>
@@ -255,7 +274,7 @@ export function IconDetail(props: IconDetailProps) {
                 aria-current={st === style ? "page" : undefined}
                 title={`${title} icon, ${styleLabels[st].toLowerCase()} style`}
               >
-                <SvgIcon body={variantBody(st)} size={28} />
+                <SvgIcon body={variantBody(st)} size={22} />
                 <span>{styleLabels[st]}</span>
               </Link>
             ))}
@@ -394,7 +413,21 @@ export function IconDetail(props: IconDetailProps) {
         </section>
       )}
 
-      {article && <IconArticle icon={icon} style={style} article={article} pairs={pairs} onNavigate={onNavigate} />}
+      {article ? (
+        <IconArticle icon={icon} style={style} article={article} pairs={pairs} onNavigate={onNavigate} />
+      ) : (
+        (() => {
+          const note = iconUseCopy(titleCase(humanName(icon.name)), icon.category, category, style);
+          return (
+            <section className={s.useNote} aria-labelledby="use-title">
+              <h2 id="use-title">{note.title}</h2>
+              {note.paragraphs.map((p) => (
+                <p key={p.slice(0, 24)}>{p}</p>
+              ))}
+            </section>
+          );
+        })()
+      )}
     </article>
   );
 }

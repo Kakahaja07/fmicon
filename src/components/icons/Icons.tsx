@@ -944,3 +944,33 @@ export const SortIcon = ({ size = 24, color = "currentColor", ...props }: IconPr
     <path d="M10 17H14" strokeWidth="1.5" strokeLinecap="round" stroke="currentColor"/>
   </svg>
 );
+
+// Twotone icons for the icon page breadcrumb and arrows (use-icons.mjs --style twotone)
+export const Home2TwotoneIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M9.02 2.83992L3.63 7.03992C2.73 7.73992 2 9.22992 2 10.3599V17.7699C2 20.0899 3.89 21.9899 6.21 21.9899H17.79C20.11 21.9899 22 20.0899 22 17.7799V10.4999C22 9.28992 21.19 7.73992 20.2 7.04992L14.02 2.71992C12.62 1.73992 10.37 1.78992 9.02 2.83992Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path opacity="0.34" d="M12 17.99V14.99" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+  </svg>
+);
+
+export const ArrowLeft2TwotoneIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M17.9999 12.0001V14.6701C17.9999 17.9801 15.6499 19.3401 12.7799 17.6801L10.4699 16.3401L8.15995 15.0001C5.28995 13.3401 5.28995 10.6301 8.15995 8.97005L10.4699 7.63005L12.7799 6.29005C15.6499 4.66005 17.9999 6.01005 17.9999 9.33005V12.0001Z" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+  </svg>
+);
+
+export const ArrowRight2TwotoneIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M6 12V9.33004C6 6.02005 8.35 4.66005 11.22 6.32005L13.53 7.66004L15.84 9.00005C18.71 10.66 18.71 13.37 15.84 15.03L13.53 16.37L11.22 17.71C8.35 19.34 6 17.99 6 14.67V12Z" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+  </svg>
+);
+
+export const ArrowRight3TwotoneIcon = ({ size = 24, color = "currentColor", ...props }: IconProps) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ color }} aria-hidden="true" {...props}>
+    <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <g opacity="0.54">
+    <path d="M8.5 12H14.5" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    <path d="M12.5 15L15.5 12L12.5 9" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" stroke="currentColor"/>
+    </g>
+  </svg>
+);

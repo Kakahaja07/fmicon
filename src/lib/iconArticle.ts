@@ -24,6 +24,16 @@ export type IconArticle = {
 
 const files = import.meta.glob<IconArticle>("../content/icon-articles/*.json", { import: "default" });
 
+/** Every icon in every style: src/content/icon-variants/<slug>.json (npm run variants) */
+export type IconVariants = Partial<Record<IconStyle | "glass-light", string>>;
+const variantFiles = import.meta.glob<IconVariants>("../content/icon-variants/*.json", { import: "default" });
+
+/** Loads one icon's bodies in all styles (its own small chunk), for the style strip. */
+export function loadVariants(slug: string): Promise<IconVariants | null> {
+  const loader = variantFiles[`../content/icon-variants/${slug}.json`];
+  return loader ? loader() : Promise.resolve(null);
+}
+
 /** Loads one icon's article (its own small chunk). Null when the icon has none. */
 export function loadArticle(slug: string): Promise<IconArticle | null> {
   const loader = files[`../content/icon-articles/${slug}.json`];

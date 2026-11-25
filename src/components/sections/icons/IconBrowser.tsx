@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type CSSProperties, type ReactNode } from
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { useIconStyle } from "~/hooks/useIconStyle";
 import type { ToolTheme } from "~/hooks/useToolTheme";
-import type { IconArticle } from "~/lib/iconArticle";
+import type { IconArticle, IconVariants } from "~/lib/iconArticle";
 import { strokeStyles, strokeWidthOf, type FreeIcon, type IconStyle, type StrokeWeight } from "~/lib/svg";
 import { IconGrid } from "./IconGrid";
 import { IconDetail } from "./IconDetail";
@@ -27,6 +27,8 @@ type IconBrowserProps = {
   detail?: FreeIcon;
   /** On an icon page: its article and style variants (belongs to `detail`) */
   article?: IconArticle;
+  /** On an icon page: the icon in every style (belongs to `detail`) */
+  variants?: IconVariants;
   /** Heading at the top of the centre column (the page h1) */
   intro?: ReactNode;
   /** Shown under the icons in the centre column (the open-source panel), so the sidebar stays pinned beside it. */
@@ -79,7 +81,7 @@ function useToolPrefs() {
 }
 
 /** Full-width workspace: filters · grid (+ offer). An icon opens as its own page in the centre column. All state lives in the URL. */
-export function IconBrowser({ search, onChange, theme, detail, article, intro, after, footer }: IconBrowserProps) {
+export function IconBrowser({ search, onChange, theme, detail, article, variants, intro, after, footer }: IconBrowserProps) {
   const style = search.style ?? "linear";
   // Defaults: thin strokes at 24 px. Only non-default choices go into the URL.
   const size = search.size ?? DEFAULT_SIZE;
@@ -142,6 +144,7 @@ export function IconBrowser({ search, onChange, theme, detail, article, intro, a
             weight={weight}
             tone={theme}
             article={detail && detail.id === selected.id ? article : undefined}
+            variants={detail && detail.id === selected.id ? variants : undefined}
             onNavigate={(id) => onChange({ icon: id })}
             onBack={() => onChange({ icon: undefined })}
           />

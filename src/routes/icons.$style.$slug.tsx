@@ -2,7 +2,7 @@ import { createFileRoute, notFound } from "@tanstack/react-router";
 import { loadIcons } from "~/hooks/useIconStyle";
 import { IconsTool } from "~/components/sections/icons/IconsTool";
 import { iconHead, isStyle, validateToolSearch } from "~/lib/iconSeo";
-import { loadArticle } from "~/lib/iconArticle";
+import { loadArticle, loadVariants } from "~/lib/iconArticle";
 
 /**
  * /icons/<style>/<slug>, e.g. /icons/linear/home: one page per icon and style.
@@ -13,13 +13,13 @@ export const Route = createFileRoute("/icons/$style/$slug")({
   validateSearch: validateToolSearch,
   loader: async ({ params }) => {
     if (!isStyle(params.style)) throw notFound();
-    const [icons, article] = await Promise.all([loadIcons(params.style), loadArticle(params.slug)]);
+    const [icons, article, variants] = await Promise.all([loadIcons(params.style), loadArticle(params.slug), loadVariants(params.slug)]);
     const icon = icons.find((i) => i.slug === params.slug);
     if (!icon) throw notFound();
     // Only what the page needs, so the HTML stays small: the icon, its article,
     // and the few icons it links to (same category + pairs) for crawlable links.
     const nearby = article ? icons.filter((i) => i.id !== icon.id && (i.category === icon.category || article.pairs.includes(i.slug))) : [];
-    return { icon, article: article ? { ...article, nearby } : null };
+    return { icon, article: article ? { ...article, nearby } : null, variants };
   },
   head: ({ params, loaderData }) => (loaderData && isStyle(params.style) ? iconHead(params.style, loaderData.icon, loaderData.article) : {}),
   component: IconPage,
@@ -27,8 +27,8 @@ export const Route = createFileRoute("/icons/$style/$slug")({
 
 function IconPage() {
   const { style, slug } = Route.useParams();
-  const { icon, article } = Route.useLoaderData();
+  const { icon, article, variants } = Route.useLoaderData();
   const search = Route.useSearch();
   if (!isStyle(style)) return null;
-  return <IconsTool style={style} slug={slug} search={search} detail={icon} article={article ?? undefined} />;
+  return <IconsTool style={style} slug={slug} search={search} detail={icon} article={article ?? undefined} variants={variants ?? undefined} />;
 }

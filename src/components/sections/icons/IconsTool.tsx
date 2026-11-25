@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import type { ToolTheme } from "~/hooks/useToolTheme";
 import { idToSlug, slugToId, type ToolSearch } from "~/lib/iconSeo";
-import type { IconArticle } from "~/lib/iconArticle";
+import type { IconArticle, IconVariants } from "~/lib/iconArticle";
 import type { FreeIcon, IconStyle } from "~/lib/svg";
 import { IconBrowser, type BrowserSearch } from "./IconBrowser";
 import { SiteHeader } from "~/components/sections/SiteHeader";
@@ -20,13 +20,15 @@ type IconsToolProps = {
   detail?: FreeIcon;
   /** Icon pages: the article and style variants from the route loader */
   article?: IconArticle;
+  /** Icon pages: the icon in every style, for the style strip */
+  variants?: IconVariants;
 };
 
 /**
  * The full-screen icon tool, shared by /icons, /icons/<style> and /icons/<style>/<slug>.
  * Style and icon live in the path (good URLs for search engines); filters stay in the query.
  */
-export function IconsTool({ style, slug, search, intro, detail, article }: IconsToolProps) {
+export function IconsTool({ style, slug, search, intro, detail, article, variants }: IconsToolProps) {
   const navigate = useNavigate();
   const theme: ToolTheme = "dark"; // the tool is dark-only, like the rest of the site
 
@@ -67,6 +69,7 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
           intro={intro}
           detail={detail}
           article={article}
+          variants={variants}
           // Only the "All" grid gets the written guide under the icons; a picked category or an icon page shows none
           after={slug || search.cat ? undefined : <LibraryArticle style={style} />}
         />

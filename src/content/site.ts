@@ -123,7 +123,7 @@ export const hero = {
   },
   primary: { label: "Browse all icons", href: "/icons" },
   secondary: { label: "Star on GitHub", href: REPO },
-  meta: ["MIT licence", "No sign-up", "Install with"],
+  meta: ["Install with"],
   install: "npm i fmicon-react",
 };
 
