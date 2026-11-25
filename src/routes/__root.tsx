@@ -9,6 +9,12 @@ const title = brand.title;
 /** Marks <html> with "js" so scroll reveals only hide content when JS runs. */
 const jsFlagScript = `document.documentElement.classList.add("js")`;
 
+/** Google Tag Manager container for analytics (every page). */
+const GTM_ID = "GTM-KXQ4RZGR";
+const gtmInit = `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());`;
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -33,7 +39,12 @@ export const Route = createRootRoute({
       { rel: "stylesheet", href: globalCss },
       { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
     ],
-    scripts: [{ children: jsFlagScript }],
+    scripts: [
+      { children: jsFlagScript },
+      // Google Tag Manager
+      { src: `https://www.googletagmanager.com/gtm.js?id=${GTM_ID}`, async: true },
+      { children: gtmInit },
+    ],
   }),
   shellComponent: RootDocument,
 });
