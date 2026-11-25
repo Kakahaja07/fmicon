@@ -2,32 +2,34 @@ import { Link } from "@tanstack/react-router";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { libraryArticle as copy, styleKeywords } from "~/content/libraryArticle";
 import { styleNotes } from "~/content/iconArticle";
-import { ArrowRightIcon } from "~/components/icons/Icons";
 import { AccordionItem } from "~/components/ui/Accordion";
 import { SvgIcon } from "~/components/ui/SvgIcon";
 import { iconPath, stylePath } from "~/lib/iconSeo";
 import { styleLabels, type IconStyle } from "~/lib/svg";
+import { useIconStyle } from "~/hooks/useIconStyle";
 import keywordPlan from "../../../../scripts/data/icon-keywords.json";
 import s from "./LibraryArticle.module.css";
 
 // The phrase people search for each curated icon, e.g. "hourglass icon" for "timer"
 const plan = keywordPlan as unknown as Record<string, [string, string[], string]>;
-const popular = Object.keys(plan)
+const popularIcons = Object.keys(plan)
   .filter((slug) => slug !== "_note")
   .slice(0, 30)
   .map((slug) => ({ slug, label: plan[slug][0].charAt(0).toUpperCase() + plan[slug][0].slice(1) }));
 
-const categories = [...freeIconsMeta.categories].sort((a, b) => b.count - a.count);
-
 /**
  * Written content under the icon grid on /icons and /icons/<style>: what the library is,
- * the styles, categories, popular icons, how to use them and a FAQ. Prerendered, full of internal links.
+ * the styles, popular icons and a FAQ. Prerendered, full of internal links.
  */
 export function LibraryArticle({ style }: { style: IconStyle }) {
+  // Each name gets its glyph in the page's style (the same cached file the grid uses)
+  const data = useIconStyle(style);
+  const bodies = new Map(data.status === "ready" ? data.icons.map((i) => [i.slug, i.body]) : []);
   const onStylePage = style !== "linear";
   const label = styleLabels[style];
   const head = onStylePage ? copy.style(style, label) : copy.library;
   const faq = copy.faq(onStylePage ? { id: style, label } : undefined);
+  const popular = popularIcons.map((p) => ({ ...p, body: bodies.get(p.slug) }));
 
   return (
     <article className={s.article}>
@@ -62,45 +64,16 @@ export function LibraryArticle({ style }: { style: IconStyle }) {
       <section className={s.section}>
         <h2>{copy.popular.title}</h2>
         <p>{copy.popular.text}</p>
-        <ul className={s.links}>
+        <ul className={s.popular}>
           {popular.map((p) => (
             <li key={p.slug}>
-              <a href={iconPath(style, p.slug)}>{p.label}</a>
+              <a href={iconPath(style, p.slug)}>
+                <span className={s.popularIcon}>{p.body && <SvgIcon body={p.body} size={18} />}</span>
+                {p.label}
+              </a>
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className={s.section}>
-        <h2>{copy.categories.title}</h2>
-        <ul className={s.chips}>
-          {categories.map((c) => (
-            <li key={c.slug}>
-              <Link to={stylePath(style)} search={{ cat: c.slug }}>
-                {c.label}
-                <span>{c.count}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <section className={s.section}>
-        <h2>{copy.howTo.title}</h2>
-        <ol className={s.steps}>
-          {copy.howTo.steps.map((step) => (
-            <li key={step.title}>
-              <b>{step.title}</b>
-              <span>{step.text}</span>
-              {"link" in step && step.link && (
-                <Link to={step.link.href} className={s.more}>
-                  {step.link.label}
-                  <ArrowRightIcon size={14} />
-                </Link>
-              )}
-            </li>
-          ))}
-        </ol>
       </section>
 
       <section className={s.section}>

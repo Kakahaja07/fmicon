@@ -39,16 +39,7 @@ export const libraryArticle = {
     title: `${STYLES} icon styles in one library`,
     text: "Every icon exists in every style with the same shape, so you can mix them: linear for idle states, bold for the selected one, glass for a hero.",
   },
-  categories: { title: "Browse icons by category" },
   popular: { title: "Popular free icons", text: "The icons people open most, each with its own page, sizes, colours and code." },
-  howTo: {
-    title: "How to use these icons",
-    steps: [
-      { title: "Copy or download", text: "Click any icon to copy it as SVG or JSX, or download SVG, PNG or WebP at any size from 16 to 512 px." },
-      { title: "Install a package", text: "Add icons to React, Vue, Svelte or React Native with one npm package, tree-shaken so only the icons you use ship.", link: { label: "Read the docs", href: "/docs" } },
-      { title: "Link from the CDN", text: "Drop a URL into an <img> tag for static sites, emails and prototypes, no install needed.", link: { label: "CDN guide", href: "/docs/svg" } },
-    ],
-  },
   faqTitle: "Free icons FAQ",
   faq: (style?: { id: IconStyle; label: string }) => [
     ...(style
