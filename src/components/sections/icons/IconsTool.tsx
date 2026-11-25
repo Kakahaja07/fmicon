@@ -66,8 +66,8 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
           intro={intro}
           detail={detail}
           article={article}
-          // Grid pages get the written guide under the icons; icon pages have their own article
-          after={slug ? undefined : <LibraryArticle style={style} />}
+          // Only the "All" grid gets the written guide under the icons; a picked category or an icon page shows none
+          after={slug || search.cat ? undefined : <LibraryArticle style={style} />}
         />
       </main>
     </>
