@@ -1,16 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 42" fill="none">
+  <!-- FM Icons mark: same drawing as src/components/ui/LogoMark.tsx -->
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5fb4ff"/>
-      <stop offset=".55" stop-color="#1265ec"/>
-      <stop offset="1" stop-color="#0b4fc0"/>
-    </linearGradient>
+    <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="11" y1="9" x2="30" y2="9"><stop offset="0" stop-color="#9b3dff"/><stop offset="1" stop-color="#22c55e"/></linearGradient>
+    <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="11" y1="21" x2="25" y2="21"><stop offset="0" stop-color="#ff3d8b"/><stop offset="1" stop-color="#ff9f0a"/></linearGradient>
+    <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="11" y1="9" x2="11" y2="21"><stop offset="0" stop-color="#9b3dff"/><stop offset="1" stop-color="#ff3d8b"/></linearGradient>
+    <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="11" y1="21" x2="11" y2="33"><stop offset="0" stop-color="#ff3d8b"/><stop offset="1" stop-color="#1e8cff"/></linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14.4" fill="url(#g)"/>
-  <g transform="translate(14.7 14.7) scale(1.44)" fill="#fff">
-    <path d="M22 8.52V3.98C22 2.57 21.36 2 19.77 2H15.73C14.14 2 13.5 2.57 13.5 3.98V8.51C13.5 9.93 14.140 10.49 15.73 10.49H19.770C21.36 10.5 22 9.93 22 8.52Z"/>
-    <path d="M22 19.77V15.73C22 14.14 21.36 13.5 19.77 13.5H15.73C14.14 13.5 13.5 14.14 13.5 15.73V19.77C13.5 21.36 14.14 22 15.73 22H19.77C21.36 22 22 21.36 22 19.77Z"/>
-    <path d="M10.5 8.52V3.98C10.5 2.57 9.86 2 8.27 2H4.23C2.64 2 2 2.57 2 3.98V8.51C2 9.93 2.64 10.49 4.23 10.49H8.27C9.86 10.5 10.5 9.930 10.5 8.52Z"/>
-    <path d="M10.5 19.77V15.73C10.5 14.14 9.86 13.5 8.27 13.5H4.23C2.64 13.5 2 14.14 2 15.73V19.77C2 21.36 2.64 22 4.23 22H8.27C9.86 22 10.5 21.36 10.5 19.77Z"/>
+  <g opacity="0.55" stroke-width="7" stroke-linecap="round">
+    <path d="M11 9Q20.5 6.5 30 9" stroke="url(#a)"/>
+    <path d="M11 21Q18 23.5 25 21" stroke="url(#b)"/>
+    <path d="M11 9Q11 15 11 21" stroke="url(#c)"/>
+    <path d="M11 21Q11 27 11 33" stroke="url(#d)"/>
   </g>
+  <circle cx="11" cy="9" r="5" fill="#9b3dff"/>
+  <circle cx="30" cy="9" r="5" fill="#22c55e"/>
+  <circle cx="11" cy="21" r="5" fill="#ff3d8b"/>
+  <circle cx="25" cy="21" r="5" fill="#ff9f0a"/>
+  <circle cx="11" cy="33" r="5" fill="#1e8cff"/>
 </svg>

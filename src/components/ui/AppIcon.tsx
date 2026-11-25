@@ -1,12 +1,12 @@
 import type { CSSProperties } from "react";
-import { Element3BoldIcon } from "~/components/icons/Icons";
+import { LogoMark } from "./LogoMark";
 import s from "./AppIcon.module.css";
 
-/** The product's app icon: a brand-coloured squircle with the grid mark. */
+/** The FM Icons mark at a given size: the dotted "F", no tile behind it. */
 export function AppIcon({ size = 88 }: { size?: number }) {
   return (
     <span className={s.icon} style={{ "--i": `${size}px` } as CSSProperties} aria-hidden="true">
-      <Element3BoldIcon size="54%" />
+      <LogoMark size="100%" />
     </span>
   );
 }
