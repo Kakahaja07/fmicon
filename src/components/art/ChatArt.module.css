@@ -130,7 +130,7 @@
 
 /* Phones: a tighter chat so the code ends well above the card's title, then fade into the card */
 @media (max-width: 640px) {
-  .bubbles { left: 16px; right: 16px; top: 18px; gap: 8px; }
+  .bubbles { left: 16px; right: 16px; top: 44px; gap: 8px; }
   .me, .ai { max-width: 88%; padding: 8px 12px; font-size: 13px; line-height: 18px; }
   .code { margin-top: 2px; border-radius: 12px; }
   .file { height: 34px; padding: 0 6px 0 12px; font-size: 11px; }

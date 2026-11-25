@@ -81,3 +81,16 @@
   .field { height: 460px; }
   .grid { grid-template-columns: repeat(var(--cols), 64px); grid-auto-rows: 64px; }
 }
+
+/* Footer: the same wall, quieter, fading out from the top edge */
+.footerField {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: -1;
+  height: 280px;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(#000, transparent 85%);
+  mask-image: linear-gradient(#000, transparent 85%);
+}

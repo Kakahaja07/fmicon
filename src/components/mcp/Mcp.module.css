@@ -1,7 +1,7 @@
 /* ---------------- /mcp ---------------- */
 
 .page {
-  padding: 104px 0 96px;
+  padding: 40px 0 96px;
 }
 
 .intro {
@@ -316,23 +316,57 @@
   gap: 8px;
 }
 
-.prompts li {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: var(--fill-subtle);
-  box-shadow: inset 0 0 0 1px var(--hairline);
-  font-size: var(--text-sm);
-  line-height: 1.5;
-  color: var(--text);
+/* How it works: numbered steps hanging off one guide line */
+.steps3 {
+  display: grid;
+  gap: 14px;
+  margin: 8px 0 6px;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: step;
 }
 
-.prompts li svg {
-  flex: none;
-  margin-top: 2px;
-  color: var(--text-3);
+.steps3 li {
+  position: relative;
+  display: grid;
+  gap: 2px;
+  padding-left: 40px;
+  counter-increment: step;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--text-2);
+}
+
+.steps3 li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--accent-soft);
+  font-size: 12px;
+  font-weight: var(--weight-strong);
+  color: var(--accent);
+}
+
+/* The guide line between the numbers */
+.steps3 li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 12.5px;
+  top: 30px;
+  bottom: -12px;
+  width: 1px;
+  background: var(--hairline-strong);
+}
+
+.steps3 b {
+  font-weight: var(--weight-medium);
+  color: var(--text);
 }
 
 /* Chat window */
@@ -582,6 +616,7 @@
 
 .toolCard {
   display: grid;
+  grid-template-rows: auto auto 1fr auto;
   align-content: start;
   gap: 8px;
   padding: 16px;
@@ -591,6 +626,43 @@
   font-size: var(--text-sm);
   line-height: 1.55;
   color: var(--text-2);
+}
+
+.toolIcon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 4px;
+  border-radius: 10px;
+  background: var(--fill);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text);
+}
+
+/* Example call and its result, on a small code panel */
+.toolExample {
+  display: grid;
+  gap: 2px;
+  margin-top: 6px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: var(--code-bg);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+}
+
+.toolExample code {
+  overflow: hidden;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-variant-ligatures: none;
+  color: var(--code-text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toolExample .toolResult {
+  color: var(--code-string);
 }
 
 .toolName {
@@ -629,8 +701,19 @@
 
 .qa summary svg {
   flex: none;
-  color: var(--text-3);
-  transition: transform 200ms var(--ease-out);
+  box-sizing: content-box;
+  padding: 6px;
+  border-radius: 50%;
+  background: var(--fill);
+  color: var(--text-2);
+  transition: transform 200ms var(--ease-out), background-color 150ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .qa summary:hover svg {
+    background: var(--fill-translucent);
+    color: var(--text);
+  }
 }
 
 .qa[open] summary svg {
@@ -689,5 +772,59 @@
 @media (prefers-reduced-motion: reduce) {
   .setup {
     animation: none;
+  }
+}
+
+/* Copyable example prompts */
+.prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 10px 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--fill-subtle);
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  text-align: left;
+  color: var(--text);
+  cursor: var(--cursor-pointer);
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+
+.promptIcon {
+  flex: none;
+  margin-top: 2px;
+  color: var(--text-3);
+}
+
+.promptText {
+  flex: 1;
+}
+
+.promptCopy {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  color: var(--text-3);
+  transition: color 150ms ease, background-color 150ms ease;
+}
+
+.promptCopy[data-copied] {
+  color: var(--green);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .prompt:hover {
+    background: var(--fill);
+    box-shadow: inset 0 0 0 1px var(--hairline-strong);
+  }
+  .prompt:hover .promptCopy:not([data-copied]) {
+    color: var(--text);
   }
 }

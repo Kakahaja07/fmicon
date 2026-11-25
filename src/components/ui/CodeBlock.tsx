@@ -18,8 +18,9 @@ type CodeBlockProps = {
 };
 
 // Minimal JSX/HTML/JS highlighter: comments, strings, keywords, tag names, attribute names, braces.
+// "//" only starts a comment when it is not part of a URL (https://…).
 const TOKEN =
-  /(\/\/[^\n]*|#[^\n]*(?=$))|("[^"\n]*"|'[^'\n]*'|`[^`\n]*`)|\b(export|const|let|return|import|from|function|default|await|async|npm|npx|install)\b|(<\/?)([A-Za-z][\w.-]*)|([A-Za-z_:@][\w:-]*)(?==)|(=>|[{}()])/g;
+  /((?<![:\w])\/\/[^\n]*|#[^\n]*(?=$))|("[^"\n]*"|'[^'\n]*'|`[^`\n]*`)|\b(export|const|let|return|import|from|function|default|await|async|npm|npx|install)\b|(<\/?)([A-Za-z][\w.-]*)|([A-Za-z_:@][\w:-]*)(?==)|(=>|[{}()])/g;
 
 function highlight(line: string) {
   const out: ReactNode[] = [];

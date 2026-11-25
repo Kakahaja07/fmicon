@@ -1,15 +1,9 @@
-/* Search row: [filters] [search] [sort], sticky under the site header */
+/* Search row: [filters] [search] [sort]; scrolls with the page */
 .row {
-  position: sticky;
-  top: var(--tool-bar);
-  z-index: 5;
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 10px 24px;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
 }
 
 .search {

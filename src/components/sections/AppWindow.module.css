@@ -268,9 +268,12 @@
   .inspector { display: none; }
 }
 
+/* Phones: a short preview (three rows of icons) so the sections below come into view sooner */
 @media (max-width: 640px) {
-  .window { grid-template-columns: 1fr; min-height: 320px; }
+  .window { grid-template-columns: 1fr; min-height: 0; }
   .side { display: none; }
+  .crumb { display: none; }
+  .grid > :nth-child(n + 19) { display: none; }
 }
 
 .fixedNote {

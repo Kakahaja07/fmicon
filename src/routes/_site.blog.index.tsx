@@ -11,7 +11,7 @@ const site = brand.siteUrl;
 export const Route = createFileRoute("/_site/blog/")({
   head: () =>
     pageHead({
-      title: `Icon Guides: SVG, React & Accessible Icons | ${brand.name} Blog`,
+      title: `Icon Guides: SVG, React & Accessible Icons - ${brand.name} Blog`,
       description: "Plain-English guides on using icons well: SVG vs PNG, React icons, free SVG icons for websites and accessible icons. Tested on 891 free icons.",
       path: "/blog",
       jsonLd: [

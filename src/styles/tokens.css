@@ -128,7 +128,7 @@
   --heading-lh: 28px;
   --heading-ls: -0.5px;
   --heading-weight: 700;
-  --tool-bar: 61px; /* height of the site header bar on /icons; sticky rows and columns sit right under it */
+  --tool-bar: 61px; /* the icon tool's full-width header bar (60px + 1px rule); its sticky sidebar sits right under it */
   --gutter: 16px;
 
   /* ---- Motion ---- */

@@ -1,7 +1,7 @@
 /* ---------------- Blog: index and article pages ---------------- */
 
 .page {
-  padding: 96px 0 96px;
+  padding: 40px 0 96px;
 }
 
 /* ---- Index header ---- */
@@ -443,7 +443,7 @@
 
 @media (max-width: 560px) {
   .page {
-    padding-top: 104px;
+    padding-top: 28px;
   }
   .grid {
     grid-template-columns: minmax(0, 1fr);

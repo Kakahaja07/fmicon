@@ -1,7 +1,7 @@
 /* /packages: one card per package, grouped, each linking to its guide */
 
 .page {
-  padding: 128px 0 96px;
+  padding: 40px 0 96px;
 }
 
 .intro {
@@ -217,7 +217,7 @@
 
 @media (max-width: 560px) {
   .page {
-    padding-top: 104px;
+    padding-top: 28px;
   }
   .grid {
     grid-template-columns: minmax(0, 1fr);

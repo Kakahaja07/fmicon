@@ -17,7 +17,7 @@ type SearchRowProps = {
 
 /**
  * The tool's search, inside the page: show/hide filters · search · A–Z sort.
- * Sticks under the site header while you scroll the grid. "/" focuses it from anywhere.
+ * "/" focuses it from anywhere on the page.
  */
 export function SearchRow({ query, onQuery, sidebarOpen, onToggleSidebar, sort, onSort }: SearchRowProps) {
   const searchRef = useRef<HTMLInputElement>(null);

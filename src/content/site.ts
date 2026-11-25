@@ -109,7 +109,7 @@ export const iconTool = {
 
 export const hero = {
   // The pill above the headline: what is new, with the AI apps it works in
-  announce: { badge: "New", label: "fmicon MCP: icons inside your AI assistant", short: "fmicon MCP is live", href: "/mcp" },
+  announce: { badge: "New", label: "Our MCP is live!", short: "Our MCP is live!", href: "/mcp" },
   title: "Every icon you need, one search away",
   // Shown as written: title case, but "icon" stays lowercase like the fmicon name
   titleDisplay: "Every icon You Need, One Search Away",
@@ -331,7 +331,7 @@ export const faq = {
 /* --------------------------------- Footer -------------------------------- */
 
 export const footer = {
-  tagline: `${TOTAL} free, open-source icons in ${STYLES} styles. Made for designers and developers who ship.`,
+  tagline: `${TOTAL} free, open-source icons in ${STYLES} styles, from clean linear to 3D glass. Copy them as SVG, PNG or code, and use them anywhere. Made for designers and developers who ship.`,
   install: "npm i fmicon-react",
   columns: [
     {

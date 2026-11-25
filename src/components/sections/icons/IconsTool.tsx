@@ -6,6 +6,7 @@ import type { IconArticle } from "~/lib/iconArticle";
 import type { FreeIcon, IconStyle } from "~/lib/svg";
 import { IconBrowser, type BrowserSearch } from "./IconBrowser";
 import { SiteHeader } from "~/components/sections/SiteHeader";
+import { SiteFooter } from "~/components/sections/SiteFooter";
 import { LibraryArticle } from "./LibraryArticle";
 
 type IconsToolProps = {
@@ -70,6 +71,7 @@ export function IconsTool({ style, slug, search, intro, detail, article }: Icons
           after={slug || search.cat ? undefined : <LibraryArticle style={style} />}
         />
       </main>
+      <SiteFooter />
     </>
   );
 }

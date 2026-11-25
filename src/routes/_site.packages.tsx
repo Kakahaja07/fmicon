@@ -13,7 +13,7 @@ import s from "~/components/sections/Packages.module.css";
 export const Route = createFileRoute("/_site/packages")({
   head: () =>
     pageHead({
-      title: `Icon Packages for React, Vue, Svelte & React Native | ${brand.name}`,
+      title: `Icon Packages for React, Vue, Svelte & React Native - ${brand.name}`,
       description: "Every fmicon package in one place: fmicon, fmicon-react, fmicon-react-native, fmicon-vue, fmicon-svelte and fmicon-svg, plus the CDN. Free, MIT licence.",
       path: "/packages",
       image: "docs",

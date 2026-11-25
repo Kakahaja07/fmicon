@@ -6,6 +6,7 @@ import { CommandLine } from "~/components/ui/CommandLine";
 import { Container } from "~/components/ui/Container";
 import { GithubLogo } from "~/components/ui/FrameworkLogo";
 import { Wordmark } from "~/components/ui/Wordmark";
+import { IconField } from "./IconField";
 import s from "./SiteFooter.module.css";
 
 /**
@@ -14,7 +15,7 @@ import s from "./SiteFooter.module.css";
  */
 export function SiteFooter() {
   // Docs use the full-width header bar, so the footer lines up with it there.
-  const wide = useRouterState({ select: (state) => state.location.pathname.startsWith("/docs") });
+  const wide = useRouterState({ select: (state) => /^\/(docs|icons)/.test(state.location.pathname) });
   const [copied, setCopied] = useState(false);
   const timer = useRef(0);
   useEffect(() => () => window.clearTimeout(timer.current), []);
@@ -32,6 +33,7 @@ export function SiteFooter() {
 
   return (
     <footer className={s.footer}>
+      <IconField variant="footer" />
       <Container className={wide ? s.wide : undefined}>
         <div className={s.top}>
           <div className={s.brand}>

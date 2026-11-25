@@ -1,5 +1,8 @@
 /* Hairline on top and a faint brand glow, so the footer reads as its own surface */
 .footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   margin-top: 24px;
   border-top: 1px solid var(--hairline);
   background:
@@ -27,8 +30,8 @@
 }
 
 .tag {
-  max-width: 36ch;
-  font-size: var(--text-sm);
+  max-width: 40ch;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--text-2);
 }

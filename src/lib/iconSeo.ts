@@ -81,7 +81,7 @@ export function libraryHead() {
   const total = freeIconsMeta.total;
   const styles = freeIconsMeta.styles.length;
   return pageHead({
-    title: `${total} Free SVG Icons in ${styles} Styles (${YEAR}) | ${brand.name}`,
+    title: `${total} Free SVG Icons in ${styles} Styles (${YEAR})${SEP}${brand.name}`,
     description: `Free icons for websites and apps: ${total} open-source SVG icons in ${styles} styles, including glass and duotone. Recolour, resize and copy as SVG, PNG, React, Vue or Svelte. MIT licence, no sign-up.`,
     path: "/icons",
     jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }]), faqLd(libraryArticle.faq())],
@@ -92,7 +92,7 @@ export function styleHead(style: IconStyle) {
   const label = styleLabels[style];
   const { keyword, also } = styleKeywords[style];
   return pageHead({
-    title: `${titleCase(`Free ${keyword}`)}: ${freeIconsMeta.total} SVG & PNG Icons | ${brand.name}`,
+    title: `${titleCase(`Free ${keyword}`)}: ${freeIconsMeta.total} SVG & PNG Icons${SEP}${brand.name}`,
     description: `${freeIconsMeta.total} free ${keyword} (${also}) for apps and websites. Download SVG or PNG, or copy React, Vue and Svelte code. Open source, MIT licensed.`,
     path: stylePath(style),
     image: "styles",
@@ -111,6 +111,59 @@ export function iconTitle(name: string, primary?: string) {
   return primary.includes(firstWord) ? keyword : `${keyword} (${name})`;
 }
 
+/** Title separator between the page and the site: "Link Icon … - fmicon" */
+export const SEP = " - ";
+
+// Title templates for icon pages. K is the keyword heading ("Link Icon", "Hourglass Icon (Timer)"),
+// S the style. Each icon gets one by a stable hash, so neighbours read differently but a page's title never changes.
+const LINEAR_TITLES: Array<(k: string) => string> = [
+  (k) => `${k}: Free SVG, PNG & React Download`,
+  (k) => `Free ${k}: Copy SVG or Download PNG`,
+  (k) => `${k} SVG: Free, Editable & Ready to Paste`,
+  (k) => `${k}: 8 Free Styles in SVG & PNG`,
+  (k) => `Download ${k} Free: SVG, PNG & React Code`,
+  (k) => `${k} (${YEAR}): Free SVG & PNG for Web & Apps`,
+];
+const STYLE_TITLES: Array<(k: string, s: string) => string> = [
+  (k, s) => `${k} (${s}): Free SVG, PNG & React Download`,
+  (k, s) => `Free ${s} ${k}: Copy SVG or Download PNG`,
+  (k, s) => `${s} ${k} SVG: Free & Ready to Paste`,
+  (k, s) => `${k} in ${s} Style: Free SVG & PNG`,
+  (k, s) => `Download the ${s} ${k} Free: SVG & PNG`,
+];
+
+// Short forms for long icon names, so the brand still fits in 60 characters
+const SHORT_LINEAR: Array<(k: string) => string> = [(k) => `${k}: Free SVG & PNG`, (k) => `Free ${k} SVG & PNG`];
+const SHORT_STYLE: Array<(k: string, s: string) => string> = [(k, s) => `${s} ${k}: Free SVG & PNG`, (k, s) => `${k} (${s}) Free SVG`];
+
+const hash = (text: string) => [...text].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+const rotate = <T,>(list: T[], by: number) => list.map((_, i) => list[(by + i) % list.length]);
+
+/**
+ * The title for one icon page, always ending " - fmicon" within 60 characters when possible.
+ * Order: the icon's own template (by hash) → a short form → the other templates.
+ */
+function pickIconTitle(keyword: string, style: IconStyle, label: string, seed: string) {
+  const h = hash(seed);
+  const linear = style === "linear";
+  const build = (k: string) => {
+    const main = (linear ? LINEAR_TITLES.map((t) => t(k)) : STYLE_TITLES.map((t) => t(k, label))).map(titleCase);
+    const short = (linear ? SHORT_LINEAR.map((t) => t(k)) : SHORT_STYLE.map((t) => t(k, label))).map(titleCase);
+    const mine = h % main.length;
+    return [main[mine], ...rotate(short, h), ...main.filter((_, i) => i !== mine)];
+  };
+  // Long names: try the full keyword, then without its bracketed alias ("Next Icon (Arrow Circle Right)" -> "Next Icon")
+  const keywords = keyword.includes(" (") ? [keyword, keyword.replace(/ \(.*\)$/, "")] : [keyword];
+  for (const k of keywords) {
+    for (const option of build(k)) {
+      const withBrand = option + SEP + brand.name;
+      if (withBrand.length <= 60) return withBrand;
+    }
+  }
+  // Still too long: the shortest form, without the brand
+  return build(keywords[keywords.length - 1]).sort((a, b) => a.length - b.length)[0];
+}
+
 /** Cuts text at a word boundary so meta descriptions stay within what Google shows. */
 const clip = (text: string, max = 158) => (text.length <= max ? text : text.slice(0, text.lastIndexOf(" ", max - 1)).replace(/[,.:;]$/, "") + "…");
 
@@ -119,12 +172,9 @@ export function iconHead(style: IconStyle, icon: { slug: string; name: string; c
   const name = humanName(icon.name);
   const path = iconPath(style, icon.slug);
   const primary = article?.primary ?? `${name.toLowerCase()} icon`;
-  // e.g. "Refresh Icon: Free SVG, PNG & React | fmicon"; other styles name theirs: "Refresh Icon (Glass): …"
-  // One bracket only: "Hourglass Icon (Timer, Glass)", "Refresh Icon (Glass)"
+  // e.g. "Free Refresh Icon: Copy SVG or Download PNG - fmicon", "Glass Wallet Icon SVG: Free & Ready to Paste - fmicon"
   const base = titleCase(iconTitle(name, article?.primary));
-  const heading = style === "linear" ? base : base.endsWith(")") ? `${base.slice(0, -1)}, ${label})` : `${base} (${label})`;
-  const full = `${heading}: Free SVG, PNG & React | ${brand.name}`;
-  const title = full.length <= 62 ? full : `${heading}: Free SVG, PNG & React`;
+  const title = pickIconTitle(base, style, label, `${style}/${icon.slug}`);
   const lead = article ? article.intro.split(/(?<=\.)\s/)[0] + " " : "";
   const description = clip(`Free ${primary} in the ${label.toLowerCase()} style. ${lead}Download SVG, PNG or WebP, or copy React, Vue and Flutter code.`);
   const faq = article

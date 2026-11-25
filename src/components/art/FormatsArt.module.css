@@ -5,7 +5,7 @@
   height: 320px;
   display: grid;
   place-items: center;
-  background: radial-gradient(55% 60% at 50% 55%, color-mix(in srgb, var(--pink) 16%, transparent), transparent 75%);
+  background: radial-gradient(55% 60% at 50% 55%, color-mix(in srgb, var(--brand) 18%, transparent), transparent 75%);
 }
 
 .fan {
@@ -49,20 +49,62 @@
 }
 
 .file[data-i="2"] .badge {
-  background: color-mix(in srgb, var(--pink) 22%, transparent);
-  color: #ff8fa8;
+  background: color-mix(in srgb, var(--brand) 24%, transparent);
+  color: #8cc4ff;
 }
 
 .preview {
   display: grid;
   place-items: center;
-  color: #ff5277;
+  color: #f4f4f5;
 }
 
-/* Back cards show only their format, on the side that stays visible */
-.file:not([data-i="2"]) .preview {
-  visibility: hidden;
+/* Back cards show their preview on the side that peeks out */
+.file[data-i="0"] .preview {
+  justify-items: start;
+  padding-left: 6px;
 }
+
+.file[data-i="1"] .preview {
+  justify-items: end;
+  padding-right: 4px;
+}
+
+.preview img {
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.4));
+}
+
+.jsx {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-variant-ligatures: none;
+  color: var(--code-tag);
+  writing-mode: vertical-rl;
+}
+
+/* The SVG card: the vector selected, with a dashed box and four handles */
+.vector {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  outline: 1px dashed color-mix(in srgb, var(--brand) 75%, transparent);
+  outline-offset: 0;
+}
+
+.vector i {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--brand);
+}
+
+.vector i:nth-of-type(1) { left: -4px; top: -4px; }
+.vector i:nth-of-type(2) { right: -4px; top: -4px; }
+.vector i:nth-of-type(3) { left: -4px; bottom: -4px; }
+.vector i:nth-of-type(4) { right: -4px; bottom: -4px; }
 
 .file[data-i="1"] .badge {
   justify-self: end;

@@ -85,18 +85,24 @@ export const mcpPage = {
   sub: "fmicon MCP lets your AI assistant search 891 free icons and write the code for you, in React, Vue, Svelte or plain SVG. Paste one URL into your app. Nothing to install, no account, no API key.",
   manual: "Using another app? Add a remote MCP server with this URL:",
   demo: {
+    eyebrow: "How it works",
     title: "Ask for an icon in plain words",
     sub: "Your assistant searches fmicon, picks the right icon and adds it to your code.",
+    steps: [
+      { title: "Connect once", text: "Add the server URL to your AI app. It takes about a minute." },
+      { title: "Ask in plain words", text: "Describe the button or menu you need, like you would to a teammate." },
+      { title: "Get working code", text: "The right icon lands in your file, sized, labelled and ready to ship." },
+    ],
   },
   tools: {
     title: "What Your Assistant Can Do",
     items: [
-      { name: "search_icons", text: "Finds icons by name or meaning, so \"gear\" or \"delete\" lands on the right one." },
-      { name: "get_icon", text: "Writes the code for one icon in SVG, React, React Native, Vue, Svelte, JS or a CDN link." },
-      { name: "match_icons", text: "Picks an icon for every item in a menu or toolbar at once." },
-      { name: "list_styles", text: "Explains the 8 styles and when to use each one." },
-      { name: "list_categories", text: "Browses the 31 categories, from arrows to weather." },
-    ],
+      { name: "search_icons", icon: "search", text: "Finds icons by name or meaning, so \"gear\" or \"delete\" lands on the right one.", call: 'search_icons("gear")', result: "setting-2, setting, setting-3" },
+      { name: "get_icon", icon: "code", text: "Writes the code for one icon in SVG, React, React Native, Vue, Svelte, JS or a CDN link.", call: 'get_icon("lock", "react")', result: '<Lock size={24} />' },
+      { name: "match_icons", icon: "grid", text: "Picks an icon for every item in a menu or toolbar at once.", call: 'match_icons(["Team", "Billing"])', result: "people, card" },
+      { name: "list_styles", icon: "brush", text: "Explains the 8 styles and when to use each one.", call: "list_styles()", result: "linear, bold, glass…" },
+      { name: "list_categories", icon: "layer", text: "Browses the 31 categories, from arrows to weather.", call: 'list_categories("Weather")', result: "cloud, sun, wind…" },
+    ] as Array<{ name: string; icon: "search" | "code" | "grid" | "brush" | "layer"; text: string; call: string; result: string }>,
   },
   prompts: {
     title: "Try These Prompts",
@@ -122,6 +128,14 @@ export const mcpPage = {
     {
       q: "Which apps work with it?",
       a: "Any app that supports remote MCP servers, including Claude Code, the Claude app, Cursor, VS Code with Copilot, Windsurf, Codex, Zed and Cline. Apps that only run local servers can connect through mcp-remote.",
+    },
+    {
+      q: "Can I run it on my own computer instead?",
+      a: "Yes. The same server ships in the fmicon GitHub repo as packages/mcp. Run node index.js inside it and point your app at that command instead of the URL. Nothing else changes, and it works fully offline.",
+    },
+    {
+      q: "Is there a usage limit?",
+      a: "No. There is no account, quota or paid tier. The server runs on Cloudflare's network and only returns icon names and code, so normal use by individuals and teams is free and unlimited.",
     },
     {
       q: "Do I need to install anything?",

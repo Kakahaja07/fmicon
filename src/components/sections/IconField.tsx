@@ -30,11 +30,13 @@ const lit: Record<number, { color: PaletteColor; delay: number }> = {
   92: { color: "indigo", delay: 11.2 },
 };
 
-export function IconField() {
+/** `footer`: three quiet rows that fade out from the top of the footer. */
+export function IconField({ variant }: { variant?: "footer" }) {
+  const rows = variant === "footer" ? 3 : ROWS;
   return (
-    <div className={s.field} aria-hidden="true">
+    <div className={variant === "footer" ? s.footerField : s.field} aria-hidden="true">
       <div className={s.grid} style={{ "--cols": COLS } as CSSProperties}>
-        {Array.from({ length: ROWS * COLS }, (_, i) => {
+        {Array.from({ length: rows * COLS }, (_, i) => {
           const Icon = wall[(i * 7 + Math.floor(i / COLS) * 3) % wall.length];
           const glow = lit[i];
           return (

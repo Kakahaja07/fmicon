@@ -16,13 +16,13 @@ type Pill = { x: number; w: number };
 
 export function SiteHeader() {
   const pathname = useRouterState({ select: (state) => state.location.pathname });
+  // The icon tool gets a full-width bar (its workspace runs edge to edge); other pages use the floating pill
+  const bar = pathname.startsWith("/icons");
   const section = useActiveSection(sectionIds);
   // On a page of its own (e.g. /icons) that link is current; on home, the section in view is.
   const pageLink = nav.links.find((l) => l.page && pathname.startsWith(l.href));
   const active = pageLink ? pageLink.id : pathname === "/" ? section : "";
   const scrolled = useScrolled();
-  // Docs get a full-width bar (lined up with the docs columns) instead of the floating pill
-  const bar = pathname.startsWith("/docs") || pathname.startsWith("/icons");
   const [hovered, setHovered] = useState<string | null>(null);
   const [pill, setPill] = useState<Pill | null>(null);
   const [ready, setReady] = useState(false);
