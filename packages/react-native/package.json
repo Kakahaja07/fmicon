@@ -13,11 +13,11 @@
   "homepage": "https://fmicon.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kakahaja07/fmicons.git",
+    "url": "https://github.com/Kakahaja07/fmicon.git",
     "directory": "packages/react-native"
   },
   "bugs": {
-    "url": "https://github.com/Kakahaja07/fmicons/issues"
+    "url": "https://github.com/Kakahaja07/fmicon/issues"
   },
   "type": "module",
   "sideEffects": false,

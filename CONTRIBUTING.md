@@ -11,7 +11,7 @@
 
 Thanks for wanting to help! Every bug report, icon idea and fix makes fmicon better for everyone.
 
-[Website](https://fmicon.dev) · [Docs](https://fmicon.dev/docs) · [Issues](https://github.com/Kakahaja07/fmicons/issues) · [Pull requests](https://github.com/Kakahaja07/fmicons/pulls)
+[Website](https://fmicon.dev) · [Docs](https://fmicon.dev/docs) · [Issues](https://github.com/Kakahaja07/fmicon/issues) · [Pull requests](https://github.com/Kakahaja07/fmicon/pulls)
 
 </div>
 
@@ -23,7 +23,7 @@ You don't need to write code. Pick whatever fits you.
 <tr>
 <td width="50%" valign="top">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/danger.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/danger.svg" width="32" alt=""></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass/danger.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass-light/danger.svg" width="32" alt=""></picture>
 
 **Report a problem**<br>
 An icon looks wrong, a link is broken, or a package doesn't work.<br>
@@ -32,7 +32,7 @@ An icon looks wrong, a link is broken, or a package doesn't work.<br>
 </td>
 <td width="50%" valign="top">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/lamp-on.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/lamp-on.svg" width="32" alt=""></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass/lamp-on.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass-light/lamp-on.svg" width="32" alt=""></picture>
 
 **Ask for an icon**<br>
 Need an icon we don't have yet? Tell us about it.<br>
@@ -43,7 +43,7 @@ Need an icon we don't have yet? Tell us about it.<br>
 <tr>
 <td width="50%" valign="top">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/code.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/code.svg" width="32" alt=""></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass/code.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass-light/code.svg" width="32" alt=""></picture>
 
 **Send a fix**<br>
 Improve the website, docs or npm packages.<br>
@@ -52,11 +52,11 @@ Improve the website, docs or npm packages.<br>
 </td>
 <td width="50%" valign="top">
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/heart.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/heart.svg" width="32" alt=""></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass/heart.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/glass-light/heart.svg" width="32" alt=""></picture>
 
 **Spread the word**<br>
 Give the repository a ⭐ and tell a friend who builds apps.<br>
-→ [Star fmicon](https://github.com/Kakahaja07/fmicons)
+→ [Star fmicon](https://github.com/Kakahaja07/fmicon)
 
 </td>
 </tr>
@@ -64,9 +64,9 @@ Give the repository a ⭐ and tell a friend who builds apps.<br>
 
 ## Report a problem
 
-Please [search the open issues](https://github.com/Kakahaja07/fmicons/issues) first. If someone already reported it, add a 👍 to their issue instead.
+Please [search the open issues](https://github.com/Kakahaja07/fmicon/issues) first. If someone already reported it, add a 👍 to their issue instead.
 
-Then [open a new issue](https://github.com/Kakahaja07/fmicons/issues/new) and tell us:
+Then [open a new issue](https://github.com/Kakahaja07/fmicon/issues/new) and tell us:
 
 | What | Example |
 |---|---|
@@ -77,7 +77,7 @@ Then [open a new issue](https://github.com/Kakahaja07/fmicons/issues/new) and te
 
 ## Ask for an icon
 
-[Open a new issue](https://github.com/Kakahaja07/fmicons/issues/new) with:
+[Open a new issue](https://github.com/Kakahaja07/fmicon/issues/new) with:
 
 - **The icon you need**, like "a shopping basket" or "a QR code".
 - **Where you'd use it**, so we draw it the right way.
@@ -92,7 +92,7 @@ The website at [fmicon.dev](https://fmicon.dev) and all the npm packages live in
 You need [Node.js](https://nodejs.org) 22 or newer.
 
 ```sh
-git clone https://github.com/Kakahaja07/fmicons.git
+git clone https://github.com/Kakahaja07/fmicon.git
 cd fmicons
 npm install
 npm run dev
@@ -141,7 +141,7 @@ fmicons/
 
 ### 4. Send your pull request
 
-1. [Fork the repository](https://github.com/Kakahaja07/fmicons/fork) and make a new branch, like `fix-vue-docs`.
+1. [Fork the repository](https://github.com/Kakahaja07/fmicon/fork) and make a new branch, like `fix-vue-docs`.
 2. Make your change. Keep it small: one fix or one feature per pull request.
 3. Write a commit message that says what changed:
 
@@ -150,7 +150,7 @@ fmicons/
    | `Fix the size example in the Vue docs` | `update` |
    | `Add a title prop to the Svelte icon` | `changes` |
 
-4. [Open a pull request](https://github.com/Kakahaja07/fmicons/compare) and explain what you changed and why.
+4. [Open a pull request](https://github.com/Kakahaja07/fmicon/compare) and explain what you changed and why.
 
 Before you press the button, check:
 

@@ -24,7 +24,7 @@ export const brand = {
 
 /* ------------------------------ Open source ------------------------------ */
 
-const REPO = "https://github.com/Kakahaja07/fmicons";
+const REPO = "https://github.com/Kakahaja07/fmicon";
 
 /**
  * Icon CDN. Our own: cdn.fmicon.dev (Cloudflare R2, filled by `npm run cdn:build && npm run cdn:upload`),
@@ -37,7 +37,7 @@ const CDN = "https://cdn.fmicon.dev";
 export const openSource = {
   repo: REPO,
   cdnLive: CDN_LIVE,
-  cdn: CDN_LIVE ? `${CDN}/svg` : "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons",
+  cdn: CDN_LIVE ? `${CDN}/svg` : "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons",
   cdnPng: CDN_LIVE ? `${CDN}/png` : undefined,
   licence: "MIT",
   badge: "Open source · MIT",

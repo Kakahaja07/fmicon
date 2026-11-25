@@ -20,7 +20,7 @@ import lockUrl from "@fmicons/svg/icons/linear/lock.svg";
 From the CDN, with no install:
 
 ```html
-<img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/linear/lock.svg" width="24" height="24" alt="Lock" />
+<img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons/linear/lock.svg" width="24" height="24" alt="Lock" />
 ```
 
 `icons.json` lists every icon with its `slug`, `name` and `category`.
@@ -35,5 +35,5 @@ From the CDN, with no install:
 ## Links
 
 - Browse all 891 icons: https://fmicon.dev/icons
-- Source and issues: https://github.com/Kakahaja07/fmicons
-- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicons/blob/main/LICENSE).
+- Source and issues: https://github.com/Kakahaja07/fmicon
+- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

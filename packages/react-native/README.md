@@ -44,5 +44,5 @@ The glass styles use gradients, masks and blur filters. Check them on your targe
 ## Links
 
 - Browse all 891 icons: https://fmicon.dev/icons
-- Source and issues: https://github.com/Kakahaja07/fmicons
-- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicons/blob/main/LICENSE).
+- Source and issues: https://github.com/Kakahaja07/fmicon
+- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

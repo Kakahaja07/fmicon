@@ -19,7 +19,7 @@ npm install @fmicons/svelte
 <Icon icon={lock} size={24} variant="bold" color="#1265ec" />
 ```
 
-Icon data names are the camelCase of the slug (`arrow-circle-right` is `arrowCircleRight`). See the [@fmicons/core README](https://github.com/Kakahaja07/fmicons/tree/main/packages/core) for the naming rules. Other attributes (`class`, `style`) are passed to the `<svg>` element.
+Icon data names are the camelCase of the slug (`arrow-circle-right` is `arrowCircleRight`). See the [@fmicons/core README](https://github.com/Kakahaja07/fmicon/tree/main/packages/core) for the naming rules. Other attributes (`class`, `style`) are passed to the `<svg>` element.
 
 ## Props
 
@@ -42,5 +42,5 @@ Icon data names are the camelCase of the slug (`arrow-circle-right` is `arrowCir
 ## Links
 
 - Browse all 891 icons: https://fmicon.dev/icons
-- Source and issues: https://github.com/Kakahaja07/fmicons
-- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicons/blob/main/LICENSE).
+- Source and issues: https://github.com/Kakahaja07/fmicon
+- Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

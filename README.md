@@ -17,7 +17,7 @@
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/icons-891-9b3dff?style=flat-square" alt="891 icons"></a>
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/styles-8-ff3d8b?style=flat-square" alt="8 styles"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-22c55e?style=flat-square" alt="MIT licence"></a>
-  <a href="https://github.com/Kakahaja07/fmicons/stargazers"><img src="https://img.shields.io/github/stars/Kakahaja07/fmicons?style=flat-square&logo=github&color=2b2b2f" alt="GitHub stars"></a>
+  <a href="https://github.com/Kakahaja07/fmicon/stargazers"><img src="https://img.shields.io/github/stars/Kakahaja07/fmicon?style=flat-square&logo=github&color=2b2b2f" alt="GitHub stars"></a>
 </p>
 
 <a href="https://fmicon.dev/icons">
@@ -237,10 +237,10 @@ Yes. Every icon is free for personal and work projects, including apps you sell.
 Not in your app. If you share the icon files themselves, keep the [LICENSE](LICENSE) file with them.
 
 **Can I ask for a new icon?**
-Yes. [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) and tell us which icon you need.
+Yes. [Open an issue](https://github.com/Kakahaja07/fmicon/issues/new) and tell us which icon you need.
 
 **I found a mistake. What do I do?**
-[Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) with the icon's name and style. Pull requests are welcome too.
+[Open an issue](https://github.com/Kakahaja07/fmicon/issues/new) with the icon's name and style. Pull requests are welcome too.
 
 ## Contributing
 
@@ -252,13 +252,13 @@ fmicon is open source, and anyone can help make it better. You don't need to wri
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/danger.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/danger.svg" width="40" alt=""></picture><br>
 <b>Report a problem</b><br>
 <sub>An icon looks wrong or a package breaks.</sub><br><br>
-<a href="https://github.com/Kakahaja07/fmicons/issues/new">Open an issue →</a>
+<a href="https://github.com/Kakahaja07/fmicon/issues/new">Open an issue →</a>
 </td>
 <td width="33%" align="center" valign="top">
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/lamp-on.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/lamp-on.svg" width="40" alt=""></picture><br>
 <b>Ask for an icon</b><br>
 <sub>Tell us which icon you need and where you'd use it.</sub><br><br>
-<a href="https://github.com/Kakahaja07/fmicons/issues/new">Request an icon →</a>
+<a href="https://github.com/Kakahaja07/fmicon/issues/new">Request an icon →</a>
 </td>
 <td width="33%" align="center" valign="top">
 <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/code.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/code.svg" width="40" alt=""></picture><br>
@@ -272,7 +272,7 @@ fmicon is open source, and anyone can help make it better. You don't need to wri
 Run the website on your computer:
 
 ```sh
-git clone https://github.com/Kakahaja07/fmicons.git
+git clone https://github.com/Kakahaja07/fmicon.git
 cd fmicons
 npm install
 npm run dev   # open http://localhost:3000
