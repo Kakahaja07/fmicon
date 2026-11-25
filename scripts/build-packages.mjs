@@ -15,10 +15,10 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = join(ROOT, "src/content/free-icons");
 const PACKAGES = join(ROOT, "packages");
-const VERSION = "0.1.0";
+const VERSION = "1.1.0";
 const REPO = "https://github.com/Kakahaja07/fmicon";
 const SITE = "https://fmicon.dev";
-const CDN = "https://cdn.jsdelivr.net/gh/Kakahaja07/fmicon@main/packages/svg/icons";
+const CDN = "https://cdn.fmicon.dev/svg";
 
 // Variant order is the public order (types, docs, data objects).
 const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "glass-light", "duotone"];
@@ -97,12 +97,15 @@ function iconLiteral(icon) {
   return `{\n  name: ${JSON.stringify(icon.name)},\n  category: ${JSON.stringify(icon.category)},\n  variants: {\n${variants}\n  },\n}`;
 }
 
+// npm names: the vanilla JS core is just "fmicon", the rest are "fmicon-<pkg>" (fmicon-react, fmicon-vue…)
+const pkgName = (pkg) => (pkg === "core" ? "fmicon" : `fmicon-${pkg}`);
+
 function packageJson(pkg, fields) {
   const json = {
-    name: `@fmicons/${pkg}`,
+    name: pkgName(pkg),
     version: VERSION,
     description: fields.description,
-    keywords: ["icons", "svg", "fmicons", ...(fields.keywords ?? [])],
+    keywords: ["icons", "svg", "fmicon", "icon-library", "svg-icons", "ui-icons", ...(fields.keywords ?? [])],
     license: "MIT",
     homepage: SITE,
     repository: { type: "git", url: `${REPO}.git`, directory: `packages/${pkg}` },
@@ -142,6 +145,27 @@ ${variantList}. The default is \`linear\`.
 - \`linear\`, \`twotone\`, \`broken\` and \`duotone\` are line styles and accept \`strokeWidth\`.
 - \`glass\` is tuned for dark backgrounds and \`glass-light\` for light ones. Both carry their own colours, so \`color\` has no effect on them.`;
 
+// Shared top of every package README: logo, one line, badges, links and the showcase image.
+// Images use absolute URLs so they show on npmjs.com too.
+const ASSETS = "https://raw.githubusercontent.com/Kakahaja07/fmicon/main/.github/assets";
+const header = (name, line, doc) => `<div align="center">
+
+<a href="${SITE}"><img src="${ASSETS}/wordmark-light.png" width="260" alt="fmicon"></a>
+
+### ${line}
+
+<a href="https://www.npmjs.com/package/${name}"><img src="https://img.shields.io/npm/v/${name}?style=flat-square&color=1e8cff&label=npm" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/${name}"><img src="https://img.shields.io/npm/dm/${name}?style=flat-square&color=2b2b2f" alt="downloads"></a>
+<a href="${REPO}/blob/main/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-22c55e?style=flat-square" alt="MIT licence"></a>
+
+**[Website](${SITE})** · **[Browse icons](${SITE}/icons)** · **[Docs](${SITE}/docs/${doc})** · **[GitHub](${REPO})**
+
+<img src="${ASSETS}/showcase-light.png" width="640" alt="fmicon icons in the linear, bold, duotone and glass styles">
+
+</div>
+
+fmicon is a free, open-source set of ${icons.length} icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.`;
+
 const linksSection = `## Links
 
 - Browse all ${icons.length} icons: ${SITE}/icons
@@ -159,7 +183,7 @@ const componentProps = (colorDefault) => `| Prop | Type | Default | Notes |
 const naming = `Component names are the PascalCase of the icon slug: \`home-2\` is \`Home2\`, \`arrow-circle-right\` is \`ArrowCircleRight\`, and slugs that start with a digit get an \`Icon\` prefix (\`3d-rotate\` is \`Icon3dRotate\`). Every icon is also exported with an \`Icon\` suffix (\`LockIcon\`) for when a name clashes with a global such as \`Map\` or \`Image\`.`;
 
 // ---------------------------------------------------------------------------
-// 1. @fmicons/svg
+// 1. fmicon-svg
 
 function buildSvg() {
   const pkg = "svg";
@@ -179,7 +203,7 @@ function buildSvg() {
   );
 
   packageJson(pkg, {
-    description: `${icons.length} FM Icons as plain SVG files in ${STYLES.length} styles.`,
+    description: `${icons.length} icons as plain SVG files in 8 styles (plus glass-light).`,
     keywords: ["svg-icons"],
     files: ["icons", "icons.json"],
     entry: { exports: { "./icons/*": "./icons/*", "./icons.json": "./icons.json", "./package.json": "./package.json" } },
@@ -187,23 +211,23 @@ function buildSvg() {
 
   write(
     join(PACKAGES, pkg, "README.md"),
-    `# @fmicons/svg
+    `${header("fmicon-svg", "Every fmicon icon as a plain SVG file", "svg")}
 
-${icons.length} FM Icons as plain SVG files, one folder per style. Every file is a 24 by 24 SVG that uses \`currentColor\` (glass styles carry their own colours).
+${icons.length} icons as plain SVG files, one folder per style. Every file is a 24 by 24 SVG that uses \`currentColor\` (glass styles carry their own colours).
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/svg
+npm install fmicon-svg
 \`\`\`
 
 ## Usage
 
-Files live at \`@fmicons/svg/icons/<style>/<slug>.svg\`.
+Files live at \`fmicon-svg/icons/<style>/<slug>.svg\`.
 
 \`\`\`js
 // With a bundler that imports SVG files as URLs (Vite, webpack asset modules)
-import lockUrl from "@fmicons/svg/icons/linear/lock.svg";
+import lockUrl from "fmicon-svg/icons/linear/lock.svg";
 \`\`\`
 
 From the CDN, with no install:
@@ -222,7 +246,7 @@ ${linksSection}
 }
 
 // ---------------------------------------------------------------------------
-// 2. @fmicons/core
+// 2. fmicon
 
 function buildCore() {
   const pkg = "core";
@@ -257,27 +281,27 @@ function buildCore() {
   write(join(dist, "all.d.ts"), `import type { IconData } from "./render.js";\nexport declare const icons: IconData[];\n`);
 
   packageJson(pkg, {
-    description: `${icons.length} FM Icons as framework-free data, plus a toSvg() helper.`,
+    description: `${icons.length} icons as framework-free data, plus a toSvg() helper.`,
     keywords: ["svg-icons", "vanilla-js"],
     entry: iconEntries({ exports: { "./all": { types: "./dist/all.d.ts", default: "./dist/all.js" } } }),
   });
 
   write(
     join(PACKAGES, pkg, "README.md"),
-    `# @fmicons/core
+    `${header("fmicon", "Free icons for any JavaScript project", "vanilla")}
 
-${icons.length} FM Icons as plain data with no framework, plus helpers that turn them into SVG strings. The other FM Icons packages are built on the same data.
+${icons.length} icons as plain data with no framework, plus helpers that turn them into SVG strings. The other fmicon packages are built on the same data.
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/core
+npm install fmicon
 \`\`\`
 
 ## Usage
 
 \`\`\`js
-import { lock, toSvg } from "@fmicons/core";
+import { lock, toSvg } from "fmicon";
 
 el.innerHTML = toSvg(lock, { size: 24, variant: "bold" });
 \`\`\`
@@ -293,7 +317,7 @@ Export names are the camelCase of the slug: \`home-2\` is \`home2\`, \`arrow-cir
 Need every icon, for a picker or search? Import the full list from a separate entry so the main one stays tree-shakeable:
 
 \`\`\`js
-import { icons } from "@fmicons/core/all";
+import { icons } from "fmicon/all";
 \`\`\`
 
 ## API
@@ -365,23 +389,23 @@ function buildComponents(pkg, { description, keywords, peerDependencies, entryFi
 
 function buildReact() {
   buildComponents("react", {
-    description: `${icons.length} FM Icons as React components.`,
+    description: `${icons.length} icons as React components.`,
     keywords: ["react", "react-icons"],
     peerDependencies: { react: ">=17" },
-    readme: `# @fmicons/react
+    readme: `${header("fmicon-react", "Free icons for React", "react")}
 
-${icons.length} FM Icons as React components, in ${STYLES.length} styles. Each icon is its own module, so your bundler only keeps the ones you import.
+${icons.length} icons as React components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/react
+npm install fmicon-react
 \`\`\`
 
 ## Usage
 
 \`\`\`jsx
-import { Lock } from "@fmicons/react";
+import { Lock } from "fmicon-react";
 
 <Lock size={24} variant="bold" color="#1265ec" strokeWidth={1} />
 \`\`\`
@@ -403,24 +427,24 @@ ${linksSection}
 
 function buildVue() {
   buildComponents("vue", {
-    description: `${icons.length} FM Icons as Vue 3 components.`,
+    description: `${icons.length} icons as Vue 3 components.`,
     keywords: ["vue", "vue3", "vue-icons"],
     peerDependencies: { vue: ">=3" },
-    readme: `# @fmicons/vue
+    readme: `${header("fmicon-vue", "Free icons for Vue 3", "vue")}
 
-${icons.length} FM Icons as Vue 3 components, in ${STYLES.length} styles. Each icon is its own module, so your bundler only keeps the ones you import.
+${icons.length} icons as Vue 3 components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/vue
+npm install fmicon-vue
 \`\`\`
 
 ## Usage
 
 \`\`\`vue
 <script setup>
-import { Lock } from "@fmicons/vue";
+import { Lock } from "fmicon-vue";
 </script>
 
 <template>
@@ -445,18 +469,18 @@ ${linksSection}
 
 function buildReactNative() {
   buildComponents("react-native", {
-    description: `${icons.length} FM Icons as React Native components (react-native-svg).`,
+    description: `${icons.length} icons as React Native components (react-native-svg).`,
     keywords: ["react-native", "react-native-svg"],
     peerDependencies: { react: ">=17", "react-native-svg": ">=12" },
     entryFields: { "react-native": "./dist/index.js" },
-    readme: `# @fmicons/react-native
+    readme: `${header("fmicon-react-native", "Free icons for React Native", "react-native")}
 
-${icons.length} FM Icons as React Native components, in ${STYLES.length} styles. They render with \`SvgXml\` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
+${icons.length} icons as React Native components, in 8 styles (plus glass-light). They render with \`SvgXml\` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/react-native react-native-svg
+npm install fmicon-react-native react-native-svg
 \`\`\`
 
 With Expo: \`npx expo install react-native-svg\`.
@@ -464,7 +488,7 @@ With Expo: \`npx expo install react-native-svg\`.
 ## Usage
 
 \`\`\`jsx
-import { Lock } from "@fmicons/react-native";
+import { Lock } from "fmicon-react-native";
 
 <Lock size={24} variant="bold" color="#1265ec" strokeWidth={1} />
 \`\`\`
@@ -487,7 +511,7 @@ ${linksSection}
 }
 
 // ---------------------------------------------------------------------------
-// 6. @fmicons/svelte
+// 6. fmicon-svelte
 
 function buildSvelte() {
   const pkg = "svelte";
@@ -501,9 +525,9 @@ function buildSvelte() {
   ]);
 
   packageJson(pkg, {
-    description: `A Svelte component for the ${icons.length} FM Icons.`,
+    description: `A Svelte component for the ${icons.length} fmicon.`,
     keywords: ["svelte", "svelte-icons"],
-    dependencies: { "@fmicons/core": `^${VERSION}` },
+    dependencies: { "fmicon": `^${VERSION}` },
     peerDependencies: { svelte: "^4.0.0 || ^5.0.0" },
     entry: {
       svelte: "./dist/index.js",
@@ -517,34 +541,34 @@ function buildSvelte() {
 
   write(
     join(PACKAGES, pkg, "README.md"),
-    `# @fmicons/svelte
+    `${header("fmicon-svelte", "Free icons for Svelte", "svelte")}
 
-One Svelte component that draws any of the ${icons.length} FM Icons. The icon data comes from [@fmicons/core](https://www.npmjs.com/package/@fmicons/core), which is installed with it and tree-shakes to the icons you import. Works with Svelte 4 and 5.
+One Svelte component that draws any of the ${icons.length} fmicon. The icon data comes from [fmicon](https://www.npmjs.com/package/fmicon), which is installed with it and tree-shakes to the icons you import. Works with Svelte 4 and 5.
 
 ## Install
 
 \`\`\`sh
-npm install @fmicons/svelte
+npm install fmicon-svelte
 \`\`\`
 
 ## Usage
 
 \`\`\`svelte
 <script>
-  import { Icon } from "@fmicons/svelte";
-  import { lock } from "@fmicons/core";
+  import { Icon } from "fmicon-svelte";
+  import { lock } from "fmicon";
 </script>
 
 <Icon icon={lock} size={24} variant="bold" color="#1265ec" />
 \`\`\`
 
-Icon data names are the camelCase of the slug (\`arrow-circle-right\` is \`arrowCircleRight\`). See the [@fmicons/core README](${REPO}/tree/main/packages/core) for the naming rules. Other attributes (\`class\`, \`style\`) are passed to the \`<svg>\` element.
+Icon data names are the camelCase of the slug (\`arrow-circle-right\` is \`arrowCircleRight\`). See the [fmicon README](${REPO}/tree/main/packages/core) for the naming rules. Other attributes (\`class\`, \`style\`) are passed to the \`<svg>\` element.
 
 ## Props
 
 | Prop | Type | Default | Notes |
 |---|---|---|---|
-| \`icon\` | \`IconData\` | required | An icon from \`@fmicons/core\` |
+| \`icon\` | \`IconData\` | required | An icon from \`fmicon\` |
 ${componentProps("inherits text colour").split("\n").slice(2).join("\n")}
 
 ${variantsSection}
@@ -588,5 +612,5 @@ for (const [pkg, dir] of [
   ["svelte", "svelte/dist"],
 ]) {
   const { files, bytes } = sizeOf(join(PACKAGES, dir));
-  console.log(`  @fmicons/${pkg.padEnd(13)} ${String(files).padStart(5)} files  ${(bytes / 1024 / 1024).toFixed(2)} MB  (${dir})`);
+  console.log(`  ${pkgName(pkg).padEnd(20)} ${String(files).padStart(5)} files  ${(bytes / 1024 / 1024).toFixed(2)} MB  (${dir})`);
 }

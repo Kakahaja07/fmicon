@@ -72,7 +72,7 @@ Then [open a new issue](https://github.com/Kakahaja07/fmicon/issues/new) and tel
 |---|---|
 | The icon's name and style | `arrow-circle-right` in `bold` (copy it from the icon's address on [fmicon.dev/icons](https://fmicon.dev/icons)) |
 | What you expected, and what you saw | "The arrow points left in the glass style" |
-| Where it happened | The website, or a package and its version, like `@fmicons/react@0.1.0` |
+| Where it happened | The website, or a package and its version, like `fmicon-react@0.1.0` |
 | A screenshot | Drag the picture into the issue |
 
 ## Ask for an icon

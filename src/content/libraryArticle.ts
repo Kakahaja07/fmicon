@@ -60,7 +60,7 @@ export const libraryArticle = {
     },
     {
       q: "How do I use the icons in React, Vue or Svelte?",
-      a: "Install the package for your framework, for example npm i @fmicons/react, then import icons by name: import { Home } from \"@fmicons/react\". Each icon takes size, colour, style and stroke weight as props.",
+      a: "Install the package for your framework, for example npm i fmicon-react, then import icons by name: import { Home } from \"fmicon-react\". Each icon takes size, colour, style and stroke weight as props.",
     },
     {
       q: `What is the difference between the ${STYLES} icon styles?`,

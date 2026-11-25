@@ -9,7 +9,7 @@ type CommandLineProps = {
   className?: string;
 };
 
-/** One terminal command, e.g. `npm i @fmicons/react`. Click anywhere on it to copy. */
+/** One terminal command, e.g. `npm i fmicon-react`. Click anywhere on it to copy. */
 export function CommandLine({ command, onCopy, copied, className }: CommandLineProps) {
   return (
     <button type="button" className={cx(s.command, className)} onClick={onCopy} aria-label={`Copy command: ${command}`}>

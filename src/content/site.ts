@@ -54,26 +54,26 @@ export const openSource = {
     { icon: I.ShieldTickIcon, color: "orange", text: "MIT licence, use it anywhere" },
   ] satisfies Array<{ icon: IconComponent; color: PaletteColor; text: string }>,
   install: [
-    { value: "react", label: "React", command: "npm i @fmicons/react", file: "App.jsx", code: `import { Home } from "@fmicons/react";
+    { value: "react", label: "React", command: "npm i fmicon-react", file: "App.jsx", code: `import { Home } from "fmicon-react";
 
 <Home size={24} variant="bold" />` },
-    { value: "vue", label: "Vue", command: "npm i @fmicons/vue", file: "App.vue", code: `<script setup>
-import { Home } from "@fmicons/vue";
+    { value: "vue", label: "Vue", command: "npm i fmicon-vue", file: "App.vue", code: `<script setup>
+import { Home } from "fmicon-vue";
 </script>
 
 <template>
   <Home :size="24" variant="bold" />
 </template>` },
-    { value: "svelte", label: "Svelte", command: "npm i @fmicons/svelte @fmicons/core", file: "App.svelte", code: `<script>
-  import { Icon } from "@fmicons/svelte";
-  import { home } from "@fmicons/core";
+    { value: "svelte", label: "Svelte", command: "npm i fmicon-svelte fmicon", file: "App.svelte", code: `<script>
+  import { Icon } from "fmicon-svelte";
+  import { home } from "fmicon";
 </script>
 
 <Icon icon={home} size={24} variant="bold" />` },
-    { value: "react-native", label: "React Native", command: "npm i @fmicons/react-native react-native-svg", file: "App.jsx", code: `import { Home } from "@fmicons/react-native";
+    { value: "react-native", label: "React Native", command: "npm i fmicon-react-native react-native-svg", file: "App.jsx", code: `import { Home } from "fmicon-react-native";
 
 <Home size={24} variant="bold" />` },
-    { value: "js", label: "JS", command: "npm i @fmicons/core", file: "main.js", code: `import { home, toSvg } from "@fmicons/core";
+    { value: "js", label: "JS", command: "npm i fmicon", file: "main.js", code: `import { home, toSvg } from "fmicon";
 
 el.innerHTML = toSvg(home, { size: 24, variant: "bold" });` },
   ] as const,
@@ -124,7 +124,7 @@ export const hero = {
   primary: { label: `Browse ${TOTAL} icons`, href: "/icons" },
   secondary: { label: "Star on GitHub", href: REPO },
   meta: ["MIT licence", "No sign-up", "Install with"],
-  install: "npm i @fmicons/react",
+  install: "npm i fmicon-react",
 };
 
 // Real numbers from the icon set, shown right under the hero.
@@ -235,7 +235,7 @@ export const features = {
       description: "Your AI assistant imports the right icon",
       chat: {
         me: "Add a lock icon to the login button",
-        ai: "Added <Lock /> from @fmicons/react",
+        ai: "Added <Lock /> from fmicon-react",
       },
     },
     recolor: {
@@ -307,11 +307,11 @@ export const faq = {
     },
     {
       q: "How do I add the icons to my project?",
-      a: "Install the package for your framework, for example npm i @fmicons/react, then import icons by name. You can also copy any icon as SVG or link it from the CDN.",
+      a: "Install the package for your framework, for example npm i fmicon-react, then import icons by name. You can also copy any icon as SVG or link it from the CDN.",
     },
     {
       q: "Which frameworks are supported?",
-      a: "React, Vue, Svelte and React Native have packages. Plain JavaScript works through @fmicons/core, and every icon page also gives ready code for Angular and Flutter.",
+      a: "React, Vue, Svelte and React Native have packages. Plain JavaScript works through fmicon, and every icon page also gives ready code for Angular and Flutter.",
     },
     {
       q: "Can I change the colour and stroke weight?",
@@ -332,7 +332,7 @@ export const faq = {
 
 export const footer = {
   tagline: `${TOTAL} free, open-source icons in ${STYLES} styles. Made for designers and developers who ship.`,
-  install: "npm i @fmicons/react",
+  install: "npm i fmicon-react",
   columns: [
     {
       title: "Icons",

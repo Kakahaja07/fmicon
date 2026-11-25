@@ -1,11 +1,14 @@
 {
-  "name": "@fmicons/svelte",
-  "version": "0.1.0",
-  "description": "A Svelte component for the 891 FM Icons.",
+  "name": "fmicon-svelte",
+  "version": "1.1.0",
+  "description": "A Svelte component for the 891 fmicon.",
   "keywords": [
     "icons",
     "svg",
-    "fmicons",
+    "fmicon",
+    "icon-library",
+    "svg-icons",
+    "ui-icons",
     "svelte",
     "svelte-icons"
   ],
@@ -35,7 +38,7 @@
     "dist"
   ],
   "dependencies": {
-    "@fmicons/core": "^0.1.0"
+    "fmicon": "^1.1.0"
   },
   "peerDependencies": {
     "svelte": "^4.0.0 || ^5.0.0"

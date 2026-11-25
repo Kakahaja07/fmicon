@@ -1,11 +1,14 @@
 {
-  "name": "@fmicons/react",
-  "version": "0.1.0",
-  "description": "891 FM Icons as React components.",
+  "name": "fmicon-react",
+  "version": "1.1.0",
+  "description": "891 icons as React components.",
   "keywords": [
     "icons",
     "svg",
-    "fmicons",
+    "fmicon",
+    "icon-library",
+    "svg-icons",
+    "ui-icons",
     "react",
     "react-icons"
   ],

@@ -50,7 +50,7 @@ export function pageToPrompt(page: DocPage) {
     "Rules:",
     "- Find icon names at " + site + "/icons. The URL slug is the name, e.g. /icons/linear/arrow-circle-right.",
     "- Components are the PascalCase of the slug (ArrowCircleRight). Every component is also exported with an Icon suffix (ArrowCircleRightIcon) to avoid clashes with globals like Map or Image.",
-    "- In @fmicons/core, icon data is camelCase (arrowCircleRight); reserved words get an Icon suffix (exportIcon).",
+    "- In fmicon, icon data is camelCase (arrowCircleRight); reserved words get an Icon suffix (exportIcon).",
     `- Props: ${docsProps.map((p) => `${p.prop} (default ${p.def})`).join(", ")}.`,
     `- variant is one of: ${freeIconsMeta.styles.join(", ")}, glass-light. Use linear for idle states and bold for selected ones.`,
     "- Icons inherit the text colour (currentColor). Set color only when it must differ. Glass keeps its own colours.",

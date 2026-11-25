@@ -1,11 +1,14 @@
 {
-  "name": "@fmicons/svg",
-  "version": "0.1.0",
-  "description": "891 FM Icons as plain SVG files in 9 styles.",
+  "name": "fmicon-svg",
+  "version": "1.1.0",
+  "description": "891 icons as plain SVG files in 8 styles (plus glass-light).",
   "keywords": [
     "icons",
     "svg",
-    "fmicons",
+    "fmicon",
+    "icon-library",
+    "svg-icons",
+    "ui-icons",
     "svg-icons"
   ],
   "license": "MIT",

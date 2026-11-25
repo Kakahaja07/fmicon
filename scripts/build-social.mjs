@@ -102,12 +102,12 @@ const icon = (slug, i) => ({ html: svg(linear.get(slug), COLORS[i % COLORS.lengt
 const cards = {
   home: {
     lines: [`${total} icons,`, "8 styles,", "free forever"],
-    prompt: `&gt; <b>npm i</b> @fmicons/react`,
+    prompt: `&gt; <b>npm i</b> fmicon-react`,
     tiles: ["home", "calendar", "chart", "notification", "drop", "flash", "heart", "moon", "book", "people", "cup", "setting"].map(icon),
   },
   docs: {
     lines: ["Drop icons", "into any", "framework"],
-    prompt: `<b>import</b> { Home } <b>from</b> "@fmicons/react"`,
+    prompt: `<b>import</b> { Home } <b>from</b> "fmicon-react"`,
     tiles: ["code", "command", "monitor", "mobile", "cloud", "folder", "document", "link", "send", "search-normal", "lock", "global"].map(icon),
     highlight: 0,
   },

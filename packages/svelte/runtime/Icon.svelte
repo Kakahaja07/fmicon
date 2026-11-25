@@ -1,7 +1,7 @@
 <script>
-  import { iconBody } from "@fmicons/core";
+  import { iconBody } from "fmicon";
 
-  /** Icon data from @fmicons/core, e.g. `lock`. */
+  /** Icon data from fmicon, e.g. `lock`. */
   export let icon;
   export let size = 24;
   export let variant = "linear";

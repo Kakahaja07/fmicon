@@ -13,6 +13,7 @@
 
 <p>
   <a href="https://fmicon.dev"><img src="https://img.shields.io/badge/Website-fmicon.dev-1265ec?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://www.npmjs.com/package/fmicon-react"><img src="https://img.shields.io/npm/v/fmicon-react?style=flat-square&color=cb3837&logo=npm&label=npm" alt="npm version"></a>
   <a href="https://fmicon.dev/docs"><img src="https://img.shields.io/badge/Docs-read-2b2b2f?style=flat-square&logo=readthedocs&logoColor=white" alt="Docs"></a>
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/icons-891-9b3dff?style=flat-square" alt="891 icons"></a>
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/styles-8-ff3d8b?style=flat-square" alt="8 styles"></a>
@@ -50,11 +51,11 @@ You can use fmicon in three ways. Pick the one that fits you.
 **2. Install a package (for developers).** Add the package for your framework, then use icons by name:
 
 ```bash
-npm install @fmicons/react
+npm install fmicon-react
 ```
 
 ```jsx
-import { Home, Heart } from "@fmicons/react";
+import { Home, Heart } from "fmicon-react";
 
 <Home size={24} />
 <Heart size={24} variant="bold" color="#ff383c" />
@@ -77,44 +78,44 @@ import { Home, Heart } from "@fmicons/react";
   <tbody>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/react/61DAFB" width="24" alt=""></td>
-      <td><code>@fmicons/react</code></td>
+      <td><code>fmicon-react</code></td>
       <td>React websites</td>
-      <td><code>npm i @fmicons/react</code></td>
+      <td><code>npm i fmicon-react</code></td>
       <td><a href="https://fmicon.dev/docs/react">Guide</a></td>
     </tr>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" width="24" alt=""></td>
-      <td><code>@fmicons/vue</code></td>
+      <td><code>fmicon-vue</code></td>
       <td>Vue websites</td>
-      <td><code>npm i @fmicons/vue</code></td>
+      <td><code>npm i fmicon-vue</code></td>
       <td><a href="https://fmicon.dev/docs/vue">Guide</a></td>
     </tr>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/svelte/FF3E00" width="24" alt=""></td>
-      <td><code>@fmicons/svelte</code></td>
+      <td><code>fmicon-svelte</code></td>
       <td>Svelte websites</td>
-      <td><code>npm i @fmicons/svelte</code></td>
+      <td><code>npm i fmicon-svelte</code></td>
       <td><a href="https://fmicon.dev/docs/svelte">Guide</a></td>
     </tr>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/react/61DAFB" width="24" alt=""></td>
-      <td><code>@fmicons/react-native</code></td>
+      <td><code>fmicon-react-native</code></td>
       <td>Phone apps (iOS and Android)</td>
-      <td><code>npm i @fmicons/react-native</code></td>
+      <td><code>npm i fmicon-react-native</code></td>
       <td><a href="https://fmicon.dev/docs/react-native">Guide</a></td>
     </tr>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="24" alt=""></td>
-      <td><code>@fmicons/core</code></td>
+      <td><code>fmicon</code></td>
       <td>Plain JavaScript</td>
-      <td><code>npm i @fmicons/core</code></td>
+      <td><code>npm i fmicon</code></td>
       <td><a href="https://fmicon.dev/docs/vanilla">Guide</a></td>
     </tr>
     <tr>
       <td align="center"><img src="https://cdn.simpleicons.org/svg/FFB13B" width="24" alt=""></td>
-      <td><code>@fmicons/svg</code></td>
+      <td><code>fmicon-svg</code></td>
       <td>Just the icon files</td>
-      <td><code>npm i @fmicons/svg</code></td>
+      <td><code>npm i fmicon-svg</code></td>
       <td><a href="https://fmicon.dev/docs/svg">Guide</a></td>
     </tr>
     <tr>
@@ -143,9 +144,9 @@ import { Home, Heart } from "@fmicons/react";
 <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" width="16" alt=""> **Vue**
 
 ```vue
-<!-- npm i @fmicons/vue -->
+<!-- npm i fmicon-vue -->
 <script setup>
-import { Home } from "@fmicons/vue";
+import { Home } from "fmicon-vue";
 </script>
 
 <template>
@@ -159,10 +160,10 @@ import { Home } from "@fmicons/vue";
 <img src="https://cdn.simpleicons.org/svelte/FF3E00" width="16" alt=""> **Svelte**
 
 ```svelte
-<!-- npm i @fmicons/svelte -->
+<!-- npm i fmicon-svelte -->
 <script>
-  import { Icon } from "@fmicons/svelte";
-  import { home } from "@fmicons/core";
+  import { Icon } from "fmicon-svelte";
+  import { home } from "fmicon";
 </script>
 
 <Icon icon={home} size={24} variant="bold" />
@@ -176,8 +177,8 @@ import { Home } from "@fmicons/vue";
 <img src="https://cdn.simpleicons.org/react/61DAFB" width="16" alt=""> **React Native**
 
 ```jsx
-// npm i @fmicons/react-native react-native-svg
-import { Home } from "@fmicons/react-native";
+// npm i fmicon-react-native react-native-svg
+import { Home } from "fmicon-react-native";
 
 <Home size={24} variant="bold" color="#1265ec" />
 ```
@@ -188,8 +189,8 @@ import { Home } from "@fmicons/react-native";
 <img src="https://cdn.simpleicons.org/javascript/F7DF1E" width="16" alt=""> **Plain JavaScript**
 
 ```js
-// npm i @fmicons/core
-import { home, toSvg } from "@fmicons/core";
+// npm i fmicon
+import { home, toSvg } from "fmicon";
 
 const svg = toSvg(home, { variant: "bold" });
 document.querySelector("#icon").innerHTML = svg;

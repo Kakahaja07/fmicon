@@ -3,7 +3,7 @@ const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from",
 
 /**
  * Headings in title case: "8 icon styles in one library" → "8 Icon Styles in One Library".
- * Words that already have capitals (SVG, iOS), the brand (fmicon) and code-like words (@fmicons/react) are left alone.
+ * Words that already have capitals (SVG, iOS), the brand (fmicon) and code-like words (fmicon-react) are left alone.
  */
 export function titleCase(text: string) {
   const words = text.split(/(\s+)/);

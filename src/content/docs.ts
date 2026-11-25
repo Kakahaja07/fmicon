@@ -58,7 +58,7 @@ function tag(fw: DocId, name: string, p: Props = {}) {
   return `<${name}${attrs} />`;
 }
 
-/** Options object for @fmicons/core, e.g. `toSvg(home, { size: 24 })`. */
+/** Options object for fmicon, e.g. `toSvg(home, { size: 24 })`. */
 function js(name: string, p: Props = {}) {
   const data = name[0].toLowerCase() + name.slice(1);
   const parts: string[] = [];
@@ -70,18 +70,18 @@ function js(name: string, p: Props = {}) {
 }
 
 const pkgOf: Partial<Record<DocId, string>> = {
-  vanilla: "@fmicons/core",
-  react: "@fmicons/react",
-  "react-native": "@fmicons/react-native",
-  vue: "@fmicons/vue",
-  svelte: "@fmicons/svelte",
+  vanilla: "fmicon",
+  react: "fmicon-react",
+  "react-native": "fmicon-react-native",
+  vue: "fmicon-vue",
+  svelte: "fmicon-svelte",
 };
 
 /** Import line for some icons in a framework. */
 function imports(fw: DocId, names: string[]) {
   const data = names.map((n) => n[0].toLowerCase() + n.slice(1));
-  if (fw === "svelte") return `import { Icon } from "@fmicons/svelte";\nimport { ${data.join(", ")} } from "@fmicons/core";`;
-  if (fw === "vanilla") return `import { ${data.join(", ")}, toSvg } from "@fmicons/core";`;
+  if (fw === "svelte") return `import { Icon } from "fmicon-svelte";\nimport { ${data.join(", ")} } from "fmicon";`;
+  if (fw === "vanilla") return `import { ${data.join(", ")}, toSvg } from "fmicon";`;
   return `import { ${names.join(", ")} } from "${pkgOf[fw]}";`;
 }
 
@@ -120,7 +120,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
         fw === "vanilla"
           ? ["Every icon is exported as data. `toSvg` turns it into an SVG string you can put anywhere in the page."]
           : fw === "svelte"
-            ? ["Svelte uses one `Icon` component. Pass it any icon from `@fmicons/core`."]
+            ? ["Svelte uses one `Icon` component. Pass it any icon from `fmicon`."]
             : [`Import icons by their PascalCase name from \`${pkg}\`. Each icon is a ${label} component.`],
       code: [
         fw === "vanilla"
@@ -145,7 +145,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
   ];
 
   if (fw !== "svelte") {
-    const direct = fw === "vanilla" ? `import { home } from "@fmicons/core/icons/home";\nimport { lock } from "@fmicons/core/icons/lock";` : `import { Home } from "${pkg}/icons/home";\nimport { Lock } from "${pkg}/icons/lock";`;
+    const direct = fw === "vanilla" ? `import { home } from "fmicon/icons/home";\nimport { lock } from "fmicon/icons/lock";` : `import { Home } from "${pkg}/icons/home";\nimport { Lock } from "${pkg}/icons/lock";`;
     sections.push({
       id: "direct-imports",
       title: "Direct imports",
@@ -256,7 +256,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
       code: [
         {
           title: "Imports",
-          code: `// Good: only these icons end up in the bundle\n${imports(fw, ["Home", "Lock"])}\n\n// Avoid: pulls in all ${TOTAL} icons\nimport * as Icons from "${fw === "svelte" ? "@fmicons/core" : pkg}";`,
+          code: `// Good: only these icons end up in the bundle\n${imports(fw, ["Home", "Lock"])}\n\n// Avoid: pulls in all ${TOTAL} icons\nimport * as Icons from "${fw === "svelte" ? "fmicon" : pkg}";`,
         },
       ],
       block: "performance",
@@ -270,7 +270,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
           title: "Types",
           code:
             fw === "vanilla" || fw === "svelte"
-              ? `import type { IconData, IconVariant } from "@fmicons/core";\n\nconst variant: IconVariant = "duotone";\nfunction render(icon: IconData) {\n  return toSvg(icon, { variant });\n}`
+              ? `import type { IconData, IconVariant } from "fmicon";\n\nconst variant: IconVariant = "duotone";\nfunction render(icon: IconData) {\n  return toSvg(icon, { variant });\n}`
               : `import type { IconProps, IconVariant${fw === "react" ? ", FMIcon" : ""} } from "${pkg}";\n\nconst variant: IconVariant = "duotone";${fw === "react" ? `\n\nfunction NavItem({ icon: Icon, label }: { icon: FMIcon; label: string }) {\n  return <a><Icon size={20} variant={variant} /> {label}</a>;\n}` : ""}`,
         },
       ],
@@ -284,7 +284,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
           title: "Icon name not found",
           code:
             fw === "vanilla" || fw === "svelte"
-              ? `// Data exports are camelCase; reserved words get "Icon"\nimport { arrowCircleRight, exportIcon } from "@fmicons/core";`
+              ? `// Data exports are camelCase; reserved words get "Icon"\nimport { arrowCircleRight, exportIcon } from "fmicon";`
               : `// Components are PascalCase of the icon's slug\nimport { ArrowCircleRight, SearchNormal } from "${pkg}";\n// Clashes with a global? Every icon also has an Icon suffix\nimport { MapIcon, ImageIcon } from "${pkg}";`,
         },
         {
@@ -320,7 +320,7 @@ export const docPages: DocPage[] = [
     "vanilla",
     "Vanilla JS / CDN",
     "js",
-    ["@fmicons/core"],
+    ["fmicon"],
     `The framework-free package. Every icon is plain data with a \`toSvg\` helper, so it works in any bundler, in Node, or straight from a CDN.`,
     ["Render any icon to an SVG string", "Pick size, style, colour and stroke weight", "Import only the icons you use", "Load files straight from the jsDelivr CDN, no install"],
   ),
@@ -328,7 +328,7 @@ export const docPages: DocPage[] = [
     "react",
     "React",
     "react",
-    ["@fmicons/react"],
+    ["fmicon-react"],
     `The React package. Import icons as components with full TypeScript support. Everything is tree-shakeable, so only the icons you use end up in your bundle.`,
     ["Import icons as individual React components", "Set size, style, colour and stroke weight with props", "Forward refs to the underlying SVG", "Use it in Next.js, Vite, Remix, TanStack Start and more"],
   ),
@@ -336,7 +336,7 @@ export const docPages: DocPage[] = [
     "react-native",
     "React Native",
     "react-native",
-    ["@fmicons/react-native", "react-native-svg"],
+    ["fmicon-react-native", "react-native-svg"],
     `The React Native package, rendered with react-native-svg. Same names and props as the React package, so code moves between web and mobile easily.`,
     ["Use the same icon names as on the web", "Works in Expo and bare React Native", "Set size, style, colour and stroke weight with props", "Name icons for VoiceOver and TalkBack with title"],
   ),
@@ -344,7 +344,7 @@ export const docPages: DocPage[] = [
     "vue",
     "Vue",
     "vue",
-    ["@fmicons/vue"],
+    ["fmicon-vue"],
     `The Vue 3 package. Every icon is a component you can import by name and style with props, classes or your theme's text colour.`,
     ["Import icons as Vue components", "Bind size, style and colour like any prop", "Works with Nuxt, Vite and the Composition API", "Pass classes and attributes straight to the SVG"],
   ),
@@ -352,8 +352,8 @@ export const docPages: DocPage[] = [
     "svelte",
     "Svelte",
     "svelte",
-    ["@fmicons/svelte", "@fmicons/core"],
-    `The Svelte package: one \`Icon\` component that renders any icon from \`@fmicons/core\`. Works with Svelte 4 and 5 and SvelteKit.`,
+    ["fmicon-svelte", "fmicon"],
+    `The Svelte package: one \`Icon\` component that renders any icon from \`fmicon\`. Works with Svelte 4 and 5 and SvelteKit.`,
     ["Render any icon with one component", "Set size, style, colour and stroke weight as props", "Import only the icon data you use", "Works with SvelteKit server rendering"],
   ),
   {
@@ -387,7 +387,7 @@ export const docPages: DocPage[] = [
     id: "svg",
     label: "Raw SVGs",
     logo: "cdn",
-    install: ["@fmicons/svg"],
+    install: ["fmicon-svg"],
     description: "Every icon as a plain SVG file, for design tools, static sites, emails and anything without a build step.",
     sections: [
       { id: "overview", title: "Raw SVGs", text: [`All ${TOTAL} icons in all ${STYLES} styles are plain SVG files. Download them from any icon page, install them from npm, or link them from the CDN.`] },
@@ -410,7 +410,7 @@ export const docPages: DocPage[] = [
         tip: "An <img> can't take the page's text colour. To recolour, paste the SVG inline or use a package.",
       },
       { id: "installation", title: "Installation", text: ["The same files as an npm package, plus an `icons.json` index of names and categories."], block: "install" },
-      { id: "files", title: "File layout", code: [{ title: "@fmicons/svg", code: "icons/\n  linear/home.svg\n  bold/home.svg\n  ...\n  glass/home.svg\n  glass-light/home.svg   // glass for light backgrounds\nicons.json              // slug, name, category for every icon" }] },
+      { id: "files", title: "File layout", code: [{ title: "fmicon-svg", code: "icons/\n  linear/home.svg\n  bold/home.svg\n  ...\n  glass/home.svg\n  glass-light/home.svg   // glass for light backgrounds\nicons.json              // slug, name, category for every icon" }] },
       { id: "styles", title: "Styles", text: [`${STYLES} styles, one folder each.`], block: "styles" },
       { id: "figma", title: "Design tools", text: ["Copy an icon as SVG from its page and paste it straight into Figma, Sketch, Framer or Illustrator. It arrives as editable vector paths."] },
     ],
@@ -421,7 +421,7 @@ export const docsIntro = {
   title: "What is fmicon?",
   text: [
     `fmicon is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass and duotone.`,
-    "There are packages for `@fmicons/react`, `@fmicons/react-native`, `@fmicons/vue`, `@fmicons/svelte` and `@fmicons/core` (vanilla JS), plus raw SVG files on a CDN and ready code for Angular and Flutter.",
+    "There are packages for `fmicon-react`, `fmicon-react-native`, `fmicon-vue`, `fmicon-svelte` and `fmicon` (vanilla JS), plus raw SVG files on a CDN and ready code for Angular and Flutter.",
     "Everything is MIT licensed, tree-shakeable and typed.",
   ],
   choose: "Choose an integration",
@@ -444,8 +444,8 @@ export const docsProps = [
 ];
 
 export const docsPerformance = [
-  { method: "@fmicons/react, /vue, /react-native", impact: "Only the icons you import", best: "Apps with a bundler" },
+  { method: "fmicon-react, /vue, /react-native", impact: "Only the icons you import", best: "Apps with a bundler" },
   { method: "…/icons/<slug>", impact: "Exactly one icon per import", best: "Setups without tree-shaking" },
-  { method: "@fmicons/core + toSvg", impact: "Only the icons you import", best: "Vanilla JS, web components" },
+  { method: "fmicon + toSvg", impact: "Only the icons you import", best: "Vanilla JS, web components" },
   { method: "CDN <img>", impact: "Nothing in the bundle", best: "Static sites, prototypes, email" },
 ];

@@ -19,7 +19,7 @@ export function TerminalArt() {
         </div>
         <div className={s.lines}>
           <p style={{ "--d": 0 } as CSSProperties}>
-            <i>$</i> npm i @fmicons/react
+            <i>$</i> npm i fmicon-react
           </p>
           <p className={s.out} style={{ "--d": 1 } as CSSProperties}>
             added 1 package in 0.9s

@@ -17,7 +17,7 @@ const RESERVED = new Set(
     "yield let static implements interface package private protected public await arguments eval undefined").split(" "),
 );
 
-/** "arrow-circle-right" → "arrowCircleRight": the icon's data export in @fmicons/core. Reserved words get "Icon" ("exportIcon"). */
+/** "arrow-circle-right" → "arrowCircleRight": the icon's data export in fmicon. Reserved words get "Icon" ("exportIcon"). */
 export function pkgData(slug: string) {
   const pascal = pkgComponent(slug);
   const name = pascal[0].toLowerCase() + pascal.slice(1);
@@ -32,9 +32,9 @@ export const cdnPngUrl = (style: IconStyle | "glass-light", slug: string) =>
   openSource.cdnPng ? `${openSource.cdnPng}/${style}/${slug}.png` : undefined;
 
 export const packageFor = {
-  js: "@fmicons/core",
-  react: "@fmicons/react",
-  "react-native": "@fmicons/react-native",
-  vue: "@fmicons/vue",
-  svelte: "@fmicons/svelte",
+  js: "fmicon",
+  react: "fmicon-react",
+  "react-native": "fmicon-react-native",
+  vue: "fmicon-vue",
+  svelte: "fmicon-svelte",
 } as const;

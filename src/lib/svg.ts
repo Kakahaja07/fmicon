@@ -133,7 +133,7 @@ function pkgProps(style: IconStyle, size: number, color: string | undefined, str
   return out;
 }
 
-/** Options object for @fmicons/core, e.g. `{ size: 24, variant: "bold" }`. */
+/** Options object for fmicon, e.g. `{ size: 24, variant: "bold" }`. */
 function coreOptions(style: IconStyle, size: number, color: string | undefined, stroke: number | undefined) {
   const parts = [`size: ${size}`];
   if (style !== "linear") parts.push(`variant: "${style}"`);

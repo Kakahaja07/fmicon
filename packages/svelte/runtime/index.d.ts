@@ -1,10 +1,10 @@
 import { SvelteComponent } from "svelte";
-import type { IconData, IconVariant } from "@fmicons/core";
+import type { IconData, IconVariant } from "fmicon";
 
 export type { IconVariant };
 
 export interface IconProps {
-  /** Icon data from @fmicons/core, e.g. `lock`. */
+  /** Icon data from fmicon, e.g. `lock`. */
   icon: IconData;
   /** Width and height. Defaults to 24. */
   size?: number | string;

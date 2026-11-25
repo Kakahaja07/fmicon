@@ -1,11 +1,14 @@
 {
-  "name": "@fmicons/react-native",
-  "version": "0.1.0",
-  "description": "891 FM Icons as React Native components (react-native-svg).",
+  "name": "fmicon-react-native",
+  "version": "1.1.0",
+  "description": "891 icons as React Native components (react-native-svg).",
   "keywords": [
     "icons",
     "svg",
-    "fmicons",
+    "fmicon",
+    "icon-library",
+    "svg-icons",
+    "ui-icons",
     "react-native",
     "react-native-svg"
   ],

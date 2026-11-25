@@ -1,11 +1,14 @@
 {
-  "name": "@fmicons/core",
-  "version": "0.1.0",
-  "description": "891 FM Icons as framework-free data, plus a toSvg() helper.",
+  "name": "fmicon",
+  "version": "1.1.0",
+  "description": "891 icons as framework-free data, plus a toSvg() helper.",
   "keywords": [
     "icons",
     "svg",
-    "fmicons",
+    "fmicon",
+    "icon-library",
+    "svg-icons",
+    "ui-icons",
     "svg-icons",
     "vanilla-js"
   ],

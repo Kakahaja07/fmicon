@@ -1,17 +1,33 @@
-# @fmicons/react
+<div align="center">
 
-891 FM Icons as React components, in 9 styles. Each icon is its own module, so your bundler only keeps the ones you import.
+<a href="https://fmicon.dev"><img src="https://raw.githubusercontent.com/Kakahaja07/fmicon/main/.github/assets/wordmark-light.png" width="260" alt="fmicon"></a>
+
+### Free icons for React
+
+<a href="https://www.npmjs.com/package/fmicon-react"><img src="https://img.shields.io/npm/v/fmicon-react?style=flat-square&color=1e8cff&label=npm" alt="npm version"></a>
+<a href="https://www.npmjs.com/package/fmicon-react"><img src="https://img.shields.io/npm/dm/fmicon-react?style=flat-square&color=2b2b2f" alt="downloads"></a>
+<a href="https://github.com/Kakahaja07/fmicon/blob/main/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-22c55e?style=flat-square" alt="MIT licence"></a>
+
+**[Website](https://fmicon.dev)** · **[Browse icons](https://fmicon.dev/icons)** · **[Docs](https://fmicon.dev/docs/react)** · **[GitHub](https://github.com/Kakahaja07/fmicon)**
+
+<img src="https://raw.githubusercontent.com/Kakahaja07/fmicon/main/.github/assets/showcase-light.png" width="640" alt="fmicon icons in the linear, bold, duotone and glass styles">
+
+</div>
+
+fmicon is a free, open-source set of 891 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+
+891 icons as React components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
 ```sh
-npm install @fmicons/react
+npm install fmicon-react
 ```
 
 ## Usage
 
 ```jsx
-import { Lock } from "@fmicons/react";
+import { Lock } from "fmicon-react";
 
 <Lock size={24} variant="bold" color="#1265ec" strokeWidth={1} />
 ```

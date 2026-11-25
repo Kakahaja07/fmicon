@@ -31,7 +31,7 @@ export function ChatArt({ me, ai }: ChatArtProps) {
           <pre>
             <span className={s.k}>import</span> {"{ "}
             <span className={s.c}>Lock</span>
-            {" }"} <span className={s.k}>from</span> <span className={s.str}>"@fmicons/react"</span>;{"\n\n"}
+            {" }"} <span className={s.k}>from</span> <span className={s.str}>"fmicon-react"</span>;{"\n\n"}
             {"<"}
             <span className={s.c}>Button</span>
             {">"}
