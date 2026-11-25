@@ -12,7 +12,7 @@ export const Route = createFileRoute("/_site/docs/")({
   head: () =>
     pageHead({
       title: `${brand.name} Docs: Free Icons for React, Vue, Svelte & More`,
-      description: "Install FM Icons for React, Vue, Svelte, React Native or vanilla JS, or use the raw SVGs from the CDN. Props, styles, accessibility and more.",
+      description: "Install fmicon for React, Vue, Svelte, React Native or vanilla JS, or use the raw SVGs from the CDN. Props, styles, accessibility and more.",
       path: "/docs",
       image: "docs",
     }),
@@ -32,7 +32,7 @@ function DocsIntro() {
           ))}
           {/* Same image as the GitHub README (npm run readme) */}
           <figure className={s.showcase}>
-            <img src="/images/showcase.png" alt="Ten FM Icons shown in the linear, bold, duotone and glass styles" width={900} height={330} loading="lazy" />
+            <img src="/images/showcase.png" alt="Ten fmicon icons shown in the linear, bold, duotone and glass styles" width={900} height={330} loading="lazy" />
           </figure>
         </section>
 

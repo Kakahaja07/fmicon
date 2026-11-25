@@ -25,14 +25,14 @@ export const libraryArticle = {
   library: {
     title: "Free SVG icons for websites and apps",
     intro: [
-      `FM Icons is a free, open-source icon library of ${TOTAL} UI icons, each drawn in ${STYLES} styles. Every icon is a clean SVG on a 24 px grid, so it stays sharp from a 16 px button to a 512 px hero, and you can recolour it with one CSS value.`,
+      `fmicon is a free, open-source icon library of ${TOTAL} UI icons, each drawn in ${STYLES} styles. Every icon is a clean SVG on a 24 px grid, so it stays sharp from a 16 px button to a 512 px hero, and you can recolour it with one CSS value.`,
       "Use them for websites, mobile apps, dashboards, slides and design files. They are free for personal and commercial work under the MIT licence, with no sign-up and no attribution needed in your interface.",
     ],
   },
   style: (style: IconStyle, label: string) => ({
     title: `Free ${styleKeywords[style].keyword}: ${TOTAL} SVG icons in the ${label.toLowerCase()} style`,
     intro: [
-      `This page holds all ${TOTAL} FM Icons in the ${label.toLowerCase()} style, the ${styleKeywords[style].keyword} people also search for as ${styleKeywords[style].also}. Every one is free, open source and ready as SVG, PNG or code.`,
+      `This page holds all ${TOTAL} fmicon icons in the ${label.toLowerCase()} style, the ${styleKeywords[style].keyword} people also search for as ${styleKeywords[style].also}. Every one is free, open source and ready as SVG, PNG or code.`,
     ],
   }),
   styles: {
@@ -46,7 +46,7 @@ export const libraryArticle = {
       ? [
           {
             q: `What are ${styleKeywords[style.id].keyword}?`,
-            a: `${style.label} is one of the ${STYLES} FM Icons styles. Every icon has the same shape in every style, so you can switch a whole interface to ${style.label.toLowerCase()} icons without anything moving.`,
+            a: `${style.label} is one of the ${STYLES} fmicon styles. Every icon has the same shape in every style, so you can switch a whole interface to ${style.label.toLowerCase()} icons without anything moving.`,
           },
         ]
       : []),
@@ -67,7 +67,7 @@ export const libraryArticle = {
       a: "Linear and outline are clean lines, bold is solid, bulk and twotone add a softer second layer, broken has small gaps for a hand-drawn feel, duotone adds a tinted fill, and glass looks like a small 3D object.",
     },
     {
-      q: "Is FM Icons open source?",
+      q: "Is fmicon open source?",
       a: "Yes. The icons, packages and this website are on GitHub. You can request icons, report problems and send pull requests there.",
     },
   ],

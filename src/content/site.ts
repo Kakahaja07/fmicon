@@ -16,7 +16,7 @@ const STYLES = freeIconsMeta.styles.length;
 const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"][n] ?? String(n);
 
 export const brand = {
-  name: "FM Icons",
+  name: "fmicon",
   siteUrl: "https://fmicon.dev",
   description:
     `${TOTAL} free, open-source icons in ${STYLES} styles. Copy them as SVG, or install them for React, Vue, Svelte and React Native.`,
@@ -100,14 +100,14 @@ export const iconTool = {
     description:
       `Search, preview, recolour and copy ${TOTAL} free, open-source icons in ${STYLES} styles, including Glass and Duotone. Paste as SVG or code, or download the file.`,
   },
-  toolbar: { title: "FM Icons", cta: "Star on GitHub", home: "Back to FM Icons" },
+  toolbar: { title: "fmicon", cta: "Star on GitHub", home: "Back to fmicon home" },
   windowLink: `Browse all ${TOTAL} icons`,
 };
 
 /* ---------------------------------- Hero --------------------------------- */
 
 export const hero = {
-  announce: { badge: "New", label: "FM Icons is now free and open source", href: REPO },
+  announce: { badge: "New", label: "fmicon is now free and open source", href: REPO },
   title: "Every icon you need, one search away",
   sub: `${TOTAL} free, open-source icons in ${STYLES} styles. Find one in a keystroke, recolour it, and drop it into Figma, React, Vue or Flutter.`,
   search: {
@@ -200,12 +200,12 @@ export const library = {
 
 
 export const story = {
-  title: "Why I made FM Icons",
+  title: "Why I made fmicon",
   // PLACEHOLDER story: rewrite these paragraphs in your own words
   paragraphs: [
     "I was an icon hoarder. Thousands of SVGs across a dozen sets, and finding the right one took longer every week.",
     "So I gathered one set, gave every icon eight styles, and made it searchable in a single place.",
-    "Then I gave it away. FM Icons is free and open source, so you can use it in anything you build, and help make it better.",
+    "Then I gave it away. fmicon is free and open source, so you can use it in anything you build, and help make it better.",
   ],
   makers: [{ name: "Prashant Sharma", role: "Maker", initial: "P", emoji: "🧑‍💻", image: "/prashant.jpg", colors: ["#ffd29a", "#ff8f6b"] as const }],
   ps: "P.S. Missing an icon? Open an issue on GitHub and tell me which one.",
@@ -226,7 +226,7 @@ export const features = {
     },
     ai: {
       title: "Made for AI coding tools",
-      description: "Ask your assistant for an icon and it imports the package",
+      description: "Your AI assistant imports the right icon",
       chat: {
         me: "Add a lock icon to the login button",
         ai: "Added <Lock /> from @fmicons/react",
@@ -292,7 +292,7 @@ export const faq = {
   title: "Questions, answered",
   items: [
     {
-      q: "Is FM Icons really free?",
+      q: "Is fmicon really free?",
       a: `Yes. All ${TOTAL} icons in all ${STYLES} styles are free for personal and commercial work, including client projects and apps you sell. There is no paid tier and no sign-up.`,
     },
     {
@@ -312,7 +312,7 @@ export const faq = {
       a: "Yes. Every package takes size, color and variant props, and the line styles take strokeWidth too. In the browser you can tweak all of it live and copy the result.",
     },
     {
-      q: "Do I have to credit FM Icons?",
+      q: "Do I have to credit fmicon?",
       a: "Not in your app's interface. If you redistribute the icon files themselves, keep the licence notice. A link back or a GitHub star is always appreciated.",
     },
     {
@@ -369,5 +369,5 @@ export const footer = {
     },
   ] satisfies Array<{ title: string; links: Array<{ label: string; href: string; external?: boolean }> }>,
   madeBy: "Made by Prashant Sharma, who loves icons.",
-  copyright: `© ${new Date().getFullYear()} FM Icons · MIT licence`,
+  copyright: `© ${new Date().getFullYear()} fmicon · MIT licence`,
 };

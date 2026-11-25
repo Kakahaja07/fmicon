@@ -1,20 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 42" fill="none">
-  <!-- FM Icons mark: same drawing as src/components/ui/LogoMark.tsx -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- fmicon app icon: the dotted F on a dark tile. Same drawing as src/components/ui/AppIcon.tsx + LogoMark.tsx -->
   <defs>
+    <linearGradient id="t" x1="0" y1="0" x2="0.6" y2="1"><stop offset="0" stop-color="#2c2c31"/><stop offset="1" stop-color="#161618"/></linearGradient>
     <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="11" y1="9" x2="30" y2="9"><stop offset="0" stop-color="#9b3dff"/><stop offset="1" stop-color="#22c55e"/></linearGradient>
     <linearGradient id="b" gradientUnits="userSpaceOnUse" x1="11" y1="21" x2="25" y2="21"><stop offset="0" stop-color="#ff3d8b"/><stop offset="1" stop-color="#ff9f0a"/></linearGradient>
     <linearGradient id="c" gradientUnits="userSpaceOnUse" x1="11" y1="9" x2="11" y2="21"><stop offset="0" stop-color="#9b3dff"/><stop offset="1" stop-color="#ff3d8b"/></linearGradient>
     <linearGradient id="d" gradientUnits="userSpaceOnUse" x1="11" y1="21" x2="11" y2="33"><stop offset="0" stop-color="#ff3d8b"/><stop offset="1" stop-color="#1e8cff"/></linearGradient>
   </defs>
-  <g opacity="0.55" stroke-width="7" stroke-linecap="round">
-    <path d="M11 9Q20.5 6.5 30 9" stroke="url(#a)"/>
-    <path d="M11 21Q18 23.5 25 21" stroke="url(#b)"/>
-    <path d="M11 9Q11 15 11 21" stroke="url(#c)"/>
-    <path d="M11 21Q11 27 11 33" stroke="url(#d)"/>
+  <rect width="64" height="64" rx="16.6" fill="url(#t)"/>
+  <rect x="0.5" y="0.5" width="63" height="63" rx="16.1" stroke="#fff" stroke-opacity="0.12"/>
+  <g transform="translate(14.5 11.5) scale(0.98)">
+    <g opacity="0.55" stroke-width="7" stroke-linecap="round">
+      <path d="M11 9Q20.5 6.5 30 9" stroke="url(#a)"/>
+      <path d="M11 21Q18 23.5 25 21" stroke="url(#b)"/>
+      <path d="M11 9Q11 15 11 21" stroke="url(#c)"/>
+      <path d="M11 21Q11 27 11 33" stroke="url(#d)"/>
+    </g>
+    <circle cx="11" cy="9" r="5" fill="#9b3dff"/>
+    <circle cx="30" cy="9" r="5" fill="#22c55e"/>
+    <circle cx="11" cy="21" r="5" fill="#ff3d8b"/>
+    <circle cx="25" cy="21" r="5" fill="#ff9f0a"/>
+    <circle cx="11" cy="33" r="5" fill="#1e8cff"/>
   </g>
-  <circle cx="11" cy="9" r="5" fill="#9b3dff"/>
-  <circle cx="30" cy="9" r="5" fill="#22c55e"/>
-  <circle cx="11" cy="21" r="5" fill="#ff3d8b"/>
-  <circle cx="25" cy="21" r="5" fill="#ff9f0a"/>
-  <circle cx="11" cy="33" r="5" fill="#1e8cff"/>
 </svg>

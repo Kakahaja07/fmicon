@@ -69,14 +69,14 @@ export function AppWindow() {
   };
 
   return (
-    <div className={s.window} role="group" aria-label="Interactive preview of the FM Icons app">
+    <div className={s.window} role="group" aria-label="Interactive preview of the fmicon app">
       <div className={s.titlebar}>
         <span className={s.lights} aria-hidden="true">
           <i />
           <i />
           <i />
         </span>
-        <span className={s.windowTitle}>FM Icons — {styleLabels[style]}</span>
+        <span className={s.windowTitle}>fmicon — {styleLabels[style]}</span>
       </div>
 
       <aside className={s.side}>

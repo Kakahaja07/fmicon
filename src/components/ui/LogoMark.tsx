@@ -1,6 +1,6 @@
 import { useId } from "react";
 
-/* The FM Icons mark: five coloured dots on an "F", joined by soft gradient bars.
+/* The fmicon mark: five coloured dots on an "F", joined by soft gradient bars.
    Top bar: purple → green. Middle bar: pink → orange. Stem: purple → pink → blue.
    The same drawing lives in public/favicon.svg. */
 

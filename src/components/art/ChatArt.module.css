@@ -19,7 +19,7 @@
   position: absolute;
   left: 28px;
   right: 28px;
-  top: 44px;
+  top: 36px;
   display: grid;
   gap: 10px;
 }
@@ -49,35 +49,87 @@
   border-bottom-left-radius: 5px;
 }
 
-.results {
-  display: flex;
-  gap: 4px;
-  color: var(--accent);
+.aiMark {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: rgba(217, 119, 87, 0.14);
 }
+
+/* The code the assistant wrote, with the button it makes */
+.code {
+  margin-top: 6px;
+  border-radius: 14px;
+  background: #121315;
+  box-shadow: inset 0 0 0 1px var(--hairline), 0 12px 32px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+  padding: 0 8px 0 14px;
+  border-bottom: 1px solid var(--hairline);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-3);
+}
+
+.result {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px;
+  border-radius: 8px;
+  background: var(--btn-primary);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: var(--weight-medium);
+  color: #fff;
+}
+
+.code pre {
+  margin: 0;
+  padding: 12px 14px 14px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: #d4d4d8;
+  white-space: pre;
+  overflow: hidden;
+}
+
+.k { color: var(--code-keyword, #ff7ab2); }
+.c { color: var(--code-tag, #7cc4ff); }
+.a { color: var(--code-attr, #c792ea); }
+.str { color: var(--code-string, #9ee493); }
 
 .tools {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-size: var(--text-sm);
 }
 
-.tools > span {
+/* Real AI tool logos in a row of small chips */
+.logos {
   display: flex;
-  padding: 3px;
-  border-radius: var(--radius-pill);
+  gap: 4px;
+}
+
+.logos i {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
   background: var(--surface);
-  box-shadow: 0 0 0 1px var(--hairline);
-}
-
-.tools i {
-  width: 14px;
-  height: 14px;
-  margin-left: -3px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 1.5px var(--surface);
-}
-
-.tools i:first-child {
-  margin-left: 0;
+  box-shadow: inset 0 0 0 1px var(--hairline);
+  color: var(--text);
 }

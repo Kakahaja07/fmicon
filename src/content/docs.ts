@@ -374,9 +374,9 @@ export const docPages: DocPage[] = [
     label: "Flutter",
     logo: "flutter",
     installCommand: "flutter pub add flutter_svg",
-    description: "Use FM Icons in Flutter through flutter_svg. Every icon page gives you a ready SvgPicture snippet.",
+    description: "Use fmicon in Flutter through flutter_svg. Every icon page gives you a ready SvgPicture snippet.",
     sections: [
-      { id: "overview", title: "Flutter", text: ["Use FM Icons in Flutter through flutter_svg. Every icon page gives you a ready `SvgPicture` snippet with your size and colour applied."] },
+      { id: "overview", title: "Flutter", text: ["Use fmicon in Flutter through flutter_svg. Every icon page gives you a ready `SvgPicture` snippet with your size and colour applied."] },
       { id: "installation", title: "Installation", text: ["Add flutter_svg to your app."], block: "install" },
       { id: "usage", title: "Basic usage", text: ["Copy the Flutter snippet from any icon page, or load the SVG from the CDN."], code: [{ title: "lib/icons.dart", code: `import 'package:flutter_svg/flutter_svg.dart';\n\nfinal homeIcon = SvgPicture.network(\n  '${openSource.cdn}/linear/home.svg',\n  width: 24,\n  height: 24,\n  colorFilter: const ColorFilter.mode(Color(0xFF1265EC), BlendMode.srcIn),\n);` }] },
       { id: "assets", title: "Bundling the files", text: ["For offline apps, download the SVGs you need into `assets/icons/` and load them with `SvgPicture.asset`."], code: [{ title: "pubspec.yaml", code: "flutter:\n  assets:\n    - assets/icons/" }, { title: "Widget", code: "SvgPicture.asset('assets/icons/home.svg', width: 24, height: 24)" }] },
@@ -418,9 +418,9 @@ export const docPages: DocPage[] = [
 ];
 
 export const docsIntro = {
-  title: "What is FM Icons?",
+  title: "What is fmicon?",
   text: [
-    `FM Icons is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass and duotone.`,
+    `fmicon is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass and duotone.`,
     "There are packages for `@fmicons/react`, `@fmicons/react-native`, `@fmicons/vue`, `@fmicons/svelte` and `@fmicons/core` (vanilla JS), plus raw SVG files on a CDN and ready code for Angular and Flutter.",
     "Everything is MIT licensed, tree-shakeable and typed.",
   ],

@@ -4,7 +4,7 @@ import { iconTool, openSource } from "~/content/site";
 import { GithubLogo } from "~/components/ui/FrameworkLogo";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { MoonBoldIcon, MoonIcon, SunBoldIcon, SunIcon } from "~/components/icons/Icons";
-import { AppIcon } from "~/components/ui/AppIcon";
+import { Wordmark } from "~/components/ui/Wordmark";
 import { Button } from "~/components/ui/Button";
 import { SearchField } from "~/components/ui/SearchField";
 import { Segmented } from "~/components/ui/Segmented";
@@ -47,12 +47,9 @@ export function ToolBar({ query, onQuery, theme, onTheme, contained }: ToolBarPr
     <header className={s.bar} data-contained={contained || undefined}>
       <div className={s.brand}>
         <Link to="/" className={s.home} aria-label={iconTool.toolbar.home} title={iconTool.toolbar.home}>
-          <AppIcon size={26} />
+          <Wordmark size={26} />
         </Link>
-        <p className={s.title}>
-          {iconTool.toolbar.title}
-          <span className={s.count}>{freeIconsMeta.total}</span>
-        </p>
+        <span className={s.count}>{freeIconsMeta.total}</span>
       </div>
 
       <div className={s.search}>

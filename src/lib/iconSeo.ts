@@ -119,7 +119,7 @@ export function iconHead(style: IconStyle, icon: { slug: string; name: string; c
   const name = humanName(icon.name);
   const path = iconPath(style, icon.slug);
   const primary = article?.primary ?? `${name.toLowerCase()} icon`;
-  // e.g. "Refresh Icon: Free SVG, PNG & React | FM Icons"; other styles name theirs: "Refresh Icon (Glass): …"
+  // e.g. "Refresh Icon: Free SVG, PNG & React | fmicon"; other styles name theirs: "Refresh Icon (Glass): …"
   // One bracket only: "Hourglass Icon (Timer, Glass)", "Refresh Icon (Glass)"
   const base = titleCase(iconTitle(name, article?.primary));
   const heading = style === "linear" ? base : base.endsWith(")") ? `${base.slice(0, -1)}, ${label})` : `${base} (${label})`;

@@ -1,15 +1,14 @@
 .wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 0.45em;
+  gap: 0.42em;
   white-space: nowrap;
 }
 
 .name {
   display: inline-flex;
   align-items: baseline;
-  gap: 0.22em;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.04em;
   line-height: 1;
 }
 

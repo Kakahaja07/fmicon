@@ -3,7 +3,7 @@ const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from",
 
 /**
  * Headings in title case: "8 icon styles in one library" → "8 Icon Styles in One Library".
- * Words that already have capitals (SVG, FM, iOS) and code-like words (@fmicons/react, ROND) are left alone.
+ * Words that already have capitals (SVG, iOS), the brand (fmicon) and code-like words (@fmicons/react) are left alone.
  */
 export function titleCase(text: string) {
   const words = text.split(/(\s+)/);
@@ -15,7 +15,8 @@ export function titleCase(text: string) {
       const lower = word.toLowerCase();
       const startsLower = /^[a-z]/.test(word);
       const bare = word.replace(/[.,:;!?)"']+$/, "");
-      const plain = startsLower && !/[A-Z@/._`]/.test(bare);
+      // The brand stays lowercase: "fmicon"
+      const plain = startsLower && !/[A-Z@/._`]/.test(bare) && !/^fmicon/.test(lower);
       let out = word;
       if (plain && (afterColon || isLast || !SMALL.has(lower.replace(/[^a-z]/g, "")))) {
         // Capitalise each part of a hyphenated word: "open-source" → "Open-Source"

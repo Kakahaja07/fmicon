@@ -1,15 +1,15 @@
 import { cx } from "~/lib/cx";
-import { LogoMark } from "./LogoMark";
+import { AppIcon } from "./AppIcon";
 import s from "./Wordmark.module.css";
 
-/** The dotted "F" mark with the name set as a wordmark: "FM" strong, "Icons" lighter. */
+/** The app tile with the name set as a wordmark: "fm" strong, "icon" lighter (same as the README logo). */
 export function Wordmark({ size = 28, className }: { size?: number; className?: string }) {
   return (
-    <span className={cx(s.wordmark, className)} style={{ fontSize: Math.round(size * 0.66) }}>
-      <LogoMark size={size} />
+    <span className={cx(s.wordmark, className)} style={{ fontSize: Math.round(size * 0.72) }}>
+      <AppIcon size={size} />
       <span className={s.name}>
-        <b>FM</b>
-        <span>Icons</span>
+        <b>fm</b>
+        <span>icon</span>
       </span>
     </span>
   );

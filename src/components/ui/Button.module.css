@@ -26,7 +26,7 @@
 
 .primary {
   --btn-bg: var(--btn-primary);
-  --btn-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 8px 24px -8px rgba(110, 70, 255, 0.6);
+  --btn-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.22), 0 8px 24px -8px rgba(30, 140, 255, 0.55);
 }
 .success { --btn-bg: var(--btn-success); }
 .dark { --btn-bg: var(--btn-dark); --btn-fg: var(--btn-dark-text); }

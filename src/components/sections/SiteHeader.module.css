@@ -15,7 +15,7 @@
   align-items: center;
   gap: 2px;
   height: 42px;
-  padding: 5px;
+  padding: 5px 5px 5px 7px;
   border-radius: 13px;
   background: var(--surface-glass);
   -webkit-backdrop-filter: blur(24px) saturate(1.8);
@@ -35,8 +35,8 @@
   place-items: center;
   width: 32px;
   height: 32px;
-  margin-right: 4px;
-  border-radius: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
 }
 
 .logo > span {
@@ -54,6 +54,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  gap: 2px;
   isolation: isolate;
 }
 
@@ -98,8 +99,8 @@
 /* ---- Divider + CTA ---- */
 .divider {
   width: 1px;
-  height: 20px;
-  margin: 0 6px 0 4px;
+  height: 18px;
+  margin: 0 10px;
   background: var(--hairline-strong);
 }
 

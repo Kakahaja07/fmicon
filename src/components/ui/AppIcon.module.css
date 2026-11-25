@@ -1,11 +1,20 @@
+/* App tile: dark, softly lit from the top, with a fine light rim */
 .icon {
   width: var(--i);
   height: var(--i);
   flex: none;
   display: grid;
   place-items: center;
+  border-radius: 26%;
+  background: linear-gradient(160deg, #2c2c31, #161618);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.4);
 }
 
+/* The F sits a touch right of centre so it looks centred (its stem is on the left) */
 .icon svg {
   display: block;
+  margin-left: 6%;
 }

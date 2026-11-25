@@ -38,7 +38,7 @@ export function pageToMarkdown(page: DocPage) {
   return out.join("\n\n");
 }
 
-/** A short brief an AI coding agent can follow to add FM Icons to a project. */
+/** A short brief an AI coding agent can follow to add fmicon to a project. */
 export function pageToPrompt(page: DocPage) {
   const install = installLine(page);
   const usage = page.sections.find((s) => s.id === "usage")?.code?.[0]?.code;
