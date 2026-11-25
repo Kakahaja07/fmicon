@@ -49,16 +49,15 @@
 
 .logo:active > span { transform: scale(0.94); }
 
-/* Three yellow pencil strokes beside the logo, drawn in one after another on hover */
+/* Three yellow pencil strokes off the logo's top-right corner, drawn in one after another on hover */
 .logo { position: relative; }
 
 .strokes {
   position: absolute;
-  top: 50%;
-  right: -15px;
-  width: 12px;
-  height: 18px;
-  margin-top: -9px;
+  top: -8px;
+  right: -12px;
+  width: 14px;
+  height: 14px;
   overflow: visible;
   pointer-events: none;
   fill: none;

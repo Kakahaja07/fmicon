@@ -53,11 +53,11 @@ export function SiteHeader() {
       <nav className={s.nav} aria-label="Primary" data-scrolled={scrolled || undefined}>
         <a className={s.logo} href="/" aria-label={`${brand.name} home`}>
           {bar ? <Wordmark size={28} /> : <AppIcon size={28} />}
-          {/* Three pencil strokes, drawn in on hover */}
-          <svg className={s.strokes} viewBox="0 0 12 18" aria-hidden="true">
-            <path pathLength={1} d="M1.5 3.5C4 1.6 6.6 5 10.5 2.6" />
-            <path pathLength={1} d="M1 9.2C3.6 7.4 6.4 10.8 10.8 8.4" />
-            <path pathLength={1} d="M1.5 15C4 13.2 6.8 16.4 10.5 14.2" />
+          {/* Three pencil strokes fanning out of the top-right corner, drawn in on hover */}
+          <svg className={s.strokes} viewBox="0 0 14 14" aria-hidden="true">
+            <path pathLength={1} d="M2.6 8.6Q3.1 5.4 3.4 1.8" />
+            <path pathLength={1} d="M5.4 10.2Q8.2 7.8 11.2 4.6" />
+            <path pathLength={1} d="M6.6 13Q9.8 12.6 12.8 11.6" />
           </svg>
         </a>
 
