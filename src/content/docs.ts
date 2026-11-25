@@ -418,7 +418,7 @@ export const docPages: DocPage[] = [
 ];
 
 export const docsIntro = {
-  title: "What is fmicon?",
+  title: "What is fmicon.dev?",
   text: [
     `fmicon is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass and duotone.`,
     "There are packages for `fmicon-react`, `fmicon-react-native`, `fmicon-vue`, `fmicon-svelte` and `fmicon` (vanilla JS), plus raw SVG files on a CDN and ready code for Angular and Flutter.",

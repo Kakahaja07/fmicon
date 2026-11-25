@@ -9,11 +9,13 @@ const json = (key: string) => JSON.stringify({ mcpServers: { fmicon: { [key]: MC
 const cursorConfig = btoa(JSON.stringify({ url: MCP_URL }));
 const vscodeConfig = JSON.stringify({ name: "fmicon", type: "http", url: MCP_URL });
 
+import type { AppId } from "~/components/ui/AppTile";
+
 export type McpClient = {
   id: string;
   label: string;
-  /** An AI tool logo id from AiLogo, or a plain icon */
-  logo: "claude" | "cursor" | "githubcopilot" | "windsurf" | "codex" | "other";
+  /** The app's icon (public/apps), or a drawn tile for apps without one */
+  logo: AppId;
   /** One-click install link, where the app supports one */
   install?: { label: string; href: string };
   steps: string[];
@@ -24,7 +26,7 @@ export const mcpClients: McpClient[] = [
   {
     id: "claude-code",
     label: "Claude Code",
-    logo: "claude",
+    logo: "claude-code",
     steps: ["Run this in your terminal.", "Start Claude Code and ask for an icon."],
     code: { lang: "bash", text: `claude mcp add --transport http fmicon ${MCP_URL}` },
   },
@@ -46,7 +48,7 @@ export const mcpClients: McpClient[] = [
   {
     id: "vscode",
     label: "VS Code",
-    logo: "githubcopilot",
+    logo: "vscode",
     install: { label: "Add to VS Code", href: `vscode:mcp/install?${encodeURIComponent(vscodeConfig)}` },
     steps: ["Click Add to VS Code, or run this command.", "Open Copilot Chat in Agent mode and ask for an icon."],
     code: { lang: "bash", text: `code --add-mcp '${vscodeConfig}'` },

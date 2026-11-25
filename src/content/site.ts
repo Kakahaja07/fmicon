@@ -108,7 +108,8 @@ export const iconTool = {
 /* ---------------------------------- Hero --------------------------------- */
 
 export const hero = {
-  announce: { badge: "New", label: "fmicon is now free and open source", href: REPO },
+  // The pill above the headline: what is new, with the AI apps it works in
+  announce: { badge: "New", label: "fmicon MCP: icons inside your AI assistant", short: "fmicon MCP is live", href: "/mcp" },
   title: "Every icon you need, one search away",
   // Shown as written: title case, but "icon" stays lowercase like the fmicon name
   titleDisplay: "Every icon You Need, One Search Away",
@@ -120,7 +121,7 @@ export const hero = {
     popularLabel: "Popular:",
     popular: ["home", "wallet", "arrow", "message", "setting", "calendar"],
   },
-  primary: { label: `Browse ${TOTAL} icons`, href: "/icons" },
+  primary: { label: "Browse all icons", href: "/icons" },
   secondary: { label: "Star on GitHub", href: REPO },
   meta: ["MIT licence", "No sign-up", "Install with"],
   install: "npm i fmicon-react",

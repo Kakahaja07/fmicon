@@ -1,5 +1,8 @@
 import { LockIcon } from "~/components/icons/Icons";
 import { AiLogo, aiTools } from "~/components/ui/AiLogo";
+import { AppTile, type AppId } from "~/components/ui/AppTile";
+
+const TOOL_APPS: AppId[] = ["claude", "cursor", "vscode", "windsurf", "codex"];
 import s from "./ChatArt.module.css";
 
 type ChatArtProps = { me: string; ai: string };
@@ -51,10 +54,8 @@ export function ToolDots({ label }: { label: string }) {
   return (
     <p className={s.tools}>
       <span className={s.logos}>
-        {aiTools.map((tool) => (
-          <i key={tool.id} title={tool.label}>
-            <AiLogo tool={tool} size={13} />
-          </i>
+        {TOOL_APPS.map((app) => (
+          <AppTile key={app} app={app} size={24} />
         ))}
       </span>
       {label}

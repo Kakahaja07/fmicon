@@ -6,7 +6,7 @@
   grid-template-columns: 210px minmax(0, 1fr) 200px;
   gap: 48px;
   align-items: start;
-  padding: 36px 0 96px;
+  padding: 14px 0 96px; /* content starts right under the header bar */
 }
 
 .side,

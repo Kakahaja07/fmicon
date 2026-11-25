@@ -1,8 +1,12 @@
+import { Link } from "@tanstack/react-router";
 import { hero } from "~/content/site";
 import { ArrowRightIcon } from "~/components/icons/Icons";
 import { Button } from "~/components/ui/Button";
 import { Container } from "~/components/ui/Container";
 import { GithubLogo, NpmLogo } from "~/components/ui/FrameworkLogo";
+import { AppTile } from "~/components/ui/AppTile";
+import { StarBoldIcon } from "~/components/icons/Icons";
+import { formatStars, useGithubStars } from "~/hooks/useGithubStars";
 import { AppWindow } from "./AppWindow";
 import { IconField } from "./IconField";
 import { StatsBand } from "./StatsBand";
@@ -13,16 +17,24 @@ import s from "./Hero.module.css";
  * then the app itself on a clean grid backdrop.
  */
 export function Hero() {
+  const stars = useGithubStars(hero.secondary.href);
   return (
     <section className={s.hero} aria-labelledby="hero-title">
       <IconField />
 
       <Container className={s.inner}>
-        <a href={hero.announce.href} target="_blank" rel="noreferrer" className={s.announce}>
+        <Link to={hero.announce.href} className={s.announce}>
           <span className={s.announceBadge}>{hero.announce.badge}</span>
-          {hero.announce.label}
-          <ArrowRightIcon size={14} />
-        </a>
+          {/* The AI apps it works in, as a small overlapping stack */}
+          <span className={s.announceLogos} aria-hidden="true">
+            {(["claude", "vscode", "codex"] as const).map((app) => (
+              <AppTile key={app} app={app} size={20} />
+            ))}
+          </span>
+          <span className={s.announceLong}>{hero.announce.label}</span>
+          <span className={s.announceShort}>{hero.announce.short}</span>
+          <ArrowRightIcon size={14} className={s.announceArrow} />
+        </Link>
 
         <h1 id="hero-title" className={s.title}>
           {hero.titleDisplay}
@@ -43,8 +55,24 @@ export function Hero() {
           <Button href={hero.primary.href} size="lg" iconRight={ArrowRightIcon}>
             {hero.primary.label}
           </Button>
-          <Button href={hero.secondary.href} target="_blank" rel="noreferrer" variant="ghost" size="lg" icon={GithubLogo}>
-            {hero.secondary.label}
+          {/* GitHub logo, then the live star count */}
+          <Button
+            href={hero.secondary.href}
+            target="_blank"
+            rel="noreferrer"
+            variant="ghost"
+            size="lg"
+            icon={GithubLogo}
+            className={s.github}
+            aria-label={`Star fmicon on GitHub (${stars} ${stars === 1 ? "star" : "stars"})`}
+            badge={
+              <span className={s.stars}>
+                <StarBoldIcon size={13} color="#ffc53d" />
+                {formatStars(stars)}
+              </span>
+            }
+          >
+            {null}
           </Button>
         </div>
 

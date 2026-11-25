@@ -1,15 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { MCP_URL, mcpClients, mcpPage, type McpClient } from "~/content/mcp";
-import { ArrowRightIcon, CodeIcon, CommandIcon, CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
-import { AiLogo, aiTools } from "~/components/ui/AiLogo";
+import { ArrowRightIcon, CopyIcon, TickCircleIcon } from "~/components/icons/Icons";
+import { AppTile } from "~/components/ui/AppTile";
 import { cx } from "~/lib/cx";
 import s from "./Mcp.module.css";
 
-function ClientLogo({ logo, size = 22 }: { logo: McpClient["logo"]; size?: number }) {
-  if (logo === "codex") return <CommandIcon size={size} />;
-  if (logo === "other") return <CodeIcon size={size} />;
-  const tool = aiTools.find((t) => t.id === logo);
-  return tool ? <AiLogo tool={tool} size={size} /> : null;
+function ClientLogo({ logo, size = 40 }: { logo: McpClient["logo"]; size?: number }) {
+  return <AppTile app={logo} size={size} />;
 }
 
 /** Copy button with a short "Copied" state. */
@@ -68,7 +65,7 @@ export function McpClients() {
       <div id="mcp-setup" role="tabpanel" className={s.setup} key={client.id}>
         <div className={s.setupHead}>
           <span className={s.setupLogo}>
-            <ClientLogo logo={client.logo} size={18} />
+            <ClientLogo logo={client.logo} size={30} />
           </span>
           <h3 className={s.setupTitle}>Set up in {client.label}</h3>
           {client.install && (

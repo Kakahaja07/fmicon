@@ -1,5 +1,5 @@
 // Small joining words stay lowercase inside a title (but not first, last, or after a colon).
-const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "nor", "of", "on", "or", "per", "the", "to", "vs", "with"]);
+const SMALL = new Set(["a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into", "is", "nor", "of", "on", "or", "per", "the", "to", "vs", "with"]);
 
 /**
  * Headings in title case: "8 icon styles in one library" → "8 Icon Styles in One Library".

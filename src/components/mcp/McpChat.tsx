@@ -10,6 +10,7 @@ import {
   type IconComponent,
 } from "~/components/icons/Icons";
 import { AiLogo, aiTools } from "~/components/ui/AiLogo";
+import { AppTile } from "~/components/ui/AppTile";
 import { Reveal } from "~/components/ui/Reveal";
 import s from "./Mcp.module.css";
 
@@ -41,7 +42,7 @@ export function McpChat() {
           <i />
         </span>
         <span className={s.chatTitle}>
-          <AiLogo tool={claude} size={13} />
+          <AppTile app="claude-code" size={16} />
           Claude Code
         </span>
         <span className={s.chatServer}>

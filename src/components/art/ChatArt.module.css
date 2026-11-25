@@ -123,13 +123,25 @@
   gap: 4px;
 }
 
-.logos i {
-  display: grid;
-  place-items: center;
-  width: 24px;
-  height: 24px;
-  border-radius: 7px;
-  background: var(--surface);
-  box-shadow: inset 0 0 0 1px var(--hairline);
-  color: var(--text);
+.logos img,
+.logos span {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Phones: a tighter chat so the code ends well above the card's title, then fade into the card */
+@media (max-width: 640px) {
+  .bubbles { left: 16px; right: 16px; top: 18px; gap: 8px; }
+  .me, .ai { max-width: 88%; padding: 8px 12px; font-size: 13px; line-height: 18px; }
+  .code { margin-top: 2px; border-radius: 12px; }
+  .file { height: 34px; padding: 0 6px 0 12px; font-size: 11px; }
+  .result { height: 24px; font-size: 11px; }
+  .code pre { padding: 10px 12px 12px; font-size: 11.5px; line-height: 1.55; }
+  .art::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0 0;
+    height: 42%;
+    background: linear-gradient(to bottom, transparent, var(--surface) 62%);
+    pointer-events: none;
+  }
 }
