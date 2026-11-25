@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { brand } from "~/content/site";
-import { ClosingCta } from "~/components/sections/ClosingCta";
 import { Faq } from "~/components/sections/Faq";
 import { Features } from "~/components/sections/Features";
 import { Hero } from "~/components/sections/Hero";
@@ -24,7 +23,6 @@ function HomePage() {
       <OpenSource />
       <MakerNote />
       <Faq />
-      <ClosingCta />
     </main>
   );
 }

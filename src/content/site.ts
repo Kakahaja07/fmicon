@@ -313,15 +313,6 @@ export const faq = {
   ],
 };
 
-/* ------------------------------ Closing CTA ------------------------------ */
-
-export const closingCta = {
-  title: "Find the right icon, every time.",
-  text: `${TOTAL} free, open-source icons in ${STYLES} styles. Use them anywhere.`,
-  primary: { label: `Browse ${TOTAL} icons`, href: "/icons" },
-  secondary: { label: "Star on GitHub", href: REPO },
-};
-
 /* --------------------------------- Footer -------------------------------- */
 
 export const footer = {
