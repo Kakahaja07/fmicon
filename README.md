@@ -3,7 +3,7 @@
 <a href="https://fmicon.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/assets/wordmark-dark.png">
-    <img src=".github/assets/wordmark-light.png" alt="FM Icons" width="240">
+    <img src=".github/assets/wordmark-light.png" alt="fmicon" width="200">
   </picture>
 </a>
 
@@ -23,15 +23,15 @@
 <a href="https://fmicon.dev/icons">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/assets/showcase-dark.png">
-    <img src=".github/assets/showcase-light.png" alt="Ten FM Icons in the linear, bold, duotone and glass styles" width="820">
+    <img src=".github/assets/showcase-light.png" alt="Ten fmicon icons in the linear, bold, duotone and glass styles" width="820">
   </picture>
 </a>
 
 </div>
 
-## What is FM Icons?
+## What is fmicon?
 
-FM Icons is a free set of small pictures (icons) that you can put in your website, app or design.
+fmicon is a free set of small pictures (icons) that you can put in your website, app or design.
 
 - **Lots of icons.** There are 891 icons, like a home, a bell, a heart and a wallet.
 - **8 looks for every icon.** Each icon comes in 8 styles, from thin lines to shiny glass. The shape stays the same, so you can mix them.
@@ -43,7 +43,7 @@ Browse and copy every icon at **[fmicon.dev](https://fmicon.dev)**.
 
 ## How to use it
 
-You can use FM Icons in three ways. Pick the one that fits you.
+You can use fmicon in three ways. Pick the one that fits you.
 
 **1. Copy an icon (no setup).** Open [fmicon.dev/icons](https://fmicon.dev/icons), click an icon, then copy it or download it as SVG, PNG or WebP.
 
@@ -244,24 +244,24 @@ Yes. [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) and tell 
 
 ## Contributing
 
-FM Icons is open source, and anyone can help make it better. You don't need to write code to help.
+fmicon is open source, and anyone can help make it better. You don't need to write code to help.
 
 <table>
 <tr>
 <td width="33%" align="center" valign="top">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/danger.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/danger.svg" width="40" alt=""></picture><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/danger.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/danger.svg" width="40" alt=""></picture><br>
 <b>Report a problem</b><br>
 <sub>An icon looks wrong or a package breaks.</sub><br><br>
 <a href="https://github.com/Kakahaja07/fmicons/issues/new">Open an issue →</a>
 </td>
 <td width="33%" align="center" valign="top">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/lamp-on.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/lamp-on.svg" width="40" alt=""></picture><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/lamp-on.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/lamp-on.svg" width="40" alt=""></picture><br>
 <b>Ask for an icon</b><br>
 <sub>Tell us which icon you need and where you'd use it.</sub><br><br>
 <a href="https://github.com/Kakahaja07/fmicons/issues/new">Request an icon →</a>
 </td>
 <td width="33%" align="center" valign="top">
-<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass/code.svg"><img src="https://cdn.jsdelivr.net/gh/Kakahaja07/fmicons@main/packages/svg/icons/glass-light/code.svg" width="40" alt=""></picture><br>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.fmicon.dev/svg/glass/code.svg"><img src="https://cdn.fmicon.dev/svg/glass-light/code.svg" width="40" alt=""></picture><br>
 <b>Send a fix</b><br>
 <sub>Improve the website, docs or packages.</sub><br><br>
 <a href="CONTRIBUTING.md">Read the guide →</a>
@@ -289,6 +289,6 @@ The code is free under the [MIT licence](LICENSE). The icon shapes come from the
 <div align="center">
   <img src=".github/assets/maker.png" width="48" height="48" alt="Prashant Sharma">
   <br>
-  <sub>Made by <b>Prashant Sharma</b>, who loves icons.<br>If FM Icons helps you, please give it a ⭐ so more people can find it.</sub>
+  <sub>Made by <b>Prashant Sharma</b>, who loves icons.<br>If fmicon helps you, please give it a ⭐ so more people can find it.</sub>
 </div>
 

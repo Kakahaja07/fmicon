@@ -1,4 +1,4 @@
-// Logo banner for the GitHub README: the dotted F on an app-icon tile and "FM Icons" in Allo, on a transparent ground,
+// Logo banner for the GitHub README: the dotted F on an app-icon tile and "fmicon" in Allo, on a transparent ground,
 // one for GitHub's dark theme and one for light. Renders with headless Edge or Chrome.
 //   npm run readme
 // Output: .github/assets/wordmark-{dark,light}.png and showcase-{dark,light}.png
@@ -10,7 +10,7 @@ import { join, resolve } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const OUT = ".github/assets";
-const W = 470;
+const W = 340;
 const H = 120;
 
 const browser = [
@@ -35,10 +35,10 @@ html, body { margin: 0; width: ${W}px; height: ${H}px; background: transparent; 
 body { display: flex; align-items: center; justify-content: center; gap: 24px; font-family: Allo, sans-serif; }
 .tile { width: 96px; height: 96px; border-radius: 24px; display: grid; place-items: center; background: ${tile}; box-shadow: inset 0 0 0 1.5px ${edge}; }
 .tile svg { margin-left: 4px; }
-.name { display: flex; align-items: baseline; gap: 14px; font-size: 68px; letter-spacing: -0.04em; line-height: 1; }
+.name { display: flex; align-items: baseline; gap: 1px; font-size: 72px; letter-spacing: -0.04em; line-height: 1; }
 b { font-weight: 760; color: ${ink}; }
 span { font-weight: 440; color: ${soft}; }
-</style></head><body><div class="tile">${mark}</div><div class="name"><b>FM</b><span>Icons</span></div></body></html>`;
+</style></head><body><div class="tile">${mark}</div><div class="name"><b>fm</b><span>icon</span></div></body></html>`;
 
 // Showcase: the same ten icons in four styles, one row each, labelled on the left
 const load = (style) => new Map(JSON.parse(readFileSync(`src/content/free-icons/${style}.json`, "utf8")).icons.map((i) => [i.slug, i.body]));

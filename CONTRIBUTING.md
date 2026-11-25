@@ -3,13 +3,13 @@
 <a href="https://fmicon.dev">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset=".github/assets/wordmark-dark.png">
-    <img src=".github/assets/wordmark-light.png" alt="FM Icons" width="200">
+    <img src=".github/assets/wordmark-light.png" alt="fmicon" width="170">
   </picture>
 </a>
 
-### Contributing to FM Icons
+### Contributing to fmicon
 
-Thanks for wanting to help! Every bug report, icon idea and fix makes FM Icons better for everyone.
+Thanks for wanting to help! Every bug report, icon idea and fix makes fmicon better for everyone.
 
 [Website](https://fmicon.dev) · [Docs](https://fmicon.dev/docs) · [Issues](https://github.com/Kakahaja07/fmicons/issues) · [Pull requests](https://github.com/Kakahaja07/fmicons/pulls)
 
@@ -56,7 +56,7 @@ Improve the website, docs or npm packages.<br>
 
 **Spread the word**<br>
 Give the repository a ⭐ and tell a friend who builds apps.<br>
-→ [Star FM Icons](https://github.com/Kakahaja07/fmicons)
+→ [Star fmicon](https://github.com/Kakahaja07/fmicons)
 
 </td>
 </tr>
@@ -173,5 +173,5 @@ By contributing, you agree that your work is shared under the same [MIT licence]
 <div align="center">
   <img src=".github/assets/maker.png" width="48" height="48" alt="Prashant Sharma">
   <br>
-  <sub>Thanks for helping, from <b>Prashant Sharma</b> and everyone who uses FM Icons.</sub>
+  <sub>Thanks for helping, from <b>Prashant Sharma</b> and everyone who uses fmicon.</sub>
 </div>
