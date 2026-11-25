@@ -223,6 +223,9 @@ Yes. [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) and tell 
 **I found a mistake. What do I do?**
 [Open an issue](https://github.com/Kakahaja07/fmicons/issues/new) with the icon's name and style. Pull requests are welcome too.
 
+**How can I help?**
+Read the [contributing guide](CONTRIBUTING.md). It shows how to report a problem, ask for an icon, or fix the website and packages.
+
 ## Licence
 
 The code is free under the [MIT licence](LICENSE). The icon shapes come from the "7000 FREE UI ICONS" Figma file by Cristian Muñoz and are shared with credit. The glass and duotone styles were made for this project from those shapes.
