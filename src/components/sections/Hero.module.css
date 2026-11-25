@@ -70,13 +70,19 @@
   animation: rise 700ms var(--ease-out) 120ms both;
 }
 
-/* Pencil line under the call-to-action buttons */
+/* Pencil underline under the frameworks */
+.scribbled {
+  position: relative;
+  white-space: nowrap;
+  color: var(--text);
+}
+
 .pencil {
   position: absolute;
-  left: -10px;
-  bottom: -14px;
-  width: calc(100% + 20px);
-  height: 12px;
+  left: -2px;
+  bottom: -7px;
+  width: calc(100% + 4px);
+  height: 10px;
   overflow: visible;
   fill: none;
   stroke: #ff9f0a;
@@ -103,7 +109,6 @@
 }
 
 .actions {
-  position: relative;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -112,8 +117,6 @@
 }
 
 .meta {
-  /* room for the pencil line above */
-  padding-top: 6px;
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;

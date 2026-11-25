@@ -113,6 +113,8 @@ export const hero = {
   title: "Every icon you need, one search away",
   // Shown as written: title case, but "icon" stays lowercase like the fmicon name
   titleDisplay: "Every icon You Need, One Search Away",
+  // Underlined in pencil inside the sub line
+  subHighlight: "Figma, React, Vue or Flutter",
   sub: `${TOTAL} free, open-source icons in ${STYLES} styles. Find one in a keystroke, recolour it, and drop it into Figma, React, Vue or Flutter.`,
   search: {
     placeholder: `Search ${TOTAL} icons, e.g. wallet, arrow, chat`,

@@ -28,17 +28,23 @@ export function Hero() {
         <h1 id="hero-title" className={s.title}>
           {hero.titleDisplay}
         </h1>
-        <p className={s.sub}>{hero.sub}</p>
+        <p className={s.sub}>
+          {hero.sub.split(hero.subHighlight)[0]}
+          <span className={s.scribbled}>
+            {hero.subHighlight}
+            {/* Hand-drawn pencil underline, drawn in once */}
+            <svg className={s.pencil} viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M2 9.5C20 6.5 34 11 52 8.2S86 4.6 104 8.6 140 11.4 160 7.6 196 5.2 218 8.8" />
+            </svg>
+          </span>
+          {hero.sub.split(hero.subHighlight)[1]}
+        </p>
 
         <div className={s.search}>
           <HeroSearch />
         </div>
 
         <div className={s.actions}>
-          {/* Hand-drawn pencil line under the two actions, drawn in once */}
-          <svg className={s.pencil} viewBox="0 0 380 14" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M3 8.5C38 5.2 70 10.6 112 7.4S186 3.8 228 7.6 300 11.2 340 7.2 368 5.6 377 7.8" />
-          </svg>
           <Button href={hero.primary.href} size="lg" iconRight={ArrowRightIcon}>
             {hero.primary.label}
           </Button>
