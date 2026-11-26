@@ -30,6 +30,12 @@
   background: color-mix(in srgb, var(--c) 14%, var(--surface));
 }
 
+/* Color icons carry their own colour and depth, so no tinted square behind them */
+.tile[data-animate] .icon {
+  justify-content: start;
+  background: none;
+}
+
 .title {
   margin-top: 14px;
   display: flex;

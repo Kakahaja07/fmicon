@@ -9,13 +9,13 @@
 
 ### Free icons for your website or app
 
-**996 icons. 9 styles. 39 payment logos. Free for everyone.**
+**1,021 icons. 9 styles. 39 payment logos. Free for everyone.**
 
 <p>
   <a href="https://fmicon.dev"><img src="https://img.shields.io/badge/Website-fmicon.dev-1265ec?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"></a>
   <a href="https://www.npmjs.com/package/fmicon-react"><img src="https://img.shields.io/npm/v/fmicon-react?style=flat-square&color=cb3837&logo=npm&label=npm" alt="npm version"></a>
   <a href="https://fmicon.dev/docs"><img src="https://img.shields.io/badge/Docs-read-2b2b2f?style=flat-square&logo=readthedocs&logoColor=white" alt="Docs"></a>
-  <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/icons-996-9b3dff?style=flat-square" alt="996 icons"></a>
+  <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/icons-1021-9b3dff?style=flat-square" alt="1,021 icons"></a>
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/styles-9-ff3d8b?style=flat-square" alt="9 styles"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-22c55e?style=flat-square" alt="MIT licence"></a>
   <a href="https://github.com/Kakahaja07/fmicon/stargazers"><img src="https://img.shields.io/github/stars/Kakahaja07/fmicon?style=flat-square&logo=github&color=2b2b2f" alt="GitHub stars"></a>
@@ -34,7 +34,7 @@
 
 fmicon is a free set of small pictures (icons) that you can put in your website, app or design.
 
-- **Lots of icons.** There are 996 icons, like a home, a bell, a heart and a wallet, plus brand and coin logos (Figma, Slack, Bitcoin, Ethereum and more).
+- **Lots of icons.** There are 1,021 icons, like a home, a bell, a heart and a wallet. 25 of them (robot, chip, git, DNA, paw and more) were drawn just for fmicon. There are also brand and coin logos (Figma, Slack, Bitcoin, Ethereum and more).
 - **9 looks for every icon.** Each icon comes in 9 styles, from thin lines to shiny glass and bright animated colour. The shape stays the same, so you can mix them.
 - **Free forever.** You can use them in personal and work projects. You don't need to pay or sign up.
 - **Easy to change.** Make any icon bigger, smaller or a different colour.
@@ -296,7 +296,7 @@ The **[contributing guide](CONTRIBUTING.md)** has every command, a map of where 
 
 ## Licence
 
-The code is free under the [MIT licence](LICENSE). The glass, duotone and color styles were made for this project.
+The code is free under the [MIT licence](LICENSE). The glass, duotone and color styles, and the icons in the AI & Dev, Science & Nature and Everyday categories, were made for this project.
 
 **Brand and payment logos.** The icons in the Brands category (Figma, Slack, YouTube, Bitcoin…) and the [payment logos](https://fmicon.dev/icons/payments) (Visa, Mastercard, PayPal…) are trademarks of their owners. The MIT licence covers the files, not the marks. Use a logo only to point to that product or to show which payment methods you accept, and follow the owner's brand rules.
 

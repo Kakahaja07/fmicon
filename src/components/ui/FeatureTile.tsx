@@ -3,10 +3,13 @@ import type { IconComponent } from "~/components/icons/Icons";
 import type { PaletteColor } from "~/lib/palette";
 import { paletteVar } from "~/lib/palette";
 import { Badge } from "./Badge";
+import { SvgIcon } from "./SvgIcon";
 import s from "./FeatureTile.module.css";
 
 export type FeatureTileProps = {
   icon: IconComponent;
+  /** A color-style icon body; shown (and animated) instead of `icon` */
+  art?: string;
   color: PaletteColor;
   title: string;
   description: string;
@@ -14,11 +17,12 @@ export type FeatureTileProps = {
 };
 
 /** Small feature card: tinted icon tile, title, one line of copy. */
-export function FeatureTile({ icon: Icon, color, title, description, badge }: FeatureTileProps) {
+export function FeatureTile({ icon: Icon, art, color, title, description, badge }: FeatureTileProps) {
   return (
-    <li className={s.tile} style={{ "--c": paletteVar(color) } as CSSProperties}>
+    // data-animate: a color icon's parts move when the tile is hovered
+    <li className={s.tile} style={{ "--c": paletteVar(color) } as CSSProperties} data-animate={art ? "" : undefined}>
       <span className={s.icon} aria-hidden="true">
-        <Icon size={22} />
+        {art ? <SvgIcon body={art} size={36} /> : <Icon size={22} />}
       </span>
       <h3 className={s.title}>
         {title}

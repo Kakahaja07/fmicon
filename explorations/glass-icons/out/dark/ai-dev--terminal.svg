@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-ai-dev-terminal-dark-s0" d="M7 3.5L17 3.5A5 5 0 0 1 22 8.5L22 15.5A5 5 0 0 1 17 20.5L7 20.5A5 5 0 0 1 2 15.5L2 8.5A5 5 0 0 1 7 3.5Z"/>
+  <path id="g-ai-dev-terminal-dark-s1" d="M6.47 10.03L8.97 12.53A0.75 0.75 0 0 0 10.03 11.47L7.53 8.97A0.75 0.75 0 0 0 6.47 10.03ZM8.97 11.47L6.47 13.97A0.75 0.75 0 0 0 7.53 15.03L10.03 12.53A0.75 0.75 0 0 0 8.97 11.47Z"/>
+  <path id="g-ai-dev-terminal-dark-s2" d="M12.5 15.25L17 15.25A0.75 0.75 0 0 0 17 13.75L12.5 13.75A0.75 0.75 0 0 0 12.5 15.25Z"/>
+  <linearGradient id="g-ai-dev-terminal-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-ai-dev-terminal-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-ai-dev-terminal-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-ai-dev-terminal-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-ai-dev-terminal-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-ai-dev-terminal-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-ai-dev-terminal-dark-s0" fill="url(#g-ai-dev-terminal-dark-glass)"/>
+<g mask="url(#g-ai-dev-terminal-dark-in0)"><use xlink:href="#g-ai-dev-terminal-dark-s0" fill="none" stroke="url(#g-ai-dev-terminal-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-ai-dev-terminal-dark-s1" fill="url(#g-ai-dev-terminal-dark-solid)"/>
+<use xlink:href="#g-ai-dev-terminal-dark-s2" fill="url(#g-ai-dev-terminal-dark-solid)"/>
+</svg>

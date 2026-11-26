@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-everyday-hourglass-light-s0" d="M6.5 2.5H17.5V6C17.5 9 14.75 10.75 13.25 12C14.75 13.25 17.5 15 17.5 18V21.5H6.5V18C6.5 15 9.25 13.25 10.75 12C9.25 10.75 6.5 9 6.5 6Z"/>
+  <path id="g-everyday-hourglass-light-s1" d="M4.5 3.25L19.5 3.25A0.75 0.75 0 0 0 19.5 1.75L4.5 1.75A0.75 0.75 0 0 0 4.5 3.25Z"/>
+  <path id="g-everyday-hourglass-light-s2" d="M4.5 22.25L19.5 22.25A0.75 0.75 0 0 0 19.5 20.75L4.5 20.75A0.75 0.75 0 0 0 4.5 22.25Z"/>
+  <path id="g-everyday-hourglass-light-s3" d="M9.25 18.75L14.75 18.75L12 16.25Z"/>
+  <linearGradient id="g-everyday-hourglass-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-everyday-hourglass-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-everyday-hourglass-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-everyday-hourglass-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-everyday-hourglass-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-everyday-hourglass-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-everyday-hourglass-light-s0" fill="url(#g-everyday-hourglass-light-glass)"/>
+<g mask="url(#g-everyday-hourglass-light-in0)"><use xlink:href="#g-everyday-hourglass-light-s0" fill="none" stroke="url(#g-everyday-hourglass-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-everyday-hourglass-light-s1" fill="url(#g-everyday-hourglass-light-solid)"/>
+<use xlink:href="#g-everyday-hourglass-light-s2" fill="url(#g-everyday-hourglass-light-solid)"/>
+<use xlink:href="#g-everyday-hourglass-light-s3" fill="url(#g-everyday-hourglass-light-solid)"/>
+</svg>

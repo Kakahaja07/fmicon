@@ -1,0 +1,34 @@
+{
+ "categories": {
+  "ai-dev": "AI & Dev",
+  "science-nature": "Science & Nature",
+  "everyday": "Everyday"
+ },
+ "ids": [
+  "ai-dev--robot",
+  "ai-dev--chip",
+  "ai-dev--terminal",
+  "ai-dev--git-branch",
+  "ai-dev--git-merge",
+  "ai-dev--git-pull-request",
+  "ai-dev--database",
+  "ai-dev--server",
+  "ai-dev--bug",
+  "ai-dev--plug",
+  "ai-dev--puzzle",
+  "ai-dev--rocket",
+  "science-nature--leaf",
+  "science-nature--plant",
+  "science-nature--planet",
+  "science-nature--atom",
+  "science-nature--dna",
+  "science-nature--mountain",
+  "everyday--pill",
+  "everyday--paw",
+  "everyday--compass",
+  "everyday--dice",
+  "everyday--target",
+  "everyday--hourglass",
+  "everyday--qr-code"
+ ]
+}

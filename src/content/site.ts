@@ -9,14 +9,16 @@ import * as I from "~/components/icons/Icons";
 import type { PaletteColor } from "~/lib/palette";
 import type { IconStyle } from "~/lib/svg";
 import { freeIconsMeta } from "./freeIcons.meta";
+import { colorPicks } from "./colorPicks";
+import { recolor } from "~/lib/colorStyle";
 
 // Counts come from the generated icon data, so copy stays right when the set changes.
 /**
  * How the landing page states the size of the set. Rounded on purpose ("800+"), so the marketing copy
  * stays true as icons are added. Bump it when a release passes the next milestone
- * (v1.1: 891 icons → "800+"; v1.2: 996 icons → "900+"). The icon tool and SEO pages use the exact freeIconsMeta.total.
+ * (v1.1: 891 icons → "800+"; v1.2: 996 icons → "900+"; v1.3: 1,021 icons → "1,000+"). The icon tool and SEO pages use the exact freeIconsMeta.total.
  */
-export const ICON_COUNT = "900+";
+export const ICON_COUNT = "1,000+";
 const STYLES = freeIconsMeta.styles.length;
 const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"][n] ?? String(n);
 
@@ -265,13 +267,13 @@ export const features = {
     },
   },
   tiles: [
-    { icon: I.SearchNormalTwotoneIcon, color: "blue", title: "Instant search", description: "Find any icon by name or category, in every style at once." },
-    { icon: I.MagicpenTwotoneIcon, color: "purple", title: "Eight styles, one shape", description: "Linear for idle, bold for active: every icon matches itself." },
-    { icon: I.HeartTwotoneIcon, color: "pink", title: "Free forever", description: "MIT licence. No sign-up, no account, no paywall." },
-    { icon: I.MouseTwotoneIcon, color: "orange", title: "Copy or download", description: "SVG, PNG or WebP at any size from 16 to 512 px." },
-    { icon: I.CodeTwotoneIcon, color: "green", title: "Packages for your stack", description: "React, Vue, Svelte and React Native, tree-shakeable and typed.", badge: "New" },
-    { icon: I.CloudChangeTwotoneIcon, color: "teal", title: "CDN ready", description: "Link any icon straight from cdn.fmicon.dev, no install needed." },
-  ] satisfies Array<{ icon: IconComponent; color: PaletteColor; title: string; description: string; badge?: string }>,
+    { icon: I.SearchNormalTwotoneIcon, art: recolor(colorPicks["search--search-normal"], "blue"), color: "blue", title: "Instant search", description: "Find any icon by name or category, in every style at once." },
+    { icon: I.MagicpenTwotoneIcon, art: recolor(colorPicks["design-tools--magicpen"], "violet"), color: "purple", title: `${spelled(STYLES)} styles, one shape`, description: "Linear for idle, bold for active: every icon matches itself." },
+    { icon: I.HeartTwotoneIcon, art: recolor(colorPicks["support-like-question--heart"], "pink"), color: "pink", title: "Free forever", description: "MIT licence. No sign-up, no account, no paywall." },
+    { icon: I.MouseTwotoneIcon, art: recolor(colorPicks["computers-devices-electronics--mouse"], "orange"), color: "orange", title: "Copy or download", description: "SVG, PNG or WebP at any size from 16 to 512 px." },
+    { icon: I.CodeTwotoneIcon, art: recolor(colorPicks["programing--code"], "green"), color: "green", title: "Packages for your stack", description: "React, Vue, Svelte and React Native, tree-shakeable and typed.", badge: "New" },
+    { icon: I.CloudChangeTwotoneIcon, art: recolor(colorPicks["computers-devices-electronics--cloud-change"], "teal"), color: "teal", title: "CDN ready", description: "Link any icon straight from cdn.fmicon.dev, no install needed." },
+  ] satisfies Array<{ icon: IconComponent; art?: string; color: PaletteColor; title: string; description: string; badge?: string }>,
   more: { label: `Browse all ${ICON_COUNT} icons`, href: "/icons" },
 };
 

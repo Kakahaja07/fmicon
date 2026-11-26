@@ -16,7 +16,7 @@ export const Route = createFileRoute("/_site/mcp")({
   head: () =>
     pageHead({
       title: `MCP Server: Free Icons in Claude, Cursor & VS Code - ${brand.name}`,
-      description: "Connect Claude Code, Cursor, VS Code, Windsurf or Codex to fmicon with MCP. Your AI assistant searches 996 free icons and writes the code. Free, hosted, no API key.",
+      description: "Connect Claude Code, Cursor, VS Code, Windsurf or Codex to fmicon with MCP. Your AI assistant searches 1,021 free icons and writes the code. Free, hosted, no API key.",
       path: "/mcp",
       image: "docs",
       jsonLd: [

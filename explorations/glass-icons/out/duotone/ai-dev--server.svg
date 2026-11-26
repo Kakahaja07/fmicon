@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.2"><path d="M6 3L18 3A3 3 0 0 1 21 6L21 8A3 3 0 0 1 18 11L6 11A3 3 0 0 1 3 8L3 6A3 3 0 0 1 6 3Z" fill="currentColor"/><path d="M6 13L18 13A3 3 0 0 1 21 16L21 18A3 3 0 0 1 18 21L6 21A3 3 0 0 1 3 18L3 16A3 3 0 0 1 6 13Z" fill="currentColor"/><path d="M5.9 7A1.1 1.1 0 1 1 8.1 7A1.1 1.1 0 1 1 5.9 7Z" fill="currentColor"/><path d="M5.9 17A1.1 1.1 0 1 1 8.1 17A1.1 1.1 0 1 1 5.9 17Z" fill="currentColor"/><path d="M12.5 7.75L17 7.75A0.75 0.75 0 0 0 17 6.25L12.5 6.25A0.75 0.75 0 0 0 12.5 7.75Z" fill="currentColor"/><path d="M12.5 17.75L17 17.75A0.75 0.75 0 0 0 17 16.25L12.5 16.25A0.75 0.75 0 0 0 12.5 17.75Z" fill="currentColor"/></g>
+<path d="M6 3L18 3A3 3 0 0 1 21 6L21 8A3 3 0 0 1 18 11L6 11A3 3 0 0 1 3 8L3 6A3 3 0 0 1 6 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 13L18 13A3 3 0 0 1 21 16L21 18A3 3 0 0 1 18 21L6 21A3 3 0 0 1 3 18L3 16A3 3 0 0 1 6 13Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.9 7A1.1 1.1 0 1 1 8.1 7A1.1 1.1 0 1 1 5.9 7Z" fill="currentColor"/>
+<path d="M5.9 17A1.1 1.1 0 1 1 8.1 17A1.1 1.1 0 1 1 5.9 17Z" fill="currentColor"/>
+<path d="M12.5 7L17 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 17L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

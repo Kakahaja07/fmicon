@@ -8,7 +8,7 @@
     "preview": "vite preview --port 3000",
     "typecheck": "tsc --noEmit",
     "icons": "node scripts/sync-icons.mjs",
-    "free-icons": "node scripts/build-free-icons.mjs && node scripts/build-icon-variants.mjs && node scripts/build-payments.mjs",
+    "free-icons": "node scripts/build-originals.mjs && node scripts/build-free-icons.mjs && node scripts/build-icon-variants.mjs && node scripts/build-payments.mjs",
     "articles": "node scripts/build-icon-articles.mjs",
     "packages": "node scripts/build-packages.mjs",
     "social": "node scripts/build-social.mjs",
@@ -17,7 +17,8 @@
     "readme": "node scripts/build-readme-assets.mjs",
     "blog": "node scripts/build-blog-schema.mjs",
     "variants": "node scripts/build-icon-variants.mjs",
-    "payments": "node scripts/build-payments.mjs"
+    "payments": "node scripts/build-payments.mjs",
+    "originals": "node scripts/build-originals.mjs && node icons-src/build-preview.mjs"
   },
   "dependencies": {
     "@fontsource/gochi-hand": "^5.3.0",

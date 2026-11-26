@@ -12,7 +12,7 @@
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
 import { basename, join } from "node:path";
 
-const LIB = "G:/UI Deisgn/icon-library/figma7000";
+const LIB = process.env.FMUI_LIB ?? "G:/UI Deisgn/icon-library/figma7000";
 const TINT = 0.2;
 
 const inner = (svg) => svg.replace(/^[\s\S]*?<svg\b[^>]*>/, "").replace(/<\/svg>\s*$/, "").trim();

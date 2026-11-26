@@ -1,0 +1,14 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-everyday-compass-dark-s0" d="M2 12A10 10 0 1 1 22 12A10 10 0 1 1 2 12Z"/>
+  <path id="g-everyday-compass-dark-s1" d="M15.75 8.25L13.6 13.6L8.25 15.75L10.4 10.4Z"/>
+  <linearGradient id="g-everyday-compass-dark-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f4f6" stop-opacity="1"/><stop offset="1" stop-color="#a4a4aa" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-everyday-compass-dark-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8d8dc" stop-opacity="0.34"/><stop offset="1" stop-color="#9a9aa0" stop-opacity="0.26"/></linearGradient>
+  <linearGradient id="g-everyday-compass-dark-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="0.7"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-everyday-compass-dark-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-everyday-compass-dark-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-everyday-compass-dark-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-everyday-compass-dark-s0" fill="url(#g-everyday-compass-dark-glass)"/>
+<g mask="url(#g-everyday-compass-dark-in0)"><use xlink:href="#g-everyday-compass-dark-s0" fill="none" stroke="url(#g-everyday-compass-dark-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-everyday-compass-dark-s1" fill="url(#g-everyday-compass-dark-solid)"/>
+</svg>

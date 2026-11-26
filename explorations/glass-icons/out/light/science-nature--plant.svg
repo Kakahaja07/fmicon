@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-science-nature-plant-light-s0" d="M6.5 14H17.5L16.4 19.75A2 2 0 0 1 14.45 21.5H9.55A2 2 0 0 1 7.6 19.75Z"/>
+  <path id="g-science-nature-plant-light-s1" d="M12 11.25C12 7.5 9.5 5.5 5.5 5.5C5.5 9.25 8 11.25 12 11.25Z"/>
+  <path id="g-science-nature-plant-light-s2" d="M12 9C12 5.25 14.5 2.75 18.5 2.75C18.5 6.5 16 9 12 9Z"/>
+  <path id="g-science-nature-plant-light-s3" d="M11.25 9L11.25 14A0.75 0.75 0 0 0 12.75 14L12.75 9A0.75 0.75 0 0 0 11.25 9Z"/>
+  <linearGradient id="g-science-nature-plant-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-science-nature-plant-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-science-nature-plant-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-science-nature-plant-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-science-nature-plant-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-science-nature-plant-light-s0" fill="#fff"/></mask>
+  <mask id="g-science-nature-plant-light-in1" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-science-nature-plant-light-s1" fill="#fff"/></mask>
+  <mask id="g-science-nature-plant-light-in2" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-science-nature-plant-light-s2" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-science-nature-plant-light-s0" fill="url(#g-science-nature-plant-light-glass)"/>
+<g mask="url(#g-science-nature-plant-light-in0)"><use xlink:href="#g-science-nature-plant-light-s0" fill="none" stroke="url(#g-science-nature-plant-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-science-nature-plant-light-s1" fill="url(#g-science-nature-plant-light-glass)"/>
+<g mask="url(#g-science-nature-plant-light-in1)"><use xlink:href="#g-science-nature-plant-light-s1" fill="none" stroke="url(#g-science-nature-plant-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-science-nature-plant-light-s2" fill="url(#g-science-nature-plant-light-glass)"/>
+<g mask="url(#g-science-nature-plant-light-in2)"><use xlink:href="#g-science-nature-plant-light-s2" fill="none" stroke="url(#g-science-nature-plant-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-science-nature-plant-light-s3" fill="url(#g-science-nature-plant-light-solid)"/>
+</svg>

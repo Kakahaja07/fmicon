@@ -27,6 +27,8 @@ Icon artwork
 The base icon shapes come from the "7000 FREE UI ICONS" Figma Community file
 by Cristian Muñoz and are redistributed here with attribution. The glass and
 duotone styles are derived from that artwork in this project.
+The icons in the "ai-dev", "science-nature" and "everyday" categories
+(icons-src/) were drawn for this project.
 
 If you redistribute the icons, in this repository's packages or in your own
 work, keep this notice and the attribution to Cristian Muñoz with them.

@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <path id="g-everyday-target-light-s0" d="M2 12A10 10 0 1 1 22 12A10 10 0 1 1 2 12Z"/>
+  <path id="g-everyday-target-light-s1" d="M5.5 12A6.5 6.5 0 1 1 18.5 12A6.5 6.5 0 1 1 5.5 12ZM7 12A5 5 0 1 1 17 12A5 5 0 1 1 7 12Z" fill-rule="evenodd"/>
+  <path id="g-everyday-target-light-s2" d="M10.25 12A1.75 1.75 0 1 1 13.75 12A1.75 1.75 0 1 1 10.25 12Z"/>
+  <linearGradient id="g-everyday-target-light-solid" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5b5b5e" stop-opacity="1"/><stop offset="1" stop-color="#161617" stop-opacity="1"/></linearGradient>
+  <linearGradient id="g-everyday-target-light-glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e3e3e5" stop-opacity="0.62"/><stop offset="1" stop-color="#bbbbc0" stop-opacity="0.62"/></linearGradient>
+  <linearGradient id="g-everyday-target-light-rim" x1="0" y1="0" x2="0" y2="0.6"><stop stop-color="#fff" stop-opacity="1"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  <filter id="g-everyday-target-light-blur" filterUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <mask id="g-everyday-target-light-in0" maskUnits="userSpaceOnUse" x="-4" y="-4" width="32" height="32"><use xlink:href="#g-everyday-target-light-s0" fill="#fff"/></mask>
+</defs>
+<use xlink:href="#g-everyday-target-light-s0" fill="url(#g-everyday-target-light-glass)"/>
+<g mask="url(#g-everyday-target-light-in0)"><use xlink:href="#g-everyday-target-light-s0" fill="none" stroke="url(#g-everyday-target-light-rim)" stroke-width="1.5" stroke-linejoin="round"/></g>
+<use xlink:href="#g-everyday-target-light-s1" fill="url(#g-everyday-target-light-solid)"/>
+<use xlink:href="#g-everyday-target-light-s2" fill="url(#g-everyday-target-light-solid)"/>
+</svg>

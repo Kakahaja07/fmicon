@@ -20,7 +20,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from 
 import { basename, join } from "node:path";
 import { parseLayers } from "./make-glass.mjs";
 
-const LIB = "G:/UI Deisgn/icon-library/figma7000/bulk";
+const LIB = process.env.BULK_DIR ?? "G:/UI Deisgn/icon-library/figma7000/bulk";
 
 // [top, bottom, deep] per hue. Keep in step with src/lib/colorStyle.ts.
 export const PALETTE = {
