@@ -1,6 +1,6 @@
 {
   "name": "fmicon-svelte",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A Svelte component for the 996 fmicon.",
   "keywords": [
     "icons",
@@ -38,7 +38,7 @@
     "dist"
   ],
   "dependencies": {
-    "fmicon": "^1.1.0"
+    "fmicon": "^1.2.0"
   },
   "peerDependencies": {
     "svelte": "^4.0.0 || ^5.0.0"

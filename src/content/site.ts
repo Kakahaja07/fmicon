@@ -23,7 +23,7 @@ const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "
 export const brand = {
   name: "fmicon",
   // Shown as a badge next to the name in the icon browser
-  version: "1.1",
+  version: "1.2",
   siteUrl: "https://fmicon.dev",
   /** Homepage title: "FMicon" with a capital FM, the rest lower case */
   title: "FMicon - Open-Source Icon Library for Designers & Developers",
