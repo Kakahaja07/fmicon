@@ -10,7 +10,7 @@ import { join } from "node:path";
 
 const OUT = "src/content/icon-articles";
 const ICONS = "src/content/free-icons";
-const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "duotone"];
+const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "duotone", "color"];
 
 const read = (file) => JSON.parse(readFileSync(file, "utf8"));
 const keywords = read("scripts/data/icon-keywords.json");

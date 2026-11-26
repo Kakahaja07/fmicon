@@ -4,6 +4,7 @@ import { paymentsMeta } from "~/content/payments.meta";
 import { iconArticle } from "~/content/iconArticle";
 import { libraryArticle, styleKeywords } from "~/content/libraryArticle";
 import { titleCase } from "./titleCase";
+import { isColorHue, type ColorHue } from "./colorStyle";
 import type { IconArticle } from "./iconArticle";
 import { humanName, strokeWeights, styleLabels, type IconStyle, type StrokeWeight } from "./svg";
 
@@ -22,7 +23,7 @@ export const slugToId = new Map<string, string>(freeIconsMeta.index.map((i) => [
 export const idToSlug = new Map<string, string>(freeIconsMeta.index.map((i) => [i.id, i.slug]));
 
 /** Query params shared by every /icons page. */
-export type ToolSearch = { q?: string; cat?: string; size?: number; weight?: StrokeWeight };
+export type ToolSearch = { q?: string; cat?: string; size?: number; weight?: StrokeWeight; /** Color style: one hue for every icon */ hue?: ColorHue };
 
 export function validateToolSearch(raw: Record<string, unknown>): ToolSearch {
   return {
@@ -30,6 +31,7 @@ export function validateToolSearch(raw: Record<string, unknown>): ToolSearch {
     cat: typeof raw.cat === "string" && raw.cat ? raw.cat : undefined,
     size: [24, 32, 48].includes(Number(raw.size)) ? Number(raw.size) : undefined,
     weight: strokeWeights.some((w) => w.value === raw.weight) ? (raw.weight as StrokeWeight) : undefined,
+    hue: isColorHue(raw.hue) ? raw.hue : undefined,
   };
 }
 

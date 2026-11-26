@@ -11,7 +11,7 @@ export type FreeIcon = {
   body: string;
 };
 
-export type IconStyle = "linear" | "outline" | "bold" | "bulk" | "twotone" | "broken" | "glass" | "duotone";
+export type IconStyle = "linear" | "outline" | "bold" | "bulk" | "twotone" | "broken" | "glass" | "duotone" | "color";
 
 export const styleLabels: Record<IconStyle, string> = {
   linear: "Linear",
@@ -22,10 +22,11 @@ export const styleLabels: Record<IconStyle, string> = {
   broken: "Broken",
   glass: "Glass",
   duotone: "Duotone",
+  color: "Color",
 };
 
-/** Styles with their own built-in shading, which can't be recoloured. */
-export const fixedColorStyles: ReadonlySet<IconStyle> = new Set(["glass"]);
+/** Styles with their own built-in shading, which can't be recoloured with one colour (color has its own hue picker). */
+export const fixedColorStyles: ReadonlySet<IconStyle> = new Set(["glass", "color"]);
 
 /** "arrow-right-2" → "Arrow right 2" */
 export function humanName(name: string) {

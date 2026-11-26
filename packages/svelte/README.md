@@ -14,7 +14,7 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
 One Svelte component that draws any of the 996 fmicon. The icon data comes from [fmicon](https://www.npmjs.com/package/fmicon), which is installed with it and tree-shakes to the icons you import. Works with Svelte 4 and 5.
 
@@ -50,10 +50,11 @@ Icon data names are the camelCase of the slug (`arrow-circle-right` is `arrowCir
 
 ## Variants
 
-`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`. The default is `linear`.
+`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`, `color`. The default is `linear`.
 
 - `linear`, `twotone`, `broken` and `duotone` are line styles and accept `strokeWidth`.
 - `glass` is tuned for dark backgrounds and `glass-light` for light ones. Both carry their own colours, so `color` has no effect on them.
+- `color` icons are bright and layered, with their own hues. Their parts carry the classes `fmi-body`, `fmi-accent` and `fmi-detail`, so you can animate them with CSS (the snippet is in the fmicon README on GitHub).
 
 ## Links
 

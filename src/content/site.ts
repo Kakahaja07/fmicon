@@ -23,7 +23,7 @@ const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "
 export const brand = {
   name: "fmicon",
   // Shown as a badge next to the name in the icon browser
-  version: "1.2",
+  version: "1.3",
   siteUrl: "https://fmicon.dev",
   /** Homepage title: "FMicon" with a capital FM, the rest lower case */
   title: "FMicon - Open-Source Icon Library for Designers & Developers",
@@ -294,6 +294,7 @@ export const sampler = {
     broken: "Strokes with playful gaps",
     glass: "Frosted, glossy 3D",
     duotone: "Line over a soft fill",
+    color: "Bright layers that move",
   } satisfies Record<IconStyle, string>,
   viewAll: "View all",
 };

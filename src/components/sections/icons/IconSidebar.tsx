@@ -5,6 +5,8 @@ import type { PaymentSize } from "./PaymentLogos";
 import { OptionTiles } from "~/components/ui/OptionTiles";
 import { Segmented } from "~/components/ui/Segmented";
 import { SvgIcon } from "~/components/ui/SvgIcon";
+import { ColorSwatches } from "~/components/ui/ColorSwatches";
+import { hueSwatches, isColorHue, type ColorHue } from "~/lib/colorStyle";
 import type { ToolTheme } from "~/hooks/useToolTheme";
 import { cx } from "~/lib/cx";
 import { strokeStyles, strokeWeights, styleLabels, type IconStyle, type StrokeWeight } from "~/lib/svg";
@@ -24,6 +26,9 @@ type IconSidebarProps = {
   onCategory: (slug: string | undefined) => void;
   /** Set on /icons/payments: no style or category is picked, and size switches the logo card size */
   payments?: { size: PaymentSize; onSize: (size: PaymentSize) => void };
+  /** Color style: one hue for every icon, or each icon's own (undefined) */
+  hue?: ColorHue;
+  onHue?: (hue: ColorHue | undefined) => void;
 };
 
 // A curved stroke drawn at each weight (scaled up so the difference reads at a glance).
@@ -93,7 +98,7 @@ const paymentSizeOptions = paymentsMeta.sizes.map((x) => ({
 }));
 
 export function IconSidebar(props: IconSidebarProps) {
-  const { style, theme, size, weight, weightEnabled, category, onStyle, onWeight, onSize, onCategory, payments } = props;
+  const { style, theme, size, weight, weightEnabled, category, onStyle, onWeight, onSize, onCategory, payments, hue, onHue } = props;
   // On the payments page the icon filters stay, so you can jump back, but none is picked.
   const inIcons = !payments;
   const weightLabel = strokeWeights.find((w) => w.value === weight)?.label;
@@ -108,6 +113,22 @@ export function IconSidebar(props: IconSidebarProps) {
         </div>
         <OptionTiles label="Icon style" value={inIcons ? style : ("" as IconStyle)} options={styleOptions(theme)} onChange={onStyle} />
       </div>
+
+      {inIcons && style === "color" && onHue && (
+        <div className={s.group}>
+          <div className={s.head}>
+            <span>Hue</span>
+            <span className={s.value}>{hueSwatches.find((h) => h.value === (hue ?? "mixed"))?.label}</span>
+          </div>
+          <ColorSwatches
+            label="Icon hue"
+            swatches={hueSwatches}
+            value={hue ?? "mixed"}
+            onChange={(v) => onHue(isColorHue(v) ? v : undefined)}
+            allowCustom={false}
+          />
+        </div>
+      )}
 
       {payments ? (
         <div className={s.group}>

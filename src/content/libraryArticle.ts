@@ -19,6 +19,7 @@ export const styleKeywords: Record<IconStyle, { keyword: string; also: string; s
   broken: { keyword: "broken line icons", also: "hand-drawn style icons", short: "Playful brands" },
   glass: { keyword: "glass icons", also: "3D icons, glassmorphism icons", short: "3D app tiles" },
   duotone: { keyword: "duotone icons", also: "two tone fill icons", short: "A hint of colour" },
+  color: { keyword: "animated color icons", also: "colorful SVG icons, 3D color icons", short: "Bright and animated" },
 };
 
 export const libraryArticle = {

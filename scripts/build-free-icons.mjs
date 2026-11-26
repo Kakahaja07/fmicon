@@ -16,16 +16,19 @@ const LIB = process.env.FMUI_LIB ?? "G:/UI Deisgn/icon-library/figma7000";
 const GLASS_DIR = process.env.GLASS_DIR ?? "explorations/glass-icons/out/dark";
 // Duotone style: linear outline over a 20% fill, from explorations/glass-icons/make-duotone.mjs.
 const DUOTONE_DIR = process.env.DUOTONE_DIR ?? "explorations/glass-icons/out/duotone";
+// Color style: bright layered icons whose parts animate, from explorations/glass-icons/make-color.mjs.
+const COLOR_DIR = process.env.COLOR_DIR ?? "explorations/glass-icons/out/color";
 // Every icon is free and open source. FREE_LIMIT=99 builds a small set for quick local work.
 const LIMIT = Number(process.env.FREE_LIMIT ?? Infinity);
 // Icons per style in the home page previews (preview-<style>.json)
 const PREVIEW = 40;
 
 const LIB_STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken"];
-const STYLES = [...LIB_STYLES, "glass", "duotone"];
+const STYLES = [...LIB_STYLES, "glass", "duotone", "color"];
 const fileFor = (style, id) =>
   style === "glass" ? join(GLASS_DIR, `${id}.svg`)
   : style === "duotone" ? join(DUOTONE_DIR, `${id}.svg`)
+  : style === "color" ? join(COLOR_DIR, `${id}.svg`)
   : join(LIB, style, `${id}.svg`);
 
 // The free sample: the everyday icons people reach for first, in this order.

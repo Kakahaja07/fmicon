@@ -3,6 +3,7 @@ import { freeIconsMeta } from "~/content/freeIcons.meta";
 import { useIconStyle } from "~/hooks/useIconStyle";
 import type { ToolTheme } from "~/hooks/useToolTheme";
 import type { IconArticle, IconVariants } from "~/lib/iconArticle";
+import { recolor, type ColorHue } from "~/lib/colorStyle";
 import { strokeStyles, strokeWidthOf, type FreeIcon, type IconStyle, type StrokeWeight } from "~/lib/svg";
 import { IconGrid } from "./IconGrid";
 import { IconDetail } from "./IconDetail";
@@ -17,6 +18,7 @@ export type BrowserSearch = {
   icon?: string;
   size?: number;
   weight?: StrokeWeight;
+  hue?: ColorHue;
 };
 
 type IconBrowserProps = {
@@ -93,7 +95,11 @@ export function IconBrowser({ search, onChange, theme, detail, article, variants
   // Weight only applies to line styles; filled styles keep their shapes.
   const stroke = strokeStyles.has(style) ? strokeWidthOf(weight) : undefined;
 
-  const icons = data.status === "ready" ? data.icons : [];
+  // Color style with a hue picked: every icon redrawn in that hue (exports and copies follow it)
+  const hue = style === "color" ? search.hue : undefined;
+  const loaded = data.status === "ready" ? data.icons : [];
+  const icons = useMemo(() => (hue ? loaded.map((i) => ({ ...i, body: recolor(i.body, hue) })) : loaded), [loaded, hue]);
+  const detailIcon = detail && hue ? { ...detail, body: recolor(detail.body, hue) } : detail;
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase().replace(/\s+/g, "-");
@@ -108,7 +114,7 @@ export function IconBrowser({ search, onChange, theme, detail, article, variants
 
   // The icon page: from the loaded list once it's there, from the page loader before that (and when prerendering).
   const selected =
-    icons.find((i) => i.id === search.icon) ?? (detail && detail.id === search.icon ? detail : null);
+    icons.find((i) => i.id === search.icon) ?? (detailIcon && detailIcon.id === search.icon ? detailIcon : null);
 
   return (
     <div
@@ -131,6 +137,8 @@ export function IconBrowser({ search, onChange, theme, detail, article, variants
         onWeight={(v) => onChange({ weight: v === DEFAULT_WEIGHT ? undefined : v })}
         onSize={(v) => onChange({ size: v === DEFAULT_SIZE ? undefined : v })}
         onCategory={(v) => onChange({ cat: v })}
+        hue={search.hue}
+        onHue={(v) => onChange({ hue: v })}
       />
       )}
 
@@ -145,6 +153,8 @@ export function IconBrowser({ search, onChange, theme, detail, article, variants
             tone={theme}
             article={detail && detail.id === selected.id ? article : undefined}
             variants={detail && detail.id === selected.id ? variants : undefined}
+            hue={search.hue}
+            onHue={(v) => onChange({ hue: v })}
             onNavigate={(id) => onChange({ icon: id })}
             onBack={() => onChange({ icon: undefined })}
           />

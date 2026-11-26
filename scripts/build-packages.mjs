@@ -15,13 +15,15 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = join(ROOT, "src/content/free-icons");
 const PACKAGES = join(ROOT, "packages");
-const VERSION = "1.2.0";
+const VERSION = "1.3.0";
 const REPO = "https://github.com/Kakahaja07/fmicon";
 const SITE = "https://fmicon.dev";
 const CDN = "https://cdn.fmicon.dev/svg";
 
 // Variant order is the public order (types, docs, data objects).
-const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "glass-light", "duotone"];
+const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "glass-light", "duotone", "color"];
+// glass-light is a tone of glass, not a style of its own
+const STYLE_COUNT = STYLES.filter((s) => s !== "glass-light").length;
 
 // ---------------------------------------------------------------------------
 // Load and check the source data
@@ -143,7 +145,8 @@ const variantsSection = `## Variants
 ${variantList}. The default is \`linear\`.
 
 - \`linear\`, \`twotone\`, \`broken\` and \`duotone\` are line styles and accept \`strokeWidth\`.
-- \`glass\` is tuned for dark backgrounds and \`glass-light\` for light ones. Both carry their own colours, so \`color\` has no effect on them.`;
+- \`glass\` is tuned for dark backgrounds and \`glass-light\` for light ones. Both carry their own colours, so \`color\` has no effect on them.
+- \`color\` icons are bright and layered, with their own hues. Their parts carry the classes \`fmi-body\`, \`fmi-accent\` and \`fmi-detail\`, so you can animate them with CSS (the snippet is in the fmicon README on GitHub).`;
 
 // Shared top of every package README: logo, one line, badges, links and the showcase image.
 // Images use absolute URLs so they show on npmjs.com too.
@@ -164,7 +167,7 @@ const header = (name, line, doc) => `<div align="center">
 
 </div>
 
-fmicon is a free, open-source set of ${icons.length} icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.`;
+fmicon is a free, open-source set of ${icons.length} icons, each drawn in ${STYLE_COUNT} styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.`;
 
 const linksSection = `## Links
 
@@ -203,7 +206,7 @@ function buildSvg() {
   );
 
   packageJson(pkg, {
-    description: `${icons.length} icons as plain SVG files in 8 styles (plus glass-light).`,
+    description: `${icons.length} icons as plain SVG files in ${STYLE_COUNT} styles (plus glass-light).`,
     keywords: ["svg-icons"],
     files: ["icons", "icons.json"],
     entry: { exports: { "./icons/*": "./icons/*", "./icons.json": "./icons.json", "./package.json": "./package.json" } },
@@ -213,7 +216,7 @@ function buildSvg() {
     join(PACKAGES, pkg, "README.md"),
     `${header("fmicon-svg", "Every fmicon icon as a plain SVG file", "svg")}
 
-${icons.length} icons as plain SVG files, one folder per style. Every file is a 24 by 24 SVG that uses \`currentColor\` (glass styles carry their own colours).
+${icons.length} icons as plain SVG files, one folder per style. Every file is a 24 by 24 SVG that uses \`currentColor\` (glass and color carry their own colours).
 
 ## Install
 
@@ -394,7 +397,7 @@ function buildReact() {
     peerDependencies: { react: ">=17" },
     readme: `${header("fmicon-react", "Free icons for React", "react")}
 
-${icons.length} icons as React components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
+${icons.length} icons as React components, in ${STYLE_COUNT} styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
@@ -432,7 +435,7 @@ function buildVue() {
     peerDependencies: { vue: ">=3" },
     readme: `${header("fmicon-vue", "Free icons for Vue 3", "vue")}
 
-${icons.length} icons as Vue 3 components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
+${icons.length} icons as Vue 3 components, in ${STYLE_COUNT} styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
@@ -475,7 +478,7 @@ function buildReactNative() {
     entryFields: { "react-native": "./dist/index.js" },
     readme: `${header("fmicon-react-native", "Free icons for React Native", "react-native")}
 
-${icons.length} icons as React Native components, in 8 styles (plus glass-light). They render with \`SvgXml\` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
+${icons.length} icons as React Native components, in ${STYLE_COUNT} styles (plus glass-light). They render with \`SvgXml\` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
 
 ## Install
 

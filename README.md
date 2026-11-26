@@ -9,14 +9,14 @@
 
 ### Free icons for your website or app
 
-**996 icons. 8 styles. 39 payment logos. Free for everyone.**
+**996 icons. 9 styles. 39 payment logos. Free for everyone.**
 
 <p>
   <a href="https://fmicon.dev"><img src="https://img.shields.io/badge/Website-fmicon.dev-1265ec?style=flat-square&logo=googlechrome&logoColor=white" alt="Website"></a>
   <a href="https://www.npmjs.com/package/fmicon-react"><img src="https://img.shields.io/npm/v/fmicon-react?style=flat-square&color=cb3837&logo=npm&label=npm" alt="npm version"></a>
   <a href="https://fmicon.dev/docs"><img src="https://img.shields.io/badge/Docs-read-2b2b2f?style=flat-square&logo=readthedocs&logoColor=white" alt="Docs"></a>
   <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/icons-996-9b3dff?style=flat-square" alt="996 icons"></a>
-  <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/styles-8-ff3d8b?style=flat-square" alt="8 styles"></a>
+  <a href="https://fmicon.dev/icons"><img src="https://img.shields.io/badge/styles-9-ff3d8b?style=flat-square" alt="9 styles"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/licence-MIT-22c55e?style=flat-square" alt="MIT licence"></a>
   <a href="https://github.com/Kakahaja07/fmicon/stargazers"><img src="https://img.shields.io/github/stars/Kakahaja07/fmicon?style=flat-square&logo=github&color=2b2b2f" alt="GitHub stars"></a>
 </p>
@@ -35,7 +35,7 @@
 fmicon is a free set of small pictures (icons) that you can put in your website, app or design.
 
 - **Lots of icons.** There are 996 icons, like a home, a bell, a heart and a wallet, plus brand and coin logos (Figma, Slack, Bitcoin, Ethereum and more).
-- **8 looks for every icon.** Each icon comes in 8 styles, from thin lines to shiny glass. The shape stays the same, so you can mix them.
+- **9 looks for every icon.** Each icon comes in 9 styles, from thin lines to shiny glass and bright animated colour. The shape stays the same, so you can mix them.
 - **Free forever.** You can use them in personal and work projects. You don't need to pay or sign up.
 - **Easy to change.** Make any icon bigger, smaller or a different colour.
 - **Works with your tools.** Copy an icon as a picture or as code for React, Vue, Svelte and more.
@@ -200,9 +200,9 @@ document.querySelector("#icon").innerHTML = svg;
 </tr>
 </table>
 
-## The 8 styles
+## The 9 styles
 
-Every icon has the same shape in all 8 styles. Only the look changes.
+Every icon has the same shape in all 9 styles. Only the look changes.
 
 | Style | What it looks like | Good for |
 |---|---|---|
@@ -214,6 +214,19 @@ Every icon has the same shape in all 8 styles. Only the look changes.
 | [Broken](https://fmicon.dev/icons/broken) | Lines with small gaps, like a sketch | Fun, friendly brands |
 | [Glass](https://fmicon.dev/icons/glass) | Shiny and 3D | App tiles and big headers |
 | [Duotone](https://fmicon.dev/icons/duotone) | A line with a soft colour inside | Adding a little colour |
+| [Color](https://fmicon.dev/icons/color) | Bright layers in six hues that move when you point at them | Playful apps and feature cards |
+
+**Make color icons move.** Each part of a color icon has a class: `fmi-body`, `fmi-accent` and `fmi-detail`. Add this CSS and the body squashes while the details pop when you point at the icon:
+
+```css
+.fmi-body, .fmi-accent, .fmi-detail { transform-box: fill-box; transform-origin: 50% 100%; }
+.fmi-detail { transform-origin: 50% 50%; }
+:is(a, button):hover :is(.fmi-body, .fmi-accent) { animation: fmi-squash 560ms cubic-bezier(.2, .8, .2, 1); }
+:is(a, button):hover .fmi-detail { animation: fmi-pop 560ms 50ms cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes fmi-squash { 22% { transform: scale(1.08, .88); } 48% { transform: scale(.96, 1.06); } 72% { transform: scale(1.02, .98); } }
+@keyframes fmi-pop { 30% { transform: translateY(-1.6px) scale(1.14) rotate(-8deg); } 62% { transform: translateY(.3px) scale(.97) rotate(3deg); } }
+@media (prefers-reduced-motion: reduce) { .fmi-body, .fmi-accent, .fmi-detail { animation: none; } }
+```
 
 ## Options
 
@@ -222,7 +235,7 @@ Every icon understands the same few settings.
 | Setting | What it does | Example | Default |
 |---|---|---|---|
 | `size` | How big the icon is, in pixels | `size={32}` | `24` |
-| `variant` | Which of the 8 styles to use | `variant="bold"` | `"linear"` |
+| `variant` | Which of the 9 styles to use | `variant="bold"` | `"linear"` |
 | `color` | The icon's colour | `color="#1265ec"` | Same as your text |
 | `strokeWidth` | How thick the lines are (line styles only) | `strokeWidth={1}` | `1.5` |
 | `title` | A name screen readers say out loud | `title="Home"` | None |
@@ -283,7 +296,7 @@ The **[contributing guide](CONTRIBUTING.md)** has every command, a map of where 
 
 ## Licence
 
-The code is free under the [MIT licence](LICENSE). The glass and duotone styles were made for this project.
+The code is free under the [MIT licence](LICENSE). The glass, duotone and color styles were made for this project.
 
 **Brand and payment logos.** The icons in the Brands category (Figma, Slack, YouTube, Bitcoin…) and the [payment logos](https://fmicon.dev/icons/payments) (Visa, Mastercard, PayPal…) are trademarks of their owners. The MIT licence covers the files, not the marks. Use a logo only to point to that product or to show which payment methods you accept, and follow the owner's brand rules.
 

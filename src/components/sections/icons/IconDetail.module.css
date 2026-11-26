@@ -266,7 +266,7 @@
 /* The same icon in every style: always visible, one click to switch */
 .styles {
   display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
+  grid-template-columns: repeat(9, minmax(0, 1fr));
   gap: 2px;
   padding: 4px;
   border-radius: 14px;
@@ -493,7 +493,7 @@
   .panel { order: 6; }
   .codeArea { order: 7; }
 
-  .styles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .styles { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .styleTile { padding: 6px 2px 5px; }
 
   .card { gap: 10px; padding: 12px; }

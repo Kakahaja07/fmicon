@@ -46,6 +46,7 @@ const STYLE_TIPS: Record<string, string> = {
   broken: "The broken style has small gaps that give a friendly, playful look.",
   glass: "The glass style is a 3D tile with its own colours, best on dark backgrounds and heroes.",
   duotone: "The duotone style adds a hint of colour while staying a clean line icon.",
+  color: "The color style is bright and layered, and its parts move on hover, so it works for playful apps, onboarding and feature cards.",
 };
 
 export function iconUseCopy(name: string, category: string, categoryLabel: string, style: string) {

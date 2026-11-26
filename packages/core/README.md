@@ -14,7 +14,7 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
 996 icons as plain data with no framework, plus helpers that turn them into SVG strings. The other fmicon packages are built on the same data.
 
@@ -71,10 +71,11 @@ The list of variant names.
 
 ## Variants
 
-`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`. The default is `linear`.
+`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`, `color`. The default is `linear`.
 
 - `linear`, `twotone`, `broken` and `duotone` are line styles and accept `strokeWidth`.
 - `glass` is tuned for dark backgrounds and `glass-light` for light ones. Both carry their own colours, so `color` has no effect on them.
+- `color` icons are bright and layered, with their own hues. Their parts carry the classes `fmi-body`, `fmi-accent` and `fmi-detail`, so you can animate them with CSS (the snippet is in the fmicon README on GitHub).
 
 ## Links
 

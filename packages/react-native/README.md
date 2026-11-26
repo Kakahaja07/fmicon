@@ -14,9 +14,9 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
-996 icons as React Native components, in 8 styles (plus glass-light). They render with `SvgXml` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
+996 icons as React Native components, in 9 styles (plus glass-light). They render with `SvgXml` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
 
 ## Install
 
@@ -50,10 +50,11 @@ Other props are passed to `SvgXml` (`style`, `testID` and so on).
 
 ## Variants
 
-`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`. The default is `linear`.
+`linear`, `outline`, `bold`, `bulk`, `twotone`, `broken`, `glass`, `glass-light`, `duotone`, `color`. The default is `linear`.
 
 - `linear`, `twotone`, `broken` and `duotone` are line styles and accept `strokeWidth`.
 - `glass` is tuned for dark backgrounds and `glass-light` for light ones. Both carry their own colours, so `color` has no effect on them.
+- `color` icons are bright and layered, with their own hues. Their parts carry the classes `fmi-body`, `fmi-accent` and `fmi-detail`, so you can animate them with CSS (the snippet is in the fmicon README on GitHub).
 
 The glass styles use gradients, masks and blur filters. Check them on your target platforms, as react-native-svg support for filters depends on its version.
 

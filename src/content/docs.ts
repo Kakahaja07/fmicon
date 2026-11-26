@@ -222,7 +222,7 @@ function packageSections(fw: DocId, label: string): DocSection[] {
                 : `${tag(fw, "Home", { color: "#1265ec" })}\n${tag(fw, "Home", { color: "var(--brand)" })}\n${tag(fw, "Home", { extra: `${classAttr}="text-blue-500 hover:text-blue-600"` })}`,
         },
       ],
-      tip: fw === "react-native" ? "React Native has no inherited text colour, so icons default to black. Pass `color` to match your theme." : "Glass icons keep their own colours, so `color` doesn't change them. Use glass-light on light backgrounds.",
+      tip: fw === "react-native" ? "React Native has no inherited text colour, so icons default to black. Pass `color` to match your theme." : "Glass and color icons keep their own colours, so `color` doesn't change them. Use glass-light on light backgrounds.",
     },
     {
       id: "accessibility",
@@ -420,7 +420,7 @@ export const docPages: DocPage[] = [
 export const docsIntro = {
   title: "What is fmicon.dev?",
   text: [
-    `fmicon is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass and duotone.`,
+    `fmicon is a free, open-source library of ${TOTAL} UI icons, each drawn in ${STYLES} styles: linear, outline, bold, bulk, twotone, broken, glass, duotone and color.`,
     "There are packages for `fmicon-react`, `fmicon-react-native`, `fmicon-vue`, `fmicon-svelte` and `fmicon` (vanilla JS), plus raw SVG files on a CDN and ready code for Angular and Flutter.",
     "Everything is MIT licensed, tree-shakeable and typed.",
   ],
@@ -438,7 +438,7 @@ export const docsNav = [
 export const docsProps = [
   { prop: "size", type: "number | string", def: "24", text: "Width and height in pixels" },
   { prop: "variant", type: '"linear" | "outline" | "bold" | …', def: '"linear"', text: `Any of the ${STYLES} styles, plus "glass-light"` },
-  { prop: "color", type: "string", def: "currentColor", text: "Any CSS colour; glass keeps its own" },
+  { prop: "color", type: "string", def: "currentColor", text: "Any CSS colour; glass and color keep their own" },
   { prop: "strokeWidth", type: "number | string", def: "1.5", text: "Line weight for linear, twotone, broken and duotone" },
   { prop: "title", type: "string", def: "–", text: "Accessible name; without it the icon is hidden from screen readers" },
 ];

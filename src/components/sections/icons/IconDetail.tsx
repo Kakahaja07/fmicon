@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
+import { hueSwatches, isColorHue, recolor, type ColorHue } from "~/lib/colorStyle";
 import { Link } from "@tanstack/react-router";
 import type { ToolTheme } from "~/hooks/useToolTheme";
 import type { IconArticle as Article, IconVariants } from "~/lib/iconArticle";
@@ -85,6 +86,9 @@ type IconDetailProps = {
   article?: Article;
   /** The icon in every style (from the page loader) */
   variants?: IconVariants;
+  /** Color style: the hue every icon is drawn in (undefined: each icon's own) */
+  hue?: ColorHue;
+  onHue?: (hue: ColorHue | undefined) => void;
   onNavigate: (id: string) => void;
   onBack: () => void;
 };
@@ -94,7 +98,7 @@ type IconDetailProps = {
  * copy, export and code on the right, related icons below. Prerendered for search engines.
  */
 export function IconDetail(props: IconDetailProps) {
-  const { icon, icons, style, tone, article, variants, onNavigate, onBack } = props;
+  const { icon, icons, style, tone, article, variants, hue, onHue, onNavigate, onBack } = props;
   const [size, setSize] = useState(props.size);
   const [weight, setWeight] = useState<StrokeWeight>(props.weight);
   const [customColor, setCustomColor] = useState(false);
@@ -140,9 +144,13 @@ export function IconDetail(props: IconDetailProps) {
   const pool = icons.length ? icons : (article?.nearby ?? []);
   const related = pool.filter((i) => i.category === icon.category && i.id !== icon.id).slice(0, 12);
   const pairs = (article?.pairs ?? []).map((slug) => pool.find((i) => i.slug === slug)).filter((i): i is FreeIcon => !!i);
-  const variantBody = (st: IconStyle) =>
-    (st === "glass" && tone === "light" ? (variants?.["glass-light"] ?? article?.glassLight) : (variants?.[st] ?? article?.variants[st])) ??
-    (st === style ? icon.body : freeIconsMeta.samples[st]);
+  const variantBody = (st: IconStyle) => {
+    const body =
+      (st === "glass" && tone === "light" ? (variants?.["glass-light"] ?? article?.glassLight) : (variants?.[st] ?? article?.variants[st])) ??
+      (st === style ? icon.body : freeIconsMeta.samples[st]);
+    // The color tile shows the picked hue, like the preview
+    return st === "color" && hue ? recolor(body, hue) : body;
+  };
 
   const show = (text: string) => {
     setFlash(text);
@@ -216,8 +224,9 @@ export function IconDetail(props: IconDetailProps) {
       <div className={s.layout}>
         {/* Left: preview, name, customise */}
         <aside className={s.left}>
-          <div className={s.preview} data-bg={backdrop}>
-            <SvgIcon key={icon.id + style} body={icon.body} size={Math.min(Math.max(size * 2, 64), 160)} color={exportColor} className={s.previewIcon} />
+          {/* data-animate: color icons play their motion when the preview appears and on hover */}
+          <div className={s.preview} data-bg={backdrop} data-animate="mount">
+            <SvgIcon key={icon.id + style + (hue ?? "")} body={icon.body} size={Math.min(Math.max(size * 2, 64), 160)} color={exportColor} className={s.previewIcon} />
           </div>
           <div className={s.backdrops}>
             <span>Background</span>
@@ -249,14 +258,23 @@ export function IconDetail(props: IconDetailProps) {
 
             <Slider label="Size" value={size} min={16} max={512} step={4} valueText={`${size} px`} onChange={setSize} />
 
-            <Switch label="Custom colour" checked={customColor && !fixedColor} onChange={setCustomColor} disabled={fixedColor} />
+            {style !== "color" && (
+              <Switch label="Custom colour" checked={customColor && !fixedColor} onChange={setCustomColor} disabled={fixedColor} />
+            )}
             {customColor && !fixedColor && (
               <div className={s.colorRow}>
                 <ColorField label="Colour" value={color} onChange={setColor} />
                 <ColorSwatches label="Colour presets" swatches={presets} value={color} onChange={setColor} allowCustom={false} />
               </div>
             )}
-            {fixedColor && <p className={s.hint}>{styleLabels[style]} icons keep their own shading.</p>}
+            {style === "color" && onHue ? (
+              <div className={s.field}>
+                <span className={s.label}>Hue</span>
+                <ColorSwatches label="Icon hue" swatches={hueSwatches} value={hue ?? "mixed"} onChange={(v) => onHue(isColorHue(v) ? v : undefined)} allowCustom={false} />
+              </div>
+            ) : (
+              fixedColor && <p className={s.hint}>{styleLabels[style]} icons keep their own shading.</p>
+            )}
           </div>
         </aside>
 
@@ -360,7 +378,7 @@ export function IconDetail(props: IconDetailProps) {
                     <td><code className={s.prop}>variant</code></td>
                     <td><code>"linear" | "bold" | …</code></td>
                     <td><code>linear</code></td>
-                    <td>Any of the 8 styles, plus glass-light for light backgrounds</td>
+                    <td>Any of the 9 styles, plus glass-light for light backgrounds</td>
                   </tr>
                   <tr>
                     <td><code className={s.prop}>color</code></td>

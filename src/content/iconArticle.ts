@@ -40,7 +40,7 @@ export const iconArticle = {
   }),
   promo: {
     title: (_total: number) => "Free and open source",
-    text: (total: number) => `This icon is one of ${total}, in 8 styles, MIT licensed. A star on GitHub helps more people find it.`,
+    text: (total: number) => `This icon is one of ${total}, in 9 styles, MIT licensed. A star on GitHub helps more people find it.`,
     cta: "Star on GitHub",
   },
 } as const;
@@ -78,5 +78,9 @@ export const styleNotes: Record<IconStyle, { summary: string; bestFor: string }>
   duotone: {
     summary: "Duotone icons pair the line with a soft tinted fill in the same colour. They add a hint of depth while staying easy to recolour with a single value.",
     bestFor: "product UI that wants a little colour without a full illustration style",
+  },
+  color: {
+    summary: "Color icons are bright, layered shapes: a coloured body with a small lip underneath, white details on top and a soft rim of light. Each part moves on its own on hover, the body squashes and the details pop. Pick one of six hues or let every icon keep its own.",
+    bestFor: "playful apps, onboarding, feature cards and empty states",
   },
 };

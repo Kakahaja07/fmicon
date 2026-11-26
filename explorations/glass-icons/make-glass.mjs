@@ -42,7 +42,7 @@ function attrs(tag) {
 
 // Flatten <path> elements (bulk icons are almost all paths); a <g opacity>
 // passes its opacity down to its children.
-function parseLayers(svg) {
+export function parseLayers(svg) {
   const layers = [];
   const groupOpacity = [];
   for (const m of svg.matchAll(/<(\/?)(g|path)\b([^>]*?)(\/?)>/g)) {

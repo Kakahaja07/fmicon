@@ -5,7 +5,7 @@ import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 
 const SRC = "src/content/free-icons";
 const OUT = "src/content/icon-variants";
-const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "glass-light", "duotone"];
+const STYLES = ["linear", "outline", "bold", "bulk", "twotone", "broken", "glass", "glass-light", "duotone", "color"];
 
 const bySlug = new Map();
 for (const style of STYLES) {
