@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { openSource } from "~/content/site";
 import { ArrowRightIcon } from "~/components/icons/Icons";
+import { SvgIcon } from "~/components/ui/SvgIcon";
 import { Button } from "~/components/ui/Button";
 import { CodeBlock } from "~/components/ui/CodeBlock";
 import { CommandLine } from "~/components/ui/CommandLine";
@@ -57,10 +58,11 @@ export function OpenSourcePanel({ titleAs: Title = "h2", titleId }: OpenSourcePa
           </Title>
           <p className={s.text}>{openSource.text}</p>
           <ul className={s.perks}>
-            {openSource.perks.map(({ icon: Icon, color, text }) => (
-              <li key={text} style={{ "--c": paletteVar(color) } as CSSProperties}>
+            {openSource.perks.map(({ icon: Icon, art, color, text }) => (
+              // data-animate: pointing at the row plays the color icon's motion
+              <li key={text} style={{ "--c": paletteVar(color) } as CSSProperties} data-animate={art ? "" : undefined}>
                 <span className={s.perkIcon} aria-hidden="true">
-                  <Icon size={18} />
+                  {art ? <SvgIcon body={art} size={28} /> : <Icon size={18} />}
                 </span>
                 {text}
               </li>

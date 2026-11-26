@@ -75,6 +75,11 @@
   background: color-mix(in srgb, var(--c) 14%, transparent);
 }
 
+/* Color icons bring their own colour and depth: no tinted square */
+.perks li[data-animate] .perkIcon {
+  background: none;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;

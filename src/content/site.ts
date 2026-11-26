@@ -56,11 +56,11 @@ export const openSource = {
   title: "Free for everyone, forever",
   text: `Every one of the ${ICON_COUNT} icons, in all ${STYLES} styles, is free for personal and commercial work. No sign-up, no paywall: install a package or copy the SVG.`,
   perks: [
-    { icon: I.Element4Icon, color: "blue", text: `${ICON_COUNT} icons × ${STYLES} styles` },
-    { icon: I.CodeIcon, color: "green", text: "Packages for React, Vue, Svelte and React Native" },
-    { icon: I.GlobalIcon, color: "purple", text: "Link any SVG or PNG from cdn.fmicon.dev" },
-    { icon: I.ShieldTickIcon, color: "orange", text: "MIT licence, use it anywhere" },
-  ] satisfies Array<{ icon: IconComponent; color: PaletteColor; text: string }>,
+    { icon: I.Element4Icon, art: recolor(colorPicks["grid--element-4"], "blue"), color: "blue", text: `${ICON_COUNT} icons × ${STYLES} styles` },
+    { icon: I.CodeIcon, art: recolor(colorPicks["programing--code"], "green"), color: "green", text: "Packages for React, Vue, Svelte and React Native" },
+    { icon: I.GlobalIcon, art: recolor(colorPicks["location--global"], "violet"), color: "purple", text: "Link any SVG or PNG from cdn.fmicon.dev" },
+    { icon: I.ShieldTickIcon, art: recolor(colorPicks["security--shield-tick"], "orange"), color: "orange", text: "MIT licence, use it anywhere" },
+  ] satisfies Array<{ icon: IconComponent; art?: string; color: PaletteColor; text: string }>,
   install: [
     { value: "react", label: "React", command: "npm i fmicon-react", file: "App.jsx", code: `import { Home } from "fmicon-react";
 

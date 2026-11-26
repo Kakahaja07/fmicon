@@ -157,6 +157,8 @@ const samplesLight = { glass: body(readFileSync(join(GLASS_LIGHT_DIR, `${SAMPLE}
 const COLOR_PICKS = [
   "search--search-normal", "design-tools--magicpen", "support-like-question--heart",
   "computers-devices-electronics--mouse", "programing--code", "computers-devices-electronics--cloud-change",
+  // open-source panel perks
+  "grid--element-4", "location--global", "security--shield-tick",
 ];
 writeFileSync(
   "src/content/colorPicks.ts",
