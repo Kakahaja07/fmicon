@@ -106,6 +106,7 @@
   background: transparent;
   font-size: 14px;
   text-align: left;
+  text-decoration: none;
   color: var(--text-2);
   cursor: var(--cursor-pointer);
   transition: background-color 150ms ease, color 150ms ease;
@@ -158,6 +159,8 @@
   .group + .group { border-top: 0; }
   .group:first-child { grid-column: 1 / -1; }
   .list { display: none; }
+  /* Only one or two rows, so the other sets stay reachable on phones */
+  .list.sets { display: block; }
   .select { display: block; }
 }
 

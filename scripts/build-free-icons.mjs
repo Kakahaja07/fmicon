@@ -49,9 +49,6 @@ const PICKS = [
   "key", "shield-tick", "eye", "scan", "lamp-on", "flash", "sun", "moon", "coffee", "cup",
   "airplane", "car", "truck", "building", "box", "flag", "tag", "lifebuoy", "brush", "shapes",
 ];
-// Brand logos stay out of the sample (trademarks).
-const EXCLUDE_CATEGORIES = new Set(["company-logos"]);
-const BRAND = /vuesax|instagram|chrome|grammerly|figma|dribbble|google|facebook|youtube|whatsapp|slack|spotify|paypal|windows|apple|android|twitter|ui8/;
 
 // Clean up category names from the source library.
 const LABELS = {
@@ -66,14 +63,15 @@ const LABELS = {
   "school-learning": "Learning",
   "design-tools": "Design tools",
   "crypto-currency": "Crypto",
+  // Brand and coin logos. The marks belong to their owners (see LICENSE).
+  "company-logos": "Brands",
 };
 const label = (slug) =>
   LABELS[slug] ?? slug.split("-").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
 
 const index = JSON.parse(readFileSync(join(LIB, "index.json"), "utf8"));
 const allIds = [...new Set(index.filter((e) => e.style === "linear").map((e) => e.name))];
-const usable = (id) =>
-  !EXCLUDE_CATEGORIES.has(id.split("--")[0]) && !BRAND.test(id) && STYLES.every((s) => existsSync(fileFor(s, id)));
+const usable = (id) => STYLES.every((s) => existsSync(fileFor(s, id)));
 
 // Resolve each pick to a full id, keep the first LIMIT that exist in every style.
 const picked = [];
@@ -84,8 +82,10 @@ for (const pick of PICKS) {
   if (id && usable(id) && !picked.includes(id)) picked.push(id);
   else missing.push(pick);
 }
-// Top up from the rest of the library if the list ran short.
-for (const id of allIds.sort()) {
+// Top up from the rest of the library if the list ran short. Brand logos go last, so they never
+// take a plain URL (/icons/linear/triangle) from an icon that already had it.
+const brandLast = (id) => (id.startsWith("company-logos--") ? 1 : 0);
+for (const id of allIds.sort((a, b) => brandLast(a) - brandLast(b) || a.localeCompare(b))) {
   if (picked.length >= LIMIT) break;
   if (usable(id) && !picked.includes(id)) picked.push(id);
 }

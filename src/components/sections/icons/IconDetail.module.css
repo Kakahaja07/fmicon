@@ -310,11 +310,14 @@
 .right {
   min-width: 0;
   display: grid;
+  /* The implicit column would grow to the widest row (code tabs) and spill off a phone screen */
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
 }
 
 .card {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 12px;
   padding: 16px;
   border-radius: var(--radius-card);
@@ -462,13 +465,58 @@
 }
 
 @media (max-width: 1100px) {
-  .layout { grid-template-columns: 1fr; }
+  /* minmax(0, …): a bare 1fr can't shrink below its widest row (code tabs, size picker), which pushed the page sideways on phones */
+  .layout { grid-template-columns: minmax(0, 1fr); }
   .left { position: static; }
+  /* One column: a full-width square preview would be taller than the screen */
+  .preview { aspect-ratio: auto; height: 240px; }
 }
 
+/* ---- Phones: one compact column, in the order people use it ----
+   name → preview → styles → copy & download → customise → code.
+   The two desktop columns step aside (display: contents) so their parts can be reordered. */
 @media (max-width: 640px) {
-  .detail { padding: 12px 12px 32px; }
+  .detail { gap: 14px; padding: 12px 12px 32px; }
   .crumbs { display: none; }
-  .copyRow { grid-template-columns: 1fr 1fr 1fr; }
+
+  .layout { display: flex; flex-direction: column; align-items: stretch; gap: 12px; }
+  .left,
+  .right { display: contents; }
+
+  .left > *,
+  .right > * { order: 9; }
+  .nameRow { order: 1; align-items: center; }
+  .preview { order: 2; height: 176px; border-radius: var(--radius-card); }
+  .backdrops { order: 3; margin-top: -2px; padding: 0 2px; }
+  .styles { order: 4; }
+  .card { order: 5; }
+  .panel { order: 6; }
+  .codeArea { order: 7; }
+
   .styles { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .styleTile { padding: 6px 2px 5px; }
+
+  .card { gap: 10px; padding: 12px; }
+  .copyRow { gap: 6px; }
+  .copyRow > * { min-width: 0; padding-inline: 8px; gap: 5px; white-space: nowrap; }
+  .status { min-height: 0; }
+  .status:empty { display: none; }
+
+  /* Props: each prop is a small card (name · type, then what it does and its default) instead of a 4-column table */
+  .props thead { display: none; }
+  .props,
+  .props tbody { display: block; }
+  .props tr {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 6px 10px;
+    padding: 12px;
+  }
+  .props tr + tr { border-top: 1px solid var(--hairline); }
+  .props td { padding: 0; border: 0; min-width: 0; }
+  .props td:nth-child(2) { justify-self: end; text-align: right; }
+  .props td:nth-child(4) { grid-column: 1 / -1; }
+  .props td:nth-child(3) { grid-column: 1 / -1; order: 1; font-size: var(--text-xs); color: var(--text-3); }
+  .props td:nth-child(3)::before { content: "Default "; }
 }

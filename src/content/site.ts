@@ -14,9 +14,9 @@ import { freeIconsMeta } from "./freeIcons.meta";
 /**
  * How the landing page states the size of the set. Rounded on purpose ("800+"), so the marketing copy
  * stays true as icons are added. Bump it when a release passes the next milestone
- * (v1.1: 891 icons → "800+"). The icon tool and SEO pages use the exact freeIconsMeta.total.
+ * (v1.1: 891 icons → "800+"; v1.2: 996 icons → "900+"). The icon tool and SEO pages use the exact freeIconsMeta.total.
  */
-export const ICON_COUNT = "800+";
+export const ICON_COUNT = "900+";
 const STYLES = freeIconsMeta.styles.length;
 const spelled = (n: number) => ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"][n] ?? String(n);
 

@@ -82,7 +82,7 @@ export const mcpClients: McpClient[] = [
 export const mcpPage = {
   eyebrow: "MCP server",
   title: "Connect Claude, Cursor and VS Code to fmicon",
-  sub: "fmicon MCP lets your AI assistant search 891 free icons and write the code for you, in React, Vue, Svelte or plain SVG. Paste one URL into your app. Nothing to install, no account, no API key.",
+  sub: "fmicon MCP lets your AI assistant search 996 free icons and write the code for you, in React, Vue, Svelte or plain SVG. Paste one URL into your app. Nothing to install, no account, no API key.",
   manual: "Using another app? Add a remote MCP server with this URL:",
   demo: {
     eyebrow: "How it works",
@@ -119,7 +119,7 @@ export const mcpPage = {
     },
     {
       q: "Is fmicon MCP free?",
-      a: "Yes. The server and all 891 icons are free and open source under the MIT licence. There is no account, no API key and no usage limit.",
+      a: "Yes. The server and all 996 icons are free and open source under the MIT licence. There is no account, no API key and no usage limit.",
     },
     {
       q: "Does it send my code anywhere?",

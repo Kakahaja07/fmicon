@@ -1,4 +1,7 @@
+import { Link } from "@tanstack/react-router";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
+import { paymentsMeta } from "~/content/payments.meta";
+import type { PaymentSize } from "./PaymentLogos";
 import { OptionTiles } from "~/components/ui/OptionTiles";
 import { Segmented } from "~/components/ui/Segmented";
 import { SvgIcon } from "~/components/ui/SvgIcon";
@@ -19,6 +22,8 @@ type IconSidebarProps = {
   onWeight: (weight: StrokeWeight) => void;
   onSize: (size: number) => void;
   onCategory: (slug: string | undefined) => void;
+  /** Set on /icons/payments: no style or category is picked, and size switches the logo card size */
+  payments?: { size: PaymentSize; onSize: (size: PaymentSize) => void };
 };
 
 // A curved stroke drawn at each weight (scaled up so the difference reads at a glance).
@@ -67,8 +72,30 @@ const sizeOptions = (sample: string) =>
     ),
   }));
 
+// Logo card sizes: a small card outline drawn at each size, like the bell on the icon sizes.
+const paymentSizeLabel = (id: PaymentSize) => {
+  const x = paymentsMeta.sizes.find((z) => z.id === id)!;
+  return `${x.width}×${x.height}`;
+};
+const paymentSizeOptions = paymentsMeta.sizes.map((x) => ({
+  value: x.id,
+  title: `${x.label}, ${x.width} × ${x.height} px`,
+  label: (
+    <span className={s.sizeOpt}>
+      <span className={s.sizeIcon}>
+        <svg width={x.width / 3} height={x.height / 3} viewBox={`0 0 ${x.width} ${x.height}`} aria-hidden="true">
+          <rect x="1.5" y="1.5" width={x.width - 3} height={x.height - 3} rx="5" fill="none" stroke="currentColor" strokeWidth="3" />
+        </svg>
+      </span>
+      {x.id.toUpperCase()}
+    </span>
+  ),
+}));
+
 export function IconSidebar(props: IconSidebarProps) {
-  const { style, theme, size, weight, weightEnabled, category, onStyle, onWeight, onSize, onCategory } = props;
+  const { style, theme, size, weight, weightEnabled, category, onStyle, onWeight, onSize, onCategory, payments } = props;
+  // On the payments page the icon filters stay, so you can jump back, but none is picked.
+  const inIcons = !payments;
   const weightLabel = strokeWeights.find((w) => w.value === weight)?.label;
   const sample = style === "glass" && theme === "light" ? freeIconsMeta.samplesLight.glass : freeIconsMeta.samples[style];
 
@@ -77,30 +104,42 @@ export function IconSidebar(props: IconSidebarProps) {
       <div className={s.group}>
         <div className={s.head}>
           <span>Style</span>
-          <span className={s.value}>{styleLabels[style]}</span>
+          <span className={s.value}>{inIcons ? styleLabels[style] : "Full colour"}</span>
         </div>
-        <OptionTiles label="Icon style" value={style} options={styleOptions(theme)} onChange={onStyle} />
+        <OptionTiles label="Icon style" value={inIcons ? style : ("" as IconStyle)} options={styleOptions(theme)} onChange={onStyle} />
       </div>
 
-      {/* Weight and size together: two slim rows under one heading */}
-      <div className={s.group}>
-        <div className={s.head}>
-          <span>Weight & size</span>
-          <span className={s.value}>
-            {weightEnabled ? weightLabel : "Filled"} · {size} px
-          </span>
+      {payments ? (
+        <div className={s.group}>
+          <div className={s.head}>
+            <span>Size</span>
+            <span className={s.value}>{paymentSizeLabel(payments.size)}</span>
+          </div>
+          <Segmented label="Logo size" value={payments.size} options={paymentSizeOptions} onChange={payments.onSize} className={s.compactRow} />
         </div>
-        <Segmented
-          label="Stroke weight"
-          value={weight}
-          options={weightOptions}
-          onChange={onWeight}
-          disabled={!weightEnabled}
-          className={s.compactRow}
-        />
-        <Segmented label="Preview size" value={String(size)} options={sizeOptions(sample)} onChange={(v) => onSize(Number(v))} className={s.compactRow} />
-        {!weightEnabled && <p className={s.hint}>Weight changes the stroke on {lineStyleNames} icons.</p>}
-      </div>
+      ) : (
+        <>
+          {/* Weight and size together: two slim rows under one heading */}
+          <div className={s.group}>
+            <div className={s.head}>
+              <span>Weight & size</span>
+              <span className={s.value}>
+                {weightEnabled ? weightLabel : "Filled"} · {size} px
+              </span>
+            </div>
+            <Segmented
+              label="Stroke weight"
+              value={weight}
+              options={weightOptions}
+              onChange={onWeight}
+              disabled={!weightEnabled}
+              className={s.compactRow}
+            />
+            <Segmented label="Preview size" value={String(size)} options={sizeOptions(sample)} onChange={(v) => onSize(Number(v))} className={s.compactRow} />
+            {!weightEnabled && <p className={s.hint}>Weight changes the stroke on {lineStyleNames} icons.</p>}
+          </div>
+        </>
+      )}
 
       <div className={s.group}>
         <div className={s.head}>
@@ -111,7 +150,7 @@ export function IconSidebar(props: IconSidebarProps) {
         <label className={s.select}>
           <span className="sr-only">Category</span>
           <select value={category ?? ""} onChange={(e) => onCategory(e.target.value || undefined)}>
-            <option value="">All categories ({freeIconsMeta.total})</option>
+            <option value="">{inIcons ? `All categories (${freeIconsMeta.total})` : "Pick a category"}</option>
             {freeIconsMeta.categories.map((c) => (
               <option key={c.slug} value={c.slug}>
                 {c.label} ({c.count})
@@ -122,7 +161,7 @@ export function IconSidebar(props: IconSidebarProps) {
 
         <ul className={s.list}>
           <li>
-            <button type="button" className={cx(s.row, !category && s.on)} aria-pressed={!category} onClick={() => onCategory(undefined)}>
+            <button type="button" className={cx(s.row, inIcons && !category && s.on)} aria-pressed={inIcons && !category} onClick={() => onCategory(undefined)}>
               All
               <span>{freeIconsMeta.total}</span>
             </button>
@@ -140,6 +179,21 @@ export function IconSidebar(props: IconSidebarProps) {
               </button>
             </li>
           ))}
+        </ul>
+      </div>
+
+      {/* Full-colour sets that don't come in the styles above */}
+      <div className={s.group}>
+        <div className={s.head}>
+          <span>More sets</span>
+        </div>
+        <ul className={cx(s.list, s.sets)}>
+          <li>
+            <Link to="/icons/payments" className={cx(s.row, payments && s.on)} aria-current={payments ? "page" : undefined}>
+              Payment logos
+              <span>{paymentsMeta.logos.length}</span>
+            </Link>
+          </li>
         </ul>
       </div>
     </aside>

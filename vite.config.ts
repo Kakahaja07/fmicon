@@ -16,12 +16,20 @@ export default defineConfig({
   plugins: [
     tanstackStart({
       // Prerender every page to static HTML at build time: fast first paint, good SEO, any static host.
-      pages: [{ path: "/" }, { path: "/docs" }, { path: "/packages" }, { path: "/mcp" }, ...docPaths.map((path) => ({ path })), ...blogPaths.map((path) => ({ path })), ...iconPages.map((path) => ({ path }))],
+      pages: [{ path: "/" }, { path: "/docs" }, { path: "/packages" }, { path: "/mcp" }, { path: "/icons/payments" }, ...docPaths.map((path) => ({ path })), ...blogPaths.map((path) => ({ path })), ...iconPages.map((path) => ({ path }))],
       prerender: {
         enabled: true,
         crawlLinks: true,
         // "/#pricing" and "/icons?q=home" are existing pages with a hash or filter, not pages of their own.
-        filter: (page) => !page.path.includes("#") && !page.path.includes("?"),
+        filter: (page) => {
+          // Logo files (/payments/md/visa.svg) are linked for download; they are files, not pages.
+          // Crawled links reach the sitemap before this filter runs, so mark them to stay out of it too.
+          if (page.path.endsWith(".svg")) {
+            page.sitemap = { ...page.sitemap, exclude: true };
+            return false;
+          }
+          return !page.path.includes("#") && !page.path.includes("?");
+        },
       },
       sitemap: { enabled: true, host: SITE_URL },
     }),

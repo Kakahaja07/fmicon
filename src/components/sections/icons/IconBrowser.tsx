@@ -46,7 +46,7 @@ const SIDEBAR_KEY = "fmicon-sidebar";
 const SORT_KEY = "fmicon-sort";
 
 /** Filters open or closed, and the sort order: remembered on this device. Phones start with filters closed. */
-function useToolPrefs() {
+export function useToolPrefs() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const [sort, setSort] = useState<IconSort>("default");
   useEffect(() => {

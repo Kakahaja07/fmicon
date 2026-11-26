@@ -945,6 +945,11 @@
     "category": "astrology"
   },
   {
+    "slug": "vuesax",
+    "name": "vuesax",
+    "category": "astrology"
+  },
+  {
     "slug": "woman",
     "name": "woman",
     "category": "astrology"
@@ -2065,6 +2070,11 @@
     "category": "essetional"
   },
   {
+    "slug": "chrome",
+    "name": "chrome",
+    "category": "essetional"
+  },
+  {
     "slug": "close-square",
     "name": "close-square",
     "category": "essetional"
@@ -2170,6 +2180,11 @@
     "category": "essetional"
   },
   {
+    "slug": "grammerly",
+    "name": "grammerly",
+    "category": "essetional"
+  },
+  {
     "slug": "happyemoji",
     "name": "happyemoji",
     "category": "essetional"
@@ -2192,6 +2207,11 @@
   {
     "slug": "information",
     "name": "information",
+    "category": "essetional"
+  },
+  {
+    "slug": "instagram",
+    "name": "instagram",
     "category": "essetional"
   },
   {
@@ -4453,5 +4473,510 @@
     "slug": "wind-2",
     "name": "wind-2",
     "category": "weather"
+  },
+  {
+    "slug": "aave-aave",
+    "name": "aave-aave",
+    "category": "company-logos"
+  },
+  {
+    "slug": "android",
+    "name": "android",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ankr-ankr",
+    "name": "ankr-ankr",
+    "category": "company-logos"
+  },
+  {
+    "slug": "apple",
+    "name": "apple",
+    "category": "company-logos"
+  },
+  {
+    "slug": "augur-rep",
+    "name": "augur-rep",
+    "category": "company-logos"
+  },
+  {
+    "slug": "autonio-niox",
+    "name": "autonio-niox",
+    "category": "company-logos"
+  },
+  {
+    "slug": "avalanche-avax",
+    "name": "avalanche-avax",
+    "category": "company-logos"
+  },
+  {
+    "slug": "be",
+    "name": "be",
+    "category": "company-logos"
+  },
+  {
+    "slug": "binance-coin-bnb",
+    "name": "binance-coin-bnb",
+    "category": "company-logos"
+  },
+  {
+    "slug": "binance-usd-busd",
+    "name": "binance-usd-busd",
+    "category": "company-logos"
+  },
+  {
+    "slug": "bitcoin-btc",
+    "name": "bitcoin-btc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "blogger",
+    "name": "blogger",
+    "category": "company-logos"
+  },
+  {
+    "slug": "bootstrap",
+    "name": "bootstrap",
+    "category": "company-logos"
+  },
+  {
+    "slug": "cardano-ada",
+    "name": "cardano-ada",
+    "category": "company-logos"
+  },
+  {
+    "slug": "celo-celo",
+    "name": "celo-celo",
+    "category": "company-logos"
+  },
+  {
+    "slug": "celsius-cel",
+    "name": "celsius-cel",
+    "category": "company-logos"
+  },
+  {
+    "slug": "chainlink-link",
+    "name": "chainlink-link",
+    "category": "company-logos"
+  },
+  {
+    "slug": "civic-cvc",
+    "name": "civic-cvc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "dai-dai",
+    "name": "dai-dai",
+    "category": "company-logos"
+  },
+  {
+    "slug": "dash-dash",
+    "name": "dash-dash",
+    "category": "company-logos"
+  },
+  {
+    "slug": "decred-dcr",
+    "name": "decred-dcr",
+    "category": "company-logos"
+  },
+  {
+    "slug": "dent-dent",
+    "name": "dent-dent",
+    "category": "company-logos"
+  },
+  {
+    "slug": "dribbble",
+    "name": "dribbble",
+    "category": "company-logos"
+  },
+  {
+    "slug": "dropbox",
+    "name": "dropbox",
+    "category": "company-logos"
+  },
+  {
+    "slug": "educare-ekt",
+    "name": "educare-ekt",
+    "category": "company-logos"
+  },
+  {
+    "slug": "emercoin-emc",
+    "name": "emercoin-emc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "enjin-coin-enj",
+    "name": "enjin-coin-enj",
+    "category": "company-logos"
+  },
+  {
+    "slug": "eos-eos",
+    "name": "eos-eos",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ethereum-classic-etc",
+    "name": "ethereum-classic-etc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ethereum-eth",
+    "name": "ethereum-eth",
+    "category": "company-logos"
+  },
+  {
+    "slug": "facebook",
+    "name": "facebook",
+    "category": "company-logos"
+  },
+  {
+    "slug": "figma",
+    "name": "figma",
+    "category": "company-logos"
+  },
+  {
+    "slug": "figma-2",
+    "name": "figma-2",
+    "category": "company-logos"
+  },
+  {
+    "slug": "frame",
+    "name": "frame",
+    "category": "company-logos"
+  },
+  {
+    "slug": "framer",
+    "name": "framer",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ftx-token-ftt",
+    "name": "ftx-token-ftt",
+    "category": "company-logos"
+  },
+  {
+    "slug": "google",
+    "name": "google",
+    "category": "company-logos"
+  },
+  {
+    "slug": "google-drive",
+    "name": "google-drive",
+    "category": "company-logos"
+  },
+  {
+    "slug": "google-play",
+    "name": "google-play",
+    "category": "company-logos"
+  },
+  {
+    "slug": "harmony-one",
+    "name": "harmony-one",
+    "category": "company-logos"
+  },
+  {
+    "slug": "hedera-hashgraph-hbar",
+    "name": "hedera-hashgraph-hbar",
+    "category": "company-logos"
+  },
+  {
+    "slug": "hex-hex",
+    "name": "hex-hex",
+    "category": "company-logos"
+  },
+  {
+    "slug": "html-3",
+    "name": "html-3",
+    "category": "company-logos"
+  },
+  {
+    "slug": "html-5",
+    "name": "html-5",
+    "category": "company-logos"
+  },
+  {
+    "slug": "huobi-token-ht",
+    "name": "huobi-token-ht",
+    "category": "company-logos"
+  },
+  {
+    "slug": "icon-icx",
+    "name": "icon-icx",
+    "category": "company-logos"
+  },
+  {
+    "slug": "illustrator",
+    "name": "illustrator",
+    "category": "company-logos"
+  },
+  {
+    "slug": "iost-iost",
+    "name": "iost-iost",
+    "category": "company-logos"
+  },
+  {
+    "slug": "javascript",
+    "name": "javascript",
+    "category": "company-logos"
+  },
+  {
+    "slug": "js",
+    "name": "js",
+    "category": "company-logos"
+  },
+  {
+    "slug": "kyber-network-knc",
+    "name": "kyber-network-knc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "litecoin-ltc",
+    "name": "litecoin-ltc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "maker-mkr",
+    "name": "maker-mkr",
+    "category": "company-logos"
+  },
+  {
+    "slug": "messenger",
+    "name": "messenger",
+    "category": "company-logos"
+  },
+  {
+    "slug": "monero-xmr",
+    "name": "monero-xmr",
+    "category": "company-logos"
+  },
+  {
+    "slug": "nebulas-nas",
+    "name": "nebulas-nas",
+    "category": "company-logos"
+  },
+  {
+    "slug": "nem-xem",
+    "name": "nem-xem",
+    "category": "company-logos"
+  },
+  {
+    "slug": "nexo-nexo",
+    "name": "nexo-nexo",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ocean-protocol-ocean",
+    "name": "ocean-protocol-ocean",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ok",
+    "name": "ok",
+    "category": "company-logos"
+  },
+  {
+    "slug": "okb-okb",
+    "name": "okb-okb",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ontology-ont",
+    "name": "ontology-ont",
+    "category": "company-logos"
+  },
+  {
+    "slug": "paypal",
+    "name": "paypal",
+    "category": "company-logos"
+  },
+  {
+    "slug": "photoshop",
+    "name": "photoshop",
+    "category": "company-logos"
+  },
+  {
+    "slug": "polkadot-dot",
+    "name": "polkadot-dot",
+    "category": "company-logos"
+  },
+  {
+    "slug": "polygon-matic",
+    "name": "polygon-matic",
+    "category": "company-logos"
+  },
+  {
+    "slug": "polyswarm-nct",
+    "name": "polyswarm-nct",
+    "category": "company-logos"
+  },
+  {
+    "slug": "python",
+    "name": "python",
+    "category": "company-logos"
+  },
+  {
+    "slug": "quant-qnt",
+    "name": "quant-qnt",
+    "category": "company-logos"
+  },
+  {
+    "slug": "siacoin-sc",
+    "name": "siacoin-sc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "slack",
+    "name": "slack",
+    "category": "company-logos"
+  },
+  {
+    "slug": "snapchat",
+    "name": "snapchat",
+    "category": "company-logos"
+  },
+  {
+    "slug": "solana-sol",
+    "name": "solana-sol",
+    "category": "company-logos"
+  },
+  {
+    "slug": "spotify",
+    "name": "spotify",
+    "category": "company-logos"
+  },
+  {
+    "slug": "stacks-stx",
+    "name": "stacks-stx",
+    "category": "company-logos"
+  },
+  {
+    "slug": "stellar-xlm",
+    "name": "stellar-xlm",
+    "category": "company-logos"
+  },
+  {
+    "slug": "tenx-pay",
+    "name": "tenx-pay",
+    "category": "company-logos"
+  },
+  {
+    "slug": "tether-usdt",
+    "name": "tether-usdt",
+    "category": "company-logos"
+  },
+  {
+    "slug": "the-graph-grt",
+    "name": "the-graph-grt",
+    "category": "company-logos"
+  },
+  {
+    "slug": "theta-theta",
+    "name": "theta-theta",
+    "category": "company-logos"
+  },
+  {
+    "slug": "thorchain-rune",
+    "name": "thorchain-rune",
+    "category": "company-logos"
+  },
+  {
+    "slug": "trello",
+    "name": "trello",
+    "category": "company-logos"
+  },
+  {
+    "slug": "triangle-company-logos",
+    "name": "triangle",
+    "category": "company-logos"
+  },
+  {
+    "slug": "trontron-trx",
+    "name": "trontron-trx",
+    "category": "company-logos"
+  },
+  {
+    "slug": "twitch",
+    "name": "twitch",
+    "category": "company-logos"
+  },
+  {
+    "slug": "ui8",
+    "name": "ui8",
+    "category": "company-logos"
+  },
+  {
+    "slug": "usd-coin-usdc",
+    "name": "usd-coin-usdc",
+    "category": "company-logos"
+  },
+  {
+    "slug": "velas-vlx",
+    "name": "velas-vlx",
+    "category": "company-logos"
+  },
+  {
+    "slug": "vibe-vibe",
+    "name": "vibe-vibe",
+    "category": "company-logos"
+  },
+  {
+    "slug": "vuesax-company-logos",
+    "name": "vuesax",
+    "category": "company-logos"
+  },
+  {
+    "slug": "wanchain-wan",
+    "name": "wanchain-wan",
+    "category": "company-logos"
+  },
+  {
+    "slug": "wanchain-wan-2",
+    "name": "wanchain-wan-2",
+    "category": "company-logos"
+  },
+  {
+    "slug": "whatsapp",
+    "name": "whatsapp",
+    "category": "company-logos"
+  },
+  {
+    "slug": "windows",
+    "name": "windows",
+    "category": "company-logos"
+  },
+  {
+    "slug": "wing-wing",
+    "name": "wing-wing",
+    "category": "company-logos"
+  },
+  {
+    "slug": "xd",
+    "name": "xd",
+    "category": "company-logos"
+  },
+  {
+    "slug": "xiaomi",
+    "name": "xiaomi",
+    "category": "company-logos"
+  },
+  {
+    "slug": "xrp-xrp",
+    "name": "xrp-xrp",
+    "category": "company-logos"
+  },
+  {
+    "slug": "youtube",
+    "name": "youtube",
+    "category": "company-logos"
+  },
+  {
+    "slug": "zel-zel",
+    "name": "zel-zel",
+    "category": "company-logos"
+  },
+  {
+    "slug": "zoom",
+    "name": "zoom",
+    "category": "company-logos"
   }
 ]

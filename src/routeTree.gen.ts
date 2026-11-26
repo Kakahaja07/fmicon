@@ -14,6 +14,7 @@ import { Route as SiteIndexRouteImport } from './routes/_site.index'
 import { Route as SiteMcpRouteImport } from './routes/_site.mcp'
 import { Route as SitePackagesRouteImport } from './routes/_site.packages'
 import { Route as IconsIndexRouteImport } from './routes/icons.index'
+import { Route as IconsPaymentsRouteImport } from './routes/icons.payments'
 import { Route as SiteBlogIndexRouteImport } from './routes/_site.blog.index'
 import { Route as SiteBlogSlugRouteImport } from './routes/_site.blog.$slug'
 import { Route as SiteDocsIndexRouteImport } from './routes/_site.docs.index'
@@ -43,6 +44,11 @@ const SitePackagesRoute = SitePackagesRouteImport.update({
 const IconsIndexRoute = IconsIndexRouteImport.update({
   id: '/icons/',
   path: '/icons/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IconsPaymentsRoute = IconsPaymentsRouteImport.update({
+  id: '/icons/payments',
+  path: '/icons/payments',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SiteBlogIndexRoute = SiteBlogIndexRouteImport.update({
@@ -80,6 +86,7 @@ export interface FileRoutesByFullPath {
   '/': typeof SiteIndexRoute
   '/mcp': typeof SiteMcpRoute
   '/packages': typeof SitePackagesRoute
+  '/icons/payments': typeof IconsPaymentsRoute
   '/icons/': typeof IconsIndexRoute
   '/blog/$slug': typeof SiteBlogSlugRoute
   '/docs/$framework': typeof SiteDocsFrameworkRoute
@@ -91,6 +98,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/mcp': typeof SiteMcpRoute
   '/packages': typeof SitePackagesRoute
+  '/icons/payments': typeof IconsPaymentsRoute
   '/': typeof SiteIndexRoute
   '/icons': typeof IconsIndexRoute
   '/blog/$slug': typeof SiteBlogSlugRoute
@@ -105,6 +113,7 @@ export interface FileRoutesById {
   '/_site': typeof SiteRouteWithChildren
   '/_site/mcp': typeof SiteMcpRoute
   '/_site/packages': typeof SitePackagesRoute
+  '/icons/payments': typeof IconsPaymentsRoute
   '/_site/': typeof SiteIndexRoute
   '/icons/': typeof IconsIndexRoute
   '/_site/blog/$slug': typeof SiteBlogSlugRoute
@@ -120,6 +129,7 @@ export interface FileRouteTypes {
     | '/'
     | '/mcp'
     | '/packages'
+    | '/icons/payments'
     | '/icons/'
     | '/blog/$slug'
     | '/docs/$framework'
@@ -131,6 +141,7 @@ export interface FileRouteTypes {
   to:
     | '/mcp'
     | '/packages'
+    | '/icons/payments'
     | '/'
     | '/icons'
     | '/blog/$slug'
@@ -144,6 +155,7 @@ export interface FileRouteTypes {
     | '/_site'
     | '/_site/mcp'
     | '/_site/packages'
+    | '/icons/payments'
     | '/_site/'
     | '/icons/'
     | '/_site/blog/$slug'
@@ -156,6 +168,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   SiteRoute: typeof SiteRouteWithChildren
+  IconsPaymentsRoute: typeof IconsPaymentsRoute
   IconsIndexRoute: typeof IconsIndexRoute
   IconsStyleSlugRoute: typeof IconsStyleSlugRoute
   IconsStyleIndexRoute: typeof IconsStyleIndexRoute
@@ -196,6 +209,13 @@ declare module '@tanstack/react-router' {
       path: '/icons'
       fullPath: '/icons/'
       preLoaderRoute: typeof IconsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/icons/payments': {
+      id: '/icons/payments'
+      path: '/icons/payments'
+      fullPath: '/icons/payments'
+      preLoaderRoute: typeof IconsPaymentsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_site/blog/': {
@@ -267,6 +287,7 @@ const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   SiteRoute: SiteRouteWithChildren,
+  IconsPaymentsRoute: IconsPaymentsRoute,
   IconsIndexRoute: IconsIndexRoute,
   IconsStyleSlugRoute: IconsStyleSlugRoute,
   IconsStyleIndexRoute: IconsStyleIndexRoute,

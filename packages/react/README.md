@@ -14,9 +14,9 @@
 
 </div>
 
-fmicon is a free, open-source set of 891 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 996 icons, each drawn in 8 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
-891 icons as React components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
+996 icons as React components, in 8 styles (plus glass-light). Each icon is its own module, so your bundler only keeps the ones you import.
 
 ## Install
 
@@ -55,6 +55,6 @@ Icons forward their ref to the `<svg>` element and pass any other SVG props thro
 
 ## Links
 
-- Browse all 891 icons: https://fmicon.dev/icons
+- Browse all 996 icons: https://fmicon.dev/icons
 - Source and issues: https://github.com/Kakahaja07/fmicon
 - Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

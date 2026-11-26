@@ -13,13 +13,16 @@ type SearchRowProps = {
   onToggleSidebar: () => void;
   sort: IconSort;
   onSort: (sort: IconSort) => void;
+  /** Wording for the field, when the grid isn't icons */
+  label?: string;
+  placeholder?: string;
 };
 
 /**
  * The tool's search, inside the page: show/hide filters · search · A–Z sort.
  * "/" focuses it from anywhere on the page.
  */
-export function SearchRow({ query, onQuery, sidebarOpen, onToggleSidebar, sort, onSort }: SearchRowProps) {
+export function SearchRow({ query, onQuery, sidebarOpen, onToggleSidebar, sort, onSort, label = "Search icons", placeholder = "Search icons, e.g. wallet, arrow, chat" }: SearchRowProps) {
   const searchRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -48,7 +51,7 @@ export function SearchRow({ query, onQuery, sidebarOpen, onToggleSidebar, sort, 
         <SidebarLeftIcon size={18} />
       </button>
       <div className={s.search}>
-        <SearchField ref={searchRef} label="Search icons" placeholder="Search icons, e.g. wallet, arrow, chat" value={query} onChange={onQuery} shortcut="/" />
+        <SearchField ref={searchRef} label={label} placeholder={placeholder} value={query} onChange={onQuery} shortcut="/" />
       </div>
       <button
         type="button"

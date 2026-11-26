@@ -1,5 +1,6 @@
 import { brand } from "~/content/site";
 import { freeIconsMeta } from "~/content/freeIcons.meta";
+import { paymentsMeta } from "~/content/payments.meta";
 import { iconArticle } from "~/content/iconArticle";
 import { libraryArticle, styleKeywords } from "~/content/libraryArticle";
 import { titleCase } from "./titleCase";
@@ -85,6 +86,16 @@ export function libraryHead() {
     description: `Free icons for websites and apps: ${total} open-source SVG icons in ${styles} styles, including glass and duotone. Recolour, resize and copy as SVG, PNG, React, Vue or Svelte. MIT licence, no sign-up.`,
     path: "/icons",
     jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }]), faqLd(libraryArticle.faq())],
+  });
+}
+
+export function paymentsHead() {
+  const n = paymentsMeta.logos.length;
+  return pageHead({
+    title: `${n} Free Payment Logos: Visa, Mastercard, PayPal SVG (${YEAR})${SEP}${brand.name}`,
+    description: `${n} free payment method logos for checkout pages: Visa, Mastercard, PayPal, Apple Pay, Google Pay, Stripe and more. Three card sizes, full colour. Copy SVG or download.`,
+    path: "/icons/payments",
+    jsonLd: [breadcrumbs([{ name: "Free icons", path: "/icons" }, { name: "Payment logos", path: "/icons/payments" }])],
   });
 }
 
