@@ -12,5 +12,5 @@ export const Route = createFileRoute("/icons/")({
 
 function LibraryPage() {
   const search = Route.useSearch();
-  return <IconsTool style="linear" search={search} intro={<LibraryIntro />} />;
+  return <IconsTool style="linear" search={search} intro={<LibraryIntro category={search.cat} />} />;
 }

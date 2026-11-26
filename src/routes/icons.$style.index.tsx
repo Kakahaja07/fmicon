@@ -17,5 +17,5 @@ function StylePage() {
   const { style } = Route.useParams();
   const search = Route.useSearch();
   if (!isStyle(style)) return null;
-  return <IconsTool style={style} search={search} intro={<LibraryIntro style={style} />} />;
+  return <IconsTool style={style} search={search} intro={<LibraryIntro style={style} category={search.cat} />} />;
 }
