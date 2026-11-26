@@ -15,7 +15,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SOURCE = join(ROOT, "src/content/free-icons");
 const PACKAGES = join(ROOT, "packages");
-const VERSION = "1.3.0";
+const VERSION = "1.4.0";
 const REPO = "https://github.com/Kakahaja07/fmicon";
 const SITE = "https://fmicon.dev";
 const CDN = "https://cdn.fmicon.dev/svg";

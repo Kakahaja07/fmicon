@@ -14,9 +14,9 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 1021 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
-996 icons as plain data with no framework, plus helpers that turn them into SVG strings. The other fmicon packages are built on the same data.
+1021 icons as plain data with no framework, plus helpers that turn them into SVG strings. The other fmicon packages are built on the same data.
 
 ## Install
 
@@ -79,6 +79,6 @@ The list of variant names.
 
 ## Links
 
-- Browse all 996 icons: https://fmicon.dev/icons
+- Browse all 1021 icons: https://fmicon.dev/icons
 - Source and issues: https://github.com/Kakahaja07/fmicon
 - Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

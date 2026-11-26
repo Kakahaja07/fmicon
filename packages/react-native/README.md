@@ -14,9 +14,9 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 1021 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
-996 icons as React Native components, in 9 styles (plus glass-light). They render with `SvgXml` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
+1021 icons as React Native components, in 9 styles (plus glass-light). They render with `SvgXml` from [react-native-svg](https://github.com/software-mansion/react-native-svg).
 
 ## Install
 
@@ -60,6 +60,6 @@ The glass styles use gradients, masks and blur filters. Check them on your targe
 
 ## Links
 
-- Browse all 996 icons: https://fmicon.dev/icons
+- Browse all 1021 icons: https://fmicon.dev/icons
 - Source and issues: https://github.com/Kakahaja07/fmicon
 - Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

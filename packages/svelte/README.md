@@ -14,9 +14,9 @@
 
 </div>
 
-fmicon is a free, open-source set of 996 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
+fmicon is a free, open-source set of 1021 icons, each drawn in 9 styles. Use them in personal and commercial projects. No sign-up, and no credit needed in your app.
 
-One Svelte component that draws any of the 996 fmicon. The icon data comes from [fmicon](https://www.npmjs.com/package/fmicon), which is installed with it and tree-shakes to the icons you import. Works with Svelte 4 and 5.
+One Svelte component that draws any of the 1021 fmicon. The icon data comes from [fmicon](https://www.npmjs.com/package/fmicon), which is installed with it and tree-shakes to the icons you import. Works with Svelte 4 and 5.
 
 ## Install
 
@@ -58,6 +58,6 @@ Icon data names are the camelCase of the slug (`arrow-circle-right` is `arrowCir
 
 ## Links
 
-- Browse all 996 icons: https://fmicon.dev/icons
+- Browse all 1021 icons: https://fmicon.dev/icons
 - Source and issues: https://github.com/Kakahaja07/fmicon
 - Licence: MIT for the code. The icon artwork comes with an attribution notice, see [LICENSE](https://github.com/Kakahaja07/fmicon/blob/main/LICENSE).

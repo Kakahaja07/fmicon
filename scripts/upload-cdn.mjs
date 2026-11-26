@@ -6,7 +6,7 @@
 //   R2_ACCOUNT_ID        your Cloudflare account ID
 //   R2_ACCESS_KEY_ID     the token's access key ID
 //   R2_SECRET_ACCESS_KEY the token's secret
-//   R2_BUCKET            bucket name (default: fmicons-cdn)
+//   R2_BUCKET            bucket name (default: icons, the bucket behind cdn.fmicon.dev)
 
 import { PutObjectCommand, S3Client } from "@aws-sdk/client-s3";
 import { readdirSync, readFileSync, statSync } from "node:fs";
@@ -14,7 +14,7 @@ import { join, relative, sep } from "node:path";
 
 const ROOT = "dist-cdn";
 const { R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY } = process.env;
-const BUCKET = process.env.R2_BUCKET ?? "fmicons-cdn";
+const BUCKET = process.env.R2_BUCKET ?? "icons";
 const CONCURRENCY = 24;
 
 if (!R2_ACCOUNT_ID || !R2_ACCESS_KEY_ID || !R2_SECRET_ACCESS_KEY) {

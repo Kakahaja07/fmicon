@@ -595,6 +595,131 @@
     "category": "design-tools"
   },
   {
+    "slug": "robot",
+    "name": "robot",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "chip",
+    "name": "chip",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "terminal",
+    "name": "terminal",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "git-branch",
+    "name": "git-branch",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "git-merge",
+    "name": "git-merge",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "git-pull-request",
+    "name": "git-pull-request",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "database",
+    "name": "database",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "server",
+    "name": "server",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "bug",
+    "name": "bug",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "plug",
+    "name": "plug",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "puzzle",
+    "name": "puzzle",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "rocket",
+    "name": "rocket",
+    "category": "ai-dev"
+  },
+  {
+    "slug": "leaf",
+    "name": "leaf",
+    "category": "science-nature"
+  },
+  {
+    "slug": "plant",
+    "name": "plant",
+    "category": "science-nature"
+  },
+  {
+    "slug": "planet",
+    "name": "planet",
+    "category": "science-nature"
+  },
+  {
+    "slug": "atom",
+    "name": "atom",
+    "category": "science-nature"
+  },
+  {
+    "slug": "dna",
+    "name": "dna",
+    "category": "science-nature"
+  },
+  {
+    "slug": "mountain",
+    "name": "mountain",
+    "category": "science-nature"
+  },
+  {
+    "slug": "pill",
+    "name": "pill",
+    "category": "everyday"
+  },
+  {
+    "slug": "paw",
+    "name": "paw",
+    "category": "everyday"
+  },
+  {
+    "slug": "compass",
+    "name": "compass",
+    "category": "everyday"
+  },
+  {
+    "slug": "dice",
+    "name": "dice",
+    "category": "everyday"
+  },
+  {
+    "slug": "target",
+    "name": "target",
+    "category": "everyday"
+  },
+  {
+    "slug": "hourglass",
+    "name": "hourglass",
+    "category": "everyday"
+  },
+  {
+    "slug": "qr-code",
+    "name": "qr-code",
+    "category": "everyday"
+  },
+  {
     "slug": "archive-archive",
     "name": "archive",
     "category": "archive"
